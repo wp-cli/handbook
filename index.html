@@ -1,3 +1,8 @@
+---
+layout: default
+title: wp-cli - A command line interface for WordPress
+---
+
 What is wp-cli?
 ---------------
 
@@ -16,18 +21,18 @@ Installing
 
 **Via PEAR:**
 
-```sh
+<pre>
 sudo pear config-set auto_discover 1
 sudo pear install wp-cli.github.com/pear/wpcli
-```
+</pre>
 
 **Via GIT:**
 
-```sh
+<pre>
 git clone --recursive git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
 cd ~/git/wp-cli
 sudo utils/dev-build
-```
+</pre>
 
 You can replace `~/git/wp-cli` with whatever you want.
 
@@ -36,30 +41,30 @@ MAMP, XAMP, etc.
 
 If the `php` command is not available, you can try finding an appropriate binary:
 
-```sh
+<pre>
 ./utils/find-php
-```
+</pre>
 
 Then, create an environment variable called `WP_CLI_PHP` with the path found by `find-php`.
 
 In a UNIX environment, you would do this by adding the following line to your `.bashrc` file:
 
-```sh
+<pre>
 WP_CLI_PHP=/path/to/php-binary
-```
+</pre>
 
 Using
 =====
 
 Go into a WordPress root folder:
 
-```
+<pre>
 cd /var/www/wp/
-```
+</pre>
 
 Typing `wp help` should show you an output similar to this:
 
-```
+<pre>
 Example usage:
 	wp google-sitemap [build|help] ...
 	wp core [update|help] ...
@@ -67,20 +72,20 @@ Example usage:
 	wp option [add|update|delete|get|help] ...
 	wp plugin [status|activate|deactivate|install|delete|update|help] ...
 	wp theme [status|details|activate|help] ...
-```
+</pre>
 
 So this tells us which commands are installed: eg. google-sitemap, core, home, ...
 Between brackets you can see their sub commands. 
 
 Let's for example try to install the hello dolly plugin from wordpress.org:
 
-```
+<pre>
 wp plugin install hello-dolly
-```
+</pre>
 
 Output:
 
-```
+<pre>
 Installing Hello Dolly (1.5)
 
 Downloading install package from http://downloads.WordPress.org/plugin/hello-dolly.1.5.zip ...
@@ -88,34 +93,34 @@ Unpacking the package ...
 Installing the plugin ...
 
 Success: The plugin is successfully installed
-```
+</pre>
 
 Multisite
 ---------
 
 On a multisite installation, you need to pass a --blog parameter, so that WP knows which site it's supposed to be operating on:
 
-```
+<pre>
 wp theme status --blog=localhost/wp/test
-```
+</pre>
 
 If you have a subdomain installation, it would look like this:
 
-```
+<pre>
 wp theme status --blog=test.example.com
-```
+</pre>
 
 If you're usually working on the same site most of the time, you can put the url of that site in a file called 'wp-cli-blog' in your root WP dir:
 
-```
+<pre>
 echo 'test.example.com' > wp-cli-blog
-```
+</pre>
 
 Then, you can call `wp` without the --blog parameter again:
 
-```
+<pre>
 wp theme status
-```
+</pre>
 
 Adding commands
 ===============
