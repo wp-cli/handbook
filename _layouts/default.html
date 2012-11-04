@@ -1,48 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+{% include header.html %}
 
-		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+{{ content | markdownify }}
 
-		<title>{{ page.title }}</title>
-	</head>
-
-	<body>
-
-		<header>
-		<div class="container">
-			<h1>wp-cli</h1>
-			<h2>A command line interface for WordPress</h2>
-
-			<section id="downloads">
-			<a href="https://github.com/wp-cli/wp-cli/zipball/master" class="btn">Download as .zip</a>
-			<a href="https://github.com/wp-cli/wp-cli/tarball/master" class="btn">Download as .tar.gz</a>
-			<a href="https://github.com/wp-cli/wp-cli" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-			</section>
-		</div>
-		</header>
-
-		<div class="container">
-			<section id="main_content">
-
-			{{ content | markdownify }}
-
-			</section>
-		</div>
-
-		<script type="text/javascript">
-			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-			try {
-				var pageTracker = _gat._getTracker("UA-962663-21");
-				pageTracker._trackPageview();
-			} catch(err) {}
-		</script>
-	</body>
-</html>
+{% include footer.html %}
