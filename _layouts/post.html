@@ -1,5 +1,14 @@
 {% include header.html %}
 
-{{ content }}
+<article>
+	<div class="post-header">
+		<h2>{{ page.title }}</h2>
+		<span>{{ page.date | date_to_string }}</span>
+	</div>
+
+	<div class="post-content">
+	{{ content }}
+	</div>
+</article>
 
 {% include footer.html %}
