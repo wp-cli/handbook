@@ -57,6 +57,11 @@ header h1 {
   -webkit-font-smoothing: antialiased;
 }
 
+header h1 a {
+	color: inherit;
+	text-decoration: none
+}
+
 header h1:before {
   content: "./ ";
   font-size: 24px;
