@@ -250,3 +250,13 @@ a {
 .cf {
   zoom:1;
 }
+
+/* Blog */
+
+article + article {
+  margin-top: 40px;
+}
+
+.post-header span {
+  color: #666;
+}
