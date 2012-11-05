@@ -3,13 +3,13 @@ layout: default
 title: wp-cli - A command line interface for WordPress
 ---
 
-wp-cli is a set of command-line tools for managing WordPress installations. You can update plugins, set up multisite installs, update posts and much more.
+wp-cli is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs, update posts and much more.
 
 Requirements
 ============
 
 * PHP >= 5.3
-* WP >= 3.3
+* WordPress >= 3.3
 
 Installing
 ==========
@@ -57,22 +57,22 @@ Go into a WordPress root folder:
 cd /var/www/wp/
 </pre>
 
-Typing `wp help` should show you an output similar to this:
+Typing `wp` should show you output similar to this:
 
 <pre>
-Example usage:
-	wp google-sitemap [build|help] ...
-	wp core [update|help] ...
-	wp home [help] ...
-	wp option [add|update|delete|get|help] ...
-	wp plugin [status|activate|deactivate|install|delete|update|help] ...
-	wp theme [status|details|activate|help] ...
+Available commands:
+    wp blog create|delete
+    wp cache add|decr|delete|flush|get|incr|replace|set|type
+    wp comment create|delete|trash|untrash|spam|unspam|approve|unapprove|count|status|last
+    wp core download|config|is-installed|install|install-network|version|update|update-db
+    wp db create|drop|reset|optimize|repair|connect|cli|query|export|import
+    wp eval-file
+    ...
+
+See 'wp help &lt;command&gt;' for more information on a specific command.
 </pre>
 
-So this tells us which commands are installed: eg. google-sitemap, core, home, ...
-Between brackets you can see their sub commands. 
-
-Let's for example try to install the hello dolly plugin from wordpress.org:
+Let's try to install the Hello Dolly plugin from wordpress.org:
 
 <pre>
 wp plugin install hello-dolly
@@ -86,14 +86,13 @@ Installing Hello Dolly (1.5)
 Downloading install package from http://downloads.WordPress.org/plugin/hello-dolly.1.5.zip ...
 Unpacking the package ...
 Installing the plugin ...
-
-Success: The plugin is successfully installed
+Plugin installed successfully.
 </pre>
 
 Multisite
 ---------
 
-On a multisite installation, you need to pass a --blog parameter, so that WP knows which site it's supposed to be operating on:
+On a multisite installation, you need to pass a `--blog` parameter, so that wp-cli knows which site it's supposed to be operating on:
 
 <pre>
 wp theme status --blog=localhost/wp/test
