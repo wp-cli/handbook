@@ -7,7 +7,7 @@ title: Blog
 <article>
 	<div class="post-header">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<span>{{ post.date | date_to_string }}</span>
+		<span>by <a href="http://github.com/{{post.author}}">{{post.author}}</a>, on {{ post.date | date_to_string }}</span>
 	</div>
 
 	<div class="post-content">
