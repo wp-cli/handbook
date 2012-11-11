@@ -10,8 +10,8 @@ title: Blog
 		<span>by <a href="http://github.com/{{post.author}}">{{post.author}}</a>, on {{ post.date | date_to_string }}</span>
 	</div>
 
-	<div class="post-content">
-	{{ post.content }}	
-	</div>
+	<p class="post-excerpt">{{ post.content | strip_html | truncatewords: 55 }}</p>
+
+	<p><a href="{{ post.url }}">Read more...</a></p>
 </article>
 {% endfor %}
