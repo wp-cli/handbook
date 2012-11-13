@@ -73,6 +73,12 @@ header h2 {
 	color: #666;
 }
 
+footer {
+	text-align: center;
+	font-size: 10px;
+	margin: 20px 10px 10px 10px;
+}
+
 #downloads .btn {
 	display: inline-block;
 	text-align: center;
