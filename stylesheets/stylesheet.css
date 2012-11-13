@@ -256,6 +256,15 @@ article + article {
 	margin-top: 40px;
 }
 
+.post-header {
+	margin-bottom: 20px;
+}
+
+.post-header h2 {
+	margin-bottom: 0;
+}
+
 .post-header span {
 	color: #666;
 }
+
