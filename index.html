@@ -127,6 +127,40 @@ You can find more information about adding commands in the [Commands Cookbook](h
 Changelog
 =========
 
+### [0.7](https://github.com/wp-cli/wp-cli/issues?milestone=5&state=closed)
+
+Commands:
+
+- added [wp shell](/blog/wp-shell.html)
+- added `wp cache`, props [tollmanz](http://github.com/tollmanz)
+- added `wp comment`, props [ozh](http://github.com/ozh)
+- added `wp rewrite`, props [goldenapples](http://github.com/goldenapples)
+- added `wp user import-csv`, props [danielbachhuber](http://github.com/danielbachhuber)
+- added `wp user set-role` and `wp user remove-role`, props danielbachhuber 
+- added `wp core is-installed`
+- added `wp blog delete`
+- added `wp post list`
+- made `wp post delete` accept a list of IDs
+- added `--dry-run` option `wp plugin update-all`
+- improved `wp export`, props danielbachhuber
+
+Breaking changes:
+
+- converted `wp plugin update --all` to `wp plugin update-all`
+- converted `wp theme update --all` to `wp theme update-all`
+- converted `wp generate posts` to `wp post generate`
+- converted `wp generate users` to `wp user generate`
+- renamed `wp core install_network` to `wp core install-network`
+- renamed `--path` option to `--dir` in `wp export`
+
+Internals:
+
+- removed support for default subcommands
+- introduced `@synopsis` docblock tag
+- introduced `@subcommand` docblock tag
+- introduced `@alias` docblock tag
+- introduced `WP_CLI::add_man_dir()`
+
 ### [0.6](https://github.com/wp-cli/wp-cli/issues?milestone=4&state=closed)
 
 Commands:
