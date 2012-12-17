@@ -14,7 +14,7 @@ layout: nil
 		<email>mail@scribu.net</email>
 	</author>
 
-	{% for post in site.posts %}
+	{% for post in site.posts limit: 10 %}
 	<entry>
 		<id>{{ site.url }}{{ post.id }}</id>
 		<link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
