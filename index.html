@@ -104,10 +104,10 @@ If you have a subdomain installation, it would look like this:
 wp theme status --url=test.example.com
 </pre>
 
-If you're usually working on the same site most of the time, you can put the url of that site in a file called 'wp-cli-blog' in your root WP dir:
+If you're usually working on the same site most of the time, you can create a `wp-cli.yml` file in the root directory:
 
 <pre>
-echo 'test.example.com' > wp-cli-blog
+url: test.example.com
 </pre>
 
 Then, you can call `wp` without the `--url` parameter again:
