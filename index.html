@@ -92,16 +92,16 @@ Plugin installed successfully.
 Multisite
 ---------
 
-On a multisite installation, you need to pass a `--blog` parameter, so that wp-cli knows which site it's supposed to be operating on:
+On a multisite installation, you need to pass a `--url` parameter, so that wp-cli knows which site it's supposed to be operating on:
 
 <pre>
-wp theme status --blog=localhost/wp/test
+wp theme status --url=localhost/wp/test
 </pre>
 
 If you have a subdomain installation, it would look like this:
 
 <pre>
-wp theme status --blog=test.example.com
+wp theme status --url=test.example.com
 </pre>
 
 If you're usually working on the same site most of the time, you can put the url of that site in a file called 'wp-cli-blog' in your root WP dir:
@@ -110,7 +110,7 @@ If you're usually working on the same site most of the time, you can put the url
 echo 'test.example.com' > wp-cli-blog
 </pre>
 
-Then, you can call `wp` without the `--blog` parameter again:
+Then, you can call `wp` without the `--url` parameter again:
 
 <pre>
 wp theme status
