@@ -127,6 +127,33 @@ You can find more information about adding commands in the [Commands Cookbook](h
 Changelog
 =========
 
+### [0.8](https://github.com/wp-cli/wp-cli/issues?milestone=6&state=closed)
+
+Commands:
+
+- added `wp search-replace` command
+- added `wp cap` command
+- added `wp user add-role` subcommand
+- added `--role` parameter to `wp user remove-role`
+- added `--ids` parameter to `wp user list`
+- added `--post__in` parameter to `wp export`
+- added `--str` parameter to most `wp db` subcommands
+- removed community commands (`wp total-cache`, `wp super-cache`, `wp sitemap`)
+- made `wp post update` accept multiple IDs
+- fixed incorrect exit code from `wp core is-installed` in some cases
+- fixed `wp user import-csv`
+- fixed `wp theme update <theme>`
+- fixed `wp plugin update <plugin>` not reactivating the plugin
+
+Internals:
+
+- added support for `wp-cli.yml` config file
+- bypass full-page caching plugins (pretend we're in wp-admin)
+- disabled coloring when not in a TTY
+- [Composer](http://getcomposer.org) compatibility
+- added `wp --info` utility
+- added unit tests for `wp core` subcommands
+
 ### [0.7](https://github.com/wp-cli/wp-cli/issues?milestone=5&state=closed)
 
 Commands:
