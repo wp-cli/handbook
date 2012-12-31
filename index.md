@@ -132,6 +132,7 @@ Changelog
 Commands:
 
 - added `wp search-replace` command
+- added `wp scaffold` command. props [jmslbam](http://github.com/jmslbam) and [sebastiaandegeus](http://github.com/sebastiaandegeus)
 - added `wp cap` command
 - added `wp user add-role` subcommand
 - added `--role` parameter to `wp user remove-role`
@@ -141,18 +142,18 @@ Commands:
 - removed community commands (`wp total-cache`, `wp super-cache`, `wp sitemap`)
 - made `wp post update` accept multiple IDs
 - fixed incorrect exit code from `wp core is-installed` in some cases
-- fixed `wp user import-csv`
+- fixed `wp user import-csv`. props [danielbachhuber](http://github.com/danielbachhuber)
 - fixed `wp theme update <theme>`
 - fixed `wp plugin update <plugin>` not reactivating the plugin
 
 Internals:
 
 - added support for `wp-cli.yml` config file
-- bypass full-page caching plugins (pretend we're in wp-admin)
+- bypass full-page caching plugins
 - disabled coloring when not in a TTY
 - [Composer](http://getcomposer.org) compatibility
 - added `wp --info` utility
-- added unit tests for `wp core` subcommands
+- added unit tests for `wp core` subcommands. props [mwilliamson](http://github.com/mwilliamson)
 
 ### [0.7](https://github.com/wp-cli/wp-cli/issues?milestone=5&state=closed)
 
