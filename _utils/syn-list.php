@@ -3,7 +3,7 @@
 #
 # Example usage:
 #
-# wp --cmd-dump --path=/path/to/wp | php _utils/syn-list.php
+# wp --cmd-dump | php _utils/syn-list.php
 
 include __DIR__ . '/utils.php';
 

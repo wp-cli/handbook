@@ -5,7 +5,7 @@
 #
 # Example usage:
 #
-# wp --cmd-dump --path=/path/to/wp | php _utils/cmd-list.php
+# wp --cmd-dump | php _utils/cmd-list.php
 
 include __DIR__ . '/utils.php';
 
