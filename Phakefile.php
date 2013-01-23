@@ -49,5 +49,46 @@ EOB;
 	file_put_contents( '_includes/cmd-list.html', $out );
 });
 
-task( 'default', 'cmd-list' );
+task( 'param-list', function( $app ) {
+	$config_spec = invoke_wp_cli( 'wp --param-dump', $app );
+
+	$out = '';
+
+	foreach ( $config_spec as $key => $details ) {
+		if ( isset( $details['deprecated'] ) )
+			continue;
+
+		if ( false !== $details['file'] ) {
+			$config = "$key: " . htmlspecialchars( $details['file'] );
+		} else {
+			$config = '';
+		}
+
+		if ( false !== $details['runtime'] ) {
+				$flag = ( true === $details['runtime'] )
+					? "--$key/--no-$key"
+					: "--$key" . htmlspecialchars( $details['runtime'] );
+		} else {
+			$flag = '';
+		}
+
+		$default = json_encode( $details['default'] );
+
+		$description = $details['desc'];
+
+		$out .= <<<EOB
+	<tr>
+		<td><code>$config</code></td>
+		<td><code>$flag</code></td>
+		<td><code>$default</code></td>
+		<td>$description</td>
+	</tr>
+
+EOB;
+	}
+
+	file_put_contents( '_includes/param-list.html', $out );
+});
+
+task( 'default', 'cmd-list', 'param-list' );
 
