@@ -150,10 +150,11 @@ Internals:
 
 - added support for `wp-cli.yml` config file
 - bypass full-page caching plugins
-- disabled coloring when not in a TTY
-- [Composer](http://getcomposer.org) compatibility
+- disabled coloring when not in a TTY and added `--color/no-color` global parameters
+- added `--debug` global parameter
 - added `wp --info` utility
 - added unit tests for `wp core` subcommands. props [mwilliamson](http://github.com/mwilliamson)
+- [Composer](http://getcomposer.org) compatibility
 
 ### [0.7](https://github.com/wp-cli/wp-cli/issues?milestone=5&state=closed)
 
