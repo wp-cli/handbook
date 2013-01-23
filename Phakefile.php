@@ -65,9 +65,9 @@ task( 'param-list', function( $app ) {
 		}
 
 		if ( false !== $details['runtime'] ) {
-				$flag = ( true === $details['runtime'] )
-					? "--$key/--no-$key"
-					: "--$key" . htmlspecialchars( $details['runtime'] );
+			$flag = ( true === $details['runtime'] )
+				? "--$key/--no-$key"
+				: "--$key" . htmlspecialchars( $details['runtime'] );
 		} else {
 			$flag = '';
 		}
