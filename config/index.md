@@ -2,7 +2,7 @@
 layout: default
 title: Configuration
 ---
-The following is a list of the currently supported configuration options. These can all be specified by creating a `wp-cli.yml` file in your site's root directory.
+The following is a list of the currently supported configuration options. They can be specified by creating a `wp-cli.yml` file in your site's root directory.
 
 Most can also be passed directly to the `wp` executable.
 
