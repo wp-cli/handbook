@@ -104,10 +104,10 @@ If you have a subdomain installation, it would look like this:
 wp theme status --url=test.example.com
 </pre>
 
-If you're usually working on the same site most of the time, you can put the url of that site in a file called 'wp-cli-blog' in your root WP dir:
+If you're usually working on the same site most of the time, you can create a `wp-cli.yml` file in the root directory:
 
 <pre>
-echo 'test.example.com' > wp-cli-blog
+url: test.example.com
 </pre>
 
 Then, you can call `wp` without the `--url` parameter again:
@@ -126,6 +126,35 @@ You can find more information about adding commands in the [Commands Cookbook](h
 
 Changelog
 =========
+
+### [0.8](https://github.com/wp-cli/wp-cli/issues?milestone=6&state=closed)
+
+Commands:
+
+- added `wp search-replace` command
+- added `wp scaffold` command. props [jmslbam](http://github.com/jmslbam) and [sebastiaandegeus](http://github.com/sebastiaandegeus)
+- added `wp cap` command
+- added `wp user add-role` subcommand
+- added `--role` parameter to `wp user remove-role`
+- added `--ids` parameter to `wp user list`
+- added `--post__in` parameter to `wp export`
+- added `--str` parameter to most `wp db` subcommands
+- removed community commands (`wp total-cache`, `wp super-cache`, `wp sitemap`)
+- made `wp post update` accept multiple IDs
+- fixed incorrect exit code from `wp core is-installed` in some cases
+- fixed `wp user import-csv`. props [danielbachhuber](http://github.com/danielbachhuber)
+- fixed `wp theme update <theme>`
+- fixed `wp plugin update <plugin>` not reactivating the plugin
+
+Internals:
+
+- added support for `wp-cli.yml` config file
+- bypass full-page caching plugins
+- disabled coloring when not in a TTY and added `--color/no-color` global parameters
+- added `--debug` global parameter
+- added `wp --info` utility
+- added unit tests for `wp core` subcommands. props [mwilliamson](http://github.com/mwilliamson)
+- [Composer](http://getcomposer.org) compatibility
 
 ### [0.7](https://github.com/wp-cli/wp-cli/issues?milestone=5&state=closed)
 
