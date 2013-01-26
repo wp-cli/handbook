@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "jaz303/phake": "dev-master"
+    }
+}

@@ -4,3 +4,5 @@ pygments: true
 markdown: kramdown
 url: http://wp-cli.org
 permalink: /blog/:title.html
+exclude:
+  - Phakefile.php
