@@ -15,6 +15,7 @@ function invoke_wp_cli( $cmd, $app ) {
 	return json_decode( $json, true );
 }
 
+desc( 'Generate a list of commands with all accepted arguments on STDOUT.' );
 task( 'syn-list', function( $app ) {
 	function generate_synopsis( $command, $path = '' ) {
 		$full_path = $path . ' ' . $command['name'];
@@ -31,6 +32,7 @@ task( 'syn-list', function( $app ) {
 	generate_synopsis( invoke_wp_cli( 'wp --cmd-dump', $app ) );
 });
 
+desc( 'Update the /commands/ page.' );
 task( 'cmd-list', function( $app ) {
 	$wp = invoke_wp_cli( 'wp --cmd-dump', $app );
 
@@ -49,6 +51,7 @@ EOB;
 	file_put_contents( '_includes/cmd-list.html', $out );
 });
 
+desc( 'Update the /config/ page.' );
 task( 'param-list', function( $app ) {
 	$config_spec = invoke_wp_cli( 'wp --param-dump', $app );
 
@@ -90,5 +93,6 @@ EOB;
 	file_put_contents( '_includes/param-list.html', $out );
 });
 
+desc( 'Build the site.' );
 task( 'default', 'cmd-list', 'param-list' );
 
