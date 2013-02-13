@@ -14,11 +14,11 @@ Requirements
 Installing
 ==========
 
-**Via PEAR:**
+**Via Phar Archive:**
 
 <pre>
-sudo pear channel-discover wp-cli.org/pear
-sudo pear install wpcli/wpcli
+sudo wget http://wp-cli.org/packages/phar/wp-cli.phar -O /usr/bin/wp
+sudo chmod +x /usr/bin/wp
 </pre>
 
 **Via GIT:**
