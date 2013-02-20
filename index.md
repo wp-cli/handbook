@@ -17,8 +17,9 @@ Installing
 **Via Phar Archive:**
 
 <pre>
-sudo wget http://wp-cli.org/packages/phar/wp-cli.phar -O /usr/bin/wp
-sudo chmod +x /usr/bin/wp
+sudo -s
+curl http://wp-cli.org/packages/phar/wp-cli.phar > /usr/bin/wp
+chmod +x /usr/bin/wp
 </pre>
 
 **Via GIT:**
