@@ -46,7 +46,7 @@ Then, create an environment variable called `WP_CLI_PHP` with the path found by 
 In a UNIX environment, you would do this by adding the following line to your `.bashrc` file:
 
 <pre>
-WP_CLI_PHP=/path/to/php-binary
+export WP_CLI_PHP=/path/to/php-binary
 </pre>
 
 Using
