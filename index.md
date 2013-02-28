@@ -25,7 +25,7 @@ chmod +x /usr/bin/wp
 **Via GIT:**
 
 <pre>
-git clone --recursive git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
+git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
 cd ~/git/wp-cli
 sudo utils/dev-build
 </pre>
