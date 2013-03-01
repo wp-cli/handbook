@@ -10,7 +10,6 @@ Requirements
 
 * PHP >= 5.3
 * WordPress >= 3.3
-* Either suhosin disabled or suhosin.executor.include.whitelist="phar" in your /etc/php5/conf.d/suhosin.ini or php.ini file
 
 Installing
 ==========
@@ -22,6 +21,8 @@ sudo -s
 curl http://wp-cli.org/packages/phar/wp-cli.phar > /usr/bin/wp
 chmod +x /usr/bin/wp
 </pre>
+
+If you have Suhosin enabled, make sure to set `suhosin.executor.include.whitelist="phar"` in your `suhosin.ini` or `php.ini` file.
 
 **Via GIT:**
 
