@@ -10,6 +10,7 @@ Requirements
 
 * PHP >= 5.3
 * WordPress >= 3.3
+* Either suhosin disabled or suhosin.executor.include.whitelist="phar" in your /etc/php5/conf.d/suhosin.ini or php.ini file
 
 Installing
 ==========
