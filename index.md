@@ -34,6 +34,14 @@ sudo utils/dev-build
 
 You can replace `~/git/wp-cli` with whatever you want.
 
+**Without sudo:**
+
+```
+git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
+cd ~/git/wp-cli
+./utils/local-build
+```
+
 MAMP, XAMP, etc.
 -----------
 
