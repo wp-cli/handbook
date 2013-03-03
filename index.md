@@ -16,21 +16,21 @@ Installing
 
 **Via Phar Archive:**
 
-<pre>
+```
 sudo -s
 curl http://wp-cli.org/packages/phar/wp-cli.phar > /usr/bin/wp
 chmod +x /usr/bin/wp
-</pre>
+```
 
 If you have Suhosin enabled, make sure to set `suhosin.executor.include.whitelist="phar"` in your `suhosin.ini` or `php.ini` file.
 
 **Via GIT:**
 
-<pre>
+```
 git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
 cd ~/git/wp-cli
 sudo utils/dev-build
-</pre>
+```
 
 You can replace `~/git/wp-cli` with whatever you want.
 
@@ -47,30 +47,30 @@ MAMP, XAMP, etc.
 
 If the `php` command is not available, you can try finding an appropriate binary:
 
-<pre>
+```
 ./utils/find-php
-</pre>
+```
 
 Then, create an environment variable called `WP_CLI_PHP` with the path found by `find-php`.
 
 In a UNIX environment, you would do this by adding the following line to your `.bashrc` file:
 
-<pre>
+```
 export WP_CLI_PHP=/path/to/php-binary
-</pre>
+```
 
 Using
 =====
 
 Go into a WordPress root folder:
 
-<pre>
+```
 cd /var/www/wp/
-</pre>
+```
 
 Typing `wp` should show you output similar to this:
 
-<pre>
+```
 Available commands:
     wp blog create|delete
     wp cache add|decr|delete|flush|get|incr|replace|set|type
@@ -81,51 +81,51 @@ Available commands:
     ...
 
 See 'wp help &lt;command&gt;' for more information on a specific command.
-</pre>
+```
 
 Let's try to install the Hello Dolly plugin from wordpress.org:
 
-<pre>
+```
 wp plugin install hello-dolly
-</pre>
+```
 
 Output:
 
-<pre>
+```
 Installing Hello Dolly (1.5)
 
 Downloading install package from http://downloads.WordPress.org/plugin/hello-dolly.1.5.zip ...
 Unpacking the package ...
 Installing the plugin ...
 Plugin installed successfully.
-</pre>
+```
 
 Multisite
 ---------
 
 On a multisite installation, you need to pass a `--url` parameter, so that wp-cli knows which site it's supposed to be operating on:
 
-<pre>
+```
 wp theme status --url=localhost/wp/test
-</pre>
+```
 
 If you have a subdomain installation, it would look like this:
 
-<pre>
+```
 wp theme status --url=test.example.com
-</pre>
+```
 
 If you're usually working on the same site most of the time, you can create a `wp-cli.yml` file in the root directory:
 
-<pre>
+```
 url: test.example.com
-</pre>
+```
 
 Then, you can call `wp` without the `--url` parameter again:
 
-<pre>
+```
 wp theme status
-</pre>
+```
 
 Adding commands
 ===============
