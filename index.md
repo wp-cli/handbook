@@ -16,6 +16,8 @@ Installing
 
 **Via Phar Archive:**
 
+You can download WP-CLI packaged as a [single file](http://wp-cli.org/packages/phar/wp-cli.phar) ([md5](http://wp-cli.org/packages/phar/wp-cli.phar.md5)):
+
 ```
 sudo -s
 curl http://wp-cli.org/packages/phar/wp-cli.phar > /usr/bin/wp
@@ -34,7 +36,7 @@ sudo utils/dev-build
 
 You can replace `~/git/wp-cli` with whatever you want.
 
-**Without sudo:**
+**Via GIT (without sudo):**
 
 ```
 git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
