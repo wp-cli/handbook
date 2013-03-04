@@ -34,8 +34,11 @@ You can check out the [sample-plugin][2] repo to see what the generated plugin l
 
 Run `wp help scaffold plugin-tests` for more info.
 
+A shout-out to the people that contributed to [benbalter/wordpress-plugin-tests][6] is in order.
+
 [1]: http://about.travis-ci.org
 [2]: https://github.com/wp-cli/sample-plugin
 [3]: http://wordpress.tv/2011/08/20/nikolay-bachiyski-unit-testing-will-change-your-life/
 [4]: http://www.phpunit.de/manual/current/en/automating-tests.html
 [5]: http://make.wordpress.org/core/handbook/automated-testing/
+[6]: https://github.com/benbalter/wordpress-plugin-tests/contributors
