@@ -179,6 +179,9 @@ table {
 	margin: 0 0 20px 0;
 }
 
+th, td {
+	vertical-align: top;
+}
 th {
 	text-align: left;
 	border-bottom: 1px dashed #b5e853;
