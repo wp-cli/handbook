@@ -92,6 +92,7 @@ footer {
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
 }
+
 section img {
 	max-width: 100%
 }
@@ -182,6 +183,7 @@ table {
 th, td {
 	vertical-align: top;
 }
+
 th {
 	text-align: left;
 	border-bottom: 1px dashed #b5e853;
