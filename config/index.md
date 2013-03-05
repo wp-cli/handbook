@@ -16,10 +16,10 @@ The order of precedence is:
 <table>
 	<thead>
 	<tr>
-		<td>Config</td>
-		<td>Flag</td>
-		<td>Default</td>
-		<td>Description</td>
+		<th>Config</th>
+		<th>Flag</th>
+		<th>Default</th>
+		<th>Description</th>
 	</tr>
 	</thead>
 	<tbody>
