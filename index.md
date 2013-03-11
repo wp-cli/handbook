@@ -41,8 +41,18 @@ You can replace `~/git/wp-cli` with whatever you want.
 ```
 git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
 cd ~/git/wp-cli
-./utils/local-build
+curl -sS https://getcomposer.org/installer | php
+php composer.phar install
 ```
+
+Now, set up the `wp` alias:
+
+```bash
+alias wp='~/git/wp-cli/bin/wp'
+source ~/git/wp-cli/utils/wp-completion.bash
+```
+
+Add the above two lines to your `.bashrc` or `.bash_profile` file to have it set up automatically when you log in.
 
 MAMP, XAMP, etc.
 -----------
