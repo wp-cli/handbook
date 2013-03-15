@@ -286,4 +286,4 @@ Contributors
 ------------
 
 - [Contributor list](https://github.com/wp-cli/wp-cli/contributors)
-- [Contributor guide](https://github.com/wp-cli/wp-cli/wiki/Commands-Cookbook)
+- [Contributor guide](https://github.com/wp-cli/wp-cli/blob/master/CONTRIBUTING.md)
