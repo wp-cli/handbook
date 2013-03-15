@@ -7,11 +7,11 @@ title: Blog
 <article>
 	<div class="post-header">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<span>by <a href="http://github.com/{{post.author}}">{{post.author}}</a>, on {{ post.date | date_to_string }}</span>
+		<span>by <a href="http://github.com/{{post.author}}">{{ post.author }}</a>, on {{ post.date | date_to_string }}</span>
 	</div>
 
-	<p class="post-excerpt">{{ post.content | strip_html | truncatewords: 55 }}</p>
-
-	<p><a href="{{ post.url }}">Read more...</a></p>
+	<div class="post-content">
+	{{ post.content }}
+	</div>
 </article>
 {% endfor %}
