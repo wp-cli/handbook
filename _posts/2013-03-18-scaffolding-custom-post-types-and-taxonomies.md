@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaffolding custom post types and taxonomies
+title: Scaffolding Custom Post Types and Taxonomies
 author: jmslbam
 ---
 
@@ -28,13 +28,13 @@ That's why there a these two flags:
 ```bash
 wp scaffold post-type zombie --theme
 ```
-`–theme` stores the generated code within your current active theme under a `/post-types` directory and names a file name `zombie.php`
+`--theme` stores the generated code within your current active theme under a `/post-types` directory and names a file name `zombie.php`
 
 ```bash
 wp scaffold post-type zombie --plugin=pluginname
 ```
 
-`–plugin=plugin-dir-name` stores the generated code within the given plugin name.  
+`--plugin=plugin-dir-name` stores the generated code within the given plugin name.  
  
 No flag will output the code to you terminal (STDOUT) so you could write it too your file of choice.
 
