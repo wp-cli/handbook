@@ -4,5 +4,6 @@ pygments: true
 markdown: redcarpet
 url: http://wp-cli.org
 permalink: /blog/:title.html
+paginate: 10
 exclude:
   - Phakefile.php

@@ -74,6 +74,8 @@ header h2 {
 }
 
 footer {
+	clear: both;
+	display: block;
 	text-align: center;
 	font-size: 10px;
 	margin: 20px 10px 10px 10px;
@@ -279,3 +281,17 @@ article + article {
 	color: #666;
 }
 
+/* Pagination */
+
+.pagination {
+	display: block;
+	overflow: hidden;
+}
+
+.pagination .prev {
+	float: left;
+}
+
+.pagination .next {
+	float: right;
+}
