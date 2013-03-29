@@ -27,7 +27,7 @@ If you have Suhosin enabled, make sure to set `suhosin.executor.include.whitelis
 ```
 git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
 cd ~/git/wp-cli
-sudo utils/dev-build
+./utils/dev-build
 ```
 
 You can replace `~/git/wp-cli` with whatever you want.
