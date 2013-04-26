@@ -10,7 +10,7 @@ All WP-CLI commands are guaranteed to work with **WordPress 3.4** or later. Some
 Installing
 ==========
 
-**Via Phar Archive:**
+### Easy install (Phar archive)
 
 You can download WP-CLI packaged as a [single file](http://wp-cli.org/packages/phar/wp-cli.phar) ([md5](http://wp-cli.org/packages/phar/wp-cli.phar.md5)):
 
@@ -22,17 +22,19 @@ chmod +x /usr/bin/wp
 
 If you have Suhosin enabled, make sure to set `suhosin.executor.include.whitelist="phar"` in your `suhosin.ini` or `php.ini` file.
 
-**Via GIT:**
+### Global install (requires sudo)
+
+Install WP-CLI for all users of the system:
 
 ```
-git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
-cd ~/git/wp-cli
+git clone git://github.com/wp-cli/wp-cli.git /usr/share/wp-cli
+cd /usr/share/wp-cli
 ./utils/dev-build
 ```
 
-You can replace `~/git/wp-cli` with whatever you want.
+### Local install
 
-**Via GIT (without sudo):**
+Install WP-CLI only for yourself:
 
 ```
 git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
@@ -50,10 +52,9 @@ source ~/git/wp-cli/utils/wp-completion.bash
 
 Add the above two lines to your `.bashrc` or `.bash_profile` file to have it set up automatically when you log in.
 
-MAMP, XAMP, etc.
------------
+### MAMP, XAMP, etc.
 
-If the `php` command is not available, you can try finding an appropriate binary:
+If the `php` command is not available in your PATH, you can try finding an appropriate binary:
 
 ```
 ./utils/find-php
