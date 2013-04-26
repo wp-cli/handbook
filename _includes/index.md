@@ -57,15 +57,7 @@ Add the above two lines to your `.bashrc` or `.bash_profile` file to have it set
 If the `php` command is not available in your PATH, you can try finding an appropriate binary:
 
 ```
-./utils/find-php
-```
-
-Then, create an environment variable called `WP_CLI_PHP` with the path found by `find-php`.
-
-In a UNIX environment, you would do this by adding the following line to your `.bashrc` file:
-
-```
-export WP_CLI_PHP=/path/to/php-binary
+ln -s $(./utils/find-php) /usr/bin/php
 ```
 
 Using
