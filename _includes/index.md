@@ -1,4 +1,4 @@
-**wp-cli** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs, create posts and much more.
+**WP-CLI** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs, create posts and much more.
 
 Minimum Requirements
 ==========
@@ -10,54 +10,43 @@ All WP-CLI commands are guaranteed to work with **WordPress 3.4** or later. Some
 Installing
 ==========
 
-### Easy install (Phar archive)
-
-You can download WP-CLI packaged as a [single file](http://wp-cli.org/packages/phar/wp-cli.phar) ([md5](http://wp-cli.org/packages/phar/wp-cli.phar.md5)):
+Just execute the following command:
 
 ```
-sudo -s
-curl http://wp-cli.org/packages/phar/wp-cli.phar > /usr/bin/wp
-chmod +x /usr/bin/wp
+curl http://wp-cli.org/installer.sh | sh
 ```
 
-If you have Suhosin enabled, make sure to set `suhosin.executor.include.whitelist="phar"` in your `suhosin.ini` or `php.ini` file.
+This will allow you to run `~/.composer/bin/wp`.
 
-### Global install (requires sudo)
-
-Install WP-CLI for all users of the system:
+If you get a `using non-default PHP CLI:` message, you should save that path in your `.bash_profile` file:
 
 ```
-git clone git://github.com/wp-cli/wp-cli.git /usr/share/wp-cli
-cd /usr/share/wp-cli
-./utils/dev-build
+export WP_CLI_PHP=/path/found/during/install
 ```
 
-### Local install
-
-Install WP-CLI only for yourself:
+If you want to be able to type just `wp`, add the following lines to your `.bash_profile` file:
 
 ```
-git clone git://github.com/wp-cli/wp-cli.git ~/git/wp-cli
-cd ~/git/wp-cli
-curl -sS https://getcomposer.org/installer | php
-php composer.phar install
+# Composer scripts
+PATH=$HOME/.composer/bin:$PATH
+
+# WP-CLI completions
+source $HOME/.composer/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 ```
 
-Now, set up the `wp` alias:
-
-```bash
-alias wp='~/git/wp-cli/bin/wp'
-source ~/git/wp-cli/utils/wp-completion.bash
-```
-
-Add the above two lines to your `.bashrc` or `.bash_profile` file to have it set up automatically when you log in.
-
-### MAMP, XAMP, etc.
-
-If the `php` command is not available in your PATH, you can try finding an appropriate binary:
+Finally, reload the file:
 
 ```
-ln -s $(./utils/find-php) /usr/bin/php
+source ~/.bash_profile
+```
+
+### Updating
+
+If you installed WP-CLI using the method above, you can also easily update it:
+
+```
+cd ~/.composer
+php composer.phar update
 ```
 
 Using
