@@ -3,7 +3,7 @@
 Minimum Requirements
 ==========
 
-You'll need **PHP 5.3** or later.
+You'll need **PHP 5.3.2** or later.
 
 All WP-CLI commands are guaranteed to work with **WordPress 3.4** or later. Some commands, like `wp core update`, might work with older versions as well.
 
