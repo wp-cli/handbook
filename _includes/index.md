@@ -18,6 +18,12 @@ curl http://wp-cli.org/installer.sh | sh
 
 This will allow you to run `~/.composer/bin/wp`.
 
+If you get a `using non-default PHP CLI:` message, you should save that path in your `.bash_profile` file:
+
+```
+export WP_CLI_PHP=/path/found/during/install
+```
+
 If you want to be able to type just `wp`, add the following lines to your `.bash_profile` file:
 
 ```
