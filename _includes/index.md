@@ -13,7 +13,7 @@ Installing
 Just execute the following command:
 
 ```
-curl http://wp-cli.org/installer.sh | sh
+curl http://wp-cli.org/installer.sh | bash
 ```
 
 This will allow you to run `~/.composer/bin/wp`.
