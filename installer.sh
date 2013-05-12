@@ -34,9 +34,13 @@ COMPOSER_DIR=$HOME/.composer
 where=$(which wp)
 if [ $? -eq 0 ]; then
 	if [ "$COMPOSER_DIR/bin/wp" != "$where" ]; then
-		echo "the \`wp\` command is already available elsewhere: $where" 1>&2
-		echo "installation aborted" 1>&2
-		exit 1
+		echo "warning: the \`wp\` command is already available elsewhere: $where" 1>&2
+		read -p "this installation will not overwrite it. continue? [y/n] " -n 1 -r
+		echo
+		if [[ ! $REPLY =~ ^[Yy]$ ]]
+		then
+			exit 1
+		fi
 	fi
 fi
 
