@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 find_php() {
 	AMP_PATHS=<<EOB
 /Applications/MAMP/bin/php/php5.3*/bin/php
@@ -30,6 +28,20 @@ EOB
 	exit 1
 }
 
+COMPOSER_DIR=$HOME/.composer
+
+# Abort install if wp-cli is already installed via ./utils/dev-build
+where=$(which wp)
+if [ $? -eq 0 ]; then
+	if [ "$COMPOSER_DIR/bin/wp" != "$where" ]; then
+		echo "the \`wp\` command is already available elsewhere: $where" 1>&2
+		echo "installation aborted" 1>&2
+		exit 1
+	fi
+fi
+
+set -e
+
 # Find a PHP binary
 PHP=`find_php`
 if [ $? -eq 0 ]; then
@@ -40,8 +52,8 @@ else
 	read -p "path to PHP CLI: " PHP
 fi
 
-mkdir -p ~/.composer
-cd ~/.composer
+mkdir -p $COMPOSER_DIR
+cd $COMPOSER_DIR
 
 # install Composer
 if [ ! -x composer.phar ]; then
