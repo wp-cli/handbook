@@ -1,3 +1,7 @@
+---
+layout: default
+title: Command line interface for WordPress
+---
 **WP-CLI** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs, create posts and much more.
 
 Minimum Requirements
