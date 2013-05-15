@@ -25,7 +25,7 @@ EOB
 		}
 	done
 
-	exit 1
+	return 1
 }
 
 COMPOSER_DIR=$HOME/.composer
@@ -44,8 +44,6 @@ if [ $? -eq 0 ]; then
 	fi
 fi
 
-set -e
-
 # Find a PHP binary
 PHP=`find_php`
 if [ $? -eq 0 ]; then
@@ -53,8 +51,10 @@ if [ $? -eq 0 ]; then
 		echo "using non-default PHP CLI: $php"
 	fi
 else
-	read -p "path to PHP CLI: " PHP
+	read -p "path to PHP binary: " PHP
 fi
+
+set -e
 
 mkdir -p $COMPOSER_DIR
 cd $COMPOSER_DIR
