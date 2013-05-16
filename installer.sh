@@ -21,7 +21,9 @@ EOB
 	which php || which php-cli || return 1
 }
 
-COMPOSER_DIR=$HOME/.composer
+if [ -z $COMPOSER_DIR ]; then
+	COMPOSER_DIR=$HOME/.composer
+fi
 
 # Abort install if wp-cli is already installed via ./utils/dev-build
 where=$(which wp 2>/dev/null)
