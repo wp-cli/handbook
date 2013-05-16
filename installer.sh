@@ -24,7 +24,7 @@ EOB
 COMPOSER_DIR=$HOME/.composer
 
 # Abort install if wp-cli is already installed via ./utils/dev-build
-where=$(which wp)
+where=$(which wp 2>/dev/null)
 if [ $? -eq 0 ]; then
 	if [ "$COMPOSER_DIR/bin/wp" != "$where" ]; then
 		echo "warning: the \`wp\` command is already available elsewhere: $where" 1>&2
