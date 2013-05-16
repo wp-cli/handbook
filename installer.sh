@@ -18,9 +18,7 @@ EOB
 		fi
 	done
 
-	which php || which php-cli
-
-	return 1
+	which php || which php-cli || return 1
 }
 
 COMPOSER_DIR=$HOME/.composer
