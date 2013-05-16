@@ -101,6 +101,6 @@ To test, run:
 
 EOB
 
-if [ $WP_CLI_PHP != $(which php) ]; then
+if [ "$WP_CLI_PHP" != "$(which php)" ]; then
 	echo "using non-default PHP binary: $WP_CLI_PHP"
 fi
