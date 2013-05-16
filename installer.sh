@@ -18,12 +18,7 @@ EOB
 		fi
 	done
 
-	for cmd in php php-cli; do
-		command -v $cmd > /dev/null && {
-			echo $cmd
-			exit
-		}
-	done
+	which php || which php-cli
 
 	return 1
 }
@@ -45,23 +40,24 @@ if [ $? -eq 0 ]; then
 fi
 
 # Find a PHP binary
-PHP=`find_php`
-if [ $? -eq 0 ]; then
-	if [ "$PHP" != 'php' ]; then
-		echo "using non-default PHP CLI: $php"
+if [ -z $WP_CLI_PHP ]; then
+	WP_CLI_PHP=`find_php`
+	if [ $? -gt 0 ]; then
+		read -p "path to PHP binary: " WP_CLI_PHP
 	fi
 else
-	read -p "path to PHP binary: " PHP
+	command -v $WP_CLI_PHP > /dev/null || {
+		echo "invalid PHP binary: $WP_CLI_PHP" 1>&2
+		exit 1
+	}
 fi
-
-set -e
 
 mkdir -p $COMPOSER_DIR
 cd $COMPOSER_DIR
 
 # install Composer
 if [ ! -x composer.phar ]; then
-	curl -sS https://getcomposer.org/installer | $PHP
+	curl -sS https://getcomposer.org/installer | $WP_CLI_PHP
 fi
 
 # set up global composer.json file
@@ -79,13 +75,21 @@ if [ ! -f composer.json ]; then
 EOB
 fi
 
-COMPOSER="$PHP composer.phar"
+COMPOSER="$WP_CLI_PHP composer.phar" 
 
-# install wp-cli
-$COMPOSER require wp-cli/wp-cli=dev-master
+command -v bin/wp > /dev/null || {
+	echo
+	echo "Installing the main WP-CLI package..."
+	echo "-------------------------------------"
+	$COMPOSER require wp-cli/wp-cli=dev-master
+}
 
-# try installing Boris
-$COMPOSER require d11wtq/boris=dev-master || true
+command -v bin/boris > /dev/null || {
+	echo
+	echo "Installing the Boris package..."
+	echo "-------------------------------"
+	$COMPOSER --no-ansi require d11wtq/boris=dev-master || true
+}
 
 cat <<EOB
 
@@ -94,4 +98,9 @@ WP-CLI files have been succesfully installed.
 To test, run:
 
 	~/.composer/bin/wp --info
+
 EOB
+
+if [ $WP_CLI_PHP != $(which php) ]; then
+	echo "using non-default PHP binary: $WP_CLI_PHP"
+fi
