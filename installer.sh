@@ -46,11 +46,7 @@ fi
 
 # Find a PHP binary
 PHP=`find_php`
-if [ $? -eq 0 ]; then
-	if [ "$PHP" != 'php' ]; then
-		echo "using non-default PHP CLI: $php"
-	fi
-else
+if [ $? -gt 0 ]; then
 	read -p "path to PHP binary: " PHP
 fi
 
@@ -95,3 +91,7 @@ To test, run:
 
 	~/.composer/bin/wp --info
 EOB
+
+if [ "$PHP" != 'php' ]; then
+	echo "using non-default PHP CLI: $PHP"
+fi
