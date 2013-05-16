@@ -77,11 +77,19 @@ fi
 
 COMPOSER="$WP_CLI_PHP composer.phar" 
 
-# install wp-cli
-$COMPOSER require wp-cli/wp-cli=dev-master
+command -v bin/wp > /dev/null || {
+	echo
+	echo "Installing the main WP-CLI package..."
+	echo "-------------------------------------"
+	$COMPOSER require wp-cli/wp-cli=dev-master
+}
 
-# try installing Boris
-$COMPOSER require d11wtq/boris=dev-master || true
+command -v bin/boris > /dev/null || {
+	echo
+	echo "Installing the Boris package..."
+	echo "-------------------------------"
+	$COMPOSER --no-ansi require d11wtq/boris=dev-master || true
+}
 
 cat <<EOB
 
