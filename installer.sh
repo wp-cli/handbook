@@ -21,14 +21,14 @@ EOB
 	which php || which php-cli || return 1
 }
 
-if [ -z $COMPOSER_DIR ]; then
-	COMPOSER_DIR=$HOME/.composer
+if [ -z $INSTALL_DIR ]; then
+	INSTALL_DIR=$HOME/.composer
 fi
 
 # Abort install if wp-cli is already installed via ./utils/dev-build
 where=$(which wp 2>/dev/null)
 if [ $? -eq 0 ]; then
-	if [ "$COMPOSER_DIR/bin/wp" != "$where" ]; then
+	if [ "$INSTALL_DIR/bin/wp" != "$where" ]; then
 		echo "warning: the \`wp\` command is already available elsewhere: $where" 1>&2
 		read -p "this installation will not overwrite it. continue? [y/n] " -n 1 -r
 		echo
@@ -52,8 +52,8 @@ else
 	}
 fi
 
-mkdir -p $COMPOSER_DIR
-cd $COMPOSER_DIR
+mkdir -p $INSTALL_DIR
+cd $INSTALL_DIR
 
 # install Composer
 if [ ! -x composer.phar ]; then
@@ -97,7 +97,7 @@ WP-CLI files have been succesfully installed.
 
 To test, run:
 
-	~/.composer/bin/wp --info
+	$INSTALL_DIR/bin/wp --info
 
 EOB
 
