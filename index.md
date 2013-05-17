@@ -53,6 +53,8 @@ cd ~/.composer
 php composer.phar update
 ```
 
+Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
+
 Using
 =====
 
