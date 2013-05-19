@@ -25,6 +25,10 @@ if [ -z $INSTALL_DIR ]; then
 	INSTALL_DIR=$HOME/.composer
 fi
 
+if [ -z $VERSION ]; then
+	VERSION='dev-master'
+fi
+
 # Abort install if wp-cli is already installed via ./utils/dev-build
 where=$(which wp 2>/dev/null)
 if [ $? -eq 0 ]; then
@@ -81,7 +85,7 @@ command -v bin/wp > /dev/null || {
 	echo
 	echo "Installing the main WP-CLI package..."
 	echo "-------------------------------------"
-	$COMPOSER require wp-cli/wp-cli=dev-master
+	$COMPOSER require wp-cli/wp-cli="$VERSION"
 }
 
 command -v bin/boris > /dev/null || {
