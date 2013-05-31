@@ -29,20 +29,6 @@ if [ -z $VERSION ]; then
 	VERSION='dev-master'
 fi
 
-# Abort install if wp-cli is already installed via ./utils/dev-build
-where=$(which wp 2>/dev/null)
-if [ $? -eq 0 ]; then
-	if [ "$INSTALL_DIR/bin/wp" != "$where" ]; then
-		echo "warning: the \`wp\` command is already available elsewhere: $where" 1>&2
-		read -p "this installation will not overwrite it. continue? [y/n] " -n 1 -r
-		echo
-		if [[ ! $REPLY =~ ^[Yy]$ ]]
-		then
-			exit 1
-		fi
-	fi
-fi
-
 # Find a PHP binary
 if [ -z $WP_CLI_PHP ]; then
 	WP_CLI_PHP=`find_php`
