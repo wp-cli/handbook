@@ -65,7 +65,7 @@ if [ ! -f composer.json ]; then
 EOB
 fi
 
-COMPOSER="$WP_CLI_PHP composer.phar" 
+COMPOSER="$WP_CLI_PHP composer.phar --prefer-source" 
 
 command -v bin/wp > /dev/null || {
 	echo
