@@ -21,16 +21,16 @@ EOB
 	which php || which php-cli || return 1
 }
 
-if [ -z $INSTALL_DIR ]; then
+if [ -z "$INSTALL_DIR" ]; then
 	INSTALL_DIR=$HOME/.composer
 fi
 
-if [ -z $VERSION ]; then
+if [ -z "$VERSION" ]; then
 	VERSION='dev-master'
 fi
 
 # Find a PHP binary
-if [ -z $WP_CLI_PHP ]; then
+if [ -z "$WP_CLI_PHP" ]; then
 	WP_CLI_PHP=`find_php`
 	if [ $? -gt 0 ]; then
 		read -p "path to PHP binary: " WP_CLI_PHP
