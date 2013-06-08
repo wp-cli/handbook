@@ -87,8 +87,7 @@ footer {
 	margin: 0;
 }
 
-/* Main Content
-*/
+/* Main Content */
 
 #main_content {
 	width: 100%;
@@ -119,6 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_content h3 {
 	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: -5px;
 }
 
 #main_content h4 {
@@ -161,6 +162,11 @@ blockquote {
 	color: #aaa;
 	padding-left: 10px;
 	border-left: 1px dotted #666;
+}
+
+code {
+	font-family: monospace;
+	font-size: 17px;
 }
 
 pre {
