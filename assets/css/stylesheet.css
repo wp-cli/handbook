@@ -184,6 +184,10 @@ pre {
 	overflow-y: hidden;
 }
 
+pre code {
+	background-color: inherit;
+}
+
 table {
 	width: 100%;
 	margin: 0 0 20px 0;
