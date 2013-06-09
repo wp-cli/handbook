@@ -26,7 +26,7 @@ if [ -z "$INSTALL_DIR" ]; then
 fi
 
 if [ -z "$VERSION" ]; then
-	VERSION='dev-master'
+	VERSION='@stable'
 fi
 
 # Find a PHP binary
