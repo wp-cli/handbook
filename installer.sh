@@ -88,9 +88,13 @@ WP-CLI files have been succesfully installed.
 To test, run:
 
 	$INSTALL_DIR/bin/wp --info
-
 EOB
 
 if [ "$WP_CLI_PHP" != "$(which php)" ]; then
-	echo "using non-default PHP binary: $WP_CLI_PHP"
+	cat <<EOB
+
+Make sure you have the following line in your .bashrc file:
+
+	export WP_CLI_PHP=$WP_CLI_PHP
+EOB
 fi
