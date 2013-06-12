@@ -48,6 +48,9 @@ cd $INSTALL_DIR
 # install Composer
 if [ ! -x composer.phar ]; then
 	curl -sS https://getcomposer.org/installer | $WP_CLI_PHP
+	if [ $? -gt 0 ]; then
+		exit 1
+	fi
 fi
 
 # set up global composer.json file
