@@ -79,9 +79,13 @@ command -v bin/wp > /dev/null || {
 
 command -v bin/boris > /dev/null || {
 	echo
-	echo "Installing the Boris package..."
-	echo "-------------------------------"
-	$COMPOSER --no-ansi require d11wtq/boris=dev-master || true
+	printf "Trying to install the optional Boris package... "
+	$COMPOSER --quiet require d11wtq/boris=dev-master 
+	if [ $? -gt 0 ]; then
+		echo "failed."
+	else
+		echo "done."
+	fi
 }
 
 cat <<EOB
