@@ -42,8 +42,8 @@ else
 	}
 fi
 
-mkdir -p $INSTALL_DIR
-cd $INSTALL_DIR
+mkdir -p "$INSTALL_DIR"
+cd "$INSTALL_DIR"
 
 # install Composer
 if [ ! -x composer.phar ]; then
