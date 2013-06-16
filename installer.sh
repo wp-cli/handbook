@@ -80,7 +80,7 @@ command -v bin/wp > /dev/null || {
 command -v bin/boris > /dev/null || {
 	echo
 	printf "Trying to install the optional Boris package... "
-	$COMPOSER --quiet require d11wtq/boris=dev-master 
+	$COMPOSER --quiet require 'd11wtq/boris=@stable'
 	if [ $? -gt 0 ]; then
 		echo "failed."
 	else
