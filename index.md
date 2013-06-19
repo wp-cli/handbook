@@ -27,7 +27,8 @@ If you want to be able to type just `wp`, add the following lines to your `.bash
 PATH=$HOME/.composer/bin:$PATH
 ```
 
-<h3 id="autocomplete">Tab completions</h3>
+<a name="autocomplete"></a>
+<h3 id="complete">Tab completions</h3>
 
 WP-CLI comes with a tab completion script for command, subcommand and flag names.
 
