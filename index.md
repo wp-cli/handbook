@@ -4,15 +4,13 @@ title: Command line interface for WordPress
 ---
 **WP-CLI** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs, create posts and much more.
 
-Minimum Requirements
-==========
+<h2 id="requirements">Minimum Requirements</h2>
 
 You'll need **PHP 5.3.2** or later.
 
 All WP-CLI commands are guaranteed to work with **WordPress 3.4** or later. Some commands, like `wp core update`, might work with older versions as well.
 
-Installing
-==========
+<h2 id="install">Installing</h2>
 
 Just execute the following command:
 
@@ -29,7 +27,8 @@ If you want to be able to type just `wp`, add the following lines to your `.bash
 PATH=$HOME/.composer/bin:$PATH
 ```
 
-### Autocomplete
+<h3 id="autocomplete">Autocomplete</h3>
+
 WP-CLI comes with an autocomplete script for commands and subcommands.
 
 If you're using Bash, add the following lines to `~/.bash_profile`:
@@ -60,7 +59,7 @@ And re-load the file:
 source ~/.zprofile
 ```
 
-### Updating
+<h3 id="update">Updating</h3>
 
 If you installed WP-CLI using the method above, you can also easily update it:
 
@@ -71,8 +70,7 @@ php composer.phar update
 
 Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
 
-Using
-=====
+<h2 id="usage">Using</h2>
 
 Go into a WordPress root folder:
 
@@ -112,8 +110,7 @@ Installing the plugin ...
 Plugin installed successfully.
 ```
 
-Multisite
----------
+<h3 id="multisite">Multisite</h3>
 
 On a multisite installation, you need to pass a `--url` parameter, so that wp-cli knows which site it's supposed to be operating on:
 
@@ -139,16 +136,14 @@ Then, you can call `wp` without the `--url` parameter again:
 wp theme status
 ```
 
-Adding commands
-===============
+<h2>Adding commands</h2>
 
 Adding commands to wp-cli is very easy. You can even add them from within your own plugin.
 You can find more information about adding commands in the [Commands Cookbook](https://github.com/wp-cli/wp-cli/wiki/Commands-Cookbook) on our Wiki.
 
 **Please share the commands you make, issue a pull request to get them included in wp-cli by default.**
 
-Contributors
-------------
+<h3>Contributors</h3>
 
 - [Contributor list](https://github.com/wp-cli/wp-cli/contributors)
 - [Contributor guide](https://github.com/wp-cli/wp-cli/blob/master/CONTRIBUTING.md)
