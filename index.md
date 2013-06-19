@@ -29,17 +29,35 @@ If you want to be able to type just `wp`, add the following lines to your `.bash
 PATH=$HOME/.composer/bin:$PATH
 ```
 
-If you're using Bash (patches welcome for [ZSH support](https://github.com/wp-cli/wp-cli/issues/518)), you can enable autocomplete for WP-CLI commands and subcommands:
+### Autocomplete
+WP-CLI comes with an autocomplete script for commands and subcommands.
+
+If you're using Bash, add the following lines to `~/.bash_profile`:
 
 ```
 # WP-CLI Bash completions
 source $HOME/.composer/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 ```
 
-Finally, reload the file:
+And re-load the file:
 
 ```
 source ~/.bash_profile
+```
+
+If you're using Zsh, add the following lines to `~/.zprofile`:
+
+```
+# WP-CLI Bash completions
+autoload bashcompinit
+bashcompinit
+source $HOME/.composer/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+```
+
+And re-load the file:
+
+```
+source ~/.zprofile
 ```
 
 ### Updating
