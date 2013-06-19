@@ -31,7 +31,7 @@ PATH=$HOME/.composer/bin:$PATH
 
 WP-CLI comes with an autocomplete script for commands and subcommands.
 
-If you're using Bash, add the following lines to `~/.bash_profile`:
+If you're using **Bash**, add the following lines to `~/.bash_profile`:
 
 ```
 # WP-CLI Bash completions
@@ -44,7 +44,7 @@ And re-load the file:
 source ~/.bash_profile
 ```
 
-If you're using Zsh, add the following lines to `~/.zprofile`:
+If you're using **Zsh**, add the following lines to `~/.zprofile`:
 
 ```
 # WP-CLI Bash completions
