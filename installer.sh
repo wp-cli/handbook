@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
 
 find_php() {
-	AMP_PATHS=<<EOB
-/Applications/MAMP/bin/php/php5.3*/bin/php
-/Applications/MAMP/bin/php5*/bin/php
-/Applications/MAMP/bin/php/php5.[34]*/bin/php
-/Applications/xampp/xamppfiles/bin/php;
+	read -r -d '' AMP_PATHS <<EOB
+/Applications/MAMP/bin/php/*/bin/php
+/Applications/xampp/xamppfiles/bin/php
 /opt/lampp/bin/php
 EOB
 
 	# Special case for *AMP installers, since they normally don't set themselves
 	# as the default cli php out of the box.
 	for amp_php in $AMP_PATHS; do
+		if [[ "$amp_php" == *php5.2* ]]; then
+			continue
+		fi
+
 		if [ -x $amp_php ]; then
 			echo $amp_php
 			exit
