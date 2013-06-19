@@ -29,7 +29,7 @@ PATH=$HOME/.composer/bin:$PATH
 
 <h3 id="autocomplete">Autocomplete</h3>
 
-WP-CLI comes with an autocomplete script for commands and subcommands.
+WP-CLI comes with an autocomplete script for command, subcommand and flag names.
 
 If you're using **Bash**, add the following lines to `~/.bash_profile`:
 
