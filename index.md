@@ -91,7 +91,7 @@ Available commands:
     wp eval-file
     ...
 
-See 'wp help &lt;command&gt;' for more information on a specific command.
+See 'wp help <command>' for more information on a specific command.
 ```
 
 Let's try to install the Hello Dolly plugin from wordpress.org:
