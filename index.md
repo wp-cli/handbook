@@ -113,7 +113,7 @@ Plugin installed successfully.
 
 <h3 id="multisite">Multisite</h3>
 
-On a multisite installation, you need to pass a `--url` parameter, so that wp-cli knows which site it's supposed to be operating on:
+On a multisite installation, you need to pass a `--url` parameter, so that WP-CLI knows which site it's supposed to be operating on:
 
 ```
 wp theme status --url=localhost/wp/test

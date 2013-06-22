@@ -8,7 +8,7 @@ function invoke_wp_cli( $cmd, $app ) {
 	$json = ob_get_clean();
 
 	if ( $return_code ) {
-		echo "wp-cli returned error code: $return_code\n";
+		echo "WP-CLI returned error code: $return_code\n";
 		exit(1);
 	}
 
