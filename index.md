@@ -12,7 +12,7 @@ title: Command line interface for WordPress
 
 <h2 id="install">Installing</h2>
 
-Just execute the following command:
+Just execute the following command in your terminal:
 
 ```
 curl http://wp-cli.org/installer.sh | bash
