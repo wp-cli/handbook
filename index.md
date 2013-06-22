@@ -4,11 +4,11 @@ title: Command line interface for WordPress
 ---
 **WP-CLI** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs, create posts and much more.
 
-<h2 id="requirements">Minimum Requirements</h2>
+<h2 id="requirements">Requirements</h2>
 
-You'll need **PHP 5.3.2** or later.
-
-All WP-CLI commands are guaranteed to work with **WordPress 3.4** or later. Some commands, like `wp core update`, might work with older versions as well.
+* UNIX-like environment (OS X, Linux, FreeBSD, Cygwin)
+* PHP 5.3.2 or later
+* WordPress 3.4 or later
 
 <h2 id="install">Installing</h2>
 
