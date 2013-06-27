@@ -139,10 +139,9 @@ wp theme status
 
 <h2>Adding commands</h2>
 
-Adding commands to wp-cli is very easy. You can even add them from within your own plugin.
-You can find more information about adding commands in the [Commands Cookbook](https://github.com/wp-cli/wp-cli/wiki/Commands-Cookbook) on our Wiki.
+Adding commands to WP-CLI is as easy as creating a PHP class. See the [Commands Cookbook](https://github.com/wp-cli/wp-cli/wiki/Commands-Cookbook) for more info.
 
-**Please share the commands you make, issue a pull request to get them included in wp-cli by default.**
+Please share the commands you make by adding them to the [List of community commands](https://github.com/wp-cli/wp-cli/wiki/List-of-community-commands).
 
 <h3>Contributors</h3>
 
