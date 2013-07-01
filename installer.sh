@@ -55,34 +55,26 @@ if [ ! -x composer.phar ]; then
 	fi
 fi
 
+COMPOSER="$WP_CLI_PHP composer.phar" 
+
 # set up global composer.json file
 if [ ! -f composer.json ]; then
-	cat > composer.json <<EOB
-{
-	"minimum-stability": "dev",
-	"config": {
-		"vendor-dir": "vendor",
-		"bin-dir": "bin"
-	},
-	"require": {
-	}
-}
-EOB
+	$COMPOSER init --stability dev --no-interaction
+	$COMPOSER config bin-dir bin
+	$COMPOSER config vendor-dir vendor
 fi
-
-COMPOSER="$WP_CLI_PHP composer.phar --prefer-source" 
 
 command -v bin/wp > /dev/null || {
 	echo
 	echo "Installing the main WP-CLI package..."
 	echo "-------------------------------------"
-	$COMPOSER require wp-cli/wp-cli="$VERSION"
+	$COMPOSER require --prefer-source wp-cli/wp-cli="$VERSION"
 }
 
 command -v bin/boris > /dev/null || {
 	echo
 	printf "Trying to install the optional Boris package... "
-	$COMPOSER --quiet require 'd11wtq/boris=@stable'
+	$COMPOSER --quiet require --prefer-source 'd11wtq/boris=@stable'
 	if [ $? -gt 0 ]; then
 		echo "failed."
 	else
