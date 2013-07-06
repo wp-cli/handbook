@@ -24,7 +24,7 @@ EOB
 }
 
 if [ -z "$INSTALL_DIR" ]; then
-	INSTALL_DIR=$HOME/.composer
+	INSTALL_DIR=$HOME/.wp-cli
 fi
 
 if [ -z "$VERSION" ]; then
