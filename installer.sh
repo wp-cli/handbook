@@ -49,6 +49,8 @@ cd "$INSTALL_DIR"
 
 # install Composer
 if [ ! -x composer.phar ]; then
+	echo "Installing Composer..."
+	echo "----------------------"
 	curl -sS https://getcomposer.org/installer | $WP_CLI_PHP
 	if [ $? -gt 0 ]; then
 		exit 1
@@ -69,6 +71,8 @@ command -v bin/wp > /dev/null || {
 	echo "Installing the main WP-CLI package..."
 	echo "-------------------------------------"
 	$COMPOSER require --prefer-source wp-cli/wp-cli="$VERSION"
+	echo
+	echo "WP-CLI files have been succesfully installed."
 }
 
 command -v bin/boris > /dev/null || {
@@ -84,17 +88,18 @@ command -v bin/boris > /dev/null || {
 
 cat <<EOB
 
-WP-CLI files have been succesfully installed.
-
-To test, run:
+To test WP-CLI, run:
 
 	$INSTALL_DIR/bin/wp --info
+
+Make sure you have the following line in your .bashrc file:
+
+	# WP-CLI directory
+	PATH=$INSTALL_DIR/bin:\$PATH
 EOB
 
 if [ "$WP_CLI_PHP" != "$(which php)" ]; then
 	cat <<EOB
-
-Make sure you have the following line in your .bashrc file:
 
 	export WP_CLI_PHP=$WP_CLI_PHP
 EOB

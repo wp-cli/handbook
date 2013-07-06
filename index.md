@@ -18,14 +18,7 @@ Just execute the following command in your terminal:
 curl http://wp-cli.org/installer.sh | bash
 ```
 
-This will allow you to run `~/.composer/bin/wp`.
-
-If you want to be able to type just `wp`, add the following lines to your `.bash_profile` file:
-
-```
-# Composer scripts
-PATH=$HOME/.composer/bin:$PATH
-```
+Make sure to read the instructions.
 
 <a name="autocomplete"></a>
 <h3 id="complete">Tab completions</h3>
