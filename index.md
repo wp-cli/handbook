@@ -29,7 +29,7 @@ If you're using **Bash**, add the following lines to `~/.bash_profile`:
 
 ```
 # WP-CLI Bash completions
-source $HOME/.composer/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 ```
 
 And re-load the file:
@@ -44,7 +44,7 @@ If you're using **Zsh**, add the following lines to `~/.zprofile`:
 # WP-CLI Bash completions
 autoload bashcompinit
 bashcompinit
-source $HOME/.composer/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
 ```
 
 And re-load the file:
@@ -58,7 +58,7 @@ source ~/.zprofile
 If you installed WP-CLI using the method above, you can also easily update it:
 
 ```
-cd ~/.composer
+cd ~/.wp-cli
 php composer.phar update
 ```
 
