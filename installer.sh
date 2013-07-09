@@ -49,8 +49,8 @@ cd "$INSTALL_DIR"
 
 # install Composer
 if [ ! -x composer.phar ]; then
-	echo "Installing Composer..."
-	echo "----------------------"
+	echo "Installing Composer in $INSTALL_DIR"
+	echo "-------------------"
 	curl -sS https://getcomposer.org/installer | $WP_CLI_PHP
 	if [ $? -gt 0 ]; then
 		exit 1
@@ -68,8 +68,8 @@ fi
 
 command -v bin/wp > /dev/null || {
 	echo
-	echo "Installing the main WP-CLI package..."
-	echo "-------------------------------------"
+	echo "Installing WP-CLI in $INSTALL_DIR"
+	echo "-----------------"
 	$COMPOSER require --prefer-source wp-cli/wp-cli="$VERSION"
 	echo
 	echo "WP-CLI files have been succesfully installed."
