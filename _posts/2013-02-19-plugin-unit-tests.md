@@ -3,9 +3,9 @@ layout: post
 title: Easily Set Up Unit Tests For Your Plugin
 author: scribu
 ---
-One of the reasons so few people take the time to write [unit tests for plugins][3] they author is that it's a chore to set everything up. You need to install [PHPUnit][4], the [WordPress testing library][5], as well as the actual plugin tests configuration files.
+One of the reasons so few people take the time to write [unit tests for plugins][3] they author is that it's a chore to set everything up. Besides installing [PHPUnit][4], you also have to set up the [WordPress testing library][5], as well as the actual plugin tests configuration files.
 
-If you're running WP-CLI 0.9.0-alpha2 or later, there are a few commands that make this significantly easier:
+If you're running WP-CLI 0.9.0-alpha2 or later, there are commands that make the last two steps significantly easier:
 
 	wp core init-tests
 
