@@ -64,6 +64,7 @@ if [ ! -f composer.json ]; then
 	$COMPOSER init --stability dev --no-interaction
 	$COMPOSER config bin-dir bin
 	$COMPOSER config vendor-dir vendor
+	$COMPOSER config repositories.wp-cli composer http://wp-cli.org/package-index/
 fi
 
 command -v bin/wp > /dev/null || {
