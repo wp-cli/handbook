@@ -39,9 +39,11 @@ task( 'cmd-list', function( $app ) {
 	$out = '';
 
 	foreach ( $wp['subcommands'] as $command ) {
+		$url = "https://github.com/wp-cli/wp-cli/blob/{$app['version']}/php/commands/{$command['name']}.php";
+
 		$out .= <<<EOB
 	<tr>
-		<td><a href="https://github.com/wp-cli/wp-cli/blob/master/php/commands/{$command['name']}.php">{$command['name']}</a></td>
+		<td><a href="{$url}">{$command['name']}</a></td>
 		<td>{$command['description']}</td>
 	</tr>
 
