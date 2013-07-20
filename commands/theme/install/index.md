@@ -1,0 +1,22 @@
+---
+layout: default
+title: 'wp theme install'
+---
+
+`wp theme install` - Install a theme.
+
+### OPTIONS
+
+	<theme>
+			A theme slug or the path to a zip file.
+
+	--activate
+			If set, the theme will be activated immediately after install.
+
+### EXAMPLES
+
+	wp theme install twentytwelve --activate
+
+	wp theme install ../my-theme.zip
+
+

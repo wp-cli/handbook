@@ -1,0 +1,20 @@
+---
+layout: default
+title: 'wp user update'
+---
+
+`wp user update` - Update a user.
+
+### OPTIONS
+
+	<ID>
+			The ID of the user to update.
+
+	--<field>=<value>
+			One or more fields to update. For accepted fields, see wp_update_user().
+
+### EXAMPLES
+
+	wp user update 123 --user_login=mary --display_name=Mary
+
+

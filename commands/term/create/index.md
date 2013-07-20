@@ -1,0 +1,32 @@
+---
+layout: default
+title: 'wp term create'
+---
+
+`wp term create` - Create a term.
+
+### OPTIONS
+
+	<term>
+			A name for the new term.
+
+	<taxonomy>
+			Taxonomy for the new term.
+
+	--slug=<slug>
+			A unique slug for the new term. Defaults to sanitized version of name.
+
+	--description=<description>
+			A description for the new term.
+
+	--parent=<term-id>
+			A parent for the new term.
+
+	--porcelain
+			Output just the new term id.
+
+### EXAMPLES
+
+	wp term create Apple category --description="A type of fruit"
+
+

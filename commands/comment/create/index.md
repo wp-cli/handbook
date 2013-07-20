@@ -1,0 +1,21 @@
+---
+layout: default
+title: 'wp comment create'
+---
+
+`wp comment create` - Insert a comment.
+
+### OPTIONS
+
+	--<field>=<value>
+			Field values for the new comment. See wp_insert_comment().
+
+	--porcelain
+			Output just the new comment id.
+
+### EXAMPLES
+
+	wp comment create --comment_post_ID=15 --comment_content="hello blog"
+--comment_author="wp-cli"
+
+

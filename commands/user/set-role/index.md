@@ -1,0 +1,21 @@
+---
+layout: default
+title: 'wp user set-role'
+---
+
+`wp user set-role` - Set the user role (for a particular blog).
+
+### OPTIONS
+
+	<user-login>
+			User ID or user login.
+
+	[<role>]
+			Add the user with the specified role. Defaults to blog default.
+
+### EXAMPLES
+
+	wp user set-role bob author
+	wp user set-role 12 author
+
+

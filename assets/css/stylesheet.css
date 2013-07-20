@@ -188,6 +188,10 @@ pre code {
 	background-color: inherit;
 }
 
+h3 + table {
+	margin-top: 10px;
+}
+
 table {
 	width: 100%;
 	margin: 0 0 20px 0;
@@ -195,16 +199,12 @@ table {
 
 th, td {
 	vertical-align: top;
+	padding: 5px 20px 5px 0;
 }
 
 th {
 	text-align: left;
 	border-bottom: 1px dashed #b5e853;
-	padding: 5px 10px;
-}
-
-td {
-	padding: 5px 10px;
 }
 
 hr {

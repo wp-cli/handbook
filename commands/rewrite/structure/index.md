@@ -1,0 +1,21 @@
+---
+layout: default
+title: 'wp rewrite structure'
+---
+
+`wp rewrite structure` - Update the permalink structure.
+
+### OPTIONS
+
+* <permastruct>:
+
+	The new permalink structure to apply; like "/%year%/%monthnum%/%postname%".
+
+	--category-base=<categorybase>
+			Set the base for category permalinks, ie '/category/'.
+
+	--tag-base=<tagbase>
+			Set the base for tag permalinks, ie '/tag/'.
+
+
+

@@ -1,0 +1,18 @@
+---
+layout: default
+title: 'wp comment count'
+---
+
+`wp comment count` - Count comments, on whole blog or on a given post.
+
+### OPTIONS
+
+	<ID>
+			The ID of the post to count comments in
+
+### EXAMPLES
+
+	wp comment count
+	wp comment count 42
+
+

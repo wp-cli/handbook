@@ -1,0 +1,24 @@
+---
+layout: default
+title: 'wp role create'
+---
+
+`wp role create` - Create a new role.
+
+### OPTIONS
+
+* <role-key>:
+
+    The internal name of the role, e.g. editor
+
+* <role-name>:
+
+    The publically visible name of the role, e.g. Editor
+
+### EXAMPLES
+
+    wp role create approver Approver
+
+    wp role create productadmin "Product Administrator"
+
+

@@ -1,0 +1,27 @@
+---
+layout: default
+title: 'wp user list'
+---
+
+`wp user list` - List users.
+
+### OPTIONS
+
+	--role=<role>
+			Only display users with a certain role.
+
+	--fields=<fields>
+			Limit the output to specific object fields. Defaults to ID,user_login,display_name,user_email,user_registered,roles
+
+	--format=<format>
+			Output list as table, CSV, JSON, or simply IDs. Defaults to table.
+
+### EXAMPLES
+
+	wp user list --format=ids
+
+	wp user list --role=administrator --format=csv
+
+	wp user list --fields=display_name,user_email
+
+
