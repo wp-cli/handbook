@@ -34,7 +34,7 @@ task( 'syn-list', function( $app ) {
 		}
 	}
 
-	generate_synopsis( invoke_wp_cli( 'wp --cmd-dump', $app ) );
+	generate_synopsis( invoke_wp_cli( 'wp cli cmd-dump', $app ) );
 });
 
 function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
@@ -67,7 +67,7 @@ function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
 
 desc( 'Update the /commands/ page.' );
 task( 'cmd-list', function( $app ) {
-	$wp = invoke_wp_cli( 'wp --cmd-dump', $app );
+	$wp = invoke_wp_cli( 'wp cli cmd-dump', $app );
 
 	// generate main page
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
@@ -81,7 +81,7 @@ task( 'cmd-list', function( $app ) {
 
 desc( 'Update the /config/ page.' );
 task( 'param-list', function( $app ) {
-	$config_spec = invoke_wp_cli( 'wp --param-dump', $app );
+	$config_spec = invoke_wp_cli( 'wp cli param-dump', $app );
 
 	$out = '';
 
