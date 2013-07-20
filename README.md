@@ -7,7 +7,7 @@
 3. Build:
 
 ```bash
-vendor/bin/phake path=/path/to/wp/install
+vendor/bin/phake path=/path/to/wp/install version=v0.10.2
 ```
 
 ### Preview locally
