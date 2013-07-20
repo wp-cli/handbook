@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
 
 function invoke_wp_cli( $cmd, $app ) {
 	$cmd .= ' --path=' . escapeshellarg( $app['path'] );
@@ -13,6 +14,12 @@ function invoke_wp_cli( $cmd, $app ) {
 	}
 
 	return json_decode( $json, true );
+}
+
+function render( $path, $binding ) {
+	$m = new Mustache_Engine;
+	$template = file_get_contents( __DIR__ . "/_templates/$path" );
+	return $m->render( $template, $binding );
 }
 
 desc( 'Generate a list of commands with all accepted arguments on STDOUT.' );
@@ -35,22 +42,9 @@ task( 'syn-list', function( $app ) {
 desc( 'Update the /commands/ page.' );
 task( 'cmd-list', function( $app ) {
 	$wp = invoke_wp_cli( 'wp --cmd-dump', $app );
+	$wp['version'] = $app['version'];
 
-	$out = '';
-
-	foreach ( $wp['subcommands'] as $command ) {
-		$url = "https://github.com/wp-cli/wp-cli/blob/{$app['version']}/php/commands/{$command['name']}.php";
-
-		$out .= <<<EOB
-	<tr>
-		<td><a href="{$url}">{$command['name']}</a></td>
-		<td>{$command['description']}</td>
-	</tr>
-
-EOB;
-	}
-
-	file_put_contents( '_includes/cmd-list.html', $out );
+	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
 });
 
 desc( 'Update the /config/ page.' );
@@ -64,7 +58,7 @@ task( 'param-list', function( $app ) {
 			continue;
 
 		if ( false !== $details['file'] ) {
-			$config = "$key: " . htmlspecialchars( $details['file'] );
+			$config = "$key: " . $details['file'];
 		} else {
 			$config = '';
 		}
@@ -72,7 +66,7 @@ task( 'param-list', function( $app ) {
 		if ( false !== $details['runtime'] ) {
 			$flag = ( true === $details['runtime'] )
 				? "--[no-]$key"
-				: "--$key" . htmlspecialchars( $details['runtime'] );
+				: "--$key" . $details['runtime'];
 		} else {
 			$flag = '';
 		}
@@ -81,15 +75,7 @@ task( 'param-list', function( $app ) {
 
 		$description = $details['desc'];
 
-		$out .= <<<EOB
-	<tr>
-		<td><code>$config</code></td>
-		<td><code>$flag</code></td>
-		<td><code>$default</code></td>
-		<td>$description</td>
-	</tr>
-
-EOB;
+		$out .= render( 'config.mustache', compact( 'config', 'flag', 'default', 'description' ) );
 	}
 
 	file_put_contents( '_includes/param-list.html', $out );
