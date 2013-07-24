@@ -2,8 +2,6 @@
 require __DIR__ . '/vendor/autoload.php';
 
 function invoke_wp_cli( $cmd, $app ) {
-	$cmd .= ' --path=' . escapeshellarg( $app['path'] );
-
 	ob_start();
 	system( $cmd, $return_code );
 	$json = ob_get_clean();
