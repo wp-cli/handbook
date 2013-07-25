@@ -32,19 +32,19 @@ title: 'wp option'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/option/add">add</a></td>
+			<td><a href="/commands/option/add/">add</a></td>
 			<td>Add an option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/delete">delete</a></td>
+			<td><a href="/commands/option/delete/">delete</a></td>
 			<td>Delete an option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/get">get</a></td>
+			<td><a href="/commands/option/get/">get</a></td>
 			<td>Get an option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/update">update</a></td>
+			<td><a href="/commands/option/update/">update</a></td>
 			<td>Update an option.</td>
 		</tr>
 	</tbody>

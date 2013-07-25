@@ -18,27 +18,27 @@ title: 'wp scaffold'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/scaffold/_s">_s</a></td>
+			<td><a href="/commands/scaffold/_s/">_s</a></td>
 			<td>Generate starter code for a theme.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/child-theme">child-theme</a></td>
+			<td><a href="/commands/scaffold/child-theme/">child-theme</a></td>
 			<td>Generate empty child theme.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/plugin">plugin</a></td>
+			<td><a href="/commands/scaffold/plugin/">plugin</a></td>
 			<td>Generate starter code for a plugin.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/plugin-tests">plugin-tests</a></td>
+			<td><a href="/commands/scaffold/plugin-tests/">plugin-tests</a></td>
 			<td>Generate files needed for running PHPUnit tests.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/post-type">post-type</a></td>
+			<td><a href="/commands/scaffold/post-type/">post-type</a></td>
 			<td>Generate PHP code for registering a custom post type.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/taxonomy">taxonomy</a></td>
+			<td><a href="/commands/scaffold/taxonomy/">taxonomy</a></td>
 			<td>Generate PHP code for registering a custom taxonomy.</td>
 		</tr>
 	</tbody>

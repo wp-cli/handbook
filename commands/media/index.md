@@ -18,11 +18,11 @@ title: 'wp media'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/media/import">import</a></td>
+			<td><a href="/commands/media/import/">import</a></td>
 			<td>Create attachments from local files or from URLs.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/media/regenerate">regenerate</a></td>
+			<td><a href="/commands/media/regenerate/">regenerate</a></td>
 			<td>Regenerate thumbnail(s).</td>
 		</tr>
 	</tbody>

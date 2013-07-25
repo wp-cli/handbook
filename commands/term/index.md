@@ -18,19 +18,19 @@ title: 'wp term'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/term/create">create</a></td>
+			<td><a href="/commands/term/create/">create</a></td>
 			<td>Create a term.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/delete">delete</a></td>
+			<td><a href="/commands/term/delete/">delete</a></td>
 			<td>Delete a term.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/list">list</a></td>
+			<td><a href="/commands/term/list/">list</a></td>
 			<td>List terms in a taxonomy.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/update">update</a></td>
+			<td><a href="/commands/term/update/">update</a></td>
 			<td>Update a term.</td>
 		</tr>
 	</tbody>

@@ -18,15 +18,15 @@ title: 'wp blog'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/blog/create">create</a></td>
+			<td><a href="/commands/blog/create/">create</a></td>
 			<td>Create a blog in a multisite install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/blog/delete">delete</a></td>
+			<td><a href="/commands/blog/delete/">delete</a></td>
 			<td>Delete a blog in a multisite install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/blog/empty">empty</a></td>
+			<td><a href="/commands/blog/empty/">empty</a></td>
 			<td>Empty a blog of its content.</td>
 		</tr>
 	</tbody>
