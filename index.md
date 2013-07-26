@@ -15,7 +15,7 @@ title: Command line interface for WordPress
 Just execute the following command in your terminal:
 
 ```
-curl http://wp-cli.org/installer.sh | bash
+curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
 ```
 
 Make sure to read the instructions.
