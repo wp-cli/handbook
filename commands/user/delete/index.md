@@ -7,14 +7,13 @@ title: 'wp user delete'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the user to delete.
+&lt;user&gt;
+: The user login or ID of the user to delete.
 
-	--reassign=<ID>
-			User to reassign the posts to.
+--reassign=&lt;ID&gt;
+: User to reassign the posts to.
 
 ### EXAMPLES
 
-	wp user delete 123 --reassign=567
-
+    wp user delete 123 --reassign=567
 

@@ -34,6 +34,10 @@ title: 'wp user'
 			<td>Generate users.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/user/get">get</a></td>
+			<td>Get a single user.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/user/import-csv">import-csv</a></td>
 			<td>Import users from a CSV file.</td>
 		</tr>

@@ -7,12 +7,11 @@ title: 'wp user remove-role'
 
 ### OPTIONS
 
-	<user-login>
-			User ID or user login.
+&lt;user&gt;
+: User ID or user login.
 
 ### EXAMPLES
 
-	wp user remove-role bob
-	wp user remove-role 12
-
+    wp user remove-role bob
+    wp user remove-role 12
 

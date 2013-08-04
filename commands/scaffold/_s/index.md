@@ -7,19 +7,18 @@ title: 'wp scaffold _s'
 
 ### OPTIONS
 
-* <slug>:
+&lt;slug&gt;
+: The slug for the new theme, used for prefixing functions.
 
-	The slug for the new theme, used for prefixing functions.
+--activate
+: Activate the newly downloaded theme.
 
-	--activate
-			Activate the newly downloaded theme.
+--theme_name=&lt;title&gt;
+: What to put in the 'Theme Name:' header in style.css
 
-	--theme_name=<title>
-			What to put in the 'Theme Name:' header in style.css
+--author=&lt;full name&gt;
+: What to put in the 'Author:' header in style.css
 
-	--author=<full name>
-			What to put in the 'Author:' header in style.css
-
-	--author_uri=<http url>
-			What to put in the 'Author URI:' header in style.css
+--author_uri=&lt;http url&gt;
+: What to put in the 'Author URI:' header in style.css
 

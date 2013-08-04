@@ -7,12 +7,11 @@ title: 'wp comment count'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the post to count comments in
+&lt;ID&gt;
+: The ID of the post to count comments in
 
 ### EXAMPLES
 
-	wp comment count
-	wp comment count 42
-
+    wp comment count
+    wp comment count 42
 

@@ -7,16 +7,14 @@ title: 'wp plugin update'
 
 ### OPTIONS
 
-* <plugin>:
+&lt;plugin&gt;
+: The plugin to update.
 
-	The plugin to update.
-
-	--version=dev
-			If set, the plugin will be updated to the latest development version,
+--version=dev
+: If set, the plugin will be updated to the latest development version,
 regardless of what version is currently installed.
 
 ### EXAMPLES
 
-	wp plugin update bbpress --version=dev
-
+    wp plugin update bbpress --version=dev
 

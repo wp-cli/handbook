@@ -7,11 +7,10 @@ title: 'wp comment spam'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the comment to mark as spam.
+&lt;ID&gt;
+: The ID of the comment to mark as spam.
 
 ### EXAMPLES
 
-	wp comment spam 1337
-
+    wp comment spam 1337
 

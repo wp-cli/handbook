@@ -7,19 +7,18 @@ title: 'wp term list'
 
 ### OPTIONS
 
-	<taxonomy>
-			List terms of a given taxonomy.
+&lt;taxonomy&gt;
+: List terms of a given taxonomy.
 
-	--fields=<fields>
-			Limit the output to specific object fields. Defaults to all of the term object fields.
+--fields=&lt;fields&gt;
+: Limit the output to specific object fields. Defaults to all of the term object fields.
 
-	--format=<format>
-			Output list as table, CSV, JSON, or simply IDs. Defaults to table.
+--format=&lt;format&gt;
+: Output list as table, CSV, JSON, or simply IDs. Defaults to table.
 
 ### EXAMPLES
 
-	wp term list category --format=csv
+    wp term list category --format=csv
 
-	wp term list post_tag --fields=name,slug
-
+    wp term list post_tag --fields=name,slug
 

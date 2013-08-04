@@ -7,11 +7,10 @@ title: 'wp post edit'
 
 ### OPTIONS
 
-	<id>
-			The ID of the post to edit.
+&lt;id&gt;
+: The ID of the post to edit.
 
 ### EXAMPLES
 
-	wp post edit 123
-
+    wp post edit 123
 

@@ -7,13 +7,12 @@ title: 'wp post-meta'
 
 ### OPTIONS
 
-	--format=json
-			Encode/decode values as JSON.
+--format=json
+: Encode/decode values as JSON.
 
 ### EXAMPLES
 
-	wp post-meta set 123 _wp_page_template about.php
-
+    wp post-meta set 123 _wp_page_template about.php
 
 ### SUBCOMMANDS
 

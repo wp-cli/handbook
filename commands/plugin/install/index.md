@@ -7,23 +7,31 @@ title: 'wp plugin install'
 
 ### OPTIONS
 
-* <plugin>:
+&lt;plugin|zip|url&gt;
+: A plugin slug, the path to a local zip file, or URL to a remote zip file.
 
-	A plugin slug or the path to a zip file.
-
-	--version=<version>
-			If set, get that particular version from wordpress.org, instead of the
+--version=&lt;version&gt;
+: If set, get that particular version from wordpress.org, instead of the
 stable version.
 
-	--activate
-			If set, the plugin will be activated immediately after install.
+--force
+: If set, the command will overwrite any installed version of the plugin, without prompting
+for confirmation.
+
+--activate
+: If set, the plugin will be activated immediately after install.
 
 ### EXAMPLES
 
-	wp plugin install bbpress --version=2.1 --activate
+    # Install the latest version from wordpress.org and activate
+    wp plugin install bbpress --activate
 
-	wp plugin install bbpress --version=dev
+    # Install the development version from wordpress.org
+    wp plugin install bbpress --version=dev
 
-	wp plugin install ../my-plugin.zip
+    # Install from a local zip file
+    wp plugin install ../my-plugin.zip
 
+    # Install from a remote zip file
+    wp plugin install http://s3.amazonaws.com/bucketname/my-plugin.zip?AWSAccessKeyId=123&amp;Expires=456&amp;Signature=abcdef
 

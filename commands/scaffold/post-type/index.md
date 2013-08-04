@@ -7,21 +7,20 @@ title: 'wp scaffold post-type'
 
 ### OPTIONS
 
-	--label=<label>
-			The text used to translate the update messages
+--label=&lt;label&gt;
+: The text used to translate the update messages
 
-	--textdomain=<textdomain>
-			The textdomain to use for the labels.
+--textdomain=&lt;textdomain&gt;
+: The textdomain to use for the labels.
 
-	--theme
-			Create a file in the current theme directory, instead of sending to
+--theme
+: Create a file in the active theme directory, instead of sending to
+STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+
+--plugin=&lt;plugin&gt;
+: Create a file in the given plugin's directory, instead of sending to
 STDOUT.
 
-	--plugin=<plugin>
-			Create a file in the given plugin's directory, instead of sending to
-STDOUT.
-
-	--raw
-			Just generate the `register_post_type()` call and nothing else.
-
+--raw
+: Just generate the `register_post_type()` call and nothing else.
 

@@ -7,11 +7,10 @@ title: 'wp comment unapprove'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the comment to unapprove.
+&lt;ID&gt;
+: The ID of the comment to unapprove.
 
 ### EXAMPLES
 
-	wp comment unapprove 1337
-
+    wp comment unapprove 1337
 

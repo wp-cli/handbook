@@ -7,8 +7,7 @@ title: 'wp core is-installed'
 
 ### EXAMPLES
 
-	if ! $(wp core is-installed); then
-		wp core install
-	fi
-
+    if ! $(wp core is-installed); then
+        wp core install
+    fi
 

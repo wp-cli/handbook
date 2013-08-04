@@ -7,26 +7,25 @@ title: 'wp term update'
 
 ### OPTIONS
 
-	<term-id>
-			ID for the term to update.
+&lt;term-id&gt;
+: ID for the term to update.
 
-	<taxonomy>
-			Taxonomy of the term to update.
+&lt;taxonomy&gt;
+: Taxonomy of the term to update.
 
-	--name=<name>
-			A new name for the term.
+--name=&lt;name&gt;
+: A new name for the term.
 
-	--slug=<slug>
-			A new slug for the term.
+--slug=&lt;slug&gt;
+: A new slug for the term.
 
-	--description=<description>
-			A new description for the term.
+--description=&lt;description&gt;
+: A new description for the term.
 
-	--parent=<term-id>
-			A new parent for the term.
+--parent=&lt;term-id&gt;
+: A new parent for the term.
 
 ### EXAMPLES
 
-	wp term update 15 category --name=Apple
-
+    wp term update 15 category --name=Apple
 

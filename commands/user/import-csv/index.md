@@ -7,18 +7,17 @@ title: 'wp user import-csv'
 
 ### OPTIONS
 
-	<file>
-			The CSV file of users to import.
+&lt;file&gt;
+: The CSV file of users to import.
 
 ### EXAMPLES
 
-	wp user import-csv /path/to/users.csv
+    wp user import-csv /path/to/users.csv
 
-	Sample users.csv file:
+    Sample users.csv file:
 
-	user_login,user_email,display_name,role
-	bobjones,bobjones@domain.com,Bob Jones,contributor
-	newuser1,newuser1@domain.com,New User,author
-	existinguser,existinguser@domain.com,Existing User,administrator
-
+    user_login,user_email,display_name,role
+    bobjones,bobjones@domain.com,Bob Jones,contributor
+    newuser1,newuser1@domain.com,New User,author
+    existinguser,existinguser@domain.com,Existing User,administrator
 

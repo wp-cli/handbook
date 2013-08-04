@@ -7,10 +7,9 @@ title: 'wp user generate'
 
 ### OPTIONS
 
-	--count=<number>
-			How many users to generate. Default: 100
+--count=&lt;number&gt;
+: How many users to generate. Default: 100
 
-	--role=<role>
-			The role of the generated users. Default: default role from WP
-
+--role=&lt;role&gt;
+: The role of the generated users. Default: default role from WP
 

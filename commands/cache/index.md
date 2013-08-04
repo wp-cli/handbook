@@ -7,10 +7,9 @@ title: 'wp cache'
 
 ### EXAMPLES
 
-	wp cache set my_key my_value my_group 300
+    wp cache set my_key my_value my_group 300
 
-	wp cache get my_key my_group
-
+    wp cache get my_key my_group
 
 ### SUBCOMMANDS
 

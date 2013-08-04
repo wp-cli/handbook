@@ -25,8 +25,8 @@
 	<tr>
 		<td><code>require: &lt;path&gt;</code></td>
 		<td><code>--require=&lt;path&gt;</code></td>
-		<td><code>null</code></td>
-		<td>Load given PHP file before running the command</td>
+		<td><code>[]</code></td>
+		<td>Load PHP file before running the command (may be used more than once)</td>
 	</tr>
 	<tr>
 		<td><code>disabled_commands: &lt;list&gt;</code></td>
@@ -51,4 +51,10 @@
 		<td><code>--quiet</code></td>
 		<td><code>false</code></td>
 		<td>Suppress informational messages</td>
+	</tr>
+	<tr>
+		<td><code>apache_modules: &lt;list&gt;</code></td>
+		<td><code></code></td>
+		<td><code>[]</code></td>
+		<td>List of Apache Modules that are to be reported as loaded</td>
 	</tr>

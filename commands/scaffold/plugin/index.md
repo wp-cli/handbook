@@ -7,10 +7,9 @@ title: 'wp scaffold plugin'
 
 ### OPTIONS
 
-	--activate
-			Activate the newly generated plugin.
+--activate
+: Activate the newly generated plugin.
 
-	--plugin_name=<title>
-			What to put in the 'Plugin Name:' header
-
+--plugin_name=&lt;title&gt;
+: What to put in the 'Plugin Name:' header
 

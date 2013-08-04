@@ -7,15 +7,14 @@ title: 'wp theme update'
 
 ### OPTIONS
 
-	<theme>
-			The theme to update.
+&lt;theme&gt;
+: The theme to update.
 
-	--version=dev
-			If set, the theme will be updated to the latest development version,
+--version=dev
+: If set, the theme will be updated to the latest development version,
 regardless of what version is currently installed.
 
 ### EXAMPLES
 
-	wp theme update twentytwelve
-
+    wp theme update twentytwelve
 

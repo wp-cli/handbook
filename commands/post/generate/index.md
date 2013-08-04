@@ -7,26 +7,25 @@ title: 'wp post generate'
 
 ### OPTIONS
 
-	--count=<number>
-			How many posts to generate. Default: 100
+--count=&lt;number&gt;
+: How many posts to generate. Default: 100
 
-	--post_type=<type>
-			The type of the generated posts. Default: 'post'
+--post_type=&lt;type&gt;
+: The type of the generated posts. Default: 'post'
 
-	--post_status=<status>
-			The status of the generated posts. Default: 'publish'
+--post_status=&lt;status&gt;
+: The status of the generated posts. Default: 'publish'
 
-	--post_author=<login>
-			The author of the generated posts. Default: none
+--post_author=&lt;login&gt;
+: The author of the generated posts. Default: none
 
-	--post_date=<yyyy-mm-dd>
-			The date of the generated posts. Default: current date
+--post_date=&lt;yyyy-mm-dd&gt;
+: The date of the generated posts. Default: current date
 
-	--max_depth=<number>
-			For hierarchical post types, generate child posts down to a certain depth. Default: 1
+--max_depth=&lt;number&gt;
+: For hierarchical post types, generate child posts down to a certain depth. Default: 1
 
 ### EXAMPLES
 
-	wp post generate --count=10 --post_type=page --post_date=1999-01-04
-
+    wp post generate --count=10 --post_type=page --post_date=1999-01-04
 

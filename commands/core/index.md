@@ -34,12 +34,16 @@ title: 'wp core'
 			<td>Create the WordPress tables in the database.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/core/install-network">install-network</a></td>
+			<td><a href="/commands/core/is-installed">is-installed</a></td>
+			<td>Determine if the WordPress tables are installed.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/core/multisite-convert">multisite-convert</a></td>
 			<td>Transform a single-site install into a multi-site install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/core/is-installed">is-installed</a></td>
-			<td>Determine if the WordPress tables are installed.</td>
+			<td><a href="/commands/core/multisite-install">multisite-install</a></td>
+			<td>Install multisite from scratch.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/update">update</a></td>

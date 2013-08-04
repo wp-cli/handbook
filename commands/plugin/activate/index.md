@@ -7,10 +7,9 @@ title: 'wp plugin activate'
 
 ### OPTIONS
 
-	<plugin>
-			The plugin to activate.
+&lt;plugin&gt;
+: The plugin to activate.
 
-	--network
-			If set, the plugin will be activated for the entire multisite network.
-
+--network
+: If set, the plugin will be activated for the entire multisite network.
 

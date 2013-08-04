@@ -7,33 +7,35 @@ title: 'wp core config'
 
 ### OPTIONS
 
-	--dbname=<dbname>
-			Set the database name.
+--dbname=&lt;dbname&gt;
+: Set the database name.
 
-	--dbuser=<dbuser>
-			Set the database user.
+--dbuser=&lt;dbuser&gt;
+: Set the database user.
 
-	--dbpass=<dbpass>
-			Set the database user password.
+--dbpass=&lt;dbpass&gt;
+: Set the database user password.
 
-	--dbhost=<dbhost>
-			Set the database host. Default: 'localhost'
+--dbhost=&lt;dbhost&gt;
+: Set the database host. Default: 'localhost'
 
-	--dbprefix=<dbprefix>
-			Set the database table prefix. Default: 'wp_'
+--dbprefix=&lt;dbprefix&gt;
+: Set the database table prefix. Default: 'wp_'
 
-	--extra-php
-			If set, the command reads additional PHP code from STDIN.
+--locale=&lt;locale&gt;
+: Set the WPLANG constant. Defaults to $wp_local_package variable.
+
+--extra-php
+: If set, the command reads additional PHP code from STDIN.
 
 ### EXAMPLES
 
-	# Standard wp-config.php file
-	wp core config --dbname=testing --dbuser=wp --dbpass=securepswd
+    # Standard wp-config.php file
+    wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --locale=ro_RO
 
-	# Enable WP_DEBUG and WP_DEBUG_LOG
-	wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php <<PHP
-	define( 'WP_DEBUG', true );
-	define( 'WP_DEBUG_LOG', true );
-	PHP
-
+    # Enable WP_DEBUG and WP_DEBUG_LOG
+    wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php &lt;&lt;PHP
+    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG_LOG', true );
+    PHP
 

@@ -7,6 +7,6 @@ title: 'wp plugin status'
 
 ### OPTIONS
 
-	<plugin>
-			A particular plugin to show the status for.
+&lt;plugin&gt;
+: A particular plugin to show the status for.
 

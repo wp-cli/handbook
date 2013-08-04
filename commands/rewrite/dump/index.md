@@ -7,7 +7,6 @@ title: 'wp rewrite dump'
 
 ### OPTIONS
 
-	--format=json
-			Output rules in JSON format.
-
+--format=json
+: Output rules in JSON format.
 

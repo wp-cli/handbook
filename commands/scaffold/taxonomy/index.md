@@ -7,28 +7,27 @@ title: 'wp scaffold taxonomy'
 
 ### OPTIONS
 
-	--post_types=<post_types>
-			Post types to register for use with the taxonomy.
+--post_types=&lt;post_types&gt;
+: Post types to register for use with the taxonomy.
 
-	--label=<label>
-			The text used to translate the update messages
+--label=&lt;label&gt;
+: The text used to translate the update messages
 
-	--textdomain=<textdomain>
-			The textdomain to use for the labels.
+--textdomain=&lt;textdomain&gt;
+: The textdomain to use for the labels.
 
-	--theme
-			Create a file in the current theme directory, instead of sending to
+--theme
+: Create a file in the active theme directory, instead of sending to
+STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+
+--plugin=&lt;plugin&gt;
+: Create a file in the given plugin's directory, instead of sending to
 STDOUT.
 
-	--plugin=<plugin>
-			Create a file in the given plugin's directory, instead of sending to
-STDOUT.
-
-	--raw
-			Just generate the `register_taxonomy()` call and nothing else.
+--raw
+: Just generate the `register_taxonomy()` call and nothing else.
 
 ### EXAMPLES
 
-	wp scaffold taxonomy venue --post_types=event,presentation
-
+    wp scaffold taxonomy venue --post_types=event,presentation
 

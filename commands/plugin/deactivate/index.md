@@ -7,10 +7,9 @@ title: 'wp plugin deactivate'
 
 ### OPTIONS
 
-	<plugin>
-			The plugin to deactivate.
+&lt;plugin&gt;
+: The plugin to deactivate.
 
-	--network
-			If set, the plugin will be deactivated for the entire multisite network.
-
+--network
+: If set, the plugin will be deactivated for the entire multisite network.
 

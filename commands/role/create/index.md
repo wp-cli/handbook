@@ -7,11 +7,11 @@ title: 'wp role create'
 
 ### OPTIONS
 
-* <role-key>:
+* &lt;role-key&gt;:
 
     The internal name of the role, e.g. editor
 
-* <role-name>:
+* &lt;role-name&gt;:
 
     The publically visible name of the role, e.g. Editor
 
@@ -19,6 +19,5 @@ title: 'wp role create'
 
     wp role create approver Approver
 
-    wp role create productadmin "Product Administrator"
-
+    wp role create productadmin &quot;Product Administrator&quot;
 

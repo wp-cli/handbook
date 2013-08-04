@@ -3,12 +3,11 @@ layout: default
 title: 'wp transient'
 ---
 
-`wp transient` - Manage WordPress transients.
+`wp transient` - Manage transients.
 
 ### EXAMPLES
 
-	wp transient set my_key my_value 300
-
+    wp transient set my_key my_value 300
 
 ### SUBCOMMANDS
 
