@@ -37,7 +37,7 @@ task( 'syn-list', function( $app ) {
 	generate_synopsis( invoke_wp_cli( 'wp cli cmd-dump', $app ) );
 });
 
-function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
+function gen_cmd_pages( $cmd, $parent = array() ) {
 	$parent[] = $cmd['name'];
 
 	$binding = $cmd;
@@ -45,9 +45,8 @@ function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
 	$binding['path'] = implode( '/', $parent );
 	$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? array(true) : false;
 
-	$docs_path = $wp_cli_path . '/man-src/' . implode( '-', $parent ) . '.txt';
-	if ( is_readable( $docs_path ) ) {
-		$docs = file_get_contents( $docs_path );
+	if ( $cmd['longdesc'] ) {
+		$docs = $cmd['longdesc'];
 		$docs = preg_replace( '/^## /m', '### ', $docs );
 		$binding['docs'] = $docs;
 	}
@@ -60,7 +59,7 @@ function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
 		return;
 
 	foreach ( $cmd['subcommands'] as $subcmd ) {
-		gen_cmd_pages( $wp_cli_path, $subcmd, $parent );
+		gen_cmd_pages( $subcmd, $parent );
 	}
 }
 
@@ -74,7 +73,7 @@ task( 'cmd-list', function( $app ) {
 	system( sprintf( 'rm -rf %s/commands/*/', escapeshellarg( __DIR__ ) ) );
 
 	foreach ( $wp['subcommands'] as $cmd ) {
-		gen_cmd_pages( $app['path'], $cmd );
+		gen_cmd_pages( $cmd );
 	}
 });
 

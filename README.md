@@ -7,7 +7,7 @@
 3. Build:
 
 ```bash
-vendor/bin/phake path=/path/to/wp-cli-dir
+vendor/bin/phake
 ```
 
 ### Preview locally
