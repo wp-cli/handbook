@@ -2,10 +2,4 @@
 layout: default
 title: 'wp blog empty'
 ---
-
-`wp blog empty` - Empty a blog of its content.
-
-### EXAMPLES
-
-	wp blog empty
-
+The `wp blog empty` command has been renamed to [wp site empty](/commands/site/empty) in WP-CLI 0.11.
