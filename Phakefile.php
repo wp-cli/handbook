@@ -52,7 +52,9 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 	}
 
 	$path = __DIR__ . "/commands/" . $binding['path'];
-	mkdir( $path );
+	if ( !is_dir( $path ) ) {
+		mkdir( $path );
+	}
 	file_put_contents( "$path/index.md", render( 'subcmd-list.mustache', $binding ) );
 
 	if ( !isset( $cmd['subcommands'] ) )
@@ -69,8 +71,6 @@ task( 'cmd-list', function( $app ) {
 
 	// generate main page
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
-
-	system( sprintf( 'rm -rf %s/commands/*/', escapeshellarg( __DIR__ ) ) );
 
 	foreach ( $wp['subcommands'] as $cmd ) {
 		gen_cmd_pages( $cmd );
