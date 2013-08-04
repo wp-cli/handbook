@@ -7,11 +7,10 @@ title: 'wp plugin update-all'
 
 ### OPTIONS
 
-	--dry-run
-			Pretend to do the updates, to see what would happen.
+--dry-run
+: Pretend to do the updates, to see what would happen.
 
 ### EXAMPLES
 
-	wp plugin update-all
-
+    wp plugin update-all
 

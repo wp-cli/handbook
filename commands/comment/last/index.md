@@ -7,14 +7,13 @@ title: 'wp comment last'
 
 ### OPTIONS
 
-	--id
-			Output just the last comment id.
+--id
+: Output just the last comment id.
 
-	--full
-			Output complete comment information.
+--full
+: Output complete comment information.
 
 ### EXAMPLES
 
-	wp comment last --full
-
+    wp comment last --full
 

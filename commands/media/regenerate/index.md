@@ -7,15 +7,15 @@ title: 'wp media regenerate'
 
 ### OPTIONS
 
-	--yes
-			Answer yes to the confirmation message.
+--yes
+: Answer yes to the confirmation message.
 
-	<attachment-id>
-			One or more IDs of the attachments to regenerate.
+&lt;attachment-id&gt;
+: One or more IDs of the attachments to regenerate.
 
 ### EXAMPLES
 
-	wp media regenerate 123 1337
+    wp media regenerate 123 1337
 
-	wp media regenerate --yes
+    wp media regenerate --yes
 

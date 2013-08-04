@@ -7,6 +7,5 @@ title: 'wp eval-file'
 
 ### EXAMPLES
 
-	wp eval-file my-code.php
-
+    wp eval-file my-code.php
 

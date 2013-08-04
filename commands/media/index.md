@@ -3,7 +3,7 @@ layout: default
 title: 'wp media'
 ---
 
-`wp media` - Control the media library and its attachments.
+`wp media` - Manage attachments.
 
 
 

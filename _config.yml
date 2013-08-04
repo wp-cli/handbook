@@ -1,7 +1,7 @@
 safe: true
 lsi: false
 pygments: true
-markdown: redcarpet
+markdown: kramdown
 url: http://wp-cli.org
 permalink: /blog/:title.html
 paginate: 10

@@ -7,30 +7,28 @@ title: 'wp post create'
 
 ### OPTIONS
 
-	<filename>
-			Read post content from <filename>. If this value is present, the 
-	`--post_content` argument will be ignored.
+&lt;filename&gt;
+: Read post content from &lt;filename&gt;. If this value is present, the
+    `--post_content` argument will be ignored.
 
-	Passing `-` as the filename will cause post content to
-	be read from STDIN.
+  Passing `-` as the filename will cause post content to
+  be read from STDIN.
 
-	--<field>=<value>
-			Field values for the new post. See wp_insert_post().
+--&lt;field&gt;=&lt;value&gt;
+: Field values for the new post. See wp_insert_post().
 
-	--edit
-			Immediately open system's editor to write or edit post content. 
-	
-	(If content is read from a file, from STDIN, or from the `--post_content`
-	argument, that text will be loaded into the editor; otherwise, an empty
-	file will be opened.) 
+--edit
+: Immediately open system's editor to write or edit post content.
 
-	--porcelain
-			Output just the new post id.
+  If content is read from a file, from STDIN, or from the `--post_content`
+  argument, that text will be loaded into the editor.
+
+--porcelain
+: Output just the new post id.
 
 ### EXAMPLES
 
-	wp post create --post_type=page --post_status=publish --post_title='A future post' --post-status=future --post_date='2020-12-01 07:00:00'
+    wp post create --post_type=page --post_status=publish --post_title='A future post' --post-status=future --post_date='2020-12-01 07:00:00'
 
-	wp post create page.txt --post_type=page --post_title='Page from file'
-
+    wp post create page.txt --post_type=page --post_title='Page from file'
 

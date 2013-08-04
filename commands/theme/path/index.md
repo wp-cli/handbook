@@ -7,16 +7,15 @@ title: 'wp theme path'
 
 ### OPTIONS
 
-	<theme>
-			The theme to get the path to. If not set, will return the path to the
+&lt;theme&gt;
+: The theme to get the path to. If not set, will return the path to the
 themes directory.
 
-	--dir
-			If set, get the path to the closest parent directory, instead of the
+--dir
+: If set, get the path to the closest parent directory, instead of the
 theme file.
 
 ### EXAMPLES
 
-	cd $(wp theme path)
-
+    cd $(wp theme path)
 

@@ -7,11 +7,10 @@ title: 'wp comment status'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the comment to check
+&lt;ID&gt;
+: The ID of the comment to check
 
 ### EXAMPLES
 
-	wp comment status 1337
-
+    wp comment status 1337
 

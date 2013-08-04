@@ -7,20 +7,19 @@ title: 'wp db'
 
 ### OPTIONS
 
-	--yes
-			Answer yes to the confirmation message.
+--yes
+: Answer yes to the confirmation message.
 
-	<file>
-			The name of the export file. If omitted, it will be '{dbname}.sql'
+&lt;file&gt;
+: The name of the export file. If omitted, it will be '{dbname}.sql'
 
-	<SQL>
-			A SQL query.
+&lt;SQL&gt;
+: A SQL query.
 
 ### EXAMPLES
 
-	# execute a query stored in a file
-	wp db query < debug.sql
-
+    # execute a query stored in a file
+    wp db query &lt; debug.sql
 
 ### SUBCOMMANDS
 

@@ -7,16 +7,14 @@ title: 'wp plugin uninstall'
 
 ### OPTIONS
 
-* <plugin>:
+&lt;plugin&gt;
+: The plugin to uninstall.
 
-	The plugin to uninstall.
-
-	--no-delete
-			If set, the plugin files will not be deleted. Only the uninstall procedure
+--no-delete
+: If set, the plugin files will not be deleted. Only the uninstall procedure
 will be run.
 
 ### EXAMPLES
 
-	wp plugin uninstall hello
-
+    wp plugin uninstall hello
 

@@ -21,6 +21,5 @@ variable.
 
 ### EXAMPLE
 
-	wp scaffold plugin-tests hello
-
+    wp scaffold plugin-tests hello
 

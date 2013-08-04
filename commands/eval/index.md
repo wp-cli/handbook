@@ -7,6 +7,5 @@ title: 'wp eval'
 
 ### EXAMPLES
 
-	wp eval 'echo WP_CONTENT_DIR;'
-
+    wp eval 'echo WP_CONTENT_DIR;'
 

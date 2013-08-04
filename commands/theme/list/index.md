@@ -7,11 +7,11 @@ title: 'wp theme list'
 
 ### OPTIONS
 
-	--format=<format>
-		  Output list as table, CSV or JSON. Defaults to table.
+* `--format`=&lt;format&gt;:
+
+    Output list as table, CSV or JSON. Defaults to table.
 
 ### EXAMPLES
 
-  wp theme list --format=csv
-
+    wp theme list --format=csv
 

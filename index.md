@@ -14,9 +14,9 @@ title: Command line interface for WordPress
 
 Just execute the following command in your terminal:
 
-```
+~~~
 curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
-```
+~~~
 
 Make sure to read the instructions.
 
@@ -27,40 +27,40 @@ WP-CLI comes with a tab completion script for command, subcommand and flag names
 
 If you're using **Bash**, add the following lines to `~/.bash_profile`:
 
-```
+~~~
 # WP-CLI Bash completions
 source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
-```
+~~~
 
 And re-load the file:
 
-```
+~~~
 source ~/.bash_profile
-```
+~~~
 
 If you're using **Zsh**, add the following lines to `~/.zprofile`:
 
-```
+~~~
 # WP-CLI Bash completions
 autoload bashcompinit
 bashcompinit
 source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
-```
+~~~
 
 And re-load the file:
 
-```
+~~~
 source ~/.zprofile
-```
+~~~
 
 <h3 id="update">Updating</h3>
 
 If you installed WP-CLI using the method above, you can also easily update it:
 
-```
+~~~
 cd ~/.wp-cli
 php composer.phar update
-```
+~~~
 
 Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
 
@@ -68,13 +68,13 @@ Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alt
 
 Go into a WordPress root folder:
 
-```
+~~~
 cd /var/www/wp/
-```
+~~~
 
 Typing `wp` should show you output similar to this:
 
-```
+~~~
 Available commands:
     wp blog create|delete
     wp cache add|decr|delete|flush|get|incr|replace|set|type
@@ -85,50 +85,50 @@ Available commands:
     ...
 
 See 'wp help <command>' for more information on a specific command.
-```
+~~~
 
 Let's try to install the Hello Dolly plugin from wordpress.org:
 
-```
+~~~
 wp plugin install hello-dolly
-```
+~~~
 
 Output:
 
-```
+~~~
 Installing Hello Dolly (1.5)
 
 Downloading install package from http://downloads.WordPress.org/plugin/hello-dolly.1.5.zip ...
 Unpacking the package ...
 Installing the plugin ...
 Plugin installed successfully.
-```
+~~~
 
 <h3 id="multisite">Multisite</h3>
 
 On a multisite installation, you need to pass a `--url` parameter, so that WP-CLI knows which site it's supposed to be operating on:
 
-```
+~~~
 wp theme status --url=localhost/wp/test
-```
+~~~
 
 If you have a subdomain installation, it would look like this:
 
-```
+~~~
 wp theme status --url=test.example.com
-```
+~~~
 
 If you're usually working on the same site most of the time, you can create a `wp-cli.yml` file in the root directory:
 
-```
+~~~
 url: test.example.com
-```
+~~~
 
 Then, you can call `wp` without the `--url` parameter again:
 
-```
+~~~
 wp theme status
-```
+~~~
 
 <h2>Adding commands</h2>
 

@@ -7,13 +7,13 @@ title: 'wp term delete'
 
 ### OPTIONS
 
-	<term-id>
-			ID for the term to delete.
+&lt;term-id&gt;
+: ID for the term to delete.
 
-	<taxonomy>
-			Taxonomy of the term to delete.
+&lt;taxonomy&gt;
+: Taxonomy of the term to delete.
 
 ### EXAMPLES
 
-	wp term delete 15 category
+    wp term delete 15 category
 

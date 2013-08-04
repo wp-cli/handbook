@@ -7,16 +7,15 @@ title: 'wp post delete'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the post to delete.
+&lt;ID&gt;
+: The ID of the post to delete.
 
-	--force
-			Skip the trash bin.
+--force
+: Skip the trash bin.
 
 ### EXAMPLES
 
-	wp post delete 123 --force
+    wp post delete 123 --force
 
-	wp post delete $(wp post list --post_type='page' --format=ids)
-
+    wp post delete $(wp post list --post_type='page' --format=ids)
 

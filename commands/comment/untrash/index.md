@@ -7,11 +7,10 @@ title: 'wp comment untrash'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the comment to untrash.
+&lt;ID&gt;
+: The ID of the comment to untrash.
 
 ### EXAMPLES
 
-	wp comment untrash 1337
-
+    wp comment untrash 1337
 

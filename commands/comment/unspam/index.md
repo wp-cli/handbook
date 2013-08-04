@@ -7,11 +7,10 @@ title: 'wp comment unspam'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the comment to unmark as spam.
+&lt;ID&gt;
+: The ID of the comment to unmark as spam.
 
 ### EXAMPLES
 
-	wp comment unspam 1337
-
+    wp comment unspam 1337
 

@@ -7,7 +7,7 @@ title: 'wp role delete'
 
 ### OPTIONS
 
-* <role-key>:
+* &lt;role-key&gt;:
 
     The internal name of the role, e.g. editor
 
@@ -16,6 +16,4 @@ title: 'wp role delete'
     wp role delete approver
 
     wp role delete productadmin
-
-
 

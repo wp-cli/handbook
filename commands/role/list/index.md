@@ -7,14 +7,13 @@ title: 'wp role list'
 
 ### OPTIONS
 
-	--fields=<fields>
-			Limit the output to specific object fields. Defaults to name,role.
+--fields=&lt;fields&gt;
+: Limit the output to specific object fields. Defaults to name,role.
 
-	--format=<format>
-			Output list as table, CSV or JSON. Defaults to table.
+--format=&lt;format&gt;
+: Output list as table, CSV or JSON. Defaults to table.
 
 ### EXAMPLES
 
     wp role list --fields=role --format=csv
-
 

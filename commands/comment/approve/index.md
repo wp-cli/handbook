@@ -7,11 +7,10 @@ title: 'wp comment approve'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the comment to approve.
+&lt;ID&gt;
+: The ID of the comment to approve.
 
 ### EXAMPLES
 
-	wp comment approve 1337
-
+    wp comment approve 1337
 

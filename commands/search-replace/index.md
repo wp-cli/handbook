@@ -13,19 +13,18 @@ It will correctly handle serialized values, and will not change primary key valu
 
 ### OPTIONS
 
-	--network
-			Search/replace through all the tables in a multisite install.
+--network
+: Search/replace through all the tables in a multisite install.
 
-	--skip-columns=<columns>
-			Do not perform the replacement in the comma-separated columns.
+--skip-columns=&lt;columns&gt;
+: Do not perform the replacement in the comma-separated columns.
 
-	--dry-run
-			Show report, but don't perform the changes.
+--dry-run
+: Show report, but don't perform the changes.
 
 ### EXAMPLES
 
-	wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid
+    wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid
 
-	wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
-
+    wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
 

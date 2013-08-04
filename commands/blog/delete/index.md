@@ -2,21 +2,4 @@
 layout: default
 title: 'wp blog delete'
 ---
-
-`wp blog delete` - Delete a blog in a multisite install.
-
-### OPTIONS
-
-	<blog-id>
-			The id of the blog to delete. If not provided, you must set the --slug parameter.
-
-	--slug=<slug>
-			Path of the blog to be deleted. Subdomain on subdomain installs, directory on subdirectory installs.
-
-	--yes
-			Answer yes to the confirmation message.
-
-	--keep-tables
-			Delete the blog from the list, but don't drop it's tables.
-
-
+The `wp blog delete` command has been renamed to [wp site delete](/commands/site/delete) in WP-CLI 0.11.

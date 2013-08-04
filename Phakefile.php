@@ -34,10 +34,10 @@ task( 'syn-list', function( $app ) {
 		}
 	}
 
-	generate_synopsis( invoke_wp_cli( 'wp --cmd-dump', $app ) );
+	generate_synopsis( invoke_wp_cli( 'wp cli cmd-dump', $app ) );
 });
 
-function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
+function gen_cmd_pages( $cmd, $parent = array() ) {
 	$parent[] = $cmd['name'];
 
 	$binding = $cmd;
@@ -45,43 +45,41 @@ function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
 	$binding['path'] = implode( '/', $parent );
 	$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? array(true) : false;
 
-	$docs_path = $wp_cli_path . '/man-src/' . implode( '-', $parent ) . '.txt';
-	if ( is_readable( $docs_path ) ) {
-		$docs = file_get_contents( $docs_path );
+	if ( $cmd['longdesc'] ) {
+		$docs = $cmd['longdesc'];
 		$docs = preg_replace( '/^## /m', '### ', $docs );
-		$docs = preg_replace( '/\n\* `(.+)`([^\n]*):\n\n/', "\n\t\\1\\2\n\t\t", $docs );
 		$binding['docs'] = $docs;
 	}
 
 	$path = __DIR__ . "/commands/" . $binding['path'];
-	mkdir( $path );
+	if ( !is_dir( $path ) ) {
+		mkdir( $path );
+	}
 	file_put_contents( "$path/index.md", render( 'subcmd-list.mustache', $binding ) );
 
 	if ( !isset( $cmd['subcommands'] ) )
 		return;
 
 	foreach ( $cmd['subcommands'] as $subcmd ) {
-		gen_cmd_pages( $wp_cli_path, $subcmd, $parent );
+		gen_cmd_pages( $subcmd, $parent );
 	}
 }
 
 desc( 'Update the /commands/ page.' );
 task( 'cmd-list', function( $app ) {
-	$wp = invoke_wp_cli( 'wp --cmd-dump', $app );
+	$wp = invoke_wp_cli( 'wp cli cmd-dump', $app );
 
 	// generate main page
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
 
-	system( sprintf( 'rm -rf %s/commands/*/', escapeshellarg( __DIR__ ) ) );
-
 	foreach ( $wp['subcommands'] as $cmd ) {
-		gen_cmd_pages( $app['path'], $cmd );
+		gen_cmd_pages( $cmd );
 	}
 });
 
 desc( 'Update the /config/ page.' );
 task( 'param-list', function( $app ) {
-	$config_spec = invoke_wp_cli( 'wp --param-dump', $app );
+	$config_spec = invoke_wp_cli( 'wp cli param-dump', $app );
 
 	$out = '';
 

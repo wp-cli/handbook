@@ -7,14 +7,15 @@ title: 'wp user update'
 
 ### OPTIONS
 
-	<ID>
-			The ID of the user to update.
+&lt;user&gt;
+: The user login or ID of the user to update.
 
-	--<field>=<value>
-			One or more fields to update. For accepted fields, see wp_update_user().
+--&lt;field&gt;=&lt;value&gt;
+: One or more fields to update. For accepted fields, see wp_update_user().
 
 ### EXAMPLES
 
-	wp user update 123 --user_login=mary --display_name=Mary
+    wp user update 123 --user_login=mary --display_name=Mary
 
+    wp user update mary --user_pass=marypass
 

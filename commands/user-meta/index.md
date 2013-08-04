@@ -7,13 +7,12 @@ title: 'wp user-meta'
 
 ### OPTIONS
 
-	--format=json
-			Encode/decode values as JSON.
+--format=json
+: Encode/decode values as JSON.
 
 ### EXAMPLES
 
-	wp user-meta set 123 description "Mary is a WordPress developer."
-
+    wp user-meta set 123 description &quot;Mary is a WordPress developer.&quot;
 
 ### SUBCOMMANDS
 

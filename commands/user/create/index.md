@@ -7,29 +7,28 @@ title: 'wp user create'
 
 ### OPTIONS
 
-	<user-login>
-			The login of the user to create.
+&lt;user-login&gt;
+: The login of the user to create.
 
-	<user-email>
-			The email address of the user to create.
+&lt;user-email&gt;
+: The email address of the user to create.
 
-	--role=<role>
-			The role of the user to create. Default: default role
+--role=&lt;role&gt;
+: The role of the user to create. Default: default role
 
-	--user_pass=<password>
-			The user password. Default: randomly generated
+--user_pass=&lt;password&gt;
+: The user password. Default: randomly generated
 
-	--user_registered=<yyyy-mm-dd>
-			The date the user registered. Default: current date
+--user_registered=&lt;yyyy-mm-dd&gt;
+: The date the user registered. Default: current date
 
-	--display_name=<name>
-			The display name.
+--display_name=&lt;name&gt;
+: The display name.
 
-	--porcelain
-			Output just the new user id.
+--porcelain
+: Output just the new user id.
 
 ### EXAMPLES
 
-	wp user create bob bob@example.com --role=author
-
+    wp user create bob bob@example.com --role=author
 
