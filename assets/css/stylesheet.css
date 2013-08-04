@@ -142,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 dt {
 	font-style: italic;
 	font-weight: bold;
+	margin-top: 20px;
 }
 
 ul li {
