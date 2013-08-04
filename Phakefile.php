@@ -49,7 +49,6 @@ function gen_cmd_pages( $wp_cli_path, $cmd, $parent = array() ) {
 	if ( is_readable( $docs_path ) ) {
 		$docs = file_get_contents( $docs_path );
 		$docs = preg_replace( '/^## /m', '### ', $docs );
-		$docs = preg_replace( '/\n\* `(.+)`([^\n]*):\n\n/', "\n\t\\1\\2\n\t\t", $docs );
 		$binding['docs'] = $docs;
 	}
 
