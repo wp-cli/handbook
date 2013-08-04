@@ -7,9 +7,9 @@ A few years ago, I came across a very interesting project by Joseph Scott, calle
 
 With [WP-CLI](/) 0.9.0-beta, you can do the same thing:
 
-```bash
+~~~bash
 wp post edit 123
-```
+~~~
 
 Once you run that command, your `$EDITOR` will open up, pre-filled with the content of the post with ID 123. After you've made your changes and quit the editor, WP-CLI will update the post in the database.
 
