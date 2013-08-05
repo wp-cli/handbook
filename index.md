@@ -59,6 +59,7 @@ If you installed WP-CLI using the method above, you can also easily update it:
 
 ~~~
 cd ~/.wp-cli
+php composer.phar self-update
 php composer.phar update --no-dev
 ~~~
 
