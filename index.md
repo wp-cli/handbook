@@ -20,7 +20,6 @@ curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
 
 Make sure to read the instructions.
 
-<a name="autocomplete"></a>
 <h3 id="complete">Tab completions</h3>
 
 WP-CLI comes with a tab completion script for command, subcommand and flag names.
