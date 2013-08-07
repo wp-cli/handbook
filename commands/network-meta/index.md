@@ -29,19 +29,19 @@ title: 'wp network-meta'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/network-meta/add">add</a></td>
+			<td><a href="/commands/network-meta/add/">add</a></td>
 			<td>Add a meta field.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/network-meta/delete">delete</a></td>
+			<td><a href="/commands/network-meta/delete/">delete</a></td>
 			<td>Delete a meta field.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/network-meta/get">get</a></td>
+			<td><a href="/commands/network-meta/get/">get</a></td>
 			<td>Get meta field value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/network-meta/update">update</a></td>
+			<td><a href="/commands/network-meta/update/">update</a></td>
 			<td>Update a meta field.</td>
 		</tr>
 	</tbody>
