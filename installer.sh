@@ -75,17 +75,6 @@ command -v bin/wp > /dev/null || {
 	echo "WP-CLI files have been succesfully installed."
 }
 
-command -v bin/boris > /dev/null || {
-	echo
-	printf "Trying to install the optional Boris package... "
-	$COMPOSER --quiet require --prefer-source 'd11wtq/boris=@stable'
-	if [ $? -gt 0 ]; then
-		echo "failed."
-	else
-		echo "done."
-	fi
-}
-
 cat <<EOB
 
 To test WP-CLI, run:
