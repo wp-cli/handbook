@@ -84,7 +84,7 @@ To test WP-CLI, run:
 Make sure you have the following line in your .bashrc file:
 
 	# WP-CLI directory
-	PATH=$INSTALL_DIR/bin:\$PATH
+	export PATH=$INSTALL_DIR/bin:\$PATH
 EOB
 
 if [ "$WP_CLI_PHP" != "$(which php)" ]; then
