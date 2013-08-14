@@ -81,7 +81,7 @@ To test WP-CLI, run:
 
 	$INSTALL_DIR/bin/wp --info
 
-Make sure you have the following line in your .bashrc file:
+Make sure you have the following line in your .bash_profile file:
 
 	# WP-CLI directory
 	export PATH=$INSTALL_DIR/bin:\$PATH
