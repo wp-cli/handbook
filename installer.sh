@@ -72,7 +72,7 @@ command -v bin/wp > /dev/null || {
 	echo "-----------------"
 	$COMPOSER require --prefer-source wp-cli/wp-cli="$VERSION"
 	echo
-	echo "WP-CLI files have been succesfully installed."
+	echo "WP-CLI files have been successfully installed."
 }
 
 cat <<EOB
