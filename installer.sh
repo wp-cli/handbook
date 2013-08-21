@@ -2,6 +2,7 @@
 
 find_php() {
 	read -r -d '' AMP_PATHS <<EOB
+/Applications/MAMP/bin/php5.3/bin/php
 /Applications/MAMP/bin/php/*/bin/php
 /Applications/xampp/xamppfiles/bin/php
 /opt/lampp/bin/php
