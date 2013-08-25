@@ -6,6 +6,8 @@ url: http://wp-cli.org
 permalink: /blog/:title.html
 paginate: 10
 paginate_path: /blog/page:num
+include:
+  - _s
 exclude:
   - Phakefile.php
   - README.md
