@@ -59,7 +59,7 @@ If you installed WP-CLI using the method above, you can also easily update it:
 ~~~
 cd ~/.wp-cli
 php composer.phar self-update
-php composer.phar update --no-dev
+php composer.phar require 'wp-cli/wp-cli=@stable' --no-dev
 ~~~
 
 Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
