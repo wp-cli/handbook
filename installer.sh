@@ -71,14 +71,15 @@ command -v bin/wp > /dev/null || {
 	echo
 	echo "Installing WP-CLI in $INSTALL_DIR"
 	echo "-----------------"
-	OUTPUT=$($COMPOSER require --prefer-source wp-cli/wp-cli="$VERSION")
+	$COMPOSER require --prefer-source wp-cli/wp-cli="$VERSION"
 	echo "$OUTPUT"
 	echo
-	if [[ $OUTPUT = *failed* ]]; then
-	   echo "WP-CLI encountered an error during installation."
+	if [ $? -ne 0 ]; then
+	   echo "WP-CLI was not successfully installed."
 	   exit 1
 	else
 	   echo "WP-CLI files have been successfully installed."
+   	fi
    fi
 }
 
