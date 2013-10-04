@@ -34,6 +34,10 @@ title: 'wp theme'
 			<td>Install a theme.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/theme/is-installed/">is-installed</a></td>
+			<td>Check if the theme is installed.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/theme/list/">list</a></td>
 			<td>Get a list of themes.</td>
 		</tr>

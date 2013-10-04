@@ -39,7 +39,7 @@ title: 'wp plugin'
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/is-installed/">is-installed</a></td>
-			<td>Check if the plugin is installed</td>
+			<td>Check if the plugin is installed.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/list/">list</a></td>

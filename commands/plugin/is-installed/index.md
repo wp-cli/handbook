@@ -3,7 +3,7 @@ layout: default
 title: 'wp plugin is-installed'
 ---
 
-`wp plugin is-installed` - Check if the plugin is installed
+`wp plugin is-installed` - Check if the plugin is installed.
 
 ### OPTIONS
 
