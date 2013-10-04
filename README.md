@@ -12,5 +12,6 @@ vendor/bin/phake
 
 ### Preview locally
 
-1. [Install Jekyll](https://github.com/mojombo/jekyll/wiki/install).
+1. [Install Jekyll](http://jekyllrb.com/docs/installation/).
+2. [Install Kramdown](http://jekyllrb.com/docs/extras/#kramdown).
 2. Run `jekyll serve --watch`
