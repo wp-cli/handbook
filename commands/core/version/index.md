@@ -7,6 +7,6 @@ title: 'wp core version'
 
 ### OPTIONS
 
---extra
+[\--extra]
 : Show extended version information.
 

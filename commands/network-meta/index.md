@@ -10,7 +10,7 @@ title: 'wp network-meta'
 &lt;id&gt;
 : The network id (usually 1).
 
---format=json
+\--format=json
 : Encode/decode values as JSON.
 
 ### EXAMPLES

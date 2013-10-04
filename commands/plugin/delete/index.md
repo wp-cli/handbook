@@ -7,8 +7,8 @@ title: 'wp plugin delete'
 
 ### OPTIONS
 
-&lt;plugin&gt;
-: The plugin to delete.
+&lt;plugin&gt;...
+: One or more plugins to delete.
 
 ### EXAMPLES
 

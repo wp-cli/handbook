@@ -7,9 +7,9 @@ title: 'wp plugin toggle'
 
 ### OPTIONS
 
-&lt;plugin&gt;
-: The plugin to toggle.
+&lt;plugin&gt;...
+: One or more plugins to toggle.
 
---network
+[\--network]
 : If set, the plugin will be toggled for the entire multisite network.
 

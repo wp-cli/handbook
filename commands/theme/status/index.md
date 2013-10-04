@@ -7,6 +7,6 @@ title: 'wp theme status'
 
 ### OPTIONS
 
-&lt;theme&gt;
+[&lt;theme&gt;]
 : A particular theme to show the status for.
 

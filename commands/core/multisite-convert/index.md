@@ -7,13 +7,13 @@ title: 'wp core multisite-convert'
 
 ### OPTIONS
 
---title=&lt;site-title&gt;
+[\--title=&lt;network-title&gt;]
 : The title of the new network.
 
---base=&lt;url-path&gt;
+[\--base=&lt;url-path&gt;]
 : Base path after the domain name that each site url will start with.
 Default: '/'
 
---subdomains
+[\--subdomains]
 : If passed, the network will use subdomains, instead of subdirectories.
 

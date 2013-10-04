@@ -29,5 +29,9 @@ title: 'wp site'
 			<td><a href="/commands/site/empty/">empty</a></td>
 			<td>Empty a site of its content (posts, comments, and terms).</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/site/list/">list</a></td>
+			<td>List all sites in a multisite install.</td>
+		</tr>
 	</tbody>
 </table>

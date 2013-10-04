@@ -7,7 +7,7 @@ title: 'wp comment trash'
 
 ### OPTIONS
 
-&lt;ID&gt;
+&lt;id&gt;
 : The ID of the comment to trash.
 
 ### EXAMPLES

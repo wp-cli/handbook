@@ -18,12 +18,12 @@ title: 'wp rewrite'
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/rewrite/dump/">dump</a></td>
-			<td>Print current rewrite rules.</td>
-		</tr>
-		<tr>
 			<td><a href="/commands/rewrite/flush/">flush</a></td>
 			<td>Flush rewrite rules.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/rewrite/list/">list</a></td>
+			<td>Print current rewrite rules.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/rewrite/structure/">structure</a></td>

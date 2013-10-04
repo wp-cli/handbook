@@ -7,26 +7,35 @@ title: 'wp core config'
 
 ### OPTIONS
 
---dbname=&lt;dbname&gt;
+\--dbname=&lt;dbname&gt;
 : Set the database name.
 
---dbuser=&lt;dbuser&gt;
+\--dbuser=&lt;dbuser&gt;
 : Set the database user.
 
---dbpass=&lt;dbpass&gt;
+[\--dbpass=&lt;dbpass&gt;]
 : Set the database user password.
 
---dbhost=&lt;dbhost&gt;
+[\--dbhost=&lt;dbhost&gt;]
 : Set the database host. Default: 'localhost'
 
---dbprefix=&lt;dbprefix&gt;
+[\--dbprefix=&lt;dbprefix&gt;]
 : Set the database table prefix. Default: 'wp_'
 
---locale=&lt;locale&gt;
+[\--dbcharset=&lt;dbcharset&gt;]
+: Set the database charset. Default: 'utf8'
+
+[\--dbcollate=&lt;dbcollate&gt;]
+: Set the database collation. Default: ''
+
+[\--locale=&lt;locale&gt;]
 : Set the WPLANG constant. Defaults to $wp_local_package variable.
 
---extra-php
+[\--extra-php]
 : If set, the command reads additional PHP code from STDIN.
+
+[\--skip-salts]
+: If set, keys and salts won't be generated, but, instead, should be passed via --extra-php.
 
 ### EXAMPLES
 

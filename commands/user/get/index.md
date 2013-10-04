@@ -10,7 +10,10 @@ title: 'wp user get'
 &lt;user&gt;
 : User ID or user login.
 
---format=&lt;format&gt;
+[\--field=&lt;field&gt;]
+: Instead of returning the whole user, returns the value of a single field.
+
+[\--format=&lt;format&gt;]
 : The format to use when printing the user; acceptable values:
 
     **table**: Outputs all fields of the user as a table.
@@ -19,7 +22,7 @@ title: 'wp user get'
 
 ### EXAMPLES
 
-    wp user get 12
+    wp user get 12 --field=login
 
     wp user get bob --format=json &gt; bob.json
 

@@ -13,13 +13,22 @@ It will correctly handle serialized values, and will not change primary key valu
 
 ### OPTIONS
 
---network
+&lt;old&gt;
+: The old string.
+
+&lt;new&gt;
+: The new string.
+
+[&lt;table&gt;...]
+: List of database tables to restrict the replacement to.
+
+[\--network]
 : Search/replace through all the tables in a multisite install.
 
---skip-columns=&lt;columns&gt;
+[\--skip-columns=&lt;columns&gt;]
 : Do not perform the replacement in the comma-separated columns.
 
---dry-run
+[\--dry-run]
 : Show report, but don't perform the changes.
 
 ### EXAMPLES

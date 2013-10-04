@@ -26,8 +26,16 @@ title: 'wp theme'
 			<td>Delete a theme.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/theme/get/">get</a></td>
+			<td>Get a theme</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/theme/install/">install</a></td>
 			<td>Install a theme.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/theme/is-installed/">is-installed</a></td>
+			<td>Check if the theme is installed.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/list/">list</a></td>
@@ -38,16 +46,16 @@ title: 'wp theme'
 			<td>Get the path to a theme or to the theme directory.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/theme/search/">search</a></td>
+			<td>Search the wordpress.org theme repository.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/theme/status/">status</a></td>
 			<td>See the status of one or all themes.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/update/">update</a></td>
-			<td>Update a theme.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/theme/update-all/">update-all</a></td>
-			<td>Update all themes.</td>
+			<td>Update one or more themes.</td>
 		</tr>
 	</tbody>
 </table>

@@ -7,10 +7,10 @@ title: 'wp post delete'
 
 ### OPTIONS
 
-&lt;ID&gt;
-: The ID of the post to delete.
+&lt;id&gt;...
+: One or more IDs of posts to delete.
 
---force
+[\--force]
 : Skip the trash bin.
 
 ### EXAMPLES

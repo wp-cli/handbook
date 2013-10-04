@@ -7,7 +7,7 @@ title: 'wp user-meta'
 
 ### OPTIONS
 
---format=json
+\--format=json
 : Encode/decode values as JSON.
 
 ### EXAMPLES
