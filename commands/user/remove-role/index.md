@@ -10,8 +10,11 @@ title: 'wp user remove-role'
 &lt;user&gt;
 : User ID or user login.
 
+[&lt;role&gt;]
+: A specific role to remove.
+
 ### EXAMPLES
 
     wp user remove-role bob
-    wp user remove-role 12
+    wp user remove-role 12 editor
 

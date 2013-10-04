@@ -7,8 +7,8 @@ title: 'wp user update'
 
 ### OPTIONS
 
-&lt;user&gt;
-: The user login or ID of the user to update.
+&lt;user&gt;...
+: The user login or ID of the user(s) to update.
 
 --&lt;field&gt;=&lt;value&gt;
 : One or more fields to update. For accepted fields, see wp_update_user().

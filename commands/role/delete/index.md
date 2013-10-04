@@ -7,9 +7,8 @@ title: 'wp role delete'
 
 ### OPTIONS
 
-* &lt;role-key&gt;:
-
-    The internal name of the role, e.g. editor
+&lt;role-key&gt;
+: The internal name of the role.
 
 ### EXAMPLES
 

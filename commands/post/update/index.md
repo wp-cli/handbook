@@ -7,8 +7,8 @@ title: 'wp post update'
 
 ### OPTIONS
 
-&lt;ID&gt;
-: The ID of the post to update.
+&lt;id&gt;...
+: One or more IDs of posts to update.
 
 --&lt;field&gt;=&lt;value&gt;
 : One or more fields to update. See wp_update_post().

@@ -7,13 +7,11 @@ title: 'wp role create'
 
 ### OPTIONS
 
-* &lt;role-key&gt;:
+&lt;role-key&gt;
+: The internal name of the role.
 
-    The internal name of the role, e.g. editor
-
-* &lt;role-name&gt;:
-
-    The publically visible name of the role, e.g. Editor
+&lt;role-name&gt;
+: The publicly visible name of the role.
 
 ### EXAMPLES
 

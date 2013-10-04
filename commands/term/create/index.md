@@ -13,16 +13,16 @@ title: 'wp term create'
 &lt;taxonomy&gt;
 : Taxonomy for the new term.
 
---slug=&lt;slug&gt;
+[--slug=&lt;slug&gt;]
 : A unique slug for the new term. Defaults to sanitized version of name.
 
---description=&lt;description&gt;
+[--description=&lt;description&gt;]
 : A description for the new term.
 
---parent=&lt;term-id&gt;
+[--parent=&lt;term-id&gt;]
 : A parent for the new term.
 
---porcelain
+[--porcelain]
 : Output just the new term id.
 
 ### EXAMPLES

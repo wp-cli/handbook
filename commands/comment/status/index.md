@@ -7,8 +7,8 @@ title: 'wp comment status'
 
 ### OPTIONS
 
-&lt;ID&gt;
-: The ID of the comment to check
+&lt;id&gt;
+: The ID of the comment to check.
 
 ### EXAMPLES
 

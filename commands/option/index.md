@@ -7,7 +7,7 @@ title: 'wp option'
 
 ### OPTIONS
 
---format=json
+[--format=json]
 : Encode/decode values as JSON.
 
 ### EXAMPLES

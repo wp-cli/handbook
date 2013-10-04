@@ -19,6 +19,11 @@ These are the files that are generated:
 The `tests/bootstrap.php` file looks for the WP_TESTS_DIR environment
 variable.
 
+### OPTIONS
+
+&lt;plugin&gt;
+: The name of the plugin to generate test files for.
+
 ### EXAMPLE
 
     wp scaffold plugin-tests hello

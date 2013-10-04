@@ -7,9 +7,14 @@ title: 'wp plugin list'
 
 ### OPTIONS
 
-* `--format`=&lt;format&gt;:
+[--field=&lt;field&gt;]
+: Prints the value of a single field for each plugin.
 
-    Output list as table, CSV or JSON. Defaults to table.
+[--fields=&lt;fields&gt;]
+: Limit the output to specific object fields. Defaults to name,status,update,version.
+
+[--format=&lt;format&gt;]
+: Output list as table, CSV or JSON. Defaults to table.
 
 ### EXAMPLES
 

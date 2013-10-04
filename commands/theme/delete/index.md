@@ -7,8 +7,8 @@ title: 'wp theme delete'
 
 ### OPTIONS
 
-&lt;theme&gt;
-: The theme to delete.
+&lt;theme&gt;...
+: One or more themes to delete.
 
 ### EXAMPLES
 

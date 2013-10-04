@@ -26,6 +26,10 @@ title: 'wp term'
 			<td>Delete a term.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/term/get/">get</a></td>
+			<td>Get a taxonomy term</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/term/list/">list</a></td>
 			<td>List terms in a taxonomy.</td>
 		</tr>

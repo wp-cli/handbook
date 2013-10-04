@@ -11,9 +11,8 @@ Will exit with status 0 if the role exists, 1 if it does not.
 
 ### OPTIONS
 
-* &lt;role-key&gt;:
-
-    The internal name of the role, e.g. editor
+&lt;role-key&gt;
+: The internal name of the role.
 
 ### EXAMPLES
 

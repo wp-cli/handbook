@@ -15,6 +15,6 @@ title: 'wp user add-role'
 
 ### EXAMPLES
 
-    wp user set-role bob author
-    wp user set-role 12 author
+    wp user add-role bob author
+    wp user add-role 12 author
 

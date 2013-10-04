@@ -7,6 +7,6 @@ title: 'wp site empty'
 
 ### OPTIONS
 
---yes
+[--yes]
 : Proceed to empty the site without a confirmation prompt.
 

@@ -7,18 +7,18 @@ title: 'wp plugin install'
 
 ### OPTIONS
 
-&lt;plugin|zip|url&gt;
+&lt;plugin|zip|url&gt;...
 : A plugin slug, the path to a local zip file, or URL to a remote zip file.
 
---version=&lt;version&gt;
+[--version=&lt;version&gt;]
 : If set, get that particular version from wordpress.org, instead of the
 stable version.
 
---force
+[--force]
 : If set, the command will overwrite any installed version of the plugin, without prompting
 for confirmation.
 
---activate
+[--activate]
 : If set, the plugin will be activated immediately after install.
 
 ### EXAMPLES

@@ -13,8 +13,8 @@ title: 'wp core install'
 --title=&lt;site-title&gt;
 : The title of the new site.
 
---admin_name=&lt;username&gt;
-: The name of the admin user. Default: 'admin'
+--admin_user=&lt;username&gt;
+: The name of the admin user.
 
 --admin_password=&lt;password&gt;
 : The password for the admin user.

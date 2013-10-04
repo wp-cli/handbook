@@ -7,6 +7,6 @@ title: 'wp rewrite flush'
 
 ### OPTIONS
 
---hard
-: Perform a hard flush - do not overwrite `.htaccess`. The default is to update `.htaccess` rules as well as rewrite rules in database.
+[--hard]
+: Perform a hard flush - update `.htaccess` rules as well as rewrite rules in database.
 

@@ -34,8 +34,16 @@ title: 'wp comment'
 			<td>Delete a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/last/">last</a></td>
-			<td>Get last approved comment.</td>
+			<td><a href="/commands/comment/exists/">exists</a></td>
+			<td>Verify whether a comment exists.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/comment/get/">get</a></td>
+			<td>Get a single comment.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/comment/list/">list</a></td>
+			<td>Get a list of comments.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/spam/">spam</a></td>
@@ -60,6 +68,10 @@ title: 'wp comment'
 		<tr>
 			<td><a href="/commands/comment/untrash/">untrash</a></td>
 			<td>Untrash a comment.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/comment/update/">update</a></td>
+			<td>Update one or more comments.</td>
 		</tr>
 	</tbody>
 </table>

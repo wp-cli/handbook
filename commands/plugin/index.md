@@ -30,8 +30,16 @@ title: 'wp plugin'
 			<td>Delete plugin files.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/plugin/get/">get</a></td>
+			<td>Get a plugin.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/plugin/install/">install</a></td>
 			<td>Install a plugin.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/plugin/is-installed/">is-installed</a></td>
+			<td>Check if the plugin is installed</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/list/">list</a></td>
@@ -40,6 +48,10 @@ title: 'wp plugin'
 		<tr>
 			<td><a href="/commands/plugin/path/">path</a></td>
 			<td>Get the path to a plugin or to the plugin directory.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/plugin/search/">search</a></td>
+			<td>Search the wordpress.org plugin repository.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/status/">status</a></td>
@@ -55,11 +67,7 @@ title: 'wp plugin'
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/update/">update</a></td>
-			<td>Update a plugin.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/plugin/update-all/">update-all</a></td>
-			<td>Update all plugins.</td>
+			<td>Update one or more plugins.</td>
 		</tr>
 	</tbody>
 </table>

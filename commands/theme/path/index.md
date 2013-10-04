@@ -7,13 +7,13 @@ title: 'wp theme path'
 
 ### OPTIONS
 
-&lt;theme&gt;
-: The theme to get the path to. If not set, will return the path to the
-themes directory.
+[&lt;theme&gt;]
+: The theme to get the path to. Path includes &quot;style.css&quot; file.
+If not set, will return the path to the themes directory.
 
---dir
+[--dir]
 : If set, get the path to the closest parent directory, instead of the
-theme file.
+theme's &quot;style.css&quot; file.
 
 ### EXAMPLES
 

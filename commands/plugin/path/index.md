@@ -7,11 +7,11 @@ title: 'wp plugin path'
 
 ### OPTIONS
 
-&lt;plugin&gt;
+[&lt;plugin&gt;]
 : The plugin to get the path to. If not set, will return the path to the
 plugins directory.
 
---dir
+[--dir]
 : If set, get the path to the closest parent directory, instead of the
 plugin file.
 

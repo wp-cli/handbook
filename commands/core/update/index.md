@@ -7,11 +7,13 @@ title: 'wp core update'
 
 ### OPTIONS
 
---version=&lt;new_version&gt; [package/zip]
-: When passed, updates to new_version, optionally using package/zip as
-input.
+[&lt;zip&gt;]
+: Path to zip file to use, instead of downloading from wordpress.org.
 
---force
+[--version=&lt;version&gt;]
+: Update to this version, instead of to the latest version.
+
+[--force]
 : Will update even when current WP version &lt; passed version. Use with
 caution.
 

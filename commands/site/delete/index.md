@@ -7,15 +7,15 @@ title: 'wp site delete'
 
 ### OPTIONS
 
-&lt;blog-id&gt;
-: The id of the blog to delete. If not provided, you must set the --slug parameter.
+[&lt;site-id&gt;]
+: The id of the site to delete. If not provided, you must set the --slug parameter.
 
---slug=&lt;slug&gt;
+[--slug=&lt;slug&gt;]
 : Path of the blog to be deleted. Subdomain on subdomain installs, directory on subdirectory installs.
 
---yes
+[--yes]
 : Answer yes to the confirmation message.
 
---keep-tables
+[--keep-tables]
 : Delete the blog from the list, but don't drop it's tables.
 

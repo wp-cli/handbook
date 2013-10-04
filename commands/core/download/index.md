@@ -7,14 +7,13 @@ title: 'wp core download'
 
 ### OPTIONS
 
---locale=&lt;locale&gt;
-: Select which language you want to download. The --version parameter is
-ignored in this case.
+[--locale=&lt;locale&gt;]
+: Select which language you want to download.
 
---version=&lt;version&gt;
+[--version=&lt;version&gt;]
 : Select which version you want to download.
 
---force
+[--force]
 : Overwrites existing files, if present.
 
 ### EXAMPLES

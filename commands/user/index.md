@@ -18,6 +18,10 @@ title: 'wp user'
 	</thead>
 	<tbody>
 		<tr>
+			<td><a href="/commands/user/add-cap/">add-cap</a></td>
+			<td>Add a capability for a user.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/user/add-role/">add-role</a></td>
 			<td>Add a role for a user.</td>
 		</tr>
@@ -44,6 +48,14 @@ title: 'wp user'
 		<tr>
 			<td><a href="/commands/user/list/">list</a></td>
 			<td>List users.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/user/list-caps/">list-caps</a></td>
+			<td>List all user's capabilities.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/user/remove-cap/">remove-cap</a></td>
+			<td>Remove a user's capability.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/remove-role/">remove-role</a></td>
