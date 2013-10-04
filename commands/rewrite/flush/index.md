@@ -7,6 +7,6 @@ title: 'wp rewrite flush'
 
 ### OPTIONS
 
-[--hard]
+[\--hard]
 : Perform a hard flush - update `.htaccess` rules as well as rewrite rules in database.
 

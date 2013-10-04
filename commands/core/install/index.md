@@ -7,18 +7,18 @@ title: 'wp core install'
 
 ### OPTIONS
 
---url=&lt;url&gt;
+\--url=&lt;url&gt;
 : The address of the new site.
 
---title=&lt;site-title&gt;
+\--title=&lt;site-title&gt;
 : The title of the new site.
 
---admin_user=&lt;username&gt;
+\--admin_user=&lt;username&gt;
 : The name of the admin user.
 
---admin_password=&lt;password&gt;
+\--admin_password=&lt;password&gt;
 : The password for the admin user.
 
---admin_email=&lt;email&gt;
+\--admin_email=&lt;email&gt;
 : The email address for the admin user.
 

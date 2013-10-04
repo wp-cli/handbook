@@ -14,16 +14,16 @@ title: 'wp post create'
   Passing `-` as the filename will cause post content to
   be read from STDIN.
 
-[--&lt;field&gt;=&lt;value&gt;]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Associative args for the new post. See wp_insert_post().
 
-[--edit]
+[\--edit]
 : Immediately open system's editor to write or edit post content.
 
   If content is read from a file, from STDIN, or from the `--post_content`
   argument, that text will be loaded into the editor.
 
-[--porcelain]
+[\--porcelain]
 : Output just the new post id.
 
 ### EXAMPLES

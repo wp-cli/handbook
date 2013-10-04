@@ -10,14 +10,14 @@ title: 'wp plugin update'
 [&lt;plugin&gt;...]
 : One or more plugins to update.
 
-[--all]
+[\--all]
 : If set, all plugins that have updates will be updated.
 
-[--version=&lt;version&gt;]
+[\--version=&lt;version&gt;]
 : If set, the plugin will be updated to the latest development version,
 regardless of what version is currently installed.
 
-[--dry-run]
+[\--dry-run]
 : Preview which plugins would be updated.
 
 ### EXAMPLES

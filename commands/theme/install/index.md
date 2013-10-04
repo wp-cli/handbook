@@ -10,15 +10,15 @@ title: 'wp theme install'
 &lt;theme|zip|url&gt;...
 : A theme slug, the path to a local zip file, or URL to a remote zip file.
 
-[--version=&lt;version&gt;]
+[\--version=&lt;version&gt;]
 : If set, get that particular version from wordpress.org, instead of the
 stable version.
 
-[--force]
+[\--force]
 : If set, the command will overwrite any installed version of the theme, without prompting
 for confirmation.
 
-[--activate]
+[\--activate]
 : If set, the theme will be activated immediately after install.
 
 ### EXAMPLES

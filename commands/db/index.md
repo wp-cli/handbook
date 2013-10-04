@@ -7,7 +7,7 @@ title: 'wp db'
 
 ### OPTIONS
 
---yes
+\--yes
 : Answer yes to the confirmation message.
 
 &lt;file&gt;

@@ -7,16 +7,16 @@ title: 'wp site list'
 
 ### OPTIONS
 
-[--network=&lt;id&gt;]
+[\--network=&lt;id&gt;]
 : The network to which the sites belong.
 
-[--field=&lt;field&gt;]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each site.
 
-[--fields=&lt;fields&gt;]
+[\--fields=&lt;fields&gt;]
 : Comma-separated list of fields to show.
 
-[--format=&lt;format&gt;]
+[\--format=&lt;format&gt;]
 : Output list as table, csv, json or url. Defaults to table.
 
 ### EXAMPLES

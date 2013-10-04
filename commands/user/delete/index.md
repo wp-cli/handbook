@@ -10,7 +10,7 @@ title: 'wp user delete'
 &lt;user&gt;...
 : The user login or ID of the user(s) to update.
 
-[--reassign=&lt;user-id&gt;]
+[\--reassign=&lt;user-id&gt;]
 : User ID to reassign the posts to.
 
 ### EXAMPLES

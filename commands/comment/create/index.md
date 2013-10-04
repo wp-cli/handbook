@@ -7,10 +7,10 @@ title: 'wp comment create'
 
 ### OPTIONS
 
---&lt;field&gt;=&lt;value&gt;
+\--&lt;field&gt;=&lt;value&gt;
 : Associative args for the new comment. See wp_insert_comment().
 
-[--porcelain]
+[\--porcelain]
 : Output just the new comment id.
 
 ### EXAMPLES

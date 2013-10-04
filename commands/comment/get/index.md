@@ -10,10 +10,10 @@ title: 'wp comment get'
 &lt;id&gt;
 : The comment to get.
 
-[--field=&lt;field&gt;]
+[\--field=&lt;field&gt;]
 : Instead of returning the whole comment, returns the value of a single field.
 
-[--format=&lt;format&gt;]
+[\--format=&lt;format&gt;]
 : The format to use when printing the comment, acceptable values:
 
   - **table**: Outputs all fields of the comment as a table.

@@ -13,16 +13,16 @@ title: 'wp term update'
 &lt;taxonomy&gt;
 : Taxonomy of the term to update.
 
-[--name=&lt;name&gt;]
+[\--name=&lt;name&gt;]
 : A new name for the term.
 
-[--slug=&lt;slug&gt;]
+[\--slug=&lt;slug&gt;]
 : A new slug for the term.
 
-[--description=&lt;description&gt;]
+[\--description=&lt;description&gt;]
 : A new description for the term.
 
-[--parent=&lt;term-id&gt;]
+[\--parent=&lt;term-id&gt;]
 : A new parent for the term.
 
 ### EXAMPLES

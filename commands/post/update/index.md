@@ -10,7 +10,7 @@ title: 'wp post update'
 &lt;id&gt;...
 : One or more IDs of posts to update.
 
---&lt;field&gt;=&lt;value&gt;
+\--&lt;field&gt;=&lt;value&gt;
 : One or more fields to update. See wp_update_post().
 
 ### EXAMPLES

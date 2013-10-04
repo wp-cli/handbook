@@ -7,25 +7,25 @@ title: 'wp core multisite-install'
 
 ### OPTIONS
 
-[--url=&lt;url&gt;]
+[\--url=&lt;url&gt;]
 : The address of the new site.
 
-[--base=&lt;url-path&gt;]
+[\--base=&lt;url-path&gt;]
 : Base path after the domain name that each site url in the network will start with.
 Default: '/'
 
-[--subdomains]
+[\--subdomains]
 : If passed, the network will use subdomains, instead of subdirectories.
 
---title=&lt;site-title&gt;
+\--title=&lt;site-title&gt;
 : The title of the new site.
 
---admin_user=&lt;username&gt;
+\--admin_user=&lt;username&gt;
 : The name of the admin user. Default: 'admin'
 
---admin_password=&lt;password&gt;
+\--admin_password=&lt;password&gt;
 : The password for the admin user.
 
---admin_email=&lt;email&gt;
+\--admin_email=&lt;email&gt;
 : The email address for the admin user.
 

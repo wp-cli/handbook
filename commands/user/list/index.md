@@ -7,19 +7,19 @@ title: 'wp user list'
 
 ### OPTIONS
 
-[--role=&lt;role&gt;]
+[\--role=&lt;role&gt;]
 : Only display users with a certain role.
 
-[--&lt;field&gt;=&lt;value&gt;]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Filter by one or more fields. For accepted fields, see get_users().
 
-[--field=&lt;field&gt;]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each user.
 
-[--fields=&lt;fields&gt;]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields. Defaults to ID,user_login,display_name,user_email,user_registered,roles
 
-[--format=&lt;format&gt;]
+[\--format=&lt;format&gt;]
 : Output list as table, CSV, JSON, or simply IDs. Defaults to table.
 
 ### EXAMPLES

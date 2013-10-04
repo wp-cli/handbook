@@ -10,10 +10,10 @@ title: 'wp plugin get'
 &lt;plugin&gt;
 : The plugin to get.
 
-[--field=&lt;field&gt;]
+[\--field=&lt;field&gt;]
 : Instead of returning the whole plugin, returns the value of a single field.
 
-[--format=&lt;format&gt;]
+[\--format=&lt;format&gt;]
 : Output list as table or JSON. Defaults to table.
 
 ### EXAMPLES

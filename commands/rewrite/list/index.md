@@ -7,7 +7,7 @@ title: 'wp rewrite list'
 
 ### OPTIONS
 
-[--format=&lt;format&gt;]
+[\--format=&lt;format&gt;]
 : Output list as table, JSON or CSV. Defaults to table.
 
 ### EXAMPLES

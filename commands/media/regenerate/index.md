@@ -10,7 +10,7 @@ title: 'wp media regenerate'
 [&lt;attachment-id&gt;...]
 : One or more IDs of the attachments to regenerate.
 
-[--yes]
+[\--yes]
 : Answer yes to the confirmation message.
 
 ### EXAMPLES

@@ -10,10 +10,10 @@ title: 'wp core update'
 [&lt;zip&gt;]
 : Path to zip file to use, instead of downloading from wordpress.org.
 
-[--version=&lt;version&gt;]
+[\--version=&lt;version&gt;]
 : Update to this version, instead of to the latest version.
 
-[--force]
+[\--force]
 : Will update even when current WP version &lt; passed version. Use with
 caution.
 

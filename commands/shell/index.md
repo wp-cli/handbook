@@ -11,6 +11,6 @@ title: 'wp shell'
 
 ### OPTIONS
 
-[--basic]
+[\--basic]
 : Start in fail-safe mode, even if Boris is available.
 

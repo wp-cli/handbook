@@ -48,6 +48,7 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 	if ( $cmd['longdesc'] ) {
 		$docs = $cmd['longdesc'];
 		$docs = preg_replace( '/^## /m', '### ', $docs );
+		$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
 		$binding['docs'] = $docs;
 	}
 

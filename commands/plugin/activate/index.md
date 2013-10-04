@@ -10,6 +10,6 @@ title: 'wp plugin activate'
 &lt;plugin&gt;...
 : One or more plugins to activate.
 
-[--network]
+[\--network]
 : If set, the plugin will be activated for the entire multisite network.
 

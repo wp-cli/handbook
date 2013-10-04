@@ -10,13 +10,13 @@ title: 'wp plugin search'
 &lt;search&gt;
 : The string to search for.
 
-[--per-page=&lt;per-page&gt;]
+[\--per-page=&lt;per-page&gt;]
 : Optional number of results to display. Defaults to 10.
 
-[--format=&lt;format&gt;]
+[\--format=&lt;format&gt;]
 : Output list as table, CSV or JSON. Defaults to table.
 
-[--fields=&lt;fields&gt;]
+[\--fields=&lt;fields&gt;]
 : Ask for specific fields from the API. Defaults to name,slug,author_profile,rating. Acceptable values:
 
     **name**: Plugin Name

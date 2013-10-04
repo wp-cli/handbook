@@ -10,7 +10,7 @@ title: 'wp comment delete'
 &lt;id&gt;
 : The ID of the comment to delete.
 
-[--force]
+[\--force]
 : Skip the trash bin.
 
 ### EXAMPLES
