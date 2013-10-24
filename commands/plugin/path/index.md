@@ -17,5 +17,5 @@ plugin file.
 
 ### EXAMPLES
 
-    cd $(wp theme path)
+    cd $(wp plugin path)
 
