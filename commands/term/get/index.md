@@ -17,10 +17,7 @@ title: 'wp term get'
 : Instead of returning the whole term, returns the value of a single field.
 
 [\--format=&lt;format&gt;]
-: The format to use when printing the term, acceptable values:
-
-  - **table**: Outputs all fields of the term as a table.
-  - **json**: Outputs all fields in JSON format.
+: Accepted values: table, json. Default: table
 
 ### EXAMPLES
 

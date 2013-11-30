@@ -11,7 +11,7 @@ title: 'wp role list'
 : Limit the output to specific object fields. Defaults to name,role.
 
 [\--format=&lt;format&gt;]
-: Output list as table, CSV or JSON. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

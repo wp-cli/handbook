@@ -22,10 +22,14 @@ title: 'wp post generate'
 [\--post_date=&lt;yyyy-mm-dd&gt;]
 : The date of the generated posts. Default: current date
 
+[\--post_content]
+: If set, the command reads the post_content from STDIN.
+
 [\--max_depth=&lt;number&gt;]
 : For hierarchical post types, generate child posts down to a certain depth. Default: 1
 
 ### EXAMPLES
 
     wp post generate --count=10 --post_type=page --post_date=1999-01-04
+    curl http://loripsum.net/api/5 | wp post generate --post_content --count=10
 

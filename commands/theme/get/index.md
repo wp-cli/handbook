@@ -14,7 +14,7 @@ title: 'wp theme get'
 : Instead of returning the whole theme, returns the value of a single field.
 
 [\--format=&lt;format&gt;]
-: Output list as table or JSON. Defaults to table.
+: Accepted values: table, json. Default: table
 
 ### EXAMPLES
 

@@ -7,6 +7,9 @@ title: 'wp core download'
 
 ### OPTIONS
 
+[\--path=&lt;path&gt;]
+: Specify the path in which to install WordPress.
+
 [\--locale=&lt;locale&gt;]
 : Select which language you want to download.
 

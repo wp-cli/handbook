@@ -13,6 +13,9 @@ title: 'wp theme search'
 [\--per-page=&lt;per-page&gt;]
 : Optional number of results to display. Defaults to 10.
 
+[\--field=&lt;field&gt;]
+: Prints the value of a single field for each plugin.
+
 [\--fields=&lt;fields&gt;]
 : Ask for specific fields from the API. Defaults to name,slug,author,rating. Acceptable values:
 
@@ -26,6 +29,9 @@ title: 'wp theme search'
     **num_ratings**: Number of Theme Ratings
     **homepage**: Theme Author's Homepage
     **description**: Theme Description
+
+[\--format=&lt;format&gt;]
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

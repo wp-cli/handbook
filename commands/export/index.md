@@ -37,7 +37,7 @@ to current working directory.
 [\--author=&lt;login/id&gt;]
 : Export only posts by this author.
 
-[\--category=&lt;category-id&gt;]
+[\--category=&lt;name&gt;]
 : Export only posts in this category.
 
 [\--post_status=&lt;status&gt;]

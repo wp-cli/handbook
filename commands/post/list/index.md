@@ -17,7 +17,7 @@ title: 'wp post list'
 : Limit the output to specific object fields. Defaults to ID,post_title,post_name,post_date,post_status.
 
 [\--format=&lt;format&gt;]
-: Output list as table, CSV, JSON, or simply IDs. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

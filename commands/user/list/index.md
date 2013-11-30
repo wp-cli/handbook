@@ -20,7 +20,7 @@ title: 'wp user list'
 : Limit the output to specific object fields. Defaults to ID,user_login,display_name,user_email,user_registered,roles
 
 [\--format=&lt;format&gt;]
-: Output list as table, CSV, JSON, or simply IDs. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

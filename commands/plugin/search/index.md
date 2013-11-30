@@ -13,8 +13,8 @@ title: 'wp plugin search'
 [\--per-page=&lt;per-page&gt;]
 : Optional number of results to display. Defaults to 10.
 
-[\--format=&lt;format&gt;]
-: Output list as table, CSV or JSON. Defaults to table.
+[\--field=&lt;field&gt;]
+: Prints the value of a single field for each plugin.
 
 [\--fields=&lt;fields&gt;]
 : Ask for specific fields from the API. Defaults to name,slug,author_profile,rating. Acceptable values:
@@ -33,6 +33,9 @@ title: 'wp plugin search'
     **homepage**: Plugin Author's Homepage
     **description**: Plugin's Description
     **short_description**: Plugin's Short Description
+
+[\--format=&lt;format&gt;]
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

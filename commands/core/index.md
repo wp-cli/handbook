@@ -26,10 +26,6 @@ title: 'wp core'
 			<td>Download core WordPress files.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/core/init-tests/">init-tests</a></td>
-			<td>Set up the official test suite using the current WordPress instance.</td>
-		</tr>
-		<tr>
 			<td><a href="/commands/core/install/">install</a></td>
 			<td>Create the WordPress tables in the database.</td>
 		</tr>

@@ -20,7 +20,7 @@ title: 'wp term list'
 : Limit the output to specific object fields. Defaults to all of the term object fields.
 
 [\--format=&lt;format&gt;]
-: Output list as table, CSV, JSON, or simply IDs. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

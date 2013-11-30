@@ -7,6 +7,9 @@ title: 'wp theme list'
 
 ### OPTIONS
 
+[\--&lt;field&gt;=&lt;value&gt;]
+: Filter results based on the value of a field.
+
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each theme.
 
@@ -14,9 +17,9 @@ title: 'wp theme list'
 : Limit the output to specific object fields. Defaults to name,status,update,version.
 
 [\--format=&lt;format&gt;]
-: Output list as table, CSV or JSON. Defaults to table.
+: Accepted values: table, json. Default: table
 
 ### EXAMPLES
 
-    wp theme list --format=csv
+    wp theme list --status=inactive --format=csv
 

@@ -17,7 +17,7 @@ title: 'wp site list'
 : Comma-separated list of fields to show.
 
 [\--format=&lt;format&gt;]
-: Output list as table, csv, json or url. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

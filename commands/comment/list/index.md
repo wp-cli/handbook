@@ -17,7 +17,7 @@ title: 'wp comment list'
 : Limit the output to specific object fields. Defaults to comment_ID,comment_post_ID,comment_date,comment_approved,comment_author,comment_author_email
 
 [\--format=&lt;format&gt;]
-: Output list as table, CSV, JSON, or simply IDs. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 

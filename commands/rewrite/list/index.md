@@ -7,8 +7,14 @@ title: 'wp rewrite list'
 
 ### OPTIONS
 
+[\--match=&lt;url&gt;]
+: Show rewrite rules matching a particular URL.
+
+[\--source=&lt;source&gt;]
+: Show rewrite rules from a particular source.
+
 [\--format=&lt;format&gt;]
-: Output list as table, JSON or CSV. Defaults to table.
+: Accepted values: table, csv, json, count. Default: table
 
 ### EXAMPLES
 
