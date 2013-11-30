@@ -11,6 +11,7 @@ The order of precedence is:
 1. Command-line flags
 1. `wp-cli.local.yml` file
 1. `wp-cli.yml` file
+1. `~/.wp-cli/config.yml` file
 1. Defaults
 
 <table>
@@ -36,3 +37,7 @@ Example `wp-cli.yml` file:
 	disabled_commands:
 	  - db drop
 	  - plugin install
+
+	core install:
+	  admin_user: billy
+	  admin_email: billy@example.com
