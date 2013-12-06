@@ -20,5 +20,5 @@ title: 'wp user get'
 
     wp user get 12 --field=login
 
-    wp user get bob --format=json &gt; bob.json
+    wp user get bob --format=json > bob.json
 

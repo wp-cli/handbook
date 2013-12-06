@@ -47,8 +47,18 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 
 	if ( $cmd['longdesc'] ) {
 		$docs = $cmd['longdesc'];
+		$docs = htmlspecialchars( $docs, ENT_COMPAT, 'UTF-8' );
+
+		// decrease header level
 		$docs = preg_replace( '/^## /m', '### ', $docs );
+
+		// escape `--` so that it doesn't get converted into `&mdash;`
 		$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
+
+		// hack to prevent double encoding in code blocks
+		$docs = preg_replace( '/ &lt; /', ' < ', $docs );
+		$docs = preg_replace( '/ &gt; /', ' > ', $docs );
+
 		$binding['docs'] = $docs;
 	}
 

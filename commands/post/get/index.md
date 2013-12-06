@@ -19,5 +19,5 @@ title: 'wp post get'
 ### EXAMPLES
 
     # save the post content to a file
-    wp post get 12 --field=content &gt; file.txt
+    wp post get 12 --field=content > file.txt
 

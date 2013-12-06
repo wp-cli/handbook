@@ -14,7 +14,7 @@ title: 'wp core update'
 : Update to this version, instead of to the latest version.
 
 [\--force]
-: Will update even when current WP version &lt; passed version. Use with
+: Will update even when current WP version < passed version. Use with
 caution.
 
 ### EXAMPLES

@@ -19,7 +19,7 @@ title: 'wp db'
 ### EXAMPLES
 
     # execute a query stored in a file
-    wp db query &lt; debug.sql
+    wp db query < debug.sql
 
 ### SUBCOMMANDS
 
