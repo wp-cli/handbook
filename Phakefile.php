@@ -3,7 +3,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 function invoke_wp_cli( $cmd, $app ) {
 	ob_start();
-	system( $cmd, $return_code );
+	system( "WP_CLI_CONFIG_PATH=/dev/null $cmd", $return_code );
 	$json = ob_get_clean();
 
 	if ( $return_code ) {
