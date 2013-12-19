@@ -19,7 +19,7 @@ title: 'wp core'
 	<tbody>
 		<tr>
 			<td><a href="/commands/core/config/">config</a></td>
-			<td>Set up a wp-config.php file.</td>
+			<td>Generate a wp-config.php file.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/download/">download</a></td>
