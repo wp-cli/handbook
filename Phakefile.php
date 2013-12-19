@@ -58,6 +58,7 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 		// hack to prevent double encoding in code blocks
 		$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 		$docs = preg_replace( '/ &gt; /', ' > ', $docs );
+		$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
 
 		$binding['docs'] = $docs;
 	}

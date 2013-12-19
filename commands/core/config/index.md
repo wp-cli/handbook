@@ -43,7 +43,7 @@ title: 'wp core config'
     wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --locale=ro_RO
 
     # Enable WP_DEBUG and WP_DEBUG_LOG
-    wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php &lt;&lt;PHP
+    wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php <<PHP
     define( 'WP_DEBUG', true );
     define( 'WP_DEBUG_LOG', true );
     PHP
