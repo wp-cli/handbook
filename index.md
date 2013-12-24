@@ -12,24 +12,30 @@ title: Command line interface for WordPress
 
 <h2 id="install">Installing</h2>
 
-Just download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) and then run:
+First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`:
+
+~~~
+wget https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+~~~
+
+Then, check if it works:
 
 ~~~
 php wp-cli.phar --info
 ~~~
 
-If that works, you can make the file executable and move it to somewhere in your PATH:
+To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the file executable and move it to somewhere in your PATH. For example:
 
 ~~~
 chmod +x wp-cli.phar
 mv wp-cli.phar /usr/bin/wp
 ~~~
 
-Now, you can just type `wp --info`.
+Now try running `wp --info`.
 
 <h3 id="mamp">MAMP</h3>
 
-If you're using MAMP, you will get a MySQL error. Here is one way to [fix it](http://stackoverflow.com/a/10653443/97998).
+If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/10653443/97998).
 
 Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
 
