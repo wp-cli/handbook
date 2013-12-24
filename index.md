@@ -12,57 +12,42 @@ title: Command line interface for WordPress
 
 <h2 id="install">Installing</h2>
 
-Just execute the following command in your terminal:
+First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`:
 
 ~~~
-curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
+wget https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ~~~
 
-Make sure to read the instructions.
+Then, check if it works:
+
+~~~
+php wp-cli.phar --info
+~~~
+
+To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the file executable and move it to somewhere in your PATH. For example:
+
+~~~
+chmod +x wp-cli.phar
+mv wp-cli.phar /usr/bin/wp
+~~~
+
+Now try running `wp --info`.
+
+<h3 id="mamp">MAMP</h3>
+
+If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/10653443/97998).
+
+Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
 
 <h3 id="complete">Tab completions</h3>
 
-WP-CLI comes with a tab completion script for command, subcommand and flag names.
-
-If you're using **Bash**, add the following lines to `~/.bash_profile`:
+WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and load it from `~/.bash_profile`:
 
 ~~~
-# WP-CLI Bash completions
-source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
+source /FULL/PATH/TO/wp-completion.bash
 ~~~
 
-And re-load the file:
-
-~~~
-source ~/.bash_profile
-~~~
-
-If you're using **Zsh**, add the following lines to `~/.zprofile`:
-
-~~~
-# WP-CLI Bash completions
-autoload bashcompinit
-bashcompinit
-source $HOME/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
-~~~
-
-And re-load the file:
-
-~~~
-source ~/.zprofile
-~~~
-
-<h3 id="update">Updating</h3>
-
-If you installed WP-CLI using the method above, you can also easily update it:
-
-~~~
-cd ~/.wp-cli
-php composer.phar self-update
-php composer.phar require 'wp-cli/wp-cli=@stable'
-~~~
-
-Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
+(Don't forget to run `source ~/.bash_profile` afterwards)
 
 <h2 id="usage">Using</h2>
 
