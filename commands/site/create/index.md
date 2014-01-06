@@ -10,7 +10,7 @@ title: 'wp site create'
 \--slug=&lt;slug&gt;
 : Path for the new site. Subdomain on subdomain installs, directory on subdirectory installs.
 
-\--title=&lt;title&amp;gt;
+\--title=&lt;title&gt;
 : Title of the new site. Default: prettified slug.
 
 \--email=&lt;email&gt;
