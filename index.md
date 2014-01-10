@@ -14,9 +14,9 @@ title: Command line interface for WordPress
 
 First, [download wp-cli.phar](https://github.com/wp-cli/wp-cli/releases) using `wget` or `curl`. For example:
 
-```
-curl -L https://insert-download-url-here > wp-cli.phar
-```
+~~~
+curl -L https://download-url-here > wp-cli.phar
+~~~
 
 Then, check if it works:
 
