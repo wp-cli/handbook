@@ -41,3 +41,5 @@ Example `wp-cli.yml` file:
 	core install:
 	  admin_user: billy
 	  admin_email: billy@example.com
+
+The path to the global config file (which defaults to `~/.wp-cli/config.yml`) can be changed by setting the `WP_CLI_CONFIG_PATH` environment variable.
