@@ -12,10 +12,10 @@ title: Command line interface for WordPress
 
 <h2 id="install">Installing</h2>
 
-First, [download wp-cli.phar](https://github.com/wp-cli/wp-cli/releases) using `wget` or `curl`. For example:
+First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
 ~~~
-curl -L https://download-url-here > wp-cli.phar
+curl -L https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar > wp-cli.phar
 ~~~
 
 Then, check if it works:
