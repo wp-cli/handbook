@@ -9,5 +9,6 @@ paginate_path: /blog/page:num
 include:
   - _s
 exclude:
+  - bin
   - Phakefile.php
   - README.md

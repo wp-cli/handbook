@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [ $# -lt 1 ]; then
+	echo "usage: $0 _drafts/<path-to-file> [<new-slug>]"
+	exit 1
+fi
+
+if [ ! -f $1 ]; then
+	echo "draft not found: $1"
+	exit 1
+fi
+
+if [ $# -gt 1 ]; then
+	fname="$2".md
+else
+	fname=${1/_drafts\//}
+fi
+
+mv $1 _posts/$(date +'%F')-$fname
