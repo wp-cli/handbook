@@ -73,5 +73,9 @@ title: 'wp comment'
 			<td><a href="/commands/comment/update/">update</a></td>
 			<td>Update one or more comments.</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/comment/url/">url</a></td>
+			<td>Get comment url</td>
+		</tr>
 	</tbody>
 </table>

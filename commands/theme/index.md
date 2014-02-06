@@ -26,6 +26,14 @@ title: 'wp theme'
 			<td>Delete a theme.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/theme/disable/">disable</a></td>
+			<td>Disable a theme in a multisite install.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/theme/enable/">enable</a></td>
+			<td>Enable a theme in a multisite install.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/theme/get/">get</a></td>
 			<td>Get a theme</td>
 		</tr>

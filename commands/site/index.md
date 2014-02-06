@@ -33,5 +33,9 @@ title: 'wp site'
 			<td><a href="/commands/site/list/">list</a></td>
 			<td>List all sites in a multisite install.</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/site/url/">url</a></td>
+			<td>Get site url</td>
+		</tr>
 	</tbody>
 </table>

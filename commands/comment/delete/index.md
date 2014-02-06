@@ -7,8 +7,8 @@ title: 'wp comment delete'
 
 ### OPTIONS
 
-&lt;id&gt;
-: The ID of the comment to delete.
+&lt;id&gt;...
+: One or more IDs of comments to delete.
 
 [\--force]
 : Skip the trash bin.
@@ -16,4 +16,6 @@ title: 'wp comment delete'
 ### EXAMPLES
 
     wp comment delete 1337 --force
+
+    wp comment delete 1337 2341 --force
 

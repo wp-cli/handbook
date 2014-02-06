@@ -25,5 +25,5 @@ title: 'wp comment list'
 
     wp comment list --post_id=2
 
-    wp comment list --number=20 --comment_approved=1
+    wp comment list --number=20 --status=approve
 

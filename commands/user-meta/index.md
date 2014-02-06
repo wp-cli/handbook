@@ -14,6 +14,8 @@ title: 'wp user-meta'
 
     wp user-meta set 123 description &quot;Mary is a WordPress developer.&quot;
 
+    wp user-meta update admin first_name &quot;George&quot;
+
 ### SUBCOMMANDS
 
 <table>

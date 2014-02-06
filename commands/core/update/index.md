@@ -17,6 +17,9 @@ title: 'wp core update'
 : Will update even when current WP version < passed version. Use with
 caution.
 
+[\--locale=&lt;locale&gt;]
+: Select which language you want to download.
+
 ### EXAMPLES
 
     wp core update

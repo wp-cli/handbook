@@ -8,7 +8,7 @@ title: 'wp user add-role'
 ### OPTIONS
 
 &lt;user&gt;
-: User ID or user login.
+: User ID, user email, or user login.
 
 &lt;role&gt;
 : Add the specified role to the user.

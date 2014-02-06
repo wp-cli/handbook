@@ -8,7 +8,7 @@ title: 'wp user list-caps'
 ### OPTIONS
 
 &lt;user&gt;
-: User ID or login.
+: User ID, user email, or login.
 
 ### EXAMPLES
 

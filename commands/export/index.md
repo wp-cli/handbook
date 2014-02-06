@@ -14,11 +14,8 @@ to current working directory.
 [\--skip_comments]
 : Don't export comments.
 
-[\--file_item_count=&lt;count&gt;]
-: Break export into files with N posts.
-
-[\--verbose]
-: Show more information about the process on STDOUT.
+[\--max_file_size=&lt;MB&gt;]
+: A single export file should have this many megabytes.
 
 ### FILTERS
 
@@ -28,14 +25,14 @@ to current working directory.
 [\--end_date=&lt;date&gt;]
 : Export only posts older than this date, in format YYYY-MM-DD.
 
-[\--post_type=&lt;post_type&gt;]
+[\--post_type=&lt;post-type&gt;]
 : Export only posts with this post_type.
 
 [\--post__in=&lt;pid&gt;]
 : Export all posts specified as a comma-separated list of IDs.
 
-[\--author=&lt;login/id&gt;]
-: Export only posts by this author.
+[\--author=&lt;author&gt;]
+: Export only posts by this author. Can be either user login or user ID.
 
 [\--category=&lt;name&gt;]
 : Export only posts in this category.

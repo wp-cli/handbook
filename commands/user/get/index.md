@@ -8,7 +8,7 @@ title: 'wp user get'
 ### OPTIONS
 
 &lt;user&gt;
-: User ID or user login.
+: User ID, user email, or user login.
 
 [\--field=&lt;field&gt;]
 : Instead of returning the whole user, returns the value of a single field.

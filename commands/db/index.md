@@ -5,21 +5,7 @@ title: 'wp db'
 
 `wp db` - Perform basic database operations.
 
-### OPTIONS
 
-\--yes
-: Answer yes to the confirmation message.
-
-&lt;file&gt;
-: The name of the export file. If omitted, it will be '{dbname}.sql'
-
-&lt;SQL&gt;
-: A SQL query.
-
-### EXAMPLES
-
-    # execute a query stored in a file
-    wp db query < debug.sql
 
 ### SUBCOMMANDS
 
@@ -45,11 +31,11 @@ title: 'wp db'
 		</tr>
 		<tr>
 			<td><a href="/commands/db/export/">export</a></td>
-			<td>Exports the database using mysqldump.</td>
+			<td>Exports the database to a file or to STDOUT.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/import/">import</a></td>
-			<td>Import database from a file.</td>
+			<td>Import database from a file or from STDIN.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/optimize/">optimize</a></td>

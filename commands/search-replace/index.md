@@ -7,7 +7,8 @@ title: 'wp search-replace'
 
 ### DESCRIPTION
 
-This command will go through all rows in all tables and will replace all appearances of the old string with the new one.
+This command will go through all rows in all tables and will replace all
+appearances of the old string with the new one.
 
 It will correctly handle serialized values, and will not change primary key values.
 
@@ -30,6 +31,9 @@ It will correctly handle serialized values, and will not change primary key valu
 
 [\--dry-run]
 : Show report, but don't perform the changes.
+
+[\--recurse-objects]
+: Enable recursing into objects to replace strings
 
 ### EXAMPLES
 

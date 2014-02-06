@@ -8,7 +8,7 @@ title: 'wp user set-role'
 ### OPTIONS
 
 &lt;user&gt;
-: User ID or user login.
+: User ID, user email, or user login.
 
 [&lt;role&gt;]
 : Make the user have the specified role. If not passed, the default role is

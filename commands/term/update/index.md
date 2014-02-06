@@ -7,11 +7,11 @@ title: 'wp term update'
 
 ### OPTIONS
 
-&lt;term-id&gt;
-: ID for the term to update.
-
 &lt;taxonomy&gt;
 : Taxonomy of the term to update.
+
+&lt;term-id&gt;
+: ID for the term to update.
 
 [\--name=&lt;name&gt;]
 : A new name for the term.
@@ -27,5 +27,5 @@ title: 'wp term update'
 
 ### EXAMPLES
 
-    wp term update 15 category --name=Apple
+    wp term update category 15 --name=Apple
 

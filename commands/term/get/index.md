@@ -7,11 +7,11 @@ title: 'wp term get'
 
 ### OPTIONS
 
-&lt;term-id&gt;
-: ID of the term to get
-
 &lt;taxonomy&gt;
 : Taxonomy of the term to get
+
+&lt;term-id&gt;
+: ID of the term to get
 
 [\--field=&lt;field&gt;]
 : Instead of returning the whole term, returns the value of a single field.
@@ -21,5 +21,5 @@ title: 'wp term get'
 
 ### EXAMPLES
 
-    wp term get 1 category --format=json
+    wp term get category 1 --format=json
 

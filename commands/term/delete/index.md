@@ -7,13 +7,14 @@ title: 'wp term delete'
 
 ### OPTIONS
 
-&lt;term-id&gt;
-: ID for the term to delete.
-
 &lt;taxonomy&gt;
 : Taxonomy of the term to delete.
 
+&lt;term-id&gt;...
+: One or more IDs of terms to delete.
+
 ### EXAMPLES
 
-    wp term delete 15 category
+    # delete all post tags
+    wp term list post_tag --field=ID | xargs wp term delete post_tag
 

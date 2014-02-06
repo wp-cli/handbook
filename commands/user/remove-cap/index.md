@@ -8,7 +8,7 @@ title: 'wp user remove-cap'
 ### OPTIONS
 
 &lt;user&gt;
-: User ID or user login.
+: User ID, user email, or user login.
 
 &lt;cap&gt;
 : The capability to be removed.

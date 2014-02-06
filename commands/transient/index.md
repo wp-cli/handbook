@@ -33,7 +33,7 @@ title: 'wp transient'
 		</tr>
 		<tr>
 			<td><a href="/commands/transient/type/">type</a></td>
-			<td>See wether the transients API is using an object cache or the options table.</td>
+			<td>See whether the transients API is using an object cache or the options table.</td>
 		</tr>
 	</tbody>
 </table>

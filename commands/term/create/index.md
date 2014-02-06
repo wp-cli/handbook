@@ -7,11 +7,11 @@ title: 'wp term create'
 
 ### OPTIONS
 
-&lt;term&gt;
-: A name for the new term.
-
 &lt;taxonomy&gt;
 : Taxonomy for the new term.
+
+&lt;term&gt;
+: A name for the new term.
 
 [\--slug=&lt;slug&gt;]
 : A unique slug for the new term. Defaults to sanitized version of name.
@@ -27,5 +27,5 @@ title: 'wp term create'
 
 ### EXAMPLES
 
-    wp term create Apple category --description=&quot;A type of fruit&quot;
+    wp term create category Apple --description=&quot;A type of fruit&quot;
 
