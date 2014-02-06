@@ -96,7 +96,7 @@ task( 'param-list', function( $app ) {
 	$out = '';
 
 	foreach ( $config_spec as $key => $details ) {
-		if ( isset( $details['deprecated'] ) )
+		if ( isset( $details['hidden'] ) || isset( $details['deprecated'] ) )
 			continue;
 
 		if ( false !== $details['file'] ) {
