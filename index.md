@@ -8,7 +8,7 @@ title: Command line interface for WordPress
 
 * UNIX-like environment (OS X, Linux, FreeBSD, Cygwin)
 * PHP 5.3.2 or later
-* WordPress 3.4 or later
+* WordPress 3.5.2 or later
 
 <h2 id="install">Installing</h2>
 
