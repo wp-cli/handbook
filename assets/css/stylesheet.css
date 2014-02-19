@@ -202,7 +202,7 @@ th, td {
 	padding: 5px 20px 5px 0;
 }
 
-th {
+th, td {
 	text-align: left;
 	border-bottom: 1px dashed #b5e853;
 }
@@ -212,6 +212,13 @@ hr {
 	border: 0;
 	border-bottom: 1px dashed #b5e853;
 	color: #b5e853;
+}
+
+.option {
+	color: #049DCE;
+}
+.flag {
+	color: #50B600;
 }
 
 /* Buttons */

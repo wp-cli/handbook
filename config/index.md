@@ -2,31 +2,32 @@
 layout: default
 title: Configuration
 ---
-The following is a list of the currently supported configuration options. They can be specified by creating a `wp-cli.yml` file in your site's root directory.
+WP-CLI has a series of global parameters which work with all commands. They can be specified either as flags for the `wp` executable in the terminal, or defined in a YAML config file.
 
-Most can also be passed directly to the `wp` executable.
-
-The order of precedence is:
+The order of precedence, from highest priority to lowest, is:
 
 1. Command-line flags
-1. `wp-cli.local.yml` file
-1. `wp-cli.yml` file
-1. `~/.wp-cli/config.yml` file
+1. `wp-cli.local.yml` file inside a WordPress install
+1. `wp-cli.yml` file inside a WordPress install
+1. `~/.wp-cli/config.yml` file (path can be changed by setting the `WP_CLI_CONFIG_PATH` environment variable)
 1. Defaults
+
+The table below lists the available <span class="option">options</span> (specified in the configuration file) and <span class="flag">flags</span> (specified on the command-line).
 
 <table>
 	<thead>
 	<tr>
-		<th>Config</th>
-		<th>Flag</th>
-		<th>Default</th>
 		<th>Description</th>
+		<th><span class="option">Option</span></th>
+		<th><span class="flag">Flag</span></th>
 	</tr>
 	</thead>
 	<tbody>
 	{% include param-list.html %}
 	</tbody>
 </table>
+
+Besides the global parameters described above, config files can also contain defaults for any subcommand.
 
 Example `wp-cli.yml` file:
 
@@ -41,5 +42,3 @@ Example `wp-cli.yml` file:
 	core install:
 	  admin_user: billy
 	  admin_email: billy@example.com
-
-The path to the global config file (which defaults to `~/.wp-cli/config.yml`) can be changed by setting the `WP_CLI_CONFIG_PATH` environment variable.
