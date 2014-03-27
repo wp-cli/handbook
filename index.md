@@ -37,7 +37,10 @@ Now try running `wp --info`.
 
 If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/10653443/97998).
 
-Also see [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods).
+More resources:
+
+* [Getting Started with WP-CLI](https://trepmal.com/2014/02/22/getting-started-with-wp-cli/) (includes video)
+* [Alternative Install Methods](https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods)
 
 <h3 id="complete">Tab completions</h3>
 
