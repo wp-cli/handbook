@@ -33,7 +33,7 @@ sudo mv wp-cli.phar /usr/bin/wp
 
 Now try running `wp --info`.
 
-<h3 id="mamp">MAMP and XAMPP</h3>
+<h3 id="mamp">MAMP</h3>
 
 If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/10653443/97998).
 
@@ -44,7 +44,7 @@ More resources:
 
 <h3 id="complete">Tab completions</h3>
 
-WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/blob/v0.14.1/utils/wp-completion.bash) and load it from `~/.bash_profile`:
+WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and load it from `~/.bash_profile`:
 
 ~~~
 source /FULL/PATH/TO/wp-completion.bash
