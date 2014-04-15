@@ -24,6 +24,14 @@ title: 'wp transient'
 			<td>Delete a transient value.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/transient/delete-all/">delete-all</a></td>
+			<td>Delete all transients.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/transient/delete-expired/">delete-expired</a></td>
+			<td>Delete all expired transients.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/transient/get/">get</a></td>
 			<td>Get a transient value.</td>
 		</tr>

@@ -13,7 +13,11 @@ title: 'wp db export'
 [\--&lt;field&gt;=&lt;value&gt;]
 : Extra arguments to pass to mysqldump
 
+[\--tables=&lt;tables&gt;]
+: The comma separated list of specific tables to export. Excluding this parameter will export all tables
+
 ### EXAMPLES
 
-    wp db dump --add-drop-table
+    wp db export --add-drop-table
+    wp db export --tables=wp_options,wp_users
 

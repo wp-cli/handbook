@@ -21,5 +21,5 @@ title: 'wp core download'
 
 ### EXAMPLES
 
-    wp core download --version=3.3
+    wp core download --locale=nl_NL
 

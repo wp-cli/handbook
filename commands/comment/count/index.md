@@ -7,7 +7,7 @@ title: 'wp comment count'
 
 ### OPTIONS
 
-&lt;post-id&gt;
+[&lt;post-id&gt;]
 : The ID of the post to count comments in.
 
 ### EXAMPLES

@@ -41,5 +41,9 @@ title: 'wp term'
 			<td><a href="/commands/term/update/">update</a></td>
 			<td>Update a term.</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/term/url/">url</a></td>
+			<td>Get term url</td>
+		</tr>
 	</tbody>
 </table>

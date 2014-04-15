@@ -42,6 +42,10 @@ title: 'wp post'
 			<td>Get a list of posts.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/post/meta/">meta</a></td>
+			<td>Manage post custom fields.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/post/update/">update</a></td>
 			<td>Update one or more posts.</td>
 		</tr>

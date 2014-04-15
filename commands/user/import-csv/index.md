@@ -10,6 +10,9 @@ title: 'wp user import-csv'
 &lt;file&gt;
 : The CSV file of users to import.
 
+[\--send-email]
+: Send an email to new users with their account details.
+
 ### EXAMPLES
 
     wp user import-csv /path/to/users.csv

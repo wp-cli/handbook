@@ -31,7 +31,7 @@ title: 'wp user'
 		</tr>
 		<tr>
 			<td><a href="/commands/user/delete/">delete</a></td>
-			<td>Delete one or more users.</td>
+			<td>Delete one or more users from the current site.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/generate/">generate</a></td>
@@ -52,6 +52,10 @@ title: 'wp user'
 		<tr>
 			<td><a href="/commands/user/list-caps/">list-caps</a></td>
 			<td>List all user's capabilities.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/user/meta/">meta</a></td>
+			<td>Manage user custom fields.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/remove-cap/">remove-cap</a></td>

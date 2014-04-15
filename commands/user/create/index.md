@@ -25,6 +25,9 @@ title: 'wp user create'
 [\--display_name=&lt;name&gt;]
 : The display name.
 
+[\--send-email]
+: Send an email to the user with their new account details.
+
 [\--porcelain]
 : Output just the new user id.
 

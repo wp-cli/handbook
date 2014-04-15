@@ -37,6 +37,9 @@ title: 'wp core config'
 [\--skip-salts]
 : If set, keys and salts won't be generated, but should instead be passed via `--extra-php`.
 
+[\--skip-check]
+: If set, the database connection is not checked.
+
 ### EXAMPLES
 
     # Standard wp-config.php file

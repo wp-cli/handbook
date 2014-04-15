@@ -33,5 +33,9 @@ title: 'wp role'
 			<td><a href="/commands/role/list/">list</a></td>
 			<td>List all roles.</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/role/reset/">reset</a></td>
+			<td>Reset any default role to default capabilities.</td>
+		</tr>
 	</tbody>
 </table>

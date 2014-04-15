@@ -7,8 +7,8 @@ title: 'wp post create'
 
 ### OPTIONS
 
-[&lt;filename&gt;]
-: Read post content from &lt;filename&gt;. If this value is present, the
+[&lt;file&gt;]
+: Read post content from &lt;file&gt;. If this value is present, the
     `--post_content` argument will be ignored.
 
   Passing `-` as the filename will cause post content to
@@ -30,5 +30,5 @@ title: 'wp post create'
 
     wp post create --post_type=page --post_status=publish --post_title='A future post' --post-status=future --post_date='2020-12-01 07:00:00'
 
-    wp post create page.txt --post_type=page --post_title='Page from file'
+    wp post create ./post-content.txt --post_category=201,345 --post_title='Post from file'
 

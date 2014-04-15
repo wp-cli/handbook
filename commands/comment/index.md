@@ -46,6 +46,10 @@ title: 'wp comment'
 			<td>Get a list of comments.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/comment/meta/">meta</a></td>
+			<td>Manage comment custom fields.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/comment/spam/">spam</a></td>
 			<td>Spam a comment.</td>
 		</tr>

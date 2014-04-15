@@ -53,5 +53,9 @@ title: 'wp db'
 			<td><a href="/commands/db/reset/">reset</a></td>
 			<td>Remove all tables from the database.</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/db/tables/">tables</a></td>
+			<td>List the database tables.</td>
+		</tr>
 	</tbody>
 </table>

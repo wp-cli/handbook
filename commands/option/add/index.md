@@ -16,6 +16,9 @@ title: 'wp option add'
 [\--format=&lt;format&gt;]
 : The serialization format for the value. Default is plaintext.
 
+[\--autoload=&lt;autoload&gt;]
+: Should this option be automatically loaded. Accepted values: yes, no. Default: yes
+
 ### EXAMPLES
 
     # Create an option by reading a JSON file

@@ -50,6 +50,10 @@ title: 'wp theme'
 			<td>Get a list of themes.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/theme/mod/">mod</a></td>
+			<td>Manage theme mods.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/theme/path/">path</a></td>
 			<td>Get the path to a theme or to the theme directory.</td>
 		</tr>
