@@ -38,6 +38,8 @@ Example `wp-cli.yml` file:
 	disabled_commands:
 	  - db drop
 	  - plugin install
+	require:
+	  - path-to/command.php
 
 	core install:
 	  admin_user: billy
