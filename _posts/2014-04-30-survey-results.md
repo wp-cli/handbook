@@ -10,9 +10,7 @@ Many thanks to the 56 people who took our first user survey. We appreciate your 
 
 **Almost 3/4 of respondents use WP-CLI actively**
 
-53% use WP-CLI multiple times per day, 20% use it a couple or few times per week, and 26% use it infrequently or rarely.
-
-Things that are faster to do in [already open] console than context-switching to WP admin.
+53% use WP-CLI multiple times per day, 20% use it a couple or few times per week, and 26% use it infrequently or rarely. 46% of respondents use WP-CLI interactively at the command line, 34% have incorporated it into bash scripts, and 18% are using WP-CLI with Puppet, Chef, or another provisioning system.
 
 **WP-CLI is largely used to install and update**
 
