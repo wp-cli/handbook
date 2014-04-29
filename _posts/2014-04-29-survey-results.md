@@ -35,14 +35,16 @@ WP-CLI now has 24 community packages listed in its [Package Index](http://wp-cli
 
 **Remotely manage WordPress instances**
 
-One common thread amongst respondents is the desire to run WP-CLI commands across multiple machines from one place. Depending on what you have access to, there are a couple of existing ways to do this:
+The most common thread amongst respondents is the desire to run WP-CLI commands in one place across multiple machines. Depending on what you have access to, there are a couple of current ways to do this:
 
 1. If you have SSH access, X-Team's [WP-CLI SSH](https://github.com/x-team/wp-cli-ssh) uses your SSH connection to run WP-CLI commands on a remote machine.
 1. The [WP Remote CLI](https://github.com/humanmade/wp-remote-cli) project proxies a subset of WP-CLI commands through WP Remote.
 
 **Better documentation**
 
-A substantial number of users requested better examples for the website. Let this be a call for contributions! Because all of the command documentation is generated from the source code, adding examples or clarifying usage notes is just a pull request away.
+A substantial number of users requested better examples for the website. Let this be a call for contributions! Because all of the command docs are generated from the source code, adding examples or clarifying usage notes is just a pull request away.
+
+Alternatively, we could start a wiki page with bash tips, or periodic blog posts about how people have integrated WP-CLI into their workflows.
 
 **Grab bag of enhancements**
 
