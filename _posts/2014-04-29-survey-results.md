@@ -44,7 +44,7 @@ The most common thread amongst respondents is the desire to run WP-CLI commands 
 
 A substantial number of users requested better examples for the website. Let this be a call for contributions! Because all of the command docs are generated from the source code, adding examples or clarifying usage notes is just a pull request away.
 
-Alternatively, we could start a wiki page with bash tips, or periodic blog posts about how people have integrated WP-CLI into their workflows.
+Alternatively, you can [share your shell tips](https://github.com/wp-cli/wp-cli/wiki/Shell-Tips), or contribute a blog post on how you've integrated WP-CLI into your workflow.
 
 **Grab bag of enhancements**
 
