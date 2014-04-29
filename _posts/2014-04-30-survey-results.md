@@ -33,6 +33,28 @@ WP-CLI now has 24 community packages listed in its [Package Index](http://wp-cli
 
 ### Feature requests
 
-**For some reason, respondents would like WP-CLI to prepare their meals**
+**Remotely manage WordPress instances**
+
+One common thread amongst respondents is the desire to run WP-CLI commands across multiple machines from one place. Depending on what you have access to, there are a couple of existing ways to do this:
+
+1. If you have SSH access, X-Team's [WP-CLI SSH](https://github.com/x-team/wp-cli-ssh) uses your SSH connection to run WP-CLI commands on a remote machine.
+1. The [WP Remote CLI](https://github.com/humanmade/wp-remote-cli) project proxies a subset of WP-CLI commands through WP Remote.
+
+**Better documentation**
+
+A substantial number of users requested better examples for the website. Let this be a call for contributions! Because all of the command documentation is generated from the source code, adding examples or clarifying usage notes is just a pull request away.
+
+**Grab bag of enhancements**
+
+If you have time to put together a pull request or community package, here's a short list of requested enhancements:
+
+* Git awareness: have plugin/core updates result in git commits (with automatically-generated messages).
+* Yum integration for `yum install wp-cli`, `yum check-update` and `yum update wp-cli`.
+* Faster algorithm for the search-replace command when dealing with large databases.
+* Manage file and folder permissions for WordPress installs.
+* Reset all users passwords.
+* "Break in Windows less."
+
+**WP-CLI commands to prepare meals**
 
 A good 7% of you think WP-CLI is capable of making your meals, asking for it to "make breakfast", "make coffee ;-)", or "dishes?". While we can't make any promises, we'll continue to think about WP-CLI over breakfast and see if we get inspired.
