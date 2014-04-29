@@ -16,7 +16,7 @@ Many thanks to the 56 people who took our first user survey. We appreciate your 
 
 Even with its variety of commands, WP-CLI is largely used to install and update. 37.5% of respondents reported using WP-CLI to install WordPress (with 30.36% using it to update WordPress), and 32.14% reported using it to update plugins and themes.
 
-After code management, WP-CLI is popularly used (23.21%) to perform migrations. Respondents reported using `wp db export` and `wp db import` in conjunction with `wp search-replace`, or `wp export` and `wp import`.
+After code management, WP-CLI is popularly used (23.21%) to perform migrations. Respondents reported using [`wp db export`](http://wp-cli.org/commands/db/export/) and [`wp db import`](http://wp-cli.org/commands/db/import/) in conjunction with [`wp search-replace`](http://wp-cli.org/commands/search-replace/), or [`wp export`](http://wp-cli.org/commands/export/) and [`wp import`](http://wp-cli.org/commands/import/).
 
 A subset of respondents reported using WP-CLI to perform specialized tasks, including:
 
