@@ -7,8 +7,8 @@ WP-CLI has a series of global parameters which work with all commands. They can 
 The order of precedence, from highest priority to lowest, is:
 
 1. Command-line flags
-1. `wp-cli.local.yml` file inside a WordPress install
-1. `wp-cli.yml` file inside a WordPress install
+1. `wp-cli.local.yml` file inside the current working directory (or upwards)
+1. `wp-cli.yml` file inside the current working directory (or upwards)
 1. `~/.wp-cli/config.yml` file (path can be changed by setting the `WP_CLI_CONFIG_PATH` environment variable)
 1. Defaults
 
