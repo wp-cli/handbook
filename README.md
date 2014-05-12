@@ -12,6 +12,5 @@ vendor/bin/phake
 
 ### Preview locally
 
-1. [Install Jekyll](http://jekyllrb.com/docs/installation/).
-2. [Install Kramdown](http://jekyllrb.com/docs/extras/#kramdown).
+1. [Install Bundler gem](http://jekyllrb.com/docs/installation/): `gem install bundler`.
 2. Run `jekyll serve --watch`
