@@ -115,7 +115,7 @@ task( 'param-list', function( $app ) {
 
 		$default = json_encode( $details['default'] );
 
-		$description = $details['desc'];
+		$description = ( isset( $details['desc'] ) ) ? $details['desc'] : '';
 
 		$out .= render( 'config.mustache', compact( 'config', 'flag', 'default', 'description' ) );
 	}
