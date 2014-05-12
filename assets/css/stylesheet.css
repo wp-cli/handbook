@@ -313,3 +313,12 @@ article + article {
 .pagination .next {
 	float: right;
 }
+/* Packaging index */
+.package {
+	border-bottom: 1px dashed #999;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+.package th {
+	width: 150px;
+}    
