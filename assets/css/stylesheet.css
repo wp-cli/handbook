@@ -194,7 +194,7 @@ pre {
 
 /* Inline code */
 code {
-	padding: 0.15em 0.3em;
+	padding: 0.3em 0.3em 0.2em 0.3em;
 	border-radius: .3em;
 
 	background: #424242;
@@ -203,7 +203,7 @@ code {
 /* Code blocks */
 pre code {
 	display: block;
-	padding: 0.5em;
+	padding: 0.5em 0.5em 0.3em 0.5em;
 	margin: .5em 0 1.1em 0;
 	overflow: auto;
 	border-radius: 0.3em;
@@ -247,13 +247,13 @@ header h1 {
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	font-weight: 300;
-
 }
 
 header h1 a {
 	color: #fff;
 	text-decoration: none
 }
+
 header h1 a:hover,
 header h1 a:active {
 	color: #F7F7F7;
