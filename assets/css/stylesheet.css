@@ -280,6 +280,9 @@ footer {
 	margin: 20px 10px 10px 10px;
 }
 
+.main-nav {
+	position: relative;
+}
 .main-nav ul {
 	list-style: none;
 }
@@ -299,6 +302,25 @@ footer {
 }
 .main-nav a:hover {
 	color: #b5e853;
+}
+
+.main-nav [class^="icon-"] {
+	
+}
+.main-nav .align-right {
+	float: right;
+	margin-left: .5em;
+}
+.main-nav .rounded {
+	padding: 0;
+	width: 1.8em;
+	height: 1.8em;
+	line-height: 1.8em;
+	font-size: 1.3em;
+	border-radius: 3em;
+	background: #585858;
+	color: #292929;
+	
 }
 
 /**
