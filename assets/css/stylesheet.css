@@ -202,6 +202,7 @@ code {
 pre code {
 	display: block;
 	padding: 0.5em;
+	margin: .5em 0 1.1em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 }
