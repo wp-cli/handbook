@@ -166,6 +166,46 @@ a:focus {
 	color: #124964;
 }
 
+/**
+ * Coding block
+ */
+code,
+pre {
+	color: #f8f8f2;
+	text-shadow: 0 1px rgba(0,0,0,0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Inline code */
+code {
+	padding: 0.15em 0.3em;
+	border-radius: .3em;
+
+	background: #424242;
+}
+
+/* Code blocks */
+pre code {
+	display: block;
+	padding: 0.5em;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
 /* Header, <header>
 	 header   - container
 	 h1       - project name
