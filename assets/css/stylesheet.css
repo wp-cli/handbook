@@ -449,6 +449,10 @@ article + article {
 	overflow: hidden;
 }
 
+.pagination a {
+	text-decoration: none;
+}
+
 .pagination .prev {
 	float: left;
 }
