@@ -10,7 +10,7 @@ title: Command line interface for WordPress
 * PHP 5.3.2 or later
 * WordPress 3.5.2 or later
 
-<h2 id="install">Installing</h2>
+<h2 id="install">Installing (And Upgrading)</h2>
 
 First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
@@ -32,6 +32,8 @@ sudo mv wp-cli.phar /usr/bin/wp
 ~~~
 
 Now try running `wp --info`.
+
+Upgrade using the same procedure.
 
 <h3 id="mamp">MAMP</h3>
 
