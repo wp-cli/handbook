@@ -152,7 +152,9 @@ hr {
 	color: #b5e853;
 }
 
-/* Links */
+/**
+ * Links
+ */
 a {
     color: #0074A2;
     transition-duration: 0.05s;
@@ -206,6 +208,23 @@ pre code {
 	overflow: auto;
 	border-radius: 0.3em;
 }
+
+
+/* Clearfix */
+
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+.cf {
+	zoom:1;
+}
+
 
 /* Header, <header>
 	 header   - container
@@ -282,7 +301,9 @@ nav a:hover {
 	color: #b5e853;
 }
 
-/* Main Content */
+/**
+ * Main Content
+ */
 
 #main_content {
 	width: 100%;
@@ -369,20 +390,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Clearfix */
-
-.cf:before, .cf:after {
-	content:"";
-	display:table;
-}
-
-.cf:after {
-	clear:both;
-}
-
-.cf {
-	zoom:1;
-}
 
 /* Blog */
 
