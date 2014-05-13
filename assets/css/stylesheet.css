@@ -320,7 +320,9 @@ footer {
 	border-radius: 3em;
 	background: #585858;
 	color: #292929;
-	
+}
+.main-nav .rounded:hover {
+	color: #7AD03A;	
 }
 
 /**
