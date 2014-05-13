@@ -280,24 +280,24 @@ footer {
 	margin: 20px 10px 10px 10px;
 }
 
-nav ul {
+.main-nav ul {
 	list-style: none;
 }
-nav li {
+.main-nav li {
 	text-align: center;
 	margin: 0;
 }
-nav li:first-child a {
+.main-nav li:first-child a {
 	padding-left: 0;
 }
-nav a {
+.main-nav a {
 	display: block;
 	padding: 8px 18px;
 	color: #7AD03A;
 	font-weight: 300;
 	text-decoration: none;
 }
-nav a:hover {
+.main-nav a:hover {
 	color: #b5e853;
 }
 
