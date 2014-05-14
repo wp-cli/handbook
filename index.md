@@ -29,7 +29,7 @@ To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the
 
 ~~~
 chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/bin/wp
+sudo mv wp-cli.phar /usr/local/bin/wp
 ~~~
 
 Now try running `wp --info`.
