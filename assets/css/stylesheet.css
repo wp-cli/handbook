@@ -304,9 +304,7 @@ footer {
 	color: #b5e853;
 }
 
-.main-nav [class^="icon-"] {
-	
-}
+/* Secondary main-nav */
 .main-nav .align-right {
 	float: right;
 	margin-left: .5em;
