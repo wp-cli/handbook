@@ -11,7 +11,12 @@ title: Blog
 	</div>
 
 	<div class="post-content">
-	{{ post.content }}
+	{% if post.content contains "<!-- more -->" %}
+		{{ post.content | split:"<!-- more -->" | first }}
+		<a class="read-more" href="{{ post.url }}">Read more</a>
+	{% else %}
+		{{ post.content }}
+	{% endif %}
 	</div>
 </article>
 {% endfor %}
