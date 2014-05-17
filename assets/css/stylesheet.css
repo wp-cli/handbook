@@ -156,13 +156,13 @@ hr {
  * Links
  */
 a {
-    color: #0074A2;
-    transition-duration: 0.05s;
-    transition-property: border, background, color;
-    transition-timing-function: ease-in-out;
+	color: #0074A2;
+	transition-duration: 0.05s;
+	transition-property: border, background, color;
+	transition-timing-function: ease-in-out;
 }
 a:hover, a:active {
-    color: #2EA2CC;
+	color: #2EA2CC;
 }
 a:focus {
 	color: #124964;
