@@ -304,6 +304,11 @@ footer {
 	color: #b5e853;
 }
 
+.main-nav .active a {
+	/* background: #202020; */ /* Not yet */
+	color: #f1f1f1;
+}
+
 /* Secondary main-nav */
 .main-nav .align-right {
 	float: right;
