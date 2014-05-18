@@ -517,6 +517,7 @@ article + article {
 .pagination {
 	display: block;
 	overflow: hidden;
+	padding: 1em 0 0.5em 0;
 }
 
 .pagination a {
