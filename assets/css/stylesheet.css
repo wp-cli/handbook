@@ -487,6 +487,12 @@ article + article {
 	text-shadow: 1px 0 1px rgba(255, 255, 255, 1);
 }
 
+.read-more {
+	display: inline-block;
+	margin-bottom: 0.5em;
+	text-decoration: none;
+}
+
 .post-header {
 	margin-bottom: 20px;
 }
