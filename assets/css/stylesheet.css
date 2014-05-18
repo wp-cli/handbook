@@ -17,6 +17,8 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
+html { overflow-y: scroll; }
+
 html,
 body {
 	min-height: 100%;
