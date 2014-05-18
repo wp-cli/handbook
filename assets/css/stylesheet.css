@@ -474,7 +474,7 @@ article + article {
 	background: #CCC;
 }
 
-.hentry:before {
+article + article:before {
 	content: "&";
 	display: block;
 	position: absolute;
