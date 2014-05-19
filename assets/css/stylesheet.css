@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Blog */
 
-article + article {
+.hentry + .hentry {
 	margin-top: 30px;
 }
 
@@ -476,7 +476,7 @@ article + article {
 	background: #CCC;
 }
 
-article + article:before {
+.hentry + .hentry:before {
 	content: "&";
 	display: block;
 	position: absolute;
