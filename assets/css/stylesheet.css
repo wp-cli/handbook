@@ -511,7 +511,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-content {
-	padding-bottom: 15px;
+	padding-bottom: 1em;
+}
+
+/* Accouncement within posts */
+.announcement {
+	padding: 0.3em 1em 0.5em 1em;
+	margin-bottom: 1em;
+}
+
+.breaking {
+	background: #eceaeb;
+}
+.breaking h3 i {
+	color: #d84f09;
+}
+
+.changes {
+	background: #eceaeb;
 }
 
 /* Pagination */
