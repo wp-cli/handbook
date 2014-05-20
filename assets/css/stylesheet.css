@@ -201,6 +201,20 @@ code {
 
 	background: #424242;
 }
+/* Oh I want SASS here */
+h3 > code {
+    
+    display: inline-block;
+    margin-bottom: 0.5em;
+    padding-bottom: 0;
+    padding-top: 0.1em;
+
+    background: none repeat scroll 0 0 #5C5C5C;
+
+    font-size: 17px;
+}
+
+
 
 /* Code blocks */
 pre code {
