@@ -144,14 +144,12 @@ tr td:first-child {
 	border-left: none;
 }
 
-
-table.horizontal th {
-	border-bottom: none;
-	font-weight: 400px;
+table.horizontal {
+	border-top: 1px solid #e3e3e3;
 }
 
-table.horizontal td {
-	border-bottom: none;
+table.horizontal th {
+	font-weight: 400px;
 }
 
 /**
