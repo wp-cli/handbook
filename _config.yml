@@ -12,3 +12,13 @@ exclude:
   - bin
   - Phakefile.php
   - README.md
+navigation:
+- text: Commands
+  url: /commands/
+- text: Configuration
+  url: /config/
+- text: Packages
+  url: /package-index/
+- text: Blog
+  url: /blog/
+  layout: post
