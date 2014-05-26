@@ -42,6 +42,8 @@ Example `wp-cli.yml` file:
 	  - path-to/command.php
 
 	core config:
+		dbuser: root
+		dbpass: 
 		extra-php: |
 			define( 'WP_DEBUG', true );
 			define( 'WP_POST_REVISIONS', 50 );
