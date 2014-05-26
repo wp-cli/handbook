@@ -40,6 +40,9 @@ Example `wp-cli.yml` file:
 	  - plugin install
 	require:
 	  - path-to/command.php
+	extra-php: |
+		define( 'WP_DEBUG', true );
+        	define( 'WP_POST_REVISIONS', 50 );
 
 	core install:
 	  admin_user: billy
