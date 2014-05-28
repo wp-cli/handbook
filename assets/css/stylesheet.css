@@ -382,7 +382,6 @@ section img {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	color: #333;
-	letter-spacing: -0.03em;
 }
 
 #main_content h1 {
@@ -566,4 +565,11 @@ hr:after,
 }
 .package th {
 	width: 150px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	header h2,
+	.main-nav a {
+		font-weight: 400;
+	}
 }
