@@ -573,4 +573,7 @@ hr:after,
 	.main-nav a {
 		font-weight: 400;
 	}
+	code {
+		font-weight: bold;
+	}
 }
