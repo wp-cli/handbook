@@ -15,8 +15,8 @@ body {
 
 	font-family: 'Open Sans', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font: 16px;
-	line-height: 1.5;
 	color: #333;
+	line-height: 1.6;
 
 	-webkit-font-smoothing: antialiased;
 }
@@ -60,6 +60,9 @@ ul li:before {
 	margin-left: -37px;
 	margin-right: 10px;
 	line-height: 13px;
+}
+li {
+	padding: 0 0 0.3em 0;
 }
 
 nav ul {
@@ -179,7 +182,7 @@ pre {
 code {
 	padding: 0.3em 0.3em 0.2em 0.3em;
 	border-radius: .3em;
-
+	font-size: 1.05em;
 	background: #444;
 }
 /* Oh I want SASS here */
@@ -204,6 +207,7 @@ pre code {
 	margin: .5em 0 1.1em 0;
 	overflow: auto;
 	border-radius: 0.3em;
+	font-size: 1em;
 }
 
 /* Forms */
