@@ -37,6 +37,9 @@ section {
 h1, h2, h3, h4, h5, h6 {
 	margin: 1em 0 0 0;
 	color: #333;
+	font-weight: normal;
+}
+
 }
 
 p {
@@ -222,6 +225,10 @@ input[type="search"] {
 	-webkit-appearance: none;
 }
 
+/* Images */
+img {
+	max-width: 100%
+}
 
 /* Clearfix */
 
@@ -378,15 +385,6 @@ footer {
 #main_content {
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
-}
-
-section img {
-	max-width: 100%
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-	color: #333;
 }
 
 #main_content h1 {
