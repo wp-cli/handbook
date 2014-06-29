@@ -41,6 +41,9 @@ Example `wp-cli.yml` file:
 	require:
 	  - path-to/command.php
 
-	core install:
-	  admin_user: billy
-	  admin_email: billy@example.com
+	core config:
+		dbuser: root
+		dbpass: 
+		extra-php: |
+			define( 'WP_DEBUG', true );
+			define( 'WP_POST_REVISIONS', 50 );

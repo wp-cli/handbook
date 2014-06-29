@@ -10,13 +10,14 @@ title: Command line interface for WordPress
 * PHP 5.3.2 or later
 * WordPress 3.5.2 or later
 
-<h2 id="install">Installing</h2>
+<h2 id="install">Installing (And Upgrading)</h2>
 
 First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
 ~~~
-curl -L https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar > wp-cli.phar
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ~~~
+
 
 Then, check if it works:
 
@@ -28,10 +29,12 @@ To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the
 
 ~~~
 chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/bin/wp
+sudo mv wp-cli.phar /usr/local/bin/wp
 ~~~
 
 Now try running `wp --info`.
+
+Upgrade using the same procedure.
 
 <h3 id="mamp">MAMP</h3>
 
