@@ -579,3 +579,18 @@ hr:after,
 		font-weight: 400;
 	}
 }
+
+@media (max-width: 800px) {
+	header h1 {
+		margin-left: 0;
+	}
+
+	.main-nav .align-right {
+		float: none;
+	}
+}
+@media (max-width: 690px) {
+	.main-nav li a {
+		padding-left: 0;
+	}
+}
