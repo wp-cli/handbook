@@ -8,7 +8,7 @@ title: 'wp menu'
 ### EXAMPLES
 
     # Create a new menu
-    wp menu create &quot;My Menu&quot;
+    wp menu create "My Menu"
 
     # List existing menus
     wp menu list

@@ -15,5 +15,5 @@ title: 'wp comment create'
 
 ### EXAMPLES
 
-    wp comment create --comment_post_ID=15 --comment_content=&quot;hello blog&quot; --comment_author=&quot;wp-cli&quot;
+    wp comment create --comment_post_ID=15 --comment_content="hello blog" --comment_author="wp-cli"
 

@@ -13,5 +13,5 @@ title: 'wp widget update'
 
 ### EXAMPLES
 
-    wp widget update calendar-1 --title=&quot;Calendar&quot;
+    wp widget update calendar-1 --title="Calendar"
 

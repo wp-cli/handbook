@@ -12,9 +12,9 @@ title: 'wp user meta'
 
 ### EXAMPLES
 
-    wp user meta set 123 description &quot;Mary is a WordPress developer.&quot;
+    wp user meta set 123 description "Mary is a WordPress developer."
 
-    wp user meta update admin first_name &quot;George&quot;
+    wp user meta update admin first_name "George"
 
 ### SUBCOMMANDS
 

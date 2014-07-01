@@ -27,5 +27,5 @@ title: 'wp term create'
 
 ### EXAMPLES
 
-    wp term create category Apple --description=&quot;A type of fruit&quot;
+    wp term create category Apple --description="A type of fruit"
 

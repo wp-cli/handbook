@@ -10,5 +10,5 @@ title: 'wp menu delete'
 
 ### EXAMPLES
 
-    wp menu delete &quot;My Menu&quot;
+    wp menu delete "My Menu"
 

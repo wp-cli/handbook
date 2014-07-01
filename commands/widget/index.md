@@ -14,7 +14,7 @@ title: 'wp widget'
     wp widget add calendar sidebar-1 2
 
     # Update option(s) associated with a given widget
-    wp widget update calendar-1 --title=&quot;Calendar&quot;
+    wp widget update calendar-1 --title="Calendar"
 
     # Delete one or more widgets entirely
     wp widget delete calendar-2 archive-1

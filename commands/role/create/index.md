@@ -17,5 +17,5 @@ title: 'wp role create'
 
     wp role create approver Approver
 
-    wp role create productadmin &quot;Product Administrator&quot;
+    wp role create productadmin "Product Administrator"
 
