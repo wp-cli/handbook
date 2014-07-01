@@ -13,5 +13,5 @@ title: 'wp menu create'
 
 ### EXAMPLES
 
-    wp menu create &quot;My Menu&quot;
+    wp menu create "My Menu"
 

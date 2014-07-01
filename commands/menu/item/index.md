@@ -8,7 +8,7 @@ title: 'wp menu item'
 ### EXAMPLES
 
     # Add an existing post to an existing menu
-    wp menu item add-post sidebar-menu 33 --title=&quot;Custom Test Post&quot;
+    wp menu item add-post sidebar-menu 33 --title="Custom Test Post"
 
     # Create a new menu link item
     wp menu item add-custom sidebar-menu Apple http://apple.com --porcelain

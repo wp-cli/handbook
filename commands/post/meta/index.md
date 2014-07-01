@@ -37,6 +37,10 @@ title: 'wp post meta'
 			<td>Get meta field value.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/post/meta/list/">list</a></td>
+			<td>List all metadata associated with an object.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/post/meta/update/">update</a></td>
 			<td>Update a meta field.</td>
 		</tr>

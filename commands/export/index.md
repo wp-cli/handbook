@@ -20,13 +20,13 @@ to current working directory.
 ### FILTERS
 
 [\--start_date=&lt;date&gt;]
-: Export only posts newer than this date, in format YYYY-MM-DD.
+: Export only posts published after this date, in format YYYY-MM-DD.
 
 [\--end_date=&lt;date&gt;]
-: Export only posts older than this date, in format YYYY-MM-DD.
+: Export only posts published before this date, in format YYYY-MM-DD.
 
 [\--post_type=&lt;post-type&gt;]
-: Export only posts with this post_type.
+: Export only posts with this post_type. Defaults to all.
 
 [\--post__in=&lt;pid&gt;]
 : Export all posts specified as a comma-separated list of IDs.

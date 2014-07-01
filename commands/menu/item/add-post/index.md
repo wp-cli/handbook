@@ -40,5 +40,5 @@ title: 'wp menu item add-post'
 
 ### EXAMPLES
 
-    wp menu item add-post sidebar-menu 33 --title=&quot;Custom Test Post&quot;
+    wp menu item add-post sidebar-menu 33 --title="Custom Test Post"
 

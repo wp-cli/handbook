@@ -16,7 +16,7 @@ title: 'wp option'
 
     wp option add my_option foobar
 
-    wp option update my_option '{&quot;foo&quot;: &quot;bar&quot;}' --format=json
+    wp option update my_option '{"foo": "bar"}' --format=json
 
     wp option delete my_option
 

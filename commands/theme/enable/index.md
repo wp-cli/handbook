@@ -15,7 +15,7 @@ title: 'wp theme enable'
 
 [\--activate]
 : If set, the theme is activated for the current site. Note that
-the &quot;network&quot; flag has no influence on this.
+the "network" flag has no influence on this.
 
 ### EXAMPLES
 

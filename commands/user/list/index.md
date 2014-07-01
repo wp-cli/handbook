@@ -11,7 +11,7 @@ title: 'wp user list'
 : Only display users with a certain role.
 
 [\--&lt;field&gt;=&lt;value&gt;]
-: Filter by one or more fields. For accepted fields, see get_users().
+: Control output by one or more arguments of get_users().
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each user.

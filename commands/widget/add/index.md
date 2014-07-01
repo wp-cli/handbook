@@ -19,5 +19,5 @@ title: 'wp widget add'
 
 ### EXAMPLES
 
-    wp widget add calendar sidebar-1 2 --title=&quot;Calendar&quot;
+    wp widget add calendar sidebar-1 2 --title="Calendar"
 

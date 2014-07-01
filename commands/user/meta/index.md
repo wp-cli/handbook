@@ -12,9 +12,9 @@ title: 'wp user meta'
 
 ### EXAMPLES
 
-    wp user meta set 123 description &quot;Mary is a WordPress developer.&quot;
+    wp user meta set 123 description "Mary is a WordPress developer."
 
-    wp user meta update admin first_name &quot;George&quot;
+    wp user meta update admin first_name "George"
 
 ### SUBCOMMANDS
 
@@ -37,6 +37,10 @@ title: 'wp user meta'
 		<tr>
 			<td><a href="/commands/user/meta/get/">get</a></td>
 			<td>Get meta field value.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/user/meta/list/">list</a></td>
+			<td>List all metadata associated with an object.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/meta/update/">update</a></td>

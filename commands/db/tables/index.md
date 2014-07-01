@@ -12,6 +12,6 @@ title: 'wp db tables'
 
 ### EXAMPLES
 
-# Export only tables for a single site
-wp db export --tables=$(wp db tables --url=sub.example.com | tr '\n' ',')
+    # Export only tables for a single site
+    wp db export --tables=$(wp db tables --url=sub.example.com | tr '\n' ',')
 

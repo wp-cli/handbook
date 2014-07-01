@@ -50,6 +50,10 @@ title: 'wp core'
 			<td>Update the WordPress database.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/core/verify-checksums/">verify-checksums</a></td>
+			<td>Verify WordPress files against WordPress.org's checksums.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/core/version/">version</a></td>
 			<td>Display the WordPress version.</td>
 		</tr>

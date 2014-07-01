@@ -12,7 +12,7 @@ title: 'wp comment meta'
 
 ### EXAMPLES
 
-    wp comment meta set 123 description &quot;Mary is a WordPress developer.&quot;
+    wp comment meta set 123 description "Mary is a WordPress developer."
 
 ### SUBCOMMANDS
 
@@ -35,6 +35,10 @@ title: 'wp comment meta'
 		<tr>
 			<td><a href="/commands/comment/meta/get/">get</a></td>
 			<td>Get meta field value.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/comment/meta/list/">list</a></td>
+			<td>List all metadata associated with an object.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/meta/update/">update</a></td>

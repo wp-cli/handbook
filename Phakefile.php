@@ -59,6 +59,7 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 		$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 		$docs = preg_replace( '/ &gt; /', ' > ', $docs );
 		$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
+		$docs = preg_replace( '/&quot;/', '"', $docs );
 
 		$binding['docs'] = $docs;
 	}

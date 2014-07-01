@@ -11,3 +11,6 @@ title: 'wp user meta delete'
 &lt;key&gt;
 : The metadata key.
 
+[&lt;value&gt;]
+: The value to delete. If omitted, all rows with key will deleted.
+
