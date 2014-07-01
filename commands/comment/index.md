@@ -5,7 +5,10 @@ title: 'wp comment'
 
 `wp comment` - Manage comments.
 
+### EXAMPLES
 
+    # delete all spam comments.
+    wp comment delete $(wp comment list --status=spam --format=ids)
 
 ### SUBCOMMANDS
 

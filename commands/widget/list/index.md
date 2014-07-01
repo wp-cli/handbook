@@ -12,7 +12,7 @@ title: 'wp widget list'
 : Limit the output to specific object fields. Defaults to name, id, description
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, ids. Default: table
 
 ### EXAMPLES
 

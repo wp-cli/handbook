@@ -13,6 +13,9 @@ title: 'wp user get'
 [\--field=&lt;field&gt;]
 : Instead of returning the whole user, returns the value of a single field.
 
+[\--fields=&lt;fields&gt;]
+: Get a specific subset of the user's fields.
+
 [\--format=&lt;format&gt;]
 : Accepted values: table, json. Default: table
 

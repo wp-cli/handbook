@@ -7,28 +7,31 @@ title: 'wp media import'
 
 ### OPTIONS
 
-&lt;file&gt;
+&lt;file&gt;...
 : Path to file or files to be imported. Supports the glob(3) capabilities of the current shell.
     If file is recognized as a URL (for example, with a scheme of http or ftp), the file will be
     downloaded to a temp file before being sideloaded.
 
-\--post_id=&lt;post_id&gt;
+[\--post_id=&lt;post_id&gt;]
 : ID of the post to attach the imported files to
 
-\--title=&lt;title&gt;
+[\--title=&lt;title&gt;]
 : Attachment title (post title field)
 
-\--caption=&lt;caption&gt;
+[\--caption=&lt;caption&gt;]
 : Caption for attachent (post excerpt field)
 
-\--alt=&lt;alt_text&gt;
+[\--alt=&lt;alt_text&gt;]
 : Alt text for image (saved as post meta)
 
-\--desc=&lt;description&gt;
+[\--desc=&lt;description&gt;]
 : &quot;Description&quot; field (post content) of attachment post
 
-\--featured_image
+[\--featured_image]
 : If set, set the imported image as the Featured Image of the post its attached to.
+
+[\--porcelain]
+: Output just the new attachment id.
 
 ### EXAMPLES
 

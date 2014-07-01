@@ -39,6 +39,10 @@ title: 'wp user meta'
 			<td>Get meta field value.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/user/meta/list/">list</a></td>
+			<td>List all metadata associated with an object.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/user/meta/update/">update</a></td>
 			<td>Update a meta field.</td>
 		</tr>

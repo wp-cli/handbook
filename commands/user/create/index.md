@@ -25,6 +25,12 @@ title: 'wp user create'
 [\--display_name=&lt;name&gt;]
 : The display name.
 
+[\--first_name=&lt;first_name&gt;]
+: The user's first name.
+
+[\--last_name=&lt;last_name&gt;]
+: The user's last name.
+
 [\--send-email]
 : Send an email to the user with their new account details.
 

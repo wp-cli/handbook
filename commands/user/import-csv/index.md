@@ -13,6 +13,9 @@ title: 'wp user import-csv'
 [\--send-email]
 : Send an email to new users with their account details.
 
+[\--skip-update]
+: Don't update users that already exist.
+
 ### EXAMPLES
 
     wp user import-csv /path/to/users.csv
