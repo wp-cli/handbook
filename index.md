@@ -47,7 +47,7 @@ More resources:
 
 <h3 id="complete">Tab completions</h3>
 
-WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and load it from `~/.bash_profile`:
+WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and source it from `~/.bash_profile`:
 
 ~~~
 source /FULL/PATH/TO/wp-completion.bash
