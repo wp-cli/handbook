@@ -18,6 +18,10 @@ title: 'wp cli'
 	</thead>
 	<tbody>
 		<tr>
+			<td><a href="/commands/cli/check-update/">check-update</a></td>
+			<td>Check for update via Github API. Returns the available versions if there are updates, or empty if no update available.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/cli/cmd-dump/">cmd-dump</a></td>
 			<td>Dump the list of installed commands, as JSON.</td>
 		</tr>

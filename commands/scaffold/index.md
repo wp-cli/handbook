@@ -26,6 +26,10 @@ title: 'wp scaffold'
 			<td>Generate empty child theme.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/scaffold/package-tests/">package-tests</a></td>
+			<td>Generate files needed for writing Behat tests for your command.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/scaffold/plugin/">plugin</a></td>
 			<td>Generate starter code for a plugin.</td>
 		</tr>

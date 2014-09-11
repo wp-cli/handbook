@@ -8,7 +8,7 @@ title: 'wp user import-csv'
 ### OPTIONS
 
 &lt;file&gt;
-: The CSV file of users to import.
+: The local or remote CSV file of users to import.
 
 [\--send-email]
 : Send an email to new users with their account details.
@@ -19,6 +19,7 @@ title: 'wp user import-csv'
 ### EXAMPLES
 
     wp user import-csv /path/to/users.csv
+    wp user import-csv http://example.com/users.csv
 
     Sample users.csv file:
 

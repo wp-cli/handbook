@@ -8,10 +8,19 @@ title: 'wp role list'
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Defaults to name,role.
+: Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
 : Accepted values: table, csv, json, count. Default: table
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each role:
+
+* name
+* role
+
+There are no optional fields.
 
 ### EXAMPLES
 

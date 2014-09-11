@@ -14,10 +14,27 @@ title: 'wp theme list'
 : Prints the value of a single field for each theme.
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Defaults to name,status,update,version.
+: Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
 : Accepted values: table, json. Default: table
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each theme:
+
+* name
+* status
+* update
+* version
+
+These fields are optionally available:
+
+* update_version
+* update_package
+* update_id
+* title
+* description
 
 ### EXAMPLES
 
