@@ -14,10 +14,33 @@ title: 'wp comment list'
 : Prints the value of a single field for each comment.
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Defaults to comment_ID,comment_post_ID,comment_date,comment_approved,comment_author,comment_author_email
+: Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
 : Accepted values: table, csv, json, count. Default: table
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each comment:
+
+* comment_ID
+* comment_post_ID
+* comment_date
+* comment_approved
+* comment_author
+* comment_author_email
+
+These fields are optionally available:
+
+* comment_author_url
+* comment_author_IP
+* comment_date_gmt
+* comment_content
+* comment_karma
+* comment_agent
+* comment_type
+* comment_parent
+* user_id
 
 ### EXAMPLES
 

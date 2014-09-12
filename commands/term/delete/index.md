@@ -16,5 +16,5 @@ title: 'wp term delete'
 ### EXAMPLES
 
     # delete all post tags
-    wp term list post_tag --field=ID | xargs wp term delete post_tag
+    wp term list post_tag --field=term_id | xargs wp term delete post_tag
 

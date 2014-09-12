@@ -18,6 +18,10 @@ title: 'wp core'
 	</thead>
 	<tbody>
 		<tr>
+			<td><a href="/commands/core/check-update/">check-update</a></td>
+			<td>Check for update via Version Check API. Returns latest version if there's an update, or empty if no update available.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/core/config/">config</a></td>
 			<td>Generate a wp-config.php file.</td>
 		</tr>
@@ -32,6 +36,10 @@ title: 'wp core'
 		<tr>
 			<td><a href="/commands/core/is-installed/">is-installed</a></td>
 			<td>Determine if the WordPress tables are installed.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/core/language/">language</a></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/multisite-convert/">multisite-convert</a></td>

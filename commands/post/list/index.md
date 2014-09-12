@@ -14,10 +14,42 @@ title: 'wp post list'
 : Prints the value of a single field for each post.
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Defaults to ID,post_title,post_name,post_date,post_status.
+: Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
 : Accepted values: table, csv, json, count, ids. Default: table
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each post:
+
+* ID
+* post_title
+* post_name
+* post_date
+* post_status
+
+These fields are optionally available:
+
+* post_author
+* post_date_gmt
+* post_content
+* post_excerpt
+* comment_status
+* ping_status
+* post_password
+* to_ping
+* pinged
+* post_modified
+* post_modified_gmt
+* post_content_filtered
+* post_parent
+* guid
+* menu_order
+* post_type
+* post_mime_type
+* comment_count
+* filter
 
 ### EXAMPLES
 

@@ -32,6 +32,9 @@ It will correctly handle serialized values, and will not change primary key valu
 [\--dry-run]
 : Show report, but don't perform the changes.
 
+[\--precise]
+: Force the use of PHP (instead of SQL) which is more thorough, but slower. Use if you see issues with serialized data.
+
 [\--recurse-objects]
 : Enable recursing into objects to replace strings
 

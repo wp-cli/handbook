@@ -8,10 +8,20 @@ title: 'wp cron schedule list'
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Available fields: name, display, interval.
+: Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
 : Accepted values: table, json, csv, ids. Default: table.
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each cron schedule:
+
+* name
+* display
+* interval
+
+There are no additional fields.
 
 ### EXAMPLES
 
