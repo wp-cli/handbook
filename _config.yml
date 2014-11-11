@@ -17,8 +17,6 @@ navigation:
   url: /commands/
 - text: Configuration
   url: /config/
-- text: Packages
-  url: /package-index/
 - text: Blog
   url: /blog/
   layout: post
