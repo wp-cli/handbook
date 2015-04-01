@@ -54,6 +54,7 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 
 		// escape `--` so that it doesn't get converted into `&mdash;`
 		$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
+		$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
 
 		// hack to prevent double encoding in code blocks
 		$docs = preg_replace( '/ &lt; /', ' < ', $docs );
