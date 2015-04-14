@@ -6,8 +6,7 @@ title: Command line interface for WordPress
 
 <h2 id="requirements">Requirements</h2>
 
-* UNIX-like environment (OS X, Linux, FreeBSD, Cygwin)
- * or with limited functionality in Windows environment
+* UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
 * PHP 5.3.2 or later
 * WordPress 3.5.2 or later
 
