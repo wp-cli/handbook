@@ -1,3 +1,5 @@
+These files comprise wp-cli.org. However, all command documentation is dynamically generated from the PHPDoc for each command. If you'd like to suggest command documentation changes, please submit a pull request against the [primary repo](https://github.com/wp-cli/wp-cli). Command documentation changes are deployed to the website with each release.
+
 ### Setup
 
 1. Install [Composer](http://getcomposer.org/).
