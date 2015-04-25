@@ -10,6 +10,9 @@ title: 'wp scaffold plugin'
 &lt;slug&gt;
 : The internal name of the plugin.
 
+[\--dir=&lt;dirname&gt;]
+: Put the new plugin in some arbitrary directory path. Plugin directory will be path plus supplied slug.
+
 [\--plugin_name=&lt;title&gt;]
 : What to put in the 'Plugin Name:' header
 
@@ -18,6 +21,9 @@ title: 'wp scaffold plugin'
 
 [\--activate]
 : Activate the newly generated plugin.
+
+[\--activate-network]
+: Network activate the newly generated plugin.
 
 ### GLOBAL PARAMETERS
 

@@ -10,6 +10,9 @@ title: 'wp media regenerate'
 [&lt;attachment-id&gt;...]
 : One or more IDs of the attachments to regenerate.
 
+[\--skip-delete]
+: Skip deletion of the original thumbnails. If your thumbnails are linked from sources outside your control, it's likely best to leave them around. Defaults to false.
+
 [\--yes]
 : Answer yes to the confirmation message.
 

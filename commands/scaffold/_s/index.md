@@ -13,6 +13,9 @@ title: 'wp scaffold _s'
 [\--activate]
 : Activate the newly downloaded theme.
 
+[\--enable-network]
+: Enable the newly downloaded theme for the entire network.
+
 [\--theme_name=&lt;title&gt;]
 : What to put in the 'Theme Name:' header in style.css
 
@@ -21,6 +24,9 @@ title: 'wp scaffold _s'
 
 [\--author_uri=&lt;uri&gt;]
 : What to put in the 'Author URI:' header in style.css
+
+[\--sassify]
+: Include stylesheets as SASS
 
 ### GLOBAL PARAMETERS
 

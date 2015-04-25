@@ -15,7 +15,7 @@ title: 'wp post term list'
 : Limit the output to specific row fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, ids. Default: table
 
 ### AVAILABLE FIELDS
 

@@ -10,6 +10,9 @@ title: 'wp site list'
 [\--network=&lt;id&gt;]
 : The network to which the sites belong.
 
+[\--&lt;field&gt;=&lt;value&gt;]
+: Filter by one or more fields.
+
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each site.
 

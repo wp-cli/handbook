@@ -25,6 +25,7 @@ These fields will be displayed by default for each translation:
 * english_name
 * native_name
 * status
+* update
 * updated
 
 These fields are optionally available:

@@ -19,6 +19,9 @@ title: 'wp post delete'
 
     wp post delete $(wp post list --post_type='page' --format=ids)
 
+    # delete all posts in the trash
+    wp post delete $(wp post list --post_status=trash --format=ids)
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

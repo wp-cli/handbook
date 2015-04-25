@@ -77,6 +77,10 @@ title: 'wp option'
 			<td>Get an option.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/option/list/">list</a></td>
+			<td>List options.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/option/update/">update</a></td>
 			<td>Update an option.</td>
 		</tr>
