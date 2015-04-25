@@ -67,5 +67,9 @@ title: 'wp core language'
 			<td><a href="/commands/core/language/uninstall/">uninstall</a></td>
 			<td>Uninstall a given language.</td>
 		</tr>
+		<tr>
+			<td><a href="/commands/core/language/update/">update</a></td>
+			<td>Updates the active translation of core, plugins, and themes.</td>
+		</tr>
 	</tbody>
 </table>

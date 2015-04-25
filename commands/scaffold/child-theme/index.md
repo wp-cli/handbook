@@ -28,6 +28,9 @@ title: 'wp scaffold child-theme'
 [\--activate]
 : Activate the newly created child theme.
 
+[\--enable-network]
+: Enable the newly created child theme for the entire network.
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

@@ -16,6 +16,9 @@ title: 'wp scaffold post-type'
 [\--textdomain=&lt;textdomain&gt;]
 : The textdomain to use for the labels.
 
+[\--dashicon=&lt;dashicon&gt;]
+: The dashicon to use in the menu.
+
 [\--theme]
 : Create a file in the active theme directory, instead of sending to
 STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.

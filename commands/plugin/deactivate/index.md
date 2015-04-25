@@ -10,6 +10,9 @@ title: 'wp plugin deactivate'
 [&lt;plugin&gt;...]
 : One or more plugins to deactivate.
 
+[\--uninstall]
+: Uninstall the plugin after deactivation.
+
 [\--all]
 : If set, all plugins will be deactivated.
 

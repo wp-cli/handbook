@@ -38,6 +38,12 @@ It will correctly handle serialized values, and will not change primary key valu
 [\--recurse-objects]
 : Enable recursing into objects to replace strings
 
+[\--all-tables-with-prefix]
+: Enable replacement on any tables that match the table prefix even if not registered on wpdb
+
+[\--all-tables]
+: Enable replacement on ALL tables in the database, regardless of the prefix. Overrides --network and --all-tables-with-prefix.
+
 ### EXAMPLES
 
     wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid

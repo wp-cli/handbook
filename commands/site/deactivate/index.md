@@ -1,38 +1,18 @@
 ---
 layout: default
-title: 'wp user term list'
+title: 'wp site deactivate'
 ---
 
-`wp user term list` - List all terms associated with an object.
+`wp site deactivate` - Deactivate one or more sites
 
-&lt;id&gt;
-: ID for the object.
+### OPTIONS
 
-&lt;taxonomy&gt;...
-: One or more taxonomies to list.
+&lt;id&gt;...
+: One or more IDs of sites to deactivate.
 
-[\--fields=&lt;fields&gt;]
-: Limit the output to specific row fields.
+### EXAMPLES
 
-[\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, ids. Default: table
-
-### AVAILABLE FIELDS
-
-These fields will be displayed by default for each term:
-
-* term_id
-* name
-* slug
-* taxonomy
-
-These fields are optionally available:
-
-* term_taxonomy_id
-* description
-* term_group
-* parent
-* count
+    wp site deactivate 123
 
 ### GLOBAL PARAMETERS
 

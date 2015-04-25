@@ -14,7 +14,7 @@ title: 'wp db export'
 : Extra arguments to pass to mysqldump
 
 [\--tables=&lt;tables&gt;]
-: The comma separated list of specific tables to export. Excluding this parameter will export all tables
+: The comma separated list of specific tables to export. Excluding this parameter will export all tables in the database.
 
 ### EXAMPLES
 
