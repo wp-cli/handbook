@@ -15,4 +15,5 @@ vendor/bin/phake
 ### Preview locally
 
 1. [Install Bundler gem](http://jekyllrb.com/docs/installation/): `gem install bundler`.
-2. Run `jekyll serve --watch`
+2. [Install dependencies](http://jekyllrb.com/docs/installation/): `bundle install`
+3. Run `jekyll serve --watch`
