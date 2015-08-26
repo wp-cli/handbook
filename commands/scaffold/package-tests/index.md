@@ -26,6 +26,9 @@ WP-CLI Behat framework uses Behat ~2.5.
 &lt;dir&gt;
 : The package directory to generate tests for.
 
+[\--force]
+: Overwrite files that already exist.
+
 ### EXAMPLE
 
     wp scaffold package-tests /path/to/command/dir/

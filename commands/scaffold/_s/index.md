@@ -28,6 +28,9 @@ title: 'wp scaffold _s'
 [\--sassify]
 : Include stylesheets as SASS
 
+[\--force]
+: Overwrite files that already exist.
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

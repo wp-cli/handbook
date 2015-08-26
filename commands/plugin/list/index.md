@@ -40,6 +40,9 @@ These fields are optionally available:
 
     wp plugin list --status=active --format=json
 
+    # List plugins on each site in a network
+    wp site list --field=url | xargs -n 1 -I % wp plugin list --url=%
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

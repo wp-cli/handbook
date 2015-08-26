@@ -25,6 +25,9 @@ title: 'wp scaffold plugin'
 [\--activate-network]
 : Network activate the newly generated plugin.
 
+[\--force]
+: Overwrite files that already exist.
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

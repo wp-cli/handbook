@@ -13,6 +13,9 @@ title: 'wp cli update'
 [\--minor]
 : Only perform minor updates
 
+[\--nightly]
+: Update to the latest built version of the master branch. Potentially unstable.
+
 [\--yes]
 : Do not prompt for confirmation
 

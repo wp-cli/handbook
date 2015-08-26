@@ -29,6 +29,9 @@ STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in 
 [\--raw]
 : Just generate the `register_post_type()` call and nothing else.
 
+[\--force]
+: Overwrite files that already exist.
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

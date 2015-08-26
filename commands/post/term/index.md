@@ -55,7 +55,7 @@ title: 'wp post term'
 	<tbody>
 		<tr>
 			<td><a href="/commands/post/term/add/">add</a></td>
-			<td>Add a term. Appends to existed</td>
+			<td>Add a term. Appends to existing set of terms on the object.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post/term/list/">list</a></td>
@@ -67,7 +67,7 @@ title: 'wp post term'
 		</tr>
 		<tr>
 			<td><a href="/commands/post/term/set/">set</a></td>
-			<td>Set terms. Replaces existing terms</td>
+			<td>Set terms. Replaces existing terms on the object.</td>
 		</tr>
 	</tbody>
 </table>

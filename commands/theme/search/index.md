@@ -14,7 +14,7 @@ title: 'wp theme search'
 : Optional number of results to display. Defaults to 10.
 
 [\--field=&lt;field&gt;]
-: Prints the value of a single field for each plugin.
+: Prints the value of a single field for each theme.
 
 [\--fields=&lt;fields&gt;]
 : Ask for specific fields from the API. Defaults to name,slug,author,rating. Acceptable values:

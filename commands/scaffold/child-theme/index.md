@@ -31,6 +31,9 @@ title: 'wp scaffold child-theme'
 [\--enable-network]
 : Enable the newly created child theme for the entire network.
 
+[\--force]
+: Overwrite files that already exist.
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

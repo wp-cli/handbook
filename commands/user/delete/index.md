@@ -8,7 +8,7 @@ title: 'wp user delete'
 ### OPTIONS
 
 &lt;user&gt;...
-: The user login, user email, or user ID of the user(s) to update.
+: The user login, user email, or user ID of the user(s) to delete.
 
 [\--network]
 : On multisite, delete the user from the entire network.

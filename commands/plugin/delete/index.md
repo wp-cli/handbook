@@ -14,6 +14,9 @@ title: 'wp plugin delete'
 
     wp plugin delete hello
 
+    # Delete inactive plugins
+    wp plugin delete $(wp plugin list --status=inactive --field=name)
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;

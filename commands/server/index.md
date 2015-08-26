@@ -1,32 +1,30 @@
 ---
 layout: default
-title: 'wp theme update'
+title: 'wp server'
 ---
 
-`wp theme update` - Update one or more themes.
+`wp server` - Launch PHP's built-in web server for this specific WordPress installation.
+
+&lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 
 ### OPTIONS
 
-[&lt;theme&gt;...]
-: One or more themes to update.
+[\--host=&lt;host&gt;]
+: The hostname to bind the server to. Default: localhost
 
-[\--all]
-: If set, all themes that have updates will be updated.
+[\--port=&lt;port&gt;]
+: The port number to bind the server to. Default: 8080
 
-[\--format=&lt;format&gt;]
-: Output summary as table or summary. Defaults to table.
-
-[\--version=&lt;version&gt;]
-: If set, the theme will be updated to the specified version.
-
-[\--dry-run]
-: Preview which themes would be updated.
+[\--docroot=&lt;path&gt;]
+: The path to use as the document root.
 
 ### EXAMPLES
 
-    wp theme update twentyeleven twentytwelve
+    # Make the instance available on any address (with port 8080)
+    wp server --host=0.0.0.0
 
-    wp theme update --all
+    # Run on port 80 (for multisite)
+    sudo wp server --host=localhost.localdomain --port=80
 
 ### GLOBAL PARAMETERS
 

@@ -5,7 +5,11 @@ title: 'wp cache delete'
 
 `wp cache delete` - Remove a value from the object cache.
 
+&lt;key&gt;
+: Cache key.
 
+[&lt;group&gt;]
+: Method for grouping data within the cache which allows the same key to be used across groups.
 
 ### GLOBAL PARAMETERS
 

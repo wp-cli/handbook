@@ -69,7 +69,7 @@ title: 'wp cli'
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/param-dump/">param-dump</a></td>
-			<td>Dump the list of global parameters, as JSON.</td>
+			<td>Dump the list of global parameters, as JSON or in var_export format.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/update/">update</a></td>
