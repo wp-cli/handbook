@@ -17,7 +17,7 @@ title: 'wp theme update'
 : Output summary as table or summary. Defaults to table.
 
 [\--version=&lt;version&gt;]
-: If set, the plugin will be updated to the specified version.
+: If set, the theme will be updated to the specified version.
 
 [\--dry-run]
 : Preview which themes would be updated.
