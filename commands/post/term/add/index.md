@@ -3,7 +3,7 @@ layout: default
 title: 'wp post term add'
 ---
 
-`wp post term add` - Add a term. Appends to existed
+`wp post term add` - Add a term. Appends to existing set of terms on the object.
 
 &lt;id&gt;
 : The ID of the object.
@@ -12,7 +12,7 @@ title: 'wp post term add'
 : The name of the taxonomy type to be added.
 
 &lt;term&gt;...
-: The name of the term or terms to be added.
+: The slug of the term or terms to be added.
 
 ### GLOBAL PARAMETERS
 

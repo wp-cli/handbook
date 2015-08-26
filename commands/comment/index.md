@@ -75,6 +75,10 @@ title: 'wp comment'
 			<td>Verify whether a comment exists.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/comment/generate/">generate</a></td>
+			<td>Generate comments.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/comment/get/">get</a></td>
 			<td>Get a single comment.</td>
 		</tr>

@@ -81,11 +81,11 @@ title: 'wp cache'
 		</tr>
 		<tr>
 			<td><a href="/commands/cache/replace/">replace</a></td>
-			<td>Replace an existing value in the object cache.</td>
+			<td>Replace a value in the object cache, if the value already exists.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cache/set/">set</a></td>
-			<td>Set a value to the object cache.</td>
+			<td>Set a value to the object cache, regardless of whether it already exists.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cache/type/">type</a></td>

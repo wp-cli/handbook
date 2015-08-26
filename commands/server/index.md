@@ -1,18 +1,30 @@
 ---
 layout: default
-title: 'wp comment meta get'
+title: 'wp server'
 ---
 
-`wp comment meta get` - Get meta field value.
+`wp server` - Launch PHP's built-in web server for this specific WordPress installation.
 
-&lt;id&gt;
-: The ID of the object.
+&lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 
-&lt;key&gt;
-: The name of the meta field to get.
+### OPTIONS
 
-[\--format=&lt;format&gt;]
-: Accepted values: table, json. Default: table
+[\--host=&lt;host&gt;]
+: The hostname to bind the server to. Default: localhost
+
+[\--port=&lt;port&gt;]
+: The port number to bind the server to. Default: 8080
+
+[\--docroot=&lt;path&gt;]
+: The path to use as the document root.
+
+### EXAMPLES
+
+    # Make the instance available on any address (with port 8080)
+    wp server --host=0.0.0.0
+
+    # Run on port 80 (for multisite)
+    sudo wp server --host=localhost.localdomain --port=80
 
 ### GLOBAL PARAMETERS
 

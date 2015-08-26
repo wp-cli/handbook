@@ -3,7 +3,7 @@ layout: default
 title: 'wp user term set'
 ---
 
-`wp user term set` - Set terms. Replaces existing terms
+`wp user term set` - Set terms. Replaces existing terms on the object.
 
 &lt;id&gt;
 : The ID of the object.
@@ -12,7 +12,7 @@ title: 'wp user term set'
 : The name of the taxonomy type to be updated.
 
 &lt;term&gt;...
-: The name of the term or terms to be updated.
+: The slug of the term or terms to be updated.
 
 ### GLOBAL PARAMETERS
 

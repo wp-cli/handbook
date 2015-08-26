@@ -26,10 +26,14 @@ to current working directory.
 : Export only posts published before this date, in format YYYY-MM-DD.
 
 [\--post_type=&lt;post-type&gt;]
-: Export only posts with this post_type. Defaults to all.
+: Export only posts with this post_type. Separate multiple post types with a
+comma. Defaults to all.
 
 [\--post__in=&lt;pid&gt;]
 : Export all posts specified as a comma-separated list of IDs.
+
+[\--start_id=&lt;pid&gt;]
+: Export only posts with IDs greater than or equal to this post ID.
 
 [\--author=&lt;author&gt;]
 : Export only posts by this author. Can be either user login or user ID.

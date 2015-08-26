@@ -44,6 +44,12 @@ It will correctly handle serialized values, and will not change primary key valu
 [\--all-tables]
 : Enable replacement on ALL tables in the database, regardless of the prefix. Overrides --network and --all-tables-with-prefix.
 
+[\--verbose]
+: Prints rows to the console as they're updated.
+
+[\--regex]
+: Runs the search using a regular expression. Warning: search-replace will take about 15-20x longer when using --regex.
+
 ### EXAMPLES
 
     wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid

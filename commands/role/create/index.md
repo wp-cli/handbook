@@ -13,6 +13,9 @@ title: 'wp role create'
 &lt;role-name&gt;
 : The publicly visible name of the role.
 
+[\--clone=&lt;role&gt;]
+: Clone capabilities from an existing role.
+
 ### EXAMPLES
 
     wp role create approver Approver

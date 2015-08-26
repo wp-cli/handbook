@@ -3,9 +3,19 @@ layout: default
 title: 'wp cache set'
 ---
 
-`wp cache set` - Set a value to the object cache.
+`wp cache set` - Set a value to the object cache, regardless of whether it already exists.
 
+&lt;key&gt;
+: Cache key.
 
+&lt;value&gt;
+: Value to set on the key.
+
+[&lt;group&gt;]
+: Method for grouping data within the cache which allows the same key to be used across groups.
+
+[&lt;expiration&gt;]
+: Define how long to keep the value, in seconds. Defaults to 0 (as long as possible).
 
 ### GLOBAL PARAMETERS
 

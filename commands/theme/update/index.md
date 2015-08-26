@@ -13,6 +13,9 @@ title: 'wp theme update'
 [\--all]
 : If set, all themes that have updates will be updated.
 
+[\--format=&lt;format&gt;]
+: Output summary as table or summary. Defaults to table.
+
 [\--version=&lt;version&gt;]
 : If set, the plugin will be updated to the specified version.
 

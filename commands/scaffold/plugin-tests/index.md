@@ -27,6 +27,9 @@ variable.
 [\--dir=&lt;dirname&gt;]
 : Generate test files for a non-standard plugin path. If no plugin slug is specified, the directory name is used.
 
+[\--force]
+: Overwrite files that already exist.
+
 ### EXAMPLE
 
     wp scaffold plugin-tests hello

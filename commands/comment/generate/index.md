@@ -1,18 +1,14 @@
 ---
 layout: default
-title: 'wp comment meta get'
+title: 'wp comment generate'
 ---
 
-`wp comment meta get` - Get meta field value.
+`wp comment generate` - Generate comments.
 
-&lt;id&gt;
-: The ID of the object.
+### OPTIONS
 
-&lt;key&gt;
-: The name of the meta field to get.
-
-[\--format=&lt;format&gt;]
-: Accepted values: table, json. Default: table
+[\--count=&lt;number&gt;]
+: How many comments to generate. Default: 100
 
 ### GLOBAL PARAMETERS
 
