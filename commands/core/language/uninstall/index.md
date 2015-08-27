@@ -5,6 +5,8 @@ title: 'wp core language uninstall'
 
 `wp core language uninstall` - Uninstall a given language.
 
+<hr />
+
 &lt;language&gt;
 : Language code to uninstall.
 

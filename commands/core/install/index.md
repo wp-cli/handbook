@@ -5,6 +5,8 @@ title: 'wp core install'
 
 `wp core install` - Create the WordPress tables in the database.
 
+<hr />
+
 ### OPTIONS
 
 \--url=&lt;url&gt;

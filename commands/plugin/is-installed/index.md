@@ -5,6 +5,8 @@ title: 'wp plugin is-installed'
 
 `wp plugin is-installed` - Check if the plugin is installed.
 
+<hr />
+
 ### OPTIONS
 
 &lt;plugin&gt;

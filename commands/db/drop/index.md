@@ -5,6 +5,8 @@ title: 'wp db drop'
 
 `wp db drop` - Delete the database.
 
+<hr />
+
 ### OPTIONS
 
 [\--yes]

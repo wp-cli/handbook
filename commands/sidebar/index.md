@@ -5,6 +5,8 @@ title: 'wp sidebar'
 
 `wp sidebar` - Manage sidebars.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

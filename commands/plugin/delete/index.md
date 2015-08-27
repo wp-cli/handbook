@@ -5,6 +5,8 @@ title: 'wp plugin delete'
 
 `wp plugin delete` - Delete plugin files.
 
+<hr />
+
 ### OPTIONS
 
 &lt;plugin&gt;...

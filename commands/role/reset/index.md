@@ -5,6 +5,8 @@ title: 'wp role reset'
 
 `wp role reset` - Reset any default role to default capabilities.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;role-key&gt;...]

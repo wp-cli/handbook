@@ -5,6 +5,8 @@ title: 'wp super-admin'
 
 `wp super-admin` - List, add, and remove super admins from a network.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

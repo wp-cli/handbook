@@ -5,6 +5,8 @@ title: 'wp scaffold _s'
 
 `wp scaffold _s` - Generate starter code for a theme.
 
+<hr />
+
 ### OPTIONS
 
 &lt;slug&gt;

@@ -5,6 +5,8 @@ title: 'wp site url'
 
 `wp site url` - Get site url
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

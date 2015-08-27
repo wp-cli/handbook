@@ -5,6 +5,8 @@ title: 'wp theme activate'
 
 `wp theme activate` - Activate a theme.
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme&gt;

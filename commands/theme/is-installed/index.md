@@ -5,6 +5,8 @@ title: 'wp theme is-installed'
 
 `wp theme is-installed` - Check if the theme is installed.
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme&gt;

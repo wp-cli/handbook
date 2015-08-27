@@ -5,6 +5,8 @@ title: 'wp site deactivate'
 
 `wp site deactivate` - Deactivate one or more sites
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

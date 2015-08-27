@@ -5,6 +5,8 @@ title: 'wp network meta update'
 
 `wp network meta update` - Update a meta field.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

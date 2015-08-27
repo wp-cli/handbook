@@ -5,6 +5,8 @@ title: 'wp site'
 
 `wp site` - Perform site-wide operations.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

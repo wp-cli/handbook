@@ -5,6 +5,8 @@ title: 'wp menu item add-post'
 
 `wp menu item add-post` - Add a post as a menu item
 
+<hr />
+
 &lt;menu&gt;
 : The name, slug, or term ID for the menu
 

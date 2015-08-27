@@ -5,6 +5,8 @@ title: 'wp option list'
 
 `wp option list` - List options.
 
+<hr />
+
 [\--search=&lt;pattern&gt;]
 : Use wildcards ( * and ? ) to match option name.
 

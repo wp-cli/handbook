@@ -5,6 +5,8 @@ title: 'wp transient delete'
 
 `wp transient delete` - Delete a transient value.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

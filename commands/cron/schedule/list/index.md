@@ -5,6 +5,8 @@ title: 'wp cron schedule list'
 
 `wp cron schedule list` - List available cron schedules.
 
+<hr />
+
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]

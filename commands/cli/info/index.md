@@ -5,6 +5,8 @@ title: 'wp cli info'
 
 `wp cli info` - Print various data about the CLI environment.
 
+<hr />
+
 ### OPTIONS
 
 [\--format=&lt;format&gt;]

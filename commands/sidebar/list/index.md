@@ -5,6 +5,8 @@ title: 'wp sidebar list'
 
 `wp sidebar list` - List registered sidebars.
 
+<hr />
+
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]

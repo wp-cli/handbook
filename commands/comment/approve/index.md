@@ -5,6 +5,8 @@ title: 'wp comment approve'
 
 `wp comment approve` - Approve a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

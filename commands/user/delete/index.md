@@ -5,6 +5,8 @@ title: 'wp user delete'
 
 `wp user delete` - Delete one or more users from the current site.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;...

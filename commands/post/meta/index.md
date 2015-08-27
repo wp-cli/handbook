@@ -5,6 +5,8 @@ title: 'wp post meta'
 
 `wp post meta` - Manage post custom fields.
 
+<hr />
+
 ### OPTIONS
 
 [\--format=json]

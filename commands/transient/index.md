@@ -5,6 +5,8 @@ title: 'wp transient'
 
 `wp transient` - Manage transients.
 
+<hr />
+
 ### EXAMPLES
 
     wp transient set my_key my_value 300

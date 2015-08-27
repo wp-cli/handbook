@@ -5,6 +5,8 @@ title: 'wp plugin deactivate'
 
 `wp plugin deactivate` - Deactivate a plugin.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;plugin&gt;...]

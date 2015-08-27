@@ -5,6 +5,8 @@ title: 'wp site archive'
 
 `wp site archive` - Archive one or more sites
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

@@ -5,6 +5,8 @@ title: 'wp cli completions'
 
 `wp cli completions` - Generate tab completion strings.
 
+<hr />
+
 ### OPTIONS
 
 \--line=&lt;line&gt;

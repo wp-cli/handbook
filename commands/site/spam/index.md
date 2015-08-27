@@ -5,6 +5,8 @@ title: 'wp site spam'
 
 `wp site spam` - Mark one or more sites as spam
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

@@ -5,6 +5,8 @@ title: 'wp term update'
 
 `wp term update` - Update a term.
 
+<hr />
+
 ### OPTIONS
 
 &lt;taxonomy&gt;

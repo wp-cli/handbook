@@ -5,6 +5,8 @@ title: 'wp network meta'
 
 `wp network meta` - Manage network custom fields.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

@@ -5,6 +5,8 @@ title: 'wp comment list'
 
 `wp comment list` - Get a list of comments.
 
+<hr />
+
 ### OPTIONS
 
 [\--&lt;field&gt;=&lt;value&gt;]

@@ -5,6 +5,8 @@ title: 'wp media regenerate'
 
 `wp media regenerate` - Regenerate thumbnail(s).
 
+<hr />
+
 ### OPTIONS
 
 [&lt;attachment-id&gt;...]

@@ -5,6 +5,8 @@ title: 'wp plugin toggle'
 
 `wp plugin toggle` - Toggle a plugin's activation state.
 
+<hr />
+
 ### OPTIONS
 
 &lt;plugin&gt;...

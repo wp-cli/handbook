@@ -5,6 +5,8 @@ title: 'wp user meta update'
 
 `wp user meta update` - Update a meta field.
 
+<hr />
+
 &lt;user&gt;
 : The user login, user email, or user ID of the user to update metadata for.
 

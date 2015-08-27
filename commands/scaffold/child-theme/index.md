@@ -5,6 +5,8 @@ title: 'wp scaffold child-theme'
 
 `wp scaffold child-theme` - Generate empty child theme.
 
+<hr />
+
 ### OPTIONS
 
 &lt;slug&gt;

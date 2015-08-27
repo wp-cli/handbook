@@ -5,6 +5,8 @@ title: 'wp site list'
 
 `wp site list` - List all sites in a multisite install.
 
+<hr />
+
 ### OPTIONS
 
 [\--network=&lt;id&gt;]

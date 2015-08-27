@@ -5,6 +5,8 @@ title: 'wp site create'
 
 `wp site create` - Create a site in a multisite install.
 
+<hr />
+
 ### OPTIONS
 
 \--slug=&lt;slug&gt;

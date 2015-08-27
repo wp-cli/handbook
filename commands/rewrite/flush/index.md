@@ -5,6 +5,8 @@ title: 'wp rewrite flush'
 
 `wp rewrite flush` - Flush rewrite rules.
 
+<hr />
+
 ### DESCRIPTION
 
 Resets WordPress' rewrite rules based on registered post types, etc.

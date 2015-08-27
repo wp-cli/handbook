@@ -5,6 +5,8 @@ title: 'wp plugin'
 
 `wp plugin` - Manage plugins.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

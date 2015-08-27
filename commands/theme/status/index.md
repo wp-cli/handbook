@@ -5,6 +5,8 @@ title: 'wp theme status'
 
 `wp theme status` - See the status of one or all themes.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;theme&gt;]

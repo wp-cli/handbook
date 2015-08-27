@@ -5,6 +5,8 @@ title: 'wp post url'
 
 `wp post url` - Get post url
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

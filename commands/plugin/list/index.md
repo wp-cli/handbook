@@ -5,6 +5,8 @@ title: 'wp plugin list'
 
 `wp plugin list` - Get a list of plugins.
 
+<hr />
+
 ### OPTIONS
 
 [\--&lt;field&gt;=&lt;value&gt;]

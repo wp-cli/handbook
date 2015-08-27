@@ -5,6 +5,8 @@ title: 'wp menu delete'
 
 `wp menu delete` - Delete one or more menus
 
+<hr />
+
 &lt;menu&gt;...
 : The name, slug, or term ID for the menu(s)
 

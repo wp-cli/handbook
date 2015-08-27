@@ -5,6 +5,8 @@ title: 'wp user'
 
 `wp user` - Manage users.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

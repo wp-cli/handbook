@@ -5,6 +5,8 @@ title: 'wp comment get'
 
 `wp comment get` - Get a single comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

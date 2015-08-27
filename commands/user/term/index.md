@@ -5,6 +5,8 @@ title: 'wp user term'
 
 `wp user term` - Manage user terms.
 
+<hr />
+
 ### EXAMPLES
 
     wp user term set 123 test category

@@ -5,6 +5,8 @@ title: 'wp user import-csv'
 
 `wp user import-csv` - Import users from a CSV file.
 
+<hr />
+
 ### OPTIONS
 
 &lt;file&gt;

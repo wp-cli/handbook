@@ -5,6 +5,8 @@ title: 'wp cron event run'
 
 `wp cron event run` - Run the next scheduled cron event for the given hook.
 
+<hr />
+
 ### OPTIONS
 
 &lt;hook&gt;

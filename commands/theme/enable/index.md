@@ -5,6 +5,8 @@ title: 'wp theme enable'
 
 `wp theme enable` - Enable a theme in a multisite install.
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme&gt;

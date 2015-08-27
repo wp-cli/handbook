@@ -5,6 +5,8 @@ title: 'wp scaffold'
 
 `wp scaffold` - Generate code for post types, taxonomies, etc.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

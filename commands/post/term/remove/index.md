@@ -5,6 +5,8 @@ title: 'wp post term remove'
 
 `wp post term remove` - Remove a term.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

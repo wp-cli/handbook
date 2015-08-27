@@ -5,6 +5,8 @@ title: 'wp option'
 
 `wp option` - Manage options.
 
+<hr />
+
 ### OPTIONS
 
 [\--format=json]

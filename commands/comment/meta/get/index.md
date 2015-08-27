@@ -5,6 +5,8 @@ title: 'wp comment meta get'
 
 `wp comment meta get` - Get meta field value.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

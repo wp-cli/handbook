@@ -5,6 +5,8 @@ title: 'wp core language'
 
 `wp core language` - 
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

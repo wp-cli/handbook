@@ -5,6 +5,8 @@ title: 'wp widget move'
 
 `wp widget move` - Move a widget from one position on a sidebar to another.
 
+<hr />
+
 &lt;widget-id&gt;
 : Unique ID for the widget
 

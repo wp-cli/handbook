@@ -5,6 +5,8 @@ title: 'wp media import'
 
 `wp media import` - Create attachments from local files or from URLs.
 
+<hr />
+
 ### OPTIONS
 
 &lt;file&gt;...

@@ -5,6 +5,8 @@ title: 'wp term'
 
 `wp term` - Manage terms.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

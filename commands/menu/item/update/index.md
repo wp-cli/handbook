@@ -5,6 +5,8 @@ title: 'wp menu item update'
 
 `wp menu item update` - Update a menu item
 
+<hr />
+
 &lt;db-id&gt;
 : Database ID for the menu item.
 

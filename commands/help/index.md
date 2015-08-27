@@ -5,6 +5,8 @@ title: 'wp help'
 
 `wp help` - Get help on a certain command.
 
+<hr />
+
 ### EXAMPLES
 
     # get help for `core` command

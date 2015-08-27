@@ -5,6 +5,8 @@ title: 'wp comment unspam'
 
 `wp comment unspam` - Unspam a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

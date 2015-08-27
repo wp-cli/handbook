@@ -5,6 +5,8 @@ title: 'wp menu'
 
 `wp menu` - List, create, assign, and delete menus
 
+<hr />
+
 ### EXAMPLES
 
     # Create a new menu

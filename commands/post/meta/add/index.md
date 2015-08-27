@@ -5,6 +5,8 @@ title: 'wp post meta add'
 
 `wp post meta add` - Add a meta field.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

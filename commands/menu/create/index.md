@@ -5,6 +5,8 @@ title: 'wp menu create'
 
 `wp menu create` - Create a new menu
 
+<hr />
+
 &lt;menu-name&gt;
 : A descriptive name for the menu
 

@@ -5,6 +5,8 @@ title: 'wp plugin path'
 
 `wp plugin path` - Get the path to a plugin or to the plugin directory.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;plugin&gt;]

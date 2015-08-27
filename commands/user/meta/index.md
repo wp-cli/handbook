@@ -5,6 +5,8 @@ title: 'wp user meta'
 
 `wp user meta` - Manage user custom fields.
 
+<hr />
+
 ### OPTIONS
 
 \--format=json

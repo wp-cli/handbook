@@ -5,6 +5,8 @@ title: 'wp theme path'
 
 `wp theme path` - Get the path to a theme or to the theme directory.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;theme&gt;]

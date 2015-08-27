@@ -5,6 +5,8 @@ title: 'wp user remove-cap'
 
 `wp user remove-cap` - Remove a user's capability.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

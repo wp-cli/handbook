@@ -5,6 +5,8 @@ title: 'wp role exists'
 
 `wp role exists` - Check if a role exists.
 
+<hr />
+
 ##DESCRIPTION
 
 Will exit with status 0 if the role exists, 1 if it does not.

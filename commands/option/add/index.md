@@ -5,6 +5,8 @@ title: 'wp option add'
 
 `wp option add` - Add an option.
 
+<hr />
+
 ### OPTIONS
 
 &lt;key&gt;

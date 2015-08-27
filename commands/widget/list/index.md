@@ -5,6 +5,8 @@ title: 'wp widget list'
 
 `wp widget list` - List widgets associated with a sidebar.
 
+<hr />
+
 &lt;sidebar-id&gt;
 : ID for the corresponding sidebar.
 

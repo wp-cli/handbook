@@ -5,6 +5,8 @@ title: 'wp export'
 
 `wp export` - Export content to a WXR file.
 
+<hr />
+
 ### OPTIONS
 
 [\--dir=&lt;dirname&gt;]

@@ -5,6 +5,8 @@ title: 'wp core download'
 
 `wp core download` - Download core WordPress files.
 
+<hr />
+
 ### OPTIONS
 
 [\--path=&lt;path&gt;]

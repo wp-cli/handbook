@@ -5,6 +5,8 @@ title: 'wp user create'
 
 `wp user create` - Create a user.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user-login&gt;

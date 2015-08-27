@@ -5,6 +5,8 @@ title: 'wp core'
 
 `wp core` - Download, install, update and otherwise manage WordPress proper.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

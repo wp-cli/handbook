@@ -5,6 +5,8 @@ title: 'wp user meta get'
 
 `wp user meta get` - Get meta field value.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

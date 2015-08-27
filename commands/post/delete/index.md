@@ -5,6 +5,8 @@ title: 'wp post delete'
 
 `wp post delete` - Delete a post by ID.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

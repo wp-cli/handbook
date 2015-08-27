@@ -5,6 +5,8 @@ title: 'wp cli param-dump'
 
 `wp cli param-dump` - Dump the list of global parameters, as JSON or in var_export format.
 
+<hr />
+
 ### OPTIONS
 
 [\--with-values]

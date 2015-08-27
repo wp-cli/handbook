@@ -5,6 +5,8 @@ title: 'wp comment exists'
 
 `wp comment exists` - Verify whether a comment exists.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

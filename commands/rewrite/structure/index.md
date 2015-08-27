@@ -5,6 +5,8 @@ title: 'wp rewrite structure'
 
 `wp rewrite structure` - Update the permalink structure.
 
+<hr />
+
 ### DESCRIPTION
 
 Updates the post permalink structure.

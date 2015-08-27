@@ -5,6 +5,8 @@ title: 'wp cli'
 
 `wp cli` - Get information about WP-CLI itself.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

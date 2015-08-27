@@ -5,6 +5,8 @@ title: 'wp theme get'
 
 `wp theme get` - Get a theme
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme&gt;

@@ -5,6 +5,8 @@ title: 'wp server'
 
 `wp server` - Launch PHP's built-in web server for this specific WordPress installation.
 
+<hr />
+
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 
 ### OPTIONS

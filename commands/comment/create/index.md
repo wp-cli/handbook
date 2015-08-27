@@ -5,6 +5,8 @@ title: 'wp comment create'
 
 `wp comment create` - Insert a comment.
 
+<hr />
+
 ### OPTIONS
 
 \--&lt;field&gt;=&lt;value&gt;

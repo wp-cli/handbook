@@ -5,6 +5,8 @@ title: 'wp post term add'
 
 `wp post term add` - Add a term. Appends to existing set of terms on the object.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

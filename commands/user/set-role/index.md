@@ -5,6 +5,8 @@ title: 'wp user set-role'
 
 `wp user set-role` - Set the user role (for a particular blog).
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

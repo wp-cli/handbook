@@ -5,6 +5,8 @@ title: 'wp comment untrash'
 
 `wp comment untrash` - Untrash a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

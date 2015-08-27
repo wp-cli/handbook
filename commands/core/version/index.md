@@ -5,6 +5,8 @@ title: 'wp core version'
 
 `wp core version` - Display the WordPress version.
 
+<hr />
+
 ### OPTIONS
 
 [\--extra]

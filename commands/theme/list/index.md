@@ -5,6 +5,8 @@ title: 'wp theme list'
 
 `wp theme list` - Get a list of themes.
 
+<hr />
+
 ### OPTIONS
 
 [\--&lt;field&gt;=&lt;value&gt;]

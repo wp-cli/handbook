@@ -5,6 +5,8 @@ title: 'wp widget'
 
 `wp widget` - Manage sidebar widgets.
 
+<hr />
+
 ### EXAMPLES
 
     # List widgets on a given sidebar

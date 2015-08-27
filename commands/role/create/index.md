@@ -5,6 +5,8 @@ title: 'wp role create'
 
 `wp role create` - Create a new role.
 
+<hr />
+
 ### OPTIONS
 
 &lt;role-key&gt;

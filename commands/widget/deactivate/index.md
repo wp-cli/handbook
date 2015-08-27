@@ -5,6 +5,8 @@ title: 'wp widget deactivate'
 
 `wp widget deactivate` - Deactivate one or more widgets from an active sidebar.
 
+<hr />
+
 &lt;widget-id&gt;...
 : Unique ID for the widget(s)
 

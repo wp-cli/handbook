@@ -5,6 +5,8 @@ title: 'wp theme disable'
 
 `wp theme disable` - Disable a theme in a multisite install.
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme&gt;

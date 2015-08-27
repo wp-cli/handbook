@@ -5,6 +5,8 @@ title: 'wp db tables'
 
 `wp db tables` - List the database tables.
 
+<hr />
+
 ### OPTIONS
 
 [\--scope=&lt;scope&gt;]

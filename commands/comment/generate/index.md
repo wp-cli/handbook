@@ -5,6 +5,8 @@ title: 'wp comment generate'
 
 `wp comment generate` - Generate comments.
 
+<hr />
+
 ### OPTIONS
 
 [\--count=&lt;number&gt;]

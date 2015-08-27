@@ -5,6 +5,8 @@ title: 'wp network meta get'
 
 `wp network meta get` - Get meta field value.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

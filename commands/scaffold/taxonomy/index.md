@@ -5,6 +5,8 @@ title: 'wp scaffold taxonomy'
 
 `wp scaffold taxonomy` - Generate PHP code for registering a custom taxonomy.
 
+<hr />
+
 ### OPTIONS
 
 &lt;slug&gt;

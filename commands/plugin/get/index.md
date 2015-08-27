@@ -5,6 +5,8 @@ title: 'wp plugin get'
 
 `wp plugin get` - Get a plugin.
 
+<hr />
+
 ### OPTIONS
 
 &lt;plugin&gt;

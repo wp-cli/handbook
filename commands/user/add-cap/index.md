@@ -5,6 +5,8 @@ title: 'wp user add-cap'
 
 `wp user add-cap` - Add a capability for a user.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

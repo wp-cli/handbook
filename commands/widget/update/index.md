@@ -5,6 +5,8 @@ title: 'wp widget update'
 
 `wp widget update` - Update a given widget's options.
 
+<hr />
+
 &lt;widget-id&gt;
 : Unique ID for the widget
 

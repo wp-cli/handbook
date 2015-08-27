@@ -5,6 +5,8 @@ title: 'wp post term'
 
 `wp post term` - Manage post terms.
 
+<hr />
+
 ### EXAMPLES
 
     wp post term set 123 test category

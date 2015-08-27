@@ -5,6 +5,8 @@ title: 'wp comment update'
 
 `wp comment update` - Update one or more comments.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

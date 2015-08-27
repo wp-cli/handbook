@@ -5,6 +5,8 @@ title: 'wp cron event delete'
 
 `wp cron event delete` - Delete the next scheduled cron event for the given hook.
 
+<hr />
+
 ### OPTIONS
 
 &lt;hook&gt;

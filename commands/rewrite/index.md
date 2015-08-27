@@ -5,6 +5,8 @@ title: 'wp rewrite'
 
 `wp rewrite` - Manage rewrite rules.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

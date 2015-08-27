@@ -5,6 +5,8 @@ title: 'wp cache'
 
 `wp cache` - Manage the object cache.
 
+<hr />
+
 ### EXAMPLES
 
     wp cache set my_key my_value my_group 300

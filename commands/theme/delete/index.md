@@ -5,6 +5,8 @@ title: 'wp theme delete'
 
 `wp theme delete` - Delete a theme.
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme&gt;...
