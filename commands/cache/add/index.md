@@ -5,6 +5,8 @@ title: 'wp cache add'
 
 `wp cache add` - Add a value to the object cache.
 
+<hr />
+
 If a value already exists for the key, the value isn't added.
 
 &lt;key&gt;

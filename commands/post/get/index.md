@@ -5,6 +5,8 @@ title: 'wp post get'
 
 `wp post get` - Get a post's content by ID.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

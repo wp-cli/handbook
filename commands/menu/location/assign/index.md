@@ -5,6 +5,8 @@ title: 'wp menu location assign'
 
 `wp menu location assign` - Assign a location to a menu
 
+<hr />
+
 &lt;menu&gt;
 : The name, slug, or term ID for the menu
 

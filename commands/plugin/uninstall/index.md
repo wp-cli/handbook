@@ -5,6 +5,8 @@ title: 'wp plugin uninstall'
 
 `wp plugin uninstall` - Uninstall a plugin.
 
+<hr />
+
 ### OPTIONS
 
 &lt;plugin&gt;...

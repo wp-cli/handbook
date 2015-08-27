@@ -5,6 +5,8 @@ title: 'wp comment count'
 
 `wp comment count` - Count comments, on whole blog or on a given post.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;post-id&gt;]

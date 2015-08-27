@@ -5,6 +5,8 @@ title: 'wp cache set'
 
 `wp cache set` - Set a value to the object cache, regardless of whether it already exists.
 
+<hr />
+
 &lt;key&gt;
 : Cache key.
 

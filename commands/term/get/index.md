@@ -5,6 +5,8 @@ title: 'wp term get'
 
 `wp term get` - Get a taxonomy term
 
+<hr />
+
 ### OPTIONS
 
 &lt;taxonomy&gt;

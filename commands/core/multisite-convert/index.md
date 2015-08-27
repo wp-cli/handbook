@@ -5,6 +5,8 @@ title: 'wp core multisite-convert'
 
 `wp core multisite-convert` - Transform a single-site install into a multi-site install.
 
+<hr />
+
 ### OPTIONS
 
 [\--title=&lt;network-title&gt;]

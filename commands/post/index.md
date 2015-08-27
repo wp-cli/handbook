@@ -5,6 +5,8 @@ title: 'wp post'
 
 `wp post` - Manage posts.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

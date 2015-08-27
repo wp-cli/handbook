@@ -5,6 +5,8 @@ title: 'wp option update'
 
 `wp option update` - Update an option.
 
+<hr />
+
 ### OPTIONS
 
 &lt;key&gt;

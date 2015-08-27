@@ -5,6 +5,8 @@ title: 'wp role list'
 
 `wp role list` - List all roles.
 
+<hr />
+
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]

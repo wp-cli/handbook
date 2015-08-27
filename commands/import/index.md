@@ -5,6 +5,8 @@ title: 'wp import'
 
 `wp import` - Import content from a WXR file.
 
+<hr />
+
 ### OPTIONS
 
 &lt;file&gt;...

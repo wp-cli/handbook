@@ -5,6 +5,8 @@ title: 'wp post list'
 
 `wp post list` - Get a list of posts.
 
+<hr />
+
 ### OPTIONS
 
 [\--&lt;field&gt;=&lt;value&gt;]

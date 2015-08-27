@@ -5,6 +5,8 @@ title: 'wp core config'
 
 `wp core config` - Generate a wp-config.php file.
 
+<hr />
+
 ### OPTIONS
 
 \--dbname=&lt;dbname&gt;

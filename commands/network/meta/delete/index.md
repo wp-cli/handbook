@@ -5,6 +5,8 @@ title: 'wp network meta delete'
 
 `wp network meta delete` - Delete a meta field.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

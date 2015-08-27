@@ -5,6 +5,8 @@ title: 'wp menu list'
 
 `wp menu list` - Get a list of menus.
 
+<hr />
+
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]

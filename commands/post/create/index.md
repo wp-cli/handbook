@@ -5,6 +5,8 @@ title: 'wp post create'
 
 `wp post create` - Create a post.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;file&gt;]

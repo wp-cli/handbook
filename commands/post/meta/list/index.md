@@ -5,6 +5,8 @@ title: 'wp post meta list'
 
 `wp post meta list` - List all metadata associated with an object.
 
+<hr />
+
 &lt;id&gt;
 : ID for the object.
 

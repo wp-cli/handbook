@@ -5,6 +5,8 @@ title: 'wp comment spam'
 
 `wp comment spam` - Spam a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

@@ -5,6 +5,8 @@ title: 'wp menu location remove'
 
 `wp menu location remove` - Remove a location from a menu
 
+<hr />
+
 &lt;menu&gt;
 : The name, slug, or term ID for the menu
 

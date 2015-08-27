@@ -5,6 +5,8 @@ title: 'wp core update'
 
 `wp core update` - Update WordPress.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;zip&gt;]

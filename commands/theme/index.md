@@ -5,6 +5,8 @@ title: 'wp theme'
 
 `wp theme` - Manage themes.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

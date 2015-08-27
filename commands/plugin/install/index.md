@@ -5,6 +5,8 @@ title: 'wp plugin install'
 
 `wp plugin install` - Install a plugin.
 
+<hr />
+
 ### OPTIONS
 
 &lt;plugin|zip|url&gt;...

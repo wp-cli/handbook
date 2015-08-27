@@ -5,6 +5,8 @@ title: 'wp media'
 
 `wp media` - Manage attachments.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

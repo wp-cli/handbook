@@ -5,6 +5,8 @@ title: 'wp cap remove'
 
 `wp cap remove` - Remove capabilities from a given role.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

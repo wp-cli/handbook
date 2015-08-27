@@ -5,6 +5,8 @@ title: 'wp theme mod get'
 
 `wp theme mod get` - Get theme mod(s).
 
+<hr />
+
 ### OPTIONS
 
 [&lt;mod&gt;...]

@@ -5,6 +5,8 @@ title: 'wp site activate'
 
 `wp site activate` - Activate one or more sites
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

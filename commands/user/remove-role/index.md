@@ -5,6 +5,8 @@ title: 'wp user remove-role'
 
 `wp user remove-role` - Remove a user's role.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

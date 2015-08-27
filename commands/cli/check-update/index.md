@@ -5,6 +5,8 @@ title: 'wp cli check-update'
 
 `wp cli check-update` - Check for update via Github API. Returns the available versions if there are updates, or empty if no update available.
 
+<hr />
+
 ### OPTIONS
 
 [\--patch]

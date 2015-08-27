@@ -5,6 +5,8 @@ title: 'wp scaffold package-tests'
 
 `wp scaffold package-tests` - Generate files needed for writing Behat tests for your command.
 
+<hr />
+
 ### DESCRIPTION
 
 These are the files that are generated:

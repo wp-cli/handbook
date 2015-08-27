@@ -5,6 +5,8 @@ title: 'wp theme update'
 
 `wp theme update` - Update one or more themes.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;theme&gt;...]

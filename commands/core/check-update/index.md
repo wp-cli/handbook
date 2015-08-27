@@ -5,6 +5,8 @@ title: 'wp core check-update'
 
 `wp core check-update` - Check for update via Version Check API. Returns latest version if there's an update, or empty if no update available.
 
+<hr />
+
 ### OPTIONS
 
 [\--minor]

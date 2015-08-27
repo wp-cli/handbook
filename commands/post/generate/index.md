@@ -5,6 +5,8 @@ title: 'wp post generate'
 
 `wp post generate` - Generate some posts.
 
+<hr />
+
 ### OPTIONS
 
 [\--count=&lt;number&gt;]

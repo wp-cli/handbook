@@ -5,6 +5,8 @@ title: 'wp scaffold plugin'
 
 `wp scaffold plugin` - Generate starter code for a plugin.
 
+<hr />
+
 ### OPTIONS
 
 &lt;slug&gt;

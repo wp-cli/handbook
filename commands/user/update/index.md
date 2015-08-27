@@ -5,6 +5,8 @@ title: 'wp user update'
 
 `wp user update` - Update a user.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;...

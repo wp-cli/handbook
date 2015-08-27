@@ -5,6 +5,8 @@ title: 'wp plugin search'
 
 `wp plugin search` - Search the wordpress.org plugin repository.
 
+<hr />
+
 ### OPTIONS
 
 &lt;search&gt;

@@ -5,6 +5,8 @@ title: 'wp eval'
 
 `wp eval` - Execute arbitrary PHP code after loading WordPress.
 
+<hr />
+
 ### EXAMPLES
 
     wp eval 'echo WP_CONTENT_DIR;'

@@ -5,6 +5,8 @@ title: 'wp user term remove'
 
 `wp user term remove` - Remove a term.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

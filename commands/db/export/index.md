@@ -5,6 +5,8 @@ title: 'wp db export'
 
 `wp db export` - Exports the database to a file or to STDOUT.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;file&gt;]

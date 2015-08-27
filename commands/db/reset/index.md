@@ -5,6 +5,8 @@ title: 'wp db reset'
 
 `wp db reset` - Remove all tables from the database.
 
+<hr />
+
 ### OPTIONS
 
 [\--yes]

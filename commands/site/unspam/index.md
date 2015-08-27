@@ -5,6 +5,8 @@ title: 'wp site unspam'
 
 `wp site unspam` - Remove one or more sites from spam
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

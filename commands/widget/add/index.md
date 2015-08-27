@@ -5,6 +5,8 @@ title: 'wp widget add'
 
 `wp widget add` - Add a widget to a sidebar.
 
+<hr />
+
 &lt;name&gt;
 : Widget name.
 

@@ -5,6 +5,8 @@ title: 'wp theme install'
 
 `wp theme install` - Install a theme.
 
+<hr />
+
 ### OPTIONS
 
 &lt;theme|zip|url&gt;...

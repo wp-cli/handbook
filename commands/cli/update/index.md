@@ -5,6 +5,8 @@ title: 'wp cli update'
 
 `wp cli update` - Fetch most recent update matching the requirements. Returns the available versions if there are updates, or empty if no update available.
 
+<hr />
+
 ### OPTIONS
 
 [\--patch]

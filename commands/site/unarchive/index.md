@@ -5,6 +5,8 @@ title: 'wp site unarchive'
 
 `wp site unarchive` - Unarchive one or more sites
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

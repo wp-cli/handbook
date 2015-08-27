@@ -5,6 +5,8 @@ title: 'wp menu location'
 
 `wp menu location` - Manage a menu's assignment to locations.
 
+<hr />
+
 ### EXAMPLES
 
     # List available menu locations

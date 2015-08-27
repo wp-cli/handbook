@@ -5,6 +5,8 @@ title: 'wp plugin update'
 
 `wp plugin update` - Update one or more plugins.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;plugin&gt;...]

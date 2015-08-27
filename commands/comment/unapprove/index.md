@@ -5,6 +5,8 @@ title: 'wp comment unapprove'
 
 `wp comment unapprove` - Unapprove a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

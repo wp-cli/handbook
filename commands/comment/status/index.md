@@ -5,6 +5,8 @@ title: 'wp comment status'
 
 `wp comment status` - Get status of a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

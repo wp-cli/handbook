@@ -5,6 +5,8 @@ title: 'wp core multisite-install'
 
 `wp core multisite-install` - Install multisite from scratch.
 
+<hr />
+
 ### OPTIONS
 
 [\--url=&lt;url&gt;]

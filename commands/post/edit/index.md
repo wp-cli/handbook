@@ -5,6 +5,8 @@ title: 'wp post edit'
 
 `wp post edit` - Launch system editor to edit post content.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

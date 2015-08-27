@@ -5,6 +5,8 @@ title: 'wp plugin activate'
 
 `wp plugin activate` - Activate a plugin.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;plugin&gt;...]

@@ -5,6 +5,8 @@ title: 'wp scaffold post-type'
 
 `wp scaffold post-type` - Generate PHP code for registering a custom post type.
 
+<hr />
+
 ### OPTIONS
 
 &lt;slug&gt;

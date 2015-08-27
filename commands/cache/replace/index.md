@@ -5,6 +5,8 @@ title: 'wp cache replace'
 
 `wp cache replace` - Replace a value in the object cache, if the value already exists.
 
+<hr />
+
 &lt;key&gt;
 : Cache key.
 

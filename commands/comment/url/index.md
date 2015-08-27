@@ -5,6 +5,8 @@ title: 'wp comment url'
 
 `wp comment url` - Get comment url
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

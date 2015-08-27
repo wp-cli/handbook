@@ -5,6 +5,8 @@ title: 'wp search-replace'
 
 `wp search-replace` - Search/replace strings in the database.
 
+<hr />
+
 ### DESCRIPTION
 
 This command will go through all rows in all tables and will replace all

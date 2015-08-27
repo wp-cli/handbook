@@ -5,6 +5,8 @@ title: 'wp post term set'
 
 `wp post term set` - Set terms. Replaces existing terms on the object.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

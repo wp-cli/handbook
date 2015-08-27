@@ -5,6 +5,8 @@ title: 'wp user term list'
 
 `wp user term list` - List all terms associated with an object.
 
+<hr />
+
 &lt;id&gt;
 : ID for the object.
 

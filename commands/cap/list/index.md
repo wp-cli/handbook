@@ -5,6 +5,8 @@ title: 'wp cap list'
 
 `wp cap list` - List capabilities for a given role.
 
+<hr />
+
 ### EXAMPLES
 
     # Display alphabetical list of bbPress moderator capabilities

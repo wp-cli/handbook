@@ -5,6 +5,8 @@ title: 'wp term delete'
 
 `wp term delete` - Delete a term.
 
+<hr />
+
 ### OPTIONS
 
 &lt;taxonomy&gt;

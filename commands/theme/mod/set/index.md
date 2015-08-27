@@ -5,6 +5,8 @@ title: 'wp theme mod set'
 
 `wp theme mod set` - Set a theme mod.
 
+<hr />
+
 ### OPTIONS
 
 &lt;mod&gt;

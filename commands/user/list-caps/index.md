@@ -5,6 +5,8 @@ title: 'wp user list-caps'
 
 `wp user list-caps` - List all user's capabilities.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

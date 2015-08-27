@@ -5,6 +5,8 @@ title: 'wp term url'
 
 `wp term url` - Get term url
 
+<hr />
+
 ### OPTIONS
 
 &lt;taxonomy&gt;

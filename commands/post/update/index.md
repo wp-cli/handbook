@@ -5,6 +5,8 @@ title: 'wp post update'
 
 `wp post update` - Update one or more posts.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

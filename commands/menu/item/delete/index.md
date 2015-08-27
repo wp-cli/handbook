@@ -5,6 +5,8 @@ title: 'wp menu item delete'
 
 `wp menu item delete` - Delete one or more items from a menu
 
+<hr />
+
 &lt;db-id&gt;...
 : Database ID for the menu item(s).
 

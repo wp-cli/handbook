@@ -5,6 +5,8 @@ title: 'wp network meta add'
 
 `wp network meta add` - Add a meta field.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

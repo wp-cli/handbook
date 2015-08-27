@@ -5,6 +5,8 @@ title: 'wp post meta delete'
 
 `wp post meta delete` - Delete a meta field.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

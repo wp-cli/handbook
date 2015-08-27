@@ -5,6 +5,8 @@ title: 'wp theme search'
 
 `wp theme search` - Search the wordpress.org theme repository.
 
+<hr />
+
 ### OPTIONS
 
 &lt;search&gt;

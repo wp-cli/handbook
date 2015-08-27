@@ -5,6 +5,8 @@ title: 'wp post meta update'
 
 `wp post meta update` - Update a meta field.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

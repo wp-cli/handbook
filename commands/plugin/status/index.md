@@ -5,6 +5,8 @@ title: 'wp plugin status'
 
 `wp plugin status` - See the status of one or all plugins.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;plugin&gt;]

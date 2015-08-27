@@ -5,6 +5,8 @@ title: 'wp comment delete'
 
 `wp comment delete` - Delete a comment.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;...

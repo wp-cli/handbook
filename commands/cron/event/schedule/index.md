@@ -5,6 +5,8 @@ title: 'wp cron event schedule'
 
 `wp cron event schedule` - Schedule a new cron event.
 
+<hr />
+
 ### OPTIONS
 
 &lt;hook&gt;

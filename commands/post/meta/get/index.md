@@ -5,6 +5,8 @@ title: 'wp post meta get'
 
 `wp post meta get` - Get meta field value.
 
+<hr />
+
 &lt;id&gt;
 : The ID of the object.
 

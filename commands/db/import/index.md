@@ -5,6 +5,8 @@ title: 'wp db import'
 
 `wp db import` - Import database from a file or from STDIN.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;file&gt;]

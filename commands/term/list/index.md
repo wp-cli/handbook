@@ -5,6 +5,8 @@ title: 'wp term list'
 
 `wp term list` - List terms in a taxonomy.
 
+<hr />
+
 ### OPTIONS
 
 &lt;taxonomy&gt;...

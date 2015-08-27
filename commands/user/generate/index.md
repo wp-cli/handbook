@@ -5,6 +5,8 @@ title: 'wp user generate'
 
 `wp user generate` - Generate users.
 
+<hr />
+
 ### OPTIONS
 
 [\--count=&lt;number&gt;]

@@ -5,6 +5,8 @@ title: 'wp rewrite list'
 
 `wp rewrite list` - Print current rewrite rules.
 
+<hr />
+
 ### OPTIONS
 
 [\--match=&lt;url&gt;]

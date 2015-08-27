@@ -5,6 +5,8 @@ title: 'wp menu item add-custom'
 
 `wp menu item add-custom` - Add a custom menu item
 
+<hr />
+
 &lt;menu&gt;
 : The name, slug, or term ID for the menu
 

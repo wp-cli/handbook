@@ -5,6 +5,8 @@ title: 'wp role delete'
 
 `wp role delete` - Delete an existing role.
 
+<hr />
+
 ### OPTIONS
 
 &lt;role-key&gt;

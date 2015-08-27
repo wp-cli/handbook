@@ -5,6 +5,8 @@ title: 'wp cap'
 
 `wp cap` - Manage user capabilities.
 
+<hr />
+
 ### EXAMPLES
 
     # Add 'spectate' capability to 'author' role

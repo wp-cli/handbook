@@ -5,6 +5,8 @@ title: 'wp core language install'
 
 `wp core language install` - Install a given language.
 
+<hr />
+
 &lt;language&gt;
 : Language code to install.
 

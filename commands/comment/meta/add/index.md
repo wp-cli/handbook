@@ -5,6 +5,8 @@ title: 'wp comment meta add'
 
 `wp comment meta add` - Add a meta field.
 
+<hr />
+
 ### OPTIONS
 
 &lt;id&gt;

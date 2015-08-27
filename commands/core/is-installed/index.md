@@ -5,6 +5,8 @@ title: 'wp core is-installed'
 
 `wp core is-installed` - Determine if the WordPress tables are installed.
 
+<hr />
+
 [\--network]
 : Check if this is a multisite install
 

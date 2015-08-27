@@ -5,6 +5,8 @@ title: 'wp core language list'
 
 `wp core language list` - List all languages available.
 
+<hr />
+
 [\--field=&lt;field&gt;]
 : Display the value of a single field
 

@@ -5,6 +5,8 @@ title: 'wp cli version'
 
 `wp cli version` - Print WP-CLI version.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

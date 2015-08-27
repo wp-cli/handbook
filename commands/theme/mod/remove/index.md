@@ -5,6 +5,8 @@ title: 'wp theme mod remove'
 
 `wp theme mod remove` - Remove theme mod(s).
 
+<hr />
+
 ### OPTIONS
 
 [&lt;mod&gt;...]

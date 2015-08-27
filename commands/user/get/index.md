@@ -5,6 +5,8 @@ title: 'wp user get'
 
 `wp user get` - Get a single user.
 
+<hr />
+
 ### OPTIONS
 
 &lt;user&gt;

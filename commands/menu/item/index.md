@@ -5,6 +5,8 @@ title: 'wp menu item'
 
 `wp menu item` - List, add, and delete items associated with a menu
 
+<hr />
+
 ### EXAMPLES
 
     # Add an existing post to an existing menu

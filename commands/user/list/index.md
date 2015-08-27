@@ -5,6 +5,8 @@ title: 'wp user list'
 
 `wp user list` - List users.
 
+<hr />
+
 ### OPTIONS
 
 [\--role=&lt;role&gt;]

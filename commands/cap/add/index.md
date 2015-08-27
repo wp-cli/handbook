@@ -5,6 +5,8 @@ title: 'wp cap add'
 
 `wp cap add` - Add capabilities to a given role.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

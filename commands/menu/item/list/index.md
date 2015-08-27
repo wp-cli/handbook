@@ -5,6 +5,8 @@ title: 'wp menu item list'
 
 `wp menu item list` - Get a list of items associated with a menu
 
+<hr />
+
 ### OPTIONS
 
 &lt;menu&gt;

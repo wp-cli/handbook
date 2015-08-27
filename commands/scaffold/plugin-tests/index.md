@@ -5,6 +5,8 @@ title: 'wp scaffold plugin-tests'
 
 `wp scaffold plugin-tests` - Generate files needed for running PHPUnit tests.
 
+<hr />
+
 ### DESCRIPTION
 
 These are the files that are generated:

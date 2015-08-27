@@ -5,6 +5,8 @@ title: 'wp term generate'
 
 `wp term generate` - Generate some terms.
 
+<hr />
+
 ### OPTIONS
 
 &lt;taxonomy&gt;

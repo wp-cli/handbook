@@ -5,6 +5,8 @@ title: 'wp theme mod'
 
 `wp theme mod` - Manage theme mods.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

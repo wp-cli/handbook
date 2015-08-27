@@ -5,6 +5,8 @@ title: 'wp cache flush'
 
 `wp cache flush` - Flush the object cache.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

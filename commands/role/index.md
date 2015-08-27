@@ -5,6 +5,8 @@ title: 'wp role'
 
 `wp role` - Manage user roles.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

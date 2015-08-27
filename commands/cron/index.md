@@ -5,6 +5,8 @@ title: 'wp cron'
 
 `wp cron` - Manage WP-Cron events and schedules.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

@@ -5,6 +5,8 @@ title: 'wp comment'
 
 `wp comment` - Manage comments.
 
+<hr />
+
 ### EXAMPLES
 
     # delete all spam comments.

@@ -5,6 +5,8 @@ title: 'wp db'
 
 `wp db` - Perform basic database operations.
 
+<hr />
+
 
 
 ### GLOBAL PARAMETERS

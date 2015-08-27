@@ -5,6 +5,8 @@ title: 'wp comment meta'
 
 `wp comment meta` - Manage comment custom fields.
 
+<hr />
+
 ### OPTIONS
 
 \--format=json

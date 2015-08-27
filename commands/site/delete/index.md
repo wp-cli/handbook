@@ -5,6 +5,8 @@ title: 'wp site delete'
 
 `wp site delete` - Delete a site in a multisite install.
 
+<hr />
+
 ### OPTIONS
 
 [&lt;site-id&gt;]
