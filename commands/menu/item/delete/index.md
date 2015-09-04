@@ -12,7 +12,7 @@ title: 'wp menu item delete'
 
 ### EXAMPLES
 
-    wp menu item remove 45
+    wp menu item delete 45
 
 ### GLOBAL PARAMETERS
 
