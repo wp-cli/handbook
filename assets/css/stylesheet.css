@@ -311,6 +311,7 @@ footer {
 	list-style: none;
 }
 .main-nav li {
+	float: left;
 	text-align: center;
 	margin: 0;
 }
