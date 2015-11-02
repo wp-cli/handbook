@@ -14,8 +14,8 @@ Updates the post permalink structure.
 To regenerate a .htaccess file with WP-CLI, you'll need to add the mod_rewrite module
 to your wp-cli.yml or config.yml. For example:
 
-apache_modules:
-  - mod_rewrite
+`apache_modules:
+  - mod_rewrite`
 
 ### OPTIONS
 
