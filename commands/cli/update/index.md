@@ -15,6 +15,9 @@ title: 'wp cli update'
 [\--minor]
 : Only perform minor updates
 
+[\--major]
+: Only perform major updates
+
 [\--nightly]
 : Update to the latest built version of the master branch. Potentially unstable.
 
@@ -45,7 +48,7 @@ title: 'wp cli update'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

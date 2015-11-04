@@ -7,6 +7,9 @@ title: 'wp cap list'
 
 <hr />
 
+&lt;role&gt;
+: Key for the role.
+
 ### EXAMPLES
 
     # Display alphabetical list of bbPress moderator capabilities
@@ -36,7 +39,7 @@ title: 'wp cap list'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

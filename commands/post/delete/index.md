@@ -15,6 +15,9 @@ title: 'wp post delete'
 [\--force]
 : Skip the trash bin.
 
+[\--defer-term-counting]
+: Recalculate term count in batch, for a performance boost.
+
 ### EXAMPLES
 
     wp post delete 123 --force
@@ -48,7 +51,7 @@ title: 'wp post delete'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

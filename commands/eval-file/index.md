@@ -3,7 +3,7 @@ layout: default
 title: 'wp eval-file'
 ---
 
-`wp eval-file` - Load and execute a PHP file after loading WordPress.
+`wp eval-file` - Load and execute a PHP file.
 
 <hr />
 
@@ -15,9 +15,8 @@ title: 'wp eval-file'
 [&lt;arg&gt;...]
 : One or more arguments to pass to the file. They are placed in the $args variable.
 
-### EXAMPLES
-
-    wp eval-file my-code.php value1 value2
+[\--skip-wordpress]
+: Load and execute file without loading WordPress.
 
 ### GLOBAL PARAMETERS
 
@@ -43,7 +42,7 @@ title: 'wp eval-file'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

@@ -19,7 +19,7 @@ title: 'wp user delete'
 : User ID to reassign the posts to.
 
 [\--yes]
-: Answer yes to any confirmation propmts.
+: Answer yes to any confirmation prompts.
 
 ### EXAMPLES
 
@@ -50,7 +50,7 @@ title: 'wp user delete'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

@@ -7,7 +7,11 @@ title: 'wp option get'
 
 <hr />
 
+&lt;key&gt;
+: Key for the option
 
+[\--format=&lt;format&gt;]
+: Get value as var_export() or JSON. Default: var_export()
 
 ### GLOBAL PARAMETERS
 
@@ -33,7 +37,7 @@ title: 'wp option get'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

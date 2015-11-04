@@ -36,7 +36,7 @@ title: 'wp comment'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments
@@ -91,6 +91,10 @@ title: 'wp comment'
 		<tr>
 			<td><a href="/commands/comment/meta/">meta</a></td>
 			<td>Manage comment custom fields.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/comment/recount/">recount</a></td>
+			<td>Recount the comment_count value for one or more posts.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/spam/">spam</a></td>

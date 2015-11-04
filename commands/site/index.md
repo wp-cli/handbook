@@ -33,7 +33,7 @@ title: 'wp site'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments
@@ -92,10 +92,6 @@ title: 'wp site'
 		<tr>
 			<td><a href="/commands/site/unspam/">unspam</a></td>
 			<td>Remove one or more sites from spam</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/site/url/">url</a></td>
-			<td>Get site url</td>
 		</tr>
 	</tbody>
 </table>

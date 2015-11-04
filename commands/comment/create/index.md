@@ -9,7 +9,7 @@ title: 'wp comment create'
 
 ### OPTIONS
 
-\--&lt;field&gt;=&lt;value&gt;
+[\--&lt;field&gt;=&lt;value&gt;]
 : Associative args for the new comment. See wp_insert_comment().
 
 [\--porcelain]
@@ -43,7 +43,7 @@ title: 'wp comment create'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

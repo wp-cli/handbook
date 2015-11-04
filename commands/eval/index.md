@@ -3,13 +3,15 @@ layout: default
 title: 'wp eval'
 ---
 
-`wp eval` - Execute arbitrary PHP code after loading WordPress.
+`wp eval` - Execute arbitrary PHP code.
 
 <hr />
 
-### EXAMPLES
+&lt;php-code&gt;
+: The code to execute, as a string.
 
-    wp eval 'echo WP_CONTENT_DIR;'
+[\--skip-wordpress]
+: Execute code without loading WordPress.
 
 ### GLOBAL PARAMETERS
 
@@ -35,7 +37,7 @@ title: 'wp eval'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

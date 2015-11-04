@@ -7,7 +7,14 @@ title: 'wp transient set'
 
 <hr />
 
+&lt;key&gt;
+: Key for the transient.
 
+&lt;value&gt;
+: Value to be set for the transient.
+
+[&lt;expiration]
+: Time until expiration, in seconds.
 
 ### GLOBAL PARAMETERS
 
@@ -33,7 +40,7 @@ title: 'wp transient set'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

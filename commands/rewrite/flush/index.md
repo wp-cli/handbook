@@ -20,7 +20,7 @@ to your wp-cli.yml or config.yml. For example:
 ### OPTIONS
 
 [\--hard]
-: Perform a hard flush - update `.htaccess` rules as well as rewrite rules in database.
+: Perform a hard flush - update `.htaccess` rules as well as rewrite rules in database. Works only on single site installs.
 
 ### GLOBAL PARAMETERS
 
@@ -46,7 +46,7 @@ to your wp-cli.yml or config.yml. For example:
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

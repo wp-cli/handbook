@@ -33,7 +33,7 @@ title: 'wp core'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments
@@ -55,7 +55,7 @@ title: 'wp core'
 	<tbody>
 		<tr>
 			<td><a href="/commands/core/check-update/">check-update</a></td>
-			<td>Check for update via Version Check API. Returns latest version if there's an update, or empty if no update available.</td>
+			<td>Check for update via Version Check API.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/config/">config</a></td>

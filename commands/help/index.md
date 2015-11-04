@@ -3,9 +3,12 @@ layout: default
 title: 'wp help'
 ---
 
-`wp help` - Get help on a certain command.
+`wp help` - Get help on WP-CLI, or on a specific. command.
 
 <hr />
+
+[&lt;command&gt;...]
+: Get help on a specific command.
 
 ### EXAMPLES
 
@@ -39,7 +42,7 @@ title: 'wp help'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

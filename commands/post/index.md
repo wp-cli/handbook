@@ -33,7 +33,7 @@ title: 'wp post'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments
@@ -88,10 +88,6 @@ title: 'wp post'
 		<tr>
 			<td><a href="/commands/post/update/">update</a></td>
 			<td>Update one or more posts.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/post/url/">url</a></td>
-			<td>Get post url</td>
 		</tr>
 	</tbody>
 </table>
