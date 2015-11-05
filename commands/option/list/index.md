@@ -17,9 +17,7 @@ title: 'wp option list'
 : Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
-: The serialization format for the value.
-: total_bytes displays the total size of matching options in bytes.
-: Accepted values: table, json, csv, count, total_bytes. Default: table
+: The serialization format for the value. total_bytes displays the total size of matching options in bytes. Accepted values: table, json, csv, count, total_bytes. Default: table
 
 ### EXAMPLES
 
@@ -68,7 +66,7 @@ These fields are optionally available:
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

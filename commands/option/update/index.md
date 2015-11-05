@@ -15,6 +15,9 @@ title: 'wp option update'
 [&lt;value&gt;]
 : The new value. If ommited, the value is read from STDIN.
 
+[\--autoload=&lt;autoload&gt;]
+: Requires WP 4.2. Should this option be automatically loaded. Accepted values: yes, no. Default: yes
+
 [\--format=&lt;format&gt;]
 : The serialization format for the value. Default is plaintext.
 
@@ -50,7 +53,7 @@ title: 'wp option update'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

@@ -15,6 +15,9 @@ title: 'wp cli check-update'
 [\--minor]
 : Only list minor updates
 
+[\--major]
+: Only list major updates
+
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each update.
 
@@ -48,7 +51,7 @@ title: 'wp cli check-update'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

@@ -13,7 +13,7 @@ title: 'wp term list'
 : List terms of one or more taxonomies
 
 [\--&lt;field&gt;=&lt;value&gt;]
-: Filter by one or more fields.
+: Filter by one or more fields (see get_terms() $args parameter for a list of fields).
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each term.
@@ -68,7 +68,7 @@ There are no optionally available fields.
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

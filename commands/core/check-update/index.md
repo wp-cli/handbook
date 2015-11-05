@@ -5,9 +5,9 @@ title: 'wp core check-update'
 
 `wp core check-update` - Check for update via Version Check API.
 
-Lists the most recent versions when there are updates available, or success message when up to date.
-
 <hr />
+
+Lists the most recent versions when there are updates available, or success message when up to date.
 
 ### OPTIONS
 
@@ -50,7 +50,7 @@ Lists the most recent versions when there are updates available, or success mess
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

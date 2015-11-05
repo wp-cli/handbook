@@ -16,6 +16,9 @@ title: 'wp user meta update'
 &lt;value&gt;
 : The new metadata value.
 
+[\--format=&lt;format&gt;]
+: The serialization format for the value. Default is plaintext.
+
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;
@@ -40,7 +43,7 @@ title: 'wp user meta update'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

@@ -12,19 +12,19 @@ title: 'wp site create'
 \--slug=&lt;slug&gt;
 : Path for the new site. Subdomain on subdomain installs, directory on subdirectory installs.
 
-\--title=&lt;title&gt;
+[\--title=&lt;title&gt;]
 : Title of the new site. Default: prettified slug.
 
-\--email=&lt;email&gt;
+[\--email=&lt;email&gt;]
 : Email for Admin user. User will be created if none exists. Assignement to Super Admin if not included.
 
-\--network_id=&lt;network-id&gt;
+[\--network_id=&lt;network-id&gt;]
 : Network to associate new site with. Defaults to current network (typically 1).
 
-\--private
+[\--private]
 : If set, the new site will be non-public (not indexed)
 
-\--porcelain
+[\--porcelain]
 : If set, only the site id will be output on success.
 
 ### GLOBAL PARAMETERS
@@ -51,7 +51,7 @@ title: 'wp site create'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

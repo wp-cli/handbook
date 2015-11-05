@@ -31,8 +31,12 @@ to current working directory.
 : Export only posts with this post_type. Separate multiple post types with a
 comma. Defaults to all.
 
+[\--post_type__not_in=&lt;post-type&gt;]
+: Export all post types except those identified. Seperate multiple post types
+with a comma. Defaults to none.
+
 [\--post__in=&lt;pid&gt;]
-: Export all posts specified as a comma-separated list of IDs.
+: Export all posts specified as a comma- or space-separated list of IDs.
 
 [\--start_id=&lt;pid&gt;]
 : Export only posts with IDs greater than or equal to this post ID.
@@ -76,7 +80,7 @@ comma. Defaults to all.
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

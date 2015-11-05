@@ -7,7 +7,13 @@ title: 'wp core verify-checksums'
 
 <hr />
 
+Specify version to verify checksums without loading WordPress.
 
+[\--version=&lt;version&gt;]
+: Verify checksums against a specific version of WordPress.
+
+[\--locale=&lt;locale&gt;]
+: Verify checksums against a specific locale of WordPress.
 
 ### GLOBAL PARAMETERS
 
@@ -33,7 +39,7 @@ title: 'wp core verify-checksums'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

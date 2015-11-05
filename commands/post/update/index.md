@@ -22,6 +22,9 @@ title: 'wp post update'
 \--&lt;field&gt;=&lt;value&gt;
 : One or more fields to update. See wp_update_post().
 
+[\--defer-term-counting]
+: Recalculate term count in batch, for a performance boost.
+
 ### EXAMPLES
 
     wp post update 123 --post_name=something --post_status=draft
@@ -50,7 +53,7 @@ title: 'wp post update'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

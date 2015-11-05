@@ -7,7 +7,11 @@ title: 'wp transient get'
 
 <hr />
 
+&lt;key&gt;
+: Key for the transient.
 
+[\--json]
+: Format output as JSON.
 
 ### GLOBAL PARAMETERS
 
@@ -33,7 +37,7 @@ title: 'wp transient get'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments

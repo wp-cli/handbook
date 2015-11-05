@@ -9,8 +9,8 @@ title: 'wp comment unspam'
 
 ### OPTIONS
 
-&lt;id&gt;
-: The ID of the comment to unmark as spam.
+&lt;id&gt;...
+: The IDs of the comments to unmark as spam.
 
 ### EXAMPLES
 
@@ -40,7 +40,7 @@ title: 'wp comment unspam'
       Whether to colorize the output
 
   \--debug
-      Show all PHP errors
+      Show all PHP errors; add verbosity to WP-CLI bootstrap
 
   \--prompt
       Prompt the user to enter values for all command arguments
