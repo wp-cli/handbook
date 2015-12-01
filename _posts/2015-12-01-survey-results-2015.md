@@ -28,16 +28,16 @@ Good news — if you're writing custom commands, you can reasonably assume it's 
 
 **WP-CLI is used for an increasing variety of tasks**
 
-The survey included "What do you use WP-CLI for?" as a free-form field. To produce a statistical summary, I tagged each response with keywords. Of 170 interpreted values:
+Like last year, the survey included "What do you use WP-CLI for?" as a free-form field. To produce a statistical summary, I tagged each response with keywords. Of 170 interpreted values:
 
 * 38% (65) use WP-CLI for updating WordPress core, themes, or plugins.
 * 22% (38) transform their database in some way using `wp search-replace`.
 * 17% (29) rely upon WP-CLI when performing migrations.
-* 15% (26) make use of WP-CLI's database management features: export, import and optimization.
+* 15% (26) make use of WP-CLI's database management features: `wp db export`, `wp db import` and `wp db optimize`.
 * 11% (18) depend upon WP-CLI in provisioning scripts.
 * 10% (17) scaffold new themes and plugins with `wp scaffold`.
 * 9% (16) write custom commands for their own needs.
-* 6% (10) generate posts, users and comments for mock data.
+* 6% (10) generate mock posts, users and comments.
 * 3% (5) hearty souls use `wp shell`, `wp eval`, and `wp eval-file` for debugging and quick scripts.
 
 In no particular order, some third-party commands and workflows mentioned include: [Jetpack CLI](https://jetpack.me/support/jetpack-cli/), [WP Parser](https://github.com/WordPress/phpdoc-parser), [ElasticPress](https://github.com/10up/ElasticPress), [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/doc/cli-addon/), [WP CFM](http://forumone.github.io/wp-cfm/), [BackWPUp](https://github.com/inpsyde/backwpup), [wp-cli-ssh](https://github.com/xwp/wp-cli-ssh), [wp-instant-setup](https://github.com/miya0001/wp-instant-setup), [project-template-wordpress](https://github.com/QoboLtd/project-template-wordpress), and [provisioning a new WordPress.org Theme Review environment](http://th-daily.shinichi.me/2014/10/27/memo-wp-cli-commands-for-the-theme-reviewers/).
