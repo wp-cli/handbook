@@ -65,6 +65,6 @@ Feel like contributing to WP-CLI over the holidays? Here's a grab bag of enhance
 * Add option to exclude specific tables in `wp search-replace`.
 * Provide a way to log in with a one-time link.
 
-If you can't find an [existing Github issue](https://github.com/wp-cli/wp-cli/issues), feel free to create one and we can begin discussing implementation.
+If you can't find an [existing Github issue](https://github.com/wp-cli/wp-cli/issues), please create one and we can begin discussing implementation.
 
-Thanks again to everyone who took the time to complete our user survey. Hope you've found these results a source of tips and inspiration.
+Thanks again to everyone who took the time to complete our user survey! May WP-CLI continue to be a shining light for your WordPress development needs.
