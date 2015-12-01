@@ -16,15 +16,15 @@ Of this 85%, 48% use WP-CLI multiple times per day. 37% use it a couple or few t
 
 94% of respondents use WP-CLI interactively at the command line, 66% have incorporated it into bash scripts, and 23% are using WP-CLI with Puppet, Chef, or another provisioning system. Other tools mentioned include: [Capistrano](http://capistranorb.com/), [Codeception](http://codeception.com/), [EasyEngine](https://easyengine.io/), [Fabric](http://www.fabfile.org/), [Grunt](http://gruntjs.com/), and [SaltStack](http://saltstack.com/).
 
-**Most keep WP-CLI up to date**
+**Most users keep WP-CLI up to date**
 
 Over 70% of respondents keep WP-CLI up to date. Here's how the numbers break down:
 
 * 13% run the latest alpha. You can too with `wp cli update --nightly`.
 * 58% use the latest stable release (v0.20.x at time of survey).
-* 24% are using one or two versions below the latest stable, and only 5% use a version beyond that.
+* 24% are using one or two versions below the latest stable. Only 5% use a very old version of WP-CLI.
 
-Good news — If you're writing custom commands, you can reasonably assume it's safe to use the latest features in WP-CLI.
+Good news — if you're writing custom commands, you can reasonably assume it's safe to use the latest features in WP-CLI.
 
 **WP-CLI is used for an increasing variety of tasks**
 
