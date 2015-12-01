@@ -38,11 +38,11 @@ Like last year, the survey included "What do you use WP-CLI for?" as a free-form
 * 10% (17) scaffold new themes and plugins with `wp scaffold`.
 * 9% (16) write custom commands for their own needs.
 * 6% (10) generate mock posts, users and comments.
-* 3% (5) hearty souls use `wp shell`, `wp eval`, and `wp eval-file` for debugging and quick scripts.
+* 3% (5) are hearty souls who use `wp shell`, `wp eval`, and `wp eval-file` for debugging and quick scripts.
 
-In no particular order, some third-party commands and workflows mentioned include: [Jetpack CLI](https://jetpack.me/support/jetpack-cli/), [WP Parser](https://github.com/WordPress/phpdoc-parser), [ElasticPress](https://github.com/10up/ElasticPress), [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/doc/cli-addon/), [WP CFM](http://forumone.github.io/wp-cfm/), [BackWPUp](https://github.com/inpsyde/backwpup), [wp-cli-ssh](https://github.com/xwp/wp-cli-ssh), [wp-instant-setup](https://github.com/miya0001/wp-instant-setup), [project-template-wordpress](https://github.com/QoboLtd/project-template-wordpress), and [provisioning a new WordPress.org Theme Review environment](http://th-daily.shinichi.me/2014/10/27/memo-wp-cli-commands-for-the-theme-reviewers/).
+In no particular order, here are some third-party commands and workflows mentioned: [Jetpack CLI](https://jetpack.me/support/jetpack-cli/), [WP Parser](https://github.com/WordPress/phpdoc-parser), [ElasticPress](https://github.com/10up/ElasticPress), [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/doc/cli-addon/), [WP CFM](http://forumone.github.io/wp-cfm/), [BackWPUp](https://github.com/inpsyde/backwpup), [wp-cli-ssh](https://github.com/xwp/wp-cli-ssh), [wp-instant-setup](https://github.com/miya0001/wp-instant-setup), [project-template-wordpress](https://github.com/QoboLtd/project-template-wordpress), and [provisioning a new WordPress.org Theme Review environment](http://th-daily.shinichi.me/2014/10/27/memo-wp-cli-commands-for-the-theme-reviewers/).
 
-One person mentioned they use WP-CLI to make coffee. On behalf of everyone, I look forward to one day seeing this command in the [package directory](https://github.com/wp-cli/wp-cli/issues/1564).
+One person said they use WP-CLI to make coffee. On behalf of everyone, I look forward to the day I can install this command from the [package directory](https://github.com/wp-cli/wp-cli/issues/1564).
 
 ### Feature requests
 
