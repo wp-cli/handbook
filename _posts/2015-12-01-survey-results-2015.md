@@ -55,7 +55,7 @@ Feel like contributing to WP-CLI over the holidays? Here's a grab bag of enhance
 * Install plugins favorited by a given WordPress.org user.
 * Verify theme and plugin checksums.
 * Report when extra files are present in wp-admin or wp-includes (e.g. checksums of directories)
-* Save a template of WordPress setup (similar to `grunt {my-task}`).
+* Save a template of a WordPress setup (similar to `grunt {my-task}`).
 * Disable all plugins except for a specific one. Or, load WP-CLI with only a given plugin active.
 * Install WordPress nightly builds without needing the beta plugin.
 * Provide a command to execute WP-Cron without requiring a HTTP request.
@@ -64,5 +64,7 @@ Feel like contributing to WP-CLI over the holidays? Here's a grab bag of enhance
 * Magically migrate data between environments (production -> staging).
 * Add option to exclude specific tables in `wp search-replace`.
 * Provide a way to log in with a one-time link.
+
+If you can't find an [existing Github issue](https://github.com/wp-cli/wp-cli/issues), feel free to create one and we can begin discussing implementation.
 
 Thanks again to everyone who took the time to complete our user survey. Hope you've found these results a source of tips and inspiration.
