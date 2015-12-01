@@ -6,15 +6,15 @@ title: What the survey said, 2015 edition
 
 Many thanks to the 206 (!!!) people who took our second user survey. We appreciate your time in helping us to understand how WP-CLI is being adopted by the community.
 
-Curious as to how the numbers have changed? Take a look at the [summary of the first user survey in April 2014](http://wp-cli.org/blog/survey-results.html).
+Curious as to how the numbers have changed? Take a look at the [summary of the first user survey](http://wp-cli.org/blog/survey-results.html) from April 2014.
 
 ### By the numbers
 
-**85% of respondents use WP-CLI actively**
+**85% of respondents use WP-CLI regularly**
 
-Of the 85%, 48% use WP-CLI multiple times per day and 37% use it a couple or few times per week. Only 15% of respondents use WP-CLI infrequently or rarely.
+Of this 85%, 48% use WP-CLI multiple times per day. 37% use it a couple or few times per week. Only 15% of respondents use WP-CLI infrequently or rarely.
 
-94% of respondents use WP-CLI interactively at the command line, 66% have incorporated it into bash scripts, and 23% are using WP-CLI with Puppet, Chef, or another provisioning system. Other tools used with WP-CLI include: [Capistrano](http://capistranorb.com/), [Codeception](http://codeception.com/), [EasyEngine](https://easyengine.io/), [Fabric](http://www.fabfile.org/), [Grunt](http://gruntjs.com/), and [SaltStack](http://saltstack.com/).
+94% of respondents use WP-CLI interactively at the command line, 66% have incorporated it into bash scripts, and 23% are using WP-CLI with Puppet, Chef, or another provisioning system. Other tools mentioned include: [Capistrano](http://capistranorb.com/), [Codeception](http://codeception.com/), [EasyEngine](https://easyengine.io/), [Fabric](http://www.fabfile.org/), [Grunt](http://gruntjs.com/), and [SaltStack](http://saltstack.com/).
 
 **Most keep WP-CLI up to date**
 
