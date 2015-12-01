@@ -4,7 +4,9 @@ author: danielbachhuber
 title: What the survey said, 2015 edition
 ---
 
-Many thanks to the 206 (!!!) people who took our second user survey. We appreciate your time in helping us understand how WP-CLI is being adopted by the community. Take a look at the [summary of the first user survey in April 2014](http://wp-cli.org/blog/survey-results.html) to compare results.
+Many thanks to the 206 (!!!) people who took our second user survey. We appreciate your time in helping us to understand how WP-CLI is being adopted by the community.
+
+Curious as to how the numbers have changed? Take a look at the [summary of the first user survey in April 2014](http://wp-cli.org/blog/survey-results.html).
 
 ### By the numbers
 
