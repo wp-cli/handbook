@@ -11,7 +11,7 @@ title: 'wp scaffold plugin-tests'
 
 These are the files that are generated:
 
-* `phpunit.xml` is the configuration file for PHPUnit
+* `phpunit.xml.dist` is the configuration file for PHPUnit
 * `.travis.yml` is the configuration file for Travis CI
 * `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite
 * `tests/test-sample.php` is a sample file containing the actual tests
@@ -39,34 +39,34 @@ variable.
 ### GLOBAL PARAMETERS
 
   \--path=&lt;path&gt;
-      Path to the WordPress files
+      Path to the WordPress files.
 
   \--url=&lt;url&gt;
       Pretend request came from given URL. In multisite, this argument is how the target site is specified.
 
   \--user=&lt;id|login|email&gt;
-      Set the WordPress user
+      Set the WordPress user.
 
   \--skip-plugins[=&lt;plugin&gt;]
-      Skip loading all or some plugins
+      Skip loading all or some plugins.
 
   \--skip-themes[=&lt;theme&gt;]
-      Skip loading all or some themes
+      Skip loading all or some themes.
 
   \--require=&lt;path&gt;
-      Load PHP file before running the command (may be used more than once)
+      Load PHP file before running the command (may be used more than once).
 
   \--[no-]color
-      Whether to colorize the output
+      Whether to colorize the output.
 
   \--debug
-      Show all PHP errors; add verbosity to WP-CLI bootstrap
+      Show all PHP errors; add verbosity to WP-CLI bootstrap.
 
   \--prompt
-      Prompt the user to enter values for all command arguments
+      Prompt the user to enter values for all command arguments.
 
   \--quiet
-      Suppress informational messages
+      Suppress informational messages.
 
 
 
