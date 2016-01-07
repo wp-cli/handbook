@@ -38,7 +38,7 @@ Upgrade using the same procedure.
 
 <h3 id="mamp">MAMP</h3>
 
-If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/10653443/97998).
+If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/29990624/333625).
 
 More resources:
 
