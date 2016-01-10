@@ -20,3 +20,5 @@ navigation:
 - text: Blog
   url: /blog/
   layout: post
+- text: RESTful WP-CLI
+  url: /restful/

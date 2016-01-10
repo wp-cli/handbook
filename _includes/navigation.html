@@ -12,9 +12,12 @@
 		<li {{ current }}>
 			<a href="{{ link.url }}">{{ link.text }}</a>
 		</li>
+
+		{% if '/blog/' == link.url %}
+			<li><a target="_blank" href="https://github.com/wp-cli/wp-cli/wiki">Wiki</a></li>
+		{% endif %}
 	{% endfor %}
 
-		<li><a target="_blank" href="https://github.com/wp-cli/wp-cli/wiki">Wiki</a></li>
 		<li class="align-right">
 			<a href="https://github.com/wp-cli/wp-cli" class="btn-source rounded" target="_blank"><i class="icon-github-circled"></i></a>
 		</li>
