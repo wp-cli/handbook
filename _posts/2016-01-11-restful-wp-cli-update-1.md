@@ -8,6 +8,8 @@ And so the journey begins. As with most journeys, I have a mixture of emotions: 
 
 Today marks the formal kickoff of my Kickstarter project, "[A More RESTFul WP-CLI](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description)". To celebrate the occasion, I've launched a [project page](/restful/) to document the project's goals and my progress along the journey. I'll keep it updated as I write blog posts, hopefully every couple of weeks.
 
+***
+
 For the past month or so, the question at the top of my mind has been: what does it mean to "unlock the potential of the WP REST API at the command line"? Or, even more broadly, why is it worthwhile to pursue this project?
 
 These are big questions, and I consider myself fortunate to be able to explore them over the next six months or so. Here's how I've unpacked it so far:
@@ -19,7 +21,11 @@ These are big questions, and I consider myself fortunate to be able to explore t
 * As WordPress developers write new endpoints for the WP REST API, it will be quite powerful to have those endpoints instantly accessible through the command line, and as accessible as core resources. For instance, where WP-CLI currently has the `wp post *` commands, WP-CLI requires Easy Digital Downloads to produce its own `wp edd *` commands.
 * It appears to be supremely possible to deliver this project as a series of improvements to WP-CLI, shipped over one or more versions. Given I like to release new versions every quarter, it will likely be at lease a couple versions.
 
-As I said, a lot to unpack. I'm intending start off by working towards making `wp tag list` work interchangably with local and remote sites, which already raises a few issues:
+Lots of threads to pull on.
+
+***
+
+I'm intending start development by working towards making `wp tag list` work interchangably with local and remote sites, which already raises a few issues:
 
 * It needs to be easier to register WP-CLI commands on the fly. In my prototype command, I [had to](https://github.com/danielbachhuber/wp-rest-cli/commit/f5ec393632fe841aaaecfc664c419ed1bdbcc566#diff-6bd9ca08588aaa4472208db14aae6750R112) `eval()` a dynamically generated class. It would be much nicer to be able to [register an arbitrary function, closure, or method](https://github.com/wp-cli/wp-cli/issues/2204) as a WP-CLI command.
 * [tk specify site context]
