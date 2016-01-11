@@ -31,4 +31,17 @@ I'm intending start development by working towards making `wp tag list` work int
 * [tk specify site context]
 * [tk authentication, and storing those connection details]
 
+
+***
+
 [tk sponsors]
+
+**The Enterprise**
+
+**The Firm**
+
+**The Agency**
+
+**The Developer**
+
+Aaron Jorbin, Aki Björklund, Anu Gupta, Bjørn Ensover Johansen, Brian Krogsgard, Bronson Quick, Chuck Reynolds, Corey McKrill, Daniel Hüsken, Dave McDonald, Dave Wardle, Eli Silverman, Felix Arntz, Howard Jacobson, Japh Thomson, Jason Resnick, Jeremy Felt, Justin Kopepasah, Kailey Lampert, Kevin Cristiano, Max Cutler, Mike Little, Mike Waggoner, Nate Wright, Pippin Williamson, Quasel, Ralf Hortt, Richard Aber, Richard Wiggins, Ryan Duff, Scott Kingsley Clark, Shinichi Nishikawa, Sven Hofmann, Takayuki Miyauchi, rtCamp
