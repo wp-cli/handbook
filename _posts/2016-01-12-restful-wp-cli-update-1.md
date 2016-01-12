@@ -33,36 +33,46 @@ I'm intending start development by working towards making `wp tag list` work int
 
 ***
 
-This project is possible thanks to many generous organizations and individuals. Thank you again for supporting me on this journey.
+This project is possible thanks to the backing of many generous organizations and individuals. Thank you again for supporting me on this journey.
+
+### Gold
 
 <table>
-  <thead>
-    <tr>
-      <th style="width:50%"><a href="https://chrislema.com/"><img src="/assets/img/restful/chrislema.png"></a></th>
-      <th style="width:50%"><a href="https://hmn.md/"><img src="/assets/img/restful/humanmade.svg"></a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://chrislema.com/">Chris Lema</a> is the CTO &amp; Chief Strategist at Crowd Favorite. He’s also a WordPress evangelist, public speaker &amp; advisor to product companies.</td>
-      <td><a href="https://hmn.md/">Human Made</a> is a leading WordPress Development, Hosting and Consultancy Firm with a global team covering Europe, The USA, and Asia/Australia.</td>
-    </tr>
-  </tbody>
+	<thead>
+	<tr>
+		<th style="width:50%"><a href="https://chrislema.com/"><img src="/assets/img/restful/chrislema.png"></a></th>
+		<th style="width:50%"><a href="https://hmn.md/"><img src="/assets/img/restful/humanmade.svg"></a></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><a href="https://chrislema.com/">Chris Lema</a> is the CTO &amp; Chief Strategist at Crowd Favorite. He’s also a WordPress evangelist, public speaker &amp; advisor to product companies.</td>
+		<td><a href="https://hmn.md/">Human Made</a> is a leading WordPress Development, Hosting and Consultancy Firm with a global team covering Europe, The USA, and Asia/Australia.</td>
+	</tr>
+	</tbody>
 </table>
 
 <table>
-  <thead>
-    <tr>
-      <th style="width:50%"><a href="https://pagely.com"><img src="/assets/img/restful/pagely.png"></a></th>
-      <th style="width:50%"><a href="https://pantheon.io"><img src="/assets/img/restful/pantheon.png"></a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://pagely.com">Pagely®</a> is the World’s first and most scalable WordPress Hosting platform: We help the biggest brands scale and secure WordPress.</td>
-      <td><a href="https://pantheon.io">Pantheon</a> is a website management platform used to build, launch, and run awesome Drupal &amp; WordPress websites.</td>
-    </tr>
-  </tbody>
+	<thead>
+	<tr>
+		<th style="width:50%"><a href="https://pagely.com"><img src="/assets/img/restful/pagely.png"></a></th>
+		<th style="width:50%"><a href="https://pantheon.io"><img src="/assets/img/restful/pantheon.png"></a></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><a href="https://pagely.com">Pagely®</a> is the World’s first and most scalable WordPress Hosting platform: We help the biggest brands scale and secure WordPress.</td>
+		<td><a href="https://pantheon.io">Pantheon</a> is a website management platform used to build, launch, and run awesome Drupal &amp; WordPress websites.</td>
+	</tr>
+	</tbody>
 </table>
+
+### Silver
+
+| |
+|
+|
+
+### Individual
 
 Aaron Jorbin, Aki Björklund, Anu Gupta, Bjørn Ensover Johansen, Brian Krogsgard, Bronson Quick, Chuck Reynolds, Corey McKrill, Daniel Hüsken, Dave McDonald, Dave Wardle, Eli Silverman, Felix Arntz, Howard Jacobson, Japh Thomson, Jason Resnick, Jeremy Felt, Justin Kopepasah, Kailey Lampert, Kevin Cristiano, Max Cutler, Mike Little, Mike Waggoner, Nate Wright, Pippin Williamson, Quasel, Ralf Hortt, Richard Aber, Richard Wiggins, Ryan Duff, Scott Kingsley Clark, Shinichi Nishikawa, Sven Hofmann, Takayuki Miyauchi, rtCamp
