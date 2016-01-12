@@ -28,20 +28,41 @@ Lots of threads to pull on.
 I'm intending start development by working towards making `wp tag list` work interchangably with local and remote sites, which already raises a few issues:
 
 * It needs to be easier to register WP-CLI commands on the fly. In my prototype command, I [had to](https://github.com/danielbachhuber/wp-rest-cli/commit/f5ec393632fe841aaaecfc664c419ed1bdbcc566#diff-6bd9ca08588aaa4472208db14aae6750R112) `eval()` a dynamically generated class. It would be much nicer to be able to [register an arbitrary function, closure, or method](https://github.com/wp-cli/wp-cli/issues/2204) as a WP-CLI command.
-* When we register REST endpoints to WP-CLI on the fly, there's the potential for them to conflict with existing commands. Furthermore, the endpoints will vary from site to site. Ideally, the commands you see should represent the commands available on the target site. I think [site aliases](https://github.com/wp-cli/wp-cli/issues/2039) may offer us a backwards-compatible implementation: specifying an alias like `wp @prod` would only enable commands available on production.
-* [tk authentication, and storing those connection details]
-
+* When we register REST endpoints to WP-CLI on the fly, there's the potential for them to conflict with existing commands. Furthermore, the endpoints will vary from site to site. Ideally, the commands you see should represent the commands available on the target site. I think [site aliases](https://github.com/wp-cli/wp-cli/issues/2039) may offer us a backwards-compatible implementation: specifying an alias like `wp @prod` would only expose commands available on production.
+* Remote calls will need authentication. Ideally, it should be possible to authenticate once through a supported protocol (basic, oAuth1, API key, etc.), We'll need to store these authentication details somewhere on the file server, which is potential rationale for a [config management command](https://github.com/wp-cli/wp-cli/issues/515). If you aren't blocking web requests to `wp-cli.yml` and `wp-cli.local.yml` already, you should be.
 
 ***
 
-[tk sponsors]
+This project is possible thanks to many generous organizations and individuals. Thank you again for supporting me on this journey.
 
-**The Enterprise**
+<table>
+  <thead>
+    <tr>
+      <th style="width:50%"><a href="https://chrislema.com/"><img src="/assets/img/restful/chrislema.png"></a></th>
+      <th style="width:50%"><a href="https://hmn.md/"><img src="/assets/img/restful/humanmade.svg"></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://chrislema.com/">Chris Lema</a> is the CTO &amp; Chief Strategist at Crowd Favorite. He’s also a WordPress evangelist, public speaker &amp; advisor to product companies.</td>
+      <td><a href="https://hmn.md/">Human Made</a> is a leading WordPress Development, Hosting and Consultancy Firm with a global team covering Europe, The USA, and Asia/Australia.</td>
+    </tr>
+  </tbody>
+</table>
 
-**The Firm**
-
-**The Agency**
-
-**The Developer**
+<table>
+  <thead>
+    <tr>
+      <th style="width:50%"><a href="https://pagely.com"><img src="/assets/img/restful/pagely.png"></a></th>
+      <th style="width:50%"><a href="https://pantheon.io"><img src="/assets/img/restful/pantheon.png"></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://pagely.com">Pagely®</a> is the World’s first and most scalable WordPress Hosting platform: We help the biggest brands scale and secure WordPress.</td>
+      <td><a href="https://pantheon.io">Pantheon</a> is a website management platform used to build, launch, and run awesome Drupal &amp; WordPress websites.</td>
+    </tr>
+  </tbody>
+</table>
 
 Aaron Jorbin, Aki Björklund, Anu Gupta, Bjørn Ensover Johansen, Brian Krogsgard, Bronson Quick, Chuck Reynolds, Corey McKrill, Daniel Hüsken, Dave McDonald, Dave Wardle, Eli Silverman, Felix Arntz, Howard Jacobson, Japh Thomson, Jason Resnick, Jeremy Felt, Justin Kopepasah, Kailey Lampert, Kevin Cristiano, Max Cutler, Mike Little, Mike Waggoner, Nate Wright, Pippin Williamson, Quasel, Ralf Hortt, Richard Aber, Richard Wiggins, Ryan Duff, Scott Kingsley Clark, Shinichi Nishikawa, Sven Hofmann, Takayuki Miyauchi, rtCamp
