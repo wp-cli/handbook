@@ -28,7 +28,7 @@ Releases:
 
 ## Budget
 
-Here's how the project's 283 total hours have been used to date:
+Here's a breakdown of how the project's 283 total hours have been used to date:
 
 | Activity      | WP-CLI                   | WP-API                  |
 |---------------|--------------------------|-------------------------|
