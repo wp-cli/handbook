@@ -6,7 +6,7 @@ title: RESTful WP-CLI - The journey begins
 
 And so the journey begins. As with most journeys, I have a mixture of emotions: excitement, anticipation, trepidation, and eagerness. Although the destination may be far away, I know I can get there as long as I consistently take steps in the right direction.
 
-Today marks the formal kickoff of my Kickstarter project, "[A more RESTFul WP-CLI](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description)". To celebrate the occasion, I've launched a [project page](/restful/) to document the project's goals and my progress along the journey. I'll keep it updated as I write blog posts, hopefully every couple of weeks. Consider these blog posts both a development log and an invitation to participate — I look forward to your comments, issues and pull requests.
+Today marks the formal kickoff of my Kickstarter project, "[A more RESTFul WP-CLI](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description)". To celebrate the occasion, I've [launched a project page](/restful/) to capture high-level goals and document my progress along the journey. I'll keep it updated as I write blog posts every couple or few weeks. Consider these blog posts both a development log and an invitation to participate — I look forward to your comments, issues and pull requests.
 
 ***
 
@@ -19,17 +19,17 @@ These are big questions, and I consider myself fortunate to be able to explore t
 * Building the WP REST API has been, and will continue to be, an exercise of modeling how WordPress works to a consistent (RESTful) interface. Furthermore, this model is declared in a common language for clients to interpret.
 * At some point in the future, WP-CLI will be able to ditch a substantial amount of its internals when it can use the WP REST API as its interface to WordPress. WP-CLI can continue to serve as the fastest way for developers to manage WordPress, offering higher-level meta operations like `generate`, `(push|pull)`, and `clone` in addition to being a seamless command line interface to WordPress internals.
 * As WordPress developers write new endpoints for the WP REST API, it will be quite powerful to have those endpoints instantly accessible through the command line, and as accessible as core resources. For instance, where WP-CLI currently has the `wp post *` commands, WP-CLI requires Easy Digital Downloads to produce its own `wp edd *` commands.
-* It appears to be supremely possible to deliver this project as a series of improvements to WP-CLI, shipped over one or more versions. Given I like to release new versions every quarter, it will likely be at lease a couple versions.
+* It appears to be supremely possible to deliver this project as a series of improvements to WP-CLI, shipped over one or more versions in the next couple of quarters.
 
 Lots of threads to pull on.
 
 ***
 
-I'm intending start development by working towards making `wp tag list` work interchangably with local and remote sites, which already raises a few issues:
+I'm starting development by working towards making `wp tag list` work interchangably with local and remote sites. Doing so already raises a few issues:
 
-* It needs to be easier to register WP-CLI commands on the fly. In my prototype command, I [had to](https://github.com/danielbachhuber/wp-rest-cli/commit/f5ec393632fe841aaaecfc664c419ed1bdbcc566#diff-6bd9ca08588aaa4472208db14aae6750R112) `eval()` a dynamically generated class. It would be much nicer to be able to [register an arbitrary function, closure, or method](https://github.com/wp-cli/wp-cli/issues/2204) as a WP-CLI command.
-* When we register REST endpoints to WP-CLI on the fly, there's the potential for them to conflict with existing commands. Furthermore, the endpoints will vary from site to site. Ideally, the commands you see should represent the commands available on the target site. I think [site aliases](https://github.com/wp-cli/wp-cli/issues/2039) may offer us a backwards-compatible implementation: specifying an alias like `wp @prod` would only expose commands available on production.
-* Remote calls will need authentication. Ideally, it should be possible to authenticate once through a supported protocol (basic, oAuth1, API key, etc.), We'll need to store these authentication details somewhere on the file server, which is potential rationale for a [config management command](https://github.com/wp-cli/wp-cli/issues/515). If you aren't blocking web requests to `wp-cli.yml` and `wp-cli.local.yml` already, you should be.
+* WP-CLI needs to be easier to register commands on the fly. In my prototype, I had to `eval()` a [dynamically generated class](https://github.com/danielbachhuber/wp-rest-cli/commit/f5ec393632fe841aaaecfc664c419ed1bdbcc566#diff-6bd9ca08588aaa4472208db14aae6750R112). It would be much nicer to be able to [register an arbitrary function, closure, or method](https://github.com/wp-cli/wp-cli/issues/2204) as a WP-CLI command.
+* When we register REST endpoints to WP-CLI on the fly, there's the potential for them to conflict with existing commands. Furthermore, the endpoints will vary from site to site. Ideally, the commands you see should represent the commands available on the target site. I think [site aliases](https://github.com/wp-cli/wp-cli/issues/2039) may offer us a backwards-compatible implementation; for instance, specifying an alias like `wp @prod` would only expose commands available on production.
+* Remote calls will need authentication. Ideally, it should be possible to authenticate once through a supported protocol (basic, oAuth1, API key, etc.), and store these authentication details somewhere on the file server. This is potential rationale for a [config management command](https://github.com/wp-cli/wp-cli/issues/515). If you aren't blocking web requests to `wp-cli.yml` and `wp-cli.local.yml` already, you should be.
 
 ***
 

@@ -7,7 +7,11 @@ title: A more RESTful WP-CLI
 
 *Landing page last updated: 12 January, 2016*
 
-WP-CLI's mission is to be, quantitatively, the *fastest* way for developers to manage WordPress. "A more RESTful WP-CLI" is a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. The funding represents 283 hours worth of improvements to WP-CLI and the WP REST API with this mission in mind.
+WP-CLI's mission is to be, quantitatively, the *fastest* interface for developers to manage WordPress. "A more RESTful WP-CLI" is a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. This funding supports 283 hours of [Daniel Bachhuber](http://danielbachhuber.com/)'s time towards making improvements to WP-CLI and the WP REST API.
+
+Wait a second, what does it mean to "unlock the potential of the WP REST API at the command line"? Pragmatically, it means any endpoints registered in plugins or themes will be *automagically* accessible as WP-CLI commands. For instance, if you were to register an endpoint for `GET /my-plugin/v1/product/<id>`, this endpoint will also be accessible on the command line as (more or less) `wp @prod product get <id>`.
+
+However, this project is also a multi-faceted exploration of what it means for WP-CLI to be the fastest way to manage WordPress, in a world backed by the WP REST API.
 
 Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#supporters)
 
