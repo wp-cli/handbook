@@ -17,7 +17,7 @@ Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#s
 
 Blog posts:
 
-* [A more RESTful WP-CLI - Kickoff](/blog/restful-wp-cli-update-1.html) - 12 January, 2016
+* [RESTful WP-CLI - The journey begins](/blog/restful-wp-cli-update-1.html) - 12 January, 2016
 
 Releases:
 

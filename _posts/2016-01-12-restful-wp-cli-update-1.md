@@ -1,7 +1,7 @@
 ---
 layout: post
 author: danielbachhuber
-title: A more RESTful WP-CLI - Kickoff
+title: RESTful WP-CLI - The journey begins
 ---
 
 And so the journey begins. As with most journeys, I have a mixture of emotions: excitement, anticipation, trepidation, and eagerness. Although the destination may be far away, I know I can get there as long as I consistently take steps in the right direction.
