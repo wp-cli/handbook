@@ -40,7 +40,7 @@ Here's a breakdown of how the project's 283 total hours have been used to date:
 | Admin         | 0.77                     | 0                       |
 | **Total**     | 9.50 (of 150 budgeted)   | 18.71 (of 83 budgeted)  |
 
-Note: time towards fulfilling the Kickstarter rewards is tracked separately.
+Note: time spent fulfilling the Kickstarter rewards is tracked separately.
 
 ***
 
