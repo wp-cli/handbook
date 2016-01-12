@@ -35,6 +35,23 @@ I'm intending start development by working towards making `wp tag list` work int
 
 This project is possible thanks to the backing of many generous organizations and individuals. Thank you again for supporting me on this journey.
 
+### Platinum
+
+<table>
+	<tbody>
+	<tr>
+		<td style="text-align:center;">
+			<a href="https://pressed.net/"><img src="/assets/img/restful/platinum/pressed.png"></a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<a href="https://www.pressed.net/">Pressed</a> offers white-label, fully managed, WordPress hosting, built on Amazon’s cloud infrastructure. Launch your own managed WordPress hosting brand and let us handle all the maintenance, updates, customer support and billing while building a new recurring revenue stream for your business.
+		</td>
+	</tr>
+	</tbody>
+</table>
+
 ### Gold
 
 <table>
