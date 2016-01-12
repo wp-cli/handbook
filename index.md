@@ -16,7 +16,7 @@ title: Command line interface for WordPress
 	font-weight: bold;
 	margin-top: 10px;
 ">A more RESTful WP-CLI</div>
-	<p>Unlocking the potential of the WP REST API at the command line. Project backed by Chris Lema, Human Made, Pagely, Pantheon and many others. <a href="/restful/">Learn more &rarr;</a></p>
+	<p>Unlocking the potential of the WP REST API at the command line. Project backed by Pressed, Chris Lema, Human Made, Pagely, Pantheon and many others. <a href="/restful/">Learn more &rarr;</a></p>
 </div>
 
 <h2 id="requirements">Requirements</h2>
