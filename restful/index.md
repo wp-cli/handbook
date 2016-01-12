@@ -3,17 +3,48 @@ layout: default
 title: A more RESTful WP-CLI
 ---
 
-*Last updated: January 12, 2016*
+## A more RESTful WP-CLI
+
+*Landing page last updated: 12 January, 2016*
 
 WP-CLI's mission is to be, quantitatively, the *fastest* way for developers to manage WordPress. "A more RESTful WP-CLI" is a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. The funding represents 283 hours worth of improvements to WP-CLI and the WP REST API with this mission in mind.
 
+Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#supporters)
+
 ***
+
+## Achievements
 
 Blog posts:
 
-* [Project Kickoff](/blog/restful-wp-cli-update-1.html) - January 12, 2016
+* [A more RESTful WP-CLI - Kickoff](/blog/restful-wp-cli-update-1.html) - 12 January, 2016
+
+Releases:
+
+* [WP REST API Version 2.0 Beta 10 "Chief Wiggum"](https://make.wordpress.org/core/2016/01/11/wp-rest-api-version-2-0-beta-10-with-security-releases/) - 11 January, 2016
+* [WP-CLI Version 0.22.0 released](/blog/version-0.22.0.html) - 7 January, 2016
 
 ***
+
+## Budget
+
+Here's how the project's 283 total hours have been used to date:
+
+| Activity      | WP-CLI                   | WP-API                  |
+|---------------|--------------------------|-------------------------|
+| Development   | 3.93                     | 13.29                   |
+| Support       | 0.61                     | 3.26                    |
+| Documentation | 0                        | 0                       |
+| Blogging      | 4.19                     | 0                       |
+| Meetings      | 0                        | 2.16                    |
+| Admin         | 0.77                     | 0                       |
+| **Total**     | 9.50 (of 150 budgeted)   | 18.71 (of 83 budgeted)  |
+
+Note: time towards fulfilling the Kickstarter rewards is tracked separately.
+
+***
+
+## Supporters
 
 This project is possible thanks to the backing of many generous organizations and individuals.
 
