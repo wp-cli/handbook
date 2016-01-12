@@ -4,6 +4,21 @@ title: Command line interface for WordPress
 ---
 **WP-CLI** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs and much more, without using a web browser.
 
+<div style="
+	border: 1px solid #7AD03A;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+">
+	<div class="title" style="
+	font-weight: bold;
+	margin-top: 10px;
+">A more RESTful WP-CLI</div>
+	<p>Unlocking the potential of the WP REST API at the command line. Project backed by Chris Lema, Human Made, Pagely, Pantheon and many others. <a href="/restful/">Learn more &rarr;</a></p>
+</div>
+
 <h2 id="requirements">Requirements</h2>
 
 * UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
