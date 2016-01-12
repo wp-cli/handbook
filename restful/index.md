@@ -46,7 +46,7 @@ Note: time spent fulfilling the Kickstarter rewards is tracked separately.
 
 ## Supporters
 
-This project is possible thanks to the backing of many generous organizations and individuals.
+This project is made possible thanks to the backing of many generous organizations and individuals.
 
 ### Platinum
 

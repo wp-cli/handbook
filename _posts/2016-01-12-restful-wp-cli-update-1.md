@@ -33,7 +33,7 @@ I'm intending start development by working towards making `wp tag list` work int
 
 ***
 
-This project is possible thanks to the backing of many generous organizations and individuals. Thank you again for supporting me on this journey.
+This project is made possible thanks to the backing of many generous organizations and individuals. Thank you again for supporting me on this journey.
 
 ### Platinum
 
