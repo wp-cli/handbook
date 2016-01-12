@@ -1,7 +1,7 @@
 ---
 layout: post
 author: danielbachhuber
-title: A more RESTful WP-CLI
+title: A more RESTful WP-CLI - Kickoff
 ---
 
 And so the journey begins. As with most journeys, I have a mixture of emotions: excitement, anticipation, trepidation, and eagerness. Although the destination may be far away, I know I can get there as long as I consistently take steps in the right direction.
@@ -40,8 +40,8 @@ This project is possible thanks to the backing of many generous organizations an
 <table>
 	<thead>
 	<tr>
-		<th style="width:50%"><a href="https://chrislema.com/"><img src="/assets/img/restful/chrislema.png"></a></th>
-		<th style="width:50%"><a href="https://hmn.md/"><img src="/assets/img/restful/humanmade.svg"></a></th>
+		<th style="width:50%"><a href="https://chrislema.com/"><img src="/assets/img/restful/gold/chrislema.png"></a></th>
+		<th style="width:50%"><a href="https://hmn.md/"><img src="/assets/img/restful/gold/humanmade.svg"></a></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -55,8 +55,8 @@ This project is possible thanks to the backing of many generous organizations an
 <table>
 	<thead>
 	<tr>
-		<th style="width:50%"><a href="https://pagely.com"><img src="/assets/img/restful/pagely.png"></a></th>
-		<th style="width:50%"><a href="https://pantheon.io"><img src="/assets/img/restful/pantheon.png"></a></th>
+		<th style="width:50%"><a href="https://pagely.com"><img src="/assets/img/restful/gold/pagely.png"></a></th>
+		<th style="width:50%"><a href="https://pantheon.io"><img src="/assets/img/restful/gold/pantheon.png"></a></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -69,9 +69,25 @@ This project is possible thanks to the backing of many generous organizations an
 
 ### Silver
 
-| |
-|
-|
+<table>
+	<tbody>
+		<tr>
+			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="https://www.godaddy.com/pro"><img title="GoDaddy Pro" src="/assets/img/restful/silver/godaddy.png"></a></td>
+			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="http://madewithlove.be/"><img title="madewithlove" style="max-height: 80px;" src="/assets/img/restful/silver/madewithlove.png"></a></td>
+			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="https://jetpack.me/"><img title="Jetpack" src="/assets/img/restful/silver/jetpack.png"></a></td>
+		</tr>
+		<tr>
+			<td style="width:33%;text-align:center;vertical-align:middle;padding-top:20px;padding-bottom:20px;"><a href="https://roots.io/"><img title="Roots" style="max-height: 80px;" src="/assets/img/restful/silver/roots.svg"></a></td>
+			<td style="width:33%;text-align:center;vertical-align:middle;padding-top:20px;padding-bottom:20px;"><a href="https://siteground.com"><img title="SiteGround" src="/assets/img/restful/silver/siteground.svg"></a></td>
+			<td style="width:33%;text-align:center;vertical-align:middle;padding-top:20px;padding-bottom:20px;"><a href="http://themeisle.com"><img title="ThemeIsle" src="/assets/img/restful/silver/themeisle.png"></a></td>
+		</tr>
+		<tr>
+			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="https://wpengine.com"><img title="WP Engine" src="/assets/img/restful/silver/wpengine.png"></a></td>
+			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="http://versionpress.net"><img title="VersionPress" src="/assets/img/restful/silver/versionpress.png"></a></td>
+			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="https://yoast.com/"><img title="Yoast" src="/assets/img/restful/silver/yoast.png"></a></td>
+		</tr>
+	</tbody>
+</table>
 
 ### Individual
 
