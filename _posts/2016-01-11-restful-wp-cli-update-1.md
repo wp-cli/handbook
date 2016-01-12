@@ -1,12 +1,12 @@
 ---
 layout: post
 author: danielbachhuber
-title: RESTful WP-CLI - Kickoff
+title: A more RESTful WP-CLI
 ---
 
 And so the journey begins. As with most journeys, I have a mixture of emotions: excitement, anticipation, trepidation, and eagerness. Although the destination may be far away, I know I can get there as long as I consistently take steps in the right direction.
 
-Today marks the formal kickoff of my Kickstarter project, "[A More RESTFul WP-CLI](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description)". To celebrate the occasion, I've launched a [project page](/restful/) to document the project's goals and my progress along the journey. I'll keep it updated as I write blog posts, hopefully every couple of weeks.
+Today marks the formal kickoff of my Kickstarter project, "[A more RESTFul WP-CLI](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description)". To celebrate the occasion, I've launched a [project page](/restful/) to document the project's goals and my progress along the journey. I'll keep it updated as I write blog posts, hopefully every couple of weeks.
 
 ***
 
