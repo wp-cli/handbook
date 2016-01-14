@@ -54,7 +54,7 @@ This project is made possible thanks to the backing of many generous organizatio
 
 ### Platinum
 
-<table>
+<table style="table-layout:fixed">
 	<tbody>
 	<tr>
 		<td style="text-align:center;">
@@ -71,7 +71,7 @@ This project is made possible thanks to the backing of many generous organizatio
 
 ### Gold
 
-<table>
+<table style="table-layout:fixed">
 	<thead>
 	<tr>
 		<th style="width:50%"><a href="https://chrislema.com/"><img src="/assets/img/restful/gold/chrislema.png"></a></th>
@@ -86,7 +86,7 @@ This project is made possible thanks to the backing of many generous organizatio
 	</tbody>
 </table>
 
-<table>
+<table style="table-layout:fixed">
 	<thead>
 	<tr>
 		<th style="width:50%"><a href="https://pagely.com"><img src="/assets/img/restful/gold/pagely.png"></a></th>
@@ -103,7 +103,7 @@ This project is made possible thanks to the backing of many generous organizatio
 
 ### Silver
 
-<table>
+<table style="table-layout:fixed">
 	<tbody>
 		<tr>
 			<td style="width:33%;text-align:center;vertical-align:middle;"><a href="https://www.godaddy.com/pro"><img title="GoDaddy Pro" src="/assets/img/restful/silver/godaddy.png"></a></td>
