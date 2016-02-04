@@ -29,6 +29,10 @@ Releases:
 * [WP REST API Version 2.0 Beta 10 "Chief Wiggum"](https://make.wordpress.org/core/2016/01/11/wp-rest-api-version-2-0-beta-10-with-security-releases/) - 11 January, 2016
 * [WP-CLI Version 0.22.0 released](/blog/version-0.22.0.html) - 7 January, 2016
 
+Presentations:
+
+* [Unlocking the potential of the WP REST API at the command line](http://blog.handbuilt.co/2016/01/28/feelingrestful-a-more-restful-wp-cli/) - A Day of REST (28 January, 2016)
+
 ***
 
 ## Budget

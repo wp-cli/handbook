@@ -6,7 +6,7 @@ title: RESTful WP-CLI - No rest for the weary
 
 Like my title? Get the pun? Te he he.
 
-I'm just back from [A Day of REST](https://feelingrestful.com/), where I spoke about a more RESTful WP-CLI, and unlocking the potential of the WP REST API at the command line. It was probably the best talk I've ever done. You can [check out my annotated slides](http://blog.handbuilt.co/2016/01/28/feelingrestful-a-more-restful-wp-cli/) if you haven't already.
+I'm just back from [A Day of REST](https://feelingrestful.com/), where I spoke about [a more RESTful WP-CLI](/restful/), and unlocking the potential of the WP REST API at the command line. It was probably the best talk I've ever done. You can [check out my annotated slides](http://blog.handbuilt.co/2016/01/28/feelingrestful-a-more-restful-wp-cli/) if you haven't already.
 
 The talk covered the progress I've already made, and the hypotheticals on my mind every day when I go for a swim.
 
@@ -141,4 +141,4 @@ In this hypothetical universe, aliases would also be injected into the WP-CLI ru
 
 There's a bit of thinking to do to get from here to there, though.
 
-Feeling inspired? I want to hear from you! Please [open a Github issue](https://github.com/danielbachhuber/wp-rest-cli/issues) with questions, feedback, and violent dissent, or [email me directly](mailto:daniel@handbuilt.co).
+Feeling inspired? I want to hear from you! Particularly if you've written custom endpoints I can test against. Please [open a Github issue](https://github.com/danielbachhuber/wp-rest-cli/issues) with questions, feedback, and violent dissent, or [email me directly](mailto:daniel@handbuilt.co).
