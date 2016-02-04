@@ -19,7 +19,7 @@ Today marks v0.1.0 for [wp-rest-cli](https://github.com/danielbachhuber/wp-rest-
 
 **Warning:** This project is at a very early stage. Treat it as an experiment, and understand that breaking changes will be made without warning. The sky may also fall on your head.
 
-For example:
+Here's how it works:
 
     $ wp rest
     usage: wp rest attachment <command>
@@ -60,9 +60,9 @@ That's right, WP-CLI now has package management. Using `wp cli update --nightly`
 * `wp package list` to list packages installed locally.
 * `wp package uninstall` to uninstall a given package.
 
-While I wasn't *planning* to dive down this rabbit hole during the Kickstarter project, I was finally inspired on how to finish the feature, and took a couple hours yesterday to do so. It's amazing how you can be mentally blocked on something for literally two years but then, once you're unblocked, finish it up in a short period of time.
+While I wasn't *planning* to dive down this rabbit hole during the Kickstarter project, I was finally inspired on how to finish the feature, and took a couple hours yesterday to do so. It's amazing how you can be mentally blocked on a problem for literally two years but then, once you're unblocked, finish it up in a short period of time.
 
-You'll probably run into one or more bugs with `wp package`. When you do, please [weigh in on this issue](https://github.com/wp-cli/wp-cli/issues/1564). If the bugs get too hairy, I may pull the feature from the release and revisit. But, for now, you can much more easily install and use community packages.
+You'll probably run into one or more bugs with `wp package`. When you do, please [let me know on this issue](https://github.com/wp-cli/wp-cli/issues/1564). If the bugs get too hairy, I may pull the feature from the release and revisit. But, for now, you can much more easily install and use community packages.
 
 wp-rest-cli also makes use of another new feature: register arbitrary functions, closures, and class methods as WP-CLI commands.
 
@@ -112,7 +112,7 @@ Want to use this command locally? Update to the nightly, and then run `wp packag
 
 ### What's next
 
-Well... I've spent a ton of hours over the last month on the WP REST API. 67.03 of 83, to be precise. Given there doesn't yet seem to be an end in site, I may reallocate ~30 hours or so out of the WP-CLI budget for continued involvement with the WP REST API. But, I do need to slow down the pace of my involvement a bit, because it's not sustainable.
+Well... I've spent a ton of hours over the last month on the WP REST API. 67.03 hours of 83 budgeted, to be precise. Given there doesn't yet seem to be an end in site, I may reallocate ~30 hours or so out of the WP-CLI budget for continued involvement with the WP REST API. But, I do need to slow down the pace of my involvement a bit, because it's not sustainable.
 
 On the wp-rest-cli front, the product problems at the top of my mind are authentication and aliases. Instead of:
 
