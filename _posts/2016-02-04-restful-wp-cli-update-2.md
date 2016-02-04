@@ -17,6 +17,8 @@ Today marks v0.1.0 for [wp-rest-cli](https://github.com/danielbachhuber/wp-rest-
 * Auto-discovering endpoints from any WordPress site running WordPress 4.4 or higher.
 * Registering WP-CLI commands for the endpoints it understands.
 
+**Warning:** This project is at a very early stage. Treat it as an experiment, and understand that breaking changes will be made without warning. The sky may also fall on your head.
+
 For example:
 
     $ wp rest
@@ -44,8 +46,6 @@ For example:
     }
 
 Notice how you can use `--http=<domain>` to interact with a remote WordPress site. `--http=<domain>` must be supplied as the second argument to be used. Without it, wp-rest-cli will look for endpoints of a WordPress site in a directory specified by `--path=<path>` (or the current directory, if `--path=<path` isn't supplied).
-
-**Warning:** This project is at a very early stage. Treat it as an experiment, and understand that breaking changes will be made without warning. The sky may also fall on your head.
 
 Using wp-rest-cli requires the latest nightly build of WP-CLI, which you can install with `wp cli update --nightly`. Once you've done so, you can install wp-rest-cli with `wp package install danielbachhuber/wp-rest-cli`.
 
