@@ -112,15 +112,19 @@ Want to use this command locally? Update to the nightly, and then run `wp packag
 
 ### What's next
 
-Well... I've spent a ton of hours over the last month on the WP REST API. 67.03 hours of 83 budgeted, to be precise. Given there doesn't yet seem to be an end in site, I may reallocate ~30 hours or so out of the WP-CLI budget for continued involvement with the WP REST API. But, I do need to slow down the pace of my involvement a bit, because it's not sustainable.
+Well... I've spent a ton of hours over the last month on the WP REST API. 67.03 hours of 83 budgeted, to be precise. Given there doesn't yet seem to be an end in sight, I may reallocate ~30 hours or so out of the WP-CLI budget for continued involvement with the WP REST API. But, I do need to slow down the pace of my involvement a bit, because it's not sustainable.
 
-On the wp-rest-cli front, the product problems at the top of my mind are authentication and aliases. Instead of:
+On the wp-rest-cli front, the product problems at the top of my mind are authentication and aliases.
+
+Instead of:
 
     wp --http=demo.wp-api.org --user=daniel:daniel rest tag create
 
-I'd much prefer the following, where `@wpapi` is an alias for both the target and authentication:
+I'd much prefer:
 
     wp @wpapi tag create
+
+In the example preceeding, `@wpapi` is an alias for both the target and authentication.
 
 In this hypothetical universe, aliases would also be injected into the WP-CLI runtime:
 
