@@ -125,6 +125,31 @@ task( 'param-list', function( $app ) {
 	file_put_contents( '_includes/param-list.html', $out );
 });
 
+desc( 'Update the /docs/apis/ page.' );
+task( 'api-list', function( $app ) {
+	$apis = invoke_wp_cli( 'wp cli api-dump', $app );
+	$out = '';
+	$function_groups = array();
+	foreach( $apis as $api ) {
+		if ( 'function' !== $api['type'] ) {
+			continue;
+		}
+		$group_name = substr( $api['full_name'], 0, - strlen( $api['short_name'] ) - 1 );
+		if ( ! isset( $function_groups[ $group_name ] ) ) {
+			$function_groups[ $group_name ] = array();
+		}
+		$function_groups[ $group_name ][] = $api;
+	}
+
+	$out .= '***' . PHP_EOL . PHP_EOL;
+
+	foreach( $function_groups as $name => $functions ) {
+		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
+		$out .= render( 'api-list.mustache', array( 'apis' => $functions ) );
+	}
+	file_put_contents( '_includes/api-list.html', $out );
+});
+
 desc( 'Build the site.' );
-task( 'default', 'cmd-list', 'param-list' );
+task( 'default', 'cmd-list', 'param-list', 'api-list' );
 
