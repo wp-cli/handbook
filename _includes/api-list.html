@@ -1,0 +1,162 @@
+***
+
+## WP_CLI\Utils
+
+
+```WP_CLI\Utils\format_items( $format, $items, $fields )```
+
+Output items in a table, JSON, CSV, ids, or the total count
+
+<div>
+<strong>$format</strong> (string) Format to use: 'table', 'json', 'csv', 'ids', 'count'<br />
+<strong>$items</strong> (array) Data to output<br />
+<strong>$fields</strong> (array|string) Named fields for each item of data. Can be array or comma-separated list<br />
+
+</div>
+
+***
+
+
+```WP_CLI\Utils\write_csv( $fd, $rows, $headers = array() )```
+
+Write data as CSV to a given file.
+
+<div>
+<strong>$fd</strong> (resource) File descriptor<br />
+<strong>$rows</strong> (array) Array of rows to output<br />
+<strong>$headers</strong> (array) List of CSV columns (optional)<br />
+
+</div>
+
+***
+
+
+```WP_CLI\Utils\get_named_sem_ver( $new_version, $original_version )```
+
+Compare two version strings to get the named semantic version.
+
+<div>
+<strong>$new_version</strong> (string) <br />
+<strong>$original_version</strong> (string) <br />
+
+<p><strong>@return</strong> string 'major', 'minor', 'patch'</p>
+</div>
+
+***
+
+
+```WP_CLI\Utils\get_flag_value( $assoc_args, $flag, $default = array() )```
+
+Return the flag value or, if it's not set, the $default value.
+
+<div>
+<strong>$assoc_args</strong> (array) Arguments array.<br />
+<strong>$flag</strong> (string) Flag to get the value.<br />
+<strong>$default</strong> (mixed) Default value for the flag. Default: NULL<br />
+
+<p><strong>@return</strong> mixed </p>
+</div>
+
+***
+
+
+```WP_CLI\Utils\get_temp_dir()```
+
+Get the temp directory, and let the user know if it isn't writable.
+
+<div>
+
+<p><strong>@return</strong> string </p>
+</div>
+
+***
+
+## WP_CLI
+
+
+```WP_CLI::line( $message = null )```
+
+Display a message in the CLI and end with a newline.
+Ignores --quiet flag. To respect, use WP_CLI::log()
+
+<div>
+<strong>$message</strong> (string) <br />
+
+</div>
+
+***
+
+
+```WP_CLI::log( $message )```
+
+Log an informational message.
+
+<div>
+<strong>$message</strong> (string) <br />
+
+</div>
+
+***
+
+
+```WP_CLI::success( $message )```
+
+Display a success in the CLI and end with a newline.
+
+<div>
+<strong>$message</strong> (string) <br />
+
+</div>
+
+***
+
+
+```WP_CLI::debug( $message )```
+
+Log information when --debug flag is used.
+Helpful for optionally showing greater detail when needed.
+
+<div>
+<strong>$message</strong> (string) <br />
+
+</div>
+
+***
+
+
+```WP_CLI::warning( $message )```
+
+Display a warning in the CLI and end with a newline.
+
+<div>
+<strong>$message</strong> (string) <br />
+
+</div>
+
+***
+
+
+```WP_CLI::error( $message, $exit = true )```
+
+Display an error in the CLI and end with a newline.
+
+<div>
+<strong>$message</strong> (string|WP_Error) <br />
+<strong>$exit</strong> (bool) if true, the script will exit()<br />
+
+</div>
+
+***
+
+
+```WP_CLI::error_multi_line( $message_lines )```
+
+Display an error in the CLI and end with a newline.
+
+<div>
+<strong>$message</strong> (array) each element from the array will be printed on its own line<br />
+
+</div>
+
+***
+
