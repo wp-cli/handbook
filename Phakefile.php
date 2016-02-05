@@ -138,6 +138,9 @@ task( 'api-list', function( $app ) {
 		if ( ! isset( $function_groups[ $group_name ] ) ) {
 			$function_groups[ $group_name ] = array();
 		}
+		if ( isset( $api['phpdoc']['parameters']['params'] ) ) {
+			$api['params'] = $api['phpdoc']['parameters']['params'];
+		}
 		$function_groups[ $group_name ][] = $api;
 	}
 
@@ -147,6 +150,27 @@ task( 'api-list', function( $app ) {
 		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
 		$out .= render( 'api-list.mustache', array( 'apis' => $functions ) );
 	}
+
+	$class_groups = array();
+	foreach( $apis as $api ) {
+		if ( 'method' !== $api['type'] ) {
+			continue;
+		}
+		$group_name = $api['class'];
+		if ( ! isset( $class_groups[ $group_name ] ) ) {
+			$class_groups[ $group_name ] = array();
+		}
+		if ( isset( $api['phpdoc']['parameters']['params'] ) ) {
+			$api['params'] = $api['phpdoc']['parameters']['params'];
+		}
+		$class_groups[ $group_name ][] = $api;
+	}
+
+	foreach( $class_groups as $name => $methods ) {
+		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
+		$out .= render( 'api-list.mustache', array( 'apis' => $methods ) );
+	}
+
 	file_put_contents( '_includes/api-list.html', $out );
 });
 

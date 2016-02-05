@@ -22,6 +22,21 @@ function api_dump() {
 		}
 		$apis[] = get_simple_representation( $reflection );
 	}
+	$classes = get_declared_classes();
+	foreach( $classes as $class ) {
+		if ( false === stripos( $class, 'WP_CLI' ) ) {
+			continue;
+		}
+		$reflection = new \ReflectionClass( $class );
+		foreach( $reflection->getMethods() as $method ) {
+			$method_reflection = new \ReflectionMethod( $method->class, $method->name );
+			$phpdoc = $method_reflection->getDocComment();
+			if ( false === stripos( $phpdoc, '@access public' ) ) {
+				continue;
+			}
+			$apis[] = get_simple_representation( $method_reflection );
+		}
+	}
 	echo json_encode( $apis );
 }
 \WP_CLI::add_command( 'cli api-dump', '\WP_CLI_Org\api_dump' );
@@ -65,12 +80,26 @@ function get_simple_representation( $reflection ) {
 		$signature = $signature . '()';
 	}
 	$phpdoc = $reflection->getDocComment();
+	$type = strtolower( str_replace( 'Reflection', '', get_class( $reflection ) ) );
+	$class = '';
+	switch ( $type ) {
+		case 'function':
+			$full_name = $reflection->getName();
+			break;
+		case 'method':
+			$separator = $reflection->isStatic() ? '::' : '->';
+			$class = $reflection->class;
+			$full_name = $class . $separator . $reflection->getName();
+			$signature = $class . $separator . $signature;
+			break;
+	}
 	return array(
 		'phpdoc'       => parse_docblock( $phpdoc ),
-		'type'         => is_a( $reflection, 'ReflectionFunction' ) ? 'function' : 'method',
+		'type'         => $type,
 		'signature'    => $signature,
 		'short_name'   => $reflection->getShortName(),
-		'full_name'    => $reflection->getName(),
+		'full_name'    => $full_name,
+		'class'        => $class,
 	);
 }
 

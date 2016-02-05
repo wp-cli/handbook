@@ -1,9 +1,19 @@
 {{#apis}}
 
-### {{short_name}}
-
 ```{{signature}}```
 
 {{phpdoc.description}}
+
+<div>
+{{#phpdoc.parameters.param}}
+<strong>{{1}}</strong> ({{0}}) {{2}}<br />
+{{/phpdoc.parameters.param}}
+
+{{#phpdoc.parameters.return}}
+<p><strong>@return</strong> {{0}} {{2}}</p>
+{{/phpdoc.parameters.return}}
+</div>
+
+***
 
 {{/apis}}
