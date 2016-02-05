@@ -125,8 +125,8 @@ task( 'param-list', function( $app ) {
 	file_put_contents( '_includes/param-list.html', $out );
 });
 
-desc( 'Update the /docs/apis/ page.' );
-task( 'api-list', function( $app ) {
+desc( 'Update the /docs/internal-api/ page.' );
+task( 'internal-api-list', function( $app ) {
 	$apis = invoke_wp_cli( 'wp cli api-dump', $app );
 	$out = '';
 	$function_groups = array();
@@ -148,7 +148,7 @@ task( 'api-list', function( $app ) {
 
 	foreach( $function_groups as $name => $functions ) {
 		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-		$out .= render( 'api-list.mustache', array( 'apis' => $functions ) );
+		$out .= render( 'internal-api-list.mustache', array( 'apis' => $functions ) );
 	}
 
 	$class_groups = array();
@@ -168,12 +168,12 @@ task( 'api-list', function( $app ) {
 
 	foreach( $class_groups as $name => $methods ) {
 		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-		$out .= render( 'api-list.mustache', array( 'apis' => $methods ) );
+		$out .= render( 'internal-api-list.mustache', array( 'apis' => $methods ) );
 	}
 
-	file_put_contents( '_includes/api-list.html', $out );
+	file_put_contents( '_includes/internal-api-list.html', $out );
 });
 
 desc( 'Build the site.' );
-task( 'default', 'cmd-list', 'param-list', 'api-list' );
+task( 'default', 'cmd-list', 'param-list', 'internal-api-list' );
 
