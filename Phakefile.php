@@ -168,8 +168,12 @@ task( 'internal-api-list', function( $app ) {
 	foreach( $categories as $name => $apis ) {
 		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
 		$out .= render( 'internal-api-list.mustache', array( 'apis' => $apis ) );
-		foreach( $apis as $api ) {
+		foreach( $apis as $i => $api ) {
 			$api['category'] = $name;
+			$api['related'] = $apis;
+			unset( $api['related'][ $i ] );
+			$api['related'] = array_values( $api['related'] );
+			$api['has_related'] = ! empty( $api['related'] );
 			$api_doc = render( 'internal-api.mustache', $api );
 			$path = "docs/internal-api/{$api['api_slug']}";
 			if ( ! is_dir( $path ) ) {
@@ -177,6 +181,7 @@ task( 'internal-api-list', function( $app ) {
 			}
 			file_put_contents( "$path/index.md", $api_doc );
 		}
+		$out .= PHP_EOL . PHP_EOL;
 	}
 
 	file_put_contents( '_includes/internal-api-list.html', $out );

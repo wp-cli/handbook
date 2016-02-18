@@ -7,9 +7,13 @@ title: WP_CLI::launch()
 
 ## WP_CLI::launch()
 
-    WP_CLI::launch( $command, $exit_on_error = true, $return_detailed = array() )
-
 Launch an arbitrary external process that takes over I/O.
+
+***
+
+### Usage
+
+    WP_CLI::launch( $command, $exit_on_error = true, $return_detailed = array() )
 
 <div>
 <strong>Command</strong> (string) to call<br />
@@ -17,6 +21,8 @@ Launch an arbitrary external process that takes over I/O.
 <strong>Whether</strong> (bool) to return an exit status (default) or detailed execution results.<br />
 <strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun instance<br /></p>
 </div>
+
+
 
 
 

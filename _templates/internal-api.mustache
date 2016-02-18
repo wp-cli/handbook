@@ -7,9 +7,13 @@ title: {{full_name}}()
 
 ## {{full_name}}()
 
-    {{signature}}
-
 {{phpdoc.short_description}}
+
+***
+
+### Usage
+
+    {{signature}}
 
 <div>
 {{#phpdoc.parameters.param}}
@@ -20,5 +24,35 @@ title: {{full_name}}()
 {{/phpdoc.parameters.return}}
 </div>
 
+{{#phpdoc.long_description}}
+
+***
+
+### Notes
+
 {{{phpdoc.long_description}}}
+
+{{/phpdoc.long_description}}
+
+{{#has_related}}
+
+***
+
+### Related
+
+<ul>
+
+{{/has_related}}
+
+{{#related}}
+
+<li><strong><a href="/docs/internal-api/{{api_slug}}/">{{full_name}}()</a></strong> - {{phpdoc.short_description}}</li>
+
+{{/related}}
+
+{{#has_related}}
+
+</ul>
+
+{{/has_related}}
 
