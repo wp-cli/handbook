@@ -7,13 +7,13 @@ title: WP_CLI::success()
 
 ## WP_CLI::success()
 
-    WP_CLI::success( $message )
-
 Display a success in the CLI and end with a newline.
+
+### Usage
+
+    WP_CLI::success( $message )
 
 <div>
 <strong>$message</strong> (string) <br />
 </div>
-
-
 

@@ -7,13 +7,13 @@ title: WP_CLI::error_multi_line()
 
 ## WP_CLI::error_multi_line()
 
-    WP_CLI::error_multi_line( $message_lines )
-
 Display an error in the CLI and end with a newline.
+
+### Usage
+
+    WP_CLI::error_multi_line( $message_lines )
 
 <div>
 <strong>$message</strong> (array) each element from the array will be printed on its own line<br />
 </div>
-
-
 

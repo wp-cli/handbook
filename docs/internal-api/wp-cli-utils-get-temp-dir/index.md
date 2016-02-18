@@ -7,13 +7,13 @@ title: WP_CLI\Utils\get_temp_dir()
 
 ## WP_CLI\Utils\get_temp_dir()
 
-    WP_CLI\Utils\get_temp_dir()
-
 Get the temp directory, and let the user know if it isn't writable.
+
+### Usage
+
+    WP_CLI\Utils\get_temp_dir()
 
 <div>
 <strong>@return</strong> (string) <br /></p>
 </div>
-
-
 

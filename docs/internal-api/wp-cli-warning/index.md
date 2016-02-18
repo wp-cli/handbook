@@ -7,23 +7,28 @@ title: WP_CLI::warning()
 
 ## WP_CLI::warning()
 
-    WP_CLI::warning( $message )
-
 Display warning message prefixed with &quot;Warning: &quot;.
+
+### Usage
+
+    WP_CLI::warning( $message )
 
 <div>
 <strong>$message</strong> (string) Message to write to STDERR.<br />
 <strong>@return</strong> (null) <br /></p>
 </div>
 
+
+### Notes
+
 Warning message is written to STDERR.
 
 
     # `wp plugin activate` skips activation when plugin is network active.
-    $status = $this->get_status( $plugin->file );
+    $status = $this-&gt;get_status( $plugin-&gt;file );
     // Network-active is the highest level of activation status
     if ( 'active-network' === $status ) {
-    	WP_CLI::warning( "Plugin '{$plugin->name}' is already network active." );
+    	WP_CLI::warning( &quot;Plugin '{$plugin-&gt;name}' is already network active.&quot; );
     	continue;
     }
     

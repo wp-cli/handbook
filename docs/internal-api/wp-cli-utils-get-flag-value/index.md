@@ -7,9 +7,11 @@ title: WP_CLI\Utils\get_flag_value()
 
 ## WP_CLI\Utils\get_flag_value()
 
-    WP_CLI\Utils\get_flag_value( $assoc_args, $flag, $default = array() )
-
 Return the flag value or, if it's not set, the $default value.
+
+### Usage
+
+    WP_CLI\Utils\get_flag_value( $assoc_args, $flag, $default = array() )
 
 <div>
 <strong>$assoc_args</strong> (array) Arguments array.<br />
@@ -17,6 +19,4 @@ Return the flag value or, if it's not set, the $default value.
 <strong>$default</strong> (mixed) Default value for the flag. Default: NULL<br />
 <strong>@return</strong> (mixed) <br /></p>
 </div>
-
-
 

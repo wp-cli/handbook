@@ -7,9 +7,11 @@ title: {{full_name}}()
 
 ## {{full_name}}()
 
-    {{signature}}
-
 {{phpdoc.short_description}}
+
+### Usage
+
+    {{signature}}
 
 <div>
 {{#phpdoc.parameters.param}}
@@ -20,5 +22,10 @@ title: {{full_name}}()
 {{/phpdoc.parameters.return}}
 </div>
 
-{{{phpdoc.long_description}}}
+{{#phpdoc.long_description}}
 
+### Notes
+
+{{phpdoc.long_description}}
+
+{{/phpdoc.long_description}}

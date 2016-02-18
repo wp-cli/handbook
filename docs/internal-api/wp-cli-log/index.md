@@ -7,13 +7,13 @@ title: WP_CLI::log()
 
 ## WP_CLI::log()
 
-    WP_CLI::log( $message )
-
 Log an informational message.
+
+### Usage
+
+    WP_CLI::log( $message )
 
 <div>
 <strong>$message</strong> (string) <br />
 </div>
-
-
 
