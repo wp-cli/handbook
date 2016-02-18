@@ -12,6 +12,8 @@ title: WP_CLI\Utils\get_temp_dir()
 Get the temp directory, and let the user know if it isn't writable.
 
 <div>
-<strong>@return</strong> (string) </p>
+<strong>@return</strong> (string) <br /></p>
 </div>
+
+
 

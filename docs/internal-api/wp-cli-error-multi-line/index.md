@@ -15,3 +15,5 @@ Display an error in the CLI and end with a newline.
 <strong>$message</strong> (array) each element from the array will be printed on its own line<br />
 </div>
 
+
+

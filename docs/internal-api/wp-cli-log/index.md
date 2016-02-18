@@ -15,3 +15,5 @@ Log an informational message.
 <strong>$message</strong> (string) <br />
 </div>
 
+
+

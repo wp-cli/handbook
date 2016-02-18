@@ -9,10 +9,12 @@ title: WP_CLI::debug()
 
     WP_CLI::debug( $message )
 
-Log information when --debug flag is used.
-Helpful for optionally showing greater detail when needed.
+Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.
 
 <div>
 <strong>$message</strong> (string) <br />
 </div>
+
+Helpful for optionally showing greater detail when needed. Debug message
+is written to STDERR, and includes script execution time.
 

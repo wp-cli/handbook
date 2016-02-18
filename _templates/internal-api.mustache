@@ -3,11 +3,13 @@ layout: default
 title: {{full_name}}()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; {{category}} &raquo; <strong>{{full_name}}()</strong>
+<a href="/docs/internal-api/">Internal API</a> &raquo; {{category}}
 
-{{phpdoc.short_description}}
+## {{full_name}}()
 
     {{signature}}
+
+{{phpdoc.short_description}}
 
 <div>
 {{#phpdoc.parameters.param}}
@@ -18,5 +20,5 @@ title: {{full_name}}()
 {{/phpdoc.parameters.return}}
 </div>
 
-{{phpdoc.long_description}}
+{{{phpdoc.long_description}}}
 

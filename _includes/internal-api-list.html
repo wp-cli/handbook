@@ -25,12 +25,17 @@ Display a success in the CLI and end with a newline.
 
 <strong><a href="/docs/internal-api/wp-cli-debug/">WP_CLI::debug()</a></strong>
 
-Log information when --debug flag is used.
+Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.
+
+
+<strong><a href="/docs/internal-api/wp-cli-warning/">WP_CLI::warning()</a></strong>
+
+Display warning message prefixed with &quot;Warning: &quot;.
 
 
 <strong><a href="/docs/internal-api/wp-cli-error/">WP_CLI::error()</a></strong>
 
-Displays an error message prefixed with &quot;Error: &quot;.
+Display error message prefixed with &quot;Error: &quot; and exits script.
 
 ## Input
 
@@ -38,6 +43,13 @@ Displays an error message prefixed with &quot;Error: &quot;.
 <strong><a href="/docs/internal-api/wp-cli-read-value/">WP_CLI::read_value()</a></strong>
 
 Read a value, from various formats.
+
+## Execution
+
+
+<strong><a href="/docs/internal-api/wp-cli-launch/">WP_CLI::launch()</a></strong>
+
+Launch an arbitrary external process that takes over I/O.
 
 ## Misc
 
@@ -60,11 +72,6 @@ Return the flag value or, if it's not set, the $default value.
 <strong><a href="/docs/internal-api/wp-cli-utils-get-temp-dir/">WP_CLI\Utils\get_temp_dir()</a></strong>
 
 Get the temp directory, and let the user know if it isn't writable.
-
-
-<strong><a href="/docs/internal-api/wp-cli-warning/">WP_CLI::warning()</a></strong>
-
-Display a warning in the CLI and end with a newline.
 
 
 <strong><a href="/docs/internal-api/wp-cli-error-multi-line/">WP_CLI::error_multi_line()</a></strong>
