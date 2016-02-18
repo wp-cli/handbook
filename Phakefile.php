@@ -144,9 +144,16 @@ task( 'internal-api-list', function( $app ) {
 		return strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
 	};
 
+	$prepare_code_block = function( $description ) {
+		return preg_replace_callback( '#```(.+)```#s', function( $matches ) {
+			return str_replace( PHP_EOL, PHP_EOL . '    ', $matches[1] );
+		}, $description );
+	};
+
 	foreach( $apis as $api ) {
 
 		$api['api_slug'] = $prepare_api_slug( $api['full_name'] );
+		$api['phpdoc']['description'] = $prepare_code_block( $api['phpdoc']['description'] );
 
 		if ( ! empty( $api['phpdoc']['parameters']['category'][0][0] )
 			&& isset( $categories[ $api['phpdoc']['parameters']['category'][0][0] ] ) ) {

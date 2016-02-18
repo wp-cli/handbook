@@ -14,8 +14,13 @@ Displays an error message prefixed with &quot;Error: &quot;.
 Error message is written to STDERR. Defaults to halting
 script execution with return code 1.
 
+
+    WP_CLI::error( 'The object cache could not be flushed.' );
+    
+
 <div>
 <strong>$message</strong> (string|WP_Error) Message to write to STDERR.<br />
 <strong>$exit</strong> (boolean|integer) True defaults to exit(1).<br />
+<strong>@return</strong> (null) </p>
 </div>
 
