@@ -9,6 +9,8 @@ title: {{full_name}}()
 
 {{phpdoc.short_description}}
 
+***
+
 ### Usage
 
     {{signature}}
@@ -24,8 +26,33 @@ title: {{full_name}}()
 
 {{#phpdoc.long_description}}
 
+***
+
 ### Notes
 
-{{phpdoc.long_description}}
+{{{phpdoc.long_description}}}
 
 {{/phpdoc.long_description}}
+
+{{#has_related}}
+
+***
+
+### Related
+
+<ul>
+
+{{/has_related}}
+
+{{#related}}
+
+<li><strong><a href="/docs/internal-api/{{api_slug}}/">{{full_name}}()</a></strong> - {{phpdoc.short_description}}</li>
+
+{{/related}}
+
+{{#has_related}}
+
+</ul>
+
+{{/has_related}}
+
