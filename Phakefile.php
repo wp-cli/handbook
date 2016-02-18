@@ -153,7 +153,7 @@ task( 'internal-api-list', function( $app ) {
 	foreach( $apis as $api ) {
 
 		$api['api_slug'] = $prepare_api_slug( $api['full_name'] );
-		$api['phpdoc']['description'] = $prepare_code_block( $api['phpdoc']['description'] );
+		$api['phpdoc']['long_description'] = $prepare_code_block( $api['phpdoc']['long_description'] );
 
 		if ( ! empty( $api['phpdoc']['parameters']['category'][0][0] )
 			&& isset( $categories[ $api['phpdoc']['parameters']['category'][0][0] ] ) ) {

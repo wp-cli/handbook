@@ -136,6 +136,9 @@ function parse_docblock( $docblock ) {
 		}
 	}
 	$ret['description'] = trim( $ret['description'], PHP_EOL );
-	$ret['short_description'] = explode( PHP_EOL, $ret['description'] )[0];
+	$bits = explode( PHP_EOL, $ret['description'] );
+	$ret['short_description'] = array_shift( $bits );
+	$long_description = trim( implode( PHP_EOL, $bits ), PHP_EOL );
+	$ret['long_description'] = $long_description;
 	return $ret;
 }
