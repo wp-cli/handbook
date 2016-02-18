@@ -128,47 +128,55 @@ task( 'param-list', function( $app ) {
 desc( 'Update the /docs/internal-api/ page.' );
 task( 'internal-api-list', function( $app ) {
 	$apis = invoke_wp_cli( 'wp cli api-dump', $app );
-	$out = '';
-	$function_groups = array();
+	$categories = array(
+		'Output' => array(),
+		'Input'  => array(),
+		'Execution' => array(),
+		'Misc'   => array(),
+	);
+
+	$prepare_api_slug = function( $full_name ) {
+		$replacements = array(
+			'()'      => '',
+			'::'      => '-',
+			'_'       => '-',
+			'\\'      => '-',
+		);
+		return strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
+	};
+
+	$prepare_code_block = function( $description ) {
+		return preg_replace_callback( '#```(.+)```#s', function( $matches ) {
+			return str_replace( PHP_EOL, PHP_EOL . '    ', $matches[1] );
+		}, $description );
+	};
+
 	foreach( $apis as $api ) {
-		if ( 'function' !== $api['type'] ) {
-			continue;
+
+		$api['api_slug'] = $prepare_api_slug( $api['full_name'] );
+		$api['phpdoc']['long_description'] = $prepare_code_block( $api['phpdoc']['long_description'] );
+
+		if ( ! empty( $api['phpdoc']['parameters']['category'][0][0] )
+			&& isset( $categories[ $api['phpdoc']['parameters']['category'][0][0] ] ) ) {
+			$categories[ $api['phpdoc']['parameters']['category'][0][0] ][] = $api;
+		} else {
+			$categories['Misc'][] = $api;
 		}
-		$group_name = substr( $api['full_name'], 0, - strlen( $api['short_name'] ) - 1 );
-		if ( ! isset( $function_groups[ $group_name ] ) ) {
-			$function_groups[ $group_name ] = array();
-		}
-		if ( isset( $api['phpdoc']['parameters']['params'] ) ) {
-			$api['params'] = $api['phpdoc']['parameters']['params'];
-		}
-		$function_groups[ $group_name ][] = $api;
 	}
+	$out = '***' . PHP_EOL . PHP_EOL;
 
-	$out .= '***' . PHP_EOL . PHP_EOL;
-
-	foreach( $function_groups as $name => $functions ) {
+	foreach( $categories as $name => $apis ) {
 		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-		$out .= render( 'internal-api-list.mustache', array( 'apis' => $functions ) );
-	}
-
-	$class_groups = array();
-	foreach( $apis as $api ) {
-		if ( 'method' !== $api['type'] ) {
-			continue;
+		$out .= render( 'internal-api-list.mustache', array( 'apis' => $apis ) );
+		foreach( $apis as $api ) {
+			$api['category'] = $name;
+			$api_doc = render( 'internal-api.mustache', $api );
+			$path = "docs/internal-api/{$api['api_slug']}";
+			if ( ! is_dir( $path ) ) {
+				mkdir( $path );
+			}
+			file_put_contents( "$path/index.md", $api_doc );
 		}
-		$group_name = $api['class'];
-		if ( ! isset( $class_groups[ $group_name ] ) ) {
-			$class_groups[ $group_name ] = array();
-		}
-		if ( isset( $api['phpdoc']['parameters']['params'] ) ) {
-			$api['params'] = $api['phpdoc']['parameters']['params'];
-		}
-		$class_groups[ $group_name ][] = $api;
-	}
-
-	foreach( $class_groups as $name => $methods ) {
-		$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-		$out .= render( 'internal-api-list.mustache', array( 'apis' => $methods ) );
 	}
 
 	file_put_contents( '_includes/internal-api-list.html', $out );

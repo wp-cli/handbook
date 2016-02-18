@@ -1,19 +1,7 @@
 {{#apis}}
 
-```{{signature}}```
+<strong><a href="/docs/internal-api/{{api_slug}}/">{{full_name}}()</a></strong>
 
-{{phpdoc.description}}
-
-<div>
-{{#phpdoc.parameters.param}}
-<strong>{{1}}</strong> ({{0}}) {{2}}<br />
-{{/phpdoc.parameters.param}}
-
-{{#phpdoc.parameters.return}}
-<p><strong>@return</strong> {{0}} {{2}}</p>
-{{/phpdoc.parameters.return}}
-</div>
-
-***
+{{phpdoc.short_description}}
 
 {{/apis}}

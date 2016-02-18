@@ -1,0 +1,24 @@
+---
+layout: default
+title: {{full_name}}()
+---
+
+<a href="/docs/internal-api/">Internal API</a> &raquo; {{category}}
+
+## {{full_name}}()
+
+    {{signature}}
+
+{{phpdoc.short_description}}
+
+<div>
+{{#phpdoc.parameters.param}}
+<strong>{{1}}</strong> ({{0}}) {{2}}<br />
+{{/phpdoc.parameters.param}}
+{{#phpdoc.parameters.return}}
+<strong>@return</strong> ({{0}}) {{2}}<br /></p>
+{{/phpdoc.parameters.return}}
+</div>
+
+{{{phpdoc.long_description}}}
+

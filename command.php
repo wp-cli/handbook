@@ -58,6 +58,9 @@ function get_simple_representation( $reflection ) {
 				case array():
 					$parameter_signature .= ' = array()';
 					break;
+				case '':
+					$parameter_signature .= " = ''";
+					break;
 				case null:
 					$parameter_signature .= ' = null';
 					break;
@@ -111,13 +114,13 @@ function parse_docblock( $docblock ) {
 		'description' => '',
 		'parameters'  => array(),
 	);
+	$extra_line = '';
 	foreach( preg_split("/(\r?\n)/", $docblock ) as $line ){
 		if ( preg_match('/^(?=\s+?\*[^\/])(.+)/', $line, $matches ) ) {
 			$info = trim( $matches[1] );
 			$info = preg_replace( '/^(\*\s+?)/', '', $info );
 			if ( $info[0] !== "@" ) {
-				$ret['description'] .= "\n$info";
-				continue;
+				$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 			} else {
 				preg_match( '/@(\w+)/', $info, $matches );
 				$param_name = $matches[1];
@@ -127,8 +130,15 @@ function parse_docblock( $docblock ) {
 				}
 				$ret['parameters'][ $param_name ][] = preg_split( '/[\s]+/', $value, 3 );
 			}
+			$extra_line = '';
+		} else {
+			$extra_line .= PHP_EOL;
 		}
 	}
 	$ret['description'] = trim( $ret['description'], PHP_EOL );
+	$bits = explode( PHP_EOL, $ret['description'] );
+	$ret['short_description'] = array_shift( $bits );
+	$long_description = trim( implode( PHP_EOL, $bits ), PHP_EOL );
+	$ret['long_description'] = $long_description;
 	return $ret;
 }
