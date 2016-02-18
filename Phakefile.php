@@ -131,6 +131,7 @@ task( 'internal-api-list', function( $app ) {
 	$categories = array(
 		'Output' => array(),
 		'Input'  => array(),
+		'Execution' => array(),
 		'Misc'   => array(),
 	);
 
