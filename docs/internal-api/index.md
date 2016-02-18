@@ -1,7 +1,9 @@
 ---
 layout: default
-title: APIs
+title: Internal API
 ---
+
+## Internal API
 
 WP-CLI includes a number of utilities which are considered stable and meant to be used by commands.
 
