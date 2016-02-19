@@ -7,7 +7,7 @@ title: WP_CLI::error()
 
 ## WP_CLI::error()
 
-Display error message prefixed with &quot;Error: &quot; and exits script.
+Display error message prefixed with &quot;Error: &quot; and exit script.
 
 ***
 
@@ -26,8 +26,11 @@ Display error message prefixed with &quot;Error: &quot; and exits script.
 
 ### Notes
 
-Error message is written to STDERR. Defaults to halting
-script execution with return code 1.
+Error message is written to STDERR. Defaults to halting script execution
+with return code 1.
+
+Use `WP_CLI::warning()` instead when script execution should be permitted
+to continue.
 
 
     # `wp cache flush` considers flush failure to be a fatal error.
@@ -49,13 +52,13 @@ script execution with return code 1.
 <li><strong><a href="/docs/internal-api/wp-cli-utils-format-items/">WP_CLI\Utils\format_items()</a></strong> - Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or count.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-line/">WP_CLI::line()</a></strong> - Display a message in the CLI and end with a newline.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-line/">WP_CLI::line()</a></strong> - Display informational message without prefix, and ignore `--quiet`.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-log/">WP_CLI::log()</a></strong> - Log an informational message.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-log/">WP_CLI::log()</a></strong> - Display informational message without prefix.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-success/">WP_CLI::success()</a></strong> - Display a success in the CLI and end with a newline.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-success/">WP_CLI::success()</a></strong> - Display success message prefixed with &quot;Success: &quot;.</li>
 
 
 <li><strong><a href="/docs/internal-api/wp-cli-debug/">WP_CLI::debug()</a></strong> - Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.</li>

@@ -16,13 +16,40 @@ Launch an arbitrary external process that takes over I/O.
     WP_CLI::launch( $command, $exit_on_error = true, $return_detailed = array() )
 
 <div>
-<strong>Command</strong> (string) to call<br />
-<strong>Whether</strong> (bool) to exit if the command returns an error status<br />
-<strong>Whether</strong> (bool) to return an exit status (default) or detailed execution results.<br />
-<strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun instance<br /></p>
+<strong>$command</strong> (string) External process to launch.<br />
+<strong>$exit_on_error</strong> (boolean) Whether to exit if the command returns an elevated return code.<br />
+<strong>$return_detailed</strong> (boolean) Whether to return an exit status (default) or detailed execution results.<br />
+<strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun object for full details.<br /></p>
 </div>
 
 
+***
 
+### Notes
+
+
+    # `wp core download` falls back to the `tar` binary when PharData isn't available
+    if ( ! class_exists( 'PharData' ) ) {
+        $cmd = "tar xz --strip-components=1 --directory=%s -f $tarball";
+        WP_CLI::launch( Utils\esc_cmd( $cmd, $dest ) );
+        return;
+    }
+    
+
+
+
+***
+
+### Related
+
+<ul>
+
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-launch-self/">WP_CLI::launch_self()</a></strong> - Run a WP-CLI command in a new process reusing the current runtime arguments.</li>
+
+
+
+</ul>
 
 
