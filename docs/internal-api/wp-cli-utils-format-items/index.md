@@ -38,7 +38,7 @@ Given a collection of items with a consistent data structure:
     );
     
 
-Render `$items` easily render as an ASCII table:
+Render `$items` as an ASCII table:
 
 
     WP_CLI\Utils\format_items( 'table', $items, array( 'key', 'value' ) );
