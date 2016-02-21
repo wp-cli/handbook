@@ -17,10 +17,49 @@ Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or
 
 <div>
 <strong>$format</strong> (string) Format to use: 'table', 'json', 'csv', 'yaml', 'ids', 'count'<br />
-<strong>$items</strong> (array) Data to output<br />
-<strong>$fields</strong> (array|string) Named fields for each item of data. Can be array or comma-separated list<br />
+<strong>$items</strong> (array) An array of items to output.<br />
+<strong>$fields</strong> (array|string) Named fields for each item of data. Can be array or comma-separated list.<br />
 <strong>@return</strong> (null) <br /></p>
 </div>
+
+
+***
+
+### Notes
+
+Given a collection of items with a consistent data structure:
+
+
+    $items = array(
+        array(
+            'key'   => 'foo',
+            'value'  => 'bar',
+        )
+    );
+    
+
+Render `$items` easily render as an ASCII table:
+
+
+    WP_CLI\Utils\format_items( 'table', $items, array( 'key', 'value' ) );
+    
+    # +-----+-------+
+    # | key | value |
+    # +-----+-------+
+    # | foo | bar   |
+    # +-----+-------+
+    
+
+Or render `$items` as YAML:
+
+
+    WP_CLI\Utils\format_items( 'yaml', $items, array( 'key', 'value' ) );
+    
+    # ---
+    # -
+    #   key: foo
+    #   value: bar
+    
 
 
 
