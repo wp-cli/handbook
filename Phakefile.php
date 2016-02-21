@@ -146,7 +146,7 @@ task( 'internal-api-list', function( $app ) {
 	};
 
 	$prepare_code_block = function( $description ) {
-		return preg_replace_callback( '#```(.+)```#s', function( $matches ) {
+		return preg_replace_callback( '#```(.+)```#Us', function( $matches ) {
 			return str_replace( PHP_EOL, PHP_EOL . '    ', $matches[1] );
 		}, $description );
 	};
