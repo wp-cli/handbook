@@ -32,6 +32,8 @@ Message is written to STDOUT, or discarded when `--quiet` flag is supplied.
     
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

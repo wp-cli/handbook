@@ -26,6 +26,8 @@ Run a WP-CLI command in a new process reusing the current runtime arguments.
 </div>
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

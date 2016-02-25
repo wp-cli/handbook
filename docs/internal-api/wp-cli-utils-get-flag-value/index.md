@@ -23,6 +23,8 @@ Return the flag value or, if it's not set, the $default value.
 </div>
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

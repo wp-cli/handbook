@@ -29,6 +29,8 @@ Message is written to STDOUT. `WP_CLI::log()` is typically recommended;
 `WP_CLI::line()` is included for historical compat.
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

@@ -55,6 +55,8 @@ supplied as an optional third argument during registration.
     
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 
 

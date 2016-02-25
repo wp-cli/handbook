@@ -22,6 +22,8 @@ Write data as CSV to a given file.
 </div>
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

@@ -20,6 +20,8 @@ Get the temp directory, and let the user know if it isn't writable.
 </div>
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

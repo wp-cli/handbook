@@ -22,6 +22,8 @@ Compare two version strings to get the named semantic version.
 </div>
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 

@@ -45,6 +45,8 @@ WP-CLI bootstrap process for easier debugging and profiling.
     
 
 
+*Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
 
 ***
 
