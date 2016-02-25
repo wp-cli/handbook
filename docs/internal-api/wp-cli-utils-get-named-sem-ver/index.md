@@ -36,13 +36,7 @@ Compare two version strings to get the named semantic version.
 <li><strong><a href="/docs/internal-api/wp-cli-utils-write-csv/">WP_CLI\Utils\write_csv()</a></strong> - Write data as CSV to a given file.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-utils-get-flag-value/">WP_CLI\Utils\get_flag_value()</a></strong> - Return the flag value or, if it's not set, the $default value.</li>
-
-
-<li><strong><a href="/docs/internal-api/wp-cli-utils-get-temp-dir/">WP_CLI\Utils\get_temp_dir()</a></strong> - Get the temp directory, and let the user know if it isn't writable.</li>
-
-
-<li><strong><a href="/docs/internal-api/wp-cli-error-multi-line/">WP_CLI::error_multi_line()</a></strong> - Display an error in the CLI and end with a newline.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-utils-http-request/">WP_CLI\Utils\http_request()</a></strong> - Make a HTTP request to a remote URL.</li>
 
 
 

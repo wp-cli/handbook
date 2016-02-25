@@ -133,6 +133,7 @@ task( 'internal-api-list', function( $app ) {
 		'Output' => array(),
 		'Input'  => array(),
 		'Execution' => array(),
+		'System' => array(),
 		'Misc'   => array(),
 	);
 
