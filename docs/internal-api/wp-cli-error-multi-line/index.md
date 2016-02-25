@@ -3,11 +3,11 @@ layout: default
 title: WP_CLI::error_multi_line()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Misc
+<a href="/docs/internal-api/">Internal API</a> &raquo; Output
 
 ## WP_CLI::error_multi_line()
 
-Display an error in the CLI and end with a newline.
+Display a multi-line error message in a red box. Doesn't exit script.
 
 ***
 
@@ -16,8 +16,15 @@ Display an error in the CLI and end with a newline.
     WP_CLI::error_multi_line( $message_lines )
 
 <div>
-<strong>$message</strong> (array) each element from the array will be printed on its own line<br />
+<strong>$message</strong> (array) Multi-line error message to be displayed.<br />
 </div>
+
+
+***
+
+### Notes
+
+Error message is written to STDERR.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
@@ -31,16 +38,28 @@ Display an error in the CLI and end with a newline.
 
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-utils-write-csv/">WP_CLI\Utils\write_csv()</a></strong> - Write data as CSV to a given file.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-utils-format-items/">WP_CLI\Utils\format_items()</a></strong> - Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or count.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-utils-get-named-sem-ver/">WP_CLI\Utils\get_named_sem_ver()</a></strong> - Compare two version strings to get the named semantic version.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-utils-make-progress-bar/">WP_CLI\Utils\make_progress_bar()</a></strong> - Create a progress bar to display percent completion of a given operation.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-utils-get-flag-value/">WP_CLI\Utils\get_flag_value()</a></strong> - Return the flag value or, if it's not set, the $default value.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-line/">WP_CLI::line()</a></strong> - Display informational message without prefix, and ignore `--quiet`.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-utils-get-temp-dir/">WP_CLI\Utils\get_temp_dir()</a></strong> - Get the temp directory, and let the user know if it isn't writable.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-log/">WP_CLI::log()</a></strong> - Display informational message without prefix.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-success/">WP_CLI::success()</a></strong> - Display success message prefixed with &quot;Success: &quot;.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-debug/">WP_CLI::debug()</a></strong> - Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-warning/">WP_CLI::warning()</a></strong> - Display warning message prefixed with &quot;Warning: &quot;.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-error/">WP_CLI::error()</a></strong> - Display error message prefixed with &quot;Error: &quot; and exit script.</li>
 
 
 

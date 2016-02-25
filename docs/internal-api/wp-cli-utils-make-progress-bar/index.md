@@ -77,6 +77,9 @@ Process bar also indicates elapsed time and expected total time.
 <li><strong><a href="/docs/internal-api/wp-cli-error/">WP_CLI::error()</a></strong> - Display error message prefixed with &quot;Error: &quot; and exit script.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-error-multi-line/">WP_CLI::error_multi_line()</a></strong> - Display a multi-line error message in a red box. Doesn't exit script.</li>
+
+
 
 </ul>
 
