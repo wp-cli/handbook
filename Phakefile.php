@@ -129,6 +129,7 @@ desc( 'Update the /docs/internal-api/ page.' );
 task( 'internal-api-list', function( $app ) {
 	$apis = invoke_wp_cli( 'wp cli api-dump', $app );
 	$categories = array(
+		'Registration' => array(),
 		'Output' => array(),
 		'Input'  => array(),
 		'Execution' => array(),
@@ -171,6 +172,15 @@ task( 'internal-api-list', function( $app ) {
 		foreach( $apis as $i => $api ) {
 			$api['category'] = $name;
 			$api['related'] = $apis;
+			$api['phpdoc']['parameters'] = array_map( function( $parameter ){
+				foreach( $parameter as $key => $values ) {
+					if ( isset( $values[2] ) ) {
+						$values[2] = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
+						$parameter[ $key ] = $values;
+					}
+				}
+				return $parameter;
+			}, $api['phpdoc']['parameters'] );
 			unset( $api['related'][ $i ] );
 			$api['related'] = array_values( $api['related'] );
 			$api['has_related'] = ! empty( $api['related'] );
