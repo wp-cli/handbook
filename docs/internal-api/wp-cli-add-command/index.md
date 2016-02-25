@@ -58,5 +58,21 @@ supplied as an optional third argument during registration.
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 
 
+***
+
+### Related
+
+<ul>
+
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-add-hook/">WP_CLI::add_hook()</a></strong> - Schedule a callback to be executed at a certain point.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-do-hook/">WP_CLI::do_hook()</a></strong> - Execute callbacks registered to a given hook.</li>
+
+
+
+</ul>
 
 
