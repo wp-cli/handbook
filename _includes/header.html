@@ -14,7 +14,11 @@
 		<title>{{ page.title }} | WP-CLI</title>
 	</head>
 
+	{% if page.display_global_parameters %}
+	<body class="display-global-parameters">
+	{% else %}
 	<body>
+	{% endif %}
 
 		<header class="cf">
 		<div class="container">
