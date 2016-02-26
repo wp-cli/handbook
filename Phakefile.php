@@ -62,6 +62,9 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 		$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
 		$docs = preg_replace( '/&quot;/', '"', $docs );
 
+		// Strip global parameters -> added in footer
+		$docs = preg_replace( '/#?## GLOBAL PARAMETERS.+/s', '', $docs );
+
 		$binding['docs'] = $docs;
 	}
 
@@ -97,6 +100,7 @@ task( 'param-list', function( $app ) {
 
 	$out = '';
 
+	$global_args = array();
 	foreach ( $config_spec as $key => $details ) {
 		if ( isset( $details['hidden'] ) || isset( $details['deprecated'] ) )
 			continue;
@@ -120,9 +124,16 @@ task( 'param-list', function( $app ) {
 		$description = ( isset( $details['desc'] ) ) ? $details['desc'] : '';
 
 		$out .= render( 'config.mustache', compact( 'config', 'flag', 'default', 'description' ) );
+		if ( ! empty( $flag ) ) {
+			$global_args[] = array(
+				'flag'        => $flag,
+				'description' => $description,
+			);
+		}
 	}
 
 	file_put_contents( '_includes/param-list.html', $out );
+	file_put_contents( '_includes/global-parameters.html', render( 'global-parameters.mustache', array( 'args' => $global_args ) ) );
 });
 
 desc( 'Update the /docs/internal-api/ page.' );
