@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: doc
 title: Philosophy
+category: Contributing
+description: Guidelines which inform project scope, command organization, and behavior.
 ---
 
 # Philosophy
