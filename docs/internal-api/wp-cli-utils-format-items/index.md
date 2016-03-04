@@ -3,7 +3,7 @@ layout: default
 title: WP_CLI\Utils\format_items()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
 
 ## WP_CLI\Utils\format_items()
 

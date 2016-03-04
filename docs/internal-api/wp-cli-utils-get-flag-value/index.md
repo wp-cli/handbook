@@ -3,7 +3,7 @@ layout: default
 title: WP_CLI\Utils\get_flag_value()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
 
 ## WP_CLI\Utils\get_flag_value()
 

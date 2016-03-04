@@ -3,7 +3,7 @@ layout: default
 title: WP_CLI\Utils\get_temp_dir()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; System
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; System
 
 ## WP_CLI\Utils\get_temp_dir()
 

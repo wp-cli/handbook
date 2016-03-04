@@ -3,7 +3,7 @@ layout: default
 title: WP_CLI\Utils\write_csv()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Misc
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc
 
 ## WP_CLI\Utils\write_csv()
 

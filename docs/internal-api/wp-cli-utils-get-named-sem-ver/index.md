@@ -3,7 +3,7 @@ layout: default
 title: WP_CLI\Utils\get_named_sem_ver()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Misc
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc
 
 ## WP_CLI\Utils\get_named_sem_ver()
 

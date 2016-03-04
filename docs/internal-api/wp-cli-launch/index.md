@@ -3,7 +3,7 @@ layout: default
 title: WP_CLI::launch()
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Execution
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution
 
 ## WP_CLI::launch()
 
