@@ -1,6 +1,7 @@
 ---
 layout: default
 title: WP_CLI::add_command()
+description: Register a command to WP-CLI.
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Registration

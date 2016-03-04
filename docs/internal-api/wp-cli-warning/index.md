@@ -1,6 +1,7 @@
 ---
 layout: default
 title: WP_CLI::warning()
+description: Display warning message prefixed with &quot;Warning: &quot;.
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output

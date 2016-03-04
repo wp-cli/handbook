@@ -1,6 +1,7 @@
 ---
 layout: default
 title: WP_CLI::do_hook()
+description: Execute callbacks registered to a given hook.
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Registration

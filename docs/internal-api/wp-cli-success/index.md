@@ -1,6 +1,7 @@
 ---
 layout: default
 title: WP_CLI::success()
+description: Display success message prefixed with &quot;Success: &quot;.
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
