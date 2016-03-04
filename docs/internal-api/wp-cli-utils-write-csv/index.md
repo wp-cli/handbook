@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI\Utils\write_csv()
+description: Write data as CSV to a given file.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Misc
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc
 
 ## WP_CLI\Utils\write_csv()
 

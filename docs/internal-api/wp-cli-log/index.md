@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI::log()
+description: Display informational message without prefix.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
 
 ## WP_CLI::log()
 
