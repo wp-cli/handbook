@@ -5,8 +5,6 @@ description: Helpful shortcuts for bash and zsh.
 category: References
 ---
 
-# Shell Tips
-
 Master of bash or zsh? Share your tips here.
 
 ## Take a look at the plugin changelog
