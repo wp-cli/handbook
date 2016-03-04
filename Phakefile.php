@@ -231,7 +231,7 @@ task( 'doc-list', function( $app ){
 		$title = ! empty( $matches[1] ) ? $matches[1] : '';
 		preg_match( '#description:\s(.+)#', $header, $matches );
 		$description = ! empty( $matches[1] ) ? $matches[1] : '';
-		$docs[ $category ][] = array(
+		$docs[ $category ][ $title ] = array(
 			'path'        => basename( dirname( $file ) ),
 			'title'       => $title,
 			'description' => $description,
@@ -241,6 +241,7 @@ task( 'doc-list', function( $app ){
 	foreach( $docs as $category => $cat_docs ) {
 		$out .= '<h3>' . $category . '</h3>' . PHP_EOL . PHP_EOL;
 		$out .= '<ul>' . PHP_EOL;
+		ksort( $cat_docs );
 		foreach( $cat_docs as $cat_doc ) {
 			$out .= '<li><a href="/docs/' . $cat_doc['path'] . '/"><strong>' . $cat_doc['title'] . '</strong></a>';
 			if ( ! empty( $cat_doc['description'] ) ) {
