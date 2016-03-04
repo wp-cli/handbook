@@ -5,8 +5,6 @@ category: Contributing
 description: Guidelines which inform project scope, command organization, and behavior.
 ---
 
-# Philosophy
-
 This page contains a list of guidelines that should inform decisions related to scope, command organization and behaviour:
 
 ## Don't assume anything.
