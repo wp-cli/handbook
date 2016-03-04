@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: doc
 title: Installing
+category: Guides
+description: Recommended and alternative installation mechanisms.
 ---
 
 ## Recommended Installation
