@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI::error()
+description: Display error message prefixed with &quot;Error: &quot; and exit script.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
 
 ## WP_CLI::error()
 
