@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Tools that use WP-CLI
+layout: doc
+title: Integrated Tools
+description: External projects that integrate with WP-CLI in some form.
+category: References
 ---
-
-# Tools that use WP-CLI
 
 The following is a list of projects that integrate with WP-CLI. Also see [List of community commands](https://github.com/wp-cli/wp-cli/wiki/List-of-community-commands).
 
