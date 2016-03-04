@@ -1,0 +1,10 @@
+{% include header.html %}
+
+{% capture page_url %}{{ page.url | remove:'index.html' }}{% endcapture %}
+{% if page_url != '/docs/' %}
+<a href="/docs/">Docs</a> &raquo; {{ page.category }}
+{% endif %}
+
+{{ content }}
+
+{% include footer.html %}
