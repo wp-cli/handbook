@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: doc
 title: Internal API
+category: References
+description: Stable utilities considered safe to use in community commands.
 ---
 
 ## Internal API

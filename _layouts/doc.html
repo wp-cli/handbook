@@ -1,0 +1,13 @@
+{% include header.html %}
+
+{% capture page_url %}{{ page.url | remove:'index.html' }}{% endcapture %}
+
+<span style="float:right;"><a href="https://github.com/wp-cli/wp-cli.github.com/edit/master/{{page.path}}">Edit</a></span>
+
+{% if page_url != '/docs/' %}
+<a href="/docs/">Docs</a> &raquo; {{ page.category }}
+{% endif %}
+
+{{ content }}
+
+{% include footer.html %}

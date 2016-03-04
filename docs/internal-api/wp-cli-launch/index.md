@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI::launch()
+description: Launch an arbitrary external process that takes over I/O.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Execution
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution
 
 ## WP_CLI::launch()
 
