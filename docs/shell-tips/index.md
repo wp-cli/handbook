@@ -33,3 +33,29 @@ sudo -u $(stat . -c %U) -- wp --path="$PWD" "$@"
 Explanation
 
 The `stat` command returns the owner of the current directory, WordPress root.
+
+## Install and Configure WordPress with WP-CLI
+
+```bash
+wp_install () 
+{ 
+    wp core download --path=$1;
+    cd $1;
+    read -p 'name the database:' dbname;
+    wp core config --dbname=$dbname --dbuser=root --dbpass=awoods --dbhost=localhost;
+    wp db create;
+    wp core install --prompt
+}
+
+$ source ~/.bashrc
+$ wp_install new-site
+```
+
+Explanation
+
+Add this function to your ~/.bashrc are reload your shell (or open a new shell). 
+You'll need to substitute these database credentials with your own.
+When you need create a new wordpress install, call this function and specify the
+name of the directory where you want to create the site. This emulates the 
+web-based install process.
+
