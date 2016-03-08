@@ -2,7 +2,7 @@
 layout: doc
 title: Bug Reports
 category: Contributing
-description: How you can help ensure your issue is resolved in a timely manner.
+description: Help ensure your issue is resolved in a timely manner.
 ---
 
 Think you've found a bug? We'd love for you to help us get it fixed.
