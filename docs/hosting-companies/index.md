@@ -1,5 +1,5 @@
 ---
-template: doc
+layout: doc
 title: Hosting Companies
 category: References
 description: List of hosting companies with WP-CLI installed by default.
