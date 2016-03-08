@@ -209,6 +209,52 @@ task( 'internal-api-list', function( $app ) {
 	file_put_contents( '_includes/internal-api-list.html', $out );
 });
 
+desc( 'Update the /docs/ page.' );
+task( 'doc-list', function( $app ){
+	$docs = array(
+		'Guides'       => array(),
+		'References'   => array(),
+		'Contributing' => array(),
+		'Misc'         => array(),
+	);
+	foreach( glob( __DIR__ . '/docs/*/index.md' ) as $file ) {
+		$contents = file_get_contents( $file );
+		$parts = explode( '---', $contents );
+		$header = $parts[1];
+		preg_match( '#category:\s(.+)#', $header, $matches );
+		if ( ! empty( $matches[1] ) && array_key_exists( $matches[1], $docs ) ) {
+			$category = $matches[1];
+		} else {
+			$category = 'Misc';
+		}
+		preg_match( '#title:\s(.+)#', $header, $matches );
+		$title = ! empty( $matches[1] ) ? $matches[1] : '';
+		preg_match( '#description:\s(.+)#', $header, $matches );
+		$description = ! empty( $matches[1] ) ? $matches[1] : '';
+		$docs[ $category ][ $title ] = array(
+			'path'        => basename( dirname( $file ) ),
+			'title'       => $title,
+			'description' => $description,
+		);
+	}
+	$out = '';
+	foreach( $docs as $category => $cat_docs ) {
+		$out .= '<h3>' . $category . '</h3>' . PHP_EOL . PHP_EOL;
+		$out .= '<ul>' . PHP_EOL;
+		ksort( $cat_docs );
+		foreach( $cat_docs as $cat_doc ) {
+			$out .= '<li><a href="/docs/' . $cat_doc['path'] . '/"><strong>' . $cat_doc['title'] . '</strong></a>';
+			if ( ! empty( $cat_doc['description'] ) ) {
+				$out .= ' - ' . $cat_doc['description'];
+			}
+			$out .= '</li>' . PHP_EOL;
+		}
+		$out .= '</ul>' . PHP_EOL . PHP_EOL;
+	}
+
+	file_put_contents( '_includes/doc-list.html', $out );
+});
+
 desc( 'Build the site.' );
-task( 'default', 'cmd-list', 'param-list', 'internal-api-list' );
+task( 'default', 'cmd-list', 'param-list', 'internal-api-list', 'doc-list' );
 

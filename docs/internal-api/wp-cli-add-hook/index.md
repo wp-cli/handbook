@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI::add_hook()
+description: Schedule a callback to be executed at a certain point.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Registration
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Registration
 
 ## WP_CLI::add_hook()
 
