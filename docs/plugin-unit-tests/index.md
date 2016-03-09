@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: doc
 title: Plugin Unit Tests
+description: How to set up and run PHPUnit tests for a WordPress plugin.
+category: Guides
 ---
-
-# Plugin Unit Tests
 
 This guide will demonstrate how to:
 
@@ -18,9 +18,7 @@ So, let's get started:
 
 2) Generate the plugin test files:
 
-```bash
-wp scaffold plugin-tests my-plugin
-```
+    wp scaffold plugin-tests my-plugin
 
 This command will generate all the files needed for running tests, including a `.travis.yml` file. If you host your plugin on Github and enable [Travis CI](http://about.travis-ci.org), the tests will be run automatically after every commit you make to the plugin.
 
@@ -28,10 +26,8 @@ This command will generate all the files needed for running tests, including a `
 
 (you'll need to already have `svn` and `wget` available)
 
-```bash
-cd $(wp plugin path my-plugin --dir)
-bash bin/install-wp-tests.sh wordpress_test root '' localhost latest
-```
+    cd $(wp plugin path my-plugin --dir)
+    bash bin/install-wp-tests.sh wordpress_test root '' localhost latest
 
 where:
 
@@ -47,8 +43,6 @@ NOTE: This script can be run multiple times without errors, but it will *not* ov
 
 4) Run the plugin tests:
 
-```bash
-phpunit
-```
+    phpunit
 
 **Note**: phpunit 4.8.x is required (5.x won't work)
