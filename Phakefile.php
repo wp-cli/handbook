@@ -239,6 +239,9 @@ task( 'doc-list', function( $app ){
 	}
 	$out = '';
 	foreach( $docs as $category => $cat_docs ) {
+		if ( empty( $cat_docs ) ) {
+			continue;
+		}
 		$out .= '<h3>' . $category . '</h3>' . PHP_EOL . PHP_EOL;
 		$out .= '<ul>' . PHP_EOL;
 		ksort( $cat_docs );
