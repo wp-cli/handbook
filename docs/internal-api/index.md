@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: doc
 title: Internal API
+category: References
+description: Stable utilities considered safe to use in community commands.
 ---
-
-## Internal API
 
 WP-CLI includes a number of utilities which are considered stable and meant to be used by commands.
 

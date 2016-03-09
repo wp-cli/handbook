@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI::read_value()
+description: Read a value, from various formats.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
 
 ## WP_CLI::read_value()
 
