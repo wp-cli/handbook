@@ -28,7 +28,22 @@ chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 ~~~
 
-Now try running `wp --info`. Voila!
+Now try running `wp --info`. If WP-CLI is installed successfully, you'll see output like this:
+
+~~~
+PHP binary:    /usr/bin/php5
+PHP version:    5.5.9-1ubuntu4.14
+php.ini used:   /etc/php5/cli/php.ini
+WP-CLI root dir:        /home/wp-cli/.wp-cli
+WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
+WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
+WP-CLI project config:
+WP-CLI version: 0.23.0
+~~~
+
+Voila! You're now an official WP-CLI user.
+
+Wondering what to do next? Check out the [quick start guide](/docs/quick-start/) for a short introduction and some example usage.
 
 ## Alternative Installation Methods
 
