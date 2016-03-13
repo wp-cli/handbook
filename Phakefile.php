@@ -212,7 +212,10 @@ task( 'internal-api-list', function( $app ) {
 desc( 'Update the /docs/ page.' );
 task( 'doc-list', function( $app ){
 	$docs = array(
-		'Guides'       => array(),
+		'Guides'       => array(
+			'Installing'  => array(),
+			'Quick Start' => array(),
+		),
 		'References'   => array(
 			'Configuration options' => array(
 				'path'        => '/config/',
@@ -242,11 +245,12 @@ task( 'doc-list', function( $app ){
 		$title = ! empty( $matches[1] ) ? $matches[1] : '';
 		preg_match( '#description:\s(.+)#', $header, $matches );
 		$description = ! empty( $matches[1] ) ? $matches[1] : '';
-		$docs[ $category ][ $title ] = array(
-			'path'        => '/docs/' . basename( dirname( $file ) ) . '/',
-			'title'       => $title,
-			'description' => $description,
-		);
+		if ( ! isset( $docs[ $category ][ $title ] ) ) {
+			$docs[ $category ][ $title ] = array();
+		}
+		$docs[ $category ][ $title ]['path'] = '/docs/' . basename( dirname( $file ) ) . '/';
+		$docs[ $category ][ $title ]['title'] = $title;
+		$docs[ $category ][ $title ]['description'] = $description;
 	}
 	$out = '';
 	foreach( $docs as $category => $cat_docs ) {
@@ -255,7 +259,6 @@ task( 'doc-list', function( $app ){
 		}
 		$out .= '<h3>' . $category . '</h3>' . PHP_EOL . PHP_EOL;
 		$out .= '<ul>' . PHP_EOL;
-		ksort( $cat_docs );
 		foreach( $cat_docs as $cat_doc ) {
 			$out .= '<li><a href="' . $cat_doc['path'] . '"><strong>' . $cat_doc['title'] . '</strong></a>';
 			if ( ! empty( $cat_doc['description'] ) ) {
