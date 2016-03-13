@@ -1,9 +1,12 @@
 ---
-layout: default
-title: Example Usage
+layout: doc
+title: Quick start
+description: Where to begin after you've installed WP-CLI for the first time.
+category: Guides
 ---
 
-# Example Usage
+Congratulations! You've [installed WP-CLI](/docs/installing/) for the first time, and are ready to level-up your use of WordPress.
+
 
 This page contains examples of some common command line uses.
 
