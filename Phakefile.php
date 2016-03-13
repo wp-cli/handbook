@@ -216,8 +216,8 @@ task( 'doc-list', function( $app ){
 		'References'   => array(
 			'Configuration options' => array(
 				'path'        => '/config/',
-				'title'       => 'Configuration options defining how a command is executed.',
-				'description' => '',
+				'title'       => 'Configuration options',
+				'description' => 'Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the commnd is run against.',
 			),
 			'Built-in commands' => array(
 				'path'        => '/commands/',
