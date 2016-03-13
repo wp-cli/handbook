@@ -45,6 +45,16 @@ See also: [#1631](https://github.com/wp-cli/wp-cli/issues/1631)
 
 Please ensure you have the php-process extension installed. For example for Centos 6: `yum install php-process`
 
+### PHP notice: Undefined index on `$_SERVER` superglobal
+
+The `$_SERVER` superglobal is an array typically populated by a web server with information such as headers, paths, and script locations. PHP CLI doesn't populate this variable, nor does WP-CLI, because many of the variable details are meaningless at the command line.
+
+Before accessing a value on the `$_SERVER` superglobal, you should check if the key is set:
+
+    if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO'] ) {
+      $_SERVER['HTTPS']='on';
+    }
+
 ### Warning: Some code is trying to do a URL redirect
 
 Most of the time, it's some plugin or theme code that disables wp-admin access to non-admins.
