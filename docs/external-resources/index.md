@@ -1,9 +1,9 @@
 ---
-layout: default
-title: External Resources
+layout: doc
+title: External resources
+description: Blog posts, slides and videos from users.
+category: Guides
 ---
-
-# External Resources
 
 ## Blog posts & tutorials
 
