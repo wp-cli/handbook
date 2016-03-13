@@ -1,9 +1,10 @@
 ---
 layout: default
 title: WP_CLI::confirm()
+description: Ask for confirmation before running a destructive operation.
 ---
 
-<a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
 
 ## WP_CLI::confirm()
 
