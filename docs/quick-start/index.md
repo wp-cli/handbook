@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Quick Start
+title: Quick start
 description: Where to begin after you've installed WP-CLI for the first time.
 category: Guides
 quick_links:

@@ -9,7 +9,7 @@ quick_links:
   - Installing via Composer
 ---
 
-## Recommended Installation
+## Recommended installation
 
 The recommended way to install WP-CLI is by downloading the Phar build, marking it executable, and placing it on your PATH.
 
@@ -49,7 +49,7 @@ Voila! You're now an official WP-CLI user.
 
 Wondering what to do next? Check out the [quick start guide](/docs/quick-start/) for a short introduction and some example usage.
 
-## Alternative Installation Methods
+## Alternative installation methods
 
 ### Installing nightly via Phar
 

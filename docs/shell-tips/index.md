@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Shell Tips
+title: Shell tips
 description: Helpful shortcuts for bash and zsh.
 category: References
 ---

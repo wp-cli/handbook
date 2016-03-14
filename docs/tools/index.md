@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Integrated Tools
+title: Integrated tools
 description: External projects that integrate with WP-CLI in some form.
 category: References
 ---
