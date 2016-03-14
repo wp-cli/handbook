@@ -3,6 +3,10 @@ layout: doc
 title: Installing
 category: Guides
 description: Recommended and alternative installation mechanisms.
+quick_links:
+  - Recommended Installation
+  - Installing nightly via Phar
+  - Installing via Composer
 ---
 
 ## Recommended Installation
