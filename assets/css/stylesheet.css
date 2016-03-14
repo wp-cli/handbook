@@ -44,6 +44,16 @@ h3, h4 {
 	font-weight: 600;
 }
 
+.header-link {
+	text-decoration: none;
+	color: #BBB;
+	margin-left: 0.5em;
+}
+
+.header-link:hover {
+	color: #292929;
+}
+
 p {
 	margin: .5em 0 1.1em 0;
 }
