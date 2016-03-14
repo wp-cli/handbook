@@ -328,3 +328,11 @@ Let's run through the [internal APIs](/docs/internal-apis/) this command uses to
 * `WP_CLI::log()` ([doc](/docs/internal-api/wp-cli-log/)) renders informational output to the end user.
 * `WP_CLI\Utils\format_items()` ([doc](/docs/internal-api/wp-cli-utils-format-items/)) renders the list of unused themes after the command has completed its discovery.
 
+### Help rendering
+
+Your command's PHPDoc (or registered definition) is rendered using the `help` command. The output is ordered like this:
+
+ 1. Short description
+ 2. Synopsis
+ 3. Long description (OPTIONS, EXAMPLES etc.)
+ 4. Global parameters
