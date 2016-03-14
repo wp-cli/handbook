@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Release Checklist
+title: Release checklist
 description: Tasks performed during the process of tagging a release.
 category: Contributing
 ---

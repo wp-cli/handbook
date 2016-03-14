@@ -214,19 +214,25 @@ task( 'doc-list', function( $app ){
 	$docs = array(
 		'Guides'       => array(
 			'Installing'  => array(),
-			'Quick Start' => array(),
+			'Quick start' => array(),
 		),
 		'References'   => array(
-			'Configuration options' => array(
+			'Global parameters' => array(
 				'path'        => '/config/',
-				'title'       => 'Configuration options',
-				'description' => 'Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the commnd is run against.',
+				'title'       => 'Global parameters',
+				'description' => 'Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the command is run against.',
 			),
 			'Built-in commands' => array(
 				'path'        => '/commands/',
 				'title'       => 'Built-in commands',
 				'description' => 'Commands included in every copy of WP-CLI.',
 			),
+			'Package index' => array(
+				'path'        => '/package-index/',
+				'title'       => 'Package index',
+				'description' => 'Commands maintained and supported by the community.',
+			),
+			'Internal API' => array(),
 		),
 		'Contributing' => array(),
 		'Misc'         => array(),
@@ -257,7 +263,8 @@ task( 'doc-list', function( $app ){
 		if ( empty( $cat_docs ) ) {
 			continue;
 		}
-		$out .= '<h3>' . $category . '</h3>' . PHP_EOL . PHP_EOL;
+		$cat_slug = strtolower( $category );
+		$out .= '<h3 id="' . $cat_slug . '">' . $category . '</h3>' . PHP_EOL . PHP_EOL;
 		$out .= '<ul>' . PHP_EOL;
 		foreach( $cat_docs as $cat_doc ) {
 			$out .= '<li><a href="' . $cat_doc['path'] . '"><strong>' . $cat_doc['title'] . '</strong></a>';
