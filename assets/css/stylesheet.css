@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
-h3 {
+h3, h4 {
 	font-weight: 600;
 }
 
@@ -186,9 +186,8 @@ pre {
 
 /* Inline code */
 code {
-	padding: 0.3em 0.3em 0.2em 0.3em;
-	border-radius: .3em;
-	font-size: 1.05em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
 	background: #444;
 }
 /* Oh I want SASS here */
@@ -425,15 +424,15 @@ body.display-global-parameters #main_content {
 }
 
 #main_content h2 {
-	font-size: 24px;
+	font-size: 28px;
 }
 
 #main_content h3 {
-	font-size: 18px;
+	font-size: 24px;
 }
 
 #main_content h4 {
-	font-size: 14px;
+	font-size: 18px;
 	/*margin-top: .3em;*/
 }
 
