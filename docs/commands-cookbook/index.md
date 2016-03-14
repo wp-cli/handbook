@@ -7,6 +7,7 @@ quick_links:
   - Anatomy of a command
   - Annotating with PHPDoc
   - Command internals
+  - Writing tests
 ---
 
 Creating your own custom WP-CLI command can be easier than it looks.
@@ -384,3 +385,33 @@ Your command's PHPDoc (or registered definition) is rendered using the `help` co
  2. Synopsis
  3. Long description (OPTIONS, EXAMPLES etc.)
  4. Global parameters
+
+## Writing tests
+
+WP-CLI makes use of a Behat-based testing framework, which you should use too. Behat is a great choice for your WP-CLI commands because:
+
+* It's easy to write new tests, which means they'll actually get written.
+* The tests interface with your command in the same manner as your users interface with your command.
+
+Behat tests live in the `features/` directory of your project. Here's an example from `features/cli-info.feature`:
+
+~~~
+Feature: Review CLI information
+
+  Scenario: Get the path to the packages directory
+    Given an empty directory
+
+    When I run `wp cli info --format=json`
+    Then STDOUT should be JSON containing:
+      """
+      {"wp_cli_packages_dir_path":"/tmp/wp-cli-home/.wp-cli/packages/"}
+      """
+
+    When I run `WP_CLI_PACKAGES_DIR=/tmp/packages wp cli info --format=json`
+    Then STDOUT should be JSON containing:
+      """
+      {"wp_cli_packages_dir_path":"/tmp/packages/"}
+      """
+~~~
+
+Convinced? Head on over to [wp-cli/scaffold-package-command](https://github.com/wp-cli/scaffold-package-command) to get started.
