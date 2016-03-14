@@ -278,6 +278,54 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 
 Now that you know how to register a command, the world is your oyster. Inside your callback, your command can do whatever it wants.
 
+#### Accepting arguments
+
+In order to handle runtime arguments, you have to add two parameters to your callable: `$args` and `$assoc_args`.
+
+~~~
+function hello( $args, $assoc_args ) {
+	/* Code goes here*/
+}
+~~~
+
+`$args` variable will store all the positional arguments:
+
+~~~
+$ wp example hello Joe Doe
+~~~
+
+~~~
+WP_CLI::line( $args[0] ); // Joe
+WP_CLI::line( $args[1] ); // Doe
+
+
+`$assoc_args` variable will store all the arguments defined like `--key=value` or `--flag` or `--no-flag`
+
+~~~
+$ wp example hello --name='Joe Doe' --verbose --no-option
+~~~
+
+~~~
+WP_CLI::line( $assoc_args['name'] ); // Joe Doe
+WP_CLI::line( $assoc_args['verbose'] ); // true
+WP_CLI::line( $assoc_args['option'] ); // false
+~~~
+
+Also, you can combine argument types:
+
+~~~
+$ wp example hello --name=Joe foo --verbose bar
+~~~
+
+~~~
+WP_CLI::line( $assoc_args['name'] ); // Joe
+WP_CLI::line( $assoc_args['verbose'] ); // true
+WP_CLI::line( $args[0] ); // foo
+WP_CLI::line( $args[1] ); // bar
+~~~
+
+#### Effectively reusing WP-CLI internal APIs
+
 As an example, say you were tasked with finding all unused themes on a multisite network ([#2523](https://github.com/wp-cli/wp-cli/issues/2523)). If you had to perform this task manually through the WordPress admin, it would probably take hours, if not days, of effort. However, if you're familiar with writing WP-CLI commands, you could complete the task in 15 minutes or less.
 
 Here's what such a command looks like:
