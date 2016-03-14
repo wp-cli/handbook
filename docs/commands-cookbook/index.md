@@ -4,21 +4,20 @@ title: Commands Cookbook
 description: The full 101 on writing a command.
 category: Guides
 quick_links:
-  - Overview
-  - Anatomy of a Command
-  - PHPDoc
-  - Distributing
+  - Anatomy of a command
+  - Annotating with PHPDoc
+  - Command internals
 ---
 
 Creating your own custom WP-CLI command can be easier than it looks.
 
 ## Overview
 
-WP-CLI's goal is to offer a complete alternative to the WordPress admin; for any action you might want to perform in the WordPress admin, there should be an equivalent WP-CLI command. A **command** is an atomic unit of WP-CLI functionality. `wp plugin install` ([doc](/commands/plugin/install/)) is one such command, as is `wp plugin activate` ([doc](/commands/plugin/activate/)). Commands are useful because they can offer simple, precise interfaces for performing complex tasks.
+WP-CLI's goal is to offer a complete alternative to the WordPress admin; for any action you might want to perform in the WordPress admin, there should be an equivalent WP-CLI command. A **command** is an atomic unit of WP-CLI functionality. `wp plugin install` ([doc](/commands/plugin/install/)) is one such command, as is `wp plugin activate` ([doc](/commands/plugin/activate/)). Commands are useful to WordPress users because they can offer simple, precise interfaces for performing complex tasks.
 
 _But_, the WordPress admin is a Swiss Army knife of infinite complexity. There's no way just this project could handle every use case. This is why WP-CLI includes a set of [common internal commands](/commands/), while also offering a rich API for third-parties to register and [distribute their own commands](/package-index/).
 
-### Command types
+#### Command types
 
 Internal commands:
 
@@ -31,7 +30,7 @@ Third-party commands:
 * Can be defined in plugins or themes.
 * Can be distributed independent of a plugin or theme in the [Package Index](/package-index/).
 
-## Anatomy of a Command
+## Anatomy of a command
 
 WP-CLI supports registering any callable class, function, or closure as a command. `WP_CLI::add_command()` ([doc](/docs/internal-api/wp-cli-add-command/)) is used for both internal and third-party command registration.
 
@@ -42,16 +41,16 @@ The **synopsis** of a command defines which **positional** and **associative** a
 
 In this example, `<plugin|zip|url>...` is the accepted **positional** argument. In fact, `wp plugin install` accepts the same positional argument (the slug, ZIP, or URL of a plugin to install) multiple times. `[--version=<version>]` is one of the accepted **associative** arguments. It's used to denote the version of the plugin to install. Notice, too, the square brackets around the argument definition; square brackets mean the argument is optional.
 
-WP-CLI also has a [series of **global** arguments](/config/) which work with all commands. For instance, including `--debug` means your command execution will display all PHP errors, and add extra verbosity to the WP-CLI bootstrap process.
+WP-CLI also has a [series of global arguments](/config/) which work with all commands. For instance, including `--debug` means your command execution will display all PHP errors, and add extra verbosity to the WP-CLI bootstrap process.
 
-### Required arguments
+### Required registration arguments
 
-When registering a command, the two required arguments for `WP_CLI::add_command()` are `$name` and `$callable`:
+When registering a command, `WP_CLI::add_command()` requires two arguments::
 
 1. `$name` is the command's name within WP-CLI's namespace (e.g. `plugin install` or `post list`).
 2. `$callable` is the implementation of the command, as a callable class, function, or closure.
 
-For instance, here are three ways of registering a functionally-equivalent command:
+In the following example, each instance of `wp foo` is functionally equivalent:
 
 ~~~
 // 1. Command is a function
@@ -80,11 +79,11 @@ Importantly, classes behave a bit differently than functions and closures in tha
 * Any public methods on a class are registered as subcommands of the command. For instance, given the examples above, a method `bar()` on the class `Foo` would be registered as `wp foo bar`. But...
 * `__invoke()` is treated as a magic method. If a class implements `__invoke()`, the command name will be registered to that method and no other methods of that class will be registered as commands.
 
-### Optional arguments
+### Optional registration arguments
 
 WP-CLI supports two ways of registering optional arguments for your command: through the callable's PHPDoc, or passed as a third `$args` parameter to `WP_CLI::add_command()`.
 
-#### PHPDoc
+#### Annotating with PHPDoc
 
 A typical WP-CLI class looks like this:
 
@@ -116,6 +115,7 @@ class Example_Command extends WP_CLI_Command {
 	 *
 	 *     wp example hello Newman
 	 *
+	 * @when before_wp_load
 	 */
 	function hello( $args, $assoc_args ) {
 		list( $name ) = $args;
@@ -129,7 +129,7 @@ class Example_Command extends WP_CLI_Command {
 WP_CLI::add_command( 'example', 'Example_Command' );
 ~~~
 
-The command PHPDoc comment has 3 parts:
+This command's PHPDoc is interpreted in three ways:
 
 #### Shortdesc
 
@@ -166,12 +166,19 @@ The longdesc is middle part of the PHPDoc:
 
 Options defined in the longdesc are interpreted as the command's **synopsis**:
 
-* `<name>` is a required positional argument.
-* `[--type=<type>]` is an optional associative argument which defaults to 'success' and accepts either 'success' or 'error'.
+* `<name>` is a required positional argument. Changing it to `<name>..` would mean the command could accept one or more positional arguments.
+* `[--type=<type>]` is an optional associative argument which defaults to 'success' and accepts either 'success' or 'error'. Changing it to `[--error]` would change the argument to behave as an optional boolean flag.
 
 A command's synopsis is used for validating the arguments, before passing them to the implementation.
 
-The longdesc is also displayed when calling the `help` command, for example, `wp help example hello`.
+The longdesc is also displayed when calling the `help` command, for example, `wp help example hello`. Its syntax is [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and here are a few more notes on how it's handled by WP-CLI:
+
+* The longdesc is generally treated as a free-form text. The `OPTIONS` and `EXAMPLES` section names are not enforced, just common and recommended.
+* Sections names (`## NAME`) are colorized and printed with zero indentation.
+* Everything else is indented by 2 characters, option descriptions are further indented by additional 2 characters.
+* Word-wrapping is a bit tricky. If you want to utilize as much space on each line as possible and don't get word-wrapping artifacts like one or two words on the next line, follow these rules:
+ * Hard-wrap option descriptions at **75 chars** after the colon and a space.
+ * Hard-wrap everything else at **90 chars**.
 
 #### Docblock tags
 
@@ -184,7 +191,7 @@ This is the last section and it starts immediately after the longdesc:
 
 Here's the list of defined tags:
 
-`@subcommand`
+**@subcommand**
 
 There are cases where you can't make the method name have the name of the subcommand. For example, you can't have a method named `list`, because `list` is a reserved keyword in PHP.
 
@@ -206,7 +213,7 @@ That's when the `@subcommand` tag comes to the rescue:
 	}
 ~~~
 
-`@alias`
+**@alias**
 
 With the `@alias` tag, you can add another way of calling a subcommand. Example:
 
@@ -224,17 +231,19 @@ $ wp example hi Joe
 Success: Hello, Joe!
 ~~~
 
-`@when`
+**@when**
 
-This is a special tag that tells WP-CLI when to execute the command. As of WP-CLI 0.11, it only supports a single value:
+This is a special tag that tells WP-CLI when to execute the command. It supports [all registered hooks](/docs/internal-api/wp-cli-add-hook/).
 
 ~~~
 @when before_wp_load
 ~~~
 
+Do keep in mind most WP-CLI hooks fire before WordPress is loaded. If your command is loaded from a plugin or theme, `@when` will be essentially ignored.
+
 It has no effect if the command using it is loaded from a plugin or a theme, because by that time WordPress itself will have already been loaded.
 
-#### `$args` parameter
+#### WP_CLI::add_command()'s third $args parameter
 
 Each of the configuration options supported by PHPDoc can instead be passed as the third argument in command registration:
 
@@ -267,7 +276,7 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 
 ### Command internals
 
-Your command can do whatever it wants!
+Now that you know how to register a command, the world is your oyster. Inside your callback, your command can do whatever it wants.
 
 As an example, say you were tasked with finding all unused themes on a multisite network ([#2523](https://github.com/wp-cli/wp-cli/issues/2523)). If you had to perform this task manually through the WordPress admin, it would probably take hours, if not days, of effort. However, if you're familiar with writing WP-CLI commands, you could complete the task in 15 minutes or less.
 
@@ -319,18 +328,3 @@ Let's run through the [internal APIs](/docs/internal-apis/) this command uses to
 * `WP_CLI::log()` ([doc](/docs/internal-api/wp-cli-log/)) renders informational output to the end user.
 * `WP_CLI\Utils\format_items()` ([doc](/docs/internal-api/wp-cli-utils-format-items/)) renders the list of unused themes after the command has completed its discovery.
 
-### Writing tests
-
-tk
-
-## Distributing
-
-tk
-
-### Including a command in your plugin
-
-    if ( defined( 'WP_CLI' ) && WP_CLI ) {
-        require_once dirname( __FILE__ ) . '/inc/class-plugin-cli-command.php';
-    }
-
-### Publishing a WP-CLI package
