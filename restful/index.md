@@ -37,17 +37,17 @@ Presentations:
 
 ## Budget
 
-Here's a breakdown of how the project's 283 total hours have been used to date:
+Here's a breakdown of how the project's 283 total hours have been used (between January 1st and March 14th, 2016):
 
-| Activity      | WP-CLI                   | WP-API                  |
-|---------------|--------------------------|-------------------------|
-| Development   | 26.45                    | 52.25                   |
-| Support       | 3.28                     | 10.39                   |
-| Documentation | 0.42                     | 0.67                    |
-| Blogging      | 6.30                     | 0                       |
-| Meetings      | 0                        | 3.72                    |
-| Admin         | 0.77                     | 0                       |
-| **Total**     | 37.22 (of 150 budgeted)  | 67.03 (of 83 budgeted)  |
+| Activity      | WP-CLI                     | WP-API                    |
+|---------------|----------------------------|---------------------------|
+| Development   | 57.58                      | 67.95                     |
+| Support       | 9.69                       | 15.39                     |
+| Documentation | 20.53                      | 1.17                      |
+| Blogging      | 7.70                       | 0                         |
+| Meetings      | 0                          | 7.91                      |
+| Admin         | 0.77                       | 0                         |
+| **Total**     | 96.27 (of 150.58 budgeted) | 92.42 (of 92.42 budgeted) |
 
 Note: time spent fulfilling the Kickstarter rewards is tracked separately.
 
