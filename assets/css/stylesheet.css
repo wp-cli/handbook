@@ -48,10 +48,19 @@ h3, h4 {
 	text-decoration: none;
 	color: #BBB;
 	margin-left: 0.5em;
+	font-size: 0.6em;
+	display: none;
 }
 
 .header-link:hover {
 	color: #292929;
+}
+
+h1:hover .header-link,
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link {
+	display: inline;
 }
 
 p {
