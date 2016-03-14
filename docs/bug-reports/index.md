@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Bug Reports
+title: Bug reports
 category: Contributing
 description: Help ensure your issue is resolved in a timely manner.
 ---

@@ -1,8 +1,8 @@
 ---
 layout: doc
-title: Plugin Unit Tests
+title: Plugin unit tests
 description: How to set up and run PHPUnit tests for a WordPress plugin.
-category: Guides
+category: Misc
 ---
 
 This guide will demonstrate how to:

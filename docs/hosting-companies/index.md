@@ -1,8 +1,8 @@
 ---
 layout: doc
-title: Hosting Companies
+title: Hosting companies
 category: References
-description: List of hosting companies with WP-CLI installed by default.
+description: List of hosting companies where WP-CLI is installed by default.
 ---
 
 The following is a list of hosting companies that have WP-CLI installed by default for their customers, i.e. when they first SSH into their server, the `wp` command is already available.
