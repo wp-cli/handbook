@@ -1,7 +1,7 @@
 ---
 layout: doc
-title: Commands Cookbook
-description: The full 101 on writing a command.
+title: Commands cookbook
+description: The full 101 how commands work, writing your own, and sharing them with the world.
 category: Guides
 quick_links:
   - Anatomy of a command
