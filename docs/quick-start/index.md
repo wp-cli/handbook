@@ -3,6 +3,10 @@ layout: doc
 title: Quick Start
 description: Where to begin after you've installed WP-CLI for the first time.
 category: Guides
+quick_links:
+  - Introduction
+  - Common Terms
+  - Example Usage
 ---
 
 Congratulations! You've [installed WP-CLI](/docs/installing/) for the first time, and are ready to level-up your use of WordPress. This page contains a brief introduction to WP-CLI with some example usage.
@@ -42,7 +46,7 @@ In this example, `<plugin|zip|url>...` is the accepted _positional_ argument. In
 
 WP-CLI also has a [series of _global_ arguments](/config/) which work with all commands. For instance, including `--debug` means your command execution will display all PHP errors, and add extra verbosity to the WP-CLI bootstrap process.
 
-## Example usage
+## Example Usage
 
 Ready to dive in? Here are some examples of common WP-CLI commands:
 
