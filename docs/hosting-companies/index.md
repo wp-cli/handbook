@@ -26,3 +26,4 @@ In alphabetical order:
 * [TVC.Net](http://TVC.Net/)
 * [WordPress.com VIP](http://vip.wordpress.com/)
 * [WPEngine.com](http://wpengine.com)
+* [Byte](https://www.byte.nl)
