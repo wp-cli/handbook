@@ -8,6 +8,7 @@ quick_links:
   - Annotating with PHPDoc
   - Command internals
   - Writing tests
+  - Add to the package index
 ---
 
 Creating your own custom WP-CLI command can be easier than it looks.
@@ -415,3 +416,41 @@ Feature: Review CLI information
 ~~~
 
 Convinced? Head on over to [wp-cli/scaffold-package-command](https://github.com/wp-cli/scaffold-package-command) to get started.
+
+## Distribution
+
+Now that you've produce a command you're proud of, it's time to share it with the world. There are two common ways of doing so.
+
+### Include in a plugin or theme
+
+One way to share WP-CLI commands is by packaging them in your plugin or theme. Many people do so by conditionally loading (and registering) the command based on the presence of the `WP_CLI` constant.
+
+~~~
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+	require_once dirname( __FILE__ ) . '/inc/class-plugin-cli-command.php';
+}
+~~~
+	
+### Add to the package index
+
+Standalone WP-CLI commands can be added to and installed from the [package index](/package-index/). The only technical requirement for being listed in the package index is to include a valid composer.json file with an autoload declaration.
+
+Here's a full composer.json example from the server command:
+
+~~~
+
+{
+	"name": "wp-cli/server-command",
+	"description": "Start a development server for WordPress",
+	"homepage": "https://github.com/wp-cli/server-command",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4"
+	},
+	"autoload": {
+		"files": [ "command.php" ]
+	}
+}
+~~~
+
+Note the `autoload` declaration, which loads `command.php`. 
