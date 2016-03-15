@@ -370,7 +370,7 @@ WP_CLI::add_command( 'find-unused-themes', $find_unused_themes_command, array(
 ) );
 ~~~
 
-Let's run through the [internal APIs](/docs/internal-apis/) this command uses to achieve its goal:
+Let's run through the [internal APIs](/docs/internal-api/) this command uses to achieve its goal:
 
 * `WP_CLI::add_command()` ([doc](/docs/internal-api/wp-cli-add-command/)) is used to register a `find-unused-themes` command to the `$find_unused_themes_command` closure. The `before_invoke` argument makes it possible to verify the command is running on a multisite install, and error if not.
 * `WP_CLI::error()` ([doc](/docs/internal-api/wp-cli-error/)) renders a nicely formatted error message and exits.
