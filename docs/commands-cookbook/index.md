@@ -81,6 +81,19 @@ Importantly, classes behave a bit differently than functions and closures in tha
 * Any public methods on a class are registered as subcommands of the command. For instance, given the examples above, a method `bar()` on the class `Foo` would be registered as `wp foo bar`. But...
 * `__invoke()` is treated as a magic method. If a class implements `__invoke()`, the command name will be registered to that method and no other methods of that class will be registered as commands.
 
+### Quick and dirty execution
+
+Writing a short script for a one-off task, and don't need to register it formally with `WP_CLI::add_command()`? `wp eval-file` is your ticket ([doc](http://wp-cli.org/commands/eval-file/)).
+
+Given a `simple-command.php` file:
+
+~~~
+<?php
+WP_CLI::success( "The script has run!" );
+~~~
+
+Your "command" can be run with `wp eval-file simple-command.php`. If the command doesn't have a dependency on WordPress, or WordPress isn't available, you can use the `--skip-wordpress` flag to avoid loading WordPress. 
+
 ### Optional registration arguments
 
 WP-CLI supports two ways of registering optional arguments for your command: through the callable's PHPDoc, or passed as a third `$args` parameter to `WP_CLI::add_command()`.
