@@ -25,23 +25,23 @@ title: Command line interface for WordPress
 
 First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
-~~~
+```
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-~~~
+```
 
 
 Then, check if it works:
 
-~~~
+```
 php wp-cli.phar --info
-~~~
+```
 
 To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the file executable and move it to somewhere in your PATH. For example:
 
-~~~
+```
 chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
-~~~
+```
 
 Now try running `wp --info`.
 
@@ -60,9 +60,9 @@ More resources:
 
 WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and source it from `~/.bash_profile`:
 
-~~~
+```
 source /FULL/PATH/TO/wp-completion.bash
-~~~
+```
 
 (Don't forget to run `source ~/.bash_profile` afterwards)
 
@@ -70,13 +70,13 @@ source /FULL/PATH/TO/wp-completion.bash
 
 Go into a WordPress root folder:
 
-~~~
+```
 cd /var/www/wp/
-~~~
+```
 
 Typing `wp` should show you output similar to this:
 
-~~~
+```
 Available commands:
     wp blog create|delete
     wp cache add|decr|delete|flush|get|incr|replace|set|type
@@ -87,50 +87,50 @@ Available commands:
     ...
 
 See 'wp help <command>' for more information on a specific command.
-~~~
+```
 
 Let's try to install the Hello Dolly plugin from wordpress.org:
 
-~~~
+```
 wp plugin install hello-dolly
-~~~
+```
 
 Output:
 
-~~~
+```
 Installing Hello Dolly (1.5)
 
 Downloading install package from http://downloads.WordPress.org/plugin/hello-dolly.1.5.zip ...
 Unpacking the package ...
 Installing the plugin ...
 Plugin installed successfully.
-~~~
+```
 
 <h3 id="multisite">Multisite</h3>
 
 On a multisite installation, you need to pass a `--url` parameter, so that WP-CLI knows which site it's supposed to be operating on:
 
-~~~
+```
 wp theme status --url=localhost/wp/test
-~~~
+```
 
 If you have a subdomain installation, it would look like this:
 
-~~~
+```
 wp theme status --url=test.example.com
-~~~
+```
 
 If you're usually working on the same site most of the time, you can create a `wp-cli.yml` file in the root directory:
 
-~~~
+```
 url: test.example.com
-~~~
+```
 
 Then, you can call `wp` without the `--url` parameter again:
 
-~~~
+```
 wp theme status
-~~~
+```
 
 <h2>Adding commands</h2>
 
