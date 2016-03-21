@@ -32,16 +32,8 @@ If you haven't submitted a pull request before, you'll want to install WP-CLI fo
 
 There are two types of automated tests:
 
-* unit tests, implemented using [PHPUnit](http://phpunit.de/)
 * functional tests, implemented using [Behat](http://behat.org)
-
-### Unit tests
-
-The unit test files are in the `tests/` directory.
-
-To run the unit tests, just execute:
-
-    ./vendor/bin/phpunit
+* unit tests, implemented using [PHPUnit](http://phpunit.de/)
 
 ### Functional tests
 
@@ -60,6 +52,14 @@ Or to test a single feature:
     ./vendor/bin/behat features/core.feature
 
 More info can be found by using `./vendor/bin/behat --help`.
+
+### Unit tests
+
+The unit test files are in the `tests/` directory.
+
+To run the unit tests, just execute:
+
+    ./vendor/bin/phpunit
 
 ## Finally...
 
