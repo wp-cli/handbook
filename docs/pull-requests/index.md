@@ -37,7 +37,28 @@ There are two types of automated tests:
 
 ### Functional tests
 
-The functional test files are in the `features/` directory.
+The functional test files for WP-CLI are in the `features/` directory. Each `.feature` file comprises one or more functional tests for a given feature (roughly organized by command).
+
+A functional test can be as simple as:
+
+```
+Feature: Evaluating PHP code and files.
+
+  Scenario: Basics
+    Given a WP install
+
+    When I run `wp eval 'var_dump(defined("WP_CONTENT_DIR"));'`
+    Then STDOUT should contain:
+      """
+      bool(true)
+      """
+```
+
+Functional tests typically follow this pattern:
+
+* **Given** some background,
+* **When** a user performs a specific action,
+* **Then** the end result should be X (and Y and Z).
 
 Before running the functional tests, you'll need a MySQL (or MariaDB) user called `wp_cli_test` with the password `password1` that has full privileges on the MySQL database `wp_cli_test`. Running the following as root in MySQL should do the trick:
 
