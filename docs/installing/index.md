@@ -15,26 +15,26 @@ The recommended way to install WP-CLI is by downloading the Phar build, marking 
 
 First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
-~~~
+```
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-~~~
+```
 
 Then, check if it works:
 
-~~~
+```
 php wp-cli.phar --info
-~~~
+```
 
 To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the file executable and move it to somewhere in your PATH. For example:
 
-~~~
+```
 chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
-~~~
+```
 
 Now try running `wp --info`. If WP-CLI is installed successfully, you'll see output like this:
 
-~~~
+```
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
 php.ini used:   /etc/php5/cli/php.ini
@@ -43,7 +43,7 @@ WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
 WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
 WP-CLI project config:
 WP-CLI version: 0.23.0
-~~~
+```
 
 Voila! You're now an official WP-CLI user.
 
