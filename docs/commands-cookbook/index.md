@@ -54,7 +54,7 @@ When registering a command, `WP_CLI::add_command()` requires two arguments::
 
 In the following example, each instance of `wp foo` is functionally equivalent:
 
-~~~
+```
 // 1. Command is a function
 function foo_command( $args ) {
     WP_CLI::success( $args[0] );
@@ -74,7 +74,7 @@ class Foo_Command {
     }
 }
 WP_CLI::add_command( 'foo', 'Foo_Command' );
-~~~
+```
 
 Importantly, classes behave a bit differently than functions and closures in that:
 
@@ -87,10 +87,10 @@ Writing a short script for a one-off task, and don't need to register it formall
 
 Given a `simple-command.php` file:
 
-~~~
+```
 <?php
 WP_CLI::success( "The script has run!" );
-~~~
+```
 
 Your "command" can be run with `wp eval-file simple-command.php`. If the command doesn't have a dependency on WordPress, or WordPress isn't available, you can use the `--skip-wordpress` flag to avoid loading WordPress. 
 
@@ -102,7 +102,7 @@ WP-CLI supports two ways of registering optional arguments for your command: thr
 
 A typical WP-CLI class looks like this:
 
-~~~
+```
 <?php
 /**
  * Implements example command.
@@ -142,7 +142,7 @@ class Example_Command extends WP_CLI_Command {
 }
 
 WP_CLI::add_command( 'example', 'Example_Command' );
-~~~
+```
 
 This command's PHPDoc is interpreted in three ways:
 
@@ -150,16 +150,16 @@ This command's PHPDoc is interpreted in three ways:
 
 The shortdesc is the first line in the PHPDoc:
 
-~~~
+```
 	/**
 	 * Prints a greeting.
-~~~
+```
 
 #### Longdesc
 
 The longdesc is middle part of the PHPDoc:
 
-~~~
+```
 	 * ## OPTIONS
 	 *
 	 * <name>
@@ -177,7 +177,7 @@ The longdesc is middle part of the PHPDoc:
 	 * ## EXAMPLES
 	 *
 	 *     wp example hello Newman
-~~~
+```
 
 Options defined in the longdesc are interpreted as the command's **synopsis**:
 
@@ -199,10 +199,10 @@ The longdesc is also displayed when calling the `help` command, for example, `wp
 
 This is the last section and it starts immediately after the longdesc:
 
-~~~
+```
 	 * @when before_wp_load
 	 */
-~~~
+```
 
 Here's the list of defined tags:
 
@@ -212,7 +212,7 @@ There are cases where you can't make the method name have the name of the subcom
 
 That's when the `@subcommand` tag comes to the rescue:
 
-~~~
+```
 	/**
 	 * @subcommand list
 	 */
@@ -226,33 +226,33 @@ That's when the `@subcommand` tag comes to the rescue:
 	function do_chores( $args, $assoc_args ) {
 		...
 	}
-~~~
+```
 
 **@alias**
 
 With the `@alias` tag, you can add another way of calling a subcommand. Example:
 
-~~~
+```
 	/**
 	 * @alias hi
 	 */
 	function hello( $args, $assoc_args ) {
 		...
 	}
-~~~
+```
 
-~~~
+```
 $ wp example hi Joe
 Success: Hello, Joe!
-~~~
+```
 
 **@when**
 
 This is a special tag that tells WP-CLI when to execute the command. It supports [all registered hooks](/docs/internal-api/wp-cli-add-hook/).
 
-~~~
+```
 @when before_wp_load
-~~~
+```
 
 Do keep in mind most WP-CLI hooks fire before WordPress is loaded. If your command is loaded from a plugin or theme, `@when` will be essentially ignored.
 
@@ -262,7 +262,7 @@ It has no effect if the command using it is loaded from a plugin or a theme, bec
 
 Each of the configuration options supported by PHPDoc can instead be passed as the third argument in command registration:
 
-~~~
+```
 $hello_command = function( $args, $assoc_args ) {
 	list( $name ) = $args;
 	$type = $assoc_args['type'];
@@ -287,7 +287,7 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 	),
 	'when' => 'before_wp_load',
 ) );
-~~~
+```
 
 ### Command internals
 
@@ -297,47 +297,47 @@ Now that you know how to register a command, the world is your oyster. Inside yo
 
 In order to handle runtime arguments, you have to add two parameters to your callable: `$args` and `$assoc_args`.
 
-~~~
+```
 function hello( $args, $assoc_args ) {
 	/* Code goes here*/
 }
-~~~
+```
 
 `$args` variable will store all the positional arguments:
 
-~~~
+```
 $ wp example hello Joe Doe
-~~~
+```
 
-~~~
+```
 WP_CLI::line( $args[0] ); // Joe
 WP_CLI::line( $args[1] ); // Doe
 
 
 `$assoc_args` variable will store all the arguments defined like `--key=value` or `--flag` or `--no-flag`
 
-~~~
+```
 $ wp example hello --name='Joe Doe' --verbose --no-option
-~~~
+```
 
-~~~
+```
 WP_CLI::line( $assoc_args['name'] ); // Joe Doe
 WP_CLI::line( $assoc_args['verbose'] ); // true
 WP_CLI::line( $assoc_args['option'] ); // false
-~~~
+```
 
 Also, you can combine argument types:
 
-~~~
+```
 $ wp example hello --name=Joe foo --verbose bar
-~~~
+```
 
-~~~
+```
 WP_CLI::line( $assoc_args['name'] ); // Joe
 WP_CLI::line( $assoc_args['verbose'] ); // true
 WP_CLI::line( $args[0] ); // foo
 WP_CLI::line( $args[1] ); // bar
-~~~
+```
 
 #### Effectively reusing WP-CLI internal APIs
 
@@ -345,7 +345,7 @@ As an example, say you were tasked with finding all unused themes on a multisite
 
 Here's what such a command looks like:
 
-~~~
+```
 /**
  * Find unused themes on a multisite network.
  *
@@ -381,7 +381,7 @@ WP_CLI::add_command( 'find-unused-themes', $find_unused_themes_command, array(
 		}
 	},
 ) );
-~~~
+```
 
 Let's run through the [internal APIs](/docs/internal-api/) this command uses to achieve its goal:
 
@@ -409,7 +409,7 @@ WP-CLI makes use of a Behat-based testing framework, which you should use too. B
 
 Behat tests live in the `features/` directory of your project. Here's an example from `features/cli-info.feature`:
 
-~~~
+```
 Feature: Review CLI information
 
   Scenario: Get the path to the packages directory
@@ -426,7 +426,7 @@ Feature: Review CLI information
       """
       {"wp_cli_packages_dir_path":"/tmp/packages/"}
       """
-~~~
+```
 
 Convinced? Head on over to [wp-cli/scaffold-package-command](https://github.com/wp-cli/scaffold-package-command) to get started.
 
@@ -438,11 +438,11 @@ Now that you've produce a command you're proud of, it's time to share it with th
 
 One way to share WP-CLI commands is by packaging them in your plugin or theme. Many people do so by conditionally loading (and registering) the command based on the presence of the `WP_CLI` constant.
 
-~~~
+```
 if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	require_once dirname( __FILE__ ) . '/inc/class-plugin-cli-command.php';
 }
-~~~
+```
 	
 ### Add to the package index
 
@@ -450,7 +450,7 @@ Standalone WP-CLI commands can be added to and installed from the [package index
 
 Here's a full composer.json example from the server command:
 
-~~~
+```
 
 {
 	"name": "wp-cli/server-command",
@@ -464,6 +464,6 @@ Here's a full composer.json example from the server command:
 		"files": [ "command.php" ]
 	}
 }
-~~~
+```
 
 Note the `autoload` declaration, which loads `command.php`. 

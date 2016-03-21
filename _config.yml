@@ -1,6 +1,6 @@
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
 markdown: kramdown
 url: http://wp-cli.org
 permalink: /blog/:title.html
