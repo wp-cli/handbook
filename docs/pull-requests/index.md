@@ -13,6 +13,8 @@ WP-CLI follows a pull request workflow for changes to its code (and documentatio
 3. Push the code changes from your local clone to your fork.
 4. Open a pull request.
 
+New to WP-CLI commands? You may want to [start with the commands cookbook](/docs/commands-cookbook/) to learn more about how commands work.
+
 It doesn't matter if the code isn't perfect. The idea is to get it reviewed early and iterate on it.
 
 If you're adding a new feature, please add one or more functional tests for it in the `features/` directory. See below.
