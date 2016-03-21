@@ -428,6 +428,12 @@ Feature: Review CLI information
       """
 ```
 
+Functional tests typically follow this pattern:
+
+* **Given** some background,
+* **When** a user performs a specific action,
+* **Then** the end result should be X (and Y and Z).
+
 Convinced? Head on over to [wp-cli/scaffold-package-command](https://github.com/wp-cli/scaffold-package-command) to get started.
 
 ## Distribution
