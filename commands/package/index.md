@@ -35,6 +35,10 @@ display_global_parameters: true
 			<td>List installed WP-CLI packages.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/package/path/">path</a></td>
+			<td>Get the path to an installed WP-CLI package, or the package directory.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/package/uninstall/">uninstall</a></td>
 			<td>Uninstall a WP-CLI package.</td>
 		</tr>

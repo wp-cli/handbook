@@ -10,6 +10,8 @@ display_global_parameters: true
 
 
 
+
+
 ### SUBCOMMANDS
 
 <table>
@@ -20,6 +22,10 @@ display_global_parameters: true
 	</tr>
 	</thead>
 	<tbody>
+		<tr>
+			<td><a href="/commands/cli/api-dump/">api-dump</a></td>
+			<td>Dump the list of internal APIs, as JSON.</td>
+		</tr>
 		<tr>
 			<td><a href="/commands/cli/check-update/">check-update</a></td>
 			<td>Check for update via Github API. Returns the available versions if there are updates, or empty if no update available.</td>

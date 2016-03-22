@@ -34,7 +34,7 @@ display_global_parameters: true
     **description**: Theme Description
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, yaml. Default: table
 
 ### EXAMPLES
 

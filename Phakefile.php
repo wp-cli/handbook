@@ -34,7 +34,7 @@ task( 'syn-list', function( $app ) {
 		}
 	}
 
-	generate_synopsis( invoke_wp_cli( 'wp cli cmd-dump', $app ) );
+	generate_synopsis( invoke_wp_cli( 'wp --skip-packages cli cmd-dump', $app ) );
 });
 
 function gen_cmd_pages( $cmd, $parent = array() ) {
@@ -84,7 +84,7 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 
 desc( 'Update the /commands/ page.' );
 task( 'cmd-list', function( $app ) {
-	$wp = invoke_wp_cli( 'wp cli cmd-dump', $app );
+	$wp = invoke_wp_cli( 'wp --skip-packages cli cmd-dump', $app );
 
 	// generate main page
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );

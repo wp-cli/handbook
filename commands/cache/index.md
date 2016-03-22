@@ -14,6 +14,8 @@ display_global_parameters: true
 
     wp cache get my_key my_group
 
+
+
 ### SUBCOMMANDS
 
 <table>

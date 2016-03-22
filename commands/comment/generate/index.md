@@ -13,5 +13,8 @@ display_global_parameters: true
 [\--count=&lt;number&gt;]
 : How many comments to generate. Default: 100
 
+[\--post_id=&lt;post-id&gt;]
+: Assign comments to a specific post.
+
 
 

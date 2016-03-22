@@ -13,6 +13,8 @@ display_global_parameters: true
     # delete all spam comments.
     wp comment delete $(wp comment list --status=spam --format=ids)
 
+
+
 ### SUBCOMMANDS
 
 <table>

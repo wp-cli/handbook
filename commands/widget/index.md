@@ -22,6 +22,8 @@ display_global_parameters: true
     # Delete one or more widgets entirely
     wp widget delete calendar-2 archive-1
 
+
+
 ### SUBCOMMANDS
 
 <table>

@@ -79,7 +79,7 @@ will take about 15-20x longer when using --regex.
     wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
 
     # Turn your production database into a local database
-    wp search-replace --url=example.com example.com example.dev wp_\*_options
+    wp search-replace --url=example.com example.com example.dev 'wp_*_options'
 
     # Search/replace to a SQL file without transforming the database
     wp search-replace foo bar --export=database.sql

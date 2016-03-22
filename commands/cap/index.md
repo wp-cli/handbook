@@ -19,6 +19,8 @@ display_global_parameters: true
     # Remove all caps from 'editor' role that also appear in 'author' role
     wp cap list 'author' | xargs wp cap remove 'editor'
 
+
+
 ### SUBCOMMANDS
 
 <table>

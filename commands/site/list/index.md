@@ -23,7 +23,7 @@ display_global_parameters: true
 : Comma-separated list of fields to show.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, yaml. Default: table
 
 ### AVAILABLE FIELDS
 

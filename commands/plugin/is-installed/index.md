@@ -8,6 +8,8 @@ display_global_parameters: true
 
 <hr />
 
+Returns exit code 0 when installed, 1 when uninstalled.
+
 ### OPTIONS
 
 &lt;plugin&gt;
@@ -16,6 +18,7 @@ display_global_parameters: true
 ### EXAMPLES
 
     wp plugin is-installed hello
+    echo $? # displays 0 or 1
 
 
 

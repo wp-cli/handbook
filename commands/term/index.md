@@ -10,6 +10,8 @@ display_global_parameters: true
 
 
 
+
+
 ### SUBCOMMANDS
 
 <table>
@@ -39,6 +41,10 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/term/list/">list</a></td>
 			<td>List terms in a taxonomy.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/term/meta/">meta</a></td>
+			<td>Manage term custom fields.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/term/update/">update</a></td>

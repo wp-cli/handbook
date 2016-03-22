@@ -23,6 +23,8 @@ display_global_parameters: true
 
     wp option delete my_option
 
+
+
 ### SUBCOMMANDS
 
 <table>

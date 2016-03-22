@@ -17,7 +17,7 @@ display_global_parameters: true
 : The metadata key.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json. Default: table
+: Accepted values: table, json, yaml. Default: table
 
 
 

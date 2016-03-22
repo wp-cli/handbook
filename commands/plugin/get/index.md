@@ -20,7 +20,7 @@ display_global_parameters: true
 : Limit the output to specific fields. Defaults to all fields.
 
 [\--format=&lt;format&gt;]
-: Output list as table, json, CSV. Defaults to table.
+: Output list as table, json, CSV, yaml. Defaults to table.
 
 ### EXAMPLES
 

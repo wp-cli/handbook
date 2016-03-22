@@ -20,7 +20,7 @@ display_global_parameters: true
 : Get a specific subset of the user's fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv. Default: table
+: Accepted values: table, json, csv, yaml. Default: table
 
 ### EXAMPLES
 

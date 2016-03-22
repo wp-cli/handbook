@@ -9,7 +9,7 @@ display_global_parameters: true
 <hr />
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, ids. Default: table
+: Accepted values: table, csv, json, count, ids, yaml. Default: table
 
 ### AVAILABLE FIELDS
 

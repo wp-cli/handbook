@@ -22,6 +22,8 @@ display_global_parameters: true
     # Assign the 'primary-menu' menu to the 'primary' location
     wp menu location assign primary-menu primary
 
+
+
 ### SUBCOMMANDS
 
 <table>

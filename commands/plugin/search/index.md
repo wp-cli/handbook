@@ -13,6 +13,9 @@ display_global_parameters: true
 &lt;search&gt;
 : The string to search for.
 
+[\--page=&lt;page&gt;]
+: Optional page to display.  Defaults to 1.
+
 [\--per-page=&lt;per-page&gt;]
 : Optional number of results to display. Defaults to 10.
 
@@ -38,7 +41,7 @@ display_global_parameters: true
     **short_description**: Plugin's Short Description
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, yaml. Default: table
 
 ### EXAMPLES
 

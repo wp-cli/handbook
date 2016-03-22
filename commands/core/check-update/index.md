@@ -25,7 +25,7 @@ Lists the most recent versions when there are updates available, or success mess
 : Limit the output to specific object fields. Defaults to version,update_type,package_url.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json. Default: table
+: Accepted values: table, csv, json, yaml. Default: table
 
 
 
