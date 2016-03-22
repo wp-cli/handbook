@@ -6,7 +6,7 @@ display_global_parameters: true
 
 `wp cli check-update` - Check for update via Github API. Returns the available versions if there are updates, or empty if no update available.
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acheck-update+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli-check-update+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 

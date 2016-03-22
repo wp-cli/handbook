@@ -6,7 +6,7 @@ display_global_parameters: true
 
 `wp scaffold _s` - Generate starter code for a theme.
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3A_s+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold-_s+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 

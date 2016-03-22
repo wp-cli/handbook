@@ -6,7 +6,7 @@ display_global_parameters: true
 
 `wp cache replace` - Replace a value in the object cache, if the value already exists.
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Areplace+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache-replace+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 

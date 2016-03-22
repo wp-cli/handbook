@@ -6,7 +6,7 @@ display_global_parameters: true
 
 `wp cron event` - Manage WP-Cron events.
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aevent+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acron-event+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 

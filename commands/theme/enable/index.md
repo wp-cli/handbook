@@ -6,7 +6,7 @@ display_global_parameters: true
 
 `wp theme enable` - Enable a theme in a multisite install.
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aenable+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme-enable+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 

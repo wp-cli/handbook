@@ -6,7 +6,7 @@ display_global_parameters: true
 
 `wp comment exists` - Verify whether a comment exists.
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aexists+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acomment-exists+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 
