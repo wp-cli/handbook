@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp package` - Manage WP-CLI packages.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apackage+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 
@@ -33,6 +35,10 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/package/list/">list</a></td>
 			<td>List installed WP-CLI packages.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/package/path/">path</a></td>
+			<td>Get the path to an installed WP-CLI package, or the package directory.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/package/uninstall/">uninstall</a></td>

@@ -6,11 +6,15 @@ display_global_parameters: true
 
 `wp transient` - Manage transients.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atransient+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### EXAMPLES
 
     wp transient set my_key my_value 300
+
+
 
 ### SUBCOMMANDS
 

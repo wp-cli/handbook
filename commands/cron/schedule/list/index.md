@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp cron schedule list` - List available cron schedules.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acron-schedule-list+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
@@ -14,7 +16,7 @@ display_global_parameters: true
 : Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv, ids. Default: table.
+: Accepted values: table, json, csv, ids, yaml. Default: table.
 
 ### AVAILABLE FIELDS
 

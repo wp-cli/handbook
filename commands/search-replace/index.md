@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp search-replace` - Search/replace strings in the database.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asearch-replace+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### DESCRIPTION
@@ -79,7 +81,7 @@ will take about 15-20x longer when using --regex.
     wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
 
     # Turn your production database into a local database
-    wp search-replace --url=example.com example.com example.dev wp_\*_options
+    wp search-replace --url=example.com example.com example.dev 'wp_*_options'
 
     # Search/replace to a SQL file without transforming the database
     wp search-replace foo bar --export=database.sql

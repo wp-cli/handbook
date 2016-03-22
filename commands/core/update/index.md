@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp core update` - Update WordPress.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-update+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
@@ -14,7 +16,7 @@ display_global_parameters: true
 : Path to zip file to use, instead of downloading from wordpress.org.
 
 [\--minor]
-: Only perform updates for minor releases.
+: Only perform updates for minor releases (e.g. update from WP 4.3 to 4.3.3 instead of 4.4.2).
 
 [\--version=&lt;version&gt;]
 : Update to a specific version, instead of to the latest version.

@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp menu` - List, create, assign, and delete menus
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### EXAMPLES
@@ -21,6 +23,8 @@ display_global_parameters: true
 
     # Assign the 'primary-menu' menu to the 'primary' location
     wp menu location assign primary-menu primary
+
+
 
 ### SUBCOMMANDS
 

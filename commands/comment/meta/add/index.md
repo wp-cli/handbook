@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp comment meta add` - Add a meta field.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acomment-meta-add+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS

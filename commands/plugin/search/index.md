@@ -6,12 +6,17 @@ display_global_parameters: true
 
 `wp plugin search` - Search the wordpress.org plugin repository.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aplugin-search+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
 
 &lt;search&gt;
 : The string to search for.
+
+[\--page=&lt;page&gt;]
+: Optional page to display.  Defaults to 1.
 
 [\--per-page=&lt;per-page&gt;]
 : Optional number of results to display. Defaults to 10.
@@ -38,7 +43,7 @@ display_global_parameters: true
     **short_description**: Plugin's Short Description
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, yaml. Default: table
 
 ### EXAMPLES
 

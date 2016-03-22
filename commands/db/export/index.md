@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp db export` - Exports the database to a file or to STDOUT.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Adb-export+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS

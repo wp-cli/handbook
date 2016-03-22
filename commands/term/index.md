@@ -6,7 +6,11 @@ display_global_parameters: true
 
 `wp term` - Manage terms.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
+
+
 
 
 
@@ -39,6 +43,10 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/term/list/">list</a></td>
 			<td>List terms in a taxonomy.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/term/meta/">meta</a></td>
+			<td>Manage term custom fields.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/term/update/">update</a></td>

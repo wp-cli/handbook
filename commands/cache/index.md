@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp cache` - Manage the object cache.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### EXAMPLES
@@ -13,6 +15,8 @@ display_global_parameters: true
     wp cache set my_key my_value my_group 300
 
     wp cache get my_key my_group
+
+
 
 ### SUBCOMMANDS
 

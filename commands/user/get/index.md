@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp user get` - Get a single user.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-get+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
@@ -20,7 +22,7 @@ display_global_parameters: true
 : Get a specific subset of the user's fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv. Default: table
+: Accepted values: table, json, csv, yaml. Default: table
 
 ### EXAMPLES
 

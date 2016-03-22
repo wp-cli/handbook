@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp post term add` - Add a term. Appends to existing set of terms on the object.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-term-add+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 &lt;id&gt;

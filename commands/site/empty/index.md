@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp site empty` - Empty a site of its content (posts, comments, and terms).
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-empty+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS

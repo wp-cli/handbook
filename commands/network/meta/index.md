@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp network meta` - Manage network custom fields.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Anetwork-meta+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
@@ -20,6 +22,8 @@ display_global_parameters: true
 
     # get a list of super-admins
     wp network meta get 1 site_admins
+
+
 
 
 

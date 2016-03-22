@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp option` - Manage options.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aoption+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
@@ -22,6 +24,8 @@ display_global_parameters: true
     wp option update my_option '{"foo": "bar"}' --format=json
 
     wp option delete my_option
+
+
 
 ### SUBCOMMANDS
 

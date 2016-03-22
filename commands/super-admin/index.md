@@ -6,7 +6,11 @@ display_global_parameters: true
 
 `wp super-admin` - List, add, and remove super admins from a network.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asuper-admin+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
+
+
 
 
 

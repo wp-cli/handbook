@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp menu location` - Manage a menu's assignment to locations.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu-location+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### EXAMPLES
@@ -18,6 +20,8 @@ display_global_parameters: true
 
     # Remove the 'primary-menu' menu from the 'primary' location
     wp menu location remove primary-menu primary
+
+
 
 
 

@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp plugin list` - Get a list of plugins.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aplugin-list+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS
@@ -20,7 +22,7 @@ display_global_parameters: true
 : Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Accepted values: table, csv, json, count, yaml. Default: table
 
 ### AVAILABLE FIELDS
 

@@ -6,7 +6,11 @@ display_global_parameters: true
 
 `wp scaffold` - Generate code for post types, taxonomies, etc.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
+
+
 
 
 
@@ -27,10 +31,6 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/scaffold/child-theme/">child-theme</a></td>
 			<td>Generate empty child theme.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/scaffold/package-tests/">package-tests</a></td>
-			<td>Generate files needed for writing Behat tests for your command.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/scaffold/plugin/">plugin</a></td>

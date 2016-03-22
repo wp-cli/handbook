@@ -17,8 +17,12 @@ navigation:
   url: /commands/
 - text: Configuration
   url: /config/
+- text: Docs
+  url: /docs/
 - text: Blog
   url: /blog/
   layout: post
+- text: Packages
+  url: /package-index/
 - text: RESTful WP-CLI
   url: /restful/

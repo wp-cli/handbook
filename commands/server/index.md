@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp server` - Launch PHP's built-in web server for this specific WordPress installation.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aserver+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
