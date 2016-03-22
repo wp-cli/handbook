@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp comment status` - Get status of a comment.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Astatus+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 ### OPTIONS

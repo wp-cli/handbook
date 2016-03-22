@@ -6,6 +6,8 @@ display_global_parameters: true
 
 `wp widget add` - Add a widget to a sidebar.
 
+<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aadd+sort%3Aupdated-desc">Github issues</a></small>
+
 <hr />
 
 &lt;name&gt;
