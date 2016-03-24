@@ -27,6 +27,16 @@ Run a WP-CLI command in a new process reusing the current runtime arguments.
 </div>
 
 
+***
+
+### Notes
+
+Note: While this command does persist a limited set of runtime arguments,
+it *does not* persist environment variables. Practically speaking, WP-CLI
+packages won't be loaded when using WP_CLI::launch_self() because the
+launched process doesn't have access to the current process $HOME.
+
+
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 
 
@@ -39,6 +49,9 @@ Run a WP-CLI command in a new process reusing the current runtime arguments.
 
 
 <li><strong><a href="/docs/internal-api/wp-cli-launch/">WP_CLI::launch()</a></strong> - Launch an arbitrary external process that takes over I/O.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-run-command/">WP_CLI::run_command()</a></strong> - Run a given command within the current process using the same global</li>
 
 
 
