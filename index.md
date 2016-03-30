@@ -54,7 +54,7 @@ If you're using MAMP, you will probably get a MySQL error, because the `php` fou
 More resources:
 
 * [Getting Started with WP-CLI](https://trepmal.com/2014/02/22/getting-started-with-wp-cli/) (includes video)
-* [Alternative Install Methods](/docs/alternative-install-methods)
+* [Alternative Installation Methods](/docs/installing/#alternative-installation-methods)
 
 <h3 id="complete">Tab completions</h3>
 
