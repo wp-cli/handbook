@@ -26,43 +26,43 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/db/cli/">cli</a></td>
-			<td>Open a mysql console using the WordPress credentials.</td>
+			<td>Open a MySQL console using credentials from wp-config.php</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/create/">create</a></td>
-			<td>Create the database, as specified in wp-config.php</td>
+			<td>Create the database in MySQL.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/drop/">drop</a></td>
-			<td>Delete the database.</td>
+			<td>Delete the database in MySQL.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/export/">export</a></td>
-			<td>Exports the database to a file or to STDOUT.</td>
+			<td>Exports the MySQL database to a file or to STDOUT.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/import/">import</a></td>
-			<td>Import database from a file or from STDIN.</td>
+			<td>Import a MySQL database from a file or from STDIN.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/optimize/">optimize</a></td>
-			<td>Optimize the database.</td>
+			<td>Optimize the database in MySQL.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/query/">query</a></td>
-			<td>Execute a query against the database.</td>
+			<td>Execute a MySQL query against the database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/repair/">repair</a></td>
-			<td>Repair the database.</td>
+			<td>Repair the database in MySQL.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/reset/">reset</a></td>
-			<td>Remove all tables from the database.</td>
+			<td>Remove all tables from the database in MySQL.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/tables/">tables</a></td>
-			<td>List the database tables.</td>
+			<td>List the MySQL database tables.</td>
 		</tr>
 	</tbody>
 </table>
