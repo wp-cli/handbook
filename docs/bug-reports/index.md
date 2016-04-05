@@ -29,11 +29,13 @@ Also, because WP-CLI is a tool whose behavior is different from system to system
     # Which version of PHP are you using?
     which -a php
     php -v
-    # Are you running suhosin?
+    # Are you running suhosin? If so, make sure you've added `suhosin.executor.include.whitelist = phar` to your php.ini
     php -m | grep -i suhosin
     # Which version of WordPress are you using?
     grep '^\$wp_version\s' wp-includes/version.php
     # Can you share the results of which wp ?
     which -a wp
     stat $(which wp)
+    # Are you running any packages? If one is causing a problem, you can use `--skip-packages` to skip loading them
+    wp package list
 
