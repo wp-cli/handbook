@@ -14,7 +14,7 @@ Make a HTTP request to a remote URL.
 
 ### Usage
 
-    WP_CLI\Utils\http_request( $method, $url, $data = array(), $headers = array(), $options = array() )
+    WP_CLI\Utils\http_request( $method, $url, $data = null, $headers = array(), $options = array() )
 
 <div>
 <strong>$method</strong> (string) HTTP method (GET, POST, DELETE, etc.)<br />

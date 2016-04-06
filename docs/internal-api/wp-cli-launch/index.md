@@ -14,7 +14,7 @@ Launch an arbitrary external process that takes over I/O.
 
 ### Usage
 
-    WP_CLI::launch( $command, $exit_on_error = true, $return_detailed = array() )
+    WP_CLI::launch( $command, $exit_on_error = true, $return_detailed = false )
 
 <div>
 <strong>$command</strong> (string) External process to launch.<br />

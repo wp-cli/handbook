@@ -54,25 +54,18 @@ function get_simple_representation( $reflection ) {
 		$parameter_signature = '$' . $parameter->getName();
 		if ( $parameter->isOptional() ) {
 			$default_value = $parameter->getDefaultValue();
-			switch ( $default_value ) {
-				case array():
-					$parameter_signature .= ' = array()';
-					break;
-				case '':
-					$parameter_signature .= " = ''";
-					break;
-				case null:
-					$parameter_signature .= ' = null';
-					break;
-				case true:
-					$parameter_signature .= ' = true';
-					break;
-				case false:
-					$parameter_signature .= ' = false';
-					break;
-				default:
-					$parameter_signature .= ' = ' . $default_value;
-					break;
+			if ( false === $default_value ) {
+				$parameter_signature .= ' = false';
+			} else if ( array() === $default_value ) {
+				$parameter_signature .= ' = array()';
+			} else if ( '' === $default_value ) {
+				$parameter_signature .= " = ''";
+			} else if ( null === $default_value ) {
+				$parameter_signature .= ' = null';
+			} else if ( true === $default_value ) {
+				$parameter_signature .= ' = true';
+			} else {
+				$parameter_signature .= ' = ' . $default_value;
 			}
 		}
 		$parameters[] = $parameter_signature;
