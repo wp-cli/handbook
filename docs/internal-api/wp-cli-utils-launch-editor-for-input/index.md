@@ -1,24 +1,24 @@
 ---
 layout: default
-title: WP_CLI::read_value()
-description: Read a value, from various formats.
+title: WP_CLI\Utils\launch_editor_for_input()
+description: Launch system's $EDITOR for the user to edit some text.
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
 
-## WP_CLI::read_value()
+## WP_CLI\Utils\launch_editor_for_input()
 
-Read a value, from various formats.
+Launch system's $EDITOR for the user to edit some text.
 
 ***
 
 ### Usage
 
-    WP_CLI::read_value( $raw_value, $assoc_args = array() )
+    WP_CLI\Utils\launch_editor_for_input( $input, $filename = WP-CLI )
 
 <div>
-<strong>$value</strong> (mixed) <br />
-<strong>$assoc_args</strong> (array) <br />
+<strong>string</strong> () $content  Some form of text to edit (e.g. post content)<br />
+<strong>@return</strong> (string|bool) text, if file is saved from editor; false, if no change to file.<br /></p>
 </div>
 
 
@@ -33,13 +33,13 @@ Read a value, from various formats.
 
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-utils-launch-editor-for-input/">WP_CLI\Utils\launch_editor_for_input()</a></strong> - Launch system's $EDITOR for the user to edit some text.</li>
-
-
 <li><strong><a href="/docs/internal-api/wp-cli-utils-get-flag-value/">WP_CLI\Utils\get_flag_value()</a></strong> - Return the flag value or, if it's not set, the $default value.</li>
 
 
 <li><strong><a href="/docs/internal-api/wp-cli-confirm/">WP_CLI::confirm()</a></strong> - Ask for confirmation before running a destructive operation.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-read-value/">WP_CLI::read_value()</a></strong> - Read a value, from various formats.</li>
 
 
 
