@@ -7,7 +7,7 @@ description: Help ensure your issue is resolved in a timely manner.
 
 Think you've found a bug? We'd love for you to help us get it fixed.
 
-Before you create a new issue, you should [search existing issues](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue+bug) to see if there's an existing resolution to it. Once you've searched and discovered there isn't an open issue for your bug, please [create a new Github issue](https://github.com/wp-cli/wp-cli/issues/new) with:
+Before you create a new issue, you should [search existing issues](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue+bug) to see if there's an existing resolution to it — or if it's already been fixed in a newer version of WP-CLI. Once you've searched and discovered there isn't an open or fixed issue for your bug, please [create a new Github issue](https://github.com/wp-cli/wp-cli/issues/new) with:
 
 * What you were doing.
 * What you expected to see.
