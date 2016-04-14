@@ -12,9 +12,9 @@ Before we proceed: most of the, if not all, RESTful WP-CLI features have require
 
 ### Use `--debug` and `--debug=rest` to profile your REST endpoints
 
-REST APIs are all about speed. Milliseconds do matter, and every one you manage to shave off will have a real world impact on the user experience.
+REST APIs are all about speed. Milliseconds matter, and every one you manage to shave off will have a real world impact on user experience.
 
-To make it much, much easier to understand how many queries your endpoint is performing, and how long they take, I've added some lightweight profiling to wp-rest-cli.
+To make it *much*, much easier to understand how many queries your endpoint is performing, and how long they take, I've added some lightweight profiling to RESTful WP-CLI.
 
 Use `--debug` to get a summary of your queries for any command.
 
