@@ -8,7 +8,7 @@ Let me just say — Thursday, February 4th was [pretty darn demoralizing](https:
 
 But, I'm back in the saddle. Because I'm 2/3 of the way through one of those fancy WP REST API + React WordPress applications, I'm running into dozens of ways I want to be able to make WordPress more efficiently. And of course, this means doing it on the command line.
 
-Before we proceed: most of the, if not all, RESTful WP-CLI features have required under the hood changes to WP-CLI. You'll want to `wp cli update --nightly` to play with this new functionality locally.
+Before we proceed: most of the, if not all, RESTful WP-CLI features have required under the hood changes to WP-CLI. You'll want to `wp cli update --nightly` to play with this new functionality locally. Once you've done so, you can `wp package install danielbachhuber/wp-rest-cli` to install the latest.
 
 ### Use `--debug` and `--debug=rest` to profile your REST endpoints
 
@@ -74,7 +74,7 @@ Profiling works for any CRUD operation.
     Debug (rest): REST command executed 31 queries in 0.023309 seconds. Use --debug=rest to see all queries. (1.634s)
     Success: Updated post.
 
-Hopefully this feature becomes an invaluable part of your REST endpoint development process, as it has mine.
+Hopefully this feature becomes an invaluable part of your REST endpoint development process, as it has mine. Hit me with feedback on [its Github issue](https://github.com/danielbachhuber/wp-rest-cli/issues/42).
 
 ### Use `wp rest * edit` to edit a resource in your system editor
 
@@ -82,7 +82,7 @@ Most people probably don't know this, but you can use `wp post edit <id>` to edi
 
     $ wp rest post edit 3 --user=daniel
 
-Using `wp rest * edit` fetches the resource and transforms it into a YAML document:
+When you run `wp rest * edit`, RESTful WP-CLI fetches the resource, transforms it into a YAML document, and puts it in your system editor:
 
     ---
     date: 2016-04-14T14:02:57
@@ -123,11 +123,11 @@ Et, voila.
 
 ### Get involved!
 
-I have dozens of ideas for a more RESTful WP-CLI:
+I'd love your input on the dozens of ideas I have for a more RESTful WP-CLI:
 
 * Render the help docs in formats like API Blueprint and Swagger [[#36](https://github.com/danielbachhuber/wp-rest-cli/issues/36)]
 * Introduce `wp rest * generate` to generate mock data in the format your application expects.
 * Introduce `wp rest * diff` to be able to diff the state of two different WordPresses, a la [Dictator](https://github.com/danielbachhuber/dictator).
 * Figure out an elegant aliases implementation, so `--http=http://daniel:daniel@wordpress-develop.dev` becomes `@wpdev` [[#2039](https://github.com/wp-cli/wp-cli/issues/2039)]
 
-And I want to hear your ideas too! As well as any feedback, questions, or violent dissent. [Get involved on Github](https://github.com/danielbachhuber/wp-rest-cli/issues).
+And I want to hear your ideas too! As well as any feedback, questions, or violent dissent. [Let's chat on Github](https://github.com/danielbachhuber/wp-rest-cli/issues).
