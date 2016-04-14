@@ -5,7 +5,7 @@ title: A more RESTful WP-CLI
 
 ## A more RESTful WP-CLI
 
-*Landing page last updated: 4 February, 2016*
+*Landing page last updated: April 14, 2016*
 
 WP-CLI's mission is to be, quantitatively, the *fastest* interface for developers to manage WordPress. "A more RESTful WP-CLI" is a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. This funding supports 283 hours of [Daniel Bachhuber](http://danielbachhuber.com/)'s time towards making improvements to WP-CLI and the WP REST API.
 
@@ -21,33 +21,36 @@ Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#s
 
 Blog posts:
 
-* [RESTful WP-CLI - No rest for the weary](/blog/restful-wp-cli-update-2.html) - 4 February, 2016
-* [RESTful WP-CLI - The journey begins](/blog/restful-wp-cli-update-1.html) - 12 January, 2016
+* [RESTful WP-CLI - No rest for the weary](/blog/restful-wp-cli-update-2.html) - February 4, 2016
+* [RESTful WP-CLI - The journey begins](/blog/restful-wp-cli-update-1.html) - January 12, 2016
 
 Releases:
 
-* [WP REST API Version 2.0 Beta 10 "Chief Wiggum"](https://make.wordpress.org/core/2016/01/11/wp-rest-api-version-2-0-beta-10-with-security-releases/) - 11 January, 2016
-* [WP-CLI Version 0.22.0 released](/blog/version-0.22.0.html) - 7 January, 2016
+* [WP REST API Version 2.0 Beta 13 "yoink.adios\losers"](https://make.wordpress.org/core/2016/04/04/wp-rest-api-2-0-beta-13-roadmap/) - April 3, 2016
+* [WP-CLI Version 0.23.0 released](/blog/version-0.23.0.html) - March 22, 2016
+* [WP REST API Version 2.0 Beta 12 "Canyonero"](https://make.wordpress.org/core/2016/02/09/wp-rest-api-version-2-0-beta-12/) - February 9, 2016
+* [WP REST API Version 2.0 Beta 10 "Chief Wiggum"](https://make.wordpress.org/core/2016/01/11/wp-rest-api-version-2-0-beta-10-with-security-releases/) - January 11, 2016
+* [WP-CLI Version 0.22.0 released](/blog/version-0.22.0.html) - January 7, 2016
 
 Presentations:
 
-* [Unlocking the potential of the WP REST API at the command line](http://blog.handbuilt.co/2016/01/28/feelingrestful-a-more-restful-wp-cli/) - A Day of REST (28 January, 2016)
+* [Unlocking the potential of the WP REST API at the command line](http://blog.handbuilt.co/2016/01/28/feelingrestful-a-more-restful-wp-cli/) - A Day of REST (January 28, 2016)
 
 ***
 
 ## Budget
 
-Here's a breakdown of how the project's 283 total hours have been used (between January 1st and March 14th, 2016):
+Here's a breakdown of how the project's 283 total hours have been used (between January 1st and April 14th, 2016):
 
 | Activity      | WP-CLI                     | WP-API                    |
 |---------------|----------------------------|---------------------------|
-| Development   | 57.58                      | 67.95                     |
-| Support       | 9.69                       | 15.39                     |
-| Documentation | 20.53                      | 1.17                      |
-| Blogging      | 7.70                       | 0                         |
+| Development   | 65.46                      | 67.95                     |
+| Support       | 10.91                      | 15.39                     |
+| Documentation | 24.96                      | 1.17                      |
+| Blogging      | 12.51                      | 0                         |
 | Meetings      | 0                          | 7.91                      |
 | Admin         | 0.77                       | 0                         |
-| **Total**     | 96.27 (of 150.58 budgeted) | 92.42 (of 92.42 budgeted) |
+| **Total**     | 114.61 (of 150.58 budgeted)| 92.42 (of 92.42 budgeted) |
 
 Note: time spent fulfilling the Kickstarter rewards is tracked separately.
 
