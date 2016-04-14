@@ -126,8 +126,8 @@ Et, voila.
 I'd love your input on the dozens of ideas I have for a more RESTful WP-CLI:
 
 * Render the help docs in formats like API Blueprint and Swagger [[#36](https://github.com/danielbachhuber/wp-rest-cli/issues/36)]
-* Introduce `wp rest * generate` to generate mock data in the format your application expects.
-* Introduce `wp rest * diff` to be able to diff the state of two different WordPresses, a la [Dictator](https://github.com/danielbachhuber/dictator).
+* Introduce `wp rest * generate` to generate mock data in the format your application expects [[#55](https://github.com/danielbachhuber/wp-rest-cli/issues/55)].
+* Introduce `wp rest * diff` to be able to diff the state of two different WordPresses, a la [Dictator](https://github.com/danielbachhuber/dictator) [[#56](https://github.com/danielbachhuber/wp-rest-cli/issues/56)].
 * Figure out an elegant aliases implementation, so `--http=http://daniel:daniel@wordpress-develop.dev` becomes `@wpdev` [[#2039](https://github.com/wp-cli/wp-cli/issues/2039)]
 
 And I want to hear your ideas too! As well as any feedback, questions, or violent dissent. [Let's chat on Github](https://github.com/danielbachhuber/wp-rest-cli/issues).
