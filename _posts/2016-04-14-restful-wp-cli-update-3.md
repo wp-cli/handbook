@@ -8,7 +8,7 @@ Let me just say — Thursday, February 4th was [pretty darn demoralizing](https:
 
 But! I'm back in the saddle. I'm about 2/3 of the way through one of those fancy WP REST API + React WordPress applications, so I'm running into dozens of ways I want to be able to do things more efficiently at the command line.
 
-Note: most of the, if not all, RESTful WP-CLI features have required under the hood changes to WP-CLI. You'll want to `wp cli update --nightly` to play with this new functionality locally.
+Before we proceed: most of the, if not all, RESTful WP-CLI features have required under the hood changes to WP-CLI. You'll want to `wp cli update --nightly` to play with this new functionality locally.
 
 ### Use `--debug` and `--debug=rest` to profile your REST endpoints
 
@@ -123,6 +123,11 @@ Et, voila.
 
 ### Get involved!
 
-I have dozens of ideas for a more RESTful WP-CLI, and would love for your feedback, questions, and discussion:
+I have dozens of ideas for a more RESTful WP-CLI:
 
 * Render the help docs in formats like API Blueprint and Swagger [[#36](https://github.com/danielbachhuber/wp-rest-cli/issues/36)]
+* Introduce `wp rest * generate` to generate mock data in the format your application expects.
+* Introduce `wp rest * diff` to be able to diff the state of two different WordPresses, a la [Dictator](https://github.com/danielbachhuber/dictator).
+* Figure out an elegant aliases implementation, so `--http=http://daniel:daniel@wordpress-develop.dev` becomes `@wpdev` [[#2039](https://github.com/wp-cli/wp-cli/issues/2039)]
+
+And I want to hear your ideas too! As well as any feedback, questions, or violent dissent. [Get involved on Github](https://github.com/danielbachhuber/wp-rest-cli/issues).
