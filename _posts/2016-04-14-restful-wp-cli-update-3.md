@@ -6,7 +6,7 @@ title: RESTful WP-CLI - What I've been hacking on
 
 Let me just say — Thursday, February 4th was [pretty darn demoralizing](https://twitter.com/Krogsgard/status/695634320401285121). I spent a huge amount of time in January towards the WP REST API in preparation for what I wanted to do on the command line, and a lot of momentum / inspiration / general good feelings were destroyed in that meeting. As such, I spent much of February and March working on WP-CLI features unrelated to the WP REST API (e.g. [package management](http://wp-cli.org/commands/package/)).
 
-But! I'm back in the saddle. I'm about 2/3 of the way through one of those fancy WP REST API + React WordPress applications, so I'm running into dozens of ways I want to be able to do things more efficiently at the command line.
+But, I'm back in the saddle. Because I'm 2/3 of the way through one of those fancy WP REST API + React WordPress applications, I'm running into dozens of ways I want to be able to make WordPress more efficiently. And of course, this means doing it on the command line.
 
 Before we proceed: most of the, if not all, RESTful WP-CLI features have required under the hood changes to WP-CLI. You'll want to `wp cli update --nightly` to play with this new functionality locally.
 
