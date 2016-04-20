@@ -80,6 +80,7 @@ If you implement a WP-CLI command in one of your plugins, please list it here.
 * [wplib](https://github.com/szepeviktor/wplib) - shell scripts for managing multiple sites
 * [wpcli helpers](https://github.com/kartonnade/wp_cli_helpers) - a bundle of time saver aliases and functions for the shell
 * [cPanel-wp-management](https://github.com/MarioKnight/cPanel-wp-management) - shell scripts designed to loop through all accounts on cPanel servers
+* [Plesk WordPress Toolkit](https://www.plesk.com/features-automation/wordpress-toolkit/) - WordPress installations management UI backed by WP-CLI
 
 ## Editor plugins
 
