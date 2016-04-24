@@ -21,6 +21,8 @@ It's more helpful to give as much detail as you can:
 
 > When I run `wp post list`, I see a fatal error about a class being undefined. I expected to see the list of posts.
 
+If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --debug`), you may get more verbosity into the source of the error.
+
 Your bug may also be environment-specific. Because WP-CLI is a tool whose behavior is different from system to system, it never hurts to include some environmental details in your issue if you think they're relevant.
 
     # What is your system?
