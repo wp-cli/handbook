@@ -152,8 +152,6 @@ Add `c:\wp-cli` to your path:
 
     setx path "%path%;c:\wp-cli"
 
-Rename `wp-cli.phar` to `wp` 
-
 You can now use WP-CLI from anywhere in Windows command line.
 
 ### Installing via .deb package
