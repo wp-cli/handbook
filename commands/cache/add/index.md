@@ -12,6 +12,8 @@ display_global_parameters: true
 
 If a value already exists for the key, the value isn't added.
 
+### OPTIONS
+
 &lt;key&gt;
 : Cache key.
 

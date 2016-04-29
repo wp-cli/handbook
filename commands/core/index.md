@@ -38,7 +38,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/core/install/">install</a></td>
-			<td>Create the WordPress tables in the database.</td>
+			<td>Runs the standard WordPress installation process.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/is-installed/">is-installed</a></td>

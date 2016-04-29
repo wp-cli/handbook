@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 [\--format=&lt;format&gt;]
 : Accepted values: table, csv, json, count, ids, yaml. Default: table
 

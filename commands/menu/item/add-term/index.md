@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;menu&gt;
 : The name, slug, or term ID for the menu
 

@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;php-code&gt;
 : The code to execute, as a string.
 

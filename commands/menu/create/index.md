@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;menu-name&gt;
 : A descriptive name for the menu
 

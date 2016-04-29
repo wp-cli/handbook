@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;db-id&gt;...
 : Database ID for the menu item(s).
 
