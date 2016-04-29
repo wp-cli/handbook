@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;id&gt;...
 : IDs for one or more posts to update.
 
