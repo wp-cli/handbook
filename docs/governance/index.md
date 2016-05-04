@@ -12,6 +12,7 @@ description: Summary of those behind WP-CLI.
 * [wp-cli](https://github.com/wp-cli) github organization
 * [wpcli](https://twitter.com/wpcli) twitter account
 * [wp-cli-commits](https://groups.google.com/forum/?fromgroups#!forum/wp-cli-commits) mailing list
+* [Cloudflare](https://www.cloudflare.com/) CDN account
 
 ### Who controls the wp-cli.org site?
 
