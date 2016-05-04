@@ -56,6 +56,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | p2p                   | [Posts 2 Posts](http://wordpress.org/plugins/posts-to-posts/)
 | pdf-light-viewer      | [PDF Light Viewer](https://github.com/antongorodezkiy/pdf-light-viewer)
 | post-gen              | [Post Gen](https://github.com/trepmal/post-gen/)
+| rest-api-toolbox      | [REST API Toolbox](https://github.com/petenelson/wp-rest-api-toolbox)
 | revisions             | [wp-revisions-cli](https://github.com/trepmal/wp-revisions-cli/)
 | revision-strike       | [Revision Strike](https://wordpress.org/plugins/revision-strike/)
 | safe-redirect-manager | [Safe Redirect Manager](https://github.com/tlovett1/Safe-Redirect-Manager)
