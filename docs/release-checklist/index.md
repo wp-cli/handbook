@@ -3,9 +3,14 @@ layout: doc
 title: Release checklist
 description: Tasks performed during the process of tagging a release.
 category: Contributing
+quick_links:
+  - Major/minor releases
+  - Patch releases
 ---
 
 This page describes the list of activities that developers must perform to produce a new release of WP-CLI.
+
+## Major/minor releases
 
 ### Updating WP-CLI
 
@@ -57,3 +62,31 @@ See <https://github.com/wp-cli/wp-cli.github.com#readme>
 ### Writing the release post
 
 Use `./utils/contrib-list -l` to generate the list of contributors.
+
+## Patch releases
+
+Creating a patch release (e.g. 0.23.x) is bit different of a process than creating a major or minor release. At a high-level, here are the steps involved:
+
+1) Create a new release branch from the last tagged patch release:
+
+    $ git checkout v0.23.0
+    Note: checking out 'v0.23.0'
+    You are in 'detached HEAD' state. You can look around, make experimental
+    changes and commit them, and you can discard any commits you make in this
+    state without impacting any branches by performing another checkout.
+    $ git checkout -b release-0-23-1
+    Switched to a new branch 'release-0-23-1'
+
+2) Cherry-pick existing commits to the new release branch.
+
+Because patch releases should just be used for bug fixes, you should first fix the bug on master, and then cherry-pick the fix to the release branch. It's up to your discretion as to whether you cherry-pick the commits directly to the release branch *or* create a feature branch and pull request against the release branch.
+
+3) Update `VERSION` on the release branch to the new release version.
+
+4) **PROCEED WITH EXTREME CAUTION**. While the normal release process yields a built, fully-tested Phar file, the patch release process does not because the build system only pushes the Phar file on the master branch. As such, you need to manually build the Phar file for distribution.
+
+    php -dphar.readonly=0 utils/make-phar.php wp-cli.phar --quiet
+
+When you do so, make sure you're using the appropriate Composer dependency versions for the release, not the master branch you normally work from. Once you've verified the built Phar, you'll need to copy it over to the builds repo.
+
+5) Follow all of the other relevant release steps.
