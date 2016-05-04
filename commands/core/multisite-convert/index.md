@@ -10,6 +10,9 @@ display_global_parameters: true
 
 <hr />
 
+For those using WordPress with Apache, remember to update the `.htaccess`
+file with the appropriate multisite rewrite rules.
+
 ### OPTIONS
 
 [\--title=&lt;network-title&gt;]
