@@ -20,6 +20,7 @@ Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#s
 ## Achievements
 
 Blog posts:
+
 * [RESTful WP-CLI - What I've been hacking on](/blog/restful-wp-cli-update-3.html) - April 14, 2016
 * [RESTful WP-CLI - No rest for the weary](/blog/restful-wp-cli-update-2.html) - February 4, 2016
 * [RESTful WP-CLI - The journey begins](/blog/restful-wp-cli-update-1.html) - January 12, 2016
