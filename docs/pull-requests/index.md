@@ -84,6 +84,13 @@ To run the unit tests, just execute:
 
     ./vendor/bin/phpunit
 
+
+## Abandoned pull requests
+
+We'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
+
+If you need to step away for any reason, make a comment on the pull request or the related issue so we can pick things up or put things on hold when needed.
+
 ## Finally...
 
 Thanks! Hacking on WP-CLI should be fun. If you find any of this hard to figure out, let us know so we can improve our process or documentation!
