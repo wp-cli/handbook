@@ -22,6 +22,7 @@ In alphabetical order:
 * [LiquidWeb](https://liquidweb.com/wordpress)
 * [Kinsta](https://kinsta.com)
 * [Media Temple](http://mediatemple.net)
+* [Monarobase](https://monarobase.net/wordpress)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 * [Pantheon](https://pantheon.io)
 * [Site5](http://www.site5.com/)
