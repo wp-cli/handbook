@@ -2,6 +2,7 @@ safe: true
 lsi: false
 highlighter: rouge
 markdown: kramdown
+gems: [jekyll-paginate]
 url: http://wp-cli.org
 permalink: /blog/:title.html
 paginate: 10
