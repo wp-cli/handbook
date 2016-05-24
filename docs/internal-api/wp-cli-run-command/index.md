@@ -1,7 +1,7 @@
 ---
 layout: default
 title: WP_CLI::run_command()
-description: Run a given command within the current process using the same global
+description: "Run a given command within the current process using the same global"
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: WP_CLI::error_multi_line()
-description: Display a multi-line error message in a red box. Doesn't exit script.
+description: "Display a multi-line error message in a red box. Doesn't exit script."
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output

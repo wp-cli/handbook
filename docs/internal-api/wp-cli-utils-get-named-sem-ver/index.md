@@ -1,7 +1,7 @@
 ---
 layout: default
 title: WP_CLI\Utils\get_named_sem_ver()
-description: Compare two version strings to get the named semantic version.
+description: "Compare two version strings to get the named semantic version."
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc
