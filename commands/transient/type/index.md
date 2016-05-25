@@ -10,7 +10,10 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    $ wp transient type
+    Transients are saved to the wp_options table.
 
 
 

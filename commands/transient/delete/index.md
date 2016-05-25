@@ -16,5 +16,10 @@ display_global_parameters: true
 [\--network]
 : Delete the value of a network transient, instead of that on a single site.
 
+### EXAMPLES
+
+    $ wp transient delete sample_key
+    Success: Transient deleted.
+
 
 

@@ -16,5 +16,13 @@ display_global_parameters: true
 [\--format=&lt;format&gt;]
 : Get value as var_export() or JSON. Default: var_export()
 
+### EXAMPLES
+
+    $ wp option get home
+    http://example.com
+
+    $ wp option get active_plugins --format=json
+    {"0":"dynamically-dynamic-sidebar\/dynamically-dynamic-sidebar.php","1":"monster-widget\/monster-widget.php","2":"show-current-template\/show-current-template.php","3":"theme-check\/theme-check.php","5":"wordpress-importer\/wordpress-importer.php"}
+
 
 

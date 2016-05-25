@@ -21,7 +21,8 @@ Will exit with status 0 if the role exists, 1 if it does not.
 
 ### EXAMPLES
 
-    wp role exists editor
+    $ wp role exists editor
+    Success: Role with ID editor exists.
 
 
 

@@ -10,7 +10,32 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    # List roles
+    $ wp role list --fields=role --format=csv
+    role
+    administrator
+    editor
+    author
+    contributor
+    subscriber
+
+    # Check if a role exists
+    $ wp role exists editor
+    Success: Role with ID editor exists.
+
+    # Create role
+    $ wp role create approver Approver
+    Success: Role with key approver created.
+
+    # Delete role
+    $ wp role delete approver
+    Success: Role with key approver deleted.
+
+    # Reset role
+    $ wp role reset administrator author contributor
+    Success: Reset 3/3 roles
 
 
 

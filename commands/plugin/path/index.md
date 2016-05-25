@@ -22,7 +22,8 @@ plugin file.
 
 ### EXAMPLES
 
-    cd $(wp plugin path)
+    $ cd $(wp plugin path) &amp;&amp; pwd
+    /var/www/wordpress/wp-content/plugins
 
 
 

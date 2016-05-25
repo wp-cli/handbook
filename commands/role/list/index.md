@@ -29,7 +29,13 @@ There are no optional fields.
 
 ### EXAMPLES
 
-    wp role list --fields=role --format=csv
+    $ wp role list --fields=role --format=csv
+    role
+    administrator
+    editor
+    author
+    contributor
+    subscriber
 
 
 

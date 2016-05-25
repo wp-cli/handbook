@@ -21,9 +21,13 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp widget move recent-comments-2 --position=2
+    # Change position of widget
+    $ wp widget move recent-comments-2 --position=2
+    Success: Widget moved.
 
-    wp widget move recent-comments-2 --sidebar-id=wp_inactive_widgets
+    # Move widget to Inactive Widgets
+    $ wp widget move recent-comments-2 --sidebar-id=wp_inactive_widgets
+    Success: Widget moved.
 
 
 

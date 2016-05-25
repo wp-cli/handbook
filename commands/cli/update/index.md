@@ -27,5 +27,13 @@ display_global_parameters: true
 [\--yes]
 : Do not prompt for confirmation
 
+### EXAMPLES
+
+    $ wp cli update
+    You have version 0.23.0. Would you like to update to 0.23.1? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.23.1/wp-cli-0.23.1.phar...
+    New version works. Proceeding to replace.
+    Success: Updated WP-CLI to 0.23.1
+
 
 

@@ -24,7 +24,8 @@ will be run.
 
 ### EXAMPLES
 
-    wp plugin uninstall hello
+    $ wp plugin uninstall hello
+    Success: Uninstalled and deleted 'hello' plugin.
 
 
 

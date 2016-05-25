@@ -18,5 +18,11 @@ display_global_parameters: true
 &lt;cap&gt;...
 : One or more capabilities to remove.
 
+### EXAMPLES
+
+    # Remove 'spectate' capability from 'author' role
+    $ wp cap remove author spectate
+    Success: Removed 1 capabilities from 'author' role.
+
 
 

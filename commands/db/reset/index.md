@@ -19,5 +19,10 @@ specified in wp-config.php.
 [\--yes]
 : Answer yes to the confirmation message.
 
+### EXAMPLES
+
+    $ wp db reset --yes
+    Success: Database reset.
+
 
 

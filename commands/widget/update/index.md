@@ -18,7 +18,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp widget update calendar-1 --title="Calendar"
+    $ wp widget update calendar-1 --title="Our Calendar"
+    Success: Widget updated.
 
 
 

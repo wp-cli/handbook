@@ -24,7 +24,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp widget add calendar sidebar-1 2 --title="Calendar"
+    $ wp widget add calendar sidebar-1 2 --title="Calendar"
+    Success: Added widget to sidebar.
 
 
 
