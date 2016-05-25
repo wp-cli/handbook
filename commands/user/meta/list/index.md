@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;id&gt;
 : ID for the object.
 

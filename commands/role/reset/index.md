@@ -20,9 +20,13 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp role reset administrator author contributor
+    # Reset role
+    $ wp role reset administrator author contributor
+    Success: Reset 1/3 roles
 
-    wp role reset --all
+    # Reset all default roles
+    $ wp role reset --all
+    Success: All default roles reset.
 
 
 

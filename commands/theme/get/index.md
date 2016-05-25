@@ -26,7 +26,14 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp theme get twentytwelve --format=json
+    $ wp theme get twentysixteen --fields=name,title,version
+    +---------+----------------+
+    | Field   | Value          |
+    +---------+----------------+
+    | name    | Twenty Sixteen |
+    | title   | Twenty Sixteen |
+    | version | 1.2            |
+    +---------+----------------+
 
 
 

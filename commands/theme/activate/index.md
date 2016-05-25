@@ -15,5 +15,10 @@ display_global_parameters: true
 &lt;theme&gt;
 : The theme to activate.
 
+### EXAMPLES
+
+    $ wp theme activate twentysixteen
+    Success: Switched to 'Twenty Sixteen' theme.
+
 
 

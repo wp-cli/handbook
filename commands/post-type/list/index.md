@@ -41,7 +41,7 @@ There are no optionally available fields.
 
     wp post-type list --format=csv
 
-    wp post-type list --object-type=post --fields=name,public
+    wp post-type list --capability_type=post --fields=name,public
 
 
 

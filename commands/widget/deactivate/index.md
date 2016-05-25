@@ -15,7 +15,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp widget deactivate recent-comments-2
+    $ wp widget deactivate recent-comments-2
+    Success: Widget(s) deactivated
 
 
 

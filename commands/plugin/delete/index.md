@@ -17,10 +17,12 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp plugin delete hello
+    $ wp plugin delete hello
+    Success: Deleted 'hello' plugin.
 
     # Delete inactive plugins
-    wp plugin delete $(wp plugin list --status=inactive --field=name)
+    $ wp plugin delete $(wp plugin list --status=inactive --field=name)
+    Success: Deleted 'tinymce-templates' plugin.
 
 
 

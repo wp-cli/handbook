@@ -10,7 +10,10 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    $ wp transient delete-expired
+    Success: 12 expired transients deleted from the database.
 
 
 

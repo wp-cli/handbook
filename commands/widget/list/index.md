@@ -32,7 +32,10 @@ There are no optionally available fields.
 
 ### EXAMPLES
 
-    wp widget list sidebar-1 --fields=name --format=csv
+    $ wp widget list sidebar-1 --fields=name,id --format=csv
+    name,id
+    meta,meta-5
+    search,search-3
 
 
 

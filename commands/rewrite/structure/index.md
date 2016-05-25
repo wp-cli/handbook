@@ -36,7 +36,8 @@ to your wp-cli.yml or config.yml. For example:
 
 ### EXAMPLES
 
-    wp rewrite structure '/%year%/%monthnum%/%postname%'
+    $ wp rewrite structure '/%year%/%monthnum%/%postname%'
+    Success: Rewrite structure set.
 
 
 

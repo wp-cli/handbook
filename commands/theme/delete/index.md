@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp theme delete twentyeleven
+    $ wp theme delete twentytwelve
+    Success: Deleted 'twentytwelve' theme.
 
 
 

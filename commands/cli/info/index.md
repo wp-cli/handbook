@@ -15,5 +15,10 @@ display_global_parameters: true
 [\--format=&lt;format&gt;]
 : Accepted values: json
 
+### EXAMPLES
+
+    $ wp cli version
+    WP-CLI 0.23.1
+
 
 

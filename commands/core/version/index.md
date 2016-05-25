@@ -15,5 +15,15 @@ display_global_parameters: true
 [\--extra]
 : Show extended version information.
 
+### EXAMPLES
+
+    $ wp core version
+    4.5.2
+
+    $ wp core version --extra
+    WordPress version: 4.5.2
+    Database revision: 36686
+    TinyMCE version:   4.310 (4310-20160418)
+
 
 

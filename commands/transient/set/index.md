@@ -22,5 +22,10 @@ display_global_parameters: true
 [\--network]
 : Set the transient value on the network, instead of single site.
 
+### EXAMPLES
+
+    $ wp transient set sample_key "test data" 3600
+    Success: Transient added.
+
 
 

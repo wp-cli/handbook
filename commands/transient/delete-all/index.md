@@ -10,7 +10,10 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    $ wp transient delete-all
+    Success: 14 transients deleted from the database.
 
 
 

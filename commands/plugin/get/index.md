@@ -26,7 +26,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp plugin get bbpress --format=json
+    $ wp plugin get bbpress --format=json
+    {"name":"bbpress","title":"bbPress","author":"The bbPress Contributors","version":"2.6-alpha","description":"bbPress is forum software with a twist from the creators of WordPress.","status":"active"}
 
 
 

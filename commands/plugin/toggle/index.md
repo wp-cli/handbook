@@ -18,5 +18,13 @@ display_global_parameters: true
 [\--network]
 : If set, the plugin will be toggled for the entire multisite network.
 
+### EXAMPLES
+
+    $ wp plugin toggle akismet
+    Success: Plugin 'akismet' deactivated.
+
+    $ wp plugin toggle akismet
+    Success: Plugin 'akismet' activated.
+
 
 

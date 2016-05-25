@@ -19,5 +19,10 @@ wp-config.php.
 [\--yes]
 : Answer yes to the confirmation message.
 
+### EXAMPLES
+
+    $ wp db drop --yes
+    Success: Database dropped.
+
 
 

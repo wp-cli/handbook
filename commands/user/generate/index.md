@@ -18,5 +18,13 @@ display_global_parameters: true
 [\--role=&lt;role&gt;]
 : The role of the generated users. Default: default role from WP
 
+[\--format=&lt;format&gt;]
+: Accepted values: progress, ids. Default: ids.
+
+### EXAMPLES
+
+    # Add meta to every generated user
+    wp user generate --format=ids | xargs -0 -d ' ' -I % wp user meta add % foo bar
+
 
 

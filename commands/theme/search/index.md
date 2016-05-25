@@ -40,9 +40,18 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp theme search automattic --per-page=20
-
-    wp theme search automattic --fields=name,version,slug,rating,num_ratings,description
+    $ wp theme search photo --per-page=6
+    Success: Showing 6 of 203 themes.
+    +----------------------+----------------------+--------+
+    | name                 | slug                 | rating |
+    +----------------------+----------------------+--------+
+    | Photos               | photos               | 100    |
+    | Infinite Photography | infinite-photography | 100    |
+    | PhotoBook            | photobook            | 100    |
+    | BG Photo Frame       | bg-photo-frame       | 0      |
+    | fPhotography         | fphotography         | 0      |
+    | Photo Perfect        | photo-perfect        | 98     |
+    +----------------------+----------------------+--------+
 
 
 

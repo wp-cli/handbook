@@ -37,5 +37,15 @@ Default: '/'
 [\--skip-email]
 : Don't send an email notification to the new admin user.
 
+### EXAMPLES
+
+    $ wp core multisite-install --title="Welcome to the WordPress" \
+    > --admin_user="admin" --admin_password="password" \
+    > --admin_email="user@example.com"
+    Single site database tables already present.
+    Set up multisite database tables.
+    Added multisite constants to wp-config.php.
+    Success: Network installed. Don't forget to set up rewrite rules.
+
 
 
