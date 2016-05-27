@@ -472,4 +472,6 @@ Here's a full composer.json example from the server command:
 }
 ```
 
-Note the `autoload` declaration, which loads `command.php`. 
+Note the `autoload` declaration, which loads `command.php`.
+
+Once you've added a valid composer.json file to your project repository, you can submit your project to the package index by [editing repositories.txt to include the URL to your project](https://github.com/wp-cli/package-index/blob/master/repositories.txt). Please make sure to add yours in alphabetical order.
