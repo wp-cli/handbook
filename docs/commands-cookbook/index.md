@@ -11,7 +11,7 @@ quick_links:
   - Add to the package index
 ---
 
-Creating your own custom WP-CLI command can be easier than it looks.
+Creating your own custom WP-CLI command can be easier than it looks — and you can use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) to dynamically generate everything but the command itself.
 
 ## Overview
 
@@ -30,6 +30,7 @@ Internal commands:
 Third-party commands:
 
 * Can be defined in plugins or themes.
+* Can be easily scaffolded as standalone projects with `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)).
 * Can be distributed independent of a plugin or theme in the [Package Index](/package-index/).
 
 ## Anatomy of a command
