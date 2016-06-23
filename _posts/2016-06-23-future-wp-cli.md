@@ -4,7 +4,7 @@ author: danielbachhuber
 title: The future of WP-CLI
 ---
 
-As you might be aware, WP-CLI is an indespensible tool for many individuals and companies. We very much appreciate our community of users (although we have no idea how many of you there actually are), and want to ensure we have a great relationship with you for the years to come.
+As you might be aware, WP-CLI is an indespensible tool for many individuals and companies. We very much appreciate our community of users (although we have no idea how many of you there actually are), and want to ensure our relationship is strong for the years to come.
 
 Just over a month ago, I [started a Github issue](https://github.com/wp-cli/wp-cli/issues/2743) with this question:
 
@@ -25,3 +25,8 @@ At this time, we don't have plans to establish a legal WP-CLI organization. We'v
 If you would like to become a maintainer of WP-CLI in a non-code role, please email [info@wp-cli.org](mailto:info@wp-cli.org). Expect to participate in a trial period of 2-3 months.
 
 We have a Mailchimp mailing list now too. [Sign up](http://wp-cli.us13.list-manage.com/subscribe?u=0615e4d18f213891fc000adfd&id=8c61d7641e) for email notifications of new versions and occasional announcements about the project.
+
+Thanks,
+
+Daniel Bachhuber, maintainer
+Andreas Creten, founder
