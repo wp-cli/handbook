@@ -28,5 +28,5 @@ We have a Mailchimp mailing list now too. [Sign up](http://wp-cli.us13.list-mana
 
 Thanks,
 
-Daniel Bachhuber, maintainer
+Daniel Bachhuber, maintainer<br />
 Andreas Creten, founder
