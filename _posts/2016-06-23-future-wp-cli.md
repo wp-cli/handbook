@@ -20,7 +20,7 @@ Based on our conversation, we think the most important task is to reduce WP-CLI'
 
 Contributions in these areas will always be welcome. Maintainership is a longer-term commitment to the project, focused on ongoing improvements to the specific area. WP-CLI expects its maintainers to commit a few hours per week to the project.
 
-At this time, we don't have plans to establish a legal WP-CLI organization. We've decided the operational complexities exceed the benefits. While many companies and individuals want to donate to WP-CLI, introducing money to the picture has the real possibility of causing more harm than good. Instead, we'll use Kickstarter to fund larger endeavors on an as-needed basis.
+At this time, we don't have plans to establish a legal WP-CLI organization. We've decided the operational complexities exceed the benefits. While many companies and individuals want to donate to WP-CLI, introducing money always has the possibility of causing more harm than good. Instead, we'll use Kickstarter to fund larger endeavors on an as-needed basis.
 
 If you would like to become a maintainer of WP-CLI in a non-code role, please email [info@wp-cli.org](mailto:info@wp-cli.org). Expect to participate in a trial period of 2-3 months.
 
@@ -28,5 +28,5 @@ We have a Mailchimp mailing list now too. [Sign up](http://wp-cli.us13.list-mana
 
 Thanks,
 
-Daniel Bachhuber, maintainer<br />
+Daniel Bachhuber, maintainer  
 Andreas Creten, founder
