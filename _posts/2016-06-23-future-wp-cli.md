@@ -4,7 +4,7 @@ author: danielbachhuber
 title: The future of WP-CLI
 ---
 
-As you might be aware, WP-CLI is an indespensible tool for many individuals and companies. We very much appreciate our community of users (although we have no idea how many of you there actually are), and want to ensure our relationship is strong for the years to come.
+As you might be aware, WP-CLI is an indispensable tool for many individuals and companies. We very much appreciate our community of users (although we have no idea how many of you there actually are), and want to ensure our relationship is strong for the years to come.
 
 Just over a month ago, I [started a Github issue](https://github.com/wp-cli/wp-cli/issues/2743) with this question:
 
