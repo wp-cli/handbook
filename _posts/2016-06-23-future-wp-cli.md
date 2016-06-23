@@ -12,7 +12,7 @@ Just over a month ago, I [started a Github issue](https://github.com/wp-cli/wp-c
 
 Although things seem to be going reasonably well now, I want to make sure we're taking steps towards ensuring the long-term continuity of the project. Today, Andreas (WP-CLI's founder) and I sat down for breakfast to discuss our options and how we want to proceed.
 
-Based on our conversations, we think the most important task is to reduce WP-CLI's bus factor and onboard one or more additional maintainers to focus on a few non-code roles:
+Based on our conversation, we think the most important task is to reduce WP-CLI's bus factor and onboard one or more additional maintainers to focus on a few non-code roles:
 
 * Documentation - Help ensure WP-CLI's documentation is world-class.
 * Marketing / community management - Help spread the word about WP-CLI.
