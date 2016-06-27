@@ -1,8 +1,9 @@
----
+----
 layout: default
 title: Command line interface for WordPress
----
-**WP-CLI** is a set of command-line tools for managing [WordPress](http://wordpress.org) installations. You can update plugins, set up multisite installs and much more, without using a web browser.
+----
+
+[WP-CLI](https://wp-cli.org/) is a set of command-line tools for managing [WordPress](https://wordpress.org/) installations. You can update plugins, configure multisite installs and much more, without using a web browser.
 
 <div style="
 	border: 1px solid #7AD03A;
@@ -12,133 +13,122 @@ title: Command line interface for WordPress
 	padding-left: 10px;
 	padding-right: 10px;
 ">
-	<p><strong>A more RESTful WP-CLI</strong> aims to unlocking the potential of the WP REST API at the command line. Project backed by Pressed, Chris Lema, Human Made, Pagely, Pantheon and many others. <a href="/restful/">Learn more &rarr;</a></p>
+	<p><strong>A more RESTful WP-CLI</strong> aims to unlocking the potential of the WP REST API at the command line. Project backed by Pressed, Chris Lema, Human Made, Pagely, Pantheon and many others. <a href="https://wp-cli.org/restful/">Learn more &rarr;</a></p>
 </div>
 
-<h2 id="requirements">Requirements</h2>
+[![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli)
 
-* UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
-* PHP 5.3.29 or later
-* WordPress 3.7 or later
+Quick links: [Using](#using) | [Installing](#installing) | [Support](#support) | [Extending](#extending) | [Contributing](#contributing) | [Credits](#credits)
 
-<h2 id="install">Installing (And Upgrading)</h2>
+For news and announcements, follow [@wpcli on Twitter](https://twitter.com/wpcli) or [sign up for our email newsletter](http://wp-cli.us13.list-manage.com/subscribe?u=0615e4d18f213891fc000adfd&id=8c61d7641e).
 
-First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
+## Using
 
-```
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-```
+WP-CLI's mission is to provide a command-line interface for any action you might want to perform in the WordPress dashboard. WP-CLI also includes commands for many things you can't do in the WordPress dashboard.
 
-
-Then, check if it works:
+For instance, `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) lets you install and activate a WordPress plugin:
 
 ```
-php wp-cli.phar --info
-```
-
-To be able to type just `wp`, instead of `php wp-cli.phar`, you need to make the file executable and move it to somewhere in your PATH. For example:
-
-```
-chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/local/bin/wp
-```
-
-Now try running `wp --info`.
-
-Upgrade using the same procedure.
-
-<h3 id="mamp">MAMP</h3>
-
-If you're using MAMP, you will probably get a MySQL error, because the `php` found in your PATH is not the same as the PHP used by MAMP. Here is one way to [fix it](http://stackoverflow.com/a/29990624/333625).
-
-More resources:
-
-* [Getting Started with WP-CLI](https://trepmal.com/2014/02/22/getting-started-with-wp-cli/) (includes video)
-* [Alternative Installation Methods](/docs/installing/#alternative-installation-methods)
-
-<h3 id="complete">Tab completions</h3>
-
-WP-CLI also comes with a tab completion script for Bash. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and source it from `~/.bash_profile`:
-
-```
-source /FULL/PATH/TO/wp-completion.bash
-```
-
-(Don't forget to run `source ~/.bash_profile` afterwards)
-
-<h2 id="usage">Using</h2>
-
-Go into a WordPress root folder:
-
-```
-cd /var/www/wp/
-```
-
-Typing `wp` should show you output similar to this:
-
-```
-Available commands:
-    wp blog create|delete
-    wp cache add|decr|delete|flush|get|incr|replace|set|type
-    wp comment create|delete|trash|untrash|spam|unspam|approve|unapprove|count|status|last
-    wp core download|config|is-installed|install|install-network|version|update|update-db
-    wp db create|drop|reset|optimize|repair|connect|cli|query|export|import
-    wp eval-file
-    ...
-
-See 'wp help <command>' for more information on a specific command.
-```
-
-Let's try to install the Hello Dolly plugin from wordpress.org:
-
-```
-wp plugin install hello-dolly
-```
-
-Output:
-
-```
-Installing Hello Dolly (1.5)
-
-Downloading install package from http://downloads.WordPress.org/plugin/hello-dolly.1.5.zip ...
-Unpacking the package ...
-Installing the plugin ...
+$ wp plugin install rest-api --activate
+Installing WordPress REST API (Version 2) (2.0-beta13)
+Downloading install package from https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip...
+Unpacking the package...
+Installing the plugin...
 Plugin installed successfully.
+Activating 'rest-api'...
+Success: Plugin 'rest-api' activated.
 ```
 
-<h3 id="multisite">Multisite</h3>
-
-On a multisite installation, you need to pass a `--url` parameter, so that WP-CLI knows which site it's supposed to be operating on:
+Similarly, `wp transient` ([doc](https://wp-cli.org/commands/transient/)) lets you delete one or all transients:
 
 ```
-wp theme status --url=localhost/wp/test
+$ wp transient delete-all
+Success: 34 transients deleted from the database.
 ```
 
-If you have a subdomain installation, it would look like this:
+For a complete introduction to WP-CLI, read the [Quick Start guide](https://wp-cli.org/docs/quick-start/).
+
+Already feel comfortable with the basics? Jump into the [complete list of commands](https://wp-cli.org/commands/) for detailed information on managing themes and plugins, importing and exporting data, performing database search-replace operations and more.
+
+## Installing
+
+We recommend installing WP-CLI through the Phar distribution mechanism: download the Phar build, mark it executable, and place it on your PATH. The complete instructions follow shortly. Should you need, see also our documentation on [alternative installation methods](https://wp-cli.org/docs/installing/).
+
+Before installing WP-CLI, please make sure your environment meets the minimum requirements:
+
+- UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
+- PHP 5.3.29 or later
+- WordPress 3.7 or later
+
+Once you've verified requirements, download the [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) file using `wget` or `curl`. For example:
 
 ```
-wp theme status --url=test.example.com
+$ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
-If you're usually working on the same site most of the time, you can create a `wp-cli.yml` file in the root directory:
+Next, check if it is working:
 
 ```
-url: test.example.com
+$ php wp-cli.phar --info
 ```
 
-Then, you can call `wp` without the `--url` parameter again:
+To use it from the command line by typing `wp`, make the file executable and move it to somewhere in your PATH. For example:
 
 ```
-wp theme status
+$ chmod +x wp-cli.phar
+$ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
-<h2>Adding commands</h2>
+If WP-CLI installed successfully, you should see something like this when you run `wp --info`:
 
-Adding commands to WP-CLI is as easy as creating a PHP class. See the [Commands Cookbook](https://github.com/wp-cli/wp-cli/wiki/Commands-Cookbook) for more info.
+```
+$ wp --info
+PHP binary:    /usr/bin/php5
+PHP version:    5.5.9-1ubuntu4.14
+php.ini used:   /etc/php5/cli/php.ini
+WP-CLI root dir:        /home/wp-cli/.wp-cli
+WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
+WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
+WP-CLI project config:
+WP-CLI version: 0.23.0
+```
 
-Please share the commands you make by adding them to the [List of community commands](https://github.com/wp-cli/wp-cli/wiki/List-of-community-commands).
+## Support
 
-<h3>Contributors</h3>
+WP-CLI's maintainers and project contributors do their best to respond to all new issues in a timely manner. To make the best use of their volunteered time, please first see if there may be an answer to your question in one of the following resources:
 
-- [Contributor list](https://github.com/wp-cli/wp-cli/contributors)
-- [Contributor guide](https://github.com/wp-cli/wp-cli/blob/master/CONTRIBUTING.md)
+- [Common issues and their fixes](https://wp-cli.org/docs/common-issues/)
+- [Best practices for submitting a bug report](https://wp-cli.org/docs/bug-reports/)
+- [Documentation portal](https://wp-cli.org/docs/)
+
+If you have a WordPress.org account, you may also consider joining the `#cli` channel on the [WordPress.org Slack organization](https://make.wordpress.org/chat/).
+
+## Extending
+
+A **command** is an atomic unit of WP-CLI functionality. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) is one command. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) is another.
+
+WP-CLI comes with dozens of commands. It's easier than it looks to create a custom WP-CLI command. Read the [commands cookbook](https://wp-cli.org/docs/commands-cookbook/) to learn more.
+
+## Contributing
+
+To get involved, please first read about [creating an issue](https://wp-cli.org/docs/bug-reports/) or [submitting a pull request](https://wp-cli.org/docs/pull-requests/).
+
+### Leadership
+
+* [Andreas Creten](https://github.com/andreascreten) - founder
+* [Cristi Burcă](https://github.com/scribu) - previous maintainer
+* [Daniel Bachhuber](https://github.com/danielbachhuber/) - current maintainer
+
+Read more about the project's [Governance](https://wp-cli.org/docs/governance/) and view a [complete list of contributors](https://github.com/wp-cli/wp-cli/contributors).
+
+## Credits
+
+Besides the libraries defined in [composer.json](composer.json), we have used code or ideas from the following projects:
+
+* [Drush](http://drush.ws/) for... a lot of things
+* [wpshell](http://code.trac.wordpress.org/browser/wpshell) for `wp shell`
+* [Regenerate Thumbnails](http://wordpress.org/plugins/regenerate-thumbnails/) for `wp media regenerate`
+* [Search-Replace-DB](https://github.com/interconnectit/Search-Replace-DB) for `wp search-replace`
+* [WordPress-CLI-Exporter](https://github.com/Automattic/WordPress-CLI-Exporter) for `wp export`
+* [WordPress-CLI-Importer](https://github.com/Automattic/WordPress-CLI-Importer) for `wp import`
+* [wordpress-plugin-tests](https://github.com/benbalter/wordpress-plugin-tests/) for `wp scaffold plugin-tests`
