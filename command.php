@@ -33,10 +33,10 @@ WP-CLI
 ======
 EOT;
 	$replace = <<<EOT
-----
+---
 layout: default
 title: Command line interface for WordPress
-----
+---
 EOT;
 	$contents = str_replace( $search, $replace, $contents );
 	file_put_contents( dirname( __FILE__ ) . '/index.md', $contents );
