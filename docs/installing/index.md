@@ -49,6 +49,17 @@ Voila! You're now an official WP-CLI user.
 
 Wondering what to do next? Check out the [quick start guide](/docs/quick-start/) for a short introduction and some example usage.
 
+## Updating WP-CLI
+Once WP-CLI is installed you can update it at any time by running `wp cli update`.  
+
+You will be prompted to confirm that you wish to update with a message similar to the following: 
+`You have version 0.21.1. Would you like to update to 0.23.1? [y/n]`
+
+After you accept, you should see a success message:
+`Success: Updated WP-CLI to 0.23.1`
+
+For more information, including flags and options that can be used, read the full [docs page on the update command](https://wp-cli.org/commands/cli/update/).
+
 ## Alternative installation methods
 
 ### Installing nightly via Phar
