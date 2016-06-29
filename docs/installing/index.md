@@ -53,7 +53,7 @@ Wondering what to do next? Check out the [quick start guide](/docs/quick-start/)
 
 If you have installed WP-CLI using the recommended Phar method, you can update it at any time by running `wp cli update`. If you installed WP-CLI using the Git or Composer-based installations, see the specific instructions for updating associated with each method below.  
 
-You will be prompted to confirm that you wish to update with a message similar to the following: 
+When you run `wp cli update`, you'll be prompted to confirm that you wish to update with a message similar to the following:
 
 ```
 You have version 0.21.1. Would you like to update to 0.23.1? [y/n]
@@ -64,6 +64,14 @@ After you accept, you should see a success message:
 ```
 Success: Updated WP-CLI to 0.23.1
 ```
+
+If you're already running the latest version of WP-CLI, you'll see this message:
+
+```
+WP-CLI is at the latest version.
+```
+
+Want to live life on the edge? Run `wp cli update --nightly` to use the latest nightly build of WP-CLI. The nightly build is more or less stable enough for you to use in your local environment, and always includes the latest and greatest.
 
 For more information about `wp cli update`, including flags and options that can be used, read the full [docs page on the update command](https://wp-cli.org/commands/cli/update/).
 
