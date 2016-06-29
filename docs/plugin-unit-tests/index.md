@@ -37,9 +37,9 @@ where:
 * `localhost` is the MySQL server host
 * `latest` is the WordPress version; could also be `3.7`, `3.6.2` etc.
 
-This script does a couple things. First it installs a copy of WordPress in the `temp/` directory (by default) as well as the WordPress unit testing tools. Then it creates a database to be used while running tests. 
+This script does a couple things. First it installs a copy of WordPress in the `tmp/` directory (by default) as well as the WordPress unit testing tools. Then it creates a database to be used while running tests. 
 
-NOTE: This script can be run multiple times without errors, but it will *not* overwrite previously existing files. So if your DB credentials change, or you want to switch to a different instance of mysql, simply re-running the script won't be enough. You'll need to manually edit the `wp-config.php` that's installed in the `temp/`.
+NOTE: This script can be run multiple times without errors, but it will *not* overwrite previously existing files. So if your DB credentials change, or you want to switch to a different instance of mysql, simply re-running the script won't be enough. You'll need to manually edit the `wp-config.php` that's installed in the `tmp/`.
 
 4) Run the plugin tests:
 
