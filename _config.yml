@@ -27,3 +27,8 @@ navigation:
   url: /package-index/
 - text: RESTful WP-CLI
   url: /restful/
+languages:
+- label: English
+  path: /
+- label: Japanese
+  path: /ja/
