@@ -18,14 +18,14 @@ title: Command line interface for WordPress
 	padding-left: 10px;
 	padding-right: 10px;
 ">
-	<p><strong>A more RESTful WP-CLI</strong>は、コマンドラインによってWP REST APIのポテンシャルを解放します。このプロジェクトはPressed、Chris Lema、Human Made、Pagely、Pantheon、その他大勢のひとたちによって支援されています。<a href="https://wp-cli.org/restful/">さらに詳しく &rarr;</a></p>
+	<p><strong>A more RESTful WP-CLI</strong>は、コマンドラインによってWP REST APIのポテンシャルを解放します。このプロジェクトはPressed、Chris Lema、Human Made、Pagely、Pantheon、その他大勢の人たちによって支援されています。<a href="https://wp-cli.org/restful/">さらに詳しく &rarr;</a></p>
 </div>
 
 Quick links: [使い方](#使い方) &#124; [インストール方法](#インストール方法) &#124; [サポート](#サポート) &#124; [拡張](#拡張) &#124; [貢献](#貢献) &#124; [クレジット](#クレジット)
 
 ## 使い方
 
-WP-CLIのゴールは、みなさんがWordPressの管理画面でやりたいとおもうことをコマンドラインで提供することです。
+WP-CLIのゴールは、みなさんがWordPressの管理画面でやりたいと思うことをコマンドラインで提供することです。
 たとえば、`wp plugin install --activate` ([ドキュメント](https://wp-cli.org/commands/plugin/install/)) は、プラグインをインストールし有効化します。
 
 ```
@@ -46,13 +46,13 @@ $ wp transient delete-all
 Success: 34 transients deleted from the database.
 ```
 
-WP-CLIの使い方にかんするさらに詳しい情報は、[クイックスタートガイド](https://wp-cli.org/docs/quick-start/)を読んでください。
+WP-CLIの使い方に関するさらに詳しい情報は、[クイックスタートガイド](https://wp-cli.org/docs/quick-start/)を読んでください。
 
 もし、すでに基本的なことを理解しているなら、[コマンドリスト](https://wp-cli.org/ja/commands/)にジャンプして、テーマやプラグインの管理、データのインポートやエクスポート、データベースの操作などについての詳細をみてください。
 
 ## インストール方法
 
-Pharファイルをダウンロードする方法が、わたしたちが推奨するインストールする方法です。必要なら[上級者向けインストール方法](https://wp-cli.org/docs/installing/)(英語)をみてください。
+Pharファイルをダウンロードする方法が、私たちが推奨するインストール方法です。必要なら[上級者向けインストール方法](https://wp-cli.org/docs/installing/)(英語)を見てください。
 
 WP-CLIをインストールする前に、動作環境を確認してください。
 
@@ -72,7 +72,7 @@ $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.p
 $ php wp-cli.phar --info
 ```
 
-WP-CLIコマンドを`wp`で実行するには、それに実行権限があることとPATHに登録されていることが必要です。
+WP-CLIコマンドを`wp`で実行するには、それに実行権限があることと環境変数`PATH`に登録されていることが必要です。
 
 ```
 $ chmod +x wp-cli.phar
