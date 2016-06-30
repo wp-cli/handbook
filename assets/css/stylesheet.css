@@ -211,7 +211,7 @@ code {
 }
 /* Oh I want SASS here */
 h3 > code {
-    
+
     display: inline-block;
     margin-bottom: 0.5em;
     padding-bottom: 0;
@@ -302,7 +302,7 @@ header h1 a:active {
 
 header h1:before {
 	content: ". / ";
-	
+
 	letter-spacing: 1px;
 }
 
@@ -380,7 +380,7 @@ footer {
 	color: #292929;
 }
 .main-nav .rounded:hover {
-	color: #7AD03A;	
+	color: #7AD03A;
 }
 
 /* Search in header */
@@ -389,7 +389,7 @@ footer {
 	width: 200px;
 	background: #292929;
 	color: #f1f1f1;
-	
+
 	-webkit-transition-duration: 400ms;
 	-webkit-transition-property: width, background;
 	-webkit-transition-timing-function: ease;
@@ -484,7 +484,7 @@ body.display-global-parameters #main_content {
 	padding-left: 30px
 }
 
-@media (max-width: 690px) { 
+@media (max-width: 690px) {
 	.global-parameters {
 		width: auto;
 		margin:0;
@@ -521,12 +521,12 @@ body.command-line-interface-for-wordpress .global-parameters,
 body.configuration .global-parameters{
 	display: none;
 	background: green;
-} 
+}
 
 body.configuration .global-parameters{
 	display: none;
 	background: green;
-} 
+}
 
 
 .blog aside.global-parameters {
@@ -688,6 +688,19 @@ hr:after,
 }
 .package th {
 	width: 150px;
+}
+
+/* i18n menu */
+.cf .container
+{
+	position: relative;
+}
+
+.cf .container select
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
