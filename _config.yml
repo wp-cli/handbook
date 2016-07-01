@@ -11,6 +11,7 @@ include:
   - _s
 exclude:
   - bin
+  - vendor
   - Phakefile.php
   - README.md
 navigation:
