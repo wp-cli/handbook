@@ -33,3 +33,5 @@ languages:
   path: /
 - label: Japanese
   path: /ja/
+- label: Français
+  path: /fr/
