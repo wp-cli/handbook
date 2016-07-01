@@ -45,6 +45,44 @@ EOT;
 WP_CLI::add_command( 'website generate-homepage', '\WP_CLI_Org\generate_homepage' );
 
 /**
+ * Generate the contributing page from the repo's CONTRIBUTING.md
+ *
+ * @when before_wp_load
+ */
+function generate_contributing() {
+	$ret = trim( shell_exec( 'which wp' ) );
+	if ( empty( $ret ) ) {
+		WP_CLI::error( 'Could not find path to wp executable.' );
+	}
+	if ( 'link' === filetype( $ret ) ) {
+		$ret = readlink( $ret );
+	}
+
+	$contributing_path = dirname( dirname( $ret ) ) . '/CONTRIBUTING.md';
+	if ( ! is_file( $contributing_path ) ) {
+		WP_CLI::error( 'Could not find CONTRIBUTING.md in wp executable PATH. Please make sure wp executable points to git clone.' );
+	}
+
+	$contents = file_get_contents( $contributing_path );
+	$search = <<<EOT
+Contributing
+============
+EOT;
+	$replace = <<<EOT
+---
+layout: default
+title: Contributing
+category: Contributing
+description: An introduction to the contributing process.
+---
+EOT;
+	$contents = str_replace( $search, $replace, $contents );
+	file_put_contents( dirname( __FILE__ ) . '/docs/contributing/index.md', $contents );
+	WP_CLI::success( 'Updated docs/contributing/index.md from project CONTRIBUTING.md.' );
+}
+WP_CLI::add_command( 'website generate-contributing', '\WP_CLI_Org\generate_contributing' );
+
+/**
  * Dump the list of internal APIs, as JSON.
  *
  * Used to build user-facing docs of public APIs.
