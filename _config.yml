@@ -11,6 +11,7 @@ include:
   - _s
 exclude:
   - bin
+  - vendor
   - Phakefile.php
   - README.md
 navigation:
@@ -32,3 +33,5 @@ languages:
   path: /
 - label: Japanese
   path: /ja/
+- label: Français
+  path: /fr/
