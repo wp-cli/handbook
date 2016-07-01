@@ -47,9 +47,12 @@
 					}
 				}
 			};
-		</script>
 
-		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-		<script src="/assets/js/i18n.js"></script>
+			document.getElementById('languages').onchange = function(ev) {
+			    if (ev.currentTarget && ev.currentTarget.value) {
+			      location.href = ev.currentTarget.value;
+			    }
+			};
+		</script>
 	</body>
 </html>
