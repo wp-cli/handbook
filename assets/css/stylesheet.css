@@ -392,6 +392,7 @@ footer {
 		display: table;
 		margin: 0 auto;
 		padding-top: 5px;
+		min-width: 100px;
 	}
 
 	.social-nav li {
@@ -738,7 +739,7 @@ hr:after,
 		padding-left: 0;
 	}
 
-	.main-nav li.active a {
+	.main-nav li:nth-child(6) a {
 		padding-left: 9px;
 		padding-right: 9px;
 	}
