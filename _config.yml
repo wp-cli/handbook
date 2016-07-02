@@ -35,3 +35,6 @@ languages:
   path: /ja/
 - label: Français
   path: /fr/
+- label: Türkçe
+  path: /tr/
+    
