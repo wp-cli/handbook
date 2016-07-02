@@ -4,3 +4,32 @@
   <option value="{{ lang.path }}">{{ lang.label }}</option>
 {% endfor %}
 </select>
+
+<script type="text/javascript">
+( function(){
+	'use strict';
+	var langs = document.getElementById( 'languages' );
+
+	// Only apply this after we set the Selected option
+	langs.onchange = function( ev ) {
+		if ( ev.currentTarget && ev.currentTarget.value ) {
+			location.href = ev.currentTarget.value;
+		}
+	};
+
+	if ( '/' === window.location.pathname ) {
+		return;
+	}
+
+	var opts = langs.getElementsByTagName( 'option' ),
+		count = opts.length;
+
+	for ( var i = 0; i < count; i++ ){
+		if ( -1 === opts[ i ].value.indexOf( window.location.pathname ) ) {
+			continue;
+		}
+
+		opts[ i ].setAttribute( 'selected', 'selected' );
+	}
+} )();
+</script>
