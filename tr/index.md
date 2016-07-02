@@ -112,6 +112,7 @@ WP-CLI bakımcıları ve katılımcıları tüm yeni gelen soruları cevaplamak 
 - [Github üzerindeki açık veya kapalı konular](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
 - [WordPress StackExchange forumları](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
+Eğer bu kaynaklarda sorularınıza cevap bulamazsanız, [hata bildirimi](https://github.com/wp-cli/wp-cli/issues/new) göndermekten çekinmeyiniz.
 
 WordPress.org hesabınız varsa, [WordPress.org Slack organizasyonu](https://make.wordpress.org/chat/) üzerinden `#cli` kanalına katılabilirsiniz.
 
@@ -119,15 +120,21 @@ WordPress.org hesabınız varsa, [WordPress.org Slack organizasyonu](https://mak
 
 **Komutlar** WP-CLI'nin atomik birimleridir. `wp plugin install` ([belge](https://wp-cli.org/commands/plugin/install/)) bir komuttur.  `wp plugin activate` ([belge](https://wp-cli.org/commands/plugin/activate/)) başka bir komuttur.
 
-WP-CLI onlarca komutla hazır olarak gelir. Özel bir WP-CLI komutu oluşturmak görünenden daha kolaydir. Detaylar için [komutlar belgesine](https://wp-cli.org/docs/commands-cookbook/) bakabilirsiniz.
+WP-CLI onlarca komutla hazır olarak gelir. Özel bir WP-CLI komutu oluşturmak görünenden daha kolaydir. Detaylar için [komutlar belgesine](https://wp-cli.org/docs/commands-cookbook/) bakabilirsiniz. [Dahili API dökümantasyonunu](https://wp-cli.org/docs/internal-api/) gözden geçirerek kendi WP-CLI komutunuzda kullanabileceğiniz faydalı foksyionları keşfedebilirsiniz.
 
 
 ## Katkıda Bulunmak
 
-Lütfen, katkıda bulunmak için öncelikle [hata bildirimi](https://wp-cli.org/docs/bug-reports/) veya [pull request gönderimi](https://wp-cli.org/docs/pull-requests/) ile ilgili dökümanları okuyun. 
+WP-CLI'e katkıda bulunmak istediğiniz için teşekkür ederiz. WP-CLI siz ve sizin gibi topluluk üyeleri sayesinde bu kadar büyük bir proje olmayı başarabildi.
+
+**Katkıda bulunmak sadece kod yazmakla sınırlı değildir.** kendinize yeteneklerinize uygun olacak şekilde; tanıtım yazıları yazarak, yerel etkinliklerde demo göstererek, başkalarının sorunlarına yardımcı olarak veya dökümantasyonumuzu gözden geçirerek katkıda bulunabilirsiniz.
 
 
-### Yönetim
+Lütfen bir dakikanızı ayırıp [dökümanı detaylıca okuyun](https://wp-cli.org/docs/contributing/). Bunları takip ederek, katkıda bulunan diğer katılımcıların ayırdığı zamana saygı gösteriniz. Buna karşılık, onlar da aynı saygıyı sizinle çalışırken göstereceklerdir (zaman farkı gözetmeksizin, dünya genelinde).
+
+
+## Yönetim
+WP-CLI bu kişiler tarafından yönetiliyor:
 
 * [Daniel Bachhuber](https://github.com/danielbachhuber/) - şimdiki bakımcı
 * [Cristi Burcă](https://github.com/scribu) - eski bakımcı
