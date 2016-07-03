@@ -38,7 +38,7 @@ Activating 'rest-api'...
 Success: Plugin 'rest-api' activated.
 ```
 
-WP-CLI também inclui muitos comandos para ações que não são possíveis através da administração do WordPress. Por exemplo, `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) permite deletar uma ou todas as transientes:
+WP-CLI também inclui muitos comandos para ações que não são possíveis através da administração do WordPress. Por exemplo, `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) permite deletar uma ou todas as <abbr title='Dados transitórios'>transients</abbr>:
 
 ```
 $ wp transient delete-all
@@ -94,21 +94,21 @@ WP-CLI version: 0.23.0
 
 WP-CLI pode ser atualizado com `wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)), ou repetindo os passos da instalação.
 
-Quer viver a vida no limite? Execute `wp cli update --nightly` para usar a última compilação noturna da WP-CLI. A compilação noturna é bastante estável para utilizar em seu ambiente de desenvolvimento, e sempre inclui as melhores e mais atuais funcionalidades da WP-CLI.
+Quer viver a vida no limite? Execute `wp cli update --nightly` para usar a última compilação de desenvolvimento da WP-CLI. Essa versão é bastante estável para utilizar em seu ambiente de desenvolvimento, e sempre inclui as melhores e mais atuais funcionalidades da WP-CLI.
 
-## Support
+## Suporte
 
-WP-CLI's maintainers and project contributors do their best to respond to all new issues in a timely manner. To make the best use of their volunteered time, please first see if there may be an answer to your question in one of the following resources:
+Os colaboradores do projeto WP-CLI fazem seu melhor para rsponder a todos os problemas assim que possível. Para que possamos fazer melhor uso do tempo dos voluntários, verifique se já existe uma resposta para sua pergunta em umas das fontes abaixo:
 
-- [Common issues and their fixes](https://wp-cli.org/docs/common-issues/)
-- [Best practices for submitting a bug report](https://wp-cli.org/docs/bug-reports/)
-- [Documentation portal](https://wp-cli.org/docs/)
-- [Open or closed issues on Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
-- [WordPress StackExchange forums](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
+- [Problemas comuns e suas respostas](https://wp-cli.org/docs/common-issues/)
+- [Melhores práticas para informar um problema](https://wp-cli.org/docs/bug-reports/)
+- [Portal de documentação](https://wp-cli.org/docs/)
+- [Problemas abertos ou fechados no Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
+- [Forum WordPress no StackExchange](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
-If you can't find your answer in one of those existing resources, feel free to [create an issue](https://github.com/wp-cli/wp-cli/issues/new) with your question.
+Caso não encontre uma resposta na fontes existentes, fique a vontade para [abrir um <abbr title='Problemas ou erros'>issues<abbr>](https://github.com/wp-cli/wp-cli/issues/new) com sua pergunta.
 
-If you have a WordPress.org account, you may also consider joining the `#cli` channel on the [WordPress.org Slack organization](https://make.wordpress.org/chat/).
+Se você possui uma conta WordPress.org, considere se inscrever no canal `#cli` no [Slack do WordPress.org](https://make.wordpress.org/chat/).
 
 ## Extending
 
