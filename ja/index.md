@@ -117,8 +117,6 @@ WP-CLI は、多くのコマンドにより構成されており、カスタム�
 
 ## 貢献
 
-開発に参加するには、まずはじめに [creating an issue](https://wp-cli.org/docs/bug-reports/) or [submitting a pull request](https://wp-cli.org/docs/pull-requests/) を読んでください。
-
 ようこそ、そしてありがとう！
 
 私たちは、みなさんが率先して貢献してくれることに感謝しています。あなたやあなたのまわりのコミュニティによって、WP-CLIはすばらしいプロジェクトになります。
