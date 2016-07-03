@@ -49,36 +49,36 @@ Para uma introdução mais completa sobre como usar a WP-CLI, leia o [Guia rápi
 
 Já se sente confortável com o básico? Vá para a [lista completa de comandos](https://wp-cli.org/commands/) para obter informações detalhadas na gestão de temas e plugins, importação e exportação de dados, operações de busca e substituição  no banco de dados e muito mais.
 
-## Installing
+## Instalando
 
-Downloading the Phar file is our recommended installation method. Should you need, see also our documentation on [alternative installation methods](https://wp-cli.org/docs/installing/).
+Realizar o download do arquivo Phar é o método de instalação que recomendamos. Caso precise, nossa documentação para [métodos alternativos de instação](https://wp-cli.org/docs/installing/).
 
-Before installing WP-CLI, please make sure your environment meets the minimum requirements:
+Antes instalar a WP-CLI, certifique-se que seu ambiente possua os requesitos mínimos:
 
-- UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
-- PHP 5.3.29 or later
-- WordPress 3.7 or later
+- Ambiente UNIX-like (OS X, Linux, FreeBSD, Cygwin); suporte limitado para ambientes Windows
+- PHP 5.3.29 ou superior
+- WordPress 3.7 ou superior
 
-Once you've verified requirements, download the [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) file using `wget` or `curl`:
+Após verificar os requesitos, faça o download do arquivo [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) usando `wget` ou `curl`:
 
 ```
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
-Next, check if it is working:
+Em seguida, verifique se está funcionando:
 
 ```
 $ php wp-cli.phar --info
 ```
 
-To use WP-CLI from the command line by typing `wp`, make the file executable and move it to somewhere in your PATH. For example:
+Digite `wp` para utilizar WP-CLI a partir da linha de comando, torne o arquivo executável e mova-o para algum diretório presente em sua variável de ambiente PATH. For example:
 
 ```
 $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
-If WP-CLI was installed successfully, you should see something like this when you run `wp --info`:
+Se WP-CLI foi instalado com sucesso, ao executar `wp --info` você deverá ver algo como:
 
 ```
 $ wp --info
@@ -92,9 +92,9 @@ WP-CLI project config:
 WP-CLI version: 0.23.0
 ```
 
-You can update WP-CLI with `wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)), or by repeating the installation steps.
+WP-CLI pode ser atualizado com `wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)), ou repetindo os passos da instalação.
 
-Want to live life on the edge? Run `wp cli update --nightly` to use the latest nightly build of WP-CLI. The nightly build is more or less stable enough for you to use in your development environment, and always includes the latest and greatest WP-CLI features.
+Quer viver a vida no limite? Execute `wp cli update --nightly` para usar a última compilação noturna da WP-CLI. A compilação noturna é bastante estável para utilizar em seu ambiente de desenvolvimento, e sempre inclui as melhores e mais atuais funcionalidades da WP-CLI.
 
 ## Support
 
