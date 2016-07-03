@@ -110,21 +110,21 @@ Caso não encontre uma resposta na fontes existentes, fique a vontade para [abri
 
 Se você possui uma conta WordPress.org, considere se inscrever no canal `#cli` no [Slack do WordPress.org](https://make.wordpress.org/chat/).
 
-## Extending
+## Extendento
 
-A **command** is an atomic unit of WP-CLI functionality. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) is one command. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) is another.
+Um **commando** é uma unidade singular de uma funcionalidade WP-CLI. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) é um comando. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) é outro.
 
-WP-CLI comes with dozens of commands. It's easier than it looks to create a custom WP-CLI command. Read the [commands cookbook](https://wp-cli.org/docs/commands-cookbook/) to learn more. Browse the [internal API docs](https://wp-cli.org/docs/internal-api/) to discover a variety of helpful functions you can use in your custom WP-CLI command.
+WP-CLI vem com muitos comandos. Criar um comando personalizado para WP-CLi é mais fácil do que parece. Leia o [livro de receitas de comandos](https://wp-cli.org/docs/commands-cookbook/) para aprender mais. Procure a [documentação de API interna](https://wp-cli.org/docs/internal-api/) para descobrir a variedade de funcionalidades úteis que você pode utilizar no seu comando personalizado para WP-CLI.
 
-## Contributing
+## Contribuindo
 
-Welcome and thanks!
+Seja bem vindo e obrigado!
 
-We appreciate you taking the initiative to contribute to WP-CLI. It’s because of you, and the community around you, that WP-CLI is such a great project.
+Nós agradecemos sua iniciativa em contribuir com a WP-CLI. É por sua causa e a comunidade a sua volta, que a WP-CLI se tornou um grande projeto.
 
-**Contributing isn’t limited to just code.** We encourage you to contribute in the way that best fits your abilities, by writing tutorials, giving a demo at your local meetup, helping other users with their support questions, or revising our documentation.
+**Contribuição não está limitado a somente código.** Te encorajamos a contribuir da maneira que melhor se encaixe em suas habilidades, escrevendo tutoriais, com demonstrações em palestras locais, ajudar outros usuários respondendo suas perguntas no suporte, ou revisando nossa documentação.
 
-Please take a moment to [read these guidelines at depth](https://wp-cli.org/docs/contributing/). Following them helps to communicate that you respect the time of the other contributors to the project. In turn, they’ll do their best to reciprocate that respect when working with you, across timezones and around the world.
+De uma olhada com atenção [nesse guia](https://wp-cli.org/docs/contributing/). Seguindo esses passos você estará respeitando o tempo dos outros colaboradoes. Por sua vez, eles farão o melhor para retribuir esse respeito no trabalho com você, nos diferentes fusos horários e em todo o mundo.
 
 ## Leadership
 
