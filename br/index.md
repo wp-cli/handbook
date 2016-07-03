@@ -21,7 +21,7 @@ Para manter-se atualizado, siga [@wpcli no Twitter](https://twitter.com/wpcli) o
 	<p>O projeto <strong>"WP-CLI mais <i>RESTful</i>"</strong> visa proporcionar todo o potencial da linha de comando para a WP REST API e é apoiado por Pressed, Chris Lema, Human Made, Pagely, Pantheon e muitos outros. <a href="https://wp-cli.org/restful/">Saiba mais &rarr;</a></p>
 </div>
 
-Links rápidos: [Usando](#usando) &#124; [Instalando](#instalando) &#124; [Suporte](#suporte) &#124; [Extendendo](#extendendo) &#124; [Contribuindo](#contribuindo) &#124; [Creditos](#creditos)
+Links rápidos: [Usando](#usando) &#124; [Instalando](#instalando) &#124; [Suporte](#suporte) &#124; [Extendendo](#extendendo) &#124; [Contribuindo](#contribuindo) &#124; [Créditos](#creditos)
 
 ## Usando
 
@@ -94,23 +94,23 @@ WP-CLI version: 0.23.0
 
 WP-CLI pode ser atualizado com `wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)), ou repetindo os passos da instalação.
 
-Quer viver a vida no limite? Execute `wp cli update --nightly` para usar a última compilação de desenvolvimento da WP-CLI. Essa versão é bastante estável para utilizar em seu ambiente de desenvolvimento, e sempre inclui as melhores e mais atuais funcionalidades da WP-CLI.
+_Quer viver a vida no limite?_ Execute `wp cli update --nightly` para usar a última compilação de desenvolvimento da WP-CLI. Essa versão é bastante estável para utilizar em seu ambiente de desenvolvimento, e sempre inclui as melhores e mais atuais funcionalidades da WP-CLI.
 
 ## Suporte
 
 Os colaboradores do projeto WP-CLI fazem seu melhor para rsponder a todos os problemas assim que possível. Para que possamos fazer melhor uso do tempo dos voluntários, verifique se já existe uma resposta para sua pergunta em umas das fontes abaixo:
 
-- [Problemas comuns e suas respostas](https://wp-cli.org/docs/common-issues/)
+- [Questões comuns e suas respostas](https://wp-cli.org/docs/common-issues/)
 - [Melhores práticas para informar um problema](https://wp-cli.org/docs/bug-reports/)
 - [Portal de documentação](https://wp-cli.org/docs/)
-- [Problemas abertos ou fechados no Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
+- [Questões abertas ou fechadas no Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
 - [Forum WordPress no StackExchange](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
-Caso não encontre uma resposta na fontes existentes, fique a vontade para [abrir um <abbr title='Problemas ou erros'>issues<abbr>](https://github.com/wp-cli/wp-cli/issues/new) com sua pergunta.
+Caso não encontre uma resposta na fontes existentes, fique a vontade para [abrir uma questão](https://github.com/wp-cli/wp-cli/issues/new) com sua dúvida.
 
 Se você possui uma conta WordPress.org, considere se inscrever no canal `#cli` no [Slack do WordPress.org](https://make.wordpress.org/chat/).
 
-## Extendento
+## Extendendo
 
 Um **commando** é uma unidade singular de uma funcionalidade WP-CLI. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) é um comando. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) é outro.
 
@@ -122,28 +122,29 @@ Seja bem vindo e obrigado!
 
 Nós agradecemos sua iniciativa em contribuir com a WP-CLI. É por sua causa e a comunidade a sua volta, que a WP-CLI se tornou um grande projeto.
 
-**Contribuição não está limitado a somente código.** Te encorajamos a contribuir da maneira que melhor se encaixe em suas habilidades, escrevendo tutoriais, com demonstrações em palestras locais, ajudar outros usuários respondendo suas perguntas no suporte, ou revisando nossa documentação.
+**Contribuir não é limitado a somente código.** Te encorajamos a contribuir da maneira que melhor se encaixe em suas habilidades, escrevendo tutoriais, com demonstrações em palestras locais, ajudar outros usuários respondendo suas dúvidas no suporte, ou revisando nossa documentação.
 
 De uma olhada com atenção [nesse guia](https://wp-cli.org/docs/contributing/). Seguindo esses passos você estará respeitando o tempo dos outros colaboradoes. Por sua vez, eles farão o melhor para retribuir esse respeito no trabalho com você, nos diferentes fusos horários e em todo o mundo.
 
-## Leadership
+## Criadores e liderança
 
-WP-CLI is led by these individuals:
+WP-CLI foi criado e mantido por:
 
-* [Daniel Bachhuber](https://github.com/danielbachhuber/) - current maintainer
-* [Cristi Burcă](https://github.com/scribu) - previous maintainer
-* [Andreas Creten](https://github.com/andreascreten) - founder
+* [Daniel Bachhuber](https://github.com/danielbachhuber/) - Líder atual
+* [Cristi Burcă](https://github.com/scribu) - Líder anterior
+* [Andreas Creten](https://github.com/andreascreten) - Criador
 
-Read more about the project's [governance](https://wp-cli.org/docs/governance/) and view a [complete list of contributors](https://github.com/wp-cli/wp-cli/contributors).
+Saiba mais sobre os projetos de [governança](https://wp-cli.org/docs/governance/) e veja a [lista completa dos colaboradores](https://github.com/wp-cli/wp-cli/contributors).
 
-## Credits
+## Créditos
+<span id='creditos'></span>
 
-Besides the libraries defined in [composer.json](composer.json), we have used code or ideas from the following projects:
+Além das bibliotecas especificadas em [composer.json](/composer.json), utilizamos o código ou idéias dos projetos abaixos:
 
-* [Drush](http://drush.ws/) for... a lot of things
-* [wpshell](http://code.trac.wordpress.org/browser/wpshell) for `wp shell`
-* [Regenerate Thumbnails](http://wordpress.org/plugins/regenerate-thumbnails/) for `wp media regenerate`
-* [Search-Replace-DB](https://github.com/interconnectit/Search-Replace-DB) for `wp search-replace`
-* [WordPress-CLI-Exporter](https://github.com/Automattic/WordPress-CLI-Exporter) for `wp export`
-* [WordPress-CLI-Importer](https://github.com/Automattic/WordPress-CLI-Importer) for `wp import`
-* [wordpress-plugin-tests](https://github.com/benbalter/wordpress-plugin-tests/) for `wp scaffold plugin-tests`
+* [Drush](http://drush.ws/) para... muitas coisas
+* [wpshell](http://code.trac.wordpress.org/browser/wpshell) para `wp shell`
+* [Regenerate Thumbnails](http://wordpress.org/plugins/regenerate-thumbnails/) para `wp media regenerate`
+* [Search-Replace-DB](https://github.com/interconnectit/Search-Replace-DB) para `wp search-replace`
+* [WordPress-CLI-Exporter](https://github.com/Automattic/WordPress-CLI-Exporter) para `wp export`
+* [WordPress-CLI-Importer](https://github.com/Automattic/WordPress-CLI-Importer) para `wp import`
+* [wordpress-plugin-tests](https://github.com/benbalter/wordpress-plugin-tests/) para `wp scaffold plugin-tests`
