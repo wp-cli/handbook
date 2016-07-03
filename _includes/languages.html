@@ -25,11 +25,10 @@
 		count = opts.length;
 
 	for ( var i = 0; i < count; i++ ){
-		if ( -1 === opts[ i ].value.indexOf( window.location.pathname ) ) {
-			continue;
+		// Only happens if you have language path on the start of the location.pathname
+		if ( 0 === window.location.pathname.indexOf( opts[ i ].value ) ) {
+			opts[ i ].setAttribute( 'selected', 'selected' );
 		}
-
-		opts[ i ].setAttribute( 'selected', 'selected' );
 	}
 } )();
 </script>
