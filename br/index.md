@@ -21,11 +21,11 @@ Para manter-se atualizado, siga [@wpcli no Twitter](https://twitter.com/wpcli) o
 	<p>O projeto <strong>"WP-CLI mais <i>RESTful</i>"</strong> visa proporcionar todo o potencial da linha de comando para a WP REST API e é apoiado por Pressed, Chris Lema, Human Made, Pagely, Pantheon e muitos outros. <a href="https://wp-cli.org/restful/">Saiba mais &rarr;</a></p>
 </div>
 
-Links rápidos: [Usando](#using) &#124; [Instalando](#installing) &#124; [Suporte](#support) &#124; [Extendendo](#extending) &#124; [Contribuindo](#contributing) &#124; [Creditos](#credits)
+Links rápidos: [Usando](#usando) &#124; [Instalando](#instalando) &#124; [Suporte](#suporte) &#124; [Extendendo](#extendendo) &#124; [Contribuindo](#contribuindo) &#124; [Creditos](#creditos)
 
-## Using
+## Usando
 
-WP-CLI's goal is to provide a command-line interface for any action you might want to perform in the WordPress admin. For instance, `wp plugin install --activate` ([doc](https://wp-cli.org/commands/plugin/install/)) lets you install and activate a WordPress plugin:
+O objetivo da WP-CLI é fornecer uma interface em linha de comando para qualquer ação que você queira executar na administração do WordPress. Por exemplo `wp plugin install --activate` ([doc](https://wp-cli.org/commands/plugin/install/)) permite a instação e ativação de um plugin WordPress:
 
 ```
 $ wp plugin install rest-api --activate
@@ -38,16 +38,16 @@ Activating 'rest-api'...
 Success: Plugin 'rest-api' activated.
 ```
 
-WP-CLI also includes commands for many things you can't do in the WordPress admin. For example, `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) lets you delete one or all transients:
+WP-CLI também inclui muitos comandos para ações que não são possíveis através da administração do WordPress. Por exemplo, `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) permite deletar uma ou todas as transientes:
 
 ```
 $ wp transient delete-all
 Success: 34 transients deleted from the database.
 ```
 
-For a more complete introduction to using WP-CLI, read the [Quick Start guide](https://wp-cli.org/docs/quick-start/).
+Para uma introdução mais completa sobre como usar a WP-CLI, leia o [Guia rápido](https://wp-cli.org/docs/quick-start/).
 
-Already feel comfortable with the basics? Jump into the [complete list of commands](https://wp-cli.org/commands/) for detailed information on managing themes and plugins, importing and exporting data, performing database search-replace operations and more.
+Já se sente confortável com o básico? Vá para a [lista completa de comandos](https://wp-cli.org/commands/) para obter informações detalhadas na gestão de temas e plugins, importação e exportação de dados, operações de busca e substituição  no banco de dados e muito mais.
 
 ## Installing
 
