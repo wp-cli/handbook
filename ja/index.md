@@ -105,9 +105,11 @@ WP-CLI のメンテナーとプロジェクトの貢献者たちは、新しい 
 - [Open or closed issues on Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
 - [WordPress StackExchange forums](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
+もしこれらのリソースから回答を見つけられなかった場合、ご自由にあなたの質問を[Issueを書いてください](https://github.com/wp-cli/wp-cli/issues/new)。
+
 もしあなたが WordPress.org のアカウントを持っているなら、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加することもできます。
 
-## Extending
+## 拡張
 
 それぞれの **コマンド** は、WP-CLI の関数の一つとして定義されています。`wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) はそのうちのひとつであり、`wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) は別のもうひとつです。
 
@@ -117,11 +119,21 @@ WP-CLI は、多くのコマンドにより構成されており、カスタム�
 
 開発に参加するには、まずはじめに [creating an issue](https://wp-cli.org/docs/bug-reports/) or [submitting a pull request](https://wp-cli.org/docs/pull-requests/) を読んでください。
 
+ようこそ、そしてありがとう！
+
+私たちは、みなさんが率先して貢献してくれることに感謝しています。あなたやあなたのまわりのコミュニティによって、WP-CLIはすばらしいプロジェクトになります。
+
+**貢献は単にコードだけではありません。** 私たちは、チュートリアルを書く、地元のミートアップでデモを行う、ユーザーの質問への回答、ドキュメントの改訂など、あなたの日々の活動に応じた貢献をお願いしています。
+
+すこしだけ時間を使って[ガイドラインをよく読んでください](https://wp-cli.org/docs/contributing/)。ここに書かれていることに従うことで、本プロジェクトの他の貢献者たちとのコミュニケーションを円滑にすることができます。彼らは、世界をまたがってあなたと一緒に働くことに、最大限の敬意を払う努力をします。
+
 ### プロジェクトリーダー
 
-* [Daniel Bachhuber](https://github.com/danielbachhuber/) - current maintainer
-* [Cristi Burcă](https://github.com/scribu) - previous maintainer
-* [Andreas Creten](https://github.com/andreascreten) - founder
+WP-CLIは以下の個人によってリードされています。
+
+* [Daniel Bachhuber](https://github.com/danielbachhuber/) - 現在のメンテナー
+* [Cristi Burcă](https://github.com/scribu) - 前メンテナー
+* [Andreas Creten](https://github.com/andreascreten) - 創始者
 
 プロジェクトの[ガバナンス](https://wp-cli.org/docs/governance/)と[完全な貢献者リスト](https://github.com/wp-cli/wp-cli/contributors)も読んでください。
 
