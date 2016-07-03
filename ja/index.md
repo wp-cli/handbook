@@ -105,9 +105,11 @@ WP-CLI のメンテナーとプロジェクトの貢献者たちは、新しい 
 - [Open or closed issues on Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
 - [WordPress StackExchange forums](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
+もしこれらのリソースから回答を見つけられなかった場合、ご自由にあなたの質問を[Issueを書いてください](https://github.com/wp-cli/wp-cli/issues/new)。
+
 もしあなたが WordPress.org のアカウントを持っているなら、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加することもできます。
 
-## Extending
+## 拡張
 
 それぞれの **コマンド** は、WP-CLI の関数の一つとして定義されています。`wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) はそのうちのひとつであり、`wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) は別のもうひとつです。
 
@@ -127,9 +129,11 @@ WP-CLI は、多くのコマンドにより構成されており、カスタム�
 
 ### プロジェクトリーダー
 
-* [Daniel Bachhuber](https://github.com/danielbachhuber/) - current maintainer
-* [Cristi Burcă](https://github.com/scribu) - previous maintainer
-* [Andreas Creten](https://github.com/andreascreten) - founder
+WP-CLIは以下の個人によってリードされています。
+
+* [Daniel Bachhuber](https://github.com/danielbachhuber/) - 現在のメンテナー
+* [Cristi Burcă](https://github.com/scribu) - 前メンテナー
+* [Andreas Creten](https://github.com/andreascreten) - 創始者
 
 プロジェクトの[ガバナンス](https://wp-cli.org/docs/governance/)と[完全な貢献者リスト](https://github.com/wp-cli/wp-cli/contributors)も読んでください。
 
