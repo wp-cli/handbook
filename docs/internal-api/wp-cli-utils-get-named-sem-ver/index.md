@@ -19,7 +19,7 @@ Compare two version strings to get the named semantic version.
 <div>
 <strong>$new_version</strong> (string) <br />
 <strong>$original_version</strong> (string) <br />
-<strong>@return</strong> (string) 'major', 'minor', 'patch'<br /></p>
+<strong>@return</strong> (string) 'major', 'minor', 'patch'<br />
 </div>
 
 

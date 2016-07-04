@@ -20,7 +20,7 @@ Launch an arbitrary external process that takes over I/O.
 <strong>$command</strong> (string) External process to launch.<br />
 <strong>$exit_on_error</strong> (boolean) Whether to exit if the command returns an elevated return code.<br />
 <strong>$return_detailed</strong> (boolean) Whether to return an exit status (default) or detailed execution results.<br />
-<strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun object for full details.<br /></p>
+<strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun object for full details.<br />
 </div>
 
 

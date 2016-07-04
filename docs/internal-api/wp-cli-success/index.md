@@ -18,7 +18,7 @@ Display success message prefixed with &quot;Success: &quot;.
 
 <div>
 <strong>$message</strong> (string) Message to write to STDOUT.<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>@return</strong> (null) <br />
 </div>
 
 

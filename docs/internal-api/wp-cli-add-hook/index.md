@@ -19,7 +19,7 @@ Schedule a callback to be executed at a certain point.
 <div>
 <strong>$when</strong> (string) Identifier for the hook.<br />
 <strong>$callback</strong> (mixed) Callback to execute when hook is called.<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>@return</strong> (null) <br />
 </div>
 
 

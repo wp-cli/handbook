@@ -19,8 +19,8 @@ Register a command to WP-CLI.
 <div>
 <strong>$name</strong> (string) Name for the command (e.g. "post list" or "site empty").<br />
 <strong>$callable</strong> (string) Command implementation as a class, function or closure.<br />
-<strong>$args</strong> (array) {<br />     Optional An associative array with additional registration parameters.<br />     'before_invoke' => callback to execute before invoking the command,<br />     'shortdesc' => short description (80 char or less) for the command,<br />     'synopsis' => the synopsis for the command (string or array),<br />     'when' => execute callback on a named WP-CLI hook (e.g. before_wp_load),<br />}<br />
-<strong>@return</strong> (true) on success, hard error if registration failed.<br /></p>
+<strong>$args</strong> (array) {<br />     Optional An associative array with additional registration parameters.<br />     'before_invoke' => callback to execute before invoking the command,<br />     'after_invoke' => callback to execute after invoking the command,<br />     'shortdesc' => short description (80 char or less) for the command,<br />     'synopsis' => the synopsis for the command (string or array),<br />     'when' => execute callback on a named WP-CLI hook (e.g. before_wp_load),<br />}<br />
+<strong>@return</strong> (true) on success, hard error if registration failed.<br />
 </div>
 
 

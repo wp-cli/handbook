@@ -20,7 +20,7 @@ Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or
 <strong>$format</strong> (string) Format to use: 'table', 'json', 'csv', 'yaml', 'ids', 'count'<br />
 <strong>$items</strong> (array) An array of items to output.<br />
 <strong>$fields</strong> (array|string) Named fields for each item of data. Can be array or comma-separated list.<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>@return</strong> (null) <br />
 </div>
 
 
