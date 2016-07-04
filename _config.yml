@@ -30,12 +30,17 @@ navigation:
   url: /restful/
 languages:
 - label: English
+  iso-alpha2: en
   path: /
 - label: Japanese
+  iso-alpha2: ja
   path: /ja/
 - label: Français
+  iso-alpha2: fr
   path: /fr/
 - label: Português (Brasil)
+  iso-alpha2: br
   path: /br/
 - label: Türkçe
+  iso-alpha2: tr
   path: /tr/
