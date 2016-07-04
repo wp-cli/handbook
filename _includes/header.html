@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html>{% assign hreflang = 'en' %}{% for lang in site.languages %}{% if lang.path == page.url %}{% assign hreflang = lang.iso-alpha2 %}{% endif %}{% endfor %}
+<html hreflang="{{hreflang}}">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
