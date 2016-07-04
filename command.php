@@ -212,7 +212,7 @@ function parse_docblock( $docblock ) {
 				reset( $ret['parameters'][ $param_name ] );
 				if ( ! empty( $ret['parameters'][ $param_name ][ $key ][ 2 ] )
 					&& '{' === substr( $ret['parameters'][ $param_name ][ $key ][ 2 ] , -1 ) ) {
-					$in_param = array( $param, $key );
+					$in_param = array( $param_name, $key );
 				}
 			}
 			$extra_line = '';
