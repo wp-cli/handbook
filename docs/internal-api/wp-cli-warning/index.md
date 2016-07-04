@@ -18,7 +18,7 @@ Display warning message prefixed with &quot;Warning: &quot;.
 
 <div>
 <strong>$message</strong> (string) Message to write to STDERR.<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>@return</strong> (null) <br />
 </div>
 
 

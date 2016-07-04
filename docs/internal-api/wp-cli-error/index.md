@@ -19,7 +19,7 @@ Display error message prefixed with &quot;Error: &quot; and exit script.
 <div>
 <strong>$message</strong> (string|WP_Error) Message to write to STDERR.<br />
 <strong>$exit</strong> (boolean|integer) True defaults to exit(1).<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>@return</strong> (null) <br />
 </div>
 
 

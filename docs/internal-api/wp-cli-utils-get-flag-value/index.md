@@ -20,7 +20,7 @@ Return the flag value or, if it's not set, the $default value.
 <strong>$assoc_args</strong> (array) Arguments array.<br />
 <strong>$flag</strong> (string) Flag to get the value.<br />
 <strong>$default</strong> (mixed) Default value for the flag. Default: NULL<br />
-<strong>@return</strong> (mixed) <br /></p>
+<strong>@return</strong> (mixed) <br />
 </div>
 
 

@@ -18,7 +18,7 @@ Execute callbacks registered to a given hook.
 
 <div>
 <strong>$when</strong> (string) Identifier for the hook.<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>@return</strong> (null) <br />
 </div>
 
 

@@ -18,7 +18,7 @@ Launch system's $EDITOR for the user to edit some text.
 
 <div>
 <strong>string</strong> () $content  Some form of text to edit (e.g. post content)<br />
-<strong>@return</strong> (string|bool) text, if file is saved from editor; false, if no change to file.<br /></p>
+<strong>@return</strong> (string|bool) text, if file is saved from editor; false, if no change to file.<br />
 </div>
 
 

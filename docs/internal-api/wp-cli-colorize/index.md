@@ -18,7 +18,7 @@ Colorize a string for output.
 
 <div>
 <strong>$string</strong> (string) String to colorize for output, with color tokens.<br />
-<strong>@return</strong> (string) string.<br /></p>
+<strong>@return</strong> (string) string.<br />
 </div>
 
 

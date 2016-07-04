@@ -19,7 +19,7 @@ Create a progress bar to display percent completion of a given operation.
 <div>
 <strong>$message</strong> (string) Text to display before the progress bar.<br />
 <strong>$count</strong> (integer) Total number of ticks to be performed.<br />
-<strong>@return</strong> (cli\progress\Bar|WP_CLI\NoOp) <br /></p>
+<strong>@return</strong> (cli\progress\Bar|WP_CLI\NoOp) <br />
 </div>
 
 

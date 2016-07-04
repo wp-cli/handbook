@@ -17,7 +17,7 @@ Get the path to the PHP binary used when executing WP-CLI.
     WP_CLI::get_php_binary()
 
 <div>
-<strong>@return</strong> (string) <br /></p>
+<strong>@return</strong> (string) <br />
 </div>
 
 

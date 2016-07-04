@@ -17,7 +17,7 @@ Get the system's temp directory. Warns user if it isn't writable.
     WP_CLI\Utils\get_temp_dir()
 
 <div>
-<strong>@return</strong> (string) <br /></p>
+<strong>@return</strong> (string) <br />
 </div>
 
 

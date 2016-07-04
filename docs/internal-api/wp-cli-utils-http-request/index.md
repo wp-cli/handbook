@@ -21,7 +21,7 @@ Make a HTTP request to a remote URL.
 <strong>$url</strong> (string) URL to make the HTTP request to.<br />
 <strong>$headers</strong> (array) Add specific headers to the request.<br />
 <strong>$options</strong> (array) <br />
-<strong>@return</strong> (object) <br /></p>
+<strong>@return</strong> (object) <br />
 </div>
 
 
