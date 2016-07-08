@@ -70,10 +70,14 @@ Contributing
 EOT;
 	$replace = <<<EOT
 ---
-layout: default
+layout: doc
 title: Contributing
 category: Contributing
 description: An introduction to the contributing process.
+quick_links:
+  - Reporting a bug
+  - Creating a pull request
+  - Improving our documentation
 ---
 EOT;
 	$contents = str_replace( $search, $replace, $contents );
