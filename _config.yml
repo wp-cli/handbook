@@ -44,3 +44,6 @@ languages:
 - label: Türkçe
   iso-alpha2: tr
   path: /tr/
+- label: Deutsch
+  iso-alpha2: de
+  path: /de/
