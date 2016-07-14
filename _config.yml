@@ -47,3 +47,6 @@ languages:
 - label: Deutsch
   iso-alpha2: de
   path: /de/
+- label: नेपाली
+  iso-alpha2: ne
+  path: /ne/
