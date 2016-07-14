@@ -100,13 +100,13 @@ _Quer viver a vida no limite?_ Execute `wp cli update --nightly` para usar a úl
 
 ### Auto-completar
 
-WP-CLI também acompanha scripts de auto-complemtar para Bash ou ZSH. Faça o download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) e carregue o arquivo para `~/.bash_profile`:
+WP-CLI também acompanha scripts de auto-completar para Bash ou ZSH. Faça o download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) e carregue o arquivo para `~/.bash_profile`:
 
 ```
 source /FULL/PATH/TO/wp-completion.bash
 ```
 
-Não se esqueça de depois executar `source ~/.bash_profile`.
+Não se esqueça de executar `source ~/.bash_profile` em seguida.
 
 ## Suporte
 
