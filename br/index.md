@@ -92,9 +92,21 @@ WP-CLI project config:
 WP-CLI version: 0.23.0
 ```
 
+### Atualizando
+
 WP-CLI pode ser atualizado com `wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)), ou repetindo os passos da instalação.
 
 _Quer viver a vida no limite?_ Execute `wp cli update --nightly` para usar a última compilação de desenvolvimento da WP-CLI. Essa versão é bastante estável para utilizar em seu ambiente de desenvolvimento, e sempre inclui as melhores e mais atuais funcionalidades da WP-CLI.
+
+### Auto-completar
+
+WP-CLI também acompanha scripts de auto-completar para Bash ou ZSH. Faça o download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) e carregue o arquivo para `~/.bash_profile`:
+
+```
+source /FULL/PATH/TO/wp-completion.bash
+```
+
+Não se esqueça de executar `source ~/.bash_profile` em seguida.
 
 ## Suporte
 
@@ -113,6 +125,37 @@ Se você possui uma conta WordPress.org, considere se inscrever no canal `#cli` 
 ## Extendendo
 
 Um **commando** é uma unidade singular de uma funcionalidade WP-CLI. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) é um comando. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) é outro.
+
+A WP-CLI suporta o registro de qualquer classe ou função como um comando, lendo os detalhes de uso através de _PHPdoc Callback_. `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) é utilizado para registo de comandos internos e de terceiros.
+
+
+```
+/**
+ * Delete an option from the database.
+ *
+ * Returns an error if the option didn't exist.
+ *
+ * ## OPTIONS
+ *
+ * <key>
+ * : Key for the option.
+ *
+ * ## EXAMPLES
+ *
+ *     $ wp option delete my_option
+ *     Success: Deleted 'my_option' option.
+ */
+$delete_option_cmd = function( $args ) {
+	list( $key ) = $args;
+
+	if ( ! delete_option( $key ) ) {
+		WP_CLI::error( "Could not delete '$key' option. Does it exist?" );
+	} else {
+		WP_CLI::success( "Deleted '$key' option." );
+	}
+};
+WP_CLI::add_command( 'option delete', $delete_option_cmd );
+```
 
 WP-CLI vem com muitos comandos. Criar um comando personalizado para WP-CLi é mais fácil do que parece. Leia o [livro de receitas de comandos](https://wp-cli.org/docs/commands-cookbook/) para aprender mais. Procure a [documentação de API interna](https://wp-cli.org/docs/internal-api/) para descobrir a variedade de funcionalidades úteis que você pode utilizar no seu comando personalizado para WP-CLI.
 
