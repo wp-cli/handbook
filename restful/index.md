@@ -5,13 +5,13 @@ title: A more RESTful WP-CLI
 
 ## A more RESTful WP-CLI
 
-*Landing page last updated: April 14, 2016*
+*Landing page last updated: July 20, 2016*
 
-WP-CLI's mission is to be, quantitatively, the *fastest* interface for developers to manage WordPress. "A more RESTful WP-CLI" is a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. This funding supports 283 hours of [Daniel Bachhuber](http://danielbachhuber.com/)'s time towards making improvements to WP-CLI and the WP REST API.
+WP-CLI's mission is to be, quantitatively, the *fastest* interface for developers to manage WordPress. "A more RESTful WP-CLI" was a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. This funding supported 232.42 hours of [Daniel Bachhuber](http://danielbachhuber.com/)'s time towards making improvements to WP-CLI and the WP REST API.
 
-Wait a second, what does it mean to "unlock the potential of the WP REST API at the command line"? Pragmatically, it means any endpoints registered in plugins or themes will be *automagically* accessible as WP-CLI commands. For instance, if you were to register an endpoint for `GET /my-plugin/v1/product/<id>`, this endpoint will also be accessible on the command line as (more or less) `wp @prod product get <id>`. You can check out the work to date at [danielbachhuber/wp-rest-cli](https://github.com/danielbachhuber/wp-rest-cli)
+Wait a second, what does it mean to "unlock the potential of the WP REST API at the command line"? Pragmatically, it means any endpoints registered in plugins or themes are *automagically* accessible as WP-CLI commands. For instance, if you were to register an endpoint for `GET /my-plugin/v1/product/<id>`, this endpoint is also accessible on the command line as (more or less) `wp @prod product get <id>`.
 
-However, this project is also a multi-faceted exploration of what it means for WP-CLI to be the fastest way to manage WordPress, in a world backed by the WP REST API.
+For a summary of these features, check out [wp-cli/restful](https://github.com/wp-cli/restful). Or, read through the updates linked below for a broader overview of how the project progressed.
 
 Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#supporters)
 
@@ -21,6 +21,7 @@ Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#s
 
 Blog posts:
 
+* [RESTful WP-CLI - The final update?](/blog/restful-wp-cli-update-4.html) - July 20, 2016
 * [RESTful WP-CLI - What I've been hacking on](/blog/restful-wp-cli-update-3.html) - April 14, 2016
 * [RESTful WP-CLI - No rest for the weary](/blog/restful-wp-cli-update-2.html) - February 4, 2016
 * [RESTful WP-CLI - The journey begins](/blog/restful-wp-cli-update-1.html) - January 12, 2016
@@ -35,23 +36,24 @@ Releases:
 
 Presentations:
 
+* [My condolences, you’re now the maintainer of a popular open source project](https://runcommand.io/2016/06/26/my-condolences-youre-now-the-maintainer-of-a-popular-open-source-project/) - WordCamp Europe (June 25, 2016)
 * [Unlocking the potential of the WP REST API at the command line](http://blog.handbuilt.co/2016/01/28/feelingrestful-a-more-restful-wp-cli/) - A Day of REST (January 28, 2016)
 
 ***
 
 ## Budget
 
-Here's a breakdown of how the project's 283 total hours have been used (between January 1st and April 14th, 2016):
+Here's a breakdown of how the project's 232.42 total hours have been used (between January 1st and July 20th, 2016):
 
 | Activity      | WP-CLI                     | WP-API                    |
 |---------------|----------------------------|---------------------------|
-| Development   | 65.46                      | 67.95                     |
+| Development   | 84.38                      | 67.95                     |
 | Support       | 10.91                      | 15.39                     |
-| Documentation | 24.96                      | 1.17                      |
-| Blogging      | 12.51                      | 0                         |
+| Documentation | 27.21                      | 1.17                      |
+| Blogging      | 16.97                      | 0                         |
 | Meetings      | 0                          | 7.91                      |
 | Admin         | 0.77                       | 0                         |
-| **Total**     | 114.61 (of 150.58 budgeted)| 92.42 (of 92.42 budgeted) |
+| **Total**     | 140.24 (of 140.00 budgeted)| 92.42 (of 92.42 budgeted) |
 
 Note: time spent fulfilling the Kickstarter rewards is tracked separately.
 
