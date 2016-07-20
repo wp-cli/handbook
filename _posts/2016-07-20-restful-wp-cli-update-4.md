@@ -55,3 +55,25 @@ Or, if you use a `~/.ssh/config`, `<host>` can be any host alis stored in the SS
 Note you will need a copy of WP-CLI on the remote server, accessible as `wp`. Using `--ssh=<host>` won't load your `.bash_profile` if you have a shell alias defined there. [Here's a more thorough explanation](https://runcommand.io/to/wp-ssh-custom-path/) of how you can make `wp` accessible.
 
 ### RESTful WP-CLI v0.2.0 and beyond
+
+Today also marks the release of [RESTful WP-CLI](https://github.com/wp-cli/restful) v0.2.0. Among [43 closed issues and pull requests](https://github.com/wp-cli/restful/milestone/2?closed=1), I'd like to highlight two new features.
+
+First, use `wp rest (post|user|comment|*) generate` to create an arbitrary number of any resource:
+
+    $ wp @wpdev rest post generate --count=50 --title="Test Post"
+    Generating items  100% [==============================================] 0:01 / 0:02
+
+When working on a site locally, you often need dummy content to work with. There are a myriad of ways custom post types can store data in the database though, so generating dummy content can be a painstaking process. Because the WP REST API represents a layer of abstraction between the client (e.g. WP-CLI in this case) and the database, it's much easier to produce a general purpose content generation command.
+
+Second, use `wp rest (post|user|comment|*) diff` to compare resources between two enviroments:
+
+    $ wp @dev rest command diff @prod find-unused-themes --fields=title
+    (-) http://runcommand.dev/api/ (+) https://runcommand.io/api/
+      command:
+      + title: find-unused-themes
+
+When working with multiple WordPress environments, you may want to know how these environments differ. Because the WP REST API represents a higher-level abstraction on top of WordPress, computing the difference between two environments becomes a matter of fetching the data and producing a comparison.
+
+Consider both of these new features to be prototypes. They work, but there are many implementation details to be worked out.
+
+tk closing
