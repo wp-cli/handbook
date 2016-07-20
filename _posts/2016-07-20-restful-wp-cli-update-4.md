@@ -24,7 +24,7 @@ Then, once the code goes to production, I can run:
     $ wp @prod rewrite flush
     Success: Rewrite rules flushed.
 
-Look ma! No more SSH'ing into machines, changing directories, and generally spending a full minute get to a given WordPress install.
+Look ma! No more SSH'ing into machines, changing directories, and generally spending a full minute to get to a given WordPress install.
 
 Additionally, alias groups let you register groups of aliases. If I want to run a command against both runcommand WordPress instances, I can use `@both`:
 
