@@ -71,6 +71,7 @@ In the future, I'd love to see [dummy data generated for each field based on the
 
 Second, use `wp rest (post|user|comment|*) diff` to compare resources between two enviroments:
 
+    # "command" isn't a typo in this example; "command" is a content type expressed through the WP REST API on runcommand.io
     $ wp @dev rest command diff @prod find-unused-themes --fields=title
     (-) http://runcommand.dev/api/ (+) https://runcommand.io/api/
       command:
