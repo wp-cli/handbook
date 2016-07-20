@@ -52,7 +52,7 @@ Under the hood, WP-CLI proxies commands to the `ssh` executable, which then pass
 * The user and the host (e.g. `wp --ssh=runcommand@runcommand.io`).
 * The user, the host, and the path to the WordPress install (e.g. `wp --ssh=runcommand@runcommand.io~/webapps/production`). The path comes immediately after the TLD of the host.
 
-Or, if you use a `~/.ssh/config`, `<host>` can be any host alis stored in the SSH config (e.g. `wp --ssh=rc` for me).
+Or, if you use a `~/.ssh/config`, `<host>` can be any host alias stored in the SSH config (e.g. `wp --ssh=rc` for me).
 
 Note you do need a copy of WP-CLI on the remote server, accessible as `wp`. Futhermore, `--ssh=<host>` won't load your `.bash_profile` if you have a shell alias defined, or are extending the `$PATH` environment variable. If this affects you, [here's a more thorough explanation](https://runcommand.io/to/wp-ssh-custom-path/) of how you can make `wp` accessible.
 
@@ -80,6 +80,10 @@ When working with multiple WordPress environments, you may want to know how thes
 
 There are a [number of ways the diff command could be improved](https://github.com/wp-cli/restful/issues?q=is%3Aissue+is%3Aopen+label%3Acommand%3Adiff), so consider this implementation to be the prototype.
 
-What's next? Ultimately, the goal is for `wp rest post` to replace `wp post`, but there are many months between here and there. In this future where WP-CLI packages are first-class citizens amongst the commands in WP-CLI core, RESTful WP-CLI gets to serve as a testbed for figuring out how that actually works. We shall see, we shall see.
+What's next?
+
+More immediately, I'd like to start looking at how well RESTful WP-CLI works with plugins and themes. If you've written custom endpoints for the WP REST API, [please weigh in on this Github issue](https://github.com/wp-cli/restful/issues/85) so I can check it out.
+
+Ultimately, the goal is for `wp rest post` to replace `wp post`, but there are many months between here and there. In this future where WP-CLI packages are first-class citizens amongst the commands in WP-CLI core, RESTful WP-CLI gets to serve as a testbed for figuring out how that actually works. We shall see, we shall see.
 
 As always, thanks for your support!
