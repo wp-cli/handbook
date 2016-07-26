@@ -29,6 +29,9 @@ task( 'syn-list', function( $app ) {
 			echo $full_path . ' ' . $command['synopsis'] . "\n";
 		} else {
 			foreach ( $command['subcommands'] as $subcommand ) {
+				if ( 'website' === $subcommand['name'] ) {
+					continue;
+				}
 				generate_synopsis( $subcommand, $full_path );
 			}
 		}
@@ -91,6 +94,9 @@ task( 'cmd-list', function( $app ) {
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
 
 	foreach ( $wp['subcommands'] as $cmd ) {
+		if ( 'website' === $cmd['name'] ) {
+			continue;
+		}
 		gen_cmd_pages( $cmd );
 	}
 });
