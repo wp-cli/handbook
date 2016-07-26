@@ -84,6 +84,7 @@ Here's an annotated example `wp-cli.yml` file:
 			define( 'WP_POST_REVISIONS', 50 );
 
 	# Aliases to other WordPress installs (e.g. `wp @staging rewrite flush`)
+	# An alias can include 'user', 'url', 'path', 'ssh', or 'http'
 	@staging:
 		ssh: wpcli@staging.wp-cli.org
 		user: wpcli
