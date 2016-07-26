@@ -13,5 +13,11 @@ display_global_parameters: true
 For sites using a persistent object cache, because WordPress Multisite simply adds a blog id
 to the cache key, flushing cache is typically a global operation.
 
+### EXAMPLES
+
+    # Flush cache.
+    $ wp cache flush
+    Success: The cache was flushed.
+
 
 

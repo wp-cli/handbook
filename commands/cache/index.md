@@ -10,11 +10,17 @@ display_global_parameters: true
 
 <hr />
 
+Note: Persistent Object Caching is needed for these commands.
+
 ### EXAMPLES
 
-    wp cache set my_key my_value my_group 300
+    # Set cache.
+    $ wp cache set my_key my_value my_group 300
+    Success: Set object 'my_key' in group 'my_group'.
 
-    wp cache get my_key my_group
+    # Get cache.
+    $ wp cache get my_key my_group
+    my_value
 
 
 

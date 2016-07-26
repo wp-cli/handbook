@@ -17,9 +17,11 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Display the WordPress version
     $ wp core version
     4.5.2
 
+    # Display WordPress version along with other information
     $ wp core version --extra
     WordPress version: 4.5.2
     Database revision: 36686

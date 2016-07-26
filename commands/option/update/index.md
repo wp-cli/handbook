@@ -19,18 +19,33 @@ display_global_parameters: true
 : The new value. If ommited, the value is read from STDIN.
 
 [\--autoload=&lt;autoload&gt;]
-: Requires WP 4.2. Should this option be automatically loaded. Accepted values: yes, no. Default: yes
+: Requires WP 4.2. Should this option be automatically loaded.
+\---
+default: yes
+options:
+  - yes
+  - no
+\---
 
 [\--format=&lt;format&gt;]
-: The serialization format for the value. Default is plaintext.
+: The serialization format for the value.
+\---
+default: plaintext
+options:
+  - plaintext
+  - json
+\---
 
 ### EXAMPLES
 
     # Update an option by reading from a file
-    wp option update my_option < value.txt
+    $ wp option update my_option < value.txt
+    Success: Updated 'my_option' option.
 
     # Update one option on multiple sites using xargs
-    wp site list --field=url | xargs -n1 -I {} sh -c 'wp --url={} option update &lt;key&gt; &lt;value&gt;'
+    $ wp site list --field=url | xargs -n1 -I {} sh -c 'wp --url={} option update my_option my_value'
+    Success: Updated 'my_option' option.
+    Success: Updated 'my_option' option.
 
 
 

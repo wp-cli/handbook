@@ -44,7 +44,10 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user create bob bob@example.com --role=author
+    # Create user
+    $ wp user create bob bob@example.com --role=author
+    Success: Created user 3.
+    Password: k9**&amp;I4vNH(&amp;
 
 
 

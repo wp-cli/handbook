@@ -16,10 +16,16 @@ display_global_parameters: true
 : The string to search for.
 
 [\--page=&lt;page&gt;]
-: Optional page to display.  Defaults to 1.
+: Optional page to display.
+\---
+default: 1
+\---
 
 [\--per-page=&lt;per-page&gt;]
-: Optional number of results to display. Defaults to 10.
+: Optional number of results to display.
+\---
+default: 10
+\---
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each plugin.
@@ -43,7 +49,16 @@ display_global_parameters: true
     **short_description**: Plugin's Short Description
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - count
+  - json
+  - yaml
+\---
 
 ### EXAMPLES
 

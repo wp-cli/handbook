@@ -25,7 +25,17 @@ display_global_parameters: true
 : Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - ids
+  - json
+  - count
+  - yaml
+\---
 
 ### AVAILABLE FIELDS
 
@@ -43,9 +53,24 @@ There are no optionally available fields.
 
 ### EXAMPLES
 
-    wp term list category --format=csv
+    # List post categories
+    $ wp term list category --format=csv
+    term_id,term_taxonomy_id,name,slug,description,parent,count
+    2,2,aciform,aciform,,0,1
+    3,3,antiquarianism,antiquarianism,,0,1
+    4,4,arrangement,arrangement,,0,1
+    5,5,asmodeus,asmodeus,,0,1
 
-    wp term list post_tag --fields=name,slug
+    # List post tags
+    $ wp term list post_tag --fields=name,slug
+    +-----------+-------------+
+    | name      | slug        |
+    +-----------+-------------+
+    | 8BIT      | 8bit        |
+    | alignment | alignment-2 |
+    | Articles  | articles    |
+    | aside     | aside       |
+    +-----------+-------------+
 
 
 

@@ -22,7 +22,7 @@ display_global_parameters: true
 
     # Reset role
     $ wp role reset administrator author contributor
-    Success: Reset 1/3 roles
+    Success: Reset 1/3 roles.
 
     # Reset all default roles
     $ wp role reset --all

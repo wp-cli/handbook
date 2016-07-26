@@ -39,7 +39,8 @@ STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in 
 
 ### EXAMPLES
 
-    wp scaffold taxonomy venue --post_types=event,presentation
+    # Generate PHP code for registering a custom taxonomy and save in a file
+    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
 
 
 

@@ -55,9 +55,18 @@ and --all-tables-with-prefix.
 : Write transformed data as SQL file instead of saving replacements to
 the database. If &lt;file&gt; is not supplied, will output to STDOUT.
 
+[\--export_insert_size=&lt;rows&gt;]
+: Define number of rows in single INSERT statement when doing SQL export.
+You might want to change this depending on your database configuration
+(e.g. if you need to do fewer queries). Default: 50
+
 [\--skip-columns=&lt;columns&gt;]
 : Do not perform the replacement on specific columns. Use commas to
 specify multiple columns. 'guid' is skipped by default.
+
+[\--include-columns=&lt;columns&gt;]
+: Perform the replacement on specific columns. Use commas to
+specify multiple columns.
 
 [\--precise]
 : Force the use of PHP (instead of SQL) which is more thorough,
@@ -76,15 +85,25 @@ will take about 15-20x longer when using --regex.
 
 ### EXAMPLES
 
-    wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid
+    # Search and replace but skip one column
+    $ wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid
 
-    wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
+    # Run search/replace operation but dont save in database
+    $ wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
 
     # Turn your production multisite database into a local dev database
-    wp search-replace --url=example.com example.com example.dev 'wp_*_options' wp_blogs
+    $ wp search-replace --url=example.com example.com example.dev 'wp_*_options' wp_blogs
 
     # Search/replace to a SQL file without transforming the database
-    wp search-replace foo bar --export=database.sql
+    $ wp search-replace foo bar --export=database.sql
+
+    # Bash script: Search/replace production to development url (multisite compatible)
+    #!/bin/bash
+    if $(wp --url=http://example.com core is-installed --network); then
+        wp search-replace --url=http://example.com 'http://example.com' 'http://example.dev' --recurse-objects --network --skip-columns=guid
+    else
+        wp search-replace 'http://example.com' 'http://example.dev' --recurse-objects --skip-columns=guid
+    fi
 
 
 

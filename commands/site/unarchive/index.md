@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp site unarchive 123
+    $ wp site unarchive 123
+    Success: Site 123 unarchived.
 
 
 

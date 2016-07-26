@@ -10,7 +10,22 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    # Display CLI version
+    $ wp cli version
+    WP-CLI 0.23.1
+
+    # Check for update
+    $ wp cli check-update
+    Success: WP-CLI is at the latest version.
+
+    # Update CLI
+    $ wp cli update
+    You have version 0.23.0. Would you like to update to 0.23.1? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.23.1/wp-cli-0.23.1.phar...
+    New version works. Proceeding to replace.
+    Success: Updated WP-CLI to 0.23.1
 
 
 
@@ -24,6 +39,10 @@ display_global_parameters: true
 	</tr>
 	</thead>
 	<tbody>
+		<tr>
+			<td><a href="/commands/cli/alias/">alias</a></td>
+			<td>List available aliases.</td>
+		</tr>
 		<tr>
 			<td><a href="/commands/cli/api-dump/">api-dump</a></td>
 			<td>Dump the list of internal APIs, as JSON.</td>

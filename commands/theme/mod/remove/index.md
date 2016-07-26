@@ -20,9 +20,17 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp theme mod remove --all
-    wp theme mod remove background_color
-    wp theme mod remove background_color header_textcolor
+    # Remove all theme mods
+    $ wp theme mod remove --all
+    Success: Theme mods removed.
+
+    # Remove single theme mods
+    $ wp theme mod remove background_color
+    Success: 1 mods removed.
+
+    # Remove multiple theme mods
+    $ wp theme mod remove background_color header_textcolor
+    Success: 2 mods removed.
 
 
 

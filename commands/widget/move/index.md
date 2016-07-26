@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;widget-id&gt;
 : Unique ID for the widget
 

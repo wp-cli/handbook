@@ -30,5 +30,10 @@ display_global_parameters: true
 [\--porcelain]
 : If set, only the site id will be output on success.
 
+### EXAMPLES
+
+    $ wp site create --slug=example
+    Success: Site 3 created: www.example.com/example/
+
 
 

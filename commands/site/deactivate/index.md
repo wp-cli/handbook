@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp site deactivate 123
+    $ wp site deactivate 123
+    Success: Site 123 deactivated.
 
 
 

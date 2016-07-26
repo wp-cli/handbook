@@ -17,5 +17,10 @@ because WP-Cron is disabled.
 * Attempts to spawn WP-Cron over HTTP; warns if non 200 response code is
 returned.
 
+### EXAMPLES
+
+    $ wp cron test
+    Success: WP-Cron spawning is working as expected.
+
 
 

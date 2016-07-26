@@ -10,7 +10,11 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    # Open MySQL console
+    $ wp db cli
+    mysql&gt;
 
 
 

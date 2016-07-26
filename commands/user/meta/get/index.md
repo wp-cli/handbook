@@ -21,5 +21,11 @@ display_global_parameters: true
 [\--format=&lt;format&gt;]
 : Accepted values: table, json, yaml. Default: table
 
+### EXAMPLES
+
+    # Get user meta
+    $ wp user meta get 123 bio
+    Mary is an WordPress developer.
+
 
 

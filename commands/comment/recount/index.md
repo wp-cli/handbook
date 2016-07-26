@@ -15,5 +15,10 @@ display_global_parameters: true
 &lt;id&gt;...
 : IDs for one or more posts to update.
 
+### EXAMPLES
+
+    $ wp comment recount 123
+    Updated post 123 comment count to 67.
+
 
 

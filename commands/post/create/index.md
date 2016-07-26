@@ -33,9 +33,13 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp post create --post_type=page --post_title='A future post' --post_status=future --post_date='2020-12-01 07:00:00'
+    # Create post and schedule for future
+    $ wp post create --post_type=page --post_title='A future post' --post_status=future --post_date='2020-12-01 07:00:00'
+    Success: Created post 1921.
 
-    wp post create ./post-content.txt --post_category=201,345 --post_title='Post from file'
+    # Create post with content from given file
+    $ wp post create ./post-content.txt --post_category=201,345 --post_title='Post from file'
+    Success: Created post 1922.
 
 
 

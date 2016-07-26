@@ -32,7 +32,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp term update category 15 --name=Apple
+    $ wp term update category 15 --name=Apple
+    Success: Term updated.
 
 
 

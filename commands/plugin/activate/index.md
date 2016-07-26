@@ -21,5 +21,15 @@ display_global_parameters: true
 [\--network]
 : If set, the plugin will be activated for the entire multisite network.
 
+### EXAMPLES
+
+    # Activate plugin
+    $ wp plugin activate hello-dolly
+    Success: Plugin 'hello-dolly' activated.
+
+    # Activate plugin in entire multisite network
+    $ wp plugin activate hello-dolly --network
+    Success: Plugin 'hello-dolly' network activated.
+
 
 

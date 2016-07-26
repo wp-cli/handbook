@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp comment status 1337
+    $ wp comment status 1337
+    approved
 
 
 

@@ -29,6 +29,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Update WordPress
     $ wp core update
     Updating to version 4.5.2 (en_US)...
     Downloading update from https://downloads.wordpress.org/release/wordpress-4.5.2-no-content.zip...
@@ -37,6 +38,7 @@ display_global_parameters: true
     No files found that need cleaned up
     Success: WordPress updated successfully.
 
+    # Update WordPress to latest version of 3.8 release
     $ wp core update --version=3.8 ../latest.zip
     Updating to version 3.8 ()...
     Unpacking the update...
@@ -47,6 +49,7 @@ display_global_parameters: true
     377 files cleaned up
     Success: WordPress updated successfully.
 
+    # Update WordPress to 3.1 forcefully
     $ wp core update --version=3.1 --force
     Updating to version 3.1 (en_US)...
     Downloading update from https://wordpress.org/wordpress-3.1.zip...

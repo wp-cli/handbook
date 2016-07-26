@@ -73,6 +73,9 @@ supplied as an optional third argument during registration.
 <li><strong><a href="/docs/internal-api/wp-cli-do-hook/">WP_CLI::do_hook()</a></strong> - Execute callbacks registered to a given hook.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-add-wp-hook/">WP_CLI::add_wp_hook()</a></strong> - Add a callback to a WordPress action or filter.</li>
+
+
 
 </ul>
 

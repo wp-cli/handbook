@@ -13,6 +13,32 @@
 	</tr>
 	<tr>
 		<td>
+			Perform operation against a remote server over SSH.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="option">ssh: &lt;ssh&gt;</code>
+		</td>
+		<td>
+			<code class="flag">--ssh=&lt;ssh&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Perform operation against a remote WordPress install over HTTP.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="option">http: &lt;http&gt;</code>
+		</td>
+		<td>
+			<code class="flag">--http=&lt;http&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
 			Pretend request came from given URL. In multisite, this argument is how the target site is specified.
 			<br />
 			Default value: <code>null</code>
@@ -122,10 +148,10 @@
 			Default value: <code>false</code>
 		</td>
 		<td>
-			<code class="option">debug: &lt;bool&gt;</code>
+			<code class="option">debug: &lt;group&gt;</code>
 		</td>
 		<td>
-			<code class="flag">--debug</code>
+			<code class="flag">--debug[=&lt;group&gt;]</code>
 		</td>
 	</tr>
 	<tr>

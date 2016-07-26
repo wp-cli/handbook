@@ -40,5 +40,10 @@ your WordPress install to function properly.
 [\--skip-email]
 : Don't send an email notification to the new admin user.
 
+### EXAMPLES
+
+    $ wp core install --url=example.com --title=Example --admin_user=supervisor --admin_password=strongpassword --admin_email=info@example.com
+    Success: WordPress installed successfully.
+
 
 

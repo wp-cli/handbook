@@ -22,7 +22,16 @@ display_global_parameters: true
 : Limit the output to specific post type fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - count
+  - yaml
+\---
 
 ### AVAILABLE FIELDS
 
@@ -39,9 +48,25 @@ There are no optionally available fields.
 
 ### EXAMPLES
 
-    wp post-type list --format=csv
+    # List registered post types
+    $ wp post-type list --format=csv
+    name,label,description,hierarchical,public,capability_type
+    post,Posts,,,1,post
+    page,Pages,,1,1,page
+    attachment,Media,,,1,post
+    revision,Revisions,,,,post
+    nav_menu_item,"Navigation Menu Items",,,,post
 
-    wp post-type list --capability_type=post --fields=name,public
+    # List post types with 'post' capability type
+    $ wp post-type list --capability_type=post --fields=name,public
+    +---------------+--------+
+    | name          | public |
+    +---------------+--------+
+    | post          | 1      |
+    | attachment    | 1      |
+    | revision      |        |
+    | nav_menu_item |        |
+    +---------------+--------+
 
 
 

@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp comment url 123
+    $ wp comment url 123
+    http://example.com/about/page-with-comments/#comment-123
 
 
 

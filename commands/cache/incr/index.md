@@ -21,5 +21,11 @@ display_global_parameters: true
 [&lt;group&gt;]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 
+### EXAMPLES
+
+    # Increase cache value.
+    $ wp cache incr my_key 2 my_group
+    50
+
 
 

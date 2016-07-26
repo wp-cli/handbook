@@ -16,7 +16,17 @@ display_global_parameters: true
 : Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, ids, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - count
+  - ids
+  - yaml
+\---
 
 ### AVAILABLE FIELDS
 
@@ -38,7 +48,13 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    wp menu list
+    $ wp menu list
+    +---------+----------+----------+-----------+-------+
+    | term_id | name     | slug     | locations | count |
+    +---------+----------+----------+-----------+-------+
+    | 200     | My Menu  | my-menu  |           | 0     |
+    | 177     | Top Menu | top-menu | primary   | 7     |
+    +---------+----------+----------+-----------+-------+
 
 
 

@@ -21,9 +21,26 @@ display_global_parameters: true
 [\--max_depth=&lt;number&gt;]
 : Generate child terms down to a certain depth. Default: 1
 
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: progress
+options:
+  - progress
+  - ids
+\---
+
 ### EXAMPLES
 
-    wp term generate --count=10
+    # Generate post categories
+    $ wp term generate category --count=10
+    Generating terms  100% [=========] 0:02 / 0:02
+
+    # Add meta to every generated term
+    $ wp term generate category --format=ids --count=3 | xargs -0 -d ' ' -I % wp term meta add % foo bar
+    Success: Added custom field.
+    Success: Added custom field.
+    Success: Added custom field.
 
 
 

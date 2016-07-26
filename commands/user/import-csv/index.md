@@ -23,8 +23,14 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user import-csv /path/to/users.csv
-    wp user import-csv http://example.com/users.csv
+    # Import users from local CSV file
+    $ wp user import-csv /path/to/users.csv
+    Success: bobjones created
+    Success: newuser1 created
+    Success: existinguser created
+
+    # Import users from remote CSV file
+    $ wp user import-csv http://example.com/users.csv
 
     Sample users.csv file:
 

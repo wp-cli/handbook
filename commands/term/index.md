@@ -10,7 +10,32 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    # Create term
+    $ wp term create category Apple --description="A type of fruit"
+    Success: Created category 199.
+
+    # Get term
+    $ wp term get category 199 --format=json --fields=term_id,name,slug,count
+    {"term_id":199,"name":"Apple","slug":"apple","count":1}
+
+    # Update term
+    $ wp term update category 15 --name=Apple
+    Success: Term updated.
+
+    # Get term url
+    $ wp term url post_tag 123
+    http://example.com/tag/tips-and-tricks
+
+    # Delete post category
+    $ wp term delete category 15
+    Success: Deleted category 15.
+
+    # Recount posts assigned to each categories and tags
+    $ wp term recount category post_tag
+    Success: Updated category term count
+    Success: Updated post_tag term count
 
 
 
@@ -47,6 +72,10 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/term/meta/">meta</a></td>
 			<td>Manage term custom fields.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/term/recount/">recount</a></td>
+			<td>Recalculate number of posts assigned to each term.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/term/update/">update</a></td>

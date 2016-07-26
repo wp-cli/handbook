@@ -22,16 +22,28 @@ display_global_parameters: true
 : Set the database user password.
 
 [\--dbhost=&lt;dbhost&gt;]
-: Set the database host. Default: 'localhost'
+: Set the database host.
+\---
+default: localhost
+\---
 
 [\--dbprefix=&lt;dbprefix&gt;]
-: Set the database table prefix. Default: 'wp_'
+: Set the database table prefix.
+\---
+default: wp_
+\---
 
 [\--dbcharset=&lt;dbcharset&gt;]
-: Set the database charset. Default: 'utf8'
+: Set the database charset.
+\---
+default: utf8
+\---
 
 [\--dbcollate=&lt;dbcollate&gt;]
-: Set the database collation. Default: ''
+: Set the database collation.
+\---
+default:
+\---
 
 [\--locale=&lt;locale&gt;]
 : Set the WPLANG constant. Defaults to $wp_local_package variable.
@@ -48,13 +60,15 @@ display_global_parameters: true
 ### EXAMPLES
 
     # Standard wp-config.php file
-    wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --locale=ro_RO
+    $ wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --locale=ro_RO
+    Success: Generated 'wp-config.php' file.
 
     # Enable WP_DEBUG and WP_DEBUG_LOG
-    wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php <<PHP
-    define( 'WP_DEBUG', true );
-    define( 'WP_DEBUG_LOG', true );
-    PHP
+    $ wp core config --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php <<PHP
+    $ define( 'WP_DEBUG', true );
+    $ define( 'WP_DEBUG_LOG', true );
+    $ PHP
+    Success: Generated 'wp-config.php' file.
 
 
 

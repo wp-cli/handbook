@@ -10,7 +10,22 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    # Create database
+    $ wp db create
+    Success: Database created.
+
+    # Drop database
+    $ wp db drop --yes
+    Success: Database dropped.
+
+    # Reset database
+    $ wp db reset --yes
+    Success: Database reset.
+
+    # Execute a query stored in a file
+    $ wp db query < debug.sql
 
 
 

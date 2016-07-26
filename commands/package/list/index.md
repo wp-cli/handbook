@@ -13,7 +13,25 @@ display_global_parameters: true
 ### OPTIONS
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv, yaml, ids. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - ids
+  - json
+  - yaml
+\---
+
+### EXAMPLES
+
+    $ wp package list
+    +-----------------------+------------------------------------------+---------+------------+
+    | name                  | description                              | authors | version    |
+    +-----------------------+------------------------------------------+---------+------------+
+    | wp-cli/server-command | Start a development server for WordPress |         | dev-master |
+    +-----------------------+------------------------------------------+---------+------------+
 
 
 

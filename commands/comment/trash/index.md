@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp comment trash 1337
+    $ wp comment trash 1337
+    Success: Trashed comment 1337.
 
 
 

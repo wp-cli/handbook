@@ -15,5 +15,10 @@ display_global_parameters: true
 [&lt;file&gt;]
 : The name of the SQL file to import. If '-', then reads from STDIN. If omitted, it will look for '{dbname}.sql'.
 
+### EXAMPLES
+
+    $ wp db import wordpress_dbase.sql
+    Success: Imported from 'wordpress_dbase.sql'.
+
 
 

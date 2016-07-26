@@ -23,12 +23,19 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp post delete 123 --force
+    # Delete post skipping trash
+    $ wp post delete 123 --force
+    Success: Deleted post 123.
 
-    wp post delete $(wp post list --post_type='page' --format=ids)
+    # Delete all pages
+    $ wp post delete $(wp post list --post_type='page' --format=ids)
+    Success: Trashed post 1164.
+    Success: Trashed post 1186.
 
-    # delete all posts in the trash
-    wp post delete $(wp post list --post_status=trash --format=ids)
+    # Delete all posts in the trash
+    $ wp post delete $(wp post list --post_status=trash --format=ids)
+    Success: Trashed post 1268.
+    Success: Trashed post 1294.
 
 
 

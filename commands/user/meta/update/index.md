@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;user&gt;
 : The user login, user email, or user ID of the user to update metadata for.
 
@@ -21,6 +23,12 @@ display_global_parameters: true
 
 [\--format=&lt;format&gt;]
 : The serialization format for the value. Default is plaintext.
+
+### EXAMPLES
+
+    # Update user meta
+    $ wp user meta update 123 bio "Mary is an awesome WordPress developer."
+    Success: Updated custom field 'bio'.
 
 
 

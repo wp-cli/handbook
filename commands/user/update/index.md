@@ -20,7 +20,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user update 123 --display_name=Mary --user_pass=marypass
+    # Update user
+    $ wp user update 123 --display_name=Mary --user_pass=marypass
+    Success: Updated user 123.
 
 
 

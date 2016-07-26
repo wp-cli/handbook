@@ -13,7 +13,17 @@ display_global_parameters: true
 ### OPTIONS
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, ids, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - count
+  - yaml
+  - ids
+\---
 
 ### AVAILABLE FIELDS
 
@@ -24,7 +34,13 @@ These fields will be displayed by default for each location:
 
 ### EXAMPLES
 
-    wp menu location list
+    $ wp menu location list
+    +----------+-------------------+
+    | location | description       |
+    +----------+-------------------+
+    | primary  | Primary Menu      |
+    | social   | Social Links Menu |
+    +----------+-------------------+
 
 
 

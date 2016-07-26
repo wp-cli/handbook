@@ -16,7 +16,29 @@ display_global_parameters: true
 : Display current values also.
 
 [\--format=&lt;format&gt;]
-: Accepted values: var_export, json. Default: json.
+: Render output in a particular format.
+\---
+default: json
+options:
+  - var_export
+  - json
+\---
+
+### EXAMPLES
+
+    $ wp cli param-dump --format=var_export
+    array (
+      'path' =&gt;
+      array (
+        'runtime' =&gt; '=&lt;path&gt;',
+        'file' =&gt; '&lt;path&gt;',
+        'synopsis' =&gt; '',
+        'default' =&gt; NULL,
+        'multiple' =&gt; false,
+        'desc' =&gt; 'Path to the WordPress files.',
+      ),
+      'url' =&gt;
+      array (
 
 
 

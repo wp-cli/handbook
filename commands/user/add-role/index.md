@@ -20,8 +20,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user add-role bob author
-    wp user add-role 12 author
+    $ wp user add-role 12 author
+    Success: Added 'author' role for johndoe (12).
 
 
 

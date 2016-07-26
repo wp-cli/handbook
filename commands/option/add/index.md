@@ -19,15 +19,28 @@ display_global_parameters: true
 : The value of the option to add. If ommited, the value is read from STDIN.
 
 [\--format=&lt;format&gt;]
-: The serialization format for the value. Default is plaintext.
+: The serialization format for the value.
+\---
+default: plaintext
+options:
+  - plaintext
+  - json
+\---
 
 [\--autoload=&lt;autoload&gt;]
-: Should this option be automatically loaded. Accepted values: yes, no. Default: yes
+: Should this option be automatically loaded.
+\---
+default: yes
+options:
+  - yes
+  - no
+\---
 
 ### EXAMPLES
 
     # Create an option by reading a JSON file
-    wp option add my_option --format=json < config.json
+    $ wp option add my_option --format=json < config.json
+    Success: Added 'my_option' option.
 
 
 

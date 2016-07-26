@@ -22,7 +22,16 @@ display_global_parameters: true
 : Limit the output to specific taxonomy fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - count
+  - yaml
+\---
 
 ### AVAILABLE FIELDS
 
@@ -38,9 +47,24 @@ There are no optionally available fields.
 
 ### EXAMPLES
 
-    wp taxonomy list --format=csv
+    # List all taxonomies
+    $ wp taxonomy list --format=csv
+    name,label,description,object_type,show_tagcloud,hierarchical,public
+    category,Categories,,post,1,1,1
+    post_tag,Tags,,post,1,,1
+    nav_menu,"Navigation Menus",,nav_menu_item,,,
+    link_category,"Link Categories",,link,1,,
+    post_format,Format,,post,,,1
 
-    wp taxonomy list --object-type=post --fields=name,public
+    # List all taxonomies with 'post' object type
+    $ wp taxonomy list --object_type=post --fields=name,public
+    +-------------+--------+
+    | name        | public |
+    +-------------+--------+
+    | category    | 1      |
+    | post_tag    | 1      |
+    | post_format | 1      |
+    +-------------+--------+
 
 
 

@@ -16,7 +16,8 @@ display_global_parameters: true
 : The network to which the sites belong.
 
 [\--&lt;field&gt;=&lt;value&gt;]
-: Filter by one or more fields.
+: Filter by one or more fields (see "Available Fields" section). However,
+'url' isn't an available filter, because it's created from domain + path.
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each site.
@@ -25,7 +26,17 @@ display_global_parameters: true
 : Comma-separated list of fields to show.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - count
+  - ids
+  - json
+  - yaml
+\---
 
 ### AVAILABLE FIELDS
 
@@ -51,7 +62,9 @@ These fields are optionally available:
 ### EXAMPLES
 
     # Output a simple list of site URLs
-    wp site list --field=url
+    $ wp site list --field=url
+    http://www.example.com/
+    http://www.example.com/subdir/
 
 
 

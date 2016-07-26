@@ -26,9 +26,12 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user get 12 --field=login
+    # Get user
+    $ wp user get 12 --field=login
+    supervisor
 
-    wp user get bob --format=json > bob.json
+    # Get user and export to JSON file
+    $ wp user get bob --format=json > bob.json
 
 
 

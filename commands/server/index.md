@@ -15,10 +15,16 @@ display_global_parameters: true
 ### OPTIONS
 
 [\--host=&lt;host&gt;]
-: The hostname to bind the server to. Default: localhost
+: The hostname to bind the server to.
+\---
+default: localhost
+\---
 
 [\--port=&lt;port&gt;]
-: The port number to bind the server to. Default: 8080
+: The port number to bind the server to.
+\---
+default: 8080
+\---
 
 [\--docroot=&lt;path&gt;]
 : The path to use as the document root.

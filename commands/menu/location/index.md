@@ -13,13 +13,21 @@ display_global_parameters: true
 ### EXAMPLES
 
     # List available menu locations
-    wp menu location list
+    $ wp menu location list
+    +----------+-------------------+
+    | location | description       |
+    +----------+-------------------+
+    | primary  | Primary Menu      |
+    | social   | Social Links Menu |
+    +----------+-------------------+
 
     # Assign the 'primary-menu' menu to the 'primary' location
-    wp menu location assign primary-menu primary
+    $ wp menu location assign primary-menu primary
+    Success: Assigned location to menu.
 
     # Remove the 'primary-menu' menu from the 'primary' location
-    wp menu location remove primary-menu primary
+    $ wp menu location remove primary-menu primary
+    Success: Removed location from menu.
 
 
 
@@ -37,7 +45,7 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/menu/location/assign/">assign</a></td>
-			<td>Assign a location to a menu</td>
+			<td>Assign a location to a menu.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/menu/location/list/">list</a></td>
@@ -45,7 +53,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/menu/location/remove/">remove</a></td>
-			<td>Remove a location from a menu</td>
+			<td>Remove a location from a menu.</td>
 		</tr>
 	</tbody>
 </table>

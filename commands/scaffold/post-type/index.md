@@ -16,7 +16,7 @@ display_global_parameters: true
 : The internal name of the post type.
 
 [\--label=&lt;label&gt;]
-: The text used to translate the update messages
+: The text used to translate the update messages.
 
 [\--textdomain=&lt;textdomain&gt;]
 : The textdomain to use for the labels.
@@ -36,6 +36,11 @@ STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in 
 
 [\--force]
 : Overwrite files that already exist.
+
+### EXAMPLES
+
+    $ wp scaffold post-type movie --label=Movie --theme=simple-life
+    Success: Created '/var/www/example.com/public_html/wp-content/themes/simple-life/post-types/movie.php'.
 
 
 

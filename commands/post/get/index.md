@@ -22,12 +22,20 @@ display_global_parameters: true
 : Limit the output to specific fields. Defaults to all fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+\---
 
 ### EXAMPLES
 
-    # save the post content to a file
-    wp post get 12 --field=content > file.txt
+    # Save the post content to a file
+    $ wp post get 123 --field=content > file.txt
 
 
 

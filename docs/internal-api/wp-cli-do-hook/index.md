@@ -44,6 +44,9 @@ Commands can provide and call their own hooks.
 <li><strong><a href="/docs/internal-api/wp-cli-add-hook/">WP_CLI::add_hook()</a></strong> - Schedule a callback to be executed at a certain point.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-add-wp-hook/">WP_CLI::add_wp_hook()</a></strong> - Add a callback to a WordPress action or filter.</li>
+
+
 <li><strong><a href="/docs/internal-api/wp-cli-add-command/">WP_CLI::add_command()</a></strong> - Register a command to WP-CLI.</li>
 
 

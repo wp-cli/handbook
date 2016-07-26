@@ -40,6 +40,9 @@ Compare two version strings to get the named semantic version.
 <li><strong><a href="/docs/internal-api/wp-cli-utils-http-request/">WP_CLI\Utils\http_request()</a></strong> - Make a HTTP request to a remote URL.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-utils-parse-ssh-url/">WP_CLI\Utils\parse_ssh_url()</a></strong> - Parse a SSH url for its host, port, and path.</li>
+
+
 
 </ul>
 

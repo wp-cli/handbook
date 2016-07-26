@@ -10,16 +10,29 @@ display_global_parameters: true
 
 <hr />
 
-### OPTIONS
-
-\--format=json
-: Encode/decode values as JSON.
-
 ### EXAMPLES
 
-    wp user meta set 123 description "Mary is a WordPress developer."
+    # Add user meta
+    $ wp user meta add 123 bio "Mary is an WordPress developer."
+    Success: Added custom field.
 
-    wp user meta update admin first_name "George"
+    # List user meta
+    $ wp user meta list 123 --keys=nickname,description,wp_capabilities
+    +---------+-----------------+--------------------------------+
+    | user_id | meta_key        | meta_value                     |
+    +---------+-----------------+--------------------------------+
+    | 123     | nickname        | supervisor                     |
+    | 123     | description     | Mary is a WordPress developer. |
+    | 123     | wp_capabilities | {"administrator":true}         |
+    +---------+-----------------+--------------------------------+
+
+    # Update user meta
+    $ wp user meta update 123 bio "Mary is an awesome WordPress developer."
+    Success: Updated custom field 'bio'.
+
+    # Delete user meta
+    $ wp user meta delete 123 bio
+    Success: Deleted custom field.
 
 
 
@@ -49,7 +62,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/user/meta/list/">list</a></td>
-			<td>List all metadata associated with an object.</td>
+			<td>List all metadata associated with a user.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/meta/update/">update</a></td>

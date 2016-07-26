@@ -10,7 +10,19 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    # Create post
+    $ wp post create --post_type=post --post_title='A sample post'
+    Success: Created post 123.
+
+    # Update post
+    $ wp post update 123 --post_status=draft
+    Success: Updated post 123.
+
+    # Delete post
+    $ wp post delete 123
+    Success: Trashed post 123.
 
 
 
