@@ -90,13 +90,17 @@ desc( 'Update the /commands/ page.' );
 task( 'cmd-list', function( $app ) {
 	$wp = invoke_wp_cli( 'wp --skip-packages cli cmd-dump', $app );
 
+	foreach( $wp['subcommands'] as $k => $cmd ) {
+		if ( 'website' === $cmd['name'] ) {
+			unset( $wp['subcommands'][ $k ] );
+			$wp['subcommands'] = array_values( $wp['subcommands'] );
+		}
+	}
+
 	// generate main page
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
 
 	foreach ( $wp['subcommands'] as $cmd ) {
-		if ( 'website' === $cmd['name'] ) {
-			continue;
-		}
 		gen_cmd_pages( $cmd );
 	}
 });
