@@ -13,7 +13,7 @@ display_global_parameters: true
 ### OPTIONS
 
 &lt;hook&gt;
-: The hook name
+: The hook name.
 
 [&lt;next-run&gt;]
 : A Unix timestamp or an English textual datetime description compatible with `strtotime()`. Defaults to now.
@@ -26,11 +26,17 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp cron event schedule cron_test
+    # Schedule a new cron event
+    $ wp cron event schedule cron_test
+    Success: Scheduled event with hook 'cron_test' for 2016-05-31 10:19:16 GMT.
 
-    wp cron event schedule cron_test now hourly
+    # Schedule new cron event with hourly recurrence
+    $ wp cron event schedule cron_test now hourly
+    Success: Scheduled event with hook 'cron_test' for 2016-05-31 10:20:32 GMT.
 
-    wp cron event schedule cron_test '+1 hour' --foo=1 --bar=2
+    # Schedule new cron event and pass associative arguments
+    $ wp cron event schedule cron_test '+1 hour' --foo=1 --bar=2
+    Success: Scheduled event with hook 'cron_test' for 2016-05-31 11:21:35 GMT.
 
 
 

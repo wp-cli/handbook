@@ -22,7 +22,16 @@ display_global_parameters: true
 : Method for grouping data within the cache which allows the same key to be used across groups.
 
 [&lt;expiration&gt;]
-: Define how long to keep the value, in seconds. Defaults to 0 (as long as possible).
+: Define how long to keep the value, in seconds. `0` means as long as possible.
+\---
+default: 0
+\---
+
+### EXAMPLES
+
+    # Replace cache.
+    $ wp cache replace my_key new_value my_group
+    Success: Replaced object 'my_key' in group 'my_group'.
 
 
 

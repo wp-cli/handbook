@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp site archive 123
+    $ wp site archive 123
+    Success: Site 123 archived.
 
 
 

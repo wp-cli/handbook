@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp comment exists 1337
+    $ wp comment exists 1337
+    Success: Comment with ID 1337 exists.
 
 
 

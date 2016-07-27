@@ -19,14 +19,17 @@ display_global_parameters: true
 : Select which language you want to download.
 
 [\--version=&lt;version&gt;]
-: Select which version you want to download.
+: Select which version you want to download. Accepts a version number, 'latest' or 'nightly'
 
 [\--force]
 : Overwrites existing files, if present.
 
 ### EXAMPLES
 
-    wp core download --locale=nl_NL
+    $ wp core download --locale=nl_NL
+    Downloading WordPress 4.5.2 (nl_NL)...
+    md5 hash verified: c5366d05b521831dd0b29dfc386e56a5
+    Success: WordPress downloaded.
 
 
 

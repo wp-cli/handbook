@@ -43,7 +43,11 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    wp theme list --status=inactive --format=csv
+    # List themes
+    $ wp theme list --status=inactive --format=csv
+    name,status,update,version
+    twentyfourteen,inactive,none,1.7
+    twentysixteen,inactive,available,1.1
 
 
 

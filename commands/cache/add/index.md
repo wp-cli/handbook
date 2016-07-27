@@ -24,7 +24,16 @@ If a value already exists for the key, the value isn't added.
 : Method for grouping data within the cache which allows the same key to be used across groups.
 
 [&lt;expiration&gt;]
-: Define how long to keep the value, in seconds. Defaults to 0 (as long as possible).
+: Define how long to keep the value, in seconds. `0` means as long as possible.
+\---
+default: 0
+\---
+
+### EXAMPLES
+
+    # Add cache.
+    $ wp cache add my_key my_group my_value 300
+    Success: Added object 'my_key' in group 'my_value'.
 
 
 

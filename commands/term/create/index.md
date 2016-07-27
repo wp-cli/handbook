@@ -32,7 +32,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp term create category Apple --description="A type of fruit"
+    $ wp term create category Apple --description="A type of fruit"
+    Success: Created category 199.
 
 
 

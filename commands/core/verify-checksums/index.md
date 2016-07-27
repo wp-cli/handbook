@@ -22,15 +22,19 @@ For security, avoids loading WordPress when verifying checksums.
 
 ### EXAMPLES
 
+    # Verify checksums
     $ wp core verify-checksums
     Success: WordPress install verifies against checksums.
 
+    # Verify checksums for given WordPress version
     $ wp core verify-checksums --version=4.0
     Success: WordPress install verifies against checksums.
 
+    # Verify checksums for given locale
     $ wp core verify-checksums --locale=en_US
     Success: WordPress install verifies against checksums.
 
+    # Verify checksums for given locale
     $ wp core verify-checksums --locale=ja
     Warning: File doesn't verify against checksum: wp-includes/version.php
     Warning: File doesn't verify against checksum: readme.html

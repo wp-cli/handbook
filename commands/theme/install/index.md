@@ -29,13 +29,20 @@ for confirmation.
 ### EXAMPLES
 
     # Install the latest version from wordpress.org and activate
-    wp theme install twentytwelve --activate
+    $ wp theme install twentysixteen --activate
+    Installing Twenty Sixteen (1.2)
+    Downloading install package from http://downloads.wordpress.org/theme/twentysixteen.1.2.zip...
+    Unpacking the package...
+    Installing the theme...
+    Theme installed successfully.
+    Activating 'twentysixteen'...
+    Success: Switched to 'Twenty Sixteen' theme.
 
     # Install from a local zip file
-    wp theme install ../my-theme.zip
+    $ wp theme install ../my-theme.zip
 
     # Install from a remote zip file
-    wp theme install http://s3.amazonaws.com/bucketname/my-theme.zip?AWSAccessKeyId=123&amp;Expires=456&amp;Signature=abcdef
+    $ wp theme install http://s3.amazonaws.com/bucketname/my-theme.zip?AWSAccessKeyId=123&amp;Expires=456&amp;Signature=abcdef
 
 
 

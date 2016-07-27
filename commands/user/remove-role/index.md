@@ -20,8 +20,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user remove-role bob
-    wp user remove-role 12 editor
+    $ wp user remove-role 12 author
+    Success: Removed 'author' role for johndoe (12).
 
 
 

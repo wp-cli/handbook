@@ -35,10 +35,8 @@ Defaults to all tables registered to $wpdb.
 ### EXAMPLES
 
     # Export only tables for a single site
-    wp db export --tables=$(wp db tables --url=sub.example.com --format=csv)
-
-    # Export all tables matching prefix
-    wp db export --tables=$(wp db tables --all-tables-with-prefix --format=csv)
+    $ wp db export --tables=$(wp db tables --url=sub.example.com --format=csv)
+    Success: Exported to wordpress_dbase.sql
 
 
 

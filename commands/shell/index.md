@@ -19,5 +19,11 @@ display_global_parameters: true
 [\--basic]
 : Start in fail-safe mode, even if Boris is available.
 
+### EXAMPLES
+
+    # Start interactive PHP console
+    $ wp shell
+    wp&gt;
+
 
 

@@ -30,7 +30,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp post update 123 --post_name=something --post_status=draft
+    $ wp post update 123 --post_name=something --post_status=draft
+    Success: Updated post 123.
 
 
 

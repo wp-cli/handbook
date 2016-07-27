@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp site activate 123
+    $ wp site activate 123
+    Success: Site 123 activated.
 
 
 

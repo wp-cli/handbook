@@ -20,7 +20,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp theme mod set background_color 000000
+    # Set theme mod
+    $ wp theme mod set background_color 000000
+    Success: Theme mod background_color set to 000000
 
 
 

@@ -17,5 +17,10 @@ specified in wp-config.php.
 [See docs](http://dev.mysql.com/doc/refman/5.7/en/repair-table.html) for
 more details on the `REPAIR_TABLE` statement.
 
+### EXAMPLES
+
+    $ wp db repair
+    Success: Database repaired.
+
 
 

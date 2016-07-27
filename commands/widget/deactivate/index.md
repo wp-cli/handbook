@@ -10,13 +10,15 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;widget-id&gt;...
 : Unique ID for the widget(s)
 
 ### EXAMPLES
 
     $ wp widget deactivate recent-comments-2
-    Success: Widget(s) deactivated
+    Success: Widget(s) deactivated.
 
 
 

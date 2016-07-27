@@ -22,7 +22,12 @@ theme's "style.css" file.
 
 ### EXAMPLES
 
-    cd $(wp theme path)
+    # Get theme path
+    $ wp theme path
+    /var/www/example.com/public_html/wp-content/themes
+
+    # Change directory to theme path
+    $ cd $(wp theme path)
 
 
 

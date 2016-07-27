@@ -4,7 +4,7 @@ title: 'wp menu item delete'
 display_global_parameters: true
 ---
 
-`wp menu item delete` - Delete one or more items from a menu
+`wp menu item delete` - Delete one or more items from a menu.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu-item-delete+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp menu item delete 45
+    $ wp menu item delete 45
+    Success: Menu item(s) deleted.
 
 
 

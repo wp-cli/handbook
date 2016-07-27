@@ -22,9 +22,13 @@ enabled for them independently.
 
 ### EXAMPLES
 
-    wp theme disable twentythirteen
+    # Disable theme
+    $ wp theme disable twentysixteen
+    Success: Disabled the 'Twenty Sixteen' theme.
 
-    wp theme disable twentythirteen --network
+    # Disable theme in network level
+    $ wp theme disable twentysixteen --network
+    Success: Network disabled the 'Twenty Sixteen' theme.
 
 
 

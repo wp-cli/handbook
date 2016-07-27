@@ -18,5 +18,11 @@ display_global_parameters: true
 [&lt;group&gt;]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 
+### EXAMPLES
+
+    # Delete cache.
+    $ wp cache delete my_key my_group
+    Success: Object deleted.
+
 
 

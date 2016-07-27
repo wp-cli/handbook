@@ -20,9 +20,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp term url post_tag 123
-
-    wp term url post_tag 123 324
+    $ wp term url post_tag 123
+    http://example.com/tag/tips-and-tricks
 
 
 

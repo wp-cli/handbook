@@ -22,7 +22,15 @@ display_global_parameters: true
 : Limit the output to specific fields. Defaults to all fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+\---
 
 ### EXAMPLES
 

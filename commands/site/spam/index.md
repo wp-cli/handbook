@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp site spam 123
+    $ wp site spam 123
+    Success: Site 123 marked as spam.
 
 
 

@@ -12,7 +12,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp post term set 123 test category
+    # Set post terms
+    $ wp post term set 123 test category
+    Set terms.
 
 
 

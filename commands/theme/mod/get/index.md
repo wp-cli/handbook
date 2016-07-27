@@ -19,13 +19,40 @@ display_global_parameters: true
 : List all theme mods
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - json
+  - csv
+  - yaml
+\---
 
 ### EXAMPLES
 
-    wp theme mod get --all
-    wp theme mod get background_color --format=json
-    wp theme mod get background_color header_textcolor
+    # Get all theme mods
+    $ wp theme mod get --all
+    +------------------+---------+
+    | key              | value   |
+    +------------------+---------+
+    | background_color | dd3333  |
+    | link_color       | #dd9933 |
+    | main_text_color  | #8224e3 |
+    +------------------+---------+
+
+    # Get single theme mod in JSON format
+    $ wp theme mod get background_color --format=json
+    [{"key":"background_color","value":"dd3333"}]
+
+    # Get multiple theme mods
+    $ wp theme mod get background_color header_textcolor
+    +------------------+--------+
+    | key              | value  |
+    +------------------+--------+
+    | background_color | dd3333 |
+    | header_textcolor |        |
+    +------------------+--------+
 
 
 

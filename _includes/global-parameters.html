@@ -4,6 +4,10 @@
 
 		<p><code>--path=&lt;path&gt;</code>
 			Path to the WordPress files.</p>
+		<p><code>--ssh=&lt;ssh&gt;</code>
+			Perform operation against a remote server over SSH.</p>
+		<p><code>--http=&lt;http&gt;</code>
+			Perform operation against a remote WordPress install over HTTP.</p>
 		<p><code>--url=&lt;url&gt;</code>
 			Pretend request came from given URL. In multisite, this argument is how the target site is specified.</p>
 		<p><code>--user=&lt;id|login|email&gt;</code>
@@ -18,7 +22,7 @@
 			Load PHP file before running the command (may be used more than once).</p>
 		<p><code>--[no-]color</code>
 			Whether to colorize the output.</p>
-		<p><code>--debug</code>
+		<p><code>--debug[=&lt;group&gt;]</code>
 			Show all PHP errors; add verbosity to WP-CLI bootstrap.</p>
 		<p><code>--prompt</code>
 			Prompt the user to enter values for all command arguments.</p>

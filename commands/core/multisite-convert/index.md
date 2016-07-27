@@ -20,7 +20,9 @@ file with the appropriate multisite rewrite rules.
 
 [\--base=&lt;url-path&gt;]
 : Base path after the domain name that each site url will start with.
-Default: '/'
+\---
+default: /
+\---
 
 [\--subdomains]
 : If passed, the network will use subdomains, instead of subdirectories. Doesn't work with 'localhost'.

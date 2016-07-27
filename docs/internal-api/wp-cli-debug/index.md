@@ -14,11 +14,12 @@ Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.
 
 ### Usage
 
-    WP_CLI::debug( $message )
+    WP_CLI::debug( $message, $group = false )
 
 <div>
 <strong>$message</strong> (string) Message to write to STDERR.<br />
-<strong>@return</strong> (null) <br /></p>
+<strong>$group</strong> (string) Organize debug message to a specific group.<br />
+<strong>@return</strong> (null) <br />
 </div>
 
 

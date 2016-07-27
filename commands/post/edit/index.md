@@ -17,7 +17,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp post edit 123
+    # Launch system editor to edit post
+    $ wp post edit 123
 
 
 

@@ -5,9 +5,19 @@
 			Default value: <code>{{default}}</code>
 		</td>
 		<td>
-			<code class="option">{{config}}</code>
+			{{#flag}}
+			<code class="flag">{{flag}}</code>
+			{{/flag}}
+			{{^flag}}
+			<em>Not available as a flag</em>
+			{{/flag}}
 		</td>
 		<td>
-			<code class="flag">{{flag}}</code>
+			{{#config}}
+			<code class="option">{{config}}</code>
+			{{/config}}
+			{{^config}}
+			<em>Not available as an option</em>
+			{{/config}}
 		</td>
 	</tr>

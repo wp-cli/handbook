@@ -57,11 +57,18 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    wp user list --field=ID
+    # List user IDs
+    $ wp user list --field=ID
+    1
 
-    wp user list --role=administrator --format=csv
+    # List users with administrator role
+    $ wp user list --role=administrator --format=csv
+    ID,user_login,display_name,user_email,user_registered,roles
+    1,supervisor,supervisor,supervisor@gmail.com,"2016-06-03 04:37:00",administrator
 
-    wp user list --fields=display_name,user_email --format=json
+    # List users with only given fields
+    $ wp user list --fields=display_name,user_email --format=json
+    [{"display_name":"supervisor","user_email":"supervisor@gmail.com"}]
 
 
 

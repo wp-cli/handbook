@@ -15,6 +15,19 @@ display_global_parameters: true
 &lt;role&gt;
 : Key for the role.
 
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: list
+options:
+  - list
+  - table
+  - csv
+  - json
+  - count
+  - yaml
+\---
+
 ### EXAMPLES
 
     # Display alphabetical list of Contributor capabilities

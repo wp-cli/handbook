@@ -22,11 +22,20 @@ display_global_parameters: true
 : Limit the output to specific fields. Defaults to all fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+\---
 
 ### EXAMPLES
 
-    wp comment get 1 --field=content
+    $ wp comment get 21 --field=content
+    Thanks for all the comments, everyone!
 
 
 

@@ -58,6 +58,9 @@ Wraps the Requests HTTP library to ensure every request includes a cert.
 <li><strong><a href="/docs/internal-api/wp-cli-utils-get-named-sem-ver/">WP_CLI\Utils\get_named_sem_ver()</a></strong> - Compare two version strings to get the named semantic version.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-utils-parse-ssh-url/">WP_CLI\Utils\parse_ssh_url()</a></strong> - Parse a SSH url for its host, port, and path.</li>
+
+
 
 </ul>
 

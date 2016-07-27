@@ -17,7 +17,9 @@ display_global_parameters: true
 
 [\--base=&lt;url-path&gt;]
 : Base path after the domain name that each site url in the network will start with.
-Default: '/'
+\---
+default: /
+\---
 
 [\--subdomains]
 : If passed, the network will use subdomains, instead of subdirectories. Doesn't work with 'localhost'.
@@ -26,7 +28,10 @@ Default: '/'
 : The title of the new site.
 
 \--admin_user=&lt;username&gt;
-: The name of the admin user. Default: 'admin'
+: The name of the admin user.
+\---
+default: admin
+\---
 
 \--admin_password=&lt;password&gt;
 : The password for the admin user.

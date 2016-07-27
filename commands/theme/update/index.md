@@ -29,9 +29,28 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp theme update twentyeleven twentytwelve
+    # Update multiple themes
+    $ wp theme update twentyfifteen twentysixteen
+    Downloading update from https://downloads.wordpress.org/theme/twentyfifteen.1.5.zip...
+    Unpacking the update...
+    Installing the latest version...
+    Removing the old version of the theme...
+    Theme updated successfully.
+    Downloading update from https://downloads.wordpress.org/theme/twentysixteen.1.2.zip...
+    Unpacking the update...
+    Installing the latest version...
+    Removing the old version of the theme...
+    Theme updated successfully.
+    Success: Updated 2/2 themes.
+    +---------------+-------------+-------------+---------+
+    | name          | old_version | new_version | status  |
+    +---------------+-------------+-------------+---------+
+    | twentyfifteen | 1.4         | 1.5         | Updated |
+    | twentysixteen | 1.1         | 1.2         | Updated |
+    +---------------+-------------+-------------+---------+
 
-    wp theme update --all
+    # Update all themes
+    $ wp theme update --all
 
 
 

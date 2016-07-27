@@ -10,8 +10,15 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;key&gt;
 : Key for the option.
+
+### EXAMPLES
+
+    $ wp option delete my_option
+    Success: Deleted 'my_option' option.
 
 
 

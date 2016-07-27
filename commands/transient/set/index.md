@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;key&gt;
 : Key for the transient.
 

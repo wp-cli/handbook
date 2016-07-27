@@ -18,9 +18,11 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Update the WordPress database
     $ wp core update-db
-    Success: WordPress database upgraded successfully from db version 36686 to 35700
+    Success: WordPress database upgraded successfully from db version 36686 to 35700.
 
+    # Update databases for all sites on a network
     $ wp core update-db --network
     WordPress database upgraded successfully from db version 35700 to 29630 on example.com/
     Success: WordPress database upgraded on 123/123 sites

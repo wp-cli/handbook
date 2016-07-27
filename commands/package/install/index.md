@@ -17,11 +17,26 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # install the latest development version
-    wp package install wp-cli/server-command
+    # Install the latest development version
+    $ wp package install wp-cli/server-command
+    Installing wp-cli/server-command (dev-master)
+    Updating /home/person/.wp-cli/packages/composer.json to require the package...
+    Using Composer to install the package...
+    ---
+    Loading composer repositories with package information
+    Updating dependencies
+    Resolving dependencies through SAT
+    Dependency resolution completed in 0.005 seconds
+    Analyzed 732 packages to resolve dependencies
+    Analyzed 1034 rules to resolve dependencies
+     - Installing package
+    Writing lock file
+    Generating autoload files
+    ---
+    Success: Package installed successfully.
 
-    # install the latest stable version
-    wp package install wp-cli/server-command:@stable
+    # Install the latest stable version
+    $ wp package install wp-cli/server-command:@stable
 
 
 

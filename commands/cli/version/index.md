@@ -10,7 +10,10 @@ display_global_parameters: true
 
 <hr />
 
+### EXAMPLES
 
+    $ wp cli version
+    WP-CLI 0.23.1
 
 
 

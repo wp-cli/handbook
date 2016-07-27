@@ -19,7 +19,13 @@ If you want to contribute to a package, this is a great way to jump to it.
 
 ### EXAMPLES
 
-    cd $(wp package path)
+    # Get package path
+    $ wp package path
+    /home/person/.wp-cli/packages/
+
+    # Change directory to package path
+    $ cd $(wp package path) &amp;&amp; pwd
+    /home/vagrant/.wp-cli/packages
 
 
 

@@ -20,8 +20,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    wp user remove-cap bob edit_themes
-    wp user remove-cap 11 publish_newsletters
+    $ wp user remove-cap 11 publish_newsletters
+    Success: Removed 'publish_newsletters' cap for supervisor (11).
 
 
 

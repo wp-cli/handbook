@@ -21,6 +21,9 @@ to current working directory.
 
 [\--max_file_size=&lt;MB&gt;]
 : A single export file should have this many megabytes.
+\---
+default: 15
+\---
 
 ### FILTERS
 
@@ -32,10 +35,13 @@ to current working directory.
 
 [\--post_type=&lt;post-type&gt;]
 : Export only posts with this post_type. Separate multiple post types with a
-comma. Defaults to all.
+comma.
+\---
+default: any
+\---
 
 [\--post_type__not_in=&lt;post-type&gt;]
-: Export all post types except those identified. Seperate multiple post types
+: Export all post types except those identified. Separate multiple post types
 with a comma. Defaults to none.
 
 [\--post__in=&lt;pid&gt;]
@@ -58,12 +64,23 @@ with a comma. Defaults to none.
 
 ### EXAMPLES
 
-    wp export --dir=/tmp/ --user=admin --post_type=post --start_date=2011-01-01 --end_date=2011-12-31
+    # Export posts published by the user between given start and end date
+    $ wp export --dir=/tmp/ --user=admin --post_type=post --start_date=2011-01-01 --end_date=2011-12-31
+    Starting export process...
+    Writing to file /tmp/staging.wordpress.2016-05-24.000.xml
+    Success: All done with export.
 
-    wp export --dir=/tmp/ --post__in=123,124,125
+    # Export posts by IDs
+    $ wp export --dir=/tmp/ --post__in=123,124,125
+    Starting export process...
+    Writing to file /tmp/staging.wordpress.2016-05-24.000.xml
+    Success: All done with export.
 
     # Export a random subset of content
-    wp export --post__in=$(wp post list --post_type=post --orderby=rand --posts_per_page=8 --format=ids)
+    $ wp export --post__in="$(wp post list --post_type=post --orderby=rand --posts_per_page=8 --format=ids)"
+    Starting export process...
+    Writing to file /var/www/example.com/public_html/staging.wordpress.2016-05-24.000.xml
+    Success: All done with export.
 
 
 

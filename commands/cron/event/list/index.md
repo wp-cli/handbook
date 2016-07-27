@@ -15,8 +15,24 @@ display_global_parameters: true
 [\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields.
 
+[\--&lt;field&gt;=&lt;value&gt;]
+: Filter by one or more fields.
+
+[\--field=&lt;field&gt;]
+: Prints the value of a single field for each event.
+
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, csv, ids, yaml. Default: table.
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - ids
+  - json
+  - count
+  - yaml
+\---
 
 ### AVAILABLE FIELDS
 
@@ -36,9 +52,19 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    wp cron event list
+    # List scheduled cron events
+    $ wp cron event list
+    +-------------------+---------------------+---------------------+------------+
+    | hook              | next_run_gmt        | next_run_relative   | recurrence |
+    +-------------------+---------------------+---------------------+------------+
+    | wp_version_check  | 2016-05-31 22:15:13 | 11 hours 57 minutes | 12 hours   |
+    | wp_update_plugins | 2016-05-31 22:15:13 | 11 hours 57 minutes | 12 hours   |
+    | wp_update_themes  | 2016-05-31 22:15:14 | 11 hours 57 minutes | 12 hours   |
+    +-------------------+---------------------+---------------------+------------+
 
-    wp cron event list --fields=hook,next_run --format=json
+    # List scheduled cron events in JSON
+    $ wp cron event list --fields=hook,next_run --format=json
+    [{"hook":"wp_version_check","next_run":"2016-05-31 10:15:13"},{"hook":"wp_update_plugins","next_run":"2016-05-31 10:15:13"},{"hook":"wp_update_themes","next_run":"2016-05-31 10:15:14"}]
 
 
 

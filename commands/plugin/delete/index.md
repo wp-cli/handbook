@@ -17,6 +17,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Delete plugin
     $ wp plugin delete hello
     Success: Deleted 'hello' plugin.
 

@@ -10,8 +10,15 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;user&gt;...
 : One or more user IDs, user emails, or user logins.
+
+### EXAMPLES
+
+    $ wp super-admin add superadmin2
+    Success: Granted super-admin capabilities.
 
 
 

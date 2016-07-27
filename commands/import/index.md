@@ -21,5 +21,16 @@ display_global_parameters: true
 [\--skip=&lt;data-type&gt;]
 : Skip importing specific data. Supported options are: 'attachment' and 'image_resize' (skip time-consuming thumbnail generation).
 
+### EXAMPLES
+
+    # Import content from a WXR file
+    $ wp import example.wordpress.2016-06-21.xml --authors=create
+    Starting the import process...
+    Processing post #1 ("Hello world!") (post_type: post)
+    -- 1 of 1
+    -- Tue, 21 Jun 2016 05:31:12 +0000
+    -- Imported post as post_id #1
+    Success: Finished importing from 'example.wordpress.2016-06-21.xml' file.
+
 
 

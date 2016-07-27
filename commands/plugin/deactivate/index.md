@@ -24,5 +24,11 @@ display_global_parameters: true
 [\--network]
 : If set, the plugin will be deactivated for the entire multisite network.
 
+### EXAMPLES
+
+    # Deactivate plugin
+    $ wp plugin deactivate hello-dolly
+    Success: Plugin 'hello-dolly' deactivated.
+
 
 

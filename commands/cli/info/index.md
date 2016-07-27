@@ -13,12 +13,25 @@ display_global_parameters: true
 ### OPTIONS
 
 [\--format=&lt;format&gt;]
-: Accepted values: json
+: Render output in a particular format.
+\---
+default: list
+options:
+  - list
+  - json
+\---
 
 ### EXAMPLES
 
-    $ wp cli version
-    WP-CLI 0.23.1
+    $ wp cli info
+    PHP binary: /usr/bin/php5
+    PHP version:    5.5.9-1ubuntu4.16
+    php.ini used:   /etc/php5/cli/php.ini
+    WP-CLI root dir:    phar://wp-cli.phar
+    WP-CLI packages dir:    /home/person/.wp-cli/packages/
+    WP-CLI global config:
+    WP-CLI project config:
+    WP-CLI version: 0.23.1
 
 
 

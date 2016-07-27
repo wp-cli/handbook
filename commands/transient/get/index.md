@@ -10,11 +10,21 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;key&gt;
 : Key for the transient.
 
-[\--json]
-: Format output as JSON.
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+\---
 
 [\--network]
 : Get the value of the network transient, instead of the single site.

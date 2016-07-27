@@ -24,7 +24,10 @@ display_global_parameters: true
 ### EXAMPLES
 
     # Add meta to every generated user
-    wp user generate --format=ids | xargs -0 -d ' ' -I % wp user meta add % foo bar
+    $ wp user generate --format=ids --count=3 | xargs -0 -d ' ' -I % wp user meta add % foo bar
+    Success: Added custom field.
+    Success: Added custom field.
+    Success: Added custom field.
 
 
 

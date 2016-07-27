@@ -21,8 +21,8 @@ used.
 
 ### EXAMPLES
 
-    wp user set-role bob author
-    wp user set-role 12 author
+    $ wp user set-role 12 author
+    Success: Added johndoe (12) to http://example.com as author.
 
 
 

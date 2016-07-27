@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 &lt;name&gt;
 : Widget name.
 

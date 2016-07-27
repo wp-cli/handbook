@@ -10,6 +10,8 @@ display_global_parameters: true
 
 <hr />
 
+### OPTIONS
+
 [&lt;command&gt;...]
 : Get help on a specific command.
 

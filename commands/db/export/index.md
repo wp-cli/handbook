@@ -24,16 +24,26 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and
 [\--tables=&lt;tables&gt;]
 : The comma separated list of specific tables to export. Excluding this parameter will export all tables in the database.
 
+[\--porcelain]
+: Output filename for the exported database.
+
 ### EXAMPLES
 
-    wp db export --add-drop-table
-    wp db export --tables=wp_options,wp_users
+    # Export database with drop query included
+    $ wp db export --add-drop-table
+    Success: Exported to 'wordpress_dbase.sql'.
+
+    # Export certain tables
+    $ wp db export --tables=wp_options,wp_users
+    Success: Exported to 'wordpress_dbase.sql'.
 
     # Export all tables matching a wildcard
-    wp db export --tables=$(wp db tables 'wp_user*' --format=csv)
+    $ wp db export --tables=$(wp db tables 'wp_user*' --format=csv)
+    Success: Exported to 'wordpress_dbase.sql'.
 
     # Export all tables matching prefix
-    wp db export --tables=$(wp db tables --all-tables-with-prefix --format=csv)
+    $ wp db export --tables=$(wp db tables --all-tables-with-prefix --format=csv)
+    Success: Exported to 'wordpress_dbase.sql'.
 
 
 

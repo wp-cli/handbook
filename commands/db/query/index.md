@@ -20,11 +20,27 @@ Executes an arbitrary MySQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
 
 ### EXAMPLES
 
-    # execute a query stored in a file
-    wp db query < debug.sql
+    # Execute a query stored in a file
+    $ wp db query < debug.sql
 
-    # check all tables in the database
-    wp db query "CHECK TABLE $(wp db tables | paste -s -d',');"
+    # Check all tables in the database
+    $ wp db query "CHECK TABLE $(wp db tables | paste -s -d',');"
+    +---------------------------------------+-------+----------+----------+
+    | Table                                 | Op    | Msg_type | Msg_text |
+    +---------------------------------------+-------+----------+----------+
+    | wordpress_dbase.wp_users              | check | status   | OK       |
+    | wordpress_dbase.wp_usermeta           | check | status   | OK       |
+    | wordpress_dbase.wp_posts              | check | status   | OK       |
+    | wordpress_dbase.wp_comments           | check | status   | OK       |
+    | wordpress_dbase.wp_links              | check | status   | OK       |
+    | wordpress_dbase.wp_options            | check | status   | OK       |
+    | wordpress_dbase.wp_postmeta           | check | status   | OK       |
+    | wordpress_dbase.wp_terms              | check | status   | OK       |
+    | wordpress_dbase.wp_term_taxonomy      | check | status   | OK       |
+    | wordpress_dbase.wp_term_relationships | check | status   | OK       |
+    | wordpress_dbase.wp_termmeta           | check | status   | OK       |
+    | wordpress_dbase.wp_commentmeta        | check | status   | OK       |
+    +---------------------------------------+-------+----------+----------+
 
 
 
