@@ -68,6 +68,14 @@ See <https://github.com/wp-cli/wp-cli.github.com#readme>
 
 Use `./utils/contrib-list -l` to generate the list of contributors.
 
+### Announcing
+
+In addition to publishing the release post, a new release is announced in a few different ways:
+
+* WP-CLI Twitter account (with some scheduled follow-up tweets).
+* `/announce` slash command in the `#cli` Slack room.
+* Mailchimp email announcement list.
+
 ### Bumping WP-CLI version again
 
 After all of the release steps are complete, make sure to bump [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) again.
