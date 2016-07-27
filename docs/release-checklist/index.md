@@ -68,6 +68,12 @@ See <https://github.com/wp-cli/wp-cli.github.com#readme>
 
 Use `./utils/contrib-list -l` to generate the list of contributors.
 
+### Bumping WP-CLI version again
+
+After all of the release steps are complete, make sure to bump [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) again.
+
+For instance, if the release version was `0.24.0`, the version should be bumped to `0.25.0-alpha`. Doing so ensure `wp cli update --nightly` works as expected.
+
 ## Patch releases
 
 Creating a patch release (e.g. 0.23.x) is bit different of a process than creating a major or minor release. At a high-level, here are the steps involved:
