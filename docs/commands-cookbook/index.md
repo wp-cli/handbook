@@ -185,6 +185,12 @@ Options defined in the longdesc are interpreted as the command's **synopsis**:
 * `<name>` is a required positional argument. Changing it to `<name>..` would mean the command could accept one or more positional arguments.
 * `[--type=<type>]` is an optional associative argument which defaults to 'success' and accepts either 'success' or 'error'. Changing it to `[--error]` would change the argument to behave as an optional boolean flag.
 
+*Note*: To accept arbitrary/unlimited number of optional associative arguments you would use the annotation `[--<field>=<value>]`.  So for example:
+
+```
+	 * [--<field>=<value>]
+	 * : Allow unlimited number of associative parameters.
+```
 A command's synopsis is used for validating the arguments, before passing them to the implementation.
 
 The longdesc is also displayed when calling the `help` command, for example, `wp help example hello`. Its syntax is [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and here are a few more notes on how it's handled by WP-CLI:
