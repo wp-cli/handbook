@@ -28,6 +28,7 @@ Blog posts:
 
 Releases:
 
+* [WP-CLI Version 0.24.0 released](/blog/version-0.24.0.html) - July 27, 2016
 * [WP REST API Version 2.0 Beta 13 "yoink.adios\losers"](https://make.wordpress.org/core/2016/04/04/wp-rest-api-2-0-beta-13-roadmap/) - April 3, 2016
 * [WP-CLI Version 0.23.0 released](/blog/version-0.23.0.html) - March 22, 2016
 * [WP REST API Version 2.0 Beta 12 "Canyonero"](https://make.wordpress.org/core/2016/02/09/wp-rest-api-version-2-0-beta-12/) - February 9, 2016
