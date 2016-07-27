@@ -50,6 +50,6 @@ languages:
 - label: नेपाली
   iso-alpha2: ne
   path: /ne/
-- label: Greek
+- label: ελληνικά
   iso-alpha2: gr
   path: /gr/
