@@ -43,6 +43,11 @@ When done, use `sort .mailmap -f -u -o .mailmap` to only add new contributors.
 
 4) Create a release on Github: <https://github.com/wp-cli/wp-cli/releases>. Make sure to upload the Phar from the builds directory.
 
+    cp wp-cli.phar wp-cli-0.24.0.phar
+    cp wp-cli.phar.gpg wp-cli-0.24.0.phar.gpg
+    cp wp-cli.phar.md5 wp-cli-0.24.0.phar.md5
+    cp wp-cli.phar.sha512 wp-cli-0.24.0.phar.sha512
+
 ### Updating the Debian build
 
 1) Run this script: <https://github.com/wp-cli/wp-cli/blob/master/utils/wp-cli-updatedeb.sh>
