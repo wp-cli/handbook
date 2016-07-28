@@ -58,7 +58,12 @@ When done, use `sort .mailmap -f -u -o .mailmap` to only add new contributors.
 
 ### Updating the Homebrew formula
 
-A pull request must be submitted to the Homebrew repo. See <https://github.com/Homebrew/homebrew-php/pull/1687#issuecomment-98408399> for background.
+A pull request must be submitted to the Homebrew repo. This involves:
+
+* Updating the url and sha256 here: https://github.com/Homebrew/homebrew-php/blob/master/Formula/wp-cli.rb#L8-L9
+* Making the commit with format "wp-cli 0.24.0"
+
+See <https://github.com/Homebrew/homebrew-php/pull/1687#issuecomment-98408399> and <https://github.com/Homebrew/homebrew-php/pull/3398#issuecomment-235896016> for background.
 
 ### Updating the website
 
