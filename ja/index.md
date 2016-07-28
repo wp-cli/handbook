@@ -93,7 +93,21 @@ WP-CLI project config:
 WP-CLI version: 0.23.0
 ```
 
+## アップデート
+
 WP-CLI をアップデートするには、`wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)) を実行するか、上述のインストール方法を再度行う必要があります。
+
+もっととんがった生き方をしたい？ `wp cli update --nightly` を実行すれば、最新の開発者向けバージョンの WP-CLI を使用することができます。開発者向けバージョンは、あなたの開発環境で使用するのに十分な信頼性があり、つねに最新の機能を使用することができます。
+
+## タブ補完
+
+WP-CL には、Bash 及び ZSH 用のタブ補完用のスクリプトがあります。 [wp-completion.bash](https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash) をダウンロードして、`~/.bash_profile` から読み込んでください。
+
+```
+source /FULL/PATH/TO/wp-completion.bash
+```
+
+`source ~/.bash_profile` を実行するのを忘れないでください。
 
 ## サポート
 
@@ -112,6 +126,36 @@ WP-CLI のメンテナーとプロジェクトの貢献者たちは、新しい 
 ## 拡張
 
 それぞれの **コマンド** は、WP-CLI の関数の一つとして定義されています。`wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) はそのうちのひとつであり、`wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) は別のもうひとつです。
+
+WP-CLI では、様々な実行可能なクラス、関数、クロージャをコマンドとして実行することが可能です。コマンドとして実行されるために必要な情報は、PHPdoc によって記述します。 `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) は、内部コマンド及びサードパーティコマンドの登録に使用されています。
+
+```
+/**
+ * Delete an option from the database.
+ *
+ * Returns an error if the option didn't exist.
+ *
+ * ## OPTIONS
+ *
+ * <key>
+ * : Key for the option.
+ *
+ * ## EXAMPLES
+ *
+ *     $ wp option delete my_option
+ *     Success: Deleted 'my_option' option.
+ */
+$delete_option_cmd = function( $args ) {
+	list( $key ) = $args;
+
+	if ( ! delete_option( $key ) ) {
+		WP_CLI::error( "Could not delete '$key' option. Does it exist?" );
+	} else {
+		WP_CLI::success( "Deleted '$key' option." );
+	}
+};
+WP_CLI::add_command( 'option delete', $delete_option_cmd );
+```
 
 WP-CLI は、多くのコマンドにより構成されており、カスタムコマンドを作ることは意外と簡単です。[commands cookbook](https://wp-cli.org/docs/commands-cookbook/)を読んでください。
 
