@@ -5,13 +5,13 @@ title: A more RESTful WP-CLI
 
 ## A more RESTful WP-CLI
 
-*Landing page last updated: July 27, 2016*
+*Landing page last updated: August 1, 2016*
 
 WP-CLI's mission is to be, quantitatively, the *fastest* interface for developers to manage WordPress. "A more RESTful WP-CLI" was a [Kickstarter-backed](https://www.kickstarter.com/projects/danielbachhuber/a-more-restful-wp-cli/description) project to unlock the potential of the [WordPress REST API](http://v2.wp-api.org/) at the command line. This funding supported 232.42 hours of [Daniel Bachhuber](http://danielbachhuber.com/)'s time towards making improvements to WP-CLI and the WP REST API.
 
 Wait a second, what does it mean to "unlock the potential of the WP REST API at the command line"? Pragmatically, it means any endpoints registered in plugins or themes are *automagically* accessible as WP-CLI commands. For instance, if you were to register an endpoint for `GET /my-plugin/v1/product/<id>`, this endpoint is also accessible on the command line as (more or less) `wp @prod product get <id>`.
 
-Quick links: [Highlights](#highlights) - [Milestones](#Milestones) - [Budget](#budget) - [Supporters](#supporters)
+Quick links: [Highlights](#highlights) - [Milestones](#milestones) - [Budget](#budget) - [Supporters](#supporters)
 
 ***
 
@@ -23,7 +23,7 @@ RESTful WP-CLI is a [WP-CLI package](https://github.com/wp-cli/restful) that mak
 
 As WordPress becomes more of an application framework embedded into the web, RESTful WP-CLI enables WP-CLI users to interact with a given WordPress install through the higher-level, self-expressed abstraction of how WordPress understands itself. For instance, on an eCommerce website, instead of having to know data is stored as `wp post list --post_type=edd_product`, RESTful WP-CLI exposes the properly-modeled data at `wp rest product list`.
 
-First, RESTful WP-CLI auto-discovers WP REST API endpoints from any WordPress site running WordPress 4.4 or higher. These can be endpoints from the WP REST API v2 plugin, or custom endpoints you’ve registered yourself. You can target a specific WordPress install with `--path=<path>`, `--ssh=<host>`, or `--http=<domain>`. Then, it registers WP-CLI commands for the resource endpoints it understands, in the wp rest namespace. In addition to the standard list, get, create, update and delete commands, RESTful WP-CLI also registers commands for higher-level operations like edit, generate and diff.
+First, RESTful WP-CLI auto-discovers WP REST API endpoints from any WordPress site running WordPress 4.4 or higher. These can be endpoints from the WP REST API v2 plugin, or custom endpoints you’ve registered yourself. You can target a specific WordPress install with `--path=<path>`, `--ssh=<host>`, or `--http=<domain>`. Then, it registers WP-CLI commands for the resource endpoints it understands, in the wp rest namespace. In addition to the standard list, get, create, update and delete commands, RESTful WP-CLI also registers commands for higher-level operations like `edit`, `generate` and `diff`.
 
 Try it yourself:
 
@@ -33,6 +33,29 @@ wp --http=runcommand.io rest excerpt list
 ```
 
 For a summary of these features, check out [wp-cli/restful](https://github.com/wp-cli/restful).
+
+### Package management
+
+Just like WordPress has plugins, the future of WP-CLI is [packages of commands](https://wp-cli.org/package-index/). For this future, WP-CLI is working to proactively solve the problems WordPress has with plugins:
+
+* Where WordPress plugins are considered second-class to what’s included in core, WP-CLI packages should be considered first-class citizens amongst the commands in WP-CLI.
+* All too often, WordPress plugins have just one author. Each WP-CLI package should have two or three active maintainers.
+
+In this model, WP-CLI becomes the common interface, and supporting application layer, to a rich ecosystem of features. Doing so opens more frontiers for innovation, which leads to a greater selection of ideas to choose from. And because more people are involved in authoring packages, WP-CLI benefits from a larger contributor pool.
+
+As a result of the Kickstarter project, you can install WP-CLI packages from the Package Index with `wp package install`, [read through the commands cookbook](http://wp-cli.org/docs/commands-cookbook/) for a thorough introduction to creating a WP-CLI command, or use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) for the easiest way to generate the boilerplate for your new WP-CLI package, complete with functional tests.
+
+### Documentation portal
+
+In the past, WP-CLI documentation lived in a poorly maintained, hard to search Github Wiki. Now, it’s been reincarnated as a [documentation portal on the website](https://wp-cli.org/docs/).
+
+Most notably:
+
+* Every existing tutorial was rewritten and cleaned up as they were moved over.
+* Internal APIs you can use in your own commands are now [publicly documented](https://wp-cli.org/docs/internal-api/). These internal API pages are generated from the codebase, which greatly help maintenance efforts.
+* On each command page, there’s a “Github issues” link to make it easier to find both open and closed issues for a given command. For instance, here are all of the outstanding issues for [wp package and its subcommands](https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apackage+sort%3Aupdated-desc).
+
+Since relaunching the documentation portal in March, we’ve also [written a new contributing guide](https://wp-cli.org/docs/contributing/), and rewritten the WP-CLI homepage with translations to six languages other than English.
 
 ***
 
