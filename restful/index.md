@@ -11,13 +11,32 @@ WP-CLI's mission is to be, quantitatively, the *fastest* interface for developer
 
 Wait a second, what does it mean to "unlock the potential of the WP REST API at the command line"? Pragmatically, it means any endpoints registered in plugins or themes are *automagically* accessible as WP-CLI commands. For instance, if you were to register an endpoint for `GET /my-plugin/v1/product/<id>`, this endpoint is also accessible on the command line as (more or less) `wp @prod product get <id>`.
 
-For a summary of these features, check out [wp-cli/restful](https://github.com/wp-cli/restful). Or, read through the updates linked below for a broader overview of how the project progressed.
-
-Quick links: [Achievements](#achievements) - [Budget](#budget) - [Supporters](#supporters)
+Quick links: [Highlights](#highlights) - [Milestones](#Milestones) - [Budget](#budget) - [Supporters](#supporters)
 
 ***
 
-## Achievements
+## Highlights
+
+### RESTful WP-CLI
+
+RESTful WP-CLI is a [WP-CLI package](https://github.com/wp-cli/restful) that makes WP REST API endpoints available as WP-CLI commands.
+
+As WordPress becomes more of an application framework embedded into the web, RESTful WP-CLI enables WP-CLI users to interact with a given WordPress install through the higher-level, self-expressed abstraction of how WordPress understands itself. For instance, on an eCommerce website, instead of having to know data is stored as `wp post list --post_type=edd_product`, RESTful WP-CLI exposes the properly-modeled data at `wp rest product list`.
+
+First, RESTful WP-CLI auto-discovers WP REST API endpoints from any WordPress site running WordPress 4.4 or higher. These can be endpoints from the WP REST API v2 plugin, or custom endpoints you’ve registered yourself. You can target a specific WordPress install with `--path=<path>`, `--ssh=<host>`, or `--http=<domain>`. Then, it registers WP-CLI commands for the resource endpoints it understands, in the wp rest namespace. In addition to the standard list, get, create, update and delete commands, RESTful WP-CLI also registers commands for higher-level operations like edit, generate and diff.
+
+Try it yourself:
+
+```
+wp package install wp-cli/restful
+wp --http=runcommand.io rest excerpt list
+```
+
+For a summary of these features, check out [wp-cli/restful](https://github.com/wp-cli/restful).
+
+***
+
+## Milestones
 
 Blog posts:
 
