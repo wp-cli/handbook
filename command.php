@@ -91,6 +91,8 @@ WP_CLI::add_command( 'website generate-contributing', '\WP_CLI_Org\generate_cont
  *
  * Used to build user-facing docs of public APIs.
  *
+ * @when before_wp_load
+ *
  * @subcommand api-dump
  */
 function api_dump() {
@@ -121,7 +123,7 @@ function api_dump() {
 	}
 	echo json_encode( $apis );
 }
-\WP_CLI::add_command( 'cli api-dump', '\WP_CLI_Org\api_dump' );
+\WP_CLI::add_command( 'api-dump', '\WP_CLI_Org\api_dump' );
 
 /**
  * Get a simple representation of a function or method

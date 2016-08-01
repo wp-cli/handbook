@@ -29,7 +29,7 @@ task( 'syn-list', function( $app ) {
 			echo $full_path . ' ' . $command['synopsis'] . "\n";
 		} else {
 			foreach ( $command['subcommands'] as $subcommand ) {
-				if ( 'website' === $subcommand['name'] ) {
+				if ( in_array( $subcommand['name'], array( 'website', 'api-dump' ) ) ) {
 					continue;
 				}
 				generate_synopsis( $subcommand, $full_path );
@@ -91,11 +91,11 @@ task( 'cmd-list', function( $app ) {
 	$wp = invoke_wp_cli( 'wp --skip-packages cli cmd-dump', $app );
 
 	foreach( $wp['subcommands'] as $k => $cmd ) {
-		if ( 'website' === $cmd['name'] ) {
+		if ( in_array( $cmd['name'], array( 'website', 'api-dump' ) ) ) {
 			unset( $wp['subcommands'][ $k ] );
-			$wp['subcommands'] = array_values( $wp['subcommands'] );
 		}
 	}
+	$wp['subcommands'] = array_values( $wp['subcommands'] );
 
 	// generate main page
 	file_put_contents( '_includes/cmd-list.html', render( 'cmd-list.mustache', $wp ) );
@@ -149,7 +149,7 @@ task( 'param-list', function( $app ) {
 
 desc( 'Update the /docs/internal-api/ page.' );
 task( 'internal-api-list', function( $app ) {
-	$apis = invoke_wp_cli( 'wp cli api-dump', $app );
+	$apis = invoke_wp_cli( 'wp api-dump', $app );
 	$categories = array(
 		'Registration' => array(),
 		'Output' => array(),
