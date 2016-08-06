@@ -319,7 +319,7 @@ $ wp example hello Joe Doe
 ```
 WP_CLI::line( $args[0] ); // Joe
 WP_CLI::line( $args[1] ); // Doe
-
+```
 
 `$assoc_args` variable will store all the arguments defined like `--key=value` or `--flag` or `--no-flag`
 
