@@ -59,3 +59,14 @@ When you need create a new wordpress install, call this function and specify the
 name of the directory where you want to create the site. This emulates the 
 web-based install process.
 
+## List all image URL-s in posts
+
+```bash
+wp post list --field=ID|xargs -I % wp post get % --field=post_content|sed -ne 's;.*\(https\?\S\+\(jpe\?g\|png\|gif\)\).*;\1;gp'
+```
+
+Explanation
+
+- List all post ID-s
+- Get each content (xargs)
+- Display only image URL-s (sed)
