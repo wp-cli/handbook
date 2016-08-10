@@ -1,25 +1,37 @@
 ---
 layout: default
-title: WP_CLI::read_value()
-description: "Read a value, from various formats."
+title: WP_CLI::get_config()
+description: "Get values of global configuration parameters."
 ---
 
 <a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
 
-## WP_CLI::read_value()
+## WP_CLI::get_config()
 
-Read a value, from various formats.
+Get values of global configuration parameters.
 
 ***
 
 ### Usage
 
-    WP_CLI::read_value( $raw_value, $assoc_args = array() )
+    WP_CLI::get_config( $key = null )
 
 <div>
-<strong>$value</strong> (mixed) <br />
-<strong>$assoc_args</strong> (array) <br />
+<strong>$key</strong> (string) Get value for a specific global configuration parameter.<br />
+<strong>@return</strong> (mixed) <br />
 </div>
+
+
+***
+
+### Notes
+
+Provides access to `--path=<path>`, `--url=<url>`, and other values of
+the [global configuration parameters](https://wp-cli.org/config/).
+
+
+    WP_CLI::log( 'The --url=<url> value is: ' . WP_CLI::get_config( 'url' ) );
+    
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
@@ -42,7 +54,7 @@ Read a value, from various formats.
 <li><strong><a href="/docs/internal-api/wp-cli-confirm/">WP_CLI::confirm()</a></strong> - Ask for confirmation before running a destructive operation.</li>
 
 
-<li><strong><a href="/docs/internal-api/wp-cli-get-config/">WP_CLI::get_config()</a></strong> - Get values of global configuration parameters.</li>
+<li><strong><a href="/docs/internal-api/wp-cli-read-value/">WP_CLI::read_value()</a></strong> - Read a value, from various formats.</li>
 
 
 
