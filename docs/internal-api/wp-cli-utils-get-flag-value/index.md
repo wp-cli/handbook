@@ -53,6 +53,9 @@ function provides a safer alternative to using
 <li><strong><a href="/docs/internal-api/wp-cli-read-value/">WP_CLI::read_value()</a></strong> - Read a value, from various formats.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-get-config/">WP_CLI::get_config()</a></strong> - Get values of global configuration parameters.</li>
+
+
 
 </ul>
 
