@@ -89,7 +89,7 @@ Here's an annotated example `wp-cli.yml` file:
 		ssh: wpcli@staging.wp-cli.org
 		user: wpcli
 		path: /srv/www/staging.wp-cli.org
-	@production
+	@production:
 		ssh: wpcli@wp-cli.org:2222
 		user: wpcli
 		path: /srv/www/wp-cli.org
