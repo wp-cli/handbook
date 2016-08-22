@@ -70,3 +70,11 @@ Explanation
 - List all post ID-s
 - Get each content (xargs)
 - Display only image URL-s (sed)
+
+## Create a page from a file and flag it with the file name
+
+```bash
+wp post create new_page.html --post_type=page --post_title="New Page" --porcelain | xargs -I % wp post meta add % imported_from new_page.html
+```
+- Create a page (--porcelain will return only the new post ID)
+- Create post meta with xargs using "-I %" to signify the placeholder template for the new post ID
