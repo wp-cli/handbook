@@ -10,11 +10,6 @@ display_global_parameters: true
 
 <hr />
 
-### OPTIONS
-
-\--format=json
-: Encode/decode values as JSON.
-
 ### EXAMPLES
 
     # Set comment meta
