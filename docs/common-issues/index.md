@@ -55,6 +55,14 @@ Before accessing a value on the `$_SERVER` superglobal, you should check if the 
       $_SERVER['HTTPS']='on';
     }
 
+When using `$_SERVER['HTTP_HOST']` in your `wp-config.php`, you'll need to set a default value in WP-CLI context:
+
+    if ( defined( 'WP_CLI' ) && WP_CLI ) && ! isset( $_SERVER['HTTP_HOST'] ) {
+        $_SERVER['HTTP_HOST'] = 'wp-cli.org';
+    }
+
+See also: [#730](https://github.com/wp-cli/wp-cli/issues/730)
+
 ### Can't find wp-content directory / use of `$_SERVER['document_root']`
 
 `$_SERVER['document_root']` is defined by the webserver based on the incoming web request. Because this type of context is unavailable to PHP CLI, `$_SERVER['document_root']` is unavailable to WP-CLI. Furthermore, WP-CLI can't safely mock `$_SERVER['document_root']` as it does with `$_SERVER['http_host']` and a few other `$_SERVER` values.
