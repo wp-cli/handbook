@@ -55,6 +55,14 @@ Before accessing a value on the `$_SERVER` superglobal, you should check if the 
       $_SERVER['HTTPS']='on';
     }
 
+### Can't find wp-content directory / use of `$_SERVER['document_root']`
+
+`$_SERVER['document_root']` is defined by the webserver based on the incoming web request. Because this type of context is unavailable to PHP CLI, `$_SERVER['document_root']` is unavailable to WP-CLI. Furthermore, WP-CLI can't safely mock `$_SERVER['document_root']` as it does with `$_SERVER['http_host']` and a few other `$_SERVER` values.
+
+If you're using `$_SERVER['document_root']` in your `wp-config.php` file, you should instead use `dirname( __FILE__ )` or similar.
+
+See also: [#785](https://github.com/wp-cli/wp-cli/issues/785)
+
 ### Warning: Some code is trying to do a URL redirect
 
 Most of the time, it's some plugin or theme code that disables wp-admin access to non-admins.
