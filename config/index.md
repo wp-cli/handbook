@@ -5,7 +5,7 @@ title: Configuration
 
 # Configuration
 
-<p><small>Quick links: <a href="#overview">Overview</a> | <a href="#global-parameters">Global parameters</a> | <a href="#config-files">Config files</a></small> | <a href="#environment-variables">Environment variables</a></small></p>
+<p><small>Quick links: <a href="#overview">Overview</a> | <a href="#global-parameters">Global parameters</a> | <a href="#config-files">Config files</a> | <a href="#environment-variables">Environment variables</a></small></p>
 
 ## Overview
 
