@@ -5,7 +5,7 @@ title: Configuration
 
 # Configuration
 
-<p><small>Quick links: <a href="#overview">Overview</a> | <a href="#global-parameters">Global parameters</a> | <a href="#config-files">Config files</a></small></p>
+<p><small>Quick links: <a href="#overview">Overview</a> | <a href="#global-parameters">Global parameters</a> | <a href="#config-files">Config files</a></small> | <a href="#environment-variables">Environment variables</a></small></p>
 
 ## Overview
 
@@ -93,3 +93,23 @@ Here's an annotated example `wp-cli.yml` file:
 		ssh: wpcli@wp-cli.org:2222
 		user: wpcli
 		path: /srv/www/wp-cli.org
+
+## Environment variables
+
+WP-CLI's behavior can be changed at runtime through the use of environment variables:
+
+* `WP_CLI_CACHE_DIR` - Directory to store the WP-CLI file cache. Default is `~/.wp-cli/cache/`.
+* `WP_CLI_CONFIG_PATH` - Path to the global `config.yml` file. Default is `~/.wp-cli/config.yml`.
+* `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` - Disable WP-CLI automatic checks for updates.
+* `WP_CLI_PACKAGES_DIR` - Directory to store packages installed through WP-CLI's package management. Default is `~/.wp-cli/packages/`.
+* `WP_CLI_SSH_PRE_CMD` - When using `--ssh=<ssh>`, perform a command before WP-CLI calls WP-CLI on the remote server.
+
+To set an environment variable on demand, simply place the environment variable definition before the WP-CLI command you mean to run.
+
+    # Use vim to edit a post
+    $ EDITOR=vim wp post edit 1
+
+To set the same environment variable value for every shell session, you’ll need to include the environment variable definition in your `~/.bashrc` or `~/.zshrc` file
+
+    # Always use vim to edit a post
+    export EDITOR=vim
