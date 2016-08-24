@@ -94,6 +94,13 @@ Here's an annotated example `wp-cli.yml` file:
 		user: wpcli
 		path: /srv/www/wp-cli.org
 
+	# '_' is a special value denoting configuration options for this wp-cli.yml
+	_:
+		# Merge subcommand defaults from the upstream config.yml, instead of overriding
+		merge: true
+		# Inherit configuration from an arbitrary YAML file
+		inhert: prod.yml
+
 ## Environment variables
 
 WP-CLI's behavior can be changed at runtime through the use of environment variables:
