@@ -53,3 +53,6 @@ languages:
 - label: ελληνικά
   iso-alpha2: gr
   path: /gr/
+- label: Italiano
+  iso-alpha2: it
+  path: /it/
