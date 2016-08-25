@@ -199,15 +199,18 @@ On Debian or Ubuntu, just download and open one of the .deb packages: <https://g
 
 In some cases, like for MAMP installs, you might not want to use the default PHP binary.
 
-To change it, you need to set the WP_CLI_PHP environment variable in your `.bash_profile`:
+To use the latest PHP version provided by MAMP, you'll need to modify your `PATH` environment variable with the following added to your `~/.bash_profile` or `~/.zsh_profile`:
 
-    export WP_CLI_PHP=/Applications/MAMP/.../bin/php
+    PHP_VERSION=ls /Applications/MAMP/bin/php/ | sort -n | tail -1
+    export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
 
 Once you have added that and saved the file, reload the file with:
 
     source ~/.bash_profile
 
-After you've done that, run `wp --info` to make sure it took.
+After you've done that, run `wp --info` to make sure the change has been applied correctly.
+
+For Git and Composer-based WP-CLI installation, you can alternatively set the `WP_CLI_PHP` environment variable, if you don't want to modify `PATH` for some reason.
 
 ### Installing on MediaTemple
 
