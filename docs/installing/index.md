@@ -204,6 +204,12 @@ To use the latest PHP version provided by MAMP, you'll need to modify your `PATH
     PHP_VERSION=ls /Applications/MAMP/bin/php/ | sort -n | tail -1
     export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
 
+To use a specific PHP version provided by MAMP, you'll need to determine the path to the PHP version's executable, and modify your `PATH` environment variable with the following added to your `~/.bash_profile` or `~/.zsh_profile`:
+
+    export PATH=/Applications/MAMP/bin/php/php5.5.26/bin:$PATH
+
+Note there's no assignment of the `PHP_VERSION` variable in this case, because we aren't dynamically looking up the latest PHP version.
+
 Once you have added that and saved the file, reload the file with:
 
     source ~/.bash_profile
