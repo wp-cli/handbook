@@ -99,7 +99,7 @@ Here's an annotated example `wp-cli.yml` file:
 		# Merge subcommand defaults from the upstream config.yml, instead of overriding
 		merge: true
 		# Inherit configuration from an arbitrary YAML file
-		inhert: prod.yml
+		inherit: prod.yml
 
 ## Environment variables
 
