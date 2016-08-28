@@ -5,13 +5,48 @@ description: Documentation Standards for WP-CLI commands.
 category: References
 ---
 
-We have set some Documentation Standards for WP-CLI commands.
+In order to help the user as much as possible and to create code and documentation that look and feel familiar, we have set some documentation standards for WP-CLI commands. Every pull requests are reviewed and verified whether these standards are followed or not. We want to encourage you to follow these standards in your custom commands also.
 
 ## Examples
 
 ### Subcommand
 
-* Blank line should be there before and after for each example.
+```
+/**
+ * Schedule a new cron event.
+ *
+ * ## OPTIONS
+ *
+ * <hook>
+ * : The hook name.
+ *
+ * [<next-run>]
+ * : A Unix timestamp or an English textual datetime description compatible with `strtotime()`. Defaults to now.
+ *
+ * [<recurrence>]
+ * : How often the event should recur. See `wp cron schedule list` for available schedule names. Defaults to no recurrence.
+ *
+ * [--<field>=<value>]
+ * : Associative args for the event.
+ *
+ * ## EXAMPLES
+ *
+ *     # Schedule a new cron event.
+ *     $ wp cron event schedule cron_test
+ *     Success: Scheduled event with hook 'cron_test' for 2016-05-31 10:19:16 GMT.
+ *
+ *     # Schedule new cron event with hourly recurrence.
+ *     $ wp cron event schedule cron_test now hourly
+ *     Success: Scheduled event with hook 'cron_test' for 2016-05-31 10:20:32 GMT.
+ *
+ *     # Schedule new cron event and pass associative arguments.
+ *     $ wp cron event schedule cron_test '+1 hour' --foo=1 --bar=2
+ *     Success: Scheduled event with hook 'cron_test' for 2016-05-31 11:21:35 GMT.
+ */
+```
+
+* Example section should start with `## EXAMPLES`. Keep blank line before and after the heading. Doc parser identifies this as the start of the example section and following content are parsed accordingly.
+* Blank line should be there before and after for each example. Blank line before first example is required for Doc parser. Blank line after examples help visually to recognize as separate example.
 * Each example should have 3 parts.
     - Description
         + Must start with `#` and a space.
@@ -27,10 +62,39 @@ We have set some Documentation Standards for WP-CLI commands.
 
 ### Class
 
+```
+/**
+ * Manage options.
+ *
+ * ## EXAMPLES
+ *
+ *     # Get site URL.
+ *     $ wp option get siteurl
+ *     http://example.com
+ *
+ *     # Add option.
+ *     $ wp option add my_option foobar
+ *     Success: Added 'my_option' option.
+ *
+ *     # Update option.
+ *     $ wp option update my_option '{"foo": "bar"}' --format=json
+ *     Success: Updated 'my_option' option.
+ *
+ *     # Delete option.
+ *     $ wp option delete my_option
+ *     Success: Deleted 'my_option' option.
+ */
+```
+
 * Class could have multiple examples. They must follow all standard regarding examples.
 * Only one blank line should be there between examples.
 
 ## Command Message
+
+```
+$ wp theme activate twentysixteen
+Success: Switched to 'Twenty Sixteen' theme.
+```
 
 * Message must start with capital letter.
     - Exception: When message starts with special key and is wrapped with quotes. Eg - `'movie' is not registered post type.`
