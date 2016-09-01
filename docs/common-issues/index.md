@@ -57,7 +57,7 @@ Before accessing a value on the `$_SERVER` superglobal, you should check if the 
 
 When using `$_SERVER['HTTP_HOST']` in your `wp-config.php`, you'll need to set a default value in WP-CLI context:
 
-    if ( defined( 'WP_CLI' ) && WP_CLI ) && ! isset( $_SERVER['HTTP_HOST'] ) {
+    if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST'] ) ) {
         $_SERVER['HTTP_HOST'] = 'wp-cli.org';
     }
 
