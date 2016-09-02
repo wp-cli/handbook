@@ -5,10 +5,6 @@ description: In case of fire, break glass.
 category: Guides
 ---
 
-### The installation hangs
-
-If the installation seems to hang forever while trying to clone the resources from GitHub, please ensure that you are allowed to connect to Github using SSL (port 443) and Git (port 9418) for outbound connections.
-
 ### Error: Can't connect to the database
 
 A few possibilities:
@@ -17,7 +13,7 @@ a) you're using MAMP, but WP-CLI is not using the MAMP PHP binary.
 
 You can check which PHP WP-CLI is using by running `wp --info`.
 
-Set or update the `WP_CLI_PHP` environment variable with the path to the MAMP PHP.
+If you need to specify an alternate PHP binary, see [using a custom PHP binary](http://wp-cli.org/docs/installing/#using-a-custom-php-binary).
 
 b) it's a WordPress multisite install.
 
@@ -78,6 +74,10 @@ Most of the time, it's some plugin or theme code that disables wp-admin access t
 Quick fix, other than disabling the protection, is to pass the user parameter: `--user=some_admin`
 
 See also: [#477](https://github.com/wp-cli/wp-cli/issues/477)
+
+### The installation hangs
+
+If the installation seems to hang forever while trying to clone the resources from GitHub, please ensure that you are allowed to connect to Github using SSL (port 443) and Git (port 9418) for outbound connections.
 
 ### W3 Total Cache Error: some files appear to be missing or out of place.
 
