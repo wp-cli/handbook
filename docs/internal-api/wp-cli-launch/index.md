@@ -4,7 +4,7 @@ title: WP_CLI::launch()
 description: "Launch an arbitrary external process that takes over I/O."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution</small>
 
 ## WP_CLI::launch()
 

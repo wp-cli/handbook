@@ -4,7 +4,7 @@ title: WP_CLI\Utils\parse_ssh_url()
 description: "Parse a SSH url for its host, port, and path."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc</small>
 
 ## WP_CLI\Utils\parse_ssh_url()
 

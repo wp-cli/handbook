@@ -4,6 +4,8 @@ title: 'wp option list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [option](/commands/option/) &raquo; list</small>
+
 `wp option list` - List options.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aoption-list+sort%3Aupdated-desc">Github issues</a></small>

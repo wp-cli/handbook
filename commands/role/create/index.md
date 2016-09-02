@@ -4,6 +4,8 @@ title: 'wp role create'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [role](/commands/role/) &raquo; create</small>
+
 `wp role create` - Create a new role.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arole-create+sort%3Aupdated-desc">Github issues</a></small>

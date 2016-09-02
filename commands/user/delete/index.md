@@ -4,6 +4,8 @@ title: 'wp user delete'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; delete</small>
+
 `wp user delete` - Delete one or more users from the current site.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-delete+sort%3Aupdated-desc">Github issues</a></small>

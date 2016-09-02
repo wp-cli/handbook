@@ -4,6 +4,8 @@ title: 'wp package'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; package</small>
+
 `wp package` - Manage WP-CLI packages.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apackage+sort%3Aupdated-desc">Github issues</a></small>

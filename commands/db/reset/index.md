@@ -4,6 +4,8 @@ title: 'wp db reset'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [db](/commands/db/) &raquo; reset</small>
+
 `wp db reset` - Remove all tables from the database in MySQL.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Adb-reset+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp transient get'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [transient](/commands/transient/) &raquo; get</small>
+
 `wp transient get` - Get a transient value.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atransient-get+sort%3Aupdated-desc">Github issues</a></small>

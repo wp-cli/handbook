@@ -4,6 +4,8 @@ title: 'wp site'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; site</small>
+
 `wp site` - Perform site-wide operations.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite+sort%3Aupdated-desc">Github issues</a></small>

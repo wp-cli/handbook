@@ -4,6 +4,8 @@ title: 'wp rewrite structure'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [rewrite](/commands/rewrite/) &raquo; structure</small>
+
 `wp rewrite structure` - Update the permalink structure.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arewrite-structure+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp core multisite-convert'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; multisite-convert</small>
+
 `wp core multisite-convert` - Transform a single-site install into a multi-site install.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-multisite-convert+sort%3Aupdated-desc">Github issues</a></small>

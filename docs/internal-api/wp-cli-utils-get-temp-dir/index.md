@@ -4,7 +4,7 @@ title: WP_CLI\Utils\get_temp_dir()
 description: "Get the system's temp directory. Warns user if it isn't writable."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; System
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; System</small>
 
 ## WP_CLI\Utils\get_temp_dir()
 

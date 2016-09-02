@@ -4,6 +4,8 @@ title: 'wp network meta get'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [network](/commands/network/) &raquo; [meta](/commands/network/meta/) &raquo; get</small>
+
 `wp network meta get` - Get meta field value.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Anetwork-meta-get+sort%3Aupdated-desc">Github issues</a></small>

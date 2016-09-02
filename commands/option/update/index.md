@@ -4,6 +4,8 @@ title: 'wp option update'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [option](/commands/option/) &raquo; update</small>
+
 `wp option update` - Update an option.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aoption-update+sort%3Aupdated-desc">Github issues</a></small>

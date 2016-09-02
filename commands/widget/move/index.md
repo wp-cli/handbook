@@ -4,6 +4,8 @@ title: 'wp widget move'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [widget](/commands/widget/) &raquo; move</small>
+
 `wp widget move` - Move a widget from one position on a sidebar to another.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Awidget-move+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp rewrite list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [rewrite](/commands/rewrite/) &raquo; list</small>
+
 `wp rewrite list` - Print current rewrite rules.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arewrite-list+sort%3Aupdated-desc">Github issues</a></small>

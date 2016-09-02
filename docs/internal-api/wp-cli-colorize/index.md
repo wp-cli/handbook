@@ -4,7 +4,7 @@ title: WP_CLI::colorize()
 description: "Colorize a string for output."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output</small>
 
 ## WP_CLI::colorize()
 

@@ -4,6 +4,8 @@ title: 'wp rewrite'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; rewrite</small>
+
 `wp rewrite` - Manage rewrite rules.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arewrite+sort%3Aupdated-desc">Github issues</a></small>

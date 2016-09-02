@@ -4,6 +4,8 @@ title: 'wp user meta list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [meta](/commands/user/meta/) &raquo; list</small>
+
 `wp user meta list` - List all metadata associated with a user.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-meta-list+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp term meta'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; meta</small>
+
 `wp term meta` - Manage term custom fields.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-meta+sort%3Aupdated-desc">Github issues</a></small>

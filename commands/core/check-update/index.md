@@ -4,6 +4,8 @@ title: 'wp core check-update'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; check-update</small>
+
 `wp core check-update` - Check for update via Version Check API.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-check-update+sort%3Aupdated-desc">Github issues</a></small>

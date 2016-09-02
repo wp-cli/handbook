@@ -4,6 +4,8 @@ title: 'wp cli alias'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [cli](/commands/cli/) &raquo; alias</small>
+
 `wp cli alias` - List available aliases.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli-alias+sort%3Aupdated-desc">Github issues</a></small>

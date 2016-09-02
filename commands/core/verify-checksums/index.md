@@ -4,6 +4,8 @@ title: 'wp core verify-checksums'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; verify-checksums</small>
+
 `wp core verify-checksums` - Verify WordPress files against WordPress.org's checksums.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-verify-checksums+sort%3Aupdated-desc">Github issues</a></small>

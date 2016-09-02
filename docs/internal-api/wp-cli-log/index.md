@@ -4,7 +4,7 @@ title: WP_CLI::log()
 description: "Display informational message without prefix."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output</small>
 
 ## WP_CLI::log()
 

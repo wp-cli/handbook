@@ -4,6 +4,8 @@ title: 'wp cli param-dump'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [cli](/commands/cli/) &raquo; param-dump</small>
+
 `wp cli param-dump` - Dump the list of global parameters, as JSON or in var_export format.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli-param-dump+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp cache type'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [cache](/commands/cache/) &raquo; type</small>
+
 `wp cache type` - Attempts to determine which object cache is being used.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache-type+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp role list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [role](/commands/role/) &raquo; list</small>
+
 `wp role list` - List all roles.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arole-list+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,7 +4,7 @@ title: WP_CLI\Utils\format_items()
 description: "Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or count."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output</small>
 
 ## WP_CLI\Utils\format_items()
 

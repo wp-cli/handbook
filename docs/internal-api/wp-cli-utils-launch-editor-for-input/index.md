@@ -4,7 +4,7 @@ title: WP_CLI\Utils\launch_editor_for_input()
 description: "Launch system's $EDITOR for the user to edit some text."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input</small>
 
 ## WP_CLI\Utils\launch_editor_for_input()
 

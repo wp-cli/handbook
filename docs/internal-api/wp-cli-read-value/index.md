@@ -4,7 +4,7 @@ title: WP_CLI::read_value()
 description: "Read a value, from various formats."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input</small>
 
 ## WP_CLI::read_value()
 
