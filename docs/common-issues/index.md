@@ -67,6 +67,25 @@ If you're using `$_SERVER['document_root']` in your `wp-config.php` file, you sh
 
 See also: [#785](https://github.com/wp-cli/wp-cli/issues/785)
 
+### Conflict between global parameters and command arguments
+
+All of the [global parameters](http://wp-cli.org/config/) (e.g. `--url=<url>`) may conflict with the arguments you'd like to accept for your command. For instance, adding a RSS widget to a sidebar will not populate the feed URL for that widget:
+
+
+    $ wp widget add rss sidebar-1 1 --url="http://www.smashingmagazine.com/feed/" --items=3
+    Success: Added widget to sidebar.
+
+* Expected result: widget has the feed URL set.
+* Actual result: widget is added with the number of items set to 3, but with empty feed URL.
+
+Use the `WP_CLI_STRICT_ARGS_MODE` environment variable to tell WP-CLI to treat any arguments before the command as global, and after the command as local:
+
+    WP_CLI_STRICT_ARGS_MODE=1 wp --url=wp.dev/site2 widget add rss sidebar-1 1 --url="http://wp-cli.org/feed/"
+
+In this example, `--url=wp.dev/site2` is the global argument, setting WP-CLI to run against 'site2' on a WP multisite install. `--url="http://wp-cli.org/feed/"` is the local argument, setting the RSS feed widget with the proper URL.
+
+See also: [#3128](https://github.com/wp-cli/wp-cli/pull/3128)
+
 ### Warning: Some code is trying to do a URL redirect
 
 Most of the time, it's some plugin or theme code that disables wp-admin access to non-admins.
