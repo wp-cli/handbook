@@ -4,6 +4,8 @@ title: 'wp core is-installed'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; is-installed</small>
+
 `wp core is-installed` - Determine if the WordPress tables are installed.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-is-installed+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp network meta'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [network](/commands/network/) &raquo; meta</small>
+
 `wp network meta` - Manage network custom fields.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Anetwork-meta+sort%3Aupdated-desc">Github issues</a></small>

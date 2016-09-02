@@ -4,7 +4,7 @@ title: WP_CLI\Utils\http_request()
 description: "Make a HTTP request to a remote URL."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Misc</small>
 
 ## WP_CLI\Utils\http_request()
 

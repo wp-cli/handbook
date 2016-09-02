@@ -4,6 +4,8 @@ title: 'wp comment get'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [comment](/commands/comment/) &raquo; get</small>
+
 `wp comment get` - Get a single comment.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acomment-get+sort%3Aupdated-desc">Github issues</a></small>

@@ -46,6 +46,16 @@ function gen_cmd_pages( $cmd, $parent = array() ) {
 	$binding = $cmd;
 	$binding['synopsis'] = implode( ' ', $parent );
 	$binding['path'] = implode( '/', $parent );
+	$path = '/commands/';
+	$binding['breadcrumbs'] = '[Commands](' . $path . ')';
+	foreach( $parent as $i => $p ) {
+		$path .= $p . '/';
+		if ( $i < ( count( $parent ) - 1 ) ) {
+			$binding['breadcrumbs'] .= " &raquo; [{$p}]({$path})";
+		} else {
+			$binding['breadcrumbs'] .= " &raquo; {$p}";
+		}
+	}
 	$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? array(true) : false;
 
 	if ( $cmd['longdesc'] ) {

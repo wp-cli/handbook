@@ -4,6 +4,8 @@ title: 'wp widget list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [widget](/commands/widget/) &raquo; list</small>
+
 `wp widget list` - List widgets associated with a sidebar.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Awidget-list+sort%3Aupdated-desc">Github issues</a></small>

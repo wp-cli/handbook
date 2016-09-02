@@ -4,6 +4,8 @@ title: 'wp user term list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [term](/commands/user/term/) &raquo; list</small>
+
 `wp user term list` - List all terms associated with an object.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-term-list+sort%3Aupdated-desc">Github issues</a></small>

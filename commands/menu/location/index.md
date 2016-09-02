@@ -4,6 +4,8 @@ title: 'wp menu location'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [menu](/commands/menu/) &raquo; location</small>
+
 `wp menu location` - Manage a menu's assignment to locations.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu-location+sort%3Aupdated-desc">Github issues</a></small>

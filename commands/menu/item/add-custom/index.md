@@ -4,6 +4,8 @@ title: 'wp menu item add-custom'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [menu](/commands/menu/) &raquo; [item](/commands/menu/item/) &raquo; add-custom</small>
+
 `wp menu item add-custom` - Add a custom menu item.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu-item-add-custom+sort%3Aupdated-desc">Github issues</a></small>

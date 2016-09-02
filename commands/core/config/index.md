@@ -4,6 +4,8 @@ title: 'wp core config'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; config</small>
+
 `wp core config` - Generate a wp-config.php file.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-config+sort%3Aupdated-desc">Github issues</a></small>

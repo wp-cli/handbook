@@ -4,7 +4,7 @@ title: WP_CLI::debug()
 description: "Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output</small>
 
 ## WP_CLI::debug()
 

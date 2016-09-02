@@ -4,6 +4,8 @@ title: 'wp core update'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; update</small>
+
 `wp core update` - Update WordPress.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-update+sort%3Aupdated-desc">Github issues</a></small>

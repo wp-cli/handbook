@@ -4,6 +4,8 @@ title: 'wp post term list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [post](/commands/post/) &raquo; [term](/commands/post/term/) &raquo; list</small>
+
 `wp post term list` - List all terms associated with an object.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-term-list+sort%3Aupdated-desc">Github issues</a></small>

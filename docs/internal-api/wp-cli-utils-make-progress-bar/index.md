@@ -4,7 +4,7 @@ title: WP_CLI\Utils\make_progress_bar()
 description: "Create a progress bar to display percent completion of a given operation."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Output</small>
 
 ## WP_CLI\Utils\make_progress_bar()
 

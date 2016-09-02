@@ -4,7 +4,7 @@ title: WP_CLI\Utils\get_flag_value()
 description: "Return the flag value or, if it's not set, the $default value."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input</small>
 
 ## WP_CLI\Utils\get_flag_value()
 

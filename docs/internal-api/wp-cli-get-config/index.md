@@ -4,7 +4,7 @@ title: WP_CLI::get_config()
 description: "Get values of global configuration parameters."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Input</small>
 
 ## WP_CLI::get_config()
 

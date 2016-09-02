@@ -4,6 +4,8 @@ title: 'wp eval-file'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; eval-file</small>
+
 `wp eval-file` - Load and execute a PHP file.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aeval-file+sort%3Aupdated-desc">Github issues</a></small>

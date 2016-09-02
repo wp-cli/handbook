@@ -4,7 +4,7 @@ title: WP_CLI::launch_self()
 description: "Run a WP-CLI command in a new process reusing the current runtime arguments."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Execution</small>
 
 ## WP_CLI::launch_self()
 

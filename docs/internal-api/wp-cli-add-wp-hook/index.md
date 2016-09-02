@@ -4,7 +4,7 @@ title: WP_CLI::add_wp_hook()
 description: "Add a callback to a WordPress action or filter."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Registration
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; Registration</small>
 
 ## WP_CLI::add_wp_hook()
 

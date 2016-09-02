@@ -4,6 +4,8 @@ title: 'wp term get'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; get</small>
+
 `wp term get` - Get a taxonomy term
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-get+sort%3Aupdated-desc">Github issues</a></small>

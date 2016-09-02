@@ -4,7 +4,7 @@ title: WP_CLI::get_php_binary()
 description: "Get the path to the PHP binary used when executing WP-CLI."
 ---
 
-<a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; System
+<small><a href="/docs/">Docs</a> &raquo; <a href="/docs/internal-api/">Internal API</a> &raquo; System</small>
 
 ## WP_CLI::get_php_binary()
 

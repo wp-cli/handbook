@@ -4,6 +4,8 @@ title: 'wp scaffold'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; scaffold</small>
+
 `wp scaffold` - Generate code for post types, taxonomies, etc.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold+sort%3Aupdated-desc">Github issues</a></small>

@@ -4,6 +4,8 @@ title: 'wp role exists'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [role](/commands/role/) &raquo; exists</small>
+
 `wp role exists` - Check if a role exists.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arole-exists+sort%3Aupdated-desc">Github issues</a></small>

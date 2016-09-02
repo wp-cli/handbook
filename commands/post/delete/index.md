@@ -4,6 +4,8 @@ title: 'wp post delete'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [post](/commands/post/) &raquo; delete</small>
+
 `wp post delete` - Delete a post by ID.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-delete+sort%3Aupdated-desc">Github issues</a></small>

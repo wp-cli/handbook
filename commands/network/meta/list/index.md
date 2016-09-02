@@ -4,6 +4,8 @@ title: 'wp network meta list'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [network](/commands/network/) &raquo; [meta](/commands/network/meta/) &raquo; list</small>
+
 `wp network meta list` - List all metadata associated with an object.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Anetwork-meta-list+sort%3Aupdated-desc">Github issues</a></small>

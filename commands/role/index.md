@@ -4,6 +4,8 @@ title: 'wp role'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; role</small>
+
 `wp role` - Manage user roles.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Arole+sort%3Aupdated-desc">Github issues</a></small>

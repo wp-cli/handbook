@@ -4,6 +4,8 @@ title: 'wp sidebar'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; sidebar</small>
+
 `wp sidebar` - Manage sidebars.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asidebar+sort%3Aupdated-desc">Github issues</a></small>

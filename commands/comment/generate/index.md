@@ -4,6 +4,8 @@ title: 'wp comment generate'
 display_global_parameters: true
 ---
 
+<small>[Commands](/commands/) &raquo; [comment](/commands/comment/) &raquo; generate</small>
+
 `wp comment generate` - Generate comments.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acomment-generate+sort%3Aupdated-desc">Github issues</a></small>
