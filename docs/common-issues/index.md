@@ -41,6 +41,14 @@ See also: [#1631](https://github.com/wp-cli/wp-cli/issues/1631)
 
 Please ensure you have the php-process extension installed. For example for Centos 6: `yum install php-process`
 
+### Error: YIKES! It looks like you're running this as root.
+
+Running WP-CLI as root is extremely dangerous. When you execute WP-CLI as root, any code within your WordPress instance (including third-party plugins and themes you've installed) will have full privileges to the entire server. This can enable malicious code within the WordPress instance to compromise the entire server.
+
+The WP-CLI project strongly discourages running WP-CLI as root.
+
+See also: [#973](https://github.com/wp-cli/wp-cli/pull/973#issuecomment-35842969)
+
 ### PHP notice: Undefined index on `$_SERVER` superglobal
 
 The `$_SERVER` superglobal is an array typically populated by a web server with information such as headers, paths, and script locations. PHP CLI doesn't populate this variable, nor does WP-CLI, because many of the variable details are meaningless at the command line.
