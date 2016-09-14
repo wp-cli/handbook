@@ -25,6 +25,7 @@ In alphabetical order:
 * [Monarobase](https://monarobase.net/wordpress)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 * [Pantheon](https://pantheon.io)
+* [RoseHosting](https://www.rosehosting.com)
 * [Site5](http://www.site5.com/)
 * [SiteGround](http://www.siteground.com/)
 * [Synthesis](http://websynthesis.com/)
