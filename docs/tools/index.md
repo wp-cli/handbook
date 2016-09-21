@@ -57,6 +57,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | pdf-light-viewer      | [PDF Light Viewer](https://github.com/antongorodezkiy/pdf-light-viewer)
 | post-gen              | [Post Gen](https://github.com/trepmal/post-gen/)
 | rest-api-toolbox      | [REST API Toolbox](https://github.com/petenelson/wp-rest-api-toolbox)
+| redis-cache           | [Redis Object Cache](http://wordpress.org/extend/plugins/redis-cache/)
 | revisions             | [wp-revisions-cli](https://github.com/trepmal/wp-revisions-cli/)
 | revision-strike       | [Revision Strike](https://wordpress.org/plugins/revision-strike/)
 | safe-redirect-manager | [Safe Redirect Manager](https://github.com/tlovett1/Safe-Redirect-Manager)
