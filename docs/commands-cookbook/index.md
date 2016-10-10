@@ -77,6 +77,19 @@ class Foo_Command {
     }
 }
 WP_CLI::add_command( 'foo', 'Foo_Command' );
+
+// 4. Command is a method on a class with constructor arguments
+class Foo_Command {
+    protected $bar;
+    public function __construct( $bar ) {
+        $this->bar = $bar;
+    }
+    public function __invoke( $args ) {
+        WP_CLI::success( $this->bar . ':' . $args[0] );
+    }
+}
+$instance = new Foo_Command( 'Some text' );
+WP_CLI::add_command( 'foo', $instance );
 ```
 
 Importantly, classes behave a bit differently than functions and closures in that:
