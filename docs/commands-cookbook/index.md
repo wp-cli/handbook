@@ -21,6 +21,8 @@ _But_, the WordPress admin is a Swiss Army knife of infinite complexity. There's
 
 WP-CLI commands can be [distributed as standalone packages](/package-index/), or bundled with WordPress plugins or themes. For the former, you can use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) to dynamically generate everything but the command itself.
 
+Packages are to WP-CLI as plugins are to WordPress. There are distinct differences in the approach you should take to creating a WP-CLI package.  While WP-CLI is an ever-growing alternative to /wp-admin it is important to note that you must first write your package to work with the WP-CLI internal API before considering how you work with WordPress APIs.
+
 #### Command types
 
 Internal commands:
