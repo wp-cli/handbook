@@ -9,7 +9,7 @@ An ongoing list of ideas and potential improvements for wp-cli.org.
 
 ### Website
 
-* Redesign!
+* Redesign! And potentially move to WordPress from Github pages.
 * Produce command pages for the packages listed in the package index.
 * Publish a set of suggested best practices for package maintainers to follow.
 
