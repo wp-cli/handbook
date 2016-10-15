@@ -148,7 +148,7 @@ class Example_Command extends WP_CLI_Command {
 	 *
 	 *     wp example hello Newman
 	 *
-	 * @when before_wp_load
+	 * @when after_wp_load
 	 */
 	function hello( $args, $assoc_args ) {
 		list( $name ) = $args;
@@ -224,7 +224,7 @@ The longdesc is also displayed when calling the `help` command, for example, `wp
 This is the last section and it starts immediately after the longdesc:
 
 ```
-	 * @when before_wp_load
+	 * @when after_wp_load
 	 */
 ```
 
@@ -272,10 +272,10 @@ Success: Hello, Joe!
 
 **@when**
 
-This is a special tag that tells WP-CLI when to execute the command. It supports [all registered hooks](/docs/internal-api/wp-cli-add-hook/).
+This is a special tag that tells WP-CLI when to execute the command. It supports [all registered WP-CLI hooks](/docs/internal-api/wp-cli-add-hook/).
 
 ```
-@when before_wp_load
+@when after_wp_load
 ```
 
 Do keep in mind most WP-CLI hooks fire before WordPress is loaded. If your command is loaded from a plugin or theme, `@when` will be essentially ignored.
@@ -309,7 +309,7 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 			'options'  => array( 'success', 'error' ),
 		),
 	),
-	'when' => 'before_wp_load',
+	'when' => 'after_wp_load',
 ) );
 ```
 
@@ -487,6 +487,13 @@ Here's a full composer.json example from the server command:
 	"description": "Start a development server for WordPress",
 	"homepage": "https://github.com/wp-cli/server-command",
 	"license": "MIT",
+	"authors": [
+   	    {
+      	        "name": "Package Maintainer",
+                "email": "packagemaintainer@homepage.com",
+                "homepage": "https://www.homepage.com"
+            }
+        ],
 	"require": {
 		"php": ">=5.4"
 	},
