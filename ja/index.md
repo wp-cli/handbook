@@ -21,7 +21,7 @@ title: Command line interface for WordPress
 	<p><strong>A more RESTful WP-CLI</strong> は、コマンドラインによって WP REST API のポテンシャルを解放します。このプロジェクトは Pressed、Chris Lema、Human Made、Pagely、Pantheon、その他大勢の人たちによって支援されています。<a href="https://wp-cli.org/restful/">さらに詳しく &rarr;</a></p>
 </div>
 
-Quick links: [使い方](#section) &#124; [インストール方法](#section-1) &#124; [サポート](#section-2) &#124; [拡張](#section-3) &#124; [貢献](#section-4) &#124; [クレジット](#section-5)
+Quick links: [使い方](#section) &#124; [インストール方法](#section-1) &#124; [サポート](#section-4) &#124; [拡張](#section-5) &#124; [貢献](#section-6) &#124; [クレジット](#section-8)
 
 ## 使い方
 
