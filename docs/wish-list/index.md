@@ -19,3 +19,4 @@ An ongoing list of ideas and potential improvements for wp-cli.org.
 * Display number of Github stars for each package.
 * Highlight packages in the index that are regularly updated, have multiple maintainers, or reflect some other quality we hold to be important.
 * Run test suite for each package on a weekly basis ([from #3197](https://github.com/wp-cli/wp-cli/issues/3197#issuecomment-238946219)).
+* Validate packages submitted to the package index ([previously #3177](https://github.com/wp-cli/wp-cli/issues/3177))
