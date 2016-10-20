@@ -476,7 +476,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	
 ### Add to the package index
 
-Standalone WP-CLI commands can be added to and installed from the [package index](/package-index/). The only technical requirement for being listed in the package index is to include a valid composer.json file with an autoload declaration.
+Standalone WP-CLI commands can be added to and installed from the [package index](/package-index/). The only technical requirement for being listed in the package index is to include a valid composer.json file with an autoload declaration. We recommended including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
 
 Here's a full composer.json example from the server command:
 
@@ -485,6 +485,7 @@ Here's a full composer.json example from the server command:
 {
 	"name": "wp-cli/server-command",
 	"description": "Start a development server for WordPress",
+	"type": "wp-cli-package",
 	"homepage": "https://github.com/wp-cli/server-command",
 	"license": "MIT",
 	"authors": [
