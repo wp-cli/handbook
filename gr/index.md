@@ -9,24 +9,13 @@ title: Διεπαφή γραμμής εντολών για το WordPress
 
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Percentage of issues still open")
 
-<div style="
-	border: 1px solid #7AD03A;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-">
-	<p><strong>Ένα περισσότερο RESTful WP-CLI</strong> στοχεύει στην εκμετάλλευση της δυναμικής του WP REST API στη γραμμή εντολών. Το έργο υποστηρίχθηκε από τους Pressed, Chris Lema, Human Made, Pagely, Pantheon και πολλούς άλλους. <a href="https://wp-cli.org/restful/">Μάθετε περισσότερα &rarr;</a></p>
-</div>
-
 Γρήγοροι σύνδεσμοι: [Χρήση](#using) &#124; [Εγκατάσταση](#installing) &#124; [Υποστήριξη](#support) &#124; [Επέκταση](#extending) &#124; [Συνεισφορά](#contributing) &#124; [Ευχαριστίες](#credits)
 
 ## Χρήση
 
 Ο σκοπός του WP-CLI είναι η παροχή μίας διεπαφής γραμμής εντολών για κάθε ενέργεια που μπορεί να θέλετε να εκτελέσετε στο διαχειριστικό περιβάλλον του WordPress. Για παράδειγμα, η εντολή `wp plugin install --activate` ([τεκμηρίωση](https://wp-cli.org/commands/plugin/install/)) σας επιτρέπει να εγκαταστήσετε και να ενεργοποιήσετε ένα πρόσθετο WordPress:
 
-```
+```bash
 $ wp plugin install rest-api --activate
 Installing WordPress REST API (Version 2) (2.0-beta13)
 Downloading install package from https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip...
@@ -39,7 +28,7 @@ Success: Plugin 'rest-api' activated.
 
 Το WP-CLI περιλαμβάνει επίσης εντολές για πολλά πράγματα που δεν μπορείτε να κάνετε στο διαχειριστικό περιβάλλον του WordPress. Για παράδειγμα, η εντολή `wp transient delete-all` ([τεκμηρίωση](https://wp-cli.org/commands/transient/delete-all/)) σας επιτρέπει να διαγράψετε ένα ή όλα τα transients:
 
-```
+```bash
 $ wp transient delete-all
 Success: 34 transients deleted from the database.
 ```
@@ -60,26 +49,26 @@ Success: 34 transients deleted from the database.
 
 Μόλις επιβεβαιώσετε τις απαιτήσεις, μεταφορτώστε το αρχείο [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) χρησιμοποιώντας την εντολή `wget` ή `curl`:
 
-```
+```bash
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
 Μετά, ελέγξτε ότι δουλεύει:
 
-```
+```bash
 $ php wp-cli.phar --info
 ```
 
 Για να χρησιμοποιήσετε το WP-CLI από τη γραμμή εντολών πληκτρολογώντας `wp`, κάντε το αρχείο εκτελέσιμο και μετακινήστε το κάπου μέσα στο PATH σας. Για παράδειγμα:
 
-```
+```bash
 $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 Αν το WP-CLI έχει εγκατασταθεί επιτυχώς, όταν εκτελέσετε `wp --info` θα πρέπει να δείτε κάτι σαν αυτό:
 
-```
+```bash
 $ wp --info
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
@@ -88,7 +77,7 @@ WP-CLI root dir:        /home/wp-cli/.wp-cli
 WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
 WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
 WP-CLI project config:
-WP-CLI version: 0.23.0
+WP-CLI version: 0.24.1
 ```
 
 ### Ενημέρωση
@@ -101,11 +90,19 @@ WP-CLI version: 0.23.0
 
 Το WP-CLI έρχεται επίσης με ένα αρχείο για συμπλήρωση tab για το Bash και το ZSH. Απλά μεταφορτώστε το [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) και προσθέστε την παρακάτω γραμμή στο αρχείο `~/.bash_profile`:
 
-```
+```bash
 source /FULL/PATH/TO/wp-completion.bash
 ```
 
 Μην ξεχάσετε να εκτελέσετε την εντολή `source ~/.bash_profile` μετά.
+
+Αν χρησιμοποιείτε zsh για κέλυφος, ίσως χρειαστεί να φορτώσετε και να εκκινήσετε το `bashcompinit` πριν το source. Τοποθετείστε το παρακάτων στο στο αρχείο σας `.zshrc`:
+
+```bash
+autoload bashcompinit
+bashcompinit
+source /FULL/PATH/TO/wp-completion.bash
+```
 
 ## Υποστήριξη
 
@@ -129,7 +126,7 @@ source /FULL/PATH/TO/wp-completion.bash
 
 Το WP-CLI υποστηρίζει την καταχώρηση σαν μία εντολή κάθε κλάσης ή συνάρτησης που μπορεί να καλεστεί. Διαβάζει λεπτομέρειες χρήσης από το PHPdoc. Το `WP_CLI::add_command()` ([τεκμηρίωση](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) χρησιμοποιείται για εσωτερική καταχώρηση εντολής και καταχώρηση από τρίτους.
 
-```
+```php
 /**
  * Delete an option from the database.
  *
