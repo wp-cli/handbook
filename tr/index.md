@@ -12,25 +12,15 @@ Güncel kalmak için [@wpcli Twitter](https://twitter.com/wpcli) hesabını taki
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Percentage of issues still open")
 
 
-<div style="
-	border: 1px solid #7AD03A;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-">
-	<p><strong>Daha RESTful WP-CLI</strong>, WP REST API'nin potansiyelini komut satırı üzerinde göstermeyi amaçlıyor. Proje Pressed, Chris Lema, Human Made, Pagely, Pantheon ve daha pek çokları tarafından desteklendi. <a href="https://wp-cli.org/restful/">Ayrıntılı bilgi için &rarr;</a></p>
-</div>
 
 Bağlantılar: [Kullanım](#kullanm) &#124; [Kurulum](#kurulum) &#124; [Destek](#destek) &#124; [Genişletmek](#geniletmek) &#124; [Katkıda Bulunmak](#katkda-bulunmak) &#124; [Katkıda Bulunanlar](#katkda-bulunanlar)
 
 ## Kullanım
 
-WP-CLI, WordPress yönetim panelinden gerçekleştirebileceğiniz tüm işlemler için komut-satırı arabirimi sunmayı amaçlar. Örneğin `wp plugin install` ([belge](https://wp-cli.org/commands/plugin/install/)) bir WordPress eklentisini kurmanızı ve aktifleştirmenizi sağlar:
+WP-CLI, WordPress yönetim panelinden gerçekleştirebileceğiniz tüm işlemler için komut-satırı arabirimi sunmayı amaçlar. Örneğin `wp plugin install --activate` ([belge](https://wp-cli.org/commands/plugin/install/)) bir WordPress eklentisini kurmanızı ve aktifleştirmenizi sağlar:
 
 
-```
+```bash
 $ wp plugin install rest-api --activate
 Installing WordPress REST API (Version 2) (2.0-beta13)
 Downloading install package from https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip...
@@ -41,11 +31,11 @@ Activating 'rest-api'...
 Success: Plugin 'rest-api' activated.
 ```
 
-WP-CLI ayrıca WordPress yönetim panelinden gerçekleştiremeyeceğiniz komutları da barındırır. Örneğin, `wp transient delete-all` ([belge](https://wp-cli.org/commands/transient/delete-all/)) bir veya daha fazla transient'i silmenizi sağlar:
+WP-CLI ayrıca WordPress yönetim panelinden gerçekleştiremeyeceğiniz komutları da barındırır. Örneğin, `wp transient delete --all` ([belge](https://wp-cli.org/commands/transient/delete/)) bir veya daha fazla transient'i silmenizi sağlar:
 
 
-```
-$ wp transient delete-all
+```bash
+$ wp transient delete --all
 Success: 34 transients deleted from the database.
 ```
 
@@ -67,26 +57,26 @@ Lütfen WP-CLI'i kurmadan önce minimum ortam gereksinimlerin karşılandığın
 
 Gerensinimleri karşıladıktan sonra, [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) dosyasını `wget` veya `curl` ile indirin:
 
-```
+```bash
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
 Sonra, çalışıp çalışmadığını kontrol edin:
 
-```
+```bash
 $ php wp-cli.phar --info
 ```
 
 WP-CLI'e komut satırından `wp` yazarak erişebilmek için dosyayı çalıştırılabilir hale getirin ve PATH'de tanımlı olan bir yere taşıyın. Örneğin:
 
-```
+```bash
 $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 Eğer kurulum başarılı bir şekilde tamamlandıysa, `wp --info` komutunu çalıştırdığınızda buna benzer birşey göreceksiniz:
 
-```
+```bash
 $ wp --info
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
@@ -95,10 +85,36 @@ WP-CLI root dir:        /home/wp-cli/.wp-cli
 WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
 WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
 WP-CLI project config:
-WP-CLI version: 0.23.0
+WP-CLI version: 0.24.1
 ```
 
+
+### Güncelleme
+
 WP-CLI'i  `wp cli update` komutu ([belge](https://wp-cli.org/commands/cli/update/)) ile veya kurulum adımlarını tekrarlayarak güncelleyebilirsiniz.
+
+Sınırda yaşamayı seviyor musunuz?  `wp cli update --nightly` komutu ile nightly build sürümüne güncelleyebilirsiniz. Geliştirme ortamınız için nightly build sürümler daha çok yada az stabil olabilir ve her zaman en son ve yeni WP-CLI özelliklerini içerir.
+
+### Sekme tamamlama
+
+WP-CLI ayrıca, Bash ve ZSH için sekme tamamlama scripti sunar. Yapmanız gereken sadece [wp-completion.bash](https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash) dosyasını indirmek ve kaynak olarak `~/.bash_profile` dosyanıza tanımlamak:
+
+
+
+```bash
+source /FULL/PATH/TO/wp-completion.bash
+```
+
+Ekledikten sonra `source ~/.bash_profile` komutunu çalıştırmayı unutmayın.
+
+Shell için zsh kullanıyorsanız, kaynak olarak tanımlamadan önce `bashcompinit` i yükleyip çalıştırmanız gerekebilir. Aşağıdaki kodları `.zshrc` dosyanıza ekleyin:
+
+```bash
+autoload bashcompinit
+bashcompinit
+source /FULL/PATH/TO/wp-completion.bash
+```
+
 
 
 ## Destek
@@ -107,23 +123,63 @@ WP-CLI bakımcıları ve katılımcıları tüm yeni gelen soruları cevaplamak 
 
 
 - [Ortak sorunlar ve çözümleri](https://wp-cli.org/docs/common-issues/)
-- [Hata bildirimi](https://wp-cli.org/docs/bug-reports/)
 - [Dökümantasyon](https://wp-cli.org/docs/)
 - [Github üzerindeki açık veya kapalı konular](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
+- [runcommand Excerpts](https://runcommand.io/excerpts/)
 - [WordPress StackExchange forumları](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
-Eğer bu kaynaklarda sorularınıza cevap bulamazsanız, [hata bildirimi](https://github.com/wp-cli/wp-cli/issues/new) göndermekten çekinmeyiniz.
+Eğer bu kaynaklarda sorularınıza cevap bulamazsanız, [WordPress.org Slack organizasyonu](https://make.wordpress.org/chat/) üzerinden `#cli` kanalına katılın, topluluk üyelerinden birisi yardımcı olabilir. Profesyonel kullanıcılar, premium destek için ayrıca [runcommand](https://runcommand.io/) 'ı düşünebilirler.
 
-WordPress.org hesabınız varsa, [WordPress.org Slack organizasyonu](https://make.wordpress.org/chat/) üzerinden `#cli` kanalına katılabilirsiniz.
+Github konuları mevcut komutlar için yenilik ve hata takibi icin kullanılmaktadır, genel destek için değildir. Hata bildirimi göndermeden önce, sorununuz zamanında ele alınması için lütfen [hata bildirimi yöntemini](ttps://wp-cli.org/docs/bug-reports/) gözden geçirin.
+
+Lütfen Twitter üzerinden destek soruları sormayın. Twitter destek için iyi bir yer değildir çünkü: 1) Yazışmaları 140 karakterin altında tutmak zor, ve 2) Twitter sizinle aynı soruna sahip birisinin önceki cevabı arayarak bulabileceği bir yer değil.
+
+
+Unutmayın, özgür != ücretsiz; açık kaynak lisansı size özgürce kullanma ve değiştirme hakkı verir, başkalarının zamanını değil. Lütfen buna saygı duyun ve beklentilerinizi buna göre ayarlayın.
+
+
 
 ## Genişletmek
 
 **Komutlar** WP-CLI'nin atomik birimleridir. `wp plugin install` ([belge](https://wp-cli.org/commands/plugin/install/)) bir komuttur.  `wp plugin activate` ([belge](https://wp-cli.org/commands/plugin/activate/)) başka bir komuttur.
 
+WP-CLI çağrılabilen herhangi bir sınıfı, fonksiyonu yada anonim fonksiyonu komut olarak kaydetmeyi destekler. Kullanım detaylarını callback'in PHP dökümanından (PHPdoc) okur. `WP_CLI::add_command()` ([belge](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) dahili ve üçüncü-parti komutların kaydedilmesi için kullanılmaktadır.
+
+```php
+/**
+ * Delete an option from the database.
+ *
+ * Returns an error if the option didn't exist.
+ *
+ * ## OPTIONS
+ *
+ * <key>
+ * : Key for the option.
+ *
+ * ## EXAMPLES
+ *
+ *     $ wp option delete my_option
+ *     Success: Deleted 'my_option' option.
+ */
+$delete_option_cmd = function( $args ) {
+	list( $key ) = $args;
+
+	if ( ! delete_option( $key ) ) {
+		WP_CLI::error( "Could not delete '$key' option. Does it exist?" );
+	} else {
+		WP_CLI::success( "Deleted '$key' option." );
+	}
+};
+WP_CLI::add_command( 'option delete', $delete_option_cmd );
+```
+
+
 WP-CLI onlarca komutla hazır olarak gelir. Özel bir WP-CLI komutu oluşturmak görünenden daha kolaydir. Detaylar için [komutlar belgesine](https://wp-cli.org/docs/commands-cookbook/) bakabilirsiniz. [Dahili API dökümantasyonunu](https://wp-cli.org/docs/internal-api/) gözden geçirerek kendi WP-CLI komutunuzda kullanabileceğiniz faydalı foksyionları keşfedebilirsiniz.
 
 
 ## Katkıda Bulunmak
+
+Hoşgeldiniz ve teşekkürler!
 
 WP-CLI'e katkıda bulunmak istediğiniz için teşekkür ederiz. WP-CLI siz ve sizin gibi topluluk üyeleri sayesinde bu kadar büyük bir proje olmayı başarabildi.
 
