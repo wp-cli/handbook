@@ -123,6 +123,12 @@ WP-CLI のメンテナーとプロジェクトの貢献者たちは、新しい 
 
 もしあなたが WordPress.org のアカウントを持っているなら、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加することもできます。
 
+GitHub Issues は、既存のコマンドの改良やバグを追跡するために使用されており、一般的なサポートのためには使用されていません。バグレポートを投稿する際には、[ベストプラクティス](https://wp-cli.org/docs/bug-reports/)を確認して、あなたが抱える問題が適時確実に伝わるように心がけてください。
+
+Twitterでサポート用の質問をたずねるのはおやめください。Twitterは、文字数が140文字以下であり会話を行うのが難しい、過去の会話から他の人の同じ質問を検索することが難しい、等の理由によりサポートを行う場としてふさわしくありません。
+
+自由は無料とは違います。オープンソースはあなたに自由に使ったり編集したりする権利を保証しますが、他の誰かの時間を浪費することを保証しているわけではありません。敬意をもって、過度な期待をしないように心がけてください。
+
 ## 拡張
 
 それぞれの **コマンド** は、WP-CLI の関数の一つとして定義されています。`wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) はそのうちのひとつであり、`wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) は別のもうひとつです。
