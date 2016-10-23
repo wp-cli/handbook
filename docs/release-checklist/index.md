@@ -71,7 +71,7 @@ See <https://github.com/wp-cli/wp-cli.github.com#readme>
 
 ### Writing the release post
 
-Use `./utils/contrib-list -l` to generate the list of contributors.
+Use `./utils/contrib-list -l` to generate the list of code contributors. Documentation contributors will need to be identified by pull requests against the wp-cli.org repository.
 
 ### Announcing
 
@@ -79,7 +79,7 @@ In addition to publishing the release post, a new release is announced in a few 
 
 * WP-CLI Twitter account (with some scheduled follow-up tweets).
 * `/announce` slash command in the `#cli` Slack room.
-* Mailchimp email announcement list.
+* Mailchimp email announcement list (copy and paste the entire release post).
 
 ### Bumping WP-CLI version again
 
@@ -111,6 +111,6 @@ Because patch releases should just be used for bug fixes, you should first fix t
 
     php -dphar.readonly=0 utils/make-phar.php wp-cli.phar --quiet
 
-When you do so, make sure you're using the appropriate Composer dependency versions for the release, not the master branch you normally work from. Once you've verified the built Phar, you'll need to copy it over to the builds repo.
+When you do so, run `composer install` to make sure you're using the appropriate Composer dependency versions for the release, not the master branch you normally work from. Once you've verified the built Phar, you'll need to copy it over to the builds repo.
 
 5) Follow all of the other relevant release steps.
