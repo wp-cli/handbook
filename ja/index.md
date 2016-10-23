@@ -28,10 +28,10 @@ Activating 'rest-api'...
 Success: Plugin 'rest-api' activated.
 ```
 
-さらに WP-CLI は、WordPress の管理画面ではできない多くのことが可能です。たとえば、`wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) は、Transient に保存されているすべてのデータを削除することを可能にしています。
+さらに WP-CLI は、WordPress の管理画面ではできない多くのことが可能です。たとえば、`wp transient delete --all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) は、Transient に保存されているすべてのデータを削除することを可能にしています。
 
 ```bash
-$ wp transient delete-all
+$ wp transient delete --all
 Success: 34 transients deleted from the database.
 ```
 
@@ -79,7 +79,7 @@ WP-CLI root dir:        /home/wp-cli/.wp-cli
 WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
 WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
 WP-CLI project config:
-WP-CLI version: 0.23.0
+WP-CLI version: 0.24.1
 ```
 
 ## アップデート
