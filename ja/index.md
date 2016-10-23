@@ -119,9 +119,7 @@ WP-CLI のメンテナーとプロジェクトの貢献者たちは、新しい 
 - [Open or closed issues on Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
 - [WordPress StackExchange forums](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
-もしこれらのリソースから回答を見つけられなかった場合、ご自由にあなたの質問を[Issueを書いてください](https://github.com/wp-cli/wp-cli/issues/new)。
-
-もしあなたが WordPress.org のアカウントを持っているなら、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加することもできます。
+もし、あなたの疑問に対する回答がこれらのサイトから見つからなければ、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加するとコミュニティメンバーが答えを知っているかもしれません。起業ユーザーのみなさんは [runcommand](https://runcommand.io/) でプレミアムサポートをうけることもできます。
 
 GitHub Issues は、既存のコマンドの改良やバグを追跡するために使用されており、一般的なサポートのためには使用されていません。バグレポートを投稿する際には、[ベストプラクティス](https://wp-cli.org/docs/bug-reports/)を確認して、あなたが抱える問題が適時確実に伝わるように心がけてください。
 
