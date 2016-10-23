@@ -10,17 +10,6 @@ title: Command line interface for WordPress
 
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Percentage of issues still open")
 
-<div style="
-	border: 1px solid #7AD03A;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-">
-	<p><strong>A more RESTful WP-CLI</strong> は、コマンドラインによって WP REST API のポテンシャルを解放します。このプロジェクトは Pressed、Chris Lema、Human Made、Pagely、Pantheon、その他大勢の人たちによって支援されています。<a href="https://wp-cli.org/restful/">さらに詳しく &rarr;</a></p>
-</div>
-
 Quick links: [使い方](#section) &#124; [インストール方法](#section-1) &#124; [サポート](#section-4) &#124; [拡張](#section-5) &#124; [貢献](#section-6) &#124; [クレジット](#section-8)
 
 ## 使い方
@@ -28,7 +17,7 @@ Quick links: [使い方](#section) &#124; [インストール方法](#section-1)
 WP-CLI のゴールは、みなさんが WordPress の管理画面でやりたいと思うことをコマンドラインで提供することです。
 たとえば、`wp plugin install --activate` ([ドキュメント](https://wp-cli.org/commands/plugin/install/)) は、プラグインをインストールし有効化します。
 
-```
+```bash
 $ wp plugin install rest-api --activate
 Installing WordPress REST API (Version 2) (2.0-beta13)
 Downloading install package from https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip...
@@ -41,7 +30,7 @@ Success: Plugin 'rest-api' activated.
 
 さらに WP-CLI は、WordPress の管理画面ではできない多くのことが可能です。たとえば、`wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) は、Transient に保存されているすべてのデータを削除することを可能にしています。
 
-```
+```bash
 $ wp transient delete-all
 Success: 34 transients deleted from the database.
 ```
@@ -62,26 +51,26 @@ WP-CLI をインストールする前に、動作環境を確認してくださ�
 
 動作条件を再度確認してから、`wget`または`curl`を使用して [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) をダウンロードしてください。
 
-```
+```bash
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
 次に、それが動作しているかを確認してください。
 
-```
+```bash
 $ php wp-cli.phar --info
 ```
 
 WP-CLI コマンドを`wp`で実行するには、それに実行権限があることと環境変数`PATH`に登録されていることが必要です。
 
-```
+```bash
 $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 もし、WP-CLI のインストールが成功していれば、`wp --info`を実行したら以下のように出力されるはずです。
 
-```
+```bash
 $ wp --info
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
@@ -133,7 +122,7 @@ Twitterでサポート用の質問をたずねるのはおやめください。T
 
 WP-CLI では、様々な実行可能なクラス、関数、クロージャをコマンドとして実行することが可能です。コマンドとして実行されるために必要な情報は、PHPdoc によって記述します。 `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) は、内部コマンド及びサードパーティコマンドの登録に使用されています。
 
-```
+```php
 /**
  * Delete an option from the database.
  *
