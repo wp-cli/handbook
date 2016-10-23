@@ -9,24 +9,13 @@ Um stets auf dem Laufenden zu bleiben, folge [@wpcli auf Twitter](https://twitte
 
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Abhängigkeiten Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Durchschnittliche Zeit bis zur Lösung eines Issues](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Durchschnittliche Zeit bis zur Lösung eines Issues") [![Prozentsatz noch offener Issues](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Prozentsatz noch offener Issues")
 
-<div style="
-	border: 1px solid #7AD03A;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-">
-	<p><strong>A more RESTful WP-CLI</strong> versucht das Potenzial der WP REST API auf der Kommandozeile auszuschöpfen. Das Projekt wird unterstützt von Pressed, Chris Lema, Human Made, Pagely, Pantheon und vielen mehr. <a href="https://wp-cli.org/restful/">Mehr erfahren &rarr;</a></p>
-</div>
-
 Quick links: [Benutzung](#benutzung) &#124; [Installation](#installation) &#124; [Support](#support) &#124; [Erweitern](#erweitern) &#124; [Mitwirken](#mitwirken) &#124; [Credits](#credits)
 
 ## Benutzung
 
 Das Ziel von WP-CLI ist es, für jede Aktion ein Kommandozeilen-Interface zur Verfügung zu stellen, die man auch über den Adminbereich ausführen kann. Mit `wp plugin install --activate` ([doc](https://wp-cli.org/commands/plugin/install/)) kann man zum Beispiel ein WordPress Plugin installieren und aktivieren:
 
-```
+```bash
 $ wp plugin install rest-api --activate
 Installing WordPress REST API (Version 2) (2.0-beta13)
 Downloading install package from https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip...
@@ -39,7 +28,7 @@ Success: Plugin 'rest-api' activated.
 
 WP-CLI enthält auch Befehle für viele Dinge, die man im Adminbereich nicht tun kann. Mit `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) kannst du z.B. bestimmte oder alle Transients löschen:
 
-```
+```bash
 $ wp transient delete-all
 Success: 34 transients deleted from the database.
 ```
@@ -58,28 +47,28 @@ Bevor du WP-CLI installierst, stell bitte sicher, dass dein System die Mindestan
 - PHP 5.3.29 oder höher
 - WordPress 3.7 oder höher
 
-Wenn du das erledigt hast, lade die [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) Datei mittels `wget` oder `curl` herunter:
+Sobald du die Mindestanforderungen geprüft hast, lade die [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) Datei mittels `wget` oder `curl` herunter:
 
-```
+```bash
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
 Prüfe als nächstes, ob es funktioniert:
 
-```
+```bash
 $ php wp-cli.phar --info
 ```
 
 Um WP-CLI auf der Kommandozeile durch blosses Tippen von `wp` zu nutzen, mache die Datei ausführbar und verschiebe es irgendwo hin innerhalb deines PATH. Zum Beispiel:
 
-```
+```bash
 $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 Wenn WP-CLI erfolgreich installiert wurde, solltest du bei der Ausführung von `wp --info` etwas wie hier sehen:
 
-```
+```bash
 $ wp --info
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
@@ -101,7 +90,7 @@ Lebst du gerne gefährlich? Führe `wp cli update --nightly` aus um den aktuells
 
 Für WP-CLI gibt es auch ein Skript zur Autovervollständigung von Befehlen für Bash und ZSH. Lade einfach [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) herunter und referenziere es in der `~/.bash_profile` Datei:
 
-```
+```bash
 source /FULL/PATH/TO/wp-completion.bash
 ```
 
@@ -109,7 +98,7 @@ Vergiss nicht, danach `source ~/.bash_profile` auszuführen.
 
 ## Support
 
-Die Betreuer und Mitwirkenden hinter WP-CLI tun ihr bestes um schnellstmöglich auf neue Issues zu antworten. Um ihre Arbeit zu erleichtern, prüfe zunächst ob es bereits an einem dieser Orte eine Antwort auf deine Frage gibt:
+Die Betreuer und Mitwirkenden hinter WP-CLI sind Freiwillige und haben nur begrenzt Zeit um generelle Supportanfragen zu beantworten. Prüfe zunächst, ob es bereits an einem dieser Orte eine Antwort auf deine Frage gibt:
 
 - [Gängige Fehler und deren Lösungen](https://wp-cli.org/docs/common-issues/)
 - [Best Practices beim Erstellen eines Bug Reports](https://wp-cli.org/docs/bug-reports/)
@@ -117,13 +106,47 @@ Die Betreuer und Mitwirkenden hinter WP-CLI tun ihr bestes um schnellstmöglich 
 - [Offene oder geschlossene Issues auf Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
 - [WordPress StackExchange Foren](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
-Wenn du deine Antwort auf keiner dieser Seiten finden kannst, [erstelle ein Issue](https://github.com/wp-cli/wp-cli/issues/new) mit deiner Frage.
+Wenn du auf keiner dieser Seiten eine Antwort finden kannst, trete dem `#cli` Channel des [WordPress.org Slack Teams](https://make.wordpress.org/chat/) bei um zu sehen, ob ein Community-Mitglied dir weiterhelfen kann. Professionelle Benutzer können auch [runcommand](https://runcommand.io/) für Premium Support in Betracht ziehen.
 
-Falls du einen WordPress.org Account hast, ziehe in Erwägung dem `#cli` Channel des [WordPress.org Slack Teams](https://make.wordpress.org/chat/) beizutreten.
+GitHub Issues sind nur für das Verwalten von Erweiterungen und Bugs existierender Befehle gedacht, nicht allgemeinen Support. Schau dir [unsere Best Practices](https://wp-cli.org/docs/bug-reports/) an, bevor du einen Bug meldest, damit dein Issue in angemessener Zeit bearbeitet werden kann.
+
+Bitte stell keine Supportfragen auf Twitter. Twitter ist kein akzeptabler Ort für Support weil: 1) es ist schwierig Konversationen unter 140 Zeichen zu führen und 2) Twitter ist kein Ort, wo jemand mit der gleichen Frage frühere Antworten in einer Konversation finden kann.
+
+Denk daran, frei != gratis. Die Open Source Lizenz garantiert dir die Freiheit zur Nutzung und Bearbeitung, aber nicht anderer Leute Zeit. Bitte sei respektvoll und setze deine Erwartungen dementsprechend.
 
 ## Erweitern
 
 Ein **Befehl** ist die atomare Einheit der WP-CLI Funktionalität. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) ist ein solcher Befehl. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) ein anderer.
+
+WP-CLI unterstützt das Registrieren jeder aufrufbaren Klasse, Funktion oder Closure als Befehl. Es liest die Informationen zur Nutzung aus der PHPdoc des Callbacks aus. `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) wird sowohl für die Registration interner Befehle als auch für Befehle von Dritten verwendet.
+
+```php
+/**
+ * Delete an option from the database.
+ *
+ * Returns an error if the option didn't exist.
+ *
+ * ## OPTIONS
+ *
+ * <key>
+ * : Key for the option.
+ *
+ * ## EXAMPLES
+ *
+ *     $ wp option delete my_option
+ *     Success: Deleted 'my_option' option.
+ */
+$delete_option_cmd = function( $args ) {
+	list( $key ) = $args;
+
+	if ( ! delete_option( $key ) ) {
+		WP_CLI::error( "Could not delete '$key' option. Does it exist?" );
+	} else {
+		WP_CLI::success( "Deleted '$key' option." );
+	}
+};
+WP_CLI::add_command( 'option delete', $delete_option_cmd );
+```
 
 WP-CLI enthält Dutzende Befehle. Es ist auch sehr einfach eigene Befehle zu erstellen. Lies dazu das [Commands Cookbook](https://wp-cli.org/docs/commands-cookbook/) um mehr zu erfahren. Stöbere in der [internen API-Dokumentation](https://wp-cli.org/docs/internal-api/) um eine Vielzahl hilfreicher Funktionen zu entdecken, welche du in deinem eigenen WP-CLI Befehl nutzen kannst.
 
