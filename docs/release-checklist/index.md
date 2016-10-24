@@ -69,6 +69,8 @@ See <https://github.com/Homebrew/homebrew-php/pull/1687#issuecomment-98408399> a
 
 See <https://github.com/wp-cli/wp-cli.github.com#readme>
 
+Please also tag a release of the website, so it's easy to correlate versions of the website.
+
 ### Writing the release post
 
 Use `./utils/contrib-list -l` to generate the list of code contributors. Documentation contributors will need to be identified by pull requests against the wp-cli.org repository.
