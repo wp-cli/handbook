@@ -9,25 +9,13 @@ Para manter-se atualizado, siga [@wpcli no Twitter](https://twitter.com/wpcli) o
 
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Tempo médio para resolver um issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Percentual de issues ainda abertos")
 
-<div style="
-	border: 1px solid #7AD03A;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-">
-
-	<p>O projeto <strong>"WP-CLI mais <i>RESTful</i>"</strong> visa proporcionar todo o potencial da linha de comando para a WP REST API e é apoiado por Pressed, Chris Lema, Human Made, Pagely, Pantheon e muitos outros. <a href="https://wp-cli.org/restful/">Saiba mais &rarr;</a></p>
-</div>
-
 Links rápidos: [Usando](#usando) &#124; [Instalando](#instalando) &#124; [Suporte](#suporte) &#124; [Extendendo](#extendendo) &#124; [Contribuindo](#contribuindo) &#124; [Créditos](#creditos)
 
 ## Usando
 
 O objetivo da WP-CLI é fornecer uma interface em linha de comando para qualquer ação que você queira executar na administração do WordPress. Por exemplo `wp plugin install --activate` ([doc](https://wp-cli.org/commands/plugin/install/)) permite a instação e ativação de um plugin WordPress:
 
-```
+```bash
 $ wp plugin install rest-api --activate
 Installing WordPress REST API (Version 2) (2.0-beta13)
 Downloading install package from https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip...
@@ -38,10 +26,10 @@ Activating 'rest-api'...
 Success: Plugin 'rest-api' activated.
 ```
 
-WP-CLI também inclui muitos comandos para ações que não são possíveis através da administração do WordPress. Por exemplo, `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) permite deletar uma ou todas as <abbr title='Dados transitórios'>transients</abbr>:
+WP-CLI também inclui muitos comandos para ações que não são possíveis através da administração do WordPress. Por exemplo, `wp transient delete --all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) permite deletar uma ou todas as <abbr title='Dados transitórios'>transients</abbr>:
 
-```
-$ wp transient delete-all
+```bash
+$ wp transient delete --all
 Success: 34 transients deleted from the database.
 ```
 
@@ -61,26 +49,26 @@ Antes instalar a WP-CLI, certifique-se que seu ambiente possua os requesitos mí
 
 Após verificar os requesitos, faça o download do arquivo [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) usando `wget` ou `curl`:
 
-```
+```bash
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
 Em seguida, verifique se está funcionando:
 
-```
+```bash
 $ php wp-cli.phar --info
 ```
 
 Digite `wp` para utilizar WP-CLI a partir da linha de comando, torne o arquivo executável e mova-o para algum diretório presente em sua variável de ambiente PATH. For example:
 
-```
+```bash
 $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 Se WP-CLI foi instalado com sucesso, ao executar `wp --info` você deverá ver algo como:
 
-```
+```bash
 $ wp --info
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
@@ -102,7 +90,7 @@ _Quer viver a vida no limite?_ Execute `wp cli update --nightly` para usar a úl
 
 WP-CLI também acompanha scripts de auto-completar para Bash ou ZSH. Faça o download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) e carregue o arquivo para `~/.bash_profile`:
 
-```
+```bash
 source /FULL/PATH/TO/wp-completion.bash
 ```
 
@@ -129,7 +117,7 @@ Um **commando** é uma unidade singular de uma funcionalidade WP-CLI. `wp plugin
 A WP-CLI suporta o registro de qualquer classe ou função como um comando, lendo os detalhes de uso através de _PHPdoc Callback_. `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) é utilizado para registo de comandos internos e de terceiros.
 
 
-```
+```php
 /**
  * Delete an option from the database.
  *
