@@ -12,10 +12,12 @@ display_global_parameters: true
 
 <hr />
 
+Displays detail of the taxonomy.
+
 ### OPTIONS
 
 &lt;taxonomy&gt;
-: Taxonomy slug
+: Taxonomy slug.
 
 [\--field=&lt;field&gt;]
 : Instead of returning the whole taxonomy, returns the value of a single field.
@@ -36,36 +38,17 @@ options:
 
 ### EXAMPLES
 
-    $ wp taxonomy get category
-    +---------------+---------------------------------------------------+
-    | Field         | Value                                             |
-    +---------------+---------------------------------------------------+
-    | name          | category                                          |
-    | label         | Categories                                        |
-    | description   |                                                   |
-    | object_type   | ["post"]                                          |
-    | show_tagcloud | true                                              |
-    | hierarchical  | true                                              |
-    | public        | true                                              |
-    | labels        | {"name":"Categories","singular_name":"Category"," |
-    |               | search_items":"Search Categories","popular_items" |
-    |               | :null,"all_items":"All Categories","parent_item": |
-    |               | "Parent Category","parent_item_colon":"Parent Cat |
-    |               | egory:","edit_item":"Edit Category","view_item":" |
-    |               | View Category","update_item":"Update Category","a |
-    |               | dd_new_item":"Add New Category","new_item_name":" |
-    |               | New Category Name","separate_items_with_commas":n |
-    |               | ull,"add_or_remove_items":null,"choose_from_most_ |
-    |               | used":null,"not_found":"No categories found.","no |
-    |               | _terms":"No categories","items_list_navigation":" |
-    |               | Categories list navigation","items_list":"Categor |
-    |               | ies list","menu_name":"Categories","name_admin_ba |
-    |               | r":"category"}                                    |
-    | cap           | {"manage_terms":"manage_categories","edit_terms": |
-    |               | "manage_categories","delete_terms":"manage_catego |
-    |               | ries","assign_terms":"edit_posts"}                |
-    +---------------+---------------------------------------------------+
+    # Get details of `category` taxonomy.
+    $ wp taxonomy get category --fields=name,label,object_type
+    +-------------+------------+
+    | Field       | Value      |
+    +-------------+------------+
+    | name        | category   |
+    | label       | Categories |
+    | object_type | ["post"]   |
+    +-------------+------------+
 
+    # Get capabilities of 'post_tag' taxonomy.
     $ wp taxonomy get post_tag --field=cap
     {"manage_terms":"manage_categories","edit_terms":"manage_categories","delete_terms":"manage_categories","assign_terms":"edit_posts"}
 

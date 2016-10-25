@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Untrash comment.
     $ wp comment untrash 1337
     Success: Untrashed comment 1337.
 

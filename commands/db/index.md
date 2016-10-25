@@ -42,6 +42,10 @@ display_global_parameters: true
 	</thead>
 	<tbody>
 		<tr>
+			<td><a href="/commands/db/check/">check</a></td>
+			<td>Check the database in MySQL.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/db/cli/">cli</a></td>
 			<td>Open a MySQL console using credentials from wp-config.php</td>
 		</tr>

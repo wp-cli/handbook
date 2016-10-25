@@ -23,10 +23,9 @@ display_global_parameters: true
 [\--autoload=&lt;autoload&gt;]
 : Requires WP 4.2. Should this option be automatically loaded.
 \---
-default: yes
 options:
-  - yes
-  - no
+  - 'yes'
+  - 'no'
 \---
 
 [\--format=&lt;format&gt;]

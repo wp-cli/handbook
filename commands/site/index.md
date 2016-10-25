@@ -69,6 +69,10 @@ display_global_parameters: true
 			<td>List all sites in a multisite install.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/site/option/">option</a></td>
+			<td>Manage site options.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/site/spam/">spam</a></td>
 			<td>Mark one or more sites as spam</td>
 		</tr>

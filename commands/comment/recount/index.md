@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Recount comment for the post.
     $ wp comment recount 123
     Updated post 123 comment count to 67.
 

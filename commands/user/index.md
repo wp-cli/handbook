@@ -92,6 +92,10 @@ display_global_parameters: true
 			<td>Remove a user's role.</td>
 		</tr>
 		<tr>
+			<td><a href="/commands/user/session/">session</a></td>
+			<td>Manage a user's sessions.</td>
+		</tr>
+		<tr>
 			<td><a href="/commands/user/set-role/">set-role</a></td>
 			<td>Set the user role (for a particular blog).</td>
 		</tr>

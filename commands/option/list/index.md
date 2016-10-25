@@ -17,8 +17,14 @@ display_global_parameters: true
 [\--search=&lt;pattern&gt;]
 : Use wildcards ( * and ? ) to match option name.
 
+[\--exclude=&lt;pattern&gt;]
+: Pattern to exclude. Use wildcards ( * and ? ) to match option name.
+
 [\--autoload=&lt;value&gt;]
 : Match only autoload options when value is on, and only not-autoload option when off.
+
+[\--transients]
+: List only transients. Use `--no-transients` to ignore all transients.
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field.
@@ -75,9 +81,9 @@ These fields are optionally available:
     +-------------+--------------+
 
     # Delete all options begining with "theme_mods_"
-    $ wp option list --search="theme_mods_*" --field=option_name | xargs -0 -d '\n' -I % wp option delete %
+    $ wp option list --search="theme_mods_*" --field=option_name | xargs -I % wp option delete %
     Success: Deleted 'theme_mods_twentysixteen' option.
-    Success: Deleted 'theme_mods_twentfifteen' option.
+    Success: Deleted 'theme_mods_twentyfifteen' option.
     Success: Deleted 'theme_mods_twentyfourteen' option.
 
 

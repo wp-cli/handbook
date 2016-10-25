@@ -19,8 +19,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Unapprove comment.
     $ wp comment unapprove 1337
-    Success: Unapproved comment 1337
+    Success: Unapproved comment 1337.
 
 
 

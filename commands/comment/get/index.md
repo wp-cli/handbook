@@ -36,6 +36,7 @@ options:
 
 ### EXAMPLES
 
+    # Get comment.
     $ wp comment get 21 --field=content
     Thanks for all the comments, everyone!
 

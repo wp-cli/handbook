@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Displays list of registered taxonomies.
+
 ### OPTIONS
 
 [\--&lt;field&gt;=&lt;value&gt;]
@@ -49,7 +51,7 @@ There are no optionally available fields.
 
 ### EXAMPLES
 
-    # List all taxonomies
+    # List all taxonomies.
     $ wp taxonomy list --format=csv
     name,label,description,object_type,show_tagcloud,hierarchical,public
     category,Categories,,post,1,1,1
@@ -58,7 +60,7 @@ There are no optionally available fields.
     link_category,"Link Categories",,link,1,,
     post_format,Format,,post,,,1
 
-    # List all taxonomies with 'post' object type
+    # List all taxonomies with 'post' object type.
     $ wp taxonomy list --object_type=post --fields=name,public
     +-------------+--------+
     | name        | public |

@@ -35,7 +35,7 @@ display_global_parameters: true
 ### EXAMPLES
 
     $ wp site create --slug=example
-    Success: Site 3 created: www.example.com/example/
+    Success: Site 3 created: http://www.example.com/example/
 
 
 

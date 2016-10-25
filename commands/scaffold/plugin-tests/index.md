@@ -38,7 +38,7 @@ variable.
 : Generate test files for a non-standard plugin path. If no plugin slug is specified, the directory name is used.
 
 [\--ci=&lt;provider&gt;]
-: Add a configuration file for a continuous integration provider.
+: Choose a configuration file for a continuous integration provider.
 \---
 default: travis
 options:

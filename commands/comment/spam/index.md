@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Spam comment.
     $ wp comment spam 1337
     Success: Marked as spam comment 1337.
 

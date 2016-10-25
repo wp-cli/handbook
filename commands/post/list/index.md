@@ -24,7 +24,7 @@ display_global_parameters: true
 : Limit the output to specific object fields.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count, ids, yaml. Default: table
+: Render output in a particular format.
 \---
 default: table
 options:

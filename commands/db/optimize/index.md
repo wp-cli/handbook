@@ -17,7 +17,7 @@ Runs `mysqlcheck` utility with `--optimize=true` using `DB_HOST`,
 specified in wp-config.php.
 
 [See docs](http://dev.mysql.com/doc/refman/5.7/en/optimize-table.html)
-for more details on the `OPTIMIZE_TABLE` statement.
+for more details on the `OPTIMIZE TABLE` statement.
 
 ### EXAMPLES
 

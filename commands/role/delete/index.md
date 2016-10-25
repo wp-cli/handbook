@@ -19,13 +19,13 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Delete approver role
+    # Delete approver role.
     $ wp role delete approver
-    Success: Role with key approver deleted.
+    Success: Role with key 'approver' deleted.
 
-    # Delete productadmin role
+    # Delete productadmin role.
     wp role delete productadmin
-    Success: Role with key productadmin deleted.
+    Success: Role with key 'productadmin' deleted.
 
 
 

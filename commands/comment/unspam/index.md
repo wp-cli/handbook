@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Unspam comment.
     $ wp comment unspam 1337
     Success: Unspammed comment 1337.
 

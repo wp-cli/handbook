@@ -25,6 +25,7 @@ options:
 
 ### EXAMPLES
 
+    # Display various data about the CLI environment.
     $ wp cli info
     PHP binary: /usr/bin/php5
     PHP version:    5.5.9-1ubuntu4.16
@@ -33,7 +34,7 @@ options:
     WP-CLI packages dir:    /home/person/.wp-cli/packages/
     WP-CLI global config:
     WP-CLI project config:
-    WP-CLI version: 0.23.1
+    WP-CLI version: 0.24.1
 
 
 

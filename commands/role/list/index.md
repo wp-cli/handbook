@@ -40,6 +40,7 @@ There are no optional fields.
 
 ### EXAMPLES
 
+    # List roles.
     $ wp role list --fields=role --format=csv
     role
     administrator

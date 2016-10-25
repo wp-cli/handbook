@@ -22,6 +22,10 @@ WordPress is installed in the `/wp` directory and your domain is wp.dev,
 then you'll need to run `wp option update siteurl http://wp.dev/wp` for
 your WordPress install to function properly.
 
+Note: When using custom user tables (e.g. `CUSTOM_USER_TABLE`), the admin
+email and password are ignored if the user_login already exists. If the
+user_login doesn't exist, a new user will be created.
+
 ### OPTIONS
 
 \--url=&lt;url&gt;

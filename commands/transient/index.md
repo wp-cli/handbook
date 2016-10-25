@@ -14,24 +14,24 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Set transient
+    # Set transient.
     $ wp transient set sample_key "test data" 3600
     Success: Transient added.
 
-    # Get transient
+    # Get transient.
     $ wp transient get sample_key
     test data
 
-    # Delete transient
+    # Delete transient.
     $ wp transient delete sample_key
     Success: Transient deleted.
 
-    # Delete expired transients
-    $ wp transient delete-expired
+    # Delete expired transients.
+    $ wp transient delete --expired
     Success: 12 expired transients deleted from the database.
 
-    # Delete all transients
-    $ wp transient delete-all
+    # Delete all transients.
+    $ wp transient delete --all
     Success: 14 transients deleted from the database.
 
 
@@ -49,14 +49,6 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/transient/delete/">delete</a></td>
 			<td>Delete a transient value.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/transient/delete-all/">delete-all</a></td>
-			<td>Delete all transients.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/transient/delete-expired/">delete-expired</a></td>
-			<td>Delete all expired transients.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/transient/get/">get</a></td>

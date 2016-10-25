@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Get status of comment.
     $ wp comment status 1337
     approved
 

@@ -61,13 +61,13 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    # List comment IDs
+    # List comment IDs.
     $ wp comment list --field=ID
     22
     23
     24
 
-    # List comments of a post
+    # List comments of a post.
     $ wp comment list --post_id=1 --fields=ID,comment_date,comment_author
     +------------+---------------------+----------------+
     | comment_ID | comment_date        | comment_author |
@@ -75,7 +75,7 @@ These fields are optionally available:
     | 1          | 2015-06-20 09:00:10 | Mr WordPress   |
     +------------+---------------------+----------------+
 
-    # List approved comments
+    # List approved comments.
     $ wp comment list --number=3 --status=approve --fields=ID,comment_date,comment_author
     +------------+---------------------+----------------+
     | comment_ID | comment_date        | comment_author |

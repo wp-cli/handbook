@@ -24,7 +24,7 @@ display_global_parameters: true
 
     # Delete menu item
     $ wp menu item delete 45
-    Success: Menu item(s) deleted.
+    Success: 1 menu item deleted.
 
 
 

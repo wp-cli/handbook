@@ -15,5 +15,10 @@ display_global_parameters: true
 &lt;language&gt;
 : Language code to activate.
 
+### EXAMPLES
+
+    $ wp core language activate ja
+    Success: Language activated.
+
 
 
