@@ -25,13 +25,13 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Create role for Approver
+    # Create role for Approver.
     $ wp role create approver Approver
-    Success: Role with key approver created.
+    Success: Role with key 'approver' created.
 
-    # Create role for Product Administrator
+    # Create role for Product Administrator.
     $ wp role create productadmin "Product Administrator"
-    Success: Role with key productadmin created.
+    Success: Role with key 'productadmin' created.
 
 
 

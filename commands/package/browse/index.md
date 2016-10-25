@@ -16,6 +16,9 @@ Lists packages available for installation from the [Package Index](http://wp-cli
 
 ### OPTIONS
 
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific fields. Defaults to all fields.
+
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---

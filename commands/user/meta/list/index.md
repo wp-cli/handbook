@@ -14,8 +14,8 @@ display_global_parameters: true
 
 ### OPTIONS
 
-&lt;id&gt;
-: ID for the object.
+&lt;user&gt;
+: The user login, user email, or user ID of the user to get metadata for.
 
 [\--keys=&lt;keys&gt;]
 : Limit output to metadata of specific keys.
@@ -24,7 +24,16 @@ display_global_parameters: true
 : Limit the output to specific row fields. Defaults to id,meta_key,meta_value.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, csv, json, count. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - count
+  - yaml
+\---
 
 ### EXAMPLES
 

@@ -40,5 +40,15 @@ These fields are optionally available:
 * version
 * package
 
+### EXAMPLES
+
+    $ wp core language list --fields=language,english_name,status
+    +----------------+-------------------------+-------------+
+    | language       | english_name            | status      |
+    +----------------+-------------------------+-------------+
+    | ar             | Arabic                  | uninstalled |
+    | ary            | Moroccan Arabic         | uninstalled |
+    | az             | Azerbaijani             | uninstalled |
+
 
 

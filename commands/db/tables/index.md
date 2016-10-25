@@ -32,7 +32,13 @@ Defaults to all tables registered to $wpdb.
 : List all tables in the database, regardless of the prefix, and even if not registered on $wpdb. Overrides --all-tables-with-prefix.
 
 [\--format=&lt;format&gt;]
-: Accepted values: list, csv. Default: list
+: Render output in a particular format.
+\---
+default: list
+options:
+  - list
+  - csv
+\---
 
 ### EXAMPLES
 

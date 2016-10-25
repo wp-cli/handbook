@@ -32,10 +32,9 @@ options:
 [\--autoload=&lt;autoload&gt;]
 : Should this option be automatically loaded.
 \---
-default: yes
 options:
-  - yes
-  - no
+  - 'yes'
+  - 'no'
 \---
 
 ### EXAMPLES

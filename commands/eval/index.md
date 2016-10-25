@@ -20,5 +20,15 @@ display_global_parameters: true
 [\--skip-wordpress]
 : Execute code without loading WordPress.
 
+### EXAMPLES
+
+    # Display WordPress content directory.
+    $ wp eval 'echo WP_CONTENT_DIR;'
+    /var/www/wordpress/wp-content
+
+    # Generate a random number.
+    $ wp eval 'echo rand();' --skip-wordpress
+    479620423
+
 
 

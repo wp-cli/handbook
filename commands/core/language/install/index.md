@@ -18,5 +18,10 @@ display_global_parameters: true
 [\--activate]
 : If set, the language will be activated immediately after install.
 
+### EXAMPLES
+
+    $ wp core language install  ja
+    Success: Language installed.
+
 
 

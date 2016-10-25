@@ -22,11 +22,11 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Delete comment
+    # Delete comment.
     $ wp comment delete 1337 --force
     Success: Deleted comment 1337.
 
-    # Delete multiple comments
+    # Delete multiple comments.
     $ wp comment delete 1337 2341 --force
     Success: Deleted comment 1337.
     Success: Deleted comment 2341.

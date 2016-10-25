@@ -31,6 +31,9 @@ default: 8080
 [\--docroot=&lt;path&gt;]
 : The path to use as the document root.
 
+[\--config=&lt;file&gt;]
+: Configure the server with a specific .ini file.
+
 ### EXAMPLES
 
     # Make the instance available on any address (with port 8080)
@@ -44,6 +47,13 @@ default: 8080
     $ sudo wp server --host=localhost.localdomain --port=80
     PHP 5.6.9 Development Server started at Tue May 24 01:30:06 2016
     Listening on http://localhost1.localdomain1:8080
+    Document root is /
+    Press Ctrl-C to quit.
+
+    # Configure the server with a specific .ini file
+    $ wp server --config=development.ini
+    PHP 7.0.9 Development Server started at Mon Aug 22 12:09:04 2016
+    Listening on http://localhost:8080
     Document root is /
     Press Ctrl-C to quit.
 

@@ -12,7 +12,7 @@ display_global_parameters: true
 
 <hr />
 
-##DESCRIPTION
+### DESCRIPTION
 
 Will exit with status 0 if the role exists, 1 if it does not.
 
@@ -23,8 +23,9 @@ Will exit with status 0 if the role exists, 1 if it does not.
 
 ### EXAMPLES
 
+    # Check if a role exists.
     $ wp role exists editor
-    Success: Role with ID editor exists.
+    Success: Role with ID 'editor' exists.
 
 
 

@@ -19,7 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Count comments on whole blog
+    # Count comments on whole blog.
     $ wp comment count
     approved:        33
     spam:            3
@@ -29,7 +29,7 @@ display_global_parameters: true
     moderated:       1
     total_comments:  37
 
-    # Count comments in a post
+    # Count comments in a post.
     $ wp comment count 42
     approved:        19
     spam:            0

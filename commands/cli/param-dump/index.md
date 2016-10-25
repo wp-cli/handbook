@@ -28,6 +28,7 @@ options:
 
 ### EXAMPLES
 
+    # Dump the list of global parameters.
     $ wp cli param-dump --format=var_export
     array (
       'path' =&gt;

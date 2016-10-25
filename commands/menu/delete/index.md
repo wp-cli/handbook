@@ -20,7 +20,7 @@ display_global_parameters: true
 ### EXAMPLES
 
     $ wp menu delete "My Menu"
-    Success: Menu(s) deleted.
+    Success: 1 menu deleted.
 
 
 

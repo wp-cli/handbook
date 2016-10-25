@@ -14,15 +14,15 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Create comment
+    # Create comment.
     $ wp comment create --comment_post_ID=15 --comment_content="hello blog" --comment_author="wp-cli"
     Success: Created comment 932.
 
-    # Update comment
+    # Update comment.
     $ wp comment update 123 --comment_author='That Guy'
     Success: Updated comment 123.
 
-    # Delete comment
+    # Delete comment.
     $ wp comment delete 1337 --force
     Success: Deleted comment 1337.
 
@@ -113,7 +113,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/url/">url</a></td>
-			<td>Get comment url</td>
+			<td>Get comment URL.</td>
 		</tr>
 	</tbody>
 </table>

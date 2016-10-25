@@ -18,10 +18,16 @@ display_global_parameters: true
 : The taxonomy for the generated terms.
 
 [\--count=&lt;number&gt;]
-: How many terms to generate. Default: 100
+: How many terms to generate?
+\---
+default: 100
+\---
 
 [\--max_depth=&lt;number&gt;]
-: Generate child terms down to a certain depth. Default: 1
+: Generate child terms down to a certain depth.
+\---
+default: 1
+\---
 
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
@@ -34,12 +40,12 @@ options:
 
 ### EXAMPLES
 
-    # Generate post categories
+    # Generate post categories.
     $ wp term generate category --count=10
     Generating terms  100% [=========] 0:02 / 0:02
 
-    # Add meta to every generated term
-    $ wp term generate category --format=ids --count=3 | xargs -0 -d ' ' -I % wp term meta add % foo bar
+    # Add meta to every generated term.
+    $ wp term generate category --format=ids --count=3 | xargs -d ' ' -I % wp term meta add % foo bar
     Success: Added custom field.
     Success: Added custom field.
     Success: Added custom field.

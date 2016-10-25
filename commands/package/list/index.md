@@ -14,6 +14,9 @@ display_global_parameters: true
 
 ### OPTIONS
 
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific fields. Defaults to all fields.
+
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---

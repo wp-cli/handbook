@@ -14,20 +14,20 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Display CLI version
+    # Display CLI version.
     $ wp cli version
-    WP-CLI 0.23.1
+    WP-CLI 0.24.1
 
-    # Check for update
+    # Check for update.
     $ wp cli check-update
     Success: WP-CLI is at the latest version.
 
-    # Update CLI
+    # Update CLI.
     $ wp cli update
-    You have version 0.23.0. Would you like to update to 0.23.1? [y/n] y
-    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.23.1/wp-cli-0.23.1.phar...
+    You have version 0.24.0. Would you like to update to 0.24.1? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.24.1/wp-cli-0.24.1.phar...
     New version works. Proceeding to replace.
-    Success: Updated WP-CLI to 0.23.1
+    Success: Updated WP-CLI to 0.24.1.
 
 
 
@@ -67,7 +67,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/update/">update</a></td>
-			<td>Fetch most recent update matching the requirements. Returns the available versions if there are updates, or empty if no update available.</td>
+			<td>Update WP-CLI.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/version/">version</a></td>

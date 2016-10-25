@@ -22,6 +22,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Update comment.
     $ wp comment update 123 --comment_author='That Guy'
     Success: Updated comment 123.
 

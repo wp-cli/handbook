@@ -27,7 +27,7 @@ The following files are generated for your plugin by this command:
 The following files are also generated if tests are not skipped using `--skip-tests`:
 
 * `phpunit.xml.dist` is the configuration file for PHPUnit.
-* `.travis.yml` is the configuration file for Travis CI.
+* `.travis.yml` is the configuration file for Travis CI. Use `--ci=&lt;provider&gt;` to select a different service.
 * `bin/install-wp-tests.sh` configures the WordPress test suite and a test database.
 * `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite.
 * `tests/test-sample.php` is a sample file containing test cases.
@@ -57,6 +57,16 @@ The following files are also generated if tests are not skipped using `--skip-te
 
 [\--skip-tests]
 : Don't generate files for unit testing.
+
+[\--ci=&lt;provider&gt;]
+: Choose a configuration file for a continuous integration provider.
+\---
+default: travis
+options:
+  - travis
+  - circle
+	 - gitlab
+\---
 
 [\--activate]
 : Activate the newly generated plugin.

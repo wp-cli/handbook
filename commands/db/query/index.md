@@ -20,6 +20,9 @@ Executes an arbitrary MySQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
 [&lt;sql&gt;]
 : A SQL query. If not passed, will try to read from STDIN.
 
+[\--&lt;field&gt;=&lt;value&gt;]
+: Extra arguments to pass to mysql.
+
 ### EXAMPLES
 
     # Execute a query stored in a file
@@ -43,6 +46,12 @@ Executes an arbitrary MySQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
     | wordpress_dbase.wp_termmeta           | check | status   | OK       |
     | wordpress_dbase.wp_commentmeta        | check | status   | OK       |
     +---------------------------------------+-------+----------+----------+
+
+    # Pass extra arguments through to MySQL
+    $ wp db query 'SELECT * FROM wp_options WHERE option_name="home"' --skip-column-names
+    +---+------+------------------------------+-----+
+    | 2 | home | http://wordpress-develop.dev | yes |
+    +---+------+------------------------------+-----+
 
 
 

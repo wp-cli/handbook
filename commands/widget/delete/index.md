@@ -20,7 +20,7 @@ display_global_parameters: true
 ### EXAMPLES
 
     $ wp widget delete recent-comments-2
-    Success: Widget(s) removed from sidebar.
+    Success: 1 widget removed from sidebar.
 
 
 

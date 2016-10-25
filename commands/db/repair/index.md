@@ -17,7 +17,7 @@ Runs `mysqlcheck` utility with `--repair=true` using `DB_HOST`,
 specified in wp-config.php.
 
 [See docs](http://dev.mysql.com/doc/refman/5.7/en/repair-table.html) for
-more details on the `REPAIR_TABLE` statement.
+more details on the `REPAIR TABLE` statement.
 
 ### EXAMPLES
 

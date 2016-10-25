@@ -21,7 +21,15 @@ display_global_parameters: true
 : The metadata key.
 
 [\--format=&lt;format&gt;]
-: Accepted values: table, json, yaml. Default: table
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+\---
 
 ### EXAMPLES
 

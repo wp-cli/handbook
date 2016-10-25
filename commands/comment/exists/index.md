@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Check whether comment exists.
     $ wp comment exists 1337
     Success: Comment with ID 1337 exists.
 

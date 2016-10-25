@@ -33,7 +33,7 @@ display_global_parameters: true
 
     # Delete one or more widgets entirely
     $ wp widget delete calendar-2 archive-1
-    Success: Widget(s) removed from sidebar.
+    Success: 2 widgets removed from sidebar.
 
 
 

@@ -24,7 +24,13 @@ display_global_parameters: true
 : The value of the meta field. If ommited, the value is read from STDIN.
 
 [\--format=&lt;format&gt;]
-: The serialization format for the value. Default is plaintext.
+: The serialization format for the value.
+\---
+default: plaintext
+options:
+  - plaintext
+  - json
+\---
 
 
 

@@ -33,7 +33,7 @@ Learn how to create your own command from the
 
     # Install the latest development version of the package
     $ wp package install wp-cli/server-command
-    Installing wp-cli/server-command (dev-master)
+    Installing package wp-cli/server-command (dev-master)
     Updating /home/person/.wp-cli/packages/composer.json to require the package...
     Using Composer to install the package...
     ---

@@ -14,8 +14,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Display CLI version.
     $ wp cli version
-    WP-CLI 0.23.1
+    WP-CLI 0.24.1
 
 
 

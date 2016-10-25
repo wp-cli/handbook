@@ -15,18 +15,27 @@ display_global_parameters: true
 ### OPTIONS
 
 [\--count=&lt;number&gt;]
-: How many users to generate. Default: 100
+: How many users to generate?
+\---
+default: 100
+\---
 
 [\--role=&lt;role&gt;]
 : The role of the generated users. Default: default role from WP
 
 [\--format=&lt;format&gt;]
-: Accepted values: progress, ids. Default: ids.
+: Render output in a particular format.
+\---
+default: progress
+options:
+  - progress
+  - ids
+\---
 
 ### EXAMPLES
 
-    # Add meta to every generated user
-    $ wp user generate --format=ids --count=3 | xargs -0 -d ' ' -I % wp user meta add % foo bar
+    # Add meta to every generated users.
+    $ wp user generate --format=ids --count=3 | xargs -d ' ' -I % wp user meta add % foo bar
     Success: Added custom field.
     Success: Added custom field.
     Success: Added custom field.

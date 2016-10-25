@@ -19,8 +19,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Approve comment.
     $ wp comment approve 1337
-    Success: Approved comment 1337
+    Success: Approved comment 1337.
 
 
 
