@@ -35,7 +35,7 @@ Success: 34 transients deleted from the database.
 
 Pour une introduction plus complète sur l'utilisation de WP-CLI, lisez le [Guide de démarrage rapide (en)](https://wp-cli.org/docs/quick-start/).
 
-Vous vous sentez déjà à l'aise avec les bases ? Allez voir la [liste complète des commandes (en)](https://wp-cli.org/commands/) pour avoir des informations détaillées sur la gestion des thèmes et extensions, l'import/export de donnée, l'exécution de rechercher/remplacer dans la base de données et bien plus.
+Vous vous sentez déjà à l'aise avec les bases ? Allez voir la [liste complète des commandes (en)](https://wp-cli.org/commands/) pour avoir des informations détaillées sur la gestion des thèmes et extensions, l'import/export de données, l'exécution de rechercher/remplacer dans la base de données et bien plus.
 
 ## Installation
 
@@ -47,7 +47,7 @@ Avant d'installer WP-CLI, veuillez vous assurer que votre environnement réponds
 - PHP 5.3.29 ou plus récent
 - WordPress 3.7 ou plus récent
 
-Une fois que vous avez vérifier ces exigences, téléchargez le fichier [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) en utilisant `wget` ou `curl` :
+Une fois que vous avez vérifié ces exigences, téléchargez le fichier [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) en utilisant `wget` ou `curl` :
 
 ```bash
 $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
@@ -66,7 +66,7 @@ $ chmod +x wp-cli.phar
 $ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
-Si WP-CLI a été installé correctement, vous devez voir quelque chose comme ça quand vous exécutez `wp --info`:
+Si WP-CLI a été installé correctement, vous devez obtenir le résultat suivant quand vous exécutez `wp --info`:
 
 ```bash
 $ wp --info
@@ -96,7 +96,7 @@ source /FULL/PATH/TO/wp-completion.bash
 
 Si vous voulez l'utiliser directement sans redémarrer votre session de terminal, n'oubliez pas de lancer `source ~/.bash_profile`.
 
-Si vous utiliser le shell zsh, vous devrez probablement charger et démarrer `bashcompinit` avant d'utiliser la commande `source`. Ajouter ces lignes dans votre fichier `.zshrc`:
+Si vous utilisez le shell zsh, vous devrez probablement charger et démarrer `bashcompinit` avant d'utiliser la commande `source`. Ajouter ces lignes dans votre fichier `.zshrc`:
 
 ```bash
 autoload bashcompinit
@@ -118,15 +118,15 @@ Si vous n'arrivez pas à trouver une réponse en utilisant un de ces liens, rejo
 
 Les tickets Github, permettent de suivre l'évolution des bugs et améliorations sur les commandes existantes. Ils ne sont pas utilisés pour faire du support. Avant de soumettre un nouveau rapport de bug, merci de passer en revue [nos bonnes pratiques](https://wp-cli.org/docs/bug-reports/) pour vous assurer que votre ticket les respectent.
 
-Merci de ne pas demander du support sur Twitter. Twitter n'est pas un endroit convenable pour faire du support : 1) c'est compliqué d'avoir une conversation en moins de 140 caractères et 2) Twitter n'est pas un endroit ou quelqu'un avec la même question peut chercher et obtenir une réponse avant de la poser à nouveau.
+Merci de ne pas demander du support sur Twitter. Twitter n'est pas un endroit convenable pour faire du support : 1) c'est compliqué d'avoir une conversation en moins de 140 caractères et 2) Twitter n'est pas un endroit où quelqu'un avec la même question peut chercher et obtenir une réponse avant de la poser à nouveau.
 
-Souvenez-vous, libre != gratuit; la licence open source vous donne la liberté d'utiliser et modifier, mais pas au dépend du temps d'autres personnes. Merci d'être respectueux et de définir vos attentes en conséquence.
+Souvenez-vous, libre != gratuit ; la licence open source vous donne la liberté d'utiliser et modifier, mais pas au dépend du temps d'autres personnes. Merci d'être respectueux et de définir vos attentes en conséquence.
 
 ## Étendre
 
 Une **commande** est une unité atomique de fonctionnalité WP-CLI. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) est une commande. `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)) en est une autre.
 
-WP-CLI permet d'enregister n'importe quelle classe, fonction ou closure comme une commande. Les informations d'utilisation sont lues à partir du bloc PHPdoc de la fonction de rappel. `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) est utilisé aussi bien pour l'enregistrement des commandes interne ou externe.
+WP-CLI permet d'enregister n'importe quelle classe, fonction ou closure comme une commande. Les informations d'utilisation sont lues à partir du bloc PHPdoc de la fonction de rappel. `WP_CLI::add_command()` ([doc](https://wp-cli.org/docs/internal-api/wp-cli-add-command/)) est utilisé aussi bien pour l'enregistrement des commandes internes ou externes.
 
 ```php
 /**
@@ -170,7 +170,7 @@ Merci de prendre un moment pour [lire le guide du contributeur en profondeur](ht
 
 ## Leadership
 
-WP-CLI est dirigié par ces personnes :
+WP-CLI est dirigé par ces personnes :
 
 * [Daniel Bachhuber](https://github.com/danielbachhuber/) - mainteneur actuel
 * [Cristi Burcă](https://github.com/scribu) - mainteneur précédent
