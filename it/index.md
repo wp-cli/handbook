@@ -9,17 +9,6 @@ Per rimanere aggiornati, seguite [@wpcli su Twitter](https://twitter.com/wpcli) 
 
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Percentage of issues still open")
 
-<div style="
-	border: 1px solid #7AD03A;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-">
-	<p><strong>Un orientamento RESTful di WP-CLI</strong>, mira a sbloccare le potenzialità WP REST API dalla linea di comando. Progetto sostenuto da Pressed, Chris Lema, Human Made, Pagely, Pantheon e molti altri. <a href="https://wp-cli.org/restful/">Scopri di più &rarr;</a></p>
-</div>
-
 Collegamenti rapidi: [Utilizzo](#utilizzo) &#124; [Installazione](#installazione) &#124; [Supporto](#supporto) &#124; [Estendere](#estendere) &#124; [Contribuire](#contribuire) &#124; [Crediti](#crediti)
 
 ## Utilizzo
@@ -37,10 +26,10 @@ Activating 'rest-api'...
 Success: Plugin 'rest-api' activated.
 ```
 
-WP-CLI include anche dei comandi per molte operazioni che normalmente non sarebbe possibile svolgere nell'area amministrativa di WordPress. Per esempio, `wp transient delete-all` ([doc](https://wp-cli.org/commands/transient/delete-all/)) vi permetterà di eliminare uno o tutti i transienti:
+WP-CLI include anche dei comandi per molte operazioni che normalmente non sarebbe possibile svolgere nell'area amministrativa di WordPress. Per esempio, `wp transient delete --all` ([doc](https://wp-cli.org/commands/transient/delete/)) vi permetterà di eliminare uno o tutti i transienti:
 
 ```bash
-$ wp transient delete-all
+$ wp transient delete --all
 Success: 34 transients deleted from the database.
 ```
 
@@ -175,11 +164,11 @@ Benvenuti e grazie!
 
 Apprezziamo che vogliate prendere parte e contribuire a WP-CLI. È per merito vostro e della comunità che vi gravita attorno se WP-CLI è un grande progetto.
 
-**Contribuire non si limita soltanto alla programmazione** 
+**Contribuire non si limita soltanto alla programmazione**
 
 Vi incoraggiamo a contribuire nel modo che meglio rispecchia le vostre abilità, scrivendo tutorial, offrendo dimostrazioni durante i vostri incontri locali, prestare aiuto ad altri utenti riguardo le loro richieste di aiuto, o revisionando la documentazione.
 
-Vi preghiamo di riservare un po' di tempo da dedicare alla [lettura approfondita delle linee guida](https://wp-cli.org/docs/contributing/). Seguirle dimostra il rispetto dei tempi altrui sul progetto. 
+Vi preghiamo di riservare un po' di tempo da dedicare alla [lettura approfondita delle linee guida](https://wp-cli.org/docs/contributing/). Seguirle dimostra il rispetto dei tempi altrui sul progetto.
 
 ## Coordinamento
 
