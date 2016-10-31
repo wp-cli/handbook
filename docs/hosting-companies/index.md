@@ -27,6 +27,7 @@ In alphabetical order:
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 * [Pantheon](https://pantheon.io)
 * [RoseHosting](https://www.rosehosting.com)
+* [Seravo.com](https://seravo.com)
 * [Site5](http://www.site5.com/)
 * [SiteGround](http://www.siteground.com/)
 * [Synthesis](http://websynthesis.com/)
