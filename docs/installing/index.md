@@ -201,7 +201,7 @@ In some cases, like for MAMP installs, you might not want to use the default PHP
 
 To use the latest PHP version provided by MAMP, you'll need to modify your `PATH` environment variable with the following added to your `~/.bash_profile` or `~/.zsh_profile`:
 
-    PHP_VERSION=ls /Applications/MAMP/bin/php/ | sort -n | tail -1
+    PHP_VERSION=$(ls /Applications/MAMP/bin/php/ | sort -n | tail -1)
     export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:$PATH
 
 To use a specific PHP version provided by MAMP, you'll need to determine the path to the PHP version's executable, and modify your `PATH` environment variable with the following added to your `~/.bash_profile` or `~/.zsh_profile`:
