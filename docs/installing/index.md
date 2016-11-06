@@ -112,9 +112,26 @@ Optionally (if run on a server or for e.g. in a virtual machine locally) you can
 
     "scripts" : {
     	"post-install-cmd" : [
-    		"sudo ln -s /var/www/vendor/wp-cli/wp-cli/bin/wp /usr/bin/wp",
+    		"[[ -f /usr/bin/wp ]] || sudo ln -s /var/www/vendor/wp-cli/wp-cli/bin/wp /usr/bin/wp",
     		"source /var/www/vendor/wp-cli/wp-cli/utils/wp-completion.bash",
+        "[[ -f ~/.bash_profile ]] || touch ~/.bash_profile",
     		"source ~/.bash_profile"
+    	]
+    }
+
+Above script assumes that your current shell is `bash`, which might not be the case for all users. Example for a vagrant box (added to the `scripts`-block):
+
+    cat /etc/passwd | grep $(whoami)
+    vagrant:x:1000:1000::/home/vagrant:/bin/bash
+
+In case you got `bash` available and installed for your OS, you can switch dynamically:
+
+    "scripts" : {
+    	"post-install-cmd" : [
+    		"/bin/bash -c \"[[ -f /usr/local/bin/wp ]] || sudo ln -s /var/www/vendor/wp-cli/wp-cli/bin/wp /usr/bin/wp\"",
+    		"/bin/bash -c \"source /var/www/vendor/wp-cli/wp-cli/utils/wp-completion.bash\"",
+        "/bin/bash -c \"[[ -f ~/.bash_profile ]] || touch ~/.bash_profile\"",
+    		"/bin/bash -c \"source ~/.bash_profile\""
     	]
     }
 
