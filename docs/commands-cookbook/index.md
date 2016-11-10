@@ -496,7 +496,7 @@ Here's a full composer.json example from the server command:
             }
         ],
 	"require": {
-		"php": ">=5.4"
+		"php": ">=5.3.29"
 	},
 	"autoload": {
 		"files": [ "command.php" ]
