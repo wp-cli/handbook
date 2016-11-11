@@ -69,6 +69,8 @@ See <https://github.com/Homebrew/homebrew-php/pull/1687#issuecomment-98408399> a
 
 See <https://github.com/wp-cli/wp-cli.github.com#readme>
 
+The current WP-CLI version will also need to be updated on the [roadmap](https://wp-cli.org/docs/roadmap/).
+
 Please also tag a release of the website, so it's easy to correlate versions of the website.
 
 ### Writing the release post
