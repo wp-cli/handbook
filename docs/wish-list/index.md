@@ -12,6 +12,7 @@ An ongoing list of ideas and potential improvements for wp-cli.org.
 * Redesign! And potentially move to WordPress from Github pages.
 * Produce command pages for the packages listed in the package index.
 * Publish a set of suggested best practices for package maintainers to follow.
+* Proxy Github API requests for new WP-CLI versions ([from #3426](https://github.com/wp-cli/wp-cli/issues/3426)).
 
 ### Package Index
 
