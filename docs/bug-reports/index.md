@@ -7,9 +7,13 @@ description: Help ensure your issue is resolved in a timely manner.
 
 Think you've found a bug? We'd love for you to help us get it fixed.
 
-Before you create a new issue, you should [search existing issues](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue+bug) to see if there's an existing resolution to it, or if it's already been fixed in a newer version of WP-CLI. You should also check our documentation on [common issues and their fixes](http://wp-cli.org/docs/common-issues/).
+Before you create a new issue, you should:
 
-Once you've done a bit of searching and discovered there isn't an open or fixed issue for your bug, please [create a new Github issue](https://github.com/wp-cli/wp-cli/issues/new) with:
+* [Search existing issues](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue+bug) to see if there's an existing resolution to it, or if it's already been fixed in a newer version of WP-CLI.
+* Check our documentation on [common issues and their fixes](http://wp-cli.org/docs/common-issues/). It's worth reading through the Github issues linked on the page, as the error listed may not be exactly the error you're experiencing.
+* Reproduce the issue in a fresh install of WordPress (e.g. Twenty Sixteen or similar, with no plugins active). If the issue only reproduces in a custom environment, then the issue is a bug in your environment, not WP-CLI.
+
+Once you've done a bit of searching and discovered there isn't prior art for your bug, please [create a new Github issue](https://github.com/wp-cli/wp-cli/issues/new) with:
 
 * What you were doing.
 * What you expected to see.
