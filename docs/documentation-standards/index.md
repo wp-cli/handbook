@@ -1,15 +1,17 @@
 ---
 layout: doc
 title: Documentation Standards
-description: Documentation Standards for WP-CLI commands.
+description: Standards for annotating WP-CLI commands.
 category: References
 ---
 
-In order to help the user as much as possible and to create code and documentation that look and feel familiar, we have set some documentation standards for WP-CLI commands. Every pull requests are reviewed and verified whether these standards are followed or not. We want to encourage you to follow these standards in your custom commands also.
+To promote similarity and consistency between WP-CLI commands, we've produced these documentation standards we'd encourage you to follow. Commonality is a key component of usability, because it reduces the mental overhead required when switching between commands.
 
-## Examples
+Pull requests against the WP-CLI project are reviewed for these standards. Please follow these standards for your custom commands as well.
 
-### Subcommand
+### Command annotation
+
+Here's an example of the PHPdoc annotating the `wp cron event schedule` command:
 
 ```
 /**
@@ -45,8 +47,13 @@ In order to help the user as much as possible and to create code and documentati
  */
 ```
 
-* Example section should start with `## EXAMPLES`. Keep blank line before and after the heading. Doc parser identifies this as the start of the example section and following content are parsed accordingly.
-* Blank line should be there before and after for each example. Blank line before first example is required for Doc parser. Blank line after examples help visually to recognize as separate example.
+To break the example down piece by piece:
+
+* "Schedule a new cron event." is the command description. The command description should be under 50 characters and written in an active, present tense.
+* The options section should begin with `## OPTIONS`. Keep a blank line before and after the heading.
+* Each option should be named in a manner that concisely describes its purpose.
+* Example section should start with `## EXAMPLES`. Keep blank line before and after the heading.
+* Include a blank line before and after each example to help visually indicate each as a separate example
 * Each example should have 3 parts.
     - Description
         + Must start with `#` and a space.
@@ -60,7 +67,11 @@ In order to help the user as much as possible and to create code and documentati
         + Eg: `Success: Database created.`
 * If possible, keep at least two examples for each command. One showing basic use and another advanced use. More use cases the better.
 
-### Class
+For more details on how WP-CLI understands the PHPdoc, please see the [commands cookbook](/docs/commands-cookbook/).
+
+### Class annotation
+
+For classes representing a collection of subcommands, we'd encourage you to use class-level annotation to provide an introduction to the collection.
 
 ```
 /**
@@ -86,10 +97,9 @@ In order to help the user as much as possible and to create code and documentati
  */
 ```
 
-* Class could have multiple examples. They must follow all standard regarding examples.
-* Only one blank line should be there between examples.
+* Class could have multiple examples. Please follow standards for examples on a command doc.
 
-## Command Message
+## Messages within command execution
 
 ```
 $ wp theme activate twentysixteen
