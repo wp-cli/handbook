@@ -37,7 +37,7 @@ remains in the `wp-config.php` file, so if you've modified or moved it, put it b
 
 ### PHP Fatal error: Call to undefined function \<WordPress function\>
 
-WP-CLI uses a [custom version](https://github.com/wp-cli/wp-cli/blob/master/php/wp-settings-cli.php) of WordPress's `wp-settings.php` file. Before WP-CLI can load `wp-settings-cli.php`, it needs to know all of the constants defined in `wp-config.php` (database connection details and so on). Because WP-CLI doesn't want WordPress to load yet when it's [pulling the constants](https://github.com/wp-cli/wp-cli/blob/master/php/wp-cli.php#L22) out of `wp-config.php`, [it uses regex](https://github.com/wp-cli/wp-cli/blob/master/php/WP_CLI/Runner.php#L324) to strip the `require_once(ABSPATH . 'wp-settings.php');` statement.
+Before WP-CLI can load `wp-settings.php`, it needs to know all of the constants defined in `wp-config.php` (database connection details and so on). Because WP-CLI doesn't want WordPress to load yet when it's [pulling the constants](https://github.com/wp-cli/wp-cli/blob/master/php/wp-cli.php#L22) out of `wp-config.php`, [it uses regex](https://github.com/wp-cli/wp-cli/blob/master/php/WP_CLI/Runner.php#L324) to strip the `require_once(ABSPATH . 'wp-settings.php');` statement.
 
 If you've modified your `wp-config.php` in a way that calls WordPress functions, PHP will fail out with a fatal error, as your `wp-config.php` is calling a WordPress function before WordPress has been loaded to define it.
 
@@ -48,7 +48,7 @@ $ wp core check-update
 PHP Fatal error:  Call to undefined function add_filter() in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(952) : eval()'d code on line N
 ```
 
-As a workaround, you can move your modifications to a [WordPress mu-plugin](https://codex.wordpress.org/Must_Use_Plugins), which will retain the functionality of your modifications while allowing wp-cli to parse your wp-config.php without throwing a PHP error.
+Modifying `wp-config.php` beyond constant definitions is not best practice. You should move any modifications to a [WordPress mu-plugin](https://codex.wordpress.org/Must_Use_Plugins), which will retain the functionality of your modifications while allowing wp-cli to parse your wp-config.php without throwing a PHP error, as well as preventing other errors.
 
 See: [#1631](https://github.com/wp-cli/wp-cli/issues/1631)
 
