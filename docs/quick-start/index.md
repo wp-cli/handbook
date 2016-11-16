@@ -46,7 +46,7 @@ In this example, `<plugin|zip|url>...` is the accepted _positional_ argument. In
 
 WP-CLI also has a [series of _global_ arguments](/config/) which work with all commands. For instance, including `--debug` means your command execution will display all PHP errors, and add extra verbosity to the WP-CLI bootstrap process.
 
-## Useful Examples
+## Practical Examples
 
 Ready to dive in? Here are some common examples of how WP-CLI is used:
 
