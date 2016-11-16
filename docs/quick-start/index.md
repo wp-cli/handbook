@@ -46,35 +46,91 @@ In this example, `<plugin|zip|url>...` is the accepted _positional_ argument. In
 
 WP-CLI also has a [series of _global_ arguments](/config/) which work with all commands. For instance, including `--debug` means your command execution will display all PHP errors, and add extra verbosity to the WP-CLI bootstrap process.
 
-## Example Usage
+## Useful Examples
 
-Ready to dive in? Here are some examples of common WP-CLI commands:
+Ready to dive in? Here are some common examples of how WP-CLI is used:
 
-### Download latest [en_US] version of WordPress into the current folder
+**Download and install WordPress in seconds**
 
-    wp core download
+1. Download the latest version of WordPress with `wp core download` ([doc](/commands/core/download/)).
 
-If you have WordPress already installed in the current folder:
+```
+$ wp core download --path=wpclidemo.dev
+Creating directory '/srv/www/wpclidemo.dev/'.
+Downloading WordPress 4.6.1 (en_US)...
+Using cached file '/home/vagrant/.wp-cli/cache/core/wordpress-4.6.1-en_US.tar.gz'...
+Success: WordPress downloaded.
+```
 
-    wp core download --force
+2. Create a new wp-config.php file with `wp core config` ([doc](/commands/core/config/)).
 
-### Create WXR export files from site in a multisite install to current directory
+```
+$ cd wpclidemo.dev
+$ wp core config --dbname=wpclidemo --dbuser=root
+Success: Generated 'wp-config.php' file.
+```
 
-    wp export --url=sub.domain.com
+3. Create the database based on wp-config.php with `wp db create` ([doc](/commands/db/create/)).
 
-### Import WXR file from current directory into a specific site in a multisite install, create authors and skip image resize
+```
+$ wp db create
+Success: Database created.
+```
 
-    wp import domain.wordpress.2014-01-01.xml --authors=create --skip="image_resize" --url=sub.domain.com
+4. Install WordPress with `wp core install` ([doc](/commands/core/install/)).
 
-### Regenerate all thumbnails for a specific site in a multisite install
+```
+$ wp core install --url=wpclidemo.dev --title="WP-CLI" --admin_user=wpcli --admin_password=wpcli --admin_email=info@wp-cli.org
+Success: WordPress installed successfully.
+```
 
-    wp media regenerate --url=sub.domain.com --yes
+That's it!
 
-### Delete all pages
+**Update plugins to their latest version**
 
-    wp post list --post_type=page --field=ID | xargs wp post delete
+Use `wp plugin update --all` ([doc](/commands/plugin/update/)) to update all plugins to their latest version.
 
-and for a specific site in a multisite install:
+```
+$ wp plugin update --all
+Enabling Maintenance mode...
+Downloading update from https://downloads.wordpress.org/plugin/akismet.3.1.11.zip...
+Unpacking the update...
+Installing the latest version...
+Removing the old version of the plugin...
+Plugin updated successfully.
+Downloading update from https://downloads.wordpress.org/plugin/nginx-champuru.3.2.0.zip...
+Unpacking the update...
+Installing the latest version...
+Removing the old version of the plugin...
+Plugin updated successfully.
+Disabling Maintenance mode...
+Success: Updated 2/2 plugins.
++------------------------+-------------+-------------+---------+
+| name                   | old_version | new_version | status  |
++------------------------+-------------+-------------+---------+
+| akismet                | 3.1.3       | 3.1.11      | Updated |
+| nginx-cache-controller | 3.1.1       | 3.2.0       | Updated |
++------------------------+-------------+-------------+---------+
+```
 
-    WP='wp --url=sub.domain.com'
-    $WP post list --post_type=page --field=ID | xargs $WP post delete
+**Add a user as a super-admin**
+
+On multisite, use `wp super-admin add` ([doc](/commands/super-admin/add/)) to grant super admin capabilities to an existing user.
+
+```
+$ wp super-admin add wpcli
+Success: Granted super-admin capabilities.
+```
+
+**Regenerate thumbnails**
+
+If you've added or changed an image size registered with `add_image_size()`, you may want to use `wp media regenerate` ([doc](/commands/media/regenerate/)) so your theme displays the correct image size.
+
+```
+wp media regenerate --yes
+Found 1 image to regenerate.
+1/1 Regenerated thumbnails for "charlie-gpa" (ID 4).
+Success: Finished regenerating the image.
+```
+
+Browse through [all of WP-CLI's commands](/commands/) to learn all of the possibilities!
