@@ -37,6 +37,10 @@ Third-party commands:
 * Can be easily scaffolded as standalone projects with `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)).
 * Can be distributed independent of a plugin or theme in the [Package Index](/package-index/).
 
+All commands:
+
+* Follow the [documentation standards](/docs/documentation-standards/).
+
 ## Anatomy of a command
 
 WP-CLI supports registering any callable class, function, or closure as a command. `WP_CLI::add_command()` ([doc](/docs/internal-api/wp-cli-add-command/)) is used for both internal and third-party command registration.
@@ -218,6 +222,8 @@ The longdesc is also displayed when calling the `help` command, for example, `wp
 * Word-wrapping is a bit tricky. If you want to utilize as much space on each line as possible and don't get word-wrapping artifacts like one or two words on the next line, follow these rules:
  * Hard-wrap option descriptions at **75 chars** after the colon and a space.
  * Hard-wrap everything else at **90 chars**.
+
+For more details on how you should format your command docs, please see WP-CLI's [documentation standards](/docs/documentation-standards/).
 
 #### Docblock tags
 
