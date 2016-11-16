@@ -51,7 +51,7 @@ Wondering what to do next? Check out the [quick start guide](/docs/quick-start/)
 
 ### Updating WP-CLI
 
-If you have installed WP-CLI using the recommended Phar method, you can update it at any time by running `wp cli update`. If you installed WP-CLI using the Git or Composer-based installations, see the specific instructions for updating associated with each method below.  
+If you have installed WP-CLI using the recommended Phar method, you can update it at any time by running `wp cli update` (although if WP-CLI is owned by root, that may be `sudo wp cli update`). If you installed WP-CLI using the Git or Composer-based installations, see the specific instructions for updating associated with each method below.  
 
 When you run `wp cli update`, you'll be prompted to confirm that you wish to update with a message similar to the following:
 
