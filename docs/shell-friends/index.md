@@ -3,7 +3,7 @@ layout: doc
 title: Shell friends
 description: Helpful shortcuts for bash and zsh.
 category: References
-redirect_from: "/docs/shell-tips"
+redirect_from: "/docs/shell-tips/"
 ---
 
 Master of bash or zsh? Share your tips here.
