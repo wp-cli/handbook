@@ -1,8 +1,9 @@
 ---
 layout: doc
-title: Shell tips
+title: Shell friends
 description: Helpful shortcuts for bash and zsh.
 category: References
+redirect_from: "/shell-tips"
 ---
 
 Master of bash or zsh? Share your tips here.
