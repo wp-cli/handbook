@@ -50,7 +50,7 @@ $ wp cap list 'editor' | xargs wp cap add 'author'
 Success: Added 24 capabilities to 'author' role.
 ```
 
-`wp user generate` only generates users; it doesn't perform supplemental operations. In this example, `wp generate user` passes user ids to `xargs`, which splits the space-separated ids into a list and calls `wp user meta add` for each.
+`wp user generate` only generates users; it doesn't perform supplemental operations. In this example, `wp user generate` passes user ids to `xargs`, which splits the space-separated ids into a list and calls `wp user meta add` for each.
 
 ```bash
 $ wp user generate --count=5 --format=ids | xargs -0 -d ' ' -I % wp user meta add % foo bar
