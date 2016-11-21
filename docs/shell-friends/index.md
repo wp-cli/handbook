@@ -10,7 +10,7 @@ As you advance upon your use of WP-CLI, you'll find that a little bit of command
 
 ## You Should Know
 
-**Search through your bash history**
+### Search through your bash history
 
 Did you know that every command you run on your shell is saved to history? Search through your history with `CTRL + R`:
 
@@ -21,7 +21,7 @@ bck-i-search: wp
 
 When 'bck-i-search' appears, your keystrokes will search against commands saved in your bash history. Hit `return` to run the current selection.
 
-**Combine WP-CLI commands**
+###  Combine WP-CLI commands
 
 In many cases, it can be extremely powerful to be able to pass the results of one command to another. Composability is a [key philosophy](/docs/philosophy/) of WP-CLI, and there are two common approaches for composing commands.
 
@@ -61,7 +61,7 @@ Success: Added custom field.
 Success: Added custom field.
 ```
 
-**Define aliases, short macros to common commands**
+### Define aliases, short macros to common commands
 
 If you find yourself running the same commands quite often, you can define aliases to them for easier access.
 
@@ -91,7 +91,7 @@ $ check-all
 +----------------------+----------+-----------+---------+
 ```
 
-**Save command output**
+### Save command output
 
 WP-CLI commands send output to both `STDOUT` and `STDERR`, depending on the nature of the message. You may not notice there are two destinations, because WP-CLI renders both inside your shell. However, if you want to capture your output to a file, the distinction matters.
 
