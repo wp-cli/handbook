@@ -134,4 +134,4 @@ Found 1 image to regenerate.
 Success: Finished regenerating the image.
 ```
 
-Browse through [all of WP-CLI's commands](/commands/) to learn all of the possibilities!
+Wondering what's next? Browse through [all of WP-CLI's commands](/commands/) to explore your new world. Or, catch up with [shell friends](/docs/shell-friends/) to learn about helpful command line utilities.
