@@ -27,13 +27,15 @@ In many cases, it can be extremely powerful to be able to pass the results of on
 
 *Command substitution* passes the output of one command to another command, without any transformation to the output.
 
+`wp post list` only lists posts; it doesn't perform any operation on them. In this example, the command lists page ids as space-separated values.
+
 ```bash
-# `wp post list` only lists posts; it doesn't perform any operation on them.
-# In this example, the command lists page ids as space-separated values.
 $ wp post list --post_type='page' --format=ids
 1164 1186
-# Combining `wp post list` with `wp post delete` lets you easily delete all posts.
-# In this example, `$()` lets us pass the space-separated page ids to `wp post delete`.
+```
+Combining `wp post list` with `wp post delete` lets you easily delete all posts. In this example, `$()` lets us pass the space-separated page ids to `wp post delete`.
+
+```bash
 $ wp post delete $(wp post list --post_type='page' --format=ids)
 Success: Trashed post 1164.
 Success: Trashed post 1186.
@@ -41,18 +43,16 @@ Success: Trashed post 1186.
 
 If you need a bit more flexibility, *xargs* lets you pass the output of one command to another command, while performing minor transformation on the output.
 
+You may want to assign all editor capabilities to the author role. However, `wp cap list` lists capabilities separated by newlines, and `wp cap add` only accepts space-separated capabilities. Enter, `xargs`, whose default behavior is to split newline output into a space-separated list. Note the `|` shell operator, which passes the results of `wp cap list` to `xargs`. Without `|`, you'll see a WP-CLI error.
+
 ```bash
-# You may want to assign all editor capabilities to the author role.
-# However, `wp cap list` lists capabilities separated by newlines, and `wp cap add`
-# only accepts space-separated capabilities.
-# Enter, `xargs`, whose default behavior is to split newline output into a
-# space-separated list. Note the `|` shell operator, which passes the results of
-# `wp cap list` to `xargs`. Without `|`, you'll see a WP_CLI error.
 $ wp cap list 'editor' | xargs wp cap add 'author'
 Success: Added 24 capabilities to 'author' role.
-# `wp user generate` only generates users; it doesn't perform supplemental operations.
-# In this example, `wp generate user` passes user ids to `xargs`, which splits the
-# space-separated ids into a list and calls `wp user meta add` for each.
+```
+
+`wp user generate` only generates users; it doesn't perform supplemental operations. In this example, `wp generate user` passes user ids to `xargs`, which splits the space-separated ids into a list and calls `wp user meta add` for each.
+
+```bash
 $ wp user generate --count=5 --format=ids | xargs -0 -d ' ' -I % wp user meta add % foo bar
 Success: Added custom field.
 Success: Added custom field.
@@ -65,11 +65,9 @@ Success: Added custom field.
 
 If you find yourself running the same commands quite often, you can define aliases to them for easier access.
 
+Run all three status check commands with one `check-all` alias. In this example, running `alias` creates a `check-all` alias for the current shell session. Save the same statement to your `~/.bashrc` or `~/.zshrc` to always have it available.
+
 ```bash
-# Run all three status check commands with one `check-all` alias.
-# In this example, running `alias` creates a `check-all` alias for the current
-# shell session. Save the same statement to your `~/.bashrc` or `~/.zshrc` to
-# always have it available.
 $ alias check-all='wp core check-update && wp plugin list --update=available && wp theme list --update=available'
 $ check-all
 +-----------------+-------------+-----------------------------------------------------------+
@@ -93,16 +91,19 @@ $ check-all
 +----------------------+----------+-----------+---------+
 ```
 
-To set the alias for every shell session, you’ll need to include the alias definition in your `~/.bashrc` or `~/.zshrc` file.
-
 **Save command output**
 
 WP-CLI commands send output to both `STDOUT` and `STDERR`, depending on the nature of the message. You may not notice there are two destinations, because WP-CLI renders both inside your shell. However, if you want to capture your output to a file, the distinction matters.
 
+Simply using `>` will capture STDOUT from the command to a file.
+
 ```bash
-# Capture STDOUT from the command to a file
 $ wp import wordpress.wxr --authors=create > import.log
-# Redirect STDERR to STDOUT and capture STDOUT to a log file
+```
+
+Redirect STDERR to STDOUT with `2>&1`, and then capture STDOUT to a log file.
+
+```bash
 $ wp import wordpress.wxr --authors=create 2>&1 import.log
 ```
 
