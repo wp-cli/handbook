@@ -6,8 +6,7 @@ category: Guides
 quick_links:
   - Introduction
   - Common Terms
-  - Example Usage
-  - Shell Friends
+  - Practical Examples
 ---
 
 Congratulations! You've [installed WP-CLI](/docs/installing/) for the first time, and are ready to level-up your use of WordPress. This page contains a brief introduction to WP-CLI with some example usage.
