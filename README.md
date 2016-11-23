@@ -1,15 +1,29 @@
-These files comprise wp-cli.org*. However, all command documentation is dynamically generated from the PHPDoc for each command. If you'd like to suggest command documentation changes, please submit a pull request against the [primary repo](https://github.com/wp-cli/wp-cli). Command documentation changes are deployed to the website with each release.
+These files comprise wp-cli.org*.
 
-### Setup
+All command documentation is dynamically generated from the PHPDoc for each command. If you'd like to suggest command documentation changes, please submit a pull request against the [primary repo](https://github.com/wp-cli/wp-cli). Command documentation changes are deployed to the website with each release.
 
-1. Install [Composer](http://getcomposer.org/).
+### Regenerate website
 
-2. Install dev dependencies with `composer install --dev`
-
-3. Build:
+The website uses a series of WP-CLI commands to generate its documentation:
 
 ```bash
-vendor/bin/phake
+NAME
+
+  wp website
+
+SYNOPSIS
+
+  wp website <command>
+
+SUBCOMMANDS
+
+  generate                        Run all generation commands to generate full website.
+  generate-commands               Generate the /commands/ page.
+  generate-config                 Generate the /config/ page.
+  generate-contributing           Generate the contributing page from WP-CLI's CONTRIBUTING.md
+  generate-docs                   Generate the /docs/ page.
+  generate-homepage               Generate the homepage from WP-CLI's README.md
+  generate-internal-api-docs      Generate the /docs/internal-apis/ page.
 ```
 
 ### Preview locally
