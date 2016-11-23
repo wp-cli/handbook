@@ -1,6 +1,0 @@
-{
-    "require-dev": {
-        "jaz303/phake": "0.5.1",
-        "mustache/mustache": "~2.4"
-    }
-}
