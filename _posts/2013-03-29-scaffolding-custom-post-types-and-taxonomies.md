@@ -20,7 +20,7 @@ wp scaffold post-type zombie
 The following command generates the code for registering the taxonomy to the zombie post type:
 
 ~~~bash
-wp scaffold taxonomy zombie-speed --post-type=zombie
+wp scaffold taxonomy zombie-speed --post_types=zombie
 ~~~
 
 ### But I only want the registration of the post-type...
