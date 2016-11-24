@@ -23,3 +23,7 @@ An ongoing list of ideas and potential improvements for wp-cli.org.
 * Create distribution releases for packages in the package index to speed up installation ([from #2566](https://github.com/wp-cli/wp-cli/issues/2566)).
 * Run test suite for each package on a weekly basis ([from #3197](https://github.com/wp-cli/wp-cli/issues/3197#issuecomment-238946219)).
 * Validate packages submitted to the package index ([previously #3177](https://github.com/wp-cli/wp-cli/issues/3177))
+
+### General Infrastructure
+
+* Run test suite over SSH connection ([previously #2772](https://github.com/wp-cli/wp-cli/issues/2772))
