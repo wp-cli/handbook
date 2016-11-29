@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Downloads the language pack from WordPress.org.
+
 &lt;language&gt;
 : Language code to install.
 
@@ -20,7 +22,8 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    $ wp core language install  ja
+    # Install the Japanese language.
+    $ wp core language install ja
     Success: Language installed.
 
 

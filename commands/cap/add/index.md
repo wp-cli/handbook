@@ -22,9 +22,9 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Add 'spectate' capability to 'author' role
+    # Add 'spectate' capability to 'author' role.
     $ wp cap add author spectate
-    Success: Added 1 capabilities to 'author' role.
+    Success: Added 1 capability to 'author' role.
 
 
 

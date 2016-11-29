@@ -12,6 +12,9 @@ display_global_parameters: true
 
 <hr />
 
+If the plugin is active, then it will be deactivated. If the plugin is
+inactive, then it will be activated.
+
 ### OPTIONS
 
 &lt;plugin&gt;...
@@ -22,11 +25,15 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Akismet is currently activated
     $ wp plugin toggle akismet
-    Success: Plugin 'akismet' deactivated.
+    Plugin 'akismet' deactivated.
+    Success: Toggled 1 of 1 plugins.
 
+    # Akismet is currently deactivated
     $ wp plugin toggle akismet
-    Success: Plugin 'akismet' activated.
+    Plugin 'akismet' activated.
+    Success: Toggled 1 of 1 plugins.
 
 
 

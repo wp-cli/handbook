@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; super-admin</small>
 
-`wp super-admin` - List, add, and remove super admins from a network.
+`wp super-admin` - Manage super admins on WordPress multisite.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asuper-admin+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -41,15 +41,15 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/super-admin/add/">add</a></td>
-			<td>Grant super-admin privileges to one or more users.</td>
+			<td>Grant super admin privileges to one or more users.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/super-admin/list/">list</a></td>
-			<td>Show a list of users with super-admin capabilities.</td>
+			<td>List users with super admin capabilities.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/super-admin/remove/">remove</a></td>
-			<td>Revoke super-admin privileges to one or more users.</td>
+			<td>Remove super admin privileges from one or more users.</td>
 		</tr>
 	</tbody>
 </table>

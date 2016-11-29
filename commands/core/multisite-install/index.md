@@ -6,11 +6,15 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; multisite-install</small>
 
-`wp core multisite-install` - Install multisite from scratch.
+`wp core multisite-install` - Install WordPress multisite from scratch.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-multisite-install+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Creates the WordPress tables in the database using the URL, title, and
+default admin user details provided. Then, creates the multisite tables
+in the database and adds multisite constants to the wp-config.php.
 
 ### OPTIONS
 
@@ -35,8 +39,8 @@ default: /
 default: admin
 \---
 
-\--admin_password=&lt;password&gt;
-: The password for the admin user.
+[\--admin_password=&lt;password&gt;]
+: The password for the admin user. Defaults to randomly generated string.
 
 \--admin_email=&lt;email&gt;
 : The email address for the admin user.

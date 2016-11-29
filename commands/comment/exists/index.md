@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Displays a success message if the comment does exist.
+
 ### OPTIONS
 
 &lt;id&gt;

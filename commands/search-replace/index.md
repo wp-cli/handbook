@@ -12,10 +12,8 @@ display_global_parameters: true
 
 <hr />
 
-### DESCRIPTION
-
-This command will searches through all rows in a selection of tables
-and replaces appearances of the first string with the second string.
+Searches through all rows in a selection of tables and replaces
+appearances of the first string with the second string.
 
 By default, the command uses tables registered to the $wpdb object. On
 multisite, this will just be the tables for the current site unless
@@ -34,7 +32,7 @@ change primary key values.
 
 [&lt;table&gt;...]
 : List of database tables to restrict the replacement to. Wildcards are
-supported, e.g. `'wp_*_options'` or `'wp_post*'`.
+supported, e.g. `'wp_*options'` or `'wp_post*'`.
 
 [\--dry-run]
 : Run the entire search/replace operation and show report, but don't save
@@ -94,7 +92,7 @@ will take about 15-20x longer when using --regex.
     $ wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
 
     # Turn your production multisite database into a local dev database
-    $ wp search-replace --url=example.com example.com example.dev 'wp_*_options' wp_blogs
+    $ wp search-replace --url=example.com example.com example.dev 'wp_*options' wp_blogs
 
     # Search/replace to a SQL file without transforming the database
     $ wp search-replace foo bar --export=database.sql

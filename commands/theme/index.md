@@ -14,7 +14,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Install the latest version from wordpress.org and activate
+    # Install the latest version of a theme from wordpress.org and activate
     $ wp theme install twentysixteen --activate
     Installing Twenty Sixteen (1.2)
     Downloading install package from http://downloads.wordpress.org/theme/twentysixteen.1.2.zip...
@@ -24,7 +24,7 @@ display_global_parameters: true
     Activating 'twentysixteen'...
     Success: Switched to 'Twenty Sixteen' theme.
 
-    # Get theme
+    # Get details of an installed theme
     $ wp theme get twentysixteen --fields=name,title,version
     +---------+----------------+
     | Field   | Value          |
@@ -64,15 +64,15 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/disable/">disable</a></td>
-			<td>Disable a theme in a multisite install.</td>
+			<td>Disable a theme on a WordPress multisite install.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/enable/">enable</a></td>
-			<td>Enable a theme in a multisite install.</td>
+			<td>Enable a theme on a WordPress multisite install.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/get/">get</a></td>
-			<td>Get a theme</td>
+			<td>Get details about a theme.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/install/">install</a></td>
@@ -96,7 +96,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/search/">search</a></td>
-			<td>Search the wordpress.org theme repository.</td>
+			<td>Search the WordPress.org theme directory.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/status/">status</a></td>

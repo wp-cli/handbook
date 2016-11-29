@@ -12,6 +12,9 @@ display_global_parameters: true
 
 <hr />
 
+Creates a new wp-config.php with database constants, and verifies that
+the database constants are correct.
+
 ### OPTIONS
 
 \--dbname=&lt;dbname&gt;
@@ -70,6 +73,10 @@ default:
     $ define( 'WP_DEBUG', true );
     $ define( 'WP_DEBUG_LOG', true );
     $ PHP
+    Success: Generated 'wp-config.php' file.
+
+    # Avoid disclosing password to bash history by reading from password.txt
+    $ wp core config --dbname=testing --dbuser=wp --prompt=dbpass < password.txt
     Success: Generated 'wp-config.php' file.
 
 

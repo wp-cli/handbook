@@ -12,7 +12,8 @@ display_global_parameters: true
 
 <hr />
 
-If a value already exists for the key, the value isn't added.
+Errors if a value already exists for the key, which means the value can't
+be added.
 
 ### OPTIONS
 

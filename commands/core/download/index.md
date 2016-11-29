@@ -12,6 +12,10 @@ display_global_parameters: true
 
 <hr />
 
+Downloads and extracts WordPress core files to the specified path. Uses
+an archive file stored in cache if WordPress has been previously
+downloaded.
+
 ### OPTIONS
 
 [\--path=&lt;path&gt;]

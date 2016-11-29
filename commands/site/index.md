@@ -42,11 +42,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/site/activate/">activate</a></td>
-			<td>Activate one or more sites</td>
+			<td>Activate one or more sites.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/site/archive/">archive</a></td>
-			<td>Archive one or more sites</td>
+			<td>Archive one or more sites.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/site/create/">create</a></td>
@@ -54,7 +54,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/site/deactivate/">deactivate</a></td>
-			<td>Deactivate one or more sites</td>
+			<td>Deactivate one or more sites.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/site/delete/">delete</a></td>
@@ -62,7 +62,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/site/empty/">empty</a></td>
-			<td>Empty a site of its content (posts, comments, and terms).</td>
+			<td>Empty a site of its content (posts, comments, terms, and meta).</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/site/list/">list</a></td>
@@ -74,15 +74,15 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/site/spam/">spam</a></td>
-			<td>Mark one or more sites as spam</td>
+			<td>Mark one or more sites as spam.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/site/unarchive/">unarchive</a></td>
-			<td>Unarchive one or more sites</td>
+			<td>Unarchive one or more sites.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/site/unspam/">unspam</a></td>
-			<td>Remove one or more sites from spam</td>
+			<td>Remove one or more sites from spam.</td>
 		</tr>
 	</tbody>
 </table>

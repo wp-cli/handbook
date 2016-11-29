@@ -42,7 +42,8 @@ for confirmation.
     Installing the plugin...
     Plugin installed successfully.
     Activating 'bbpress'...
-    Success: Plugin 'bbpress' activated.
+    Plugin 'bbpress' activated.
+    Success: Installed 1 of 1 plugins.
 
     # Install the development version from wordpress.org
     $ wp plugin install bbpress --version=dev
@@ -51,12 +52,14 @@ for confirmation.
     Unpacking the package...
     Installing the plugin...
     Plugin installed successfully.
+    Success: Installed 1 of 1 plugins.
 
     # Install from a local zip file
     $ wp plugin install ../my-plugin.zip
     Unpacking the package...
     Installing the plugin...
     Plugin installed successfully.
+    Success: Installed 1 of 1 plugins.
 
     # Install from a remote zip file
     $ wp plugin install http://s3.amazonaws.com/bucketname/my-plugin.zip?AWSAccessKeyId=123&amp;Expires=456&amp;Signature=abcdef
@@ -64,6 +67,7 @@ for confirmation.
     Unpacking the package...
     Installing the plugin...
     Plugin installed successfully.
+    Success: Installed 1 of 1 plugins.
 
     # Forcefully re-install all installed plugins
     $ wp plugin install $(wp plugin list --field=name) --force
@@ -73,6 +77,7 @@ for confirmation.
     Installing the plugin...
     Removing the old version of the plugin...
     Plugin updated successfully
+    Success: Installed 1 of 1 plugins.
 
 
 

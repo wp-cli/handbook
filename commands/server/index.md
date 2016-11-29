@@ -12,6 +12,7 @@ display_global_parameters: true
 
 <hr />
 
+Uses `php -S` to launch a web server serving the WordPress webroot.
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 
 ### OPTIONS

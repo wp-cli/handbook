@@ -58,6 +58,7 @@ These fields are optionally available:
 * comment_type
 * comment_parent
 * user_id
+* url
 
 ### EXAMPLES
 

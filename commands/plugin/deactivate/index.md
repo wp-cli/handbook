@@ -30,7 +30,8 @@ display_global_parameters: true
 
     # Deactivate plugin
     $ wp plugin deactivate hello-dolly
-    Success: Plugin 'hello-dolly' deactivated.
+    Plugin 'hello-dolly' deactivated.
+    Success: Deactivated 1 of 1 plugins.
 
 
 

@@ -12,7 +12,7 @@ display_global_parameters: true
 
 <hr />
 
-Note: Persistent Object Caching is needed for these commands.
+Use a persistent object cache drop-in to persist cache values between requests.
 
 ### EXAMPLES
 

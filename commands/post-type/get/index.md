@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [post-type](/commands/post-type/) &raquo; get</small>
 
-`wp post-type get` - Get a post type
+`wp post-type get` - Get details about a registered post type.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-type-get+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -36,6 +36,7 @@ options:
 
 ### EXAMPLES
 
+    # Get details about the 'page' post type.
     $ wp post-type get page --fields=name,label,hierarchical --format=json
     {"name":"page","label":"Pages","hierarchical":true}
 

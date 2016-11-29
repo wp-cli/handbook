@@ -21,11 +21,13 @@ display_global_parameters: true
 
     # Delete plugin
     $ wp plugin delete hello
-    Success: Deleted 'hello' plugin.
+    Deleted 'hello' plugin.
+    Success: Deleted 1 of 1 plugins.
 
     # Delete inactive plugins
     $ wp plugin delete $(wp plugin list --status=inactive --field=name)
-    Success: Deleted 'tinymce-templates' plugin.
+    Deleted 'tinymce-templates' plugin.
+    Success: Deleted 1 of 1 plugins.
 
 
 

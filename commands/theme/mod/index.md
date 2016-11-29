@@ -14,7 +14,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Set theme mod.
+    # Set the 'background_color' theme mod to '000000'.
     $ wp theme mod set background_color 000000
     Success: Theme mod background_color set to 000000
 
@@ -42,15 +42,15 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/theme/mod/get/">get</a></td>
-			<td>Get theme mod(s).</td>
+			<td>Get one or more theme mods.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/mod/remove/">remove</a></td>
-			<td>Remove theme mod(s).</td>
+			<td>Remove one or more theme mods.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/theme/mod/set/">set</a></td>
-			<td>Set a theme mod.</td>
+			<td>Set the value of a theme mod.</td>
 		</tr>
 	</tbody>
 </table>

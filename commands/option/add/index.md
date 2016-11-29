@@ -6,11 +6,13 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [option](/commands/option/) &raquo; add</small>
 
-`wp option add` - Add an option.
+`wp option add` - Add a new option value.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aoption-add+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Errors if the option already exists.
 
 ### OPTIONS
 
@@ -39,7 +41,7 @@ options:
 
 ### EXAMPLES
 
-    # Create an option by reading a JSON file
+    # Create an option by reading a JSON file.
     $ wp option add my_option --format=json < config.json
     Success: Added 'my_option' option.
 

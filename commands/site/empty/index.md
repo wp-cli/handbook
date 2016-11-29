@@ -6,14 +6,20 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [site](/commands/site/) &raquo; empty</small>
 
-`wp site empty` - Empty a site of its content (posts, comments, and terms).
+`wp site empty` - Empty a site of its content (posts, comments, terms, and meta).
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-empty+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
 
-This command doesn't empty custom database tables by default. To do so,
-you'll need to hook into command execution:
+Truncates posts, comments, and terms tables to empty a site of its
+content. Doesn't affect site configuration (options) or users.
+
+If running a persistent object cache, make sure to flush the cache
+after emptying the site, as the cache values will be invalid otherwise.
+
+To also empty custom database tables, you'll need to hook into command
+execution:
 
 ```
 WP_CLI::add_hook( 'after_invoke:site empty', function(){

@@ -52,7 +52,7 @@ Names can optionally include a version constraint
     Writing lock file
     Generating autoload files
     ---
-    Success: Package installed successfully.
+    Success: Package installed.
 
     # Install the latest stable version.
     $ wp package install wp-cli/server-command:@stable

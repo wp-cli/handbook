@@ -38,6 +38,7 @@ display_global_parameters: true
     Installing the plugin...
     Removing the old version of the plugin...
     Plugin updated successfully.
+    Success: Updated 1 of 2 plugins.
 
     $ wp plugin update --all
     Enabling Maintenance mode...
@@ -52,13 +53,13 @@ display_global_parameters: true
     Removing the old version of the plugin...
     Plugin updated successfully.
     Disabling Maintenance mode...
-    Success: Updated 2/2 plugins.
     +------------------------+-------------+-------------+---------+
     | name                   | old_version | new_version | status  |
     +------------------------+-------------+-------------+---------+
     | akismet                | 3.1.3       | 3.1.11      | Updated |
     | nginx-cache-controller | 3.1.1       | 3.2.0       | Updated |
     +------------------------+-------------+-------------+---------+
+    Success: Updated 2 of 2 plugins.
 
 
 

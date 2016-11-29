@@ -16,15 +16,18 @@ display_global_parameters: true
 
     # Activate plugin
     $ wp plugin activate hello-dolly
-    Success: Plugin 'hello-dolly' activated.
+    Plugin 'hello-dolly' activated.
+    Success: Activated 1 of 1 plugins.
 
     # Deactivate plugin
     $ wp plugin deactivate hello-dolly
-    Success: Plugin 'hello-dolly' deactivated.
+    Plugin 'hello-dolly' deactivated.
+    Success: Deactivated 1 of 1 plugins.
 
     # Delete plugin
     $ wp plugin delete hello-dolly
-    Success: Deleted 'hello-dolly' plugin.
+    Deleted 'hello-dolly' plugin.
+    Success: Deleted 1 of 1 plugins.
 
     # Install the latest version from wordpress.org and activate
     $ wp plugin install bbpress --activate
@@ -35,7 +38,8 @@ display_global_parameters: true
     Installing the plugin...
     Plugin installed successfully.
     Activating 'bbpress'...
-    Success: Plugin 'bbpress' activated.
+    Plugin 'bbpress' activated.
+    Success: Installed 1 of 1 plugins.
 
 
 
@@ -63,7 +67,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/get/">get</a></td>
-			<td>Get a plugin.</td>
+			<td>Get details about an installed plugin.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/install/">install</a></td>
@@ -83,7 +87,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/search/">search</a></td>
-			<td>Search the wordpress.org plugin repository.</td>
+			<td>Search the WordPress.org plugin directory.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/plugin/status/">status</a></td>

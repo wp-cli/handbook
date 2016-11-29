@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Removes the theme from the filesystem.
+
 ### OPTIONS
 
 &lt;theme&gt;...
@@ -20,7 +22,8 @@ display_global_parameters: true
 ### EXAMPLES
 
     $ wp theme delete twentytwelve
-    Success: Deleted 'twentytwelve' theme.
+    Deleted 'twentytwelve' theme.
+    Success: Deleted 1 of 1 themes.
 
 
 

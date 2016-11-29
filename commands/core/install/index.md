@@ -37,8 +37,8 @@ user_login doesn't exist, a new user will be created.
 \--admin_user=&lt;username&gt;
 : The name of the admin user.
 
-\--admin_password=&lt;password&gt;
-: The password for the admin user.
+[\--admin_password=&lt;password&gt;]
+: The password for the admin user. Defaults to randomly generated string.
 
 \--admin_email=&lt;email&gt;
 : The email address for the admin user.
@@ -48,8 +48,12 @@ user_login doesn't exist, a new user will be created.
 
 ### EXAMPLES
 
+    # Install WordPress in 5 seconds
     $ wp core install --url=example.com --title=Example --admin_user=supervisor --admin_password=strongpassword --admin_email=info@example.com
     Success: WordPress installed successfully.
+
+    # Install WordPress without disclosing admin_password to bash history
+    $ wp core install --url=example.com --title=Example --admin_user=supervisor --admin_email=info@example.com --prompt=admin_password < admin_password.txt
 
 
 

@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Moves widgets to Inactive Widgets.
+
 ### OPTIONS
 
 &lt;widget-id&gt;...
@@ -19,6 +21,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Deactivate the recent-comments-2 widget.
     $ wp widget deactivate recent-comments-2
     Success: 1 widget deactivated.
 

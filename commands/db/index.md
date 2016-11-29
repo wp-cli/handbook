@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; db</small>
 
-`wp db` - Perform basic database operations.
+`wp db` - Perform basic database operations using credentials stored in wp-config.php
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Adb+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -14,19 +14,19 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Create database
+    # Create a new database.
     $ wp db create
     Success: Database created.
 
-    # Drop database
+    # Drop an existing database.
     $ wp db drop --yes
     Success: Database dropped.
 
-    # Reset database
+    # Reset the current database.
     $ wp db reset --yes
     Success: Database reset.
 
-    # Execute a query stored in a file
+    # Execute a SQL query stored in a file.
     $ wp db query < debug.sql
 
 
@@ -43,7 +43,7 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/db/check/">check</a></td>
-			<td>Check the database in MySQL.</td>
+			<td>Check the current status of the database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/cli/">cli</a></td>
@@ -51,39 +51,39 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/db/create/">create</a></td>
-			<td>Create the database in MySQL.</td>
+			<td>Create a new database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/drop/">drop</a></td>
-			<td>Delete the database in MySQL.</td>
+			<td>Delete the existing database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/export/">export</a></td>
-			<td>Exports the MySQL database to a file or to STDOUT.</td>
+			<td>Exports the database to a file or to STDOUT.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/import/">import</a></td>
-			<td>Import a MySQL database from a file or from STDIN.</td>
+			<td>Import a database from a file or from STDIN.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/optimize/">optimize</a></td>
-			<td>Optimize the database in MySQL.</td>
+			<td>Optimize the database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/query/">query</a></td>
-			<td>Execute a MySQL query against the database.</td>
+			<td>Execute a SQL query against the database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/repair/">repair</a></td>
-			<td>Repair the database in MySQL.</td>
+			<td>Repair the database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/reset/">reset</a></td>
-			<td>Remove all tables from the database in MySQL.</td>
+			<td>Remove all tables from the database.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/db/tables/">tables</a></td>
-			<td>List the MySQL database tables.</td>
+			<td>List the database tables.</td>
 		</tr>
 	</tbody>
 </table>

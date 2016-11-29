@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Creates a specified number of new terms with dummy data.
+
 ### OPTIONS
 
 &lt;taxonomy&gt;

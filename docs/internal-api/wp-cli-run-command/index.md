@@ -28,6 +28,8 @@ Run a given command within the current process using the same global
 
 parameters.
 
+Use `WP_CLI::runcommand()` instead, which is easier to use and works better.
+
 To run a command using a new process with the same global parameters,
 use WP_CLI::launch_self(). To run a command using a new process with
 different global parameters, use WP_CLI::launch().
@@ -54,6 +56,9 @@ different global parameters, use WP_CLI::launch().
 
 
 <li><strong><a href="/docs/internal-api/wp-cli-launch-self/">WP_CLI::launch_self()</a></strong> - Run a WP-CLI command in a new process reusing the current runtime arguments.</li>
+
+
+<li><strong><a href="/docs/internal-api/wp-cli-runcommand/">WP_CLI::runcommand()</a></strong> - Run a WP-CLI command.</li>
 
 
 

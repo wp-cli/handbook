@@ -12,26 +12,21 @@ display_global_parameters: true
 
 <hr />
 
-### OPTIONS
-
-[\--format=json]
-: Encode/decode values as JSON.
-
 ### EXAMPLES
 
-    # Get site URL
+    # Get site URL.
     $ wp option get siteurl
     http://example.com
 
-    # Add option
+    # Add option.
     $ wp option add my_option foobar
     Success: Added 'my_option' option.
 
-    # Update option
+    # Update option.
     $ wp option update my_option '{"foo": "bar"}' --format=json
     Success: Updated 'my_option' option.
 
-    # Delete option
+    # Delete option.
     $ wp option delete my_option
     Success: Deleted 'my_option' option.
 
@@ -49,7 +44,7 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/option/add/">add</a></td>
-			<td>Add an option.</td>
+			<td>Add a new option value.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/option/delete/">delete</a></td>
@@ -57,15 +52,15 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/option/get/">get</a></td>
-			<td>Get an option.</td>
+			<td>Get the value for an option.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/option/list/">list</a></td>
-			<td>List options.</td>
+			<td>List options and their values.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/option/update/">update</a></td>
-			<td>Update an option.</td>
+			<td>Update an option value.</td>
 		</tr>
 	</tbody>
 </table>

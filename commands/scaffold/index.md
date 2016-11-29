@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; scaffold</small>
 
-`wp scaffold` - Generate code for post types, taxonomies, etc.
+`wp scaffold` - Generate code for post types, taxonomies, plugins, child themes. etc.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -14,7 +14,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Generate plugin
+    # Generate a new plugin with unit tests
     $ wp scaffold plugin sample-plugin
     Success: Created plugin files.
     Success: Created test files.
@@ -41,11 +41,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/scaffold/_s/">_s</a></td>
-			<td>Generate starter code for a theme.</td>
+			<td>Generate starter code for a theme based on _s.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/scaffold/child-theme/">child-theme</a></td>
-			<td>Generate empty child theme.</td>
+			<td>Generate child theme based on an existing theme.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/scaffold/plugin/">plugin</a></td>
@@ -53,7 +53,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/scaffold/plugin-tests/">plugin-tests</a></td>
-			<td>Generate files needed for running PHPUnit tests.</td>
+			<td>Generate files needed for running PHPUnit tests in a plugin.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/scaffold/post-type/">post-type</a></td>
@@ -62,6 +62,10 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/scaffold/taxonomy/">taxonomy</a></td>
 			<td>Generate PHP code for registering a custom taxonomy.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/scaffold/theme-tests/">theme-tests</a></td>
+			<td>Generate files needed for running PHPUnit tests in a theme.</td>
 		</tr>
 	</tbody>
 </table>

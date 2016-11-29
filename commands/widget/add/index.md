@@ -12,6 +12,9 @@ display_global_parameters: true
 
 <hr />
 
+Creates a new widget entry in the database, and associates it with the
+sidebar.
+
 ### OPTIONS
 
 &lt;name&gt;
@@ -28,6 +31,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Add a new calendar widget to sidebar-1 with title "Calendar"
     $ wp widget add calendar sidebar-1 2 --title="Calendar"
     Success: Added widget to sidebar.
 

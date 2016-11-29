@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [plugin](/commands/plugin/) &raquo; get</small>
 
-`wp plugin get` - Get a plugin.
+`wp plugin get` - Get details about an installed plugin.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aplugin-get+sort%3Aupdated-desc">Github issues</a></small>
 

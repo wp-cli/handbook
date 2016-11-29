@@ -6,11 +6,24 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [cli](/commands/cli/) &raquo; info</small>
 
-`wp cli info` - Print various data about the CLI environment.
+`wp cli info` - Print various details about the WP-CLI environment.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli-info+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Helpful for diagnostic purposes, this command shares:
+
+* PHP binary used.
+* PHP binary version.
+* php.ini configuration file used (which is typically different than web).
+* WP-CLI root dir: where WP-CLI is installed (if non-Phar install).
+* WP-CLI global config: where the global config YAML file is located.
+* WP-CLI project config: where the project config YAML file is located.
+* WP-CLI version: currently installed version.
+
+See [config docs](https://wp-cli.org/config/) for more details on global
+and project config YAML files.
 
 ### OPTIONS
 

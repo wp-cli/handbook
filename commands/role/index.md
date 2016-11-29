@@ -23,19 +23,19 @@ display_global_parameters: true
     contributor
     subscriber
 
-    # Check if a role exists.
+    # Check to see if a role exists.
     $ wp role exists editor
     Success: Role with ID 'editor' exists.
 
-    # Create role.
+    # Create a new role.
     $ wp role create approver Approver
     Success: Role with key 'approver' created.
 
-    # Delete role.
+    # Delete an existing role.
     $ wp role delete approver
     Success: Role with key 'approver' deleted.
 
-    # Reset role.
+    # Reset existing roles to their default capabilities.
     $ wp role reset administrator author contributor
     Success: Reset 3/3 roles.
 

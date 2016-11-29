@@ -18,12 +18,12 @@ display_global_parameters: true
     $ wp user list --field=ID
     1
 
-    # Create user
+    # Create a new user.
     $ wp user create bob bob@example.com --role=author
     Success: Created user 3.
     Password: k9**&amp;I4vNH(&amp;
 
-    # Update user
+    # Update an existing user.
     $ wp user update 123 --display_name=Mary --user_pass=marypass
     Success: Updated user 123.
 
@@ -45,7 +45,7 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/user/add-cap/">add-cap</a></td>
-			<td>Add a capability for a user.</td>
+			<td>Add a capability to a user.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/add-role/">add-role</a></td>
@@ -53,7 +53,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/user/create/">create</a></td>
-			<td>Create a user.</td>
+			<td>Create a new user.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/delete/">delete</a></td>
@@ -61,11 +61,11 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/user/generate/">generate</a></td>
-			<td>Generate users.</td>
+			<td>Generate some users.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/get/">get</a></td>
-			<td>Get a single user.</td>
+			<td>Get details about a user.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/import-csv/">import-csv</a></td>
@@ -77,7 +77,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/user/list-caps/">list-caps</a></td>
-			<td>List all user's capabilities.</td>
+			<td>List all capabilities for a user.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/meta/">meta</a></td>
@@ -97,7 +97,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/user/set-role/">set-role</a></td>
-			<td>Set the user role (for a particular blog).</td>
+			<td>Set the user role.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/user/term/">term</a></td>
@@ -105,7 +105,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/user/update/">update</a></td>
-			<td>Update a user.</td>
+			<td>Update an existing user.</td>
 		</tr>
 	</tbody>
 </table>

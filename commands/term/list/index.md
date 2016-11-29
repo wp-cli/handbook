@@ -51,7 +51,9 @@ These fields will be displayed by default for each term:
 * parent
 * count
 
-There are no optionally available fields.
+These fields are optionally available:
+
+* url
 
 ### EXAMPLES
 

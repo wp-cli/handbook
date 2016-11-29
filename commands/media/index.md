@@ -20,7 +20,7 @@ display_global_parameters: true
     1/3 Regenerated thumbnails for "Sydney Harbor Bridge" (ID 760).
     2/3 Regenerated thumbnails for "Boardwalk" (ID 757).
     3/3 Regenerated thumbnails for "Sunburst Over River" (ID 756).
-    Success: Finished regenerating all images.
+    Success: Regenerated 3 of 3 images.
 
     # Import a local image and set it to be the featured image for a post.
     $ wp media import ~/Downloads/image.png --post_id=123 --title="A downloaded picture" --featured_image
@@ -40,11 +40,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/media/import/">import</a></td>
-			<td>Create attachments from local files or from URLs.</td>
+			<td>Create attachments from local files or URLs.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/media/regenerate/">regenerate</a></td>
-			<td>Regenerate thumbnail(s).</td>
+			<td>Regenerate thumbnails for one or more attachments.</td>
 		</tr>
 	</tbody>
 </table>

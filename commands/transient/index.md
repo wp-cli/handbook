@@ -56,11 +56,11 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/transient/set/">set</a></td>
-			<td>Set a transient value. &lt;expiration&gt; is the time until expiration, in seconds.</td>
+			<td>Set a transient value.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/transient/type/">type</a></td>
-			<td>See whether the transients API is using an object cache or the options table.</td>
+			<td>Determine type of transients implementation.</td>
 		</tr>
 	</tbody>
 </table>

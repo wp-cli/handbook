@@ -6,11 +6,13 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [scaffold](/commands/scaffold/) &raquo; child-theme</small>
 
-`wp scaffold child-theme` - Generate empty child theme.
+`wp scaffold child-theme` - Generate child theme based on an existing theme.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold-child-theme+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Creates a child theme folder with `functions.php` and `style.css` files.
 
 ### OPTIONS
 
@@ -43,6 +45,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Generate a 'sample-theme' child theme based on TwentySixteen
     $ wp scaffold child-theme sample-theme --parent_theme=twentysixteen
     Success: Created '/var/www/example.com/public_html/wp-content/themes/sample-theme'.
 

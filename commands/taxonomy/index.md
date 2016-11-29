@@ -42,11 +42,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/taxonomy/get/">get</a></td>
-			<td>Get a taxonomy.</td>
+			<td>Get details about a registered taxonomy.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/taxonomy/list/">list</a></td>
-			<td>List taxonomies.</td>
+			<td>List registered taxonomies.</td>
 		</tr>
 	</tbody>
 </table>

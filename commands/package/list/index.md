@@ -29,6 +29,20 @@ options:
   - yaml
 \---
 
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each package:
+
+* name
+* authors
+* version
+* update
+* update_version
+
+These fields are optionally available:
+
+* description
+
 ### EXAMPLES
 
     $ wp package list
