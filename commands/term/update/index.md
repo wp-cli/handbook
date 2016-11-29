@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; update</small>
 
-`wp term update` - Update a term.
+`wp term update` - Update an existing term.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-update+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -34,6 +34,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Change category with id 15 to use the name "Apple"
     $ wp term update category 15 --name=Apple
     Success: Term updated.
 

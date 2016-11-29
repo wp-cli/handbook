@@ -66,6 +66,9 @@ Error message is written to STDERR.
 <li><strong><a href="/docs/internal-api/wp-cli-error/">WP_CLI::error()</a></strong> - Display error message prefixed with &quot;Error: &quot; and exit script.</li>
 
 
+<li><strong><a href="/docs/internal-api/wp-cli-halt/">WP_CLI::halt()</a></strong> - Halt script execution with a specific return code.</li>
+
+
 
 </ul>
 

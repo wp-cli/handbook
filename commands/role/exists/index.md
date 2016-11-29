@@ -12,9 +12,7 @@ display_global_parameters: true
 
 <hr />
 
-### DESCRIPTION
-
-Will exit with status 0 if the role exists, 1 if it does not.
+Exits with return code 0 if the role exists, 1 if it does not.
 
 ### OPTIONS
 

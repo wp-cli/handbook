@@ -21,7 +21,7 @@ display_global_parameters: true
 : The name of the meta field to update.
 
 [&lt;value&gt;]
-: The new value. If ommited, the value is read from STDIN.
+: The new value. If omitted, the value is read from STDIN.
 
 [\--format=&lt;format&gt;]
 : The serialization format for the value.

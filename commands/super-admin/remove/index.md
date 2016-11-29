@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [super-admin](/commands/super-admin/) &raquo; remove</small>
 
-`wp super-admin remove` - Revoke super-admin privileges to one or more users.
+`wp super-admin remove` - Remove super admin privileges from one or more users.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asuper-admin-remove+sort%3Aupdated-desc">Github issues</a></small>
 

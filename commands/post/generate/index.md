@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Creates a specified number of new posts with dummy data.
+
 ### OPTIONS
 
 [\--count=&lt;number&gt;]

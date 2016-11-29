@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; [language](/commands/core/language/) &raquo; list</small>
 
-`wp core language list` - List all languages available.
+`wp core language list` - List all available languages.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-language-list+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -42,6 +42,7 @@ These fields are optionally available:
 
 ### EXAMPLES
 
+    # List language,english_name,status fields of available languages.
     $ wp core language list --fields=language,english_name,status
     +----------------+-------------------------+-------------+
     | language       | english_name            | status      |

@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; create</small>
 
-`wp term create` - Create a term.
+`wp term create` - Create a new term.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-create+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -34,6 +34,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Create a new category "Apple" with a description.
     $ wp term create category Apple --description="A type of fruit"
     Success: Created category 199.
 

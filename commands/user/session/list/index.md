@@ -50,7 +50,7 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    # List a user's sessions
+    # List a user's sessions.
     $ wp user session list admin@example.com --format=csv
     login_time,expiration_time,ip,ua
     "2016-01-01 12:34:56","2016-02-01 12:34:56",127.0.0.1,"Mozilla/5.0..."

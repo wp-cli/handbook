@@ -6,11 +6,14 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [widget](/commands/widget/) &raquo; move</small>
 
-`wp widget move` - Move a widget from one position on a sidebar to another.
+`wp widget move` - Move the position of a widget.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Awidget-move+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Changes the order of a widget in its existing sidebar, or moves it to a
+new sidebar.
 
 ### OPTIONS
 

@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [option](/commands/option/) &raquo; list</small>
 
-`wp option list` - List options.
+`wp option list` - List options and their values.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aoption-list+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -59,11 +59,11 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    # Get the total size of all autoload options
+    # Get the total size of all autoload options.
     $ wp option list --autoload=on --format=total_bytes
     33198
 
-    # Find biggest transients
+    # Find biggest transients.
     $ wp option list --search="*_transient_*" --fields=option_name,size_bytes | sort -n -k 2 | tail
     option_name size_bytes
     _site_transient_timeout_theme_roots 10
@@ -72,7 +72,7 @@ These fields are optionally available:
     _site_transient_update_core 808
     _site_transient_update_plugins  6645
 
-    # List all options begining with "i2f_"
+    # List all options begining with "i2f_".
     $ wp option list --search="i2f_*"
     +-------------+--------------+
     | option_name | option_value |
@@ -80,7 +80,7 @@ These fields are optionally available:
     | i2f_version | 0.1.0        |
     +-------------+--------------+
 
-    # Delete all options begining with "theme_mods_"
+    # Delete all options begining with "theme_mods_".
     $ wp option list --search="theme_mods_*" --field=option_name | xargs -I % wp option delete %
     Success: Deleted 'theme_mods_twentysixteen' option.
     Success: Deleted 'theme_mods_twentyfifteen' option.

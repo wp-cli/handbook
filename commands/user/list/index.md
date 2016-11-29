@@ -66,6 +66,7 @@ These fields are optionally available:
 * cap_key
 * allcaps
 * filter
+* url
 
 ### EXAMPLES
 

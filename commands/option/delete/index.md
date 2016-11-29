@@ -19,6 +19,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
+    # Delete an option.
     $ wp option delete my_option
     Success: Deleted 'my_option' option.
 

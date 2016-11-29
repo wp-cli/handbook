@@ -32,7 +32,7 @@ options:
 
 ### EXAMPLES
 
-    # Display alphabetical list of Contributor capabilities
+    # Display alphabetical list of Contributor capabilities.
     $ wp cap list 'contributor' | sort
     delete_posts
     edit_posts

@@ -12,6 +12,9 @@ display_global_parameters: true
 
 <hr />
 
+Provides a command line interface to the WordPress Importer plugin, for
+performing data migrations.
+
 ### OPTIONS
 
 &lt;file&gt;...

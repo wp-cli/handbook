@@ -14,15 +14,15 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Create comment.
+    # Create a new comment.
     $ wp comment create --comment_post_ID=15 --comment_content="hello blog" --comment_author="wp-cli"
     Success: Created comment 932.
 
-    # Update comment.
+    # Update an existing comment.
     $ wp comment update 123 --comment_author='That Guy'
     Success: Updated comment 123.
 
-    # Delete comment.
+    # Delete an existing comment.
     $ wp comment delete 1337 --force
     Success: Deleted comment 1337.
 
@@ -53,7 +53,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/create/">create</a></td>
-			<td>Insert a comment.</td>
+			<td>Create a new comment.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/delete/">delete</a></td>
@@ -65,11 +65,11 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/generate/">generate</a></td>
-			<td>Generate comments.</td>
+			<td>Generate some number of new dummy comments.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/get/">get</a></td>
-			<td>Get a single comment.</td>
+			<td>Get data of a single comment.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/list/">list</a></td>
@@ -81,11 +81,11 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/recount/">recount</a></td>
-			<td>Recount the comment_count value for one or more posts.</td>
+			<td>Recalculate the comment_count value for one or more posts.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/spam/">spam</a></td>
-			<td>Spam a comment.</td>
+			<td>Mark a comment as spam.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/status/">status</a></td>
@@ -101,7 +101,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/unspam/">unspam</a></td>
-			<td>Unspam a comment.</td>
+			<td>Unmark a comment as spam.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/comment/untrash/">untrash</a></td>
@@ -110,10 +110,6 @@ display_global_parameters: true
 		<tr>
 			<td><a href="/commands/comment/update/">update</a></td>
 			<td>Update one or more comments.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/comment/url/">url</a></td>
-			<td>Get comment URL.</td>
 		</tr>
 	</tbody>
 </table>

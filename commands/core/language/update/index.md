@@ -6,11 +6,13 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; [language](/commands/core/language/) &raquo; update</small>
 
-`wp core language update` - Updates the active translation of core, plugins, and themes.
+`wp core language update` - Update installed languages.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-language-update+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Updates installed languages for core, plugins and themes.
 
 [\--dry-run]
 : Preview which translations would be updated.

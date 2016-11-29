@@ -14,15 +14,15 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Create post
+    # Create a new post.
     $ wp post create --post_type=post --post_title='A sample post'
     Success: Created post 123.
 
-    # Update post
+    # Update an existing post.
     $ wp post update 123 --post_status=draft
     Success: Updated post 123.
 
-    # Delete post
+    # Delete an existing post.
     $ wp post delete 123
     Success: Trashed post 123.
 
@@ -40,11 +40,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/post/create/">create</a></td>
-			<td>Create a post.</td>
+			<td>Create a new post.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post/delete/">delete</a></td>
-			<td>Delete a post by ID.</td>
+			<td>Delete an existing post.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post/edit/">edit</a></td>
@@ -56,7 +56,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/post/get/">get</a></td>
-			<td>Get a post's content by ID.</td>
+			<td>Get details about a post.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post/list/">list</a></td>
@@ -72,7 +72,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/post/update/">update</a></td>
-			<td>Update one or more posts.</td>
+			<td>Update one or more existing posts.</td>
 		</tr>
 	</tbody>
 </table>

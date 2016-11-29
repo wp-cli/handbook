@@ -49,7 +49,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/rewrite/list/">list</a></td>
-			<td>Print current rewrite rules.</td>
+			<td>Get a list of the current rewrite rules.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/rewrite/structure/">structure</a></td>

@@ -6,11 +6,14 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [theme](/commands/theme/) &raquo; search</small>
 
-`wp theme search` - Search the wordpress.org theme repository.
+`wp theme search` - Search the WordPress.org theme directory.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme-search+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
+
+Displays themes in the WordPress.org theme directory matching a given
+search query.
 
 ### OPTIONS
 

@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; get</small>
 
-`wp user get` - Get a single user.
+`wp user get` - Get details about a user.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-get+sort%3Aupdated-desc">Github issues</a></small>
 

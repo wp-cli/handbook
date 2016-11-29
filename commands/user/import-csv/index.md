@@ -12,6 +12,9 @@ display_global_parameters: true
 
 <hr />
 
+If the user already exists (matching the email address or login), then
+the user is updated unless the `--skip-update` flag is used.
+
 ### OPTIONS
 
 &lt;file&gt;

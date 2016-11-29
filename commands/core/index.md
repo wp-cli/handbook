@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; core</small>
 
-`wp core` - Download, install, update and otherwise manage WordPress proper.
+`wp core` - Download, install, update and manage a WordPress install.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -42,7 +42,7 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/core/check-update/">check-update</a></td>
-			<td>Check for update via Version Check API.</td>
+			<td>Check for WordPress updates via Version Check API.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/config/">config</a></td>
@@ -58,7 +58,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/core/is-installed/">is-installed</a></td>
-			<td>Determine if the WordPress tables are installed.</td>
+			<td>Check if WordPress is installed.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/language/">language</a></td>
@@ -66,19 +66,19 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/core/multisite-convert/">multisite-convert</a></td>
-			<td>Transform a single-site install into a multi-site install.</td>
+			<td>Transform a single-site install into a WordPress multisite install.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/multisite-install/">multisite-install</a></td>
-			<td>Install multisite from scratch.</td>
+			<td>Install WordPress multisite from scratch.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/update/">update</a></td>
-			<td>Update WordPress.</td>
+			<td>Update WordPress to a newer version.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/update-db/">update-db</a></td>
-			<td>Update the WordPress database.</td>
+			<td>Run the WordPress database update procedure.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/verify-checksums/">verify-checksums</a></td>

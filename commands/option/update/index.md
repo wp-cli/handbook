@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [option](/commands/option/) &raquo; update</small>
 
-`wp option update` - Update an option.
+`wp option update` - Update an option value.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aoption-update+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -15,7 +15,7 @@ display_global_parameters: true
 ### OPTIONS
 
 &lt;key&gt;
-: The name of the option to add.
+: The name of the option to update.
 
 [&lt;value&gt;]
 : The new value. If ommited, the value is read from STDIN.
@@ -39,11 +39,11 @@ options:
 
 ### EXAMPLES
 
-    # Update an option by reading from a file
+    # Update an option by reading from a file.
     $ wp option update my_option < value.txt
     Success: Updated 'my_option' option.
 
-    # Update one option on multiple sites using xargs
+    # Update one option on multiple sites using xargs.
     $ wp site list --field=url | xargs -n1 -I {} sh -c 'wp --url={} option update my_option my_value'
     Success: Updated 'my_option' option.
     Success: Updated 'my_option' option.

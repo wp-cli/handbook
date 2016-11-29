@@ -6,13 +6,11 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [taxonomy](/commands/taxonomy/) &raquo; list</small>
 
-`wp taxonomy list` - List taxonomies.
+`wp taxonomy list` - List registered taxonomies.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ataxonomy-list+sort%3Aupdated-desc">Github issues</a></small>
 
 <hr />
-
-Displays list of registered taxonomies.
 
 ### OPTIONS
 

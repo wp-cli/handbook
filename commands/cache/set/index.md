@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Errors if the value can't be set.
+
 ### OPTIONS
 
 &lt;key&gt;

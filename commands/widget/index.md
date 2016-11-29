@@ -65,7 +65,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/widget/move/">move</a></td>
-			<td>Move a widget from one position on a sidebar to another.</td>
+			<td>Move the position of a widget.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/widget/reset/">reset</a></td>
@@ -73,7 +73,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/widget/update/">update</a></td>
-			<td>Update a given widget's options.</td>
+			<td>Update options for an existing widget.</td>
 		</tr>
 	</tbody>
 </table>

@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Errors if the value can't be incremented.
+
 ### OPTIONS
 
 &lt;key&gt;

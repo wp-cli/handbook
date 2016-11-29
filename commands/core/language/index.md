@@ -58,7 +58,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/core/language/list/">list</a></td>
-			<td>List all languages available.</td>
+			<td>List all available languages.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/core/language/uninstall/">uninstall</a></td>
@@ -66,7 +66,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/core/language/update/">update</a></td>
-			<td>Updates the active translation of core, plugins, and themes.</td>
+			<td>Update installed languages.</td>
 		</tr>
 	</tbody>
 </table>

@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; cli</small>
 
-`wp cli` - Get information about WP-CLI itself.
+`wp cli` - Manage WP-CLI itself.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli+sort%3Aupdated-desc">Github issues</a></small>
 
@@ -14,15 +14,15 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Display CLI version.
+    # Display the version currently installed.
     $ wp cli version
     WP-CLI 0.24.1
 
-    # Check for update.
+    # Check for updates to WP-CLI.
     $ wp cli check-update
     Success: WP-CLI is at the latest version.
 
-    # Update CLI.
+    # Update WP-CLI to the latest stable release.
     $ wp cli update
     You have version 0.24.0. Would you like to update to 0.24.1? [y/n] y
     Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.24.1/wp-cli-0.24.1.phar...
@@ -43,11 +43,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/cli/alias/">alias</a></td>
-			<td>List available aliases.</td>
+			<td>List available WP-CLI aliases.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/check-update/">check-update</a></td>
-			<td>Check for update via Github API. Returns the available versions if there are updates, or empty if no update available.</td>
+			<td>Check to see if there is a newer version of WP-CLI available.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/cmd-dump/">cmd-dump</a></td>
@@ -59,7 +59,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/info/">info</a></td>
-			<td>Print various data about the CLI environment.</td>
+			<td>Print various details about the WP-CLI environment.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/param-dump/">param-dump</a></td>
@@ -67,7 +67,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/update/">update</a></td>
-			<td>Update WP-CLI.</td>
+			<td>Update WP-CLI to the latest release.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/cli/version/">version</a></td>

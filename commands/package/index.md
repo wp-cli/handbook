@@ -47,7 +47,7 @@ Learn how to create your own command from the
     Writing lock file
     Generating autoload files
     ---
-    Success: Package installed successfully.
+    Success: Package installed.
 
     # Uninstall package
     $ wp package uninstall wp-cli/server-command
@@ -87,6 +87,10 @@ Learn how to create your own command from the
 		<tr>
 			<td><a href="/commands/package/uninstall/">uninstall</a></td>
 			<td>Uninstall a WP-CLI package.</td>
+		</tr>
+		<tr>
+			<td><a href="/commands/package/update/">update</a></td>
+			<td>Update all installed WP-CLI packages to their latest version.</td>
 		</tr>
 	</tbody>
 </table>

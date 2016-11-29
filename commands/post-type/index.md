@@ -14,7 +14,7 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Get a post type
+    # Get details about a post type
     $ wp post-type get page --fields=name,label,hierarchical --format=json
     {"name":"page","label":"Pages","hierarchical":true}
 
@@ -43,11 +43,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/post-type/get/">get</a></td>
-			<td>Get a post type</td>
+			<td>Get details about a registered post type.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post-type/list/">list</a></td>
-			<td>List post types.</td>
+			<td>List registered post types.</td>
 		</tr>
 	</tbody>
 </table>

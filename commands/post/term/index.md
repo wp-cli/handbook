@@ -16,7 +16,7 @@ display_global_parameters: true
 
     # Set post terms
     $ wp post term set 123 test category
-    Set terms.
+    Success: Set terms.
 
 
 
@@ -34,7 +34,7 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/post/term/add/">add</a></td>
-			<td>Add a term. Appends to existing set of terms on the object.</td>
+			<td>Add a term to an object.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post/term/list/">list</a></td>
@@ -42,11 +42,11 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/post/term/remove/">remove</a></td>
-			<td>Remove a term.</td>
+			<td>Remove a term from an object.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/post/term/set/">set</a></td>
-			<td>Set terms. Replaces existing terms on the object.</td>
+			<td>Set object terms.</td>
 		</tr>
 	</tbody>
 </table>

@@ -6,7 +6,7 @@ display_global_parameters: true
 
 <small>[Commands](/commands/) &raquo; [post](/commands/post/) &raquo; get</small>
 
-`wp post get` - Get a post's content by ID.
+`wp post get` - Get details about a post.
 
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-get+sort%3Aupdated-desc">Github issues</a></small>
 

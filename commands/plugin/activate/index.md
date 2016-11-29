@@ -27,11 +27,13 @@ display_global_parameters: true
 
     # Activate plugin
     $ wp plugin activate hello-dolly
-    Success: Plugin 'hello-dolly' activated.
+    Plugin 'hello-dolly' activated.
+    Success: Activated 1 of 1 plugins.
 
     # Activate plugin in entire multisite network
     $ wp plugin activate hello-dolly --network
-    Success: Plugin 'hello-dolly' network activated.
+    Plugin 'hello-dolly' network activated.
+    Success: Network activated 1 of 1 plugins.
 
 
 

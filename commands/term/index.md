@@ -14,20 +14,20 @@ display_global_parameters: true
 
 ### EXAMPLES
 
-    # Create term
+    # Create a new term.
     $ wp term create category Apple --description="A type of fruit"
     Success: Created category 199.
 
-    # Get term
+    # Get details about a term.
     $ wp term get category 199 --format=json --fields=term_id,name,slug,count
     {"term_id":199,"name":"Apple","slug":"apple","count":1}
 
-    # Update term
+    # Update an existing term.
     $ wp term update category 15 --name=Apple
     Success: Term updated.
 
-    # Get term url
-    $ wp term url post_tag 123
+    # Get the term's URL.
+    $ wp term list post_tag --include=123 --field=url
     http://example.com/tag/tips-and-tricks
 
     # Delete post category
@@ -53,11 +53,11 @@ display_global_parameters: true
 	<tbody>
 		<tr>
 			<td><a href="/commands/term/create/">create</a></td>
-			<td>Create a term.</td>
+			<td>Create a new term.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/term/delete/">delete</a></td>
-			<td>Delete a term.</td>
+			<td>Delete an existing term.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/term/generate/">generate</a></td>
@@ -65,7 +65,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/term/get/">get</a></td>
-			<td>Get a taxonomy term</td>
+			<td>Get details about a term.</td>
 		</tr>
 		<tr>
 			<td><a href="/commands/term/list/">list</a></td>
@@ -81,11 +81,7 @@ display_global_parameters: true
 		</tr>
 		<tr>
 			<td><a href="/commands/term/update/">update</a></td>
-			<td>Update a term.</td>
-		</tr>
-		<tr>
-			<td><a href="/commands/term/url/">url</a></td>
-			<td>Get term url</td>
+			<td>Update an existing term.</td>
 		</tr>
 	</tbody>
 </table>

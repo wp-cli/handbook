@@ -21,7 +21,7 @@ display_global_parameters: true
 : The name of the meta field to create.
 
 [&lt;value&gt;]
-: The value of the meta field. If ommited, the value is read from STDIN.
+: The value of the meta field. If omitted, the value is read from STDIN.
 
 [\--format=&lt;format&gt;]
 : The serialization format for the value.

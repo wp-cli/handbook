@@ -12,6 +12,8 @@ display_global_parameters: true
 
 <hr />
 
+Errors if the value doesn't exist.
+
 ### OPTIONS
 
 &lt;key&gt;
