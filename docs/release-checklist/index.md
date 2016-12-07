@@ -16,6 +16,8 @@ This page describes the list of activities that developers must perform to produ
 
 Make sure that the contents of [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) are changed to latest.
 
+Also update the WP-CLI version mention in the project's `README.md` ([ref](https://github.com/wp-cli/wp-cli/issues/3647)).
+
 ### Locking php-cli-tools version
 
 php-cli-tools is set to `dev-master` during the development cycle. During the WP-CLI release process, `composer.json` should be locked to a specific version. php-cli-tools may need a new version tagged as well.
