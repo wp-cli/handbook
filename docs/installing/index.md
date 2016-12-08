@@ -127,7 +127,7 @@ Above script assumes that your current shell is `bash`, which might not be the c
 In case you got `bash` available and installed for your OS, you can switch dynamically:
 
     "scripts" : {
-    	"post-install-cmd" : [
+    	"post-update-cmd" : [
     		"/bin/bash -c \"[[ -f /usr/local/bin/wp ]] || sudo ln -s /var/www/vendor/wp-cli/wp-cli/bin/wp /usr/bin/wp\"",
     		"/bin/bash -c \"source /var/www/vendor/wp-cli/wp-cli/utils/wp-completion.bash\"",
         "/bin/bash -c \"[[ -f ~/.bash_profile ]] || touch ~/.bash_profile\"",
