@@ -53,3 +53,7 @@ All levels are billed annually unless you disable automatic renewal.
 *What if I'm an existing runcommand customer?*
 
 If the experiment goes well, then `wp doctor` and `wp profile` will become completely open source. I'll reach out about the other aspects of your purchase.
+
+*What about scribu and Andreas?*
+
+I've been talking with them a bit. We're all very interested to see how this plays out.
