@@ -40,9 +40,9 @@ I have a number, but I'm not going to share it. I want to see if this is a viabl
 
 *Do I get anything special for paying the amount I paid?*
 
-Nothing upfront — this is a pure leap of faith.
+Potentially, but nothing to announce at this point.
 
-I have some ideas in mind for bonuses at different levels, including access to a members-only support forum, feature prioritization, etc.
+I do have some ideas in mind for offerings at different levels (e.g. members-only support forum, feature prioritization, etc.).
 
 *Do I need to keep paying after I pay the first time?*
 
