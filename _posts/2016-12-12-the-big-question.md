@@ -30,6 +30,12 @@ If the experiment doesn't go well, then at least I can say I tried :) To avoid a
 
 Happy to take any questions you might have: [daniel@runcommand.io](mailto:daniel@runcommand.io). I'll keep the list below updated as new questions come in.
 
+***
+
+*Have you tried crowdfunding?*
+
+Yep! See the post I wrote, "[Using Kickstarter to fund open source](https://poststatus.com/kickstarter-open-source-project/)". Nadia Eghbal has a [series of great articles on open source sustainability](http://nadiaeghbal.com/oss) as well.
+
 *How much money do you want to see to consider this a success?*
 
 I have a number, but I'm not going to share it. I want to see if this is a viable approach for funding a for-profit business.
