@@ -24,6 +24,15 @@ So, dear reader, a question: how much is WP-CLI worth to you?
 
 If the experiment goes well, then we're in business! Your purchase will support ongoing maintenance of WP-CLI, as well as development of new commands like [wp doctor](https://runcommand.io/wp/doctor/) and [wp profile](https://runcommand.io/wp/profile/), [improvements to the website and package index](http://wp-cli.org/docs/wish-list/), and so on.
 
-If the experiment doesn't go well, then I'm glad we tried, and I'll decide what plan B is.
+If the experiment doesn't go well, then at least I can say I tried :) I'll refund everyone's money, and decide what plan B is.
 
 Happy to take any questions you might have: [daniel@runcommand.io](mailto:daniel@runcommand.io). I'll keep the list below updated as new questions come in.
+
+*How much money do you want to see to consider this a success?*
+
+I have a number, but I'm not going to share it. I want to see if this is a viable approach for funding a for-profit business.
+
+*Do I get anything special for paying the amount I paid?*
+
+Nothing upfront — this is a pure leap of faith. I have some ideas in mind for bonuses at different levels.
+
