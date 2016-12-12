@@ -22,6 +22,8 @@ So, dear reader, a question: how much is WP-CLI worth to you?
 * [$500/year](https://runcommand.memberful.com/checkout?plan=17527)
 * [$100/year](https://runcommand.memberful.com/checkout?plan=17526)
 
+Or, phrased another way, how much time does WP-CLI save you?
+
 If the experiment goes well, then we're in business! Your purchase will support ongoing maintenance of WP-CLI, as well as development of new commands like [wp doctor](https://runcommand.io/wp/doctor/) and [wp profile](https://runcommand.io/wp/profile/), [improvements to the website and package index](http://wp-cli.org/docs/wish-list/), and so on.
 
 If the experiment doesn't go well, then at least I can say I tried :) I'll refund everyone's money, and decide what plan B is.
@@ -32,7 +34,22 @@ Happy to take any questions you might have: [daniel@runcommand.io](mailto:daniel
 
 I have a number, but I'm not going to share it. I want to see if this is a viable approach for funding a for-profit business.
 
+*What if I want to pay a different amount?*
+
+[Email me](mailto:daniel@runcommand.io), and I'll create a purchase link for you.
+
 *Do I get anything special for paying the amount I paid?*
 
-Nothing upfront — this is a pure leap of faith. I have some ideas in mind for bonuses at different levels.
+Nothing upfront — this is a pure leap of faith.
 
+I have some ideas in mind for bonuses at different levels, including access to a members-only support forum, feature prioritization, etc.
+
+*Do I need to keep paying after I pay the first time?*
+
+Well, if everyone cancels, then the business will tank :)
+
+All levels are billed annually unless you disable automatic renewal.
+
+*What if I'm an existing runcommand customer?*
+
+If the experiment goes well, then `wp doctor` and `wp profile` will become completely open source. I'll reach out about the other aspects of your purchase.
