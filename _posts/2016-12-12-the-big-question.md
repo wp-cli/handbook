@@ -26,7 +26,7 @@ Or, phrased another way, how much time does WP-CLI save you?
 
 If the experiment goes well, then we're in business! Your purchase will support ongoing maintenance of WP-CLI, as well as development of new commands like [wp doctor](https://runcommand.io/wp/doctor/) and [wp profile](https://runcommand.io/wp/profile/), [improvements to the website and package index](http://wp-cli.org/docs/wish-list/), and so on.
 
-If the experiment doesn't go well, then at least I can say I tried :) I'll refund everyone's money, and decide what plan B is.
+If the experiment doesn't go well, then at least I can say I tried :) To avoid any risk with the investment above, a full refund will be made available to you should the campaign not reach its goal, before we look at other approaches to help with maintaining the project.
 
 Happy to take any questions you might have: [daniel@runcommand.io](mailto:daniel@runcommand.io). I'll keep the list below updated as new questions come in.
 
