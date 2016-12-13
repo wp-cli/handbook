@@ -16,10 +16,10 @@ The response to my tweet has been overwhelmingly supportive. One future I'm cons
 
 So, dear reader, a question: how much is WP-CLI worth to you?
 
-* [$20,000/year](https://runcommand.memberful.com/checkout?plan=17530)
 * [$7,500/year](https://runcommand.memberful.com/checkout?plan=17529)
 * [$1,500/year](https://runcommand.memberful.com/checkout?plan=17528)
-* [$500/year](https://runcommand.memberful.com/checkout?plan=17527)
+* [$750/year](https://runcommand.memberful.com/checkout?plan=17553)
+* [$250/year](https://runcommand.memberful.com/checkout?plan=17552)
 * [$100/year](https://runcommand.memberful.com/checkout?plan=17526)
 
 Or, phrased another way, how much time does WP-CLI save you?
