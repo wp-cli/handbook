@@ -19,6 +19,7 @@ The response to my tweet has been overwhelmingly supportive. One future I'm cons
 So, dear reader, a question: how much is WP-CLI worth to you?
 
 * [$7,500/year](https://runcommand.memberful.com/checkout?plan=17529)
+* [$4,000/year](https://runcommand.memberful.com/checkout?plan=17577)
 * [$1,500/year](https://runcommand.memberful.com/checkout?plan=17528)
 * [$750/year](https://runcommand.memberful.com/checkout?plan=17553)
 * [$250/year](https://runcommand.memberful.com/checkout?plan=17552)
