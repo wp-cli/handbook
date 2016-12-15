@@ -4,6 +4,8 @@ author: danielbachhuber
 title: How much is WP-CLI worth to you?
 ---
 
+**[Update 2 12/15:](https://twitter.com/wpcli/status/809352614580080640)** Undecided on how much WP-CLI is worth to you? The experiment ends Dec 28th — please make a decision by then :)
+
 **[Update 1 (12/13):](https://twitter.com/wpcli/status/808687676010287105)** Up to 17 subscribers so far. If we can get to 50, I'll launch a members-only forum.
 
 Last week, I [tweeted](https://twitter.com/danielbachhuber/status/806539537610481664):
