@@ -284,7 +284,7 @@ header h1 {
 	font-size: 30px;
 	color: #fff;
 	line-height: 1.5;
-	margin: 0 0 0 -40px;
+	margin: 0 0 0 0;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	font-weight: 300;
