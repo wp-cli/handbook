@@ -300,12 +300,6 @@ header h1 a:active {
 	color: #F7F7F7;
 }
 
-header h1:before {
-	content: ". / ";
-
-	letter-spacing: 1px;
-}
-
 header h2 {
 	font-size: 17px;
 	font-weight: 300;
