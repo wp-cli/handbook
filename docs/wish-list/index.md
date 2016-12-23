@@ -7,6 +7,10 @@ category: Misc
 
 An ongoing list of ideas and potential improvements for wp-cli.org.
 
+### WP-CLI
+
+* Split components into logical subpackages (e.g. `wp-cli/search-replace-command`), and require them via Composer. ([from #3652](https://github.com/wp-cli/wp-cli/issues/3652)).
+
 ### Website
 
 * Redesign! And potentially move to WordPress from Github pages.
