@@ -103,6 +103,17 @@ Importantly, classes behave a bit differently than functions and closures in tha
 * Any public methods on a class are registered as subcommands of the command. For instance, given the examples above, a method `bar()` on the class `Foo` would be registered as `wp foo bar`. But...
 * `__invoke()` is treated as a magic method. If a class implements `__invoke()`, the command name will be registered to that method and no other methods of that class will be registered as commands.
 
+All commands can be registered to their own top-level namespace (e.g. `wp foo`), or as subcommands to an existing namespace (e.g. `wp core foo`). For the latter, simply include the existing namespace as a part of the command definition.
+
+```
+class Foo_Command {
+    public function __invoke( $args ) {
+        WP_CLI::success( $args[0] );
+    }
+}
+WP_CLI::add_command( 'core foo', 'Foo_Command' );
+```
+
 ### Quick and dirty execution
 
 Writing a short script for a one-off task, and don't need to register it formally with `WP_CLI::add_command()`? `wp eval-file` is your ticket ([doc](http://wp-cli.org/commands/eval-file/)).
