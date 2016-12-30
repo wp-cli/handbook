@@ -6,7 +6,7 @@ title: Command line interface for WordPress
 [WP-CLI](https://wp-cli.org/) は [WordPress](https://wordpress.org/) を管理するためのコマンドラインツールです。
 プラグインのアップデートやマルチサイトのセットアップなどの多くのことをブラウザ無しで行うことができます。
 
-最新情報を得たい人は、[@wpcli on Twitter](https://twitter.com/wpcli) をフォローするか、[メーリングリストにサインアップ](http://wp-cli.us13.list-manage.com/subscribe?u=0615e4d18f213891fc000adfd&id=8c61d7641e)してください。
+最新情報を得たい人は、[@wpcli on Twitter](https://twitter.com/wpcli) をフォローするか、[メーリングリストにサインアップ](http://wp-cli.us13.list-manage.com/subscribe?u=0615e4d18f213891fc000adfd&id=8c61d7641e)してください。[ロードマップ](https://wp-cli.org/docs/roadmap/)で、今後のリリースの予定をしることができます。
 
 [![Build Status](https://travis-ci.org/wp-cli/wp-cli.png?branch=master)](https://travis-ci.org/wp-cli/wp-cli) [![Dependency Status](https://gemnasium.com/badges/github.com/wp-cli/wp-cli.svg)](https://gemnasium.com/github.com/wp-cli/wp-cli) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/wp-cli/wp-cli.svg)](http://isitmaintained.com/project/wp-cli/wp-cli "Percentage of issues still open")
 
@@ -35,7 +35,7 @@ $ wp transient delete --all
 Success: 34 transients deleted from the database.
 ```
 
-WP-CLI の使い方に関するさらに詳しい情報は、[クイックスタートガイド](https://wp-cli.org/docs/quick-start/)を読んでください。
+WP-CLI の使い方に関するさらに詳しい情報は、[クイックスタートガイド](https://wp-cli.org/docs/quick-start/)を読んでください。または、[shell friends](https://wp-cli.org/docs/shell-friends/) で便利なコマンドラインユーティリティについて学ぶことができます。
 
 もし、すでに基本的なことを理解しているなら、[コマンドリスト](https://wp-cli.org/ja/commands/)にジャンプして、テーマやプラグインの管理、データのインポートやエクスポート、データベースの操作などについての詳細をみてください。
 
@@ -79,12 +79,14 @@ WP-CLI root dir:        /home/wp-cli/.wp-cli
 WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
 WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
 WP-CLI project config:
-WP-CLI version: 0.25.0
+WP-CLI version: 1.0.0
 ```
 
 ## アップデート
 
 WP-CLI をアップデートするには、`wp cli update` ([doc](https://wp-cli.org/commands/cli/update/)) を実行するか、上述のインストール方法を再度行う必要があります。
+
+WP-CLI のオーナーが root もしくは他のシステム管理者になっている場合は、`sudo wp cli update` と実行する必要があります。
 
 もっととんがった生き方をしたい？ `wp cli update --nightly` を実行すれば、最新の開発者向けバージョンの WP-CLI を使用することができます。開発者向けバージョンは、あなたの開発環境で使用するのに十分な信頼性があり、つねに最新の機能を使用することができます。
 
@@ -100,15 +102,18 @@ source /FULL/PATH/TO/wp-completion.bash
 
 ## サポート
 
-WP-CLI のメンテナーとプロジェクトの貢献者たちは、新しい Issue に対して、より迅速に返信したいと思っています。これらのボランティアの時間を節約するために、過去に同じ質問に対する回答がないかを確認してください。
+WP-CLI のメンテナーとその貢献者たちはボランティアで、一般的な質問に答えられる時間は限られています。[最新版](http://wp-cli.org/docs/roadmap/) のみが公式にサポートされるバージョンです。
+
+もしサポートを探しているなら、まず初めに以下のリソースの中から答えを探してください。
 
 - [Common issues and their fixes](https://wp-cli.org/docs/common-issues/)
 - [Best practices for submitting a bug report](https://wp-cli.org/docs/bug-reports/)
 - [Documentation portal](https://wp-cli.org/docs/)
 - [Open or closed issues on Github](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue)
+- [runcommand tips](https://runcommand.io/tips/)
 - [WordPress StackExchange forums](http://wordpress.stackexchange.com/questions/tagged/wp-cli)
 
-もし、あなたの疑問に対する回答がこれらのサイトから見つからなければ、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加するとコミュニティメンバーが答えを知っているかもしれません。企業ユーザーのみなさんは [runcommand](https://runcommand.io/) でプレミアムサポートをうけることもできます。
+みなさんのプロジェクトでサポートが必要ですか？ ビジネスユーザーは、[runcommand プレミアムサポート](https://runcommand.io/pricing/) を検討するといいかもしれません。さらに、[WordPress.org Slack organization](https://make.wordpress.org/chat/) の`#cli`チャンネルに参加するとコミュニティメンバーが答えを知っているかもしれません。
 
 GitHub Issues は、既存のコマンドの改良やバグを追跡するために使用されており、一般的なサポートのためには使用されていません。バグレポートを投稿する際には、[ベストプラクティス](https://wp-cli.org/docs/bug-reports/)を確認して、あなたが抱える問題が適時確実に伝わるように心がけてください。
 
