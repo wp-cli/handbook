@@ -93,7 +93,7 @@ If you implement a WP-CLI command in one of your plugins, please list it here.
 ## Vagrant boxes
 
 * [Trellis](https://github.com/roots/trellis)
-* [Varying Vagrant Vagrants](https://github.com/10up/varying-vagrant-vagrants)
+* [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
 * [VCCW](http://vccw.cc/)
 
 ## Misc
