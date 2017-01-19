@@ -48,7 +48,202 @@ The table below lists the available <span class="argument">arguments</span> (spe
 	</tr>
 	</thead>
 	<tbody>
-	{% include param-list.html %}
+		<tr>
+		<td>
+			Path to the WordPress files.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="flag">--path=&lt;path&gt;</code>
+		</td>
+		<td>
+			<code class="option">path: &lt;path&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Perform operation against a remote server over SSH.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="flag">--ssh=[&lt;user&gt;@]&lt;host&gt;[:&lt;port&gt;][&lt;path&gt;]</code>
+		</td>
+		<td>
+			<code class="option">ssh: [&lt;user&gt;@]&lt;host&gt;[:&lt;port&gt;][&lt;path&gt;]</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Perform operation against a remote WordPress install over HTTP.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="flag">--http=&lt;http&gt;</code>
+		</td>
+		<td>
+			<code class="option">http: &lt;http&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Pretend request came from given URL. In multisite, this argument is how the target site is specified.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="flag">--url=&lt;url&gt;</code>
+		</td>
+		<td>
+			<code class="option">url: &lt;url&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Set the WordPress user.
+			<br />
+			Default value: <code>null</code>
+		</td>
+		<td>
+			<code class="flag">--user=&lt;id|login|email&gt;</code>
+		</td>
+		<td>
+			<code class="option">user: &lt;id|login|email&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Skip loading all or some plugins. Note: mu-plugins are still loaded.
+			<br />
+			Default value: <code>&quot;&quot;</code>
+		</td>
+		<td>
+			<code class="flag">--skip-plugins[=&lt;plugin&gt;]</code>
+		</td>
+		<td>
+			<code class="option">skip-plugins: &lt;list&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Skip loading all or some themes.
+			<br />
+			Default value: <code>&quot;&quot;</code>
+		</td>
+		<td>
+			<code class="flag">--skip-themes[=&lt;theme&gt;]</code>
+		</td>
+		<td>
+			<code class="option">skip-themes: &lt;list&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Skip loading all installed packages.
+			<br />
+			Default value: <code>false</code>
+		</td>
+		<td>
+			<code class="flag">--skip-packages</code>
+		</td>
+		<td>
+			<code class="option">skip-packages: &lt;bool&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Load PHP file before running the command (may be used more than once).
+			<br />
+			Default value: <code>[]</code>
+		</td>
+		<td>
+			<code class="flag">--require=&lt;path&gt;</code>
+		</td>
+		<td>
+			<code class="option">require: &lt;path&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			(Sub)commands to disable.
+			<br />
+			Default value: <code>[]</code>
+		</td>
+		<td>
+			<em>Not available as a flag</em>
+		</td>
+		<td>
+			<code class="option">disabled_commands: &lt;list&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Whether to colorize the output.
+			<br />
+			Default value: <code>&quot;auto&quot;</code>
+		</td>
+		<td>
+			<code class="flag">--[no-]color</code>
+		</td>
+		<td>
+			<code class="option">color: &lt;bool&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Show all PHP errors; add verbosity to WP-CLI bootstrap.
+			<br />
+			Default value: <code>false</code>
+		</td>
+		<td>
+			<code class="flag">--debug[=&lt;group&gt;]</code>
+		</td>
+		<td>
+			<code class="option">debug: &lt;group&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values.
+			<br />
+			Default value: <code>false</code>
+		</td>
+		<td>
+			<code class="flag">--prompt[=&lt;assoc&gt;]</code>
+		</td>
+		<td>
+			<em>Not available as an option</em>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Suppress informational messages.
+			<br />
+			Default value: <code>false</code>
+		</td>
+		<td>
+			<code class="flag">--quiet</code>
+		</td>
+		<td>
+			<code class="option">quiet: &lt;bool&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			List of Apache Modules that are to be reported as loaded.
+			<br />
+			Default value: <code>[]</code>
+		</td>
+		<td>
+			<em>Not available as a flag</em>
+		</td>
+		<td>
+			<code class="option">apache_modules: &lt;list&gt;</code>
+		</td>
+	</tr>
+
 	</tbody>
 </table>
 
