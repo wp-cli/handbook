@@ -3,10 +3,6 @@ layout: default
 title: Configuration
 ---
 
-# Configuration
-
-<p><small>Quick links: <a href="#overview">Overview</a> | <a href="#global-parameters">Global parameters</a> | <a href="#config-files">Config files</a> | <a href="#environment-variables">Environment variables</a></small></p>
-
 ## Overview
 
 WP-CLI has a series of global parameters (e.g. `--path=<path>` and `--user=<user>`) which work with all commands. They are called *global parameters* because they affect how WP-CLI interacts with WordPress, and have the same behavior across all commands.
