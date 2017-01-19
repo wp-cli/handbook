@@ -1,8 +1,3 @@
----
-layout: default
-title: Configuration
----
-
 ## Overview
 
 WP-CLI has a series of global parameters (e.g. `--path=<path>` and `--user=<user>`) which work with all commands. They are called *global parameters* because they affect how WP-CLI interacts with WordPress, and have the same behavior across all commands.
