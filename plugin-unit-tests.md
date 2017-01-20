@@ -14,7 +14,7 @@ We're going to assume that you already have a plugin called `my-plugin`.
 
 So, let's get started:
 
-1) [Install PHPUnit](https://github.com/sebastianbergmann/phpunit#installation) (4.8.x required, 5.x not supported).
+1) [Install PHPUnit](https://github.com/sebastianbergmann/phpunit#installation) (5.x is only supported when running php7, phpunit 4.8 is required when running php5).
 
 2) Generate the plugin test files:
 
