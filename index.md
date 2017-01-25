@@ -10,35 +10,29 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/)** - In case of fire, break glass.
 * **[External resources](https://make.wordpress.org/cli/handbook/external-resources/)** - Blog posts, slides and videos from users.
 
-<h3 id="references">References</h3>
+### References
 
-<ul>
-<li><a href="https://make.wordpress.org/cli/handbook/config/"><strong>Global parameters</strong></a> - Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the command is run against.</li>
-<li><a href="https://wp-cli.org/commands/"><strong>Built-in commands</strong></a> - Commands included in every copy of WP-CLI.</li>
-<li><a href="https://wp-cli.org/package-index/"><strong>Package index</strong></a> - Commands maintained and supported by the community.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/internal-api/"><strong>Internal API</strong></a> - Stable utilities considered safe to use in community commands.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/documentation-standards/"><strong>Documentation Standards</strong></a> - Standards for annotating WP-CLI commands.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/hosting-companies/"><strong>Hosting companies</strong></a> - List of hosting companies where WP-CLI is installed by default.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/shell-friends/"><strong>Shell friends</strong></a> - Helpful shortcuts for bash and zsh.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/tools/"><strong>Integrated tools</strong></a> - Plugins, wrappers, and other projects that integrate with WP-CLI in some form.</li>
-</ul>
+* **[Global parameters](https://make.wordpress.org/cli/handbook/config/)** - Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the command is run against.
+* **[Built-in commands](https://wp-cli.org/commands/)** - Commands included in every copy of WP-CLI.
+* **[Package index](https://wp-cli.org/package-index/)** - Commands maintained and supported by the community.
+* **[Internal API](https://wp-cli.org/commands/)** - Stable utilities considered safe to use in community commands.
+* **[Documentation standards](https://make.wordpress.org/cli/handbook/documentation-standards/)** - Standards for annotating WP-CLI commands.
+* **[Hosting companies](https://make.wordpress.org/cli/handbook/hosting-companies/)** - List of hosting companies where WP-CLI is installed by default.
+* **[Shell friends](https://make.wordpress.org/cli/handbook/shell-friends/)** - Helpful shortcuts for bash and zsh.
+* **[Integrated tools](https://make.wordpress.org/cli/handbook/tools/)** - Plugins, wrappers, and other projects that integrate with WP-CLI in some form.
 
-<h3 id="contributing">Contributing</h3>
+### Contributing
 
-<ul>
-<li><a href="https://make.wordpress.org/cli/handbook/bug-reports/"><strong>Bug reports</strong></a> - Help ensure your issue is resolved in a timely manner.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/contributing/"><strong>Contributing</strong></a> - An introduction to the contributing process.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/governance/"><strong>Governance</strong></a> - Summary of those behind WP-CLI.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/implementation-details/"><strong>Implementation details</strong></a> - Catalog of historical design decisions.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/philosophy/"><strong>Philosophy</strong></a> - Guidelines which inform project scope, command organization, and behavior.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/pull-requests/"><strong>Pull Requests</strong></a> - Submit your first bug fix or new feature.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/release-checklist/"><strong>Release checklist</strong></a> - Tasks performed during the process of tagging a release.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/roadmap/"><strong>Roadmap</strong></a> - Where WP-CLI is going in the future.</li>
-</ul>
+* **[Bug reports](https://make.wordpress.org/cli/handbook/bug-reports/)** - Help ensure your issue is resolved in a timely manner.
+* **[Contributing](https://make.wordpress.org/cli/handbook/contributing/)** - An introduction to the contributing process.
+* **[Governance](https://make.wordpress.org/cli/handbook/governance/)** - Summary of those behind WP-CLI.
+* **[Implementation details](https://make.wordpress.org/cli/handbook/implementation-details/)** - Catalog of historical design decisions.
+* **[Philosophy](https://make.wordpress.org/cli/handbook/philosophy/)** - Guidelines which inform project scope, command organization, and behavior.
+* **[Pull requests](https://make.wordpress.org/cli/handbook/pull-requests/)** - Submit your first bug fix or new feature.
+* **[Release checklist](https://make.wordpress.org/cli/handbook/release-checklist/)** - Tasks performed during the process of tagging a release.
+* **[Roadmap](https://make.wordpress.org/cli/handbook/roadmap/)** - Where WP-CLI is going in the future.
 
-<h3 id="misc">Misc</h3>
+### Misc
 
-<ul>
-<li><a href="https://make.wordpress.org/cli/handbook/plugin-unit-tests/"><strong>Plugin unit tests</strong></a> - How to set up and run PHPUnit tests for a WordPress plugin.</li>
-<li><a href="https://make.wordpress.org/cli/handbook/wish-list/"><strong>Website and Package Index wish list</strong></a> - A list of ideas and potential improvements for wp-cli.org</li>
-</ul>
+* **[Plugin unit tests](https://make.wordpress.org/cli/handbook/plugin-unit-tests/)** - How to set up and run PHPUnit tests for a WordPress plugin.
+* **[Website and Package Index wish list](https://make.wordpress.org/cli/handbook/wish-list/)** - A list of ideas and potential improvements for wp-cli.org
