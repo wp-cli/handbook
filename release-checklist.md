@@ -75,6 +75,11 @@ A pull request must be submitted to the Homebrew repo. This involves:
 * Updating the url and sha256 here: https://github.com/Homebrew/homebrew-php/blob/master/Formula/wp-cli.rb#L8-L9
 * Making the commit with format "wp-cli 0.24.0"
 
+To generate the sha256 (replace `x` with the minor version):
+
+    wget https://github.com/wp-cli/wp-cli/archive/v1.x.0.tar.gz
+    shasum -a 256 v1.x.0.tar.gz
+
 See <https://github.com/Homebrew/homebrew-php/pull/1687#issuecomment-98408399> and <https://github.com/Homebrew/homebrew-php/pull/3398#issuecomment-235896016> for background.
 
 ### Updating the website
