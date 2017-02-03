@@ -39,7 +39,7 @@ Third-party commands:
 
 All commands:
 
-* Follow the [documentation standards](/docs/documentation-standards/).
+* Follow the [documentation standards](https://make.wordpress.org/cli/handbook/documentation-standards/).
 
 ## Anatomy of a command
 
