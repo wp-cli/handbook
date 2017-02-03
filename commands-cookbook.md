@@ -15,7 +15,7 @@ Creating your own custom WP-CLI command can be easier than it looks — and you 
 
 ## Overview
 
-WP-CLI's goal is to offer a complete alternative to the WordPress admin; for any action you might want to perform in the WordPress admin, there should be an equivalent WP-CLI command. A **command** is an atomic unit of WP-CLI functionality. `wp plugin install` ([doc](/commands/plugin/install/)) is one such command, as is `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)). Commands are useful to WordPress users because they can offer simple, precise interfaces for performing complex tasks.
+WP-CLI's goal is to offer a complete alternative to the WordPress admin; for any action you might want to perform in the WordPress admin, there should be an equivalent WP-CLI command. A **command** is an atomic unit of WP-CLI functionality. `wp plugin install` ([doc](https://wp-cli.org/commands/plugin/install/)) is one such command, as is `wp plugin activate` ([doc](https://wp-cli.org/commands/plugin/activate/)). Commands are useful to WordPress users because they can offer simple, precise interfaces for performing complex tasks.
 
 _But_, the WordPress admin is a Swiss Army knife of infinite complexity. There's no way just this project could handle every use case. This is why WP-CLI includes a set of [common internal commands](https://wp-cli.org/commands/), while also offering a [rich internal API](http://wp-cli.org/docs/internal-api/) for third-parties to write and register their own commands.
 
@@ -426,11 +426,11 @@ WP_CLI::add_command( 'find-unused-themes', $find_unused_themes_command, array(
 
 Let's run through the [internal APIs](http://wp-cli.org/docs/internal-api/) this command uses to achieve its goal:
 
-* `WP_CLI::add_command()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-add-hook//docs/internal-api/wp-cli-add-command/)) is used to register a `find-unused-themes` command to the `$find_unused_themes_command` closure. The `before_invoke` argument makes it possible to verify the command is running on a multisite install, and error if not.
-* `WP_CLI::error()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-add-hook//docs/internal-api/wp-cli-error/)) renders a nicely formatted error message and exits.
-* `WP_CLI::launch_self()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-add-hook//docs/internal-api/wp-cli-launch-self/)) initially spawns a process to get a list of all sites, then is later used to get the list of themes for a given site.
-* `WP_CLI::log()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-add-hook//docs/internal-api/wp-cli-log/)) renders informational output to the end user.
-* `WP_CLI\Utils\format_items()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-add-hook//docs/internal-api/wp-cli-utils-format-items/)) renders the list of unused themes after the command has completed its discovery.
+* `WP_CLI::add_command()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-add-command/)) is used to register a `find-unused-themes` command to the `$find_unused_themes_command` closure. The `before_invoke` argument makes it possible to verify the command is running on a multisite install, and error if not.
+* `WP_CLI::error()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-error/)) renders a nicely formatted error message and exits.
+* `WP_CLI::launch_self()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-launch-self/)) initially spawns a process to get a list of all sites, then is later used to get the list of themes for a given site.
+* `WP_CLI::log()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-log/)) renders informational output to the end user.
+* `WP_CLI\Utils\format_items()` ([doc](http://wp-cli.org/docs/internal-api/wp-cli-utils-format-items/)) renders the list of unused themes after the command has completed its discovery.
 
 ### Help rendering
 
@@ -493,7 +493,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	
 ### Add to the package index
 
-Standalone WP-CLI commands can be added to and installed from the [package index](http://wp-cli.org/docs/internal-api/wp-cli-add-hook//package-index/). The only technical requirement for being listed in the package index is to include a valid composer.json file with an autoload declaration. We recommended including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
+Standalone WP-CLI commands can be added to and installed from the [package index](http://wp-cli.org/package-index/). The only technical requirement for being listed in the package index is to include a valid composer.json file with an autoload declaration. We recommended including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
 
 Here's a full composer.json example from the server command:
 
