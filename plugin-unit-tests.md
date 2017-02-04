@@ -19,7 +19,7 @@ So, let's get started:
 2) Generate the plugin test files: 
 
 ```bash
-wp scaffold plugin-tests my-plugin`
+wp scaffold plugin-tests my-plugin
 ```
 
 This command will generate all the files needed for running tests, including a `.travis.yml` file. If you host your plugin on Github and enable [Travis CI](http://about.travis-ci.org), the tests will be run automatically after every commit you make to the plugin.
