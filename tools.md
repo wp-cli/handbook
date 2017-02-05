@@ -38,6 +38,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | dreamobjects          | [DreamObjects](http://wordpress.org/extend/plugins/dreamobjects/)
 | edd                   | [Easy Digital Downloads](https://easydigitaldownloads.com/docs/wp-cli-commands/)
 | elasticpress          | [ElasticPress](https://github.com/10up/ElasticPress)
+| github-updater        | [GitHub Updater](https://github.com/afragen/github-updater)
 | google-sitemap        | [Google Sitemap Generator CLI](https://github.com/wp-cli/google-sitemap-generator-cli)
 | image-gen             | [Image Gen](https://github.com/trepmal/image-gen/)
 | import_sidebar        | [Widget Import Export](https://github.com/cftp/widget-importer)
