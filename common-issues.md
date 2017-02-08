@@ -56,6 +56,22 @@ See: [#1631](https://github.com/wp-cli/wp-cli/issues/1631)
 
 Please ensure you have the php-process extension installed. For example for Centos 6: `yum install php-process`
 
+### PHP Fatal error: Allowed memory size of 999999 bytes exhausted (tried to allocate 99 bytes)
+
+If you run into a PHP fatal error relating to memory when running `wp package install`, you're likely running out of memory.
+
+WP-CLI uses Composer under the hood to manage WP-CLI packages. However, Composer is a bit of a memory hog, so you'll need to increase your memory limit to accommodate it.
+
+```bash
+# Find your php.ini for PHP-CLI
+$ php -i | grep php.ini
+Configuration File (php.ini) Path => /usr/local/etc/php/7.0
+Loaded Configuration File => /usr/local/etc/php/7.0/php.ini
+# Increase memory_limit to 512M or greater
+$ vim /usr/local/etc/php/7.0/php.ini
+memory_limit = 512M
+```
+
 ### Error: YIKES! It looks like you're running this as root.
 
 Running WP-CLI as root is extremely dangerous. When you execute WP-CLI as root, any code within your WordPress instance (including third-party plugins and themes you've installed) will have full privileges to the entire server. This can enable malicious code within the WordPress instance to compromise the entire server.
