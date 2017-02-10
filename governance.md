@@ -13,11 +13,10 @@ description: Summary of those behind WP-CLI.
 * [wpcli](https://twitter.com/wpcli) twitter account
 * [wp-cli-commits](https://groups.google.com/forum/?fromgroups#!forum/wp-cli-commits) mailing list
 * [Cloudflare](https://www.cloudflare.com/) CDN account
-* [Mailchimp](http://mailchimp.com/) email newsletter account
 
 ### Who controls the wp-cli.org site?
 
-The domain currently owned by [andreascreten](https://github.com/andreascreten).
+The `wp-cli.org` domain currently owned by [andreascreten](https://github.com/andreascreten).
 
 The entire site is hosted on Github Pages, using Cloudflare for SSL:
 
@@ -30,6 +29,8 @@ The entire site is hosted on Github Pages, using Cloudflare for SSL:
 [1]: http://github.com/wp-cli/wp-cli.github.com
 [2]: http://github.com/wp-cli/package-index
 [3]: http://github.com/wp-cli/builds
+
+If you [subscribe for email updates](https://make.wordpress.org/cli/subscribe/), your email address is registered with WordPress.com through Automattic's Jetpack plugin.
 
 ### Why are some contributors [members](https://github.com/orgs/wp-cli/people) of the wp-cli organization?
 
