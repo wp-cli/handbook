@@ -62,6 +62,8 @@ If you run into a PHP fatal error relating to memory when running `wp package in
 
 WP-CLI uses Composer under the hood to manage WP-CLI packages. However, Composer is a bit of a memory hog, so you'll need to increase your memory limit to accommodate it.
 
+Edit your `php.ini` as a permanent fix:
+
 ```bash
 # Find your php.ini for PHP-CLI
 $ php -i | grep php.ini
@@ -70,6 +72,12 @@ Loaded Configuration File => /usr/local/etc/php/7.0/php.ini
 # Increase memory_limit to 512M or greater
 $ vim /usr/local/etc/php/7.0/php.ini
 memory_limit = 512M
+```
+
+Set `memory_limit` on the fly as a temporary fix:
+
+```bash
+$ php -d memory_limit=256M wp package install <package-name>
 ```
 
 ### Error: YIKES! It looks like you're running this as root.
