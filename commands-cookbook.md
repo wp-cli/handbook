@@ -291,8 +291,16 @@ Success: Hello, Joe!
 
 This is a special tag that tells WP-CLI when to execute the command. It supports [all registered WP-CLI hooks](http://wp-cli.org/docs/internal-api/wp-cli-add-hook/).
 
+Most WP-CLI commands execute after WordPress has loaded. The default behavior for a command is:
+
 ```
 @when after_wp_load
+```
+
+To have a WP-CLI command run before WordPress loads, use:
+
+```
+@when before_wp_load
 ```
 
 Do keep in mind most WP-CLI hooks fire before WordPress is loaded. If your command is loaded from a plugin or theme, `@when` will be essentially ignored.
