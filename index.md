@@ -15,7 +15,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Global parameters](https://make.wordpress.org/cli/handbook/config/)** - Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the command is run against.
 * **[Built-in commands](https://wp-cli.org/commands/)** - Commands included in every copy of WP-CLI.
 * **[Package index](https://wp-cli.org/package-index/)** - Commands maintained and supported by the community.
-* **[Internal API](https://wp-cli.org/commands/)** - Stable utilities considered safe to use in community commands.
+* **[Internal API](https://wp-cli.org/docs/internal-api/)** - Stable utilities considered safe to use in community commands.
 * **[Documentation standards](https://make.wordpress.org/cli/handbook/documentation-standards/)** - Standards for annotating WP-CLI commands.
 * **[Hosting companies](https://make.wordpress.org/cli/handbook/hosting-companies/)** - List of hosting companies where WP-CLI is installed by default.
 * **[Shell friends](https://make.wordpress.org/cli/handbook/shell-friends/)** - Helpful shortcuts for bash and zsh.
