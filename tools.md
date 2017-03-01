@@ -99,6 +99,7 @@ If you implement a WP-CLI command in one of your plugins, please list it here.
 
 ## Misc
 
+* [AnsiPress] (https://github.com/AnsiPress/AnsiPress) - Setup NGINX/WordPress Stack
 * [Bedrock](https://github.com/roots/bedrock) - WP base stack
 * [EasyEngine](https://github.com/rtCamp/easyengine/) - Hosting control panel
 * [WordPress Development Flow](https://github.com/cityindex/wordpress-development-flow) - retired
