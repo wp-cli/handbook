@@ -56,6 +56,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | p2-resolved-posts     | [P2 Resolved Posts](http://wordpress.org/plugins/p2-resolved-posts/)
 | p2p                   | [Posts 2 Posts](http://wordpress.org/plugins/posts-to-posts/)
 | pdf-light-viewer      | [PDF Light Viewer](https://github.com/antongorodezkiy/pdf-light-viewer)
+| phpcompat             | [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/)
 | post-gen              | [Post Gen](https://github.com/trepmal/post-gen/)
 | rest-api-toolbox      | [REST API Toolbox](https://github.com/petenelson/wp-rest-api-toolbox)
 | redis-cache           | [Redis Object Cache](http://wordpress.org/extend/plugins/redis-cache/)
