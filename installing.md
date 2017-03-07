@@ -47,7 +47,7 @@ WP-CLI version: 0.23.0
 
 Voila! You're now an official WP-CLI user.
 
-Wondering what to do next? Check out the [quick start guide](/docs/quick-start/) for a short introduction and some example usage.
+Wondering what to do next? Check out the [quick start guide](https://make.wordpress.org/cli/handbook/quick-start/) for a short introduction and some example usage.
 
 ### Updating WP-CLI
 

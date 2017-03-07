@@ -9,7 +9,7 @@ quick_links:
   - Practical Examples
 ---
 
-Congratulations! You've [installed WP-CLI](/docs/installing/) for the first time, and are ready to level-up your use of WordPress. This page contains a brief introduction to WP-CLI with some example usage.
+Congratulations! You've [installed WP-CLI](https://make.wordpress.org/cli/handbook/installing/) for the first time, and are ready to level-up your use of WordPress. This page contains a brief introduction to WP-CLI with some example usage.
 
 ## Introduction
 
@@ -133,4 +133,4 @@ Found 1 image to regenerate.
 Success: Finished regenerating the image.
 ```
 
-Wondering what's next? Browse through [all of WP-CLI's commands](/commands/) to explore your new world. Or, catch up with [shell friends](/docs/shell-friends/) to learn about helpful command line utilities.
+Wondering what's next? Browse through [all of WP-CLI's commands](/commands/) to explore your new world. Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.

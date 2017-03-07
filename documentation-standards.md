@@ -67,7 +67,7 @@ To break the example down piece by piece:
         + Eg: `Success: Database created.`
 * If possible, keep at least two examples for each command. One showing basic use and another advanced use. More use cases the better.
 
-For more details on how WP-CLI understands the PHPdoc, please see the [commands cookbook](/docs/commands-cookbook/).
+For more details on how WP-CLI understands the PHPdoc, please see the [commands cookbook](https://make.wordpress.org/cli/handbook/commands-cookbook/).
 
 ### Class annotation
 
