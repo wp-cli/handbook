@@ -1,10 +1,3 @@
----
-layout: doc
-title: Roadmap
-category: Contributing
-description: Where WP-CLI is going in the future.
----
-
 WP-CLI is released every 3-4 months, typically around the beta period of [WordPress's release cycle](https://wordpress.org/about/roadmap/):
 
 * Current: [v1.1.0](https://make.wordpress.org/cli/2017/02/01/version-1-1-0/) (February 2, 2017)
