@@ -15,7 +15,7 @@ Congratulations! You've [installed WP-CLI](https://make.wordpress.org/cli/handbo
 
 WP-CLI is a command line interface for WordPress. The project's goal is to offer a complete alternative to the WordPress admin; for any action you might want to perform in the WordPress admin, there should be an equivalent WP-CLI command.
 
-For instance, because you can install a plugin from the WordPress admin, you can also [install a plugin](/commands/plugin/install/) with WP-CLI:
+For instance, because you can install a plugin from the WordPress admin, you can also [install a plugin](https://wp-cli.org/commands/plugin/install/) with WP-CLI:
 
     $ wp plugin install akismet
     Installing Akismet (3.1.8)
@@ -24,7 +24,7 @@ For instance, because you can install a plugin from the WordPress admin, you can
     Installing the plugin...
     Plugin installed successfully.
 
-And, because you can also activate plugins from the WordPress admin, you can [activate a plugin](/commands/plugin/activate/) with WP-CLI:
+And, because you can also activate plugins from the WordPress admin, you can [activate a plugin](https://wp-cli.org/commands/plugin/activate/) with WP-CLI:
 
     $ wp plugin activate akismet
     Success: Plugin 'akismet' activated.
@@ -52,7 +52,7 @@ Ready to dive in? Here are some common examples of how WP-CLI is used:
 
 **Download and install WordPress in seconds**
 
-1. Download the latest version of WordPress with `wp core download` ([doc](/commands/core/download/)).
+1. Download the latest version of WordPress with `wp core download` ([doc](https://wp-cli.org/commands/core/download/)).
 
 ```
 $ wp core download --path=wpclidemo.dev
@@ -62,7 +62,7 @@ Using cached file '/home/vagrant/.wp-cli/cache/core/wordpress-4.6.1-en_US.tar.gz
 Success: WordPress downloaded.
 ```
 
-2. Create a new wp-config.php file with `wp core config` ([doc](/commands/core/config/)).
+2. Create a new wp-config.php file with `wp core config` ([doc](https://wp-cli.org/commands/core/config/)).
 
 ```
 $ cd wpclidemo.dev
@@ -70,14 +70,14 @@ $ wp core config --dbname=wpclidemo --dbuser=root
 Success: Generated 'wp-config.php' file.
 ```
 
-3. Create the database based on wp-config.php with `wp db create` ([doc](/commands/db/create/)).
+3. Create the database based on wp-config.php with `wp db create` ([doc](https://wp-cli.org/commands/db/create/)).
 
 ```
 $ wp db create
 Success: Database created.
 ```
 
-4. Install WordPress with `wp core install` ([doc](/commands/core/install/)).
+4. Install WordPress with `wp core install` ([doc](https://wp-cli.org/commands/core/install/)).
 
 ```
 $ wp core install --url=wpclidemo.dev --title="WP-CLI" --admin_user=wpcli --admin_password=wpcli --admin_email=info@wp-cli.org
@@ -88,7 +88,7 @@ That's it!
 
 **Update plugins to their latest version**
 
-Use `wp plugin update --all` ([doc](/commands/plugin/update/)) to update all plugins to their latest version.
+Use `wp plugin update --all` ([doc](https://wp-cli.org/commands/plugin/update/)) to update all plugins to their latest version.
 
 ```
 $ wp plugin update --all
@@ -115,7 +115,7 @@ Success: Updated 2/2 plugins.
 
 **Add a user as a super-admin**
 
-On multisite, use `wp super-admin add` ([doc](/commands/super-admin/add/)) to grant super admin capabilities to an existing user.
+On multisite, use `wp super-admin add` ([doc](https://wp-cli.org/commands/super-admin/add/)) to grant super admin capabilities to an existing user.
 
 ```
 $ wp super-admin add wpcli
@@ -124,7 +124,7 @@ Success: Granted super-admin capabilities.
 
 **Regenerate thumbnails**
 
-If you've added or changed an image size registered with `add_image_size()`, you may want to use `wp media regenerate` ([doc](/commands/media/regenerate/)) so your theme displays the correct image size.
+If you've added or changed an image size registered with `add_image_size()`, you may want to use `wp media regenerate` ([doc](https://wp-cli.org/commands/media/regenerate/)) so your theme displays the correct image size.
 
 ```
 wp media regenerate --yes
@@ -133,4 +133,4 @@ Found 1 image to regenerate.
 Success: Finished regenerating the image.
 ```
 
-Wondering what's next? Browse through [all of WP-CLI's commands](/commands/) to explore your new world. Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.
+Wondering what's next? Browse through [all of WP-CLI's commands](https://wp-cli.org/commands/) to explore your new world. Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.
