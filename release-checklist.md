@@ -1,13 +1,3 @@
----
-layout: doc
-title: Release checklist
-description: Tasks performed during the process of tagging a release.
-category: Contributing
-quick_links:
-  - Major/minor releases
-  - Patch releases
----
-
 This page describes the list of activities that developers must perform to produce a new release of WP-CLI.
 
 ## Major/minor releases

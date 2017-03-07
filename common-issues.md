@@ -1,10 +1,3 @@
----
-layout: doc
-title: Common issues and their fixes
-description: In case of fire, break glass.
-category: Guides
----
-
 ### Error: Can't connect to the database
 
 A few possibilities:
