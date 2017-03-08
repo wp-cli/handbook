@@ -27,7 +27,7 @@ Packages are to WP-CLI as plugins are to WordPress. There are distinct differenc
 
 Internal commands:
 
-* Usually cover functionality offered by a standard install WordPress. There are exceptions to this rule though, notably `wp search-replace` ([doc](/commands/search-replace/)).
+* Usually cover functionality offered by a standard install WordPress. There are exceptions to this rule though, notably `wp search-replace` ([doc](https://wp-cli.org/commands/search-replace/)).
 * Do not depend on other components such as plugins, themes etc.
 * Are maintained by the WP-CLI team.
 
