@@ -24,4 +24,4 @@ New features are developed as community packages first. Doing so enables:
 * More contribution opportunities.
 * Reduced complexity and maintenance burden for the core project.
 
-For more details on how WP-CLI releases are produced, please see [Philosophy](/docs/philosophy/) and [Governance](/docs/governance/).
+For more details on how WP-CLI releases are produced, please see [Philosophy](https://make.wordpress.org/cli/handbook/philosophy/) and [Governance](https://make.wordpress.org/cli/handbook/governance/).
