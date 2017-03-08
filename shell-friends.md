@@ -15,7 +15,7 @@ When 'bck-i-search' appears, your keystrokes will search against commands saved 
 
 ###  Combine WP-CLI commands
 
-In many cases, it can be extremely powerful to be able to pass the results of one command to another. Composability is a [key philosophy](/docs/philosophy/) of WP-CLI, and there are two common approaches for composing commands.
+In many cases, it can be extremely powerful to be able to pass the results of one command to another. Composability is a [key philosophy](https://make.wordpress.org/cli/handbook/philosophy/) of WP-CLI, and there are two common approaches for composing commands.
 
 *Command substitution* passes the output of one command to another command, without any transformation to the output.
 
