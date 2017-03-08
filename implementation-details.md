@@ -1,10 +1,3 @@
----
-layout: doc
-title: Implementation details
-description: Catalog of historical design decisions.
-category: Contributing
----
-
 This page contains some history on various implementation details of WP-CLI.
 
 ### Bootstrapping WordPress

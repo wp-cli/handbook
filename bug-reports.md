@@ -1,10 +1,3 @@
----
-layout: doc
-title: Bug reports
-category: Contributing
-description: Help ensure your issue is resolved in a timely manner.
----
-
 Think you've found a bug? We'd love for you to help us get it fixed.
 
 Before you create a new issue, you should:

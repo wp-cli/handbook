@@ -1,16 +1,3 @@
----
-layout: doc
-title: Commands cookbook
-description: The full 101 how commands work, writing your own, and sharing them with the world.
-category: Guides
-quick_links:
-  - Anatomy of a command
-  - Annotating with PHPDoc
-  - Command internals
-  - Writing tests
-  - Add to the package index
----
-
 Creating your own custom WP-CLI command can be easier than it looks — and you can use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) to dynamically generate everything but the command itself.
 
 ## Overview
