@@ -1,10 +1,3 @@
----
-layout: doc
-title: External resources
-description: Blog posts, slides and videos from users.
-category: Guides
----
-
 ## Blog posts & tutorials
 
 * [scribu: A Command-Line Interface for WordPress](http://scribu.net/wordpress/a-command-line-interface-for-wordpress.html)

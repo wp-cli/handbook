@@ -1,14 +1,3 @@
----
-layout: doc
-title: Installing
-category: Guides
-description: Recommended and alternative installation mechanisms.
-quick_links:
-  - Recommended Installation
-  - Installing nightly via Phar
-  - Installing via Composer
----
-
 ## Recommended installation
 
 The recommended way to install WP-CLI is by downloading the Phar build, marking it executable, and placing it on your PATH.
