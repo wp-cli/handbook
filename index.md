@@ -2,7 +2,7 @@ Here are some helpful guides and resources for using WP-CLI.
 
 Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cli/handbook/issues) to request improvements.
 
-### Guides
+## Guides
 
 * **[Installing](https://make.wordpress.org/cli/handbook/installing/)** - Recommended and alternative installation mechanisms.
 * **[Quick start](https://make.wordpress.org/cli/handbook/quick-start/)** - Where to begin after you've installed WP-CLI for the first time.
@@ -10,7 +10,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/)** - In case of fire, break glass.
 * **[External resources](https://make.wordpress.org/cli/handbook/external-resources/)** - Blog posts, slides and videos from users.
 
-### References
+## References
 
 * **[Global parameters](https://make.wordpress.org/cli/handbook/config/)** - Variables defining how a command is executed, including which WordPress user the command is run as and which WordPress instance the command is run against.
 * **[Built-in commands](https://wp-cli.org/commands/)** - Commands included in every copy of WP-CLI.
@@ -21,7 +21,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Shell friends](https://make.wordpress.org/cli/handbook/shell-friends/)** - Helpful shortcuts for bash and zsh.
 * **[Integrated tools](https://make.wordpress.org/cli/handbook/tools/)** - Plugins, wrappers, and other projects that integrate with WP-CLI in some form.
 
-### Contributing
+## Contributing
 
 * **[Bug reports](https://make.wordpress.org/cli/handbook/bug-reports/)** - Help ensure your issue is resolved in a timely manner.
 * **[Contributing](https://make.wordpress.org/cli/handbook/contributing/)** - An introduction to the contributing process.
@@ -32,7 +32,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Release checklist](https://make.wordpress.org/cli/handbook/release-checklist/)** - Tasks performed during the process of tagging a release.
 * **[Roadmap](https://make.wordpress.org/cli/handbook/roadmap/)** - Where WP-CLI is going in the future.
 
-### Misc
+## Misc
 
 * **[Plugin unit tests](https://make.wordpress.org/cli/handbook/plugin-unit-tests/)** - How to set up and run PHPUnit tests for a WordPress plugin.
 * **[Website and Package Index wish list](https://make.wordpress.org/cli/handbook/wish-list/)** - A list of ideas and potential improvements for wp-cli.org
