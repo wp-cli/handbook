@@ -1,6 +1,9 @@
 ## Recommended installation
 
+Wp-cli used phar archive. The phar archives are similar in concept to Java JAR archives. For more information [look this](http://php.net/manual/en/phar.using.intro.php).
+
 The recommended way to install WP-CLI is by downloading the Phar build, marking it executable, and placing it on your PATH.
+
 
 First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
