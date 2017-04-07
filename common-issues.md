@@ -12,6 +12,21 @@ b) it's a WordPress multisite install.
 
 c) the database credentials in `wp-config.php` are actually incorrect.
 
+### Running `wp --info` produces HTML output
+
+If you run `wp --info` on a server with Phar support disabled, you may see:
+
+```
+$ wp --info
+Content-type: text/html; charset=UTF-8
+```
+
+When using the WP-CLI Phar, you'll need to whitelist Phar support in your `php.ini`:
+
+```
+suhosin.executor.include.whitelist = phar
+```
+
 ### PHP Fatal error: Cannot redeclare wp_unregister_GLOBALS()
 
 If you get this fatal error running the `wp` command, you may have moved or edited `wp-config.php` beyond what wp-cli supports:
