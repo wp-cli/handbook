@@ -201,7 +201,7 @@ The longdesc is middle part of the PHPDoc:
 
 Options defined in the longdesc are interpreted as the command's **synopsis**:
 
-* `<name>` is a required positional argument. Changing it to `<name>..` would mean the command could accept one or more positional arguments.
+* `<name>` is a required positional argument. Changing it to `<name>...` would mean the command could accept one or more positional arguments.
 * `[--type=<type>]` is an optional associative argument which defaults to 'success' and accepts either 'success' or 'error'. Changing it to `[--error]` would change the argument to behave as an optional boolean flag.
 
 *Note*: To accept arbitrary/unlimited number of optional associative arguments you would use the annotation `[--<field>=<value>]`.  So for example:
