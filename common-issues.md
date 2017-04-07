@@ -70,7 +70,7 @@ memory_limit = 512M
 Set `memory_limit` on the fly as a temporary fix:
 
 ```bash
-$ php -d memory_limit=256M wp package install <package-name>
+$ php -d memory_limit=512M wp package install <package-name>
 ```
 
 ### Error: YIKES! It looks like you're running this as root.
