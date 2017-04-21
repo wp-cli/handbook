@@ -1,0 +1,310 @@
+{
+    "bug-reports": {
+        "slug": "bug-reports",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/bug-reports.md",
+        "parent": null
+    },
+    "commands-cookbook": {
+        "slug": "commands-cookbook",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands-cookbook.md",
+        "parent": null
+    },
+    "common-issues": {
+        "slug": "common-issues",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/common-issues.md",
+        "parent": null
+    },
+    "config": {
+        "slug": "config",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/config.md",
+        "parent": null
+    },
+    "contributing": {
+        "slug": "contributing",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/contributing.md",
+        "parent": null
+    },
+    "documentation-standards": {
+        "slug": "documentation-standards",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/documentation-standards.md",
+        "parent": null
+    },
+    "external-resources": {
+        "slug": "external-resources",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/external-resources.md",
+        "parent": null
+    },
+    "governance": {
+        "slug": "governance",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/governance.md",
+        "parent": null
+    },
+    "hosting-companies": {
+        "slug": "hosting-companies",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/hosting-companies.md",
+        "parent": null
+    },
+    "implementation-details": {
+        "slug": "implementation-details",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/implementation-details.md",
+        "parent": null
+    },
+    "index": {
+        "slug": "index",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/index.md",
+        "parent": null
+    },
+    "installing": {
+        "slug": "installing",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/installing.md",
+        "parent": null
+    },
+    "internal-api": {
+        "slug": "internal-api",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api.md",
+        "parent": null
+    },
+    "philosophy": {
+        "slug": "philosophy",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/philosophy.md",
+        "parent": null
+    },
+    "plugin-unit-tests": {
+        "slug": "plugin-unit-tests",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/plugin-unit-tests.md",
+        "parent": null
+    },
+    "pull-requests": {
+        "slug": "pull-requests",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/pull-requests.md",
+        "parent": null
+    },
+    "quick-start": {
+        "slug": "quick-start",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/quick-start.md",
+        "parent": null
+    },
+    "release-checklist": {
+        "slug": "release-checklist",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/release-checklist.md",
+        "parent": null
+    },
+    "roadmap": {
+        "slug": "roadmap",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/roadmap.md",
+        "parent": null
+    },
+    "shell-friends": {
+        "slug": "shell-friends",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/shell-friends.md",
+        "parent": null
+    },
+    "tools": {
+        "slug": "tools",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/tools.md",
+        "parent": null
+    },
+    "wish-list": {
+        "slug": "wish-list",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/wish-list.md",
+        "parent": null
+    },
+    "wp-cli-add-command": {
+        "title": "WP_CLI::add_command()",
+        "slug": "wp-cli-add-command",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-add-command.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-add-hook": {
+        "title": "WP_CLI::add_hook()",
+        "slug": "wp-cli-add-hook",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-add-hook.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-add-wp-hook": {
+        "title": "WP_CLI::add_wp_hook()",
+        "slug": "wp-cli-add-wp-hook",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-add-wp-hook.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-colorize": {
+        "title": "WP_CLI::colorize()",
+        "slug": "wp-cli-colorize",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-colorize.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-confirm": {
+        "title": "WP_CLI::confirm()",
+        "slug": "wp-cli-confirm",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-confirm.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-debug": {
+        "title": "WP_CLI::debug()",
+        "slug": "wp-cli-debug",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-debug.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-do-hook": {
+        "title": "WP_CLI::do_hook()",
+        "slug": "wp-cli-do-hook",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-do-hook.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-error-multi-line": {
+        "title": "WP_CLI::error_multi_line()",
+        "slug": "wp-cli-error-multi-line",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-error-multi-line.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-error": {
+        "title": "WP_CLI::error()",
+        "slug": "wp-cli-error",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-error.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-get-config": {
+        "title": "WP_CLI::get_config()",
+        "slug": "wp-cli-get-config",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-get-config.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-get-php-binary": {
+        "title": "WP_CLI::get_php_binary()",
+        "slug": "wp-cli-get-php-binary",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-get-php-binary.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-halt": {
+        "title": "WP_CLI::halt()",
+        "slug": "wp-cli-halt",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-halt.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-launch-self": {
+        "title": "WP_CLI::launch_self()",
+        "slug": "wp-cli-launch-self",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-launch-self.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-launch": {
+        "title": "WP_CLI::launch()",
+        "slug": "wp-cli-launch",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-launch.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-line": {
+        "title": "WP_CLI::line()",
+        "slug": "wp-cli-line",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-line.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-log": {
+        "title": "WP_CLI::log()",
+        "slug": "wp-cli-log",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-log.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-read-value": {
+        "title": "WP_CLI::read_value()",
+        "slug": "wp-cli-read-value",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-read-value.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-run-command": {
+        "title": "WP_CLI::run_command()",
+        "slug": "wp-cli-run-command",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-run-command.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-runcommand": {
+        "title": "WP_CLI::runcommand()",
+        "slug": "wp-cli-runcommand",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-runcommand.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-success": {
+        "title": "WP_CLI::success()",
+        "slug": "wp-cli-success",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-success.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-basename": {
+        "title": "WP_CLI\\Utils\\basename()",
+        "slug": "wp-cli-utils-basename",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-basename.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-format-items": {
+        "title": "WP_CLI\\Utils\\format_items()",
+        "slug": "wp-cli-utils-format-items",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-format-items.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-get-flag-value": {
+        "title": "WP_CLI\\Utils\\get_flag_value()",
+        "slug": "wp-cli-utils-get-flag-value",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-flag-value.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-get-named-sem-ver": {
+        "title": "WP_CLI\\Utils\\get_named_sem_ver()",
+        "slug": "wp-cli-utils-get-named-sem-ver",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-named-sem-ver.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-get-temp-dir": {
+        "title": "WP_CLI\\Utils\\get_temp_dir()",
+        "slug": "wp-cli-utils-get-temp-dir",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-temp-dir.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-http-request": {
+        "title": "WP_CLI\\Utils\\http_request()",
+        "slug": "wp-cli-utils-http-request",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-http-request.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-launch-editor-for-input": {
+        "title": "WP_CLI\\Utils\\launch_editor_for_input()",
+        "slug": "wp-cli-utils-launch-editor-for-input",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-launch-editor-for-input.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-make-progress-bar": {
+        "title": "WP_CLI\\Utils\\make_progress_bar()",
+        "slug": "wp-cli-utils-make-progress-bar",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-make-progress-bar.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-parse-ssh-url": {
+        "title": "WP_CLI\\Utils\\parse_ssh_url()",
+        "slug": "wp-cli-utils-parse-ssh-url",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-parse-ssh-url.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-parse-str-to-argv": {
+        "title": "WP_CLI\\Utils\\parse_str_to_argv()",
+        "slug": "wp-cli-utils-parse-str-to-argv",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-parse-str-to-argv.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-report-batch-operation-results": {
+        "title": "WP_CLI\\Utils\\report_batch_operation_results()",
+        "slug": "wp-cli-utils-report-batch-operation-results",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-report-batch-operation-results.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-write-csv": {
+        "title": "WP_CLI\\Utils\\write_csv()",
+        "slug": "wp-cli-utils-write-csv",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-write-csv.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-warning": {
+        "title": "WP_CLI::warning()",
+        "slug": "wp-cli-warning",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-warning.md",
+        "parent": "internal-api"
+    }
+}
