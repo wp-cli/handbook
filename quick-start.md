@@ -1,3 +1,5 @@
+# Quick Start
+
 Congratulations! You've [installed WP-CLI](https://make.wordpress.org/cli/handbook/installing/) for the first time, and are ready to level-up your use of WordPress. This page contains a brief introduction to WP-CLI with some example usage.
 
 ## Introduction

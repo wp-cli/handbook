@@ -1,3 +1,5 @@
+# Hosting Companies
+
 The following is a list of hosting companies that have WP-CLI installed by default for their customers, i.e. when they first SSH into their server, the `wp` command is already available.
 
 In alphabetical order:

@@ -1,3 +1,5 @@
+# Handbook
+
 Here are some helpful guides and resources for using WP-CLI.
 
 Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cli/handbook/issues) to request improvements.

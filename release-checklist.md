@@ -1,3 +1,5 @@
+# Release Checklist
+
 This page describes the list of activities that developers must perform to produce a new release of WP-CLI.
 
 ## Major/minor releases

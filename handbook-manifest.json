@@ -1,110 +1,132 @@
 {
     "bug-reports": {
+        "title": "Bug Reports",
         "slug": "bug-reports",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/bug-reports.md",
         "parent": null
     },
     "commands-cookbook": {
+        "title": "Commands Cookbook",
         "slug": "commands-cookbook",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands-cookbook.md",
         "parent": null
     },
     "common-issues": {
+        "title": "Common Issues",
         "slug": "common-issues",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/common-issues.md",
         "parent": null
     },
     "config": {
+        "title": "Config",
         "slug": "config",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/config.md",
         "parent": null
     },
     "contributing": {
+        "title": "Contributing",
         "slug": "contributing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/contributing.md",
         "parent": null
     },
     "documentation-standards": {
+        "title": "Documentation Standards",
         "slug": "documentation-standards",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/documentation-standards.md",
         "parent": null
     },
     "external-resources": {
+        "title": "External Resources",
         "slug": "external-resources",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/external-resources.md",
         "parent": null
     },
     "governance": {
+        "title": "Governance",
         "slug": "governance",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/governance.md",
         "parent": null
     },
     "hosting-companies": {
+        "title": "Hosting Companies",
         "slug": "hosting-companies",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/hosting-companies.md",
         "parent": null
     },
     "implementation-details": {
+        "title": "Implementation Details",
         "slug": "implementation-details",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/implementation-details.md",
         "parent": null
     },
     "index": {
-        "slug": "index",
+        "title": "Handbook",
+        "slug": "handbook",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/index.md",
         "parent": null
     },
     "installing": {
+        "title": "Installing",
         "slug": "installing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/installing.md",
         "parent": null
     },
     "internal-api": {
+        "title": "",
         "slug": "internal-api",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api.md",
         "parent": null
     },
     "philosophy": {
+        "title": "Philosophy",
         "slug": "philosophy",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/philosophy.md",
         "parent": null
     },
     "plugin-unit-tests": {
+        "title": "Plugin Unit Tests",
         "slug": "plugin-unit-tests",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/plugin-unit-tests.md",
         "parent": null
     },
     "pull-requests": {
+        "title": "Pull Requests",
         "slug": "pull-requests",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/pull-requests.md",
         "parent": null
     },
     "quick-start": {
+        "title": "Quick Start",
         "slug": "quick-start",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/quick-start.md",
         "parent": null
     },
     "release-checklist": {
+        "title": "Release Checklist",
         "slug": "release-checklist",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/release-checklist.md",
         "parent": null
     },
     "roadmap": {
+        "title": "Roadmap",
         "slug": "roadmap",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/roadmap.md",
         "parent": null
     },
     "shell-friends": {
+        "title": "Shell Friends",
         "slug": "shell-friends",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/shell-friends.md",
         "parent": null
     },
     "tools": {
+        "title": "Tools",
         "slug": "tools",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/tools.md",
         "parent": null
     },
     "wish-list": {
+        "title": "Wish List",
         "slug": "wish-list",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/wish-list.md",
         "parent": null
