@@ -1,3 +1,5 @@
+# Tools
+
 The following is a list of projects that integrate with WP-CLI in some form. For installable WP-CLI packages, please see the [package index](/package-index/).
 
 ## Plugins

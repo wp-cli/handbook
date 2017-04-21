@@ -1,3 +1,5 @@
+# Shell Friends
+
 As you advance upon your use of WP-CLI, you'll find that a little bit of command line knowledge can have a huge impact on your workflow. Here are some of our favorite shell helper utilities.
 
 ## You Should Know
