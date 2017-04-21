@@ -72,7 +72,7 @@
         "parent": null
     },
     "internal-api": {
-        "title": "",
+        "title": "Internal API",
         "slug": "internal-api",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api.md",
         "parent": null
