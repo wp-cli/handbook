@@ -96,6 +96,44 @@ class Command {
 	}
 
 	/**
+	 * Generate a manifest document of all handbook pages
+	 *
+	 * @subcommand gen-hb-manifest
+	 */
+	public function gen_hb_manifest() {
+		$manifest = array();
+		// Top-level pages
+		foreach( glob( WP_CLI_HANDBOOK_PATH . '/*.md' ) as $file ) {
+			$slug = basename( $file, '.md' );
+			if ( 'README' === $slug ) {
+				continue;
+			}
+			$manifest[ $slug ] = array(
+				'slug'            => $slug,
+				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/%s.md', $slug ),
+				'parent'          => null,
+			);
+		}
+		// Internal API pages
+		foreach( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
+			$slug = basename( $file, '.md' );
+			$title = '';
+			$contents = file_get_contents( $file );
+			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
+				$title = $matches[1];
+			}
+			$manifest[ $slug ] = array(
+				'title'           => $title,
+				'slug'            => $slug,
+				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/internal-api/%s.md', $slug ),
+				'parent'          => 'internal-api',
+			);
+		}
+		file_put_contents( WP_CLI_HANDBOOK_PATH . '/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
+		WP_CLI::success( 'Generated handbook-manifest.json' );
+	}
+
+	/**
 	 * Dump internal API PHPDoc to JSON
 	 *
 	 * @subcommand api-dump
