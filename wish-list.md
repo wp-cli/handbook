@@ -1,3 +1,5 @@
+# Wish List
+
 An ongoing list of ideas and potential improvements for wp-cli.org.
 
 ### WP-CLI

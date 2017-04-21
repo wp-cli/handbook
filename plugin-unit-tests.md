@@ -1,3 +1,5 @@
+# Plugin Unit Tests
+
 This guide will demonstrate how to:
 
 * Set up unit tests for an existing plugin, using WP-CLI

@@ -1,3 +1,5 @@
+# Common Issues
+
 ### Error: Can't connect to the database
 
 A few possibilities:

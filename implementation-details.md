@@ -1,3 +1,5 @@
+# Implementation Details
+
 This page contains some history on various implementation details of WP-CLI.
 
 ### Bootstrapping WordPress
