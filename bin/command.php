@@ -108,8 +108,14 @@ class Command {
 			if ( 'README' === $slug ) {
 				continue;
 			}
+			$title = '';
+			$contents = file_get_contents( $file );
+			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
+				$title = $matches[1];
+			}
 			$manifest[ $slug ] = array(
-				'slug'            => $slug,
+				'title'           => $title,
+				'slug'            => 'index' === $slug ? 'handbook' : $slug,
 				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/%s.md', $slug ),
 				'parent'          => null,
 			);

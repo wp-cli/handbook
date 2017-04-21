@@ -1,3 +1,5 @@
+# Commands Cookbook
+
 Creating your own custom WP-CLI command can be easier than it looks — and you can use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) to dynamically generate everything but the command itself.
 
 ## Overview

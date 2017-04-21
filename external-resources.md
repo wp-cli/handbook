@@ -1,3 +1,5 @@
+# External Resources
+
 ## Blog posts & tutorials
 
 * [scribu: A Command-Line Interface for WordPress](http://scribu.net/wordpress/a-command-line-interface-for-wordpress.html)

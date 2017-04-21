@@ -1,3 +1,5 @@
+# Contributing
+
 Welcome and thanks!
 
 We appreciate you taking the initiative to contribute to WP-CLI. It’s because of you, and the community around you, that WP-CLI is such a great project.
