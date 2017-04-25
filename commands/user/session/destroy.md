@@ -1,12 +1,8 @@
 # wp user session destroy
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [session](/commands/user/session/) &raquo; destroy</small>
-
-`wp user session destroy` - Destroy a session for the given user.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-session-destroy+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Destroy a session for the given user.
 
 ### OPTIONS
 

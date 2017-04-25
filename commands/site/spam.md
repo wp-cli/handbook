@@ -1,12 +1,8 @@
 # wp site spam
 
-<small>[Commands](/commands/) &raquo; [site](/commands/site/) &raquo; spam</small>
-
-`wp site spam` - Mark one or more sites as spam.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-spam+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Mark one or more sites as spam.
 
 ### OPTIONS
 

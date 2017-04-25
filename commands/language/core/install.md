@@ -1,12 +1,8 @@
 # wp language core install
 
-<small>[Commands](/commands/) &raquo; [language](/commands/language/) &raquo; [core](/commands/language/core/) &raquo; install</small>
-
-`wp language core install` - Install a given language.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Alanguage-core-install+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Install a given language.
 
 Downloads the language pack from WordPress.org.
 

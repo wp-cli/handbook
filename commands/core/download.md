@@ -1,12 +1,8 @@
 # wp core download
 
-<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; download</small>
-
-`wp core download` - Download core WordPress files.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-download+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Download core WordPress files.
 
 Downloads and extracts WordPress core files to the specified path. Uses
 an archive file stored in cache if WordPress has been previously

@@ -1,12 +1,8 @@
 # wp network meta add
 
-<small>[Commands](/commands/) &raquo; [network](/commands/network/) &raquo; [meta](/commands/network/meta/) &raquo; add</small>
-
-`wp network meta add` - Add a meta field.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Anetwork-meta-add+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Add a meta field.
 
 ### OPTIONS
 

@@ -1,12 +1,8 @@
 # wp term recount
 
-<small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; recount</small>
-
-`wp term recount` - Recalculate number of posts assigned to each term.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-recount+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Recalculate number of posts assigned to each term.
 
 In instances where manual updates are made to the terms assigned to
 posts in the database, the number of posts associated with a term

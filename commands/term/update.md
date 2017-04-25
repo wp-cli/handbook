@@ -1,12 +1,8 @@
 # wp term update
 
-<small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; update</small>
-
-`wp term update` - Update an existing term.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Update an existing term.
 
 ### OPTIONS
 
