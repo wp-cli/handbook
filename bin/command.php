@@ -107,6 +107,27 @@ EOT;
 	}
 
 	/**
+	 * Generate command pages
+	 *
+	 * @subcommand gen-commands
+	 */
+	public function gen_commands() {
+		$wp = self::invoke_wp_cli( 'wp --skip-packages cli cmd-dump' );
+
+		foreach( $wp['subcommands'] as $k => $cmd ) {
+			if ( in_array( $cmd['name'], array( 'website', 'api-dump' ) ) ) {
+				unset( $wp['subcommands'][ $k ] );
+			}
+		}
+		$wp['subcommands'] = array_values( $wp['subcommands'] );
+
+		foreach ( $wp['subcommands'] as $cmd ) {
+			self::gen_cmd_pages( $cmd );
+		}
+		WP_CLI::success( 'Generated all command pages.' );
+	}
+
+	/**
 	 * Generate a manifest document of all handbook pages
 	 *
 	 * @subcommand gen-hb-manifest
@@ -182,6 +203,65 @@ EOT;
 			}
 		}
 		echo json_encode( $apis );
+	}
+
+	private static function gen_cmd_pages( $cmd, $parent = array() ) {
+		$parent[] = $cmd['name'];
+
+		$binding = $cmd;
+		$binding['synopsis'] = implode( ' ', $parent );
+		$binding['path'] = implode( '/', $parent );
+		$path = '/commands/';
+		$binding['breadcrumbs'] = '[Commands](' . $path . ')';
+		foreach( $parent as $i => $p ) {
+			$path .= $p . '/';
+			if ( $i < ( count( $parent ) - 1 ) ) {
+				$binding['breadcrumbs'] .= " &raquo; [{$p}]({$path})";
+			} else {
+				$binding['breadcrumbs'] .= " &raquo; {$p}";
+			}
+		}
+		$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? array(true) : false;
+
+		if ( $cmd['longdesc'] ) {
+			$docs = $cmd['longdesc'];
+			$docs = htmlspecialchars( $docs, ENT_COMPAT, 'UTF-8' );
+
+			// decrease header level
+			$docs = preg_replace( '/^## /m', '### ', $docs );
+
+			// escape `--` so that it doesn't get converted into `&mdash;`
+			$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
+			$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
+
+			// hack to prevent double encoding in code blocks
+			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
+			$docs = preg_replace( '/ &gt; /', ' > ', $docs );
+			$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
+			$docs = preg_replace( '/&quot;/', '"', $docs );
+			$docs = preg_replace( '/wp&gt; /', 'wp> ', $docs );
+			$docs = preg_replace( '/=&gt;/', '=>', $docs );
+
+			// Strip global parameters -> added in footer
+			$docs = preg_replace( '/#?## GLOBAL PARAMETERS.+/s', '', $docs );
+
+			$binding['docs'] = $docs;
+			$binding['github_issues_link'] = 'https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3A' . urlencode( 'command:' . str_replace( ' ', '-', $binding['synopsis'] ) ) . '+sort%3Aupdated-desc';
+		}
+
+		$path = dirname( __DIR__ ) . "/commands/" . $binding['path'];
+		if ( !is_dir( dirname( $path ) ) ) {
+			mkdir( dirname( $path ) );
+		}
+		file_put_contents( "$path.md", self::render( 'subcmd-list.mustache', $binding ) );
+		WP_CLI::log( 'Generated /commands/' . $binding['path'] . '/' );
+
+		if ( !isset( $cmd['subcommands'] ) )
+			return;
+
+		foreach ( $cmd['subcommands'] as $subcmd ) {
+			self::gen_cmd_pages( $subcmd, $parent );
+		}
 	}
 
 	/**
