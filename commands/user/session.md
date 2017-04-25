@@ -30,11 +30,11 @@ Manage a user's sessions.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/user/session/destroy/">destroy</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/user/session/destroy/">destroy</a></td>
 			<td>Destroy a session for the given user.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/user/session/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/user/session/list/">list</a></td>
 			<td>List sessions for the given user.</td>
 		</tr>
 	</tbody>

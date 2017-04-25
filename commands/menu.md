@@ -40,23 +40,23 @@ List, create, assign, and delete menus.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/menu/create/">create</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/create/">create</a></td>
 			<td>Create a new menu.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/delete/">delete</a></td>
 			<td>Delete one or more menus.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/item/">item</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/">item</a></td>
 			<td>List, add, and delete items associated with a menu.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/list/">list</a></td>
 			<td>Get a list of menus.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/location/">location</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/location/">location</a></td>
 			<td>Manage a menu's assignment to locations.</td>
 		</tr>
 	</tbody>

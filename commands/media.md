@@ -31,11 +31,11 @@ Manage attachments.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/media/import/">import</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/media/import/">import</a></td>
 			<td>Create attachments from local files or URLs.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/media/regenerate/">regenerate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/media/regenerate/">regenerate</a></td>
 			<td>Regenerate thumbnails for one or more attachments.</td>
 		</tr>
 	</tbody>

@@ -34,11 +34,11 @@ Manage post types.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/post-type/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post-type/get/">get</a></td>
 			<td>Get details about a registered post type.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post-type/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post-type/list/">list</a></td>
 			<td>List registered post types.</td>
 		</tr>
 	</tbody>

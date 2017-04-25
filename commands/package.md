@@ -61,27 +61,27 @@ Learn how to create your own command from the
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/package/browse/">browse</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/package/browse/">browse</a></td>
 			<td>Browse WP-CLI packages available for installation.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/package/install/">install</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/package/install/">install</a></td>
 			<td>Install a WP-CLI package.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/package/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/package/list/">list</a></td>
 			<td>List installed WP-CLI packages.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/package/path/">path</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/package/path/">path</a></td>
 			<td>Get the path to an installed WP-CLI package, or the package directory.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/package/uninstall/">uninstall</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/package/uninstall/">uninstall</a></td>
 			<td>Uninstall a WP-CLI package.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/package/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/package/update/">update</a></td>
 			<td>Update all installed WP-CLI packages to their latest version.</td>
 		</tr>
 	</tbody>

@@ -19,7 +19,7 @@ Verify WordPress core checksums.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/checksum/core/">core</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/checksum/core/">core</a></td>
 			<td>Verify WordPress files against WordPress.org's checksums.</td>
 		</tr>
 	</tbody>

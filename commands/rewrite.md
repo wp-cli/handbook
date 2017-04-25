@@ -36,15 +36,15 @@ Manage rewrite rules.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/rewrite/flush/">flush</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/rewrite/flush/">flush</a></td>
 			<td>Flush rewrite rules.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/rewrite/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/rewrite/list/">list</a></td>
 			<td>Get a list of the current rewrite rules.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/rewrite/structure/">structure</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/rewrite/structure/">structure</a></td>
 			<td>Update the permalink structure.</td>
 		</tr>
 	</tbody>

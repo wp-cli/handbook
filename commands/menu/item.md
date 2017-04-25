@@ -33,27 +33,27 @@ List, add, and delete items associated with a menu.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/menu/item/add-custom/">add-custom</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/add-custom/">add-custom</a></td>
 			<td>Add a custom menu item.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/item/add-post/">add-post</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/add-post/">add-post</a></td>
 			<td>Add a post as a menu item.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/item/add-term/">add-term</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/add-term/">add-term</a></td>
 			<td>Add a taxonomy term as a menu item.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/item/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/delete/">delete</a></td>
 			<td>Delete one or more items from a menu.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/item/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/list/">list</a></td>
 			<td>Get a list of items associated with a menu.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/item/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/item/update/">update</a></td>
 			<td>Update a menu item.</td>
 		</tr>
 	</tbody>

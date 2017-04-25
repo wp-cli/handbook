@@ -44,35 +44,35 @@ Manage terms.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/term/create/">create</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/create/">create</a></td>
 			<td>Create a new term.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/delete/">delete</a></td>
 			<td>Delete an existing term.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/generate/">generate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/generate/">generate</a></td>
 			<td>Generate some terms.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/get/">get</a></td>
 			<td>Get details about a term.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/list/">list</a></td>
 			<td>List terms in a taxonomy.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/meta/">meta</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/meta/">meta</a></td>
 			<td>Manage term custom fields.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/recount/">recount</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/recount/">recount</a></td>
 			<td>Recalculate number of posts assigned to each term.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/term/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/term/update/">update</a></td>
 			<td>Update an existing term.</td>
 		</tr>
 	</tbody>

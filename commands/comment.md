@@ -36,71 +36,71 @@ Manage comments.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/comment/approve/">approve</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/approve/">approve</a></td>
 			<td>Approve a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/count/">count</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/count/">count</a></td>
 			<td>Count comments, on whole blog or on a given post.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/create/">create</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/create/">create</a></td>
 			<td>Create a new comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/delete/">delete</a></td>
 			<td>Delete a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/exists/">exists</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/exists/">exists</a></td>
 			<td>Verify whether a comment exists.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/generate/">generate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/generate/">generate</a></td>
 			<td>Generate some number of new dummy comments.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/get/">get</a></td>
 			<td>Get data of a single comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/list/">list</a></td>
 			<td>Get a list of comments.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/meta/">meta</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/meta/">meta</a></td>
 			<td>Manage comment custom fields.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/recount/">recount</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/recount/">recount</a></td>
 			<td>Recalculate the comment_count value for one or more posts.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/spam/">spam</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/spam/">spam</a></td>
 			<td>Mark a comment as spam.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/status/">status</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/status/">status</a></td>
 			<td>Get status of a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/trash/">trash</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/trash/">trash</a></td>
 			<td>Trash a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/unapprove/">unapprove</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/unapprove/">unapprove</a></td>
 			<td>Unapprove a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/unspam/">unspam</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/unspam/">unspam</a></td>
 			<td>Unmark a comment as spam.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/untrash/">untrash</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/untrash/">untrash</a></td>
 			<td>Untrash a comment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/update/">update</a></td>
 			<td>Update one or more comments.</td>
 		</tr>
 	</tbody>

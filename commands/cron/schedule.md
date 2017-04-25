@@ -31,7 +31,7 @@ Manage WP-Cron schedules.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/cron/schedule/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cron/schedule/list/">list</a></td>
 			<td>List available cron schedules.</td>
 		</tr>
 	</tbody>

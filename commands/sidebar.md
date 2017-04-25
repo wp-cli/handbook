@@ -25,7 +25,7 @@ Manage sidebars.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/sidebar/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/sidebar/list/">list</a></td>
 			<td>List registered sidebars.</td>
 		</tr>
 	</tbody>

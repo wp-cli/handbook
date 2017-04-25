@@ -19,7 +19,7 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/language/core/">core</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/language/core/">core</a></td>
 			<td>Manage core language.</td>
 		</tr>
 	</tbody>

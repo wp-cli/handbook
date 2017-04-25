@@ -33,11 +33,11 @@ Manage taxonomies.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/taxonomy/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/taxonomy/get/">get</a></td>
 			<td>Get details about a registered taxonomy.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/taxonomy/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/taxonomy/list/">list</a></td>
 			<td>List registered taxonomies.</td>
 		</tr>
 	</tbody>
