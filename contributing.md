@@ -18,15 +18,15 @@ Once you’ve done a bit of searching and discovered there isn’t an open or fi
 
 ### Creating a pull request
 
-Want to contribute a new feature? WP-CLI is a mature project, and already chock-full of useful functionality. Please first [open a new issue](https://github.com/wp-cli/wp-cli/issues/new) to discuss whether the feature is a good fit for WP-CLI core, or might be better suited as a [community package](https://wp-cli.org/package-index/).
+Want to contribute a new feature? WP-CLI is a mature project, and already chock-full of useful functionality. Please first [open a new ideas issue](https://github.com/wp-cli/ideas/issues/new) to discuss whether the feature is a good fit for WP-CLI core, or might be better suited as a [community package](https://wp-cli.org/package-index/).
 
-New to the WP-CLI codebase? Check out [issues labeled 'good-first-issue'](https://github.com/wp-cli/wp-cli/labels/good-first-issue) for a place to start. These issues are specially earmarked for new contributors.
+New to the WP-CLI codebase? Check out [issues labeled 'good-first-issue'](https://github.com/issues?q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli+label%3Agood-first-issue) for a place to start. These issues are specially earmarked for new contributors.
 
 Once you've decided to commit the time to seeing your pull request through, please [follow our guidelines for creating a pull request](https://wp-cli.org/docs/pull-requests/) to make sure it's a pleasant experience.
 
 ### Improving our documentation
 
-Is documentation your strength? Take a look at the currently open [documentation issues](https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+is%3Aissue+label%3Ascope%3Adocumentation) and see if you can tackle any of those.
+Is documentation your strength? Take a look at the currently open [documentation issues](https://github.com/issues?q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli+label%3Ascope%3Adocumentation) and see if you can tackle any of those.
 
 If you believe you’ve found an issue with the documentation, you should [search existing issues](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=label%3Abug%20) to see if there’s an existing resolution to it, or if it’s already been fixed in a newer version of WP-CLI.
 
