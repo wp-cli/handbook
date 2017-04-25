@@ -159,7 +159,7 @@ EOT;
 					'slug'            => $slug,
 					'cmd_path'        => $cmd_path,
 					'parent'          => $parent,
-					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/%s.md', $cmd_path ),
+					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/commands/%s.md', $cmd_path ),
 				);
 			}
 		}
