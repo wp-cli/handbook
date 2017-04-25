@@ -1,12 +1,8 @@
 # wp export
 
-<small>[Commands](/commands/) &raquo; export</small>
-
-`wp export` - Export WordPress content to a WXR file.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aexport+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Export WordPress content to a WXR file.
 
 Generates one or more WXR files containing authors, terms, posts,
 comments, and attachments. WXR files do not include site configuration

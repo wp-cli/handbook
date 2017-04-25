@@ -1,12 +1,8 @@
 # wp user update
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; update</small>
-
-`wp user update` - Update an existing user.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Update an existing user.
 
 ### OPTIONS
 

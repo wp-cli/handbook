@@ -1,12 +1,8 @@
 # wp user term set
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [term](/commands/user/term/) &raquo; set</small>
-
-`wp user term set` - Set object terms.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-term-set+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Set object terms.
 
 Replaces existing terms on the object.
 

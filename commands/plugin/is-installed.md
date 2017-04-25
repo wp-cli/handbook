@@ -1,12 +1,8 @@
 # wp plugin is-installed
 
-<small>[Commands](/commands/) &raquo; [plugin](/commands/plugin/) &raquo; is-installed</small>
-
-`wp plugin is-installed` - Check if the plugin is installed.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aplugin-is-installed+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Check if the plugin is installed.
 
 Returns exit code 0 when installed, 1 when uninstalled.
 

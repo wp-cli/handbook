@@ -1,12 +1,8 @@
 # wp cache type
 
-<small>[Commands](/commands/) &raquo; [cache](/commands/cache/) &raquo; type</small>
-
-`wp cache type` - Attempts to determine which object cache is being used.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache-type+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Attempts to determine which object cache is being used.
 
 Note that the guesses made by this function are based on the
 WP_Object_Cache classes that define the 3rd party object cache extension.

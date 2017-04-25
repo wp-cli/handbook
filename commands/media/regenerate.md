@@ -1,12 +1,8 @@
 # wp media regenerate
 
-<small>[Commands](/commands/) &raquo; [media](/commands/media/) &raquo; regenerate</small>
-
-`wp media regenerate` - Regenerate thumbnails for one or more attachments.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amedia-regenerate+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Regenerate thumbnails for one or more attachments.
 
 ### OPTIONS
 

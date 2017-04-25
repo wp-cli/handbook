@@ -1,12 +1,8 @@
 # wp cache add
 
-<small>[Commands](/commands/) &raquo; [cache](/commands/cache/) &raquo; add</small>
-
-`wp cache add` - Add a value to the object cache.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache-add+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Add a value to the object cache.
 
 Errors if a value already exists for the key, which means the value can't
 be added.

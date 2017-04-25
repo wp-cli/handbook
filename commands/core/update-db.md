@@ -1,12 +1,8 @@
 # wp core update-db
 
-<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; update-db</small>
-
-`wp core update-db` - Run the WordPress database update procedure.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-update-db+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Run the WordPress database update procedure.
 
 [\--network]
 : Update databases for all sites on a network

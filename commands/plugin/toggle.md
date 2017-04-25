@@ -1,12 +1,8 @@
 # wp plugin toggle
 
-<small>[Commands](/commands/) &raquo; [plugin](/commands/plugin/) &raquo; toggle</small>
-
-`wp plugin toggle` - Toggle a plugin's activation state.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aplugin-toggle+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Toggle a plugin's activation state.
 
 If the plugin is active, then it will be deactivated. If the plugin is
 inactive, then it will be activated.

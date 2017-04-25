@@ -1,12 +1,8 @@
 # wp site option delete
 
-<small>[Commands](/commands/) &raquo; [site](/commands/site/) &raquo; [option](/commands/site/option/) &raquo; delete</small>
-
-`wp site option delete` - Delete a site option.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-option-delete+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Delete a site option.
 
 ### OPTIONS
 

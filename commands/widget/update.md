@@ -1,12 +1,8 @@
 # wp widget update
 
-<small>[Commands](/commands/) &raquo; [widget](/commands/widget/) &raquo; update</small>
-
-`wp widget update` - Update options for an existing widget.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Awidget-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Update options for an existing widget.
 
 ### OPTIONS
 

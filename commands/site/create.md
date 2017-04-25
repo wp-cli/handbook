@@ -1,12 +1,8 @@
 # wp site create
 
-<small>[Commands](/commands/) &raquo; [site](/commands/site/) &raquo; create</small>
-
-`wp site create` - Create a site in a multisite install.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-create+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Create a site in a multisite install.
 
 ### OPTIONS
 

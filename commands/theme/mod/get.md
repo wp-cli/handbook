@@ -1,12 +1,8 @@
 # wp theme mod get
 
-<small>[Commands](/commands/) &raquo; [theme](/commands/theme/) &raquo; [mod](/commands/theme/mod/) &raquo; get</small>
-
-`wp theme mod get` - Get one or more theme mods.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme-mod-get+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Get one or more theme mods.
 
 ### OPTIONS
 

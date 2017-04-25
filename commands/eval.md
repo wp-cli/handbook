@@ -1,12 +1,8 @@
 # wp eval
 
-<small>[Commands](/commands/) &raquo; eval</small>
-
-`wp eval` - Execute arbitrary PHP code.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aeval+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Execute arbitrary PHP code.
 
 ### OPTIONS
 

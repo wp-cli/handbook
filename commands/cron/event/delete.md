@@ -1,12 +1,8 @@
 # wp cron event delete
 
-<small>[Commands](/commands/) &raquo; [cron](/commands/cron/) &raquo; [event](/commands/cron/event/) &raquo; delete</small>
-
-`wp cron event delete` - Delete the next scheduled cron event for the given hook.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acron-event-delete+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Delete the next scheduled cron event for the given hook.
 
 ### OPTIONS
 
