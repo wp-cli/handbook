@@ -1,6 +1,6 @@
 # wp db reset
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Adb-reset+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Adb-reset+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
 
 Remove all tables from the database.
 
