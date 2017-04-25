@@ -1,12 +1,8 @@
 # wp menu
 
-<small>[Commands](/commands/) &raquo; menu</small>
-
-`wp menu` - List, create, assign, and delete menus.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+List, create, assign, and delete menus.
 
 ### EXAMPLES
 

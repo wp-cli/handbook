@@ -1,12 +1,8 @@
 # wp db check
 
-<small>[Commands](/commands/) &raquo; [db](/commands/db/) &raquo; check</small>
-
-`wp db check` - Check the current status of the database.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Adb-check+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Check the current status of the database.
 
 Runs `mysqlcheck` utility with `--check` using `DB_HOST`,
 `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials

@@ -1,12 +1,8 @@
 # wp site empty
 
-<small>[Commands](/commands/) &raquo; [site](/commands/site/) &raquo; empty</small>
-
-`wp site empty` - Empty a site of its content (posts, comments, terms, and meta).
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-empty+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Empty a site of its content (posts, comments, terms, and meta).
 
 Truncates posts, comments, and terms tables to empty a site of its
 content. Doesn't affect site configuration (options) or users.

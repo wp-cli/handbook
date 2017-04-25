@@ -1,12 +1,8 @@
 # wp user set-role
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; set-role</small>
-
-`wp user set-role` - Set the user role.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-set-role+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Set the user role.
 
 ### OPTIONS
 

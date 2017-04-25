@@ -1,12 +1,8 @@
 # wp cron event schedule
 
-<small>[Commands](/commands/) &raquo; [cron](/commands/cron/) &raquo; [event](/commands/cron/event/) &raquo; schedule</small>
-
-`wp cron event schedule` - Schedule a new cron event.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acron-event-schedule+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Schedule a new cron event.
 
 ### OPTIONS
 

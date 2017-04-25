@@ -1,12 +1,8 @@
 # wp user term add
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [term](/commands/user/term/) &raquo; add</small>
-
-`wp user term add` - Add a term to an object.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-term-add+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Add a term to an object.
 
 Append the term to the existing set of terms on the object.
 

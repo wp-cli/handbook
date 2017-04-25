@@ -1,12 +1,8 @@
 # wp checksum
 
-<small>[Commands](/commands/) &raquo; checksum</small>
-
-`wp checksum` - Verify WordPress core checksums.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Achecksum+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Verify WordPress core checksums.
 
 
 

@@ -1,12 +1,8 @@
 # wp theme mod set
 
-<small>[Commands](/commands/) &raquo; [theme](/commands/theme/) &raquo; [mod](/commands/theme/mod/) &raquo; set</small>
-
-`wp theme mod set` - Set the value of a theme mod.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme-mod-set+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Set the value of a theme mod.
 
 ### OPTIONS
 

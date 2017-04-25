@@ -1,12 +1,8 @@
 # wp package
 
-<small>[Commands](/commands/) &raquo; package</small>
-
-`wp package` - Manage WP-CLI packages.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apackage+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Manage WP-CLI packages.
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can
 contain WP-CLI commands, but they can also just extend WP-CLI in some way.

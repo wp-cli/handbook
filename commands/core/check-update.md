@@ -1,12 +1,8 @@
 # wp core check-update
 
-<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; check-update</small>
-
-`wp core check-update` - Check for WordPress updates via Version Check API.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-check-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Check for WordPress updates via Version Check API.
 
 Lists the most recent versions when there are updates available,
 or success message when up to date.

@@ -1,12 +1,8 @@
 # wp checksum core
 
-<small>[Commands](/commands/) &raquo; [checksum](/commands/checksum/) &raquo; core</small>
-
-`wp checksum core` - Verify WordPress files against WordPress.org's checksums.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Achecksum-core+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Verify WordPress files against WordPress.org's checksums.
 
 Downloads md5 checksums for the current version from WordPress.org, and
 compares those checksums against the currently installed files.

@@ -1,12 +1,8 @@
 # wp user meta get
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [meta](/commands/user/meta/) &raquo; get</small>
-
-`wp user meta get` - Get meta field value.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-meta-get+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Get meta field value.
 
 ### OPTIONS
 

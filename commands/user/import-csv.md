@@ -1,12 +1,8 @@
 # wp user import-csv
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; import-csv</small>
-
-`wp user import-csv` - Import users from a CSV file.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-import-csv+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Import users from a CSV file.
 
 If the user already exists (matching the email address or login), then
 the user is updated unless the `--skip-update` flag is used.

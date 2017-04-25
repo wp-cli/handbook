@@ -1,12 +1,8 @@
 # wp config create
 
-<small>[Commands](/commands/) &raquo; [config](/commands/config/) &raquo; create</small>
-
-`wp config create` - Generate a wp-config.php file.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aconfig-create+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Generate a wp-config.php file.
 
 Creates a new wp-config.php with database constants, and verifies that
 the database constants are correct.

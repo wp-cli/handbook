@@ -1,12 +1,8 @@
 # wp package update
 
-<small>[Commands](/commands/) &raquo; [package](/commands/package/) &raquo; update</small>
-
-`wp package update` - Update all installed WP-CLI packages to their latest version.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apackage-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Update all installed WP-CLI packages to their latest version.
 
 ### EXAMPLES
 

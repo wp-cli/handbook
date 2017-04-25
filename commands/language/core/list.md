@@ -1,12 +1,8 @@
 # wp language core list
 
-<small>[Commands](/commands/) &raquo; [language](/commands/language/) &raquo; [core](/commands/language/core/) &raquo; list</small>
-
-`wp language core list` - List all available languages.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Alanguage-core-list+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+List all available languages.
 
 [\--field=&lt;field&gt;]
 : Display the value of a single field

@@ -1,12 +1,8 @@
 # wp user delete
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; delete</small>
-
-`wp user delete` - Delete one or more users from the current site.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-delete+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Delete one or more users from the current site.
 
 On multisite, `wp user delete` only removes the user from the current
 site. Include `--network` to also remove the user from the database, but

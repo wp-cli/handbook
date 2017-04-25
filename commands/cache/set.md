@@ -1,12 +1,8 @@
 # wp cache set
 
-<small>[Commands](/commands/) &raquo; [cache](/commands/cache/) &raquo; set</small>
-
-`wp cache set` - Set a value to the object cache, regardless of whether it already exists.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache-set+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Set a value to the object cache, regardless of whether it already exists.
 
 Errors if the value can't be set.
 

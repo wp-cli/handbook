@@ -1,12 +1,8 @@
 # wp menu item update
 
-<small>[Commands](/commands/) &raquo; [menu](/commands/menu/) &raquo; [item](/commands/menu/item/) &raquo; update</small>
-
-`wp menu item update` - Update a menu item.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu-item-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Update a menu item.
 
 ### OPTIONS
 

@@ -1,12 +1,8 @@
 # wp post term
 
-<small>[Commands](/commands/) &raquo; [post](/commands/post/) &raquo; term</small>
-
-`wp post term` - Manage post terms.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-term+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Manage post terms.
 
 ### EXAMPLES
 

@@ -1,12 +1,8 @@
 # wp search-replace
 
-<small>[Commands](/commands/) &raquo; search-replace</small>
-
-`wp search-replace` - Search/replace strings in the database.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asearch-replace+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Search/replace strings in the database.
 
 Searches through all rows in a selection of tables and replaces
 appearances of the first string with the second string.

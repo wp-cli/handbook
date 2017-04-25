@@ -1,12 +1,8 @@
 # wp term generate
 
-<small>[Commands](/commands/) &raquo; [term](/commands/term/) &raquo; generate</small>
-
-`wp term generate` - Generate some terms.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aterm-generate+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Generate some terms.
 
 Creates a specified number of new terms with dummy data.
 

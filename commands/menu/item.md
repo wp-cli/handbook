@@ -1,12 +1,8 @@
 # wp menu item
 
-<small>[Commands](/commands/) &raquo; [menu](/commands/menu/) &raquo; item</small>
-
-`wp menu item` - List, add, and delete items associated with a menu.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amenu-item+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+List, add, and delete items associated with a menu.
 
 ### EXAMPLES
 
