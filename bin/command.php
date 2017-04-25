@@ -128,6 +128,47 @@ EOT;
 	}
 
 	/**
+	 * Generate a manifest document of all command pages
+	 *
+	 * @subcommand gen-commands-manifest
+	 */
+	public function gen_commands_manifest() {
+		$manifest = array();
+		$paths = array(
+			WP_CLI_HANDBOOK_PATH . '/commands/*.md',
+			WP_CLI_HANDBOOK_PATH . '/commands/*/*.md',
+			WP_CLI_HANDBOOK_PATH . '/commands/*/*/*.md'
+		);
+		foreach( $paths as $path ) {
+			foreach( glob( $path ) as $file ) {
+				$slug = basename( $file, '.md' );
+				$cmd_path = str_replace( array( WP_CLI_HANDBOOK_PATH . '/commands/', '.md' ), '', $file );
+				$title = '';
+				$contents = file_get_contents( $file );
+				if ( preg_match( '/^#\swp\s(.+)/', $contents, $matches ) ) {
+					$title = $matches[1];
+				}
+				$parent = null;
+				if ( stripos( $cmd_path, '/' ) ) {
+					$bits = explode( '/', $cmd_path );
+					array_pop( $bits );
+					$parent = implode( '/', $bits );
+				}
+				$manifest[ $cmd_path ] = array(
+					'title'           => $title,
+					'slug'            => $slug,
+					'cmd_path'        => $cmd_path,
+					'parent'          => $parent,
+					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/%s.md', $cmd_path ),
+				);
+			}
+		}
+		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/commands-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
+		$count = count( $manifest );
+		WP_CLI::success( "Generated commands-manifest.json of {$count} commands" );
+	}
+
+	/**
 	 * Generate a manifest document of all handbook pages
 	 *
 	 * @subcommand gen-hb-manifest
