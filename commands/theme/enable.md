@@ -1,12 +1,8 @@
 # wp theme enable
 
-<small>[Commands](/commands/) &raquo; [theme](/commands/theme/) &raquo; enable</small>
-
-`wp theme enable` - Enable a theme on a WordPress multisite install.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme-enable+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Enable a theme on a WordPress multisite install.
 
 Permits theme to be activated from the dashboard of a site on a WordPress
 multisite install.

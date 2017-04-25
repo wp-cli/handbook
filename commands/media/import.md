@@ -1,12 +1,8 @@
 # wp media import
 
-<small>[Commands](/commands/) &raquo; [media](/commands/media/) &raquo; import</small>
-
-`wp media import` - Create attachments from local files or URLs.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Amedia-import+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Create attachments from local files or URLs.
 
 ### OPTIONS
 

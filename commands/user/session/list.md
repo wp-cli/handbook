@@ -1,12 +1,8 @@
 # wp user session list
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; [session](/commands/user/session/) &raquo; list</small>
-
-`wp user session list` - List sessions for the given user.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-session-list+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+List sessions for the given user.
 
 ### OPTIONS
 

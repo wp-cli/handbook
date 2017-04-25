@@ -1,12 +1,8 @@
 # wp theme
 
-<small>[Commands](/commands/) &raquo; theme</small>
-
-`wp theme` - Manage themes.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Manage themes.
 
 ### EXAMPLES
 

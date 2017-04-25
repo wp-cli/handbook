@@ -1,12 +1,8 @@
 # wp post generate
 
-<small>[Commands](/commands/) &raquo; [post](/commands/post/) &raquo; generate</small>
-
-`wp post generate` - Generate some posts.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-generate+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Generate some posts.
 
 Creates a specified number of new posts with dummy data.
 

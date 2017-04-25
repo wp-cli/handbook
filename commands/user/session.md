@@ -1,12 +1,8 @@
 # wp user session
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; session</small>
-
-`wp user session` - Manage a user's sessions.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-session+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Manage a user's sessions.
 
 ### EXAMPLES
 

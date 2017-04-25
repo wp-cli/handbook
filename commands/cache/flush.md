@@ -1,12 +1,8 @@
 # wp cache flush
 
-<small>[Commands](/commands/) &raquo; [cache](/commands/cache/) &raquo; flush</small>
-
-`wp cache flush` - Flush the object cache.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acache-flush+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Flush the object cache.
 
 For WordPress multisite instances using a persistent object cache,
 flushing the object cache will typically flush the cache for all sites.

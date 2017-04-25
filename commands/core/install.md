@@ -1,12 +1,8 @@
 # wp core install
 
-<small>[Commands](/commands/) &raquo; [core](/commands/core/) &raquo; install</small>
-
-`wp core install` - Runs the standard WordPress installation process.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acore-install+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Runs the standard WordPress installation process.
 
 Creates the WordPress tables in the database using the URL, title, and
 default admin user details provided. Performs the famous 5 minute install

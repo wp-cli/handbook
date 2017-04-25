@@ -1,12 +1,8 @@
 # wp scaffold taxonomy
 
-<small>[Commands](/commands/) &raquo; [scaffold](/commands/scaffold/) &raquo; taxonomy</small>
-
-`wp scaffold taxonomy` - Generate PHP code for registering a custom taxonomy.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold-taxonomy+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Generate PHP code for registering a custom taxonomy.
 
 ### OPTIONS
 

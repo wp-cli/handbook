@@ -1,12 +1,8 @@
 # wp import
 
-<small>[Commands](/commands/) &raquo; import</small>
-
-`wp import` - Import content from a WXR file.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Aimport+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Import content from a WXR file.
 
 Provides a command line interface to the WordPress Importer plugin, for
 performing data migrations.

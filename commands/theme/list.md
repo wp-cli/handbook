@@ -1,12 +1,8 @@
 # wp theme list
 
-<small>[Commands](/commands/) &raquo; [theme](/commands/theme/) &raquo; list</small>
-
-`wp theme list` - Get a list of themes.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atheme-list+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Get a list of themes.
 
 ### OPTIONS
 

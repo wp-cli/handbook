@@ -1,12 +1,8 @@
 # wp post delete
 
-<small>[Commands](/commands/) &raquo; [post](/commands/post/) &raquo; delete</small>
-
-`wp post delete` - Delete an existing post.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-delete+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Delete an existing post.
 
 ### OPTIONS
 

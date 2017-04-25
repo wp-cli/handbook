@@ -1,12 +1,8 @@
 # wp site option list
 
-<small>[Commands](/commands/) &raquo; [site](/commands/site/) &raquo; [option](/commands/site/option/) &raquo; list</small>
-
-`wp site option list` - List site options.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Asite-option-list+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+List site options.
 
 ### OPTIONS
 

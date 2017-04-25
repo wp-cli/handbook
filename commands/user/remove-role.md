@@ -1,12 +1,8 @@
 # wp user remove-role
 
-<small>[Commands](/commands/) &raquo; [user](/commands/user/) &raquo; remove-role</small>
-
-`wp user remove-role` - Remove a user's role.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Auser-remove-role+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Remove a user's role.
 
 ### OPTIONS
 

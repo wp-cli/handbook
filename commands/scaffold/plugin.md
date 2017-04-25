@@ -1,12 +1,8 @@
 # wp scaffold plugin
 
-<small>[Commands](/commands/) &raquo; [scaffold](/commands/scaffold/) &raquo; plugin</small>
-
-`wp scaffold plugin` - Generate starter code for a plugin.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Ascaffold-plugin+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Generate starter code for a plugin.
 
 The following files are always generated:
 

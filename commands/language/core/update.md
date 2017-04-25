@@ -1,12 +1,8 @@
 # wp language core update
 
-<small>[Commands](/commands/) &raquo; [language](/commands/language/) &raquo; [core](/commands/language/core/) &raquo; update</small>
-
-`wp language core update` - Update installed languages.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Alanguage-core-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Update installed languages.
 
 Updates installed languages for core, plugins and themes.
 

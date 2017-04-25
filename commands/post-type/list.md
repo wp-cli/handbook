@@ -1,12 +1,8 @@
 # wp post-type list
 
-<small>[Commands](/commands/) &raquo; [post-type](/commands/post-type/) &raquo; list</small>
-
-`wp post-type list` - List registered post types.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apost-type-list+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+List registered post types.
 
 ### OPTIONS
 

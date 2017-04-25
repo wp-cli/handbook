@@ -1,12 +1,8 @@
 # wp transient set
 
-<small>[Commands](/commands/) &raquo; [transient](/commands/transient/) &raquo; set</small>
-
-`wp transient set` - Set a transient value.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Atransient-set+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Set a transient value.
 
 `&lt;expiration&gt;` is the time until expiration, in seconds.
 

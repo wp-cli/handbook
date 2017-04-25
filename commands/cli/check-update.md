@@ -1,12 +1,8 @@
 # wp cli check-update
 
-<small>[Commands](/commands/) &raquo; [cli](/commands/cli/) &raquo; check-update</small>
-
-`wp cli check-update` - Check to see if there is a newer version of WP-CLI available.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli-check-update+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Check to see if there is a newer version of WP-CLI available.
 
 Queries the Github releases API. Returns available versions if there are
 updates available, or success message if using the latest release.

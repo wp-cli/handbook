@@ -1,12 +1,8 @@
 # wp comment get
 
-<small>[Commands](/commands/) &raquo; [comment](/commands/comment/) &raquo; get</small>
-
-`wp comment get` - Get data of a single comment.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acomment-get+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Get data of a single comment.
 
 ### OPTIONS
 

@@ -1,12 +1,8 @@
 # wp package install
 
-<small>[Commands](/commands/) &raquo; [package](/commands/package/) &raquo; install</small>
-
-`wp package install` - Install a WP-CLI package.
-
 <small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Apackage-install+sort%3Aupdated-desc">Github issues</a></small>
 
-<hr />
+Install a WP-CLI package.
 
 Packages are required to be a valid Composer package, and can be
 specified as:
