@@ -115,7 +115,7 @@ EOT;
 		$wp = self::invoke_wp_cli( 'wp --skip-packages cli cmd-dump' );
 
 		foreach( $wp['subcommands'] as $k => $cmd ) {
-			if ( in_array( $cmd['name'], array( 'website', 'api-dump' ) ) ) {
+			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ) ) ) {
 				unset( $wp['subcommands'][ $k ] );
 			}
 		}
