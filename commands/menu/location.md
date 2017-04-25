@@ -38,15 +38,15 @@ Manage a menu's assignment to locations.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/menu/location/assign/">assign</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/location/assign/">assign</a></td>
 			<td>Assign a location to a menu.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/location/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/location/list/">list</a></td>
 			<td>List locations for the current theme.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/menu/location/remove/">remove</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/menu/location/remove/">remove</a></td>
 			<td>Remove a location from a menu.</td>
 		</tr>
 	</tbody>

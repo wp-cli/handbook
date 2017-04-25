@@ -37,23 +37,23 @@ Manage site options in a multisite install.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/site/option/add/">add</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/option/add/">add</a></td>
 			<td>Add a site option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/option/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/option/delete/">delete</a></td>
 			<td>Delete a site option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/option/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/option/get/">get</a></td>
 			<td>Get a site option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/option/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/option/list/">list</a></td>
 			<td>List site options.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/option/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/option/update/">update</a></td>
 			<td>Update a site option.</td>
 		</tr>
 	</tbody>

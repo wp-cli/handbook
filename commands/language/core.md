@@ -41,23 +41,23 @@ Manage core language.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/language/core/activate/">activate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/language/core/activate/">activate</a></td>
 			<td>Activate a given language.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/language/core/install/">install</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/language/core/install/">install</a></td>
 			<td>Install a given language.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/language/core/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/language/core/list/">list</a></td>
 			<td>List all available languages.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/language/core/uninstall/">uninstall</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/language/core/uninstall/">uninstall</a></td>
 			<td>Uninstall a given language.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/language/core/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/language/core/update/">update</a></td>
 			<td>Update installed languages.</td>
 		</tr>
 	</tbody>

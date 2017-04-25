@@ -33,47 +33,47 @@ Perform site-wide operations.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/site/activate/">activate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/activate/">activate</a></td>
 			<td>Activate one or more sites.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/archive/">archive</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/archive/">archive</a></td>
 			<td>Archive one or more sites.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/create/">create</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/create/">create</a></td>
 			<td>Create a site in a multisite install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/deactivate/">deactivate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/deactivate/">deactivate</a></td>
 			<td>Deactivate one or more sites.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/delete/">delete</a></td>
 			<td>Delete a site in a multisite install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/empty/">empty</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/empty/">empty</a></td>
 			<td>Empty a site of its content (posts, comments, terms, and meta).</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/list/">list</a></td>
 			<td>List all sites in a multisite install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/option/">option</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/option/">option</a></td>
 			<td>Manage site options in a multisite install.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/spam/">spam</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/spam/">spam</a></td>
 			<td>Mark one or more sites as spam.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/unarchive/">unarchive</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/unarchive/">unarchive</a></td>
 			<td>Unarchive one or more sites.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/site/unspam/">unspam</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/site/unspam/">unspam</a></td>
 			<td>Remove one or more sites from spam.</td>
 		</tr>
 	</tbody>

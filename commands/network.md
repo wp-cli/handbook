@@ -19,7 +19,7 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/network/meta/">meta</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/network/meta/">meta</a></td>
 			<td>Manage network custom fields.</td>
 		</tr>
 	</tbody>

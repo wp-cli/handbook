@@ -32,31 +32,31 @@ Generate code for post types, taxonomies, plugins, child themes, etc.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/scaffold/_s/">_s</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/_s/">_s</a></td>
 			<td>Generate starter code for a theme based on _s.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/child-theme/">child-theme</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/child-theme/">child-theme</a></td>
 			<td>Generate child theme based on an existing theme.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/plugin/">plugin</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/plugin/">plugin</a></td>
 			<td>Generate starter code for a plugin.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/plugin-tests/">plugin-tests</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/plugin-tests/">plugin-tests</a></td>
 			<td>Generate files needed for running PHPUnit tests in a plugin.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/post-type/">post-type</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/post-type/">post-type</a></td>
 			<td>Generate PHP code for registering a custom post type.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/taxonomy/">taxonomy</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/taxonomy/">taxonomy</a></td>
 			<td>Generate PHP code for registering a custom taxonomy.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/scaffold/theme-tests/">theme-tests</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/scaffold/theme-tests/">theme-tests</a></td>
 			<td>Generate files needed for running PHPUnit tests in a theme.</td>
 		</tr>
 	</tbody>
