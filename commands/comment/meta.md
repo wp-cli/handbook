@@ -37,23 +37,23 @@ Manage comment custom fields.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/comment/meta/add/">add</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/meta/add/">add</a></td>
 			<td>Add a meta field.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/meta/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/meta/delete/">delete</a></td>
 			<td>Delete a meta field.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/meta/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/meta/get/">get</a></td>
 			<td>Get meta field value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/meta/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/meta/list/">list</a></td>
 			<td>List all metadata associated with an object.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/comment/meta/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/comment/meta/update/">update</a></td>
 			<td>Update a meta field.</td>
 		</tr>
 	</tbody>

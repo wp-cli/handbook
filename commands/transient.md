@@ -39,19 +39,19 @@ Manage transients.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/transient/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/transient/delete/">delete</a></td>
 			<td>Delete a transient value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/transient/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/transient/get/">get</a></td>
 			<td>Get a transient value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/transient/set/">set</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/transient/set/">set</a></td>
 			<td>Set a transient value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/transient/type/">type</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/transient/type/">type</a></td>
 			<td>Determine type of transients implementation.</td>
 		</tr>
 	</tbody>

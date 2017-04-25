@@ -34,35 +34,35 @@ Manage WP-CLI itself.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/cli/alias/">alias</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/alias/">alias</a></td>
 			<td>List available WP-CLI aliases.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/check-update/">check-update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/check-update/">check-update</a></td>
 			<td>Check to see if there is a newer version of WP-CLI available.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/cmd-dump/">cmd-dump</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/cmd-dump/">cmd-dump</a></td>
 			<td>Dump the list of installed commands, as JSON.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/completions/">completions</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/completions/">completions</a></td>
 			<td>Generate tab completion strings.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/info/">info</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/info/">info</a></td>
 			<td>Print various details about the WP-CLI environment.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/param-dump/">param-dump</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/param-dump/">param-dump</a></td>
 			<td>Dump the list of global parameters, as JSON or in var_export format.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/update/">update</a></td>
 			<td>Update WP-CLI to the latest release.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/cli/version/">version</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/cli/version/">version</a></td>
 			<td>Print WP-CLI version.</td>
 		</tr>
 	</tbody>

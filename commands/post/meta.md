@@ -37,23 +37,23 @@ Manage post custom fields.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/post/meta/add/">add</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/meta/add/">add</a></td>
 			<td>Add a meta field.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/meta/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/meta/delete/">delete</a></td>
 			<td>Delete a meta field.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/meta/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/meta/get/">get</a></td>
 			<td>Get meta field value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/meta/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/meta/list/">list</a></td>
 			<td>List all metadata associated with an object.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/meta/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/meta/update/">update</a></td>
 			<td>Update a meta field.</td>
 		</tr>
 	</tbody>
