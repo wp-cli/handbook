@@ -1,6 +1,6 @@
 # wp cli check-update
 
-<small>Quick links: <a href="https://github.com/wp-cli/wp-cli/issues?q=is%3Aopen+label%3Acommand%3Acli-check-update+sort%3Aupdated-desc">Github issues</a></small>
+<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acli-check-update+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
 
 Check to see if there is a newer version of WP-CLI available.
 
