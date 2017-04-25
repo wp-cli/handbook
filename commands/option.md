@@ -35,23 +35,23 @@ Manage options.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/option/add/">add</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/option/add/">add</a></td>
 			<td>Add a new option value.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/option/delete/">delete</a></td>
 			<td>Delete an option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/option/get/">get</a></td>
 			<td>Get the value for an option.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/option/list/">list</a></td>
 			<td>List options and their values.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/option/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/option/update/">update</a></td>
 			<td>Update an option value.</td>
 		</tr>
 	</tbody>

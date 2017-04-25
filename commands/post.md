@@ -31,39 +31,39 @@ Manage posts.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/post/create/">create</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/create/">create</a></td>
 			<td>Create a new post.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/delete/">delete</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/delete/">delete</a></td>
 			<td>Delete an existing post.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/edit/">edit</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/edit/">edit</a></td>
 			<td>Launch system editor to edit post content.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/generate/">generate</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/generate/">generate</a></td>
 			<td>Generate some posts.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/get/">get</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/get/">get</a></td>
 			<td>Get details about a post.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/list/">list</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/list/">list</a></td>
 			<td>Get a list of posts.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/meta/">meta</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/meta/">meta</a></td>
 			<td>Manage post custom fields.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/term/">term</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/term/">term</a></td>
 			<td>Manage post terms.</td>
 		</tr>
 		<tr>
-			<td><a href="/commands/post/update/">update</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/post/update/">update</a></td>
 			<td>Update one or more existing posts.</td>
 		</tr>
 	</tbody>

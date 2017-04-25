@@ -19,7 +19,7 @@ Manage the wp-config.php file
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="/commands/config/create/">create</a></td>
+			<td><a href="https://developer.wordpress.org/cli/commands/config/create/">create</a></td>
 			<td>Generate a wp-config.php file.</td>
 		</tr>
 	</tbody>
