@@ -2,7 +2,7 @@
 
 This page contains some history on various implementation details of WP-CLI.
 
-### Bootstrapping WordPress
+## Bootstrapping WordPress
 
 On a normal web request, your web server calls the `index.php` file in the root of the web directory to bootstrap the WordPress load process:
 
@@ -56,14 +56,19 @@ include WP_CLI_ROOT . '/php/class-wp-cli-command.php';
 WP_CLI::get_runner()->start();
 ```
 
-WP-CLI includes a good amount of setup code prior to calling `wp-settings.php`, which is different than a web request in a couple of notable ways:
+WP-CLI includes a good amount of setup code prior to calling `wp-settings.php`. Its bootstrapping process is different than a web request in a couple of notable ways.
 
-* Rather than calling `wp-config.php` directly, WP-CLI gets the contents of `wp-config.php`, parses out the `require_once ABSPATH . 'wp-settings.php';` statement, and loads the constants into scope with `eval()`.
-* WP-CLI loads WordPress with the `WP_CLI::get_runner()->load_wordpress()` method, meaning WordPress plugins and themes aren't loaded in global scope. Any global variables used in plugins or themes need to be explicitly globalized.
+### `wp-config.php` is parsed, and then executed
+
+Rather than calling `wp-config.php` directly, WP-CLI gets the contents of `wp-config.php`, parses out the `require_once ABSPATH . 'wp-settings.php';` statement, and loads the constants into scope with `eval()`.
+
+### WordPress is loaded inside of a function
+
+WP-CLI loads WordPress with the `WP_CLI::get_runner()->load_wordpress()` method, meaning WordPress plugins and themes aren't loaded in global scope. Any global variables used in plugins or themes need to be explicitly globalized. See [#2089](https://github.com/wp-cli/wp-cli/issues/2089) for the history of this decision.
 
 Once `WP_CLI::get_runner()->load_wordpress()` calls `wp-settings.php`, WordPress handles the rest of the bootstrap process.
 
-### Command Help Text
+## Command Help Text
 
 The `wp help <command>` has been through several incarnations.
 
@@ -73,7 +78,7 @@ Since WP-CLI 0.6, it looked for a `<command>.1` ROFF file and displayed it using
 
 Since WP-CLI 0.11, it generates the help text on the fly. ([#548](https://github.com/wp-cli/wp-cli/pull/548))
 
-### WP_ADMIN
+## WP_ADMIN
 
 Most WP-CLI commands perform administrative actions and they need access to code defined in `wp-admin/includes`. This code can be loaded on-demand or preemptively.
 
