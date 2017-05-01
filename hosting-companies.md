@@ -20,6 +20,7 @@ In alphabetical order:
 * [Media Temple](http://mediatemple.net)
 * [Monarobase](https://monarobase.net/wordpress)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
+* [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
 * [Pressjitsu](https://pressjitsu.com)
 * [RoseHosting](https://www.rosehosting.com)
