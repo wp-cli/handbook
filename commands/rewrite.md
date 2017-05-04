@@ -24,28 +24,3 @@ Manage rewrite rules.
     category/(.+?)/embed/?$,index.php?category_name=$matches[1]&amp;embed=true,category
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/rewrite/flush/">flush</a></td>
-			<td>Flush rewrite rules.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/rewrite/list/">list</a></td>
-			<td>Get a list of the current rewrite rules.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/rewrite/structure/">structure</a></td>
-			<td>Update the permalink structure.</td>
-		</tr>
-	</tbody>
-</table>

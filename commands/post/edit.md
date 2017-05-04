@@ -15,4 +15,3 @@ Launch system editor to edit post content.
     $ wp post edit 123
 
 
-

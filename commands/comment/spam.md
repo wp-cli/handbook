@@ -16,4 +16,3 @@ Mark a comment as spam.
     Success: Marked as spam comment 1337.
 
 
-

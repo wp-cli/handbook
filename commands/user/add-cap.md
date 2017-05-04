@@ -23,4 +23,3 @@ Add a capability to a user.
     Success: Added 'edit_product' capability for johndoe (15).
 
 
-

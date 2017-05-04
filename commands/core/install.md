@@ -48,4 +48,3 @@ user_login doesn't exist, a new user will be created.
     $ wp core install --url=example.com --title=Example --admin_user=supervisor --admin_email=info@example.com --prompt=admin_password < admin_password.txt
 
 
-

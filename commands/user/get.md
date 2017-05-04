@@ -36,4 +36,3 @@ options:
     $ wp user get bob --format=json > bob.json
 
 
-

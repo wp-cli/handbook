@@ -15,4 +15,3 @@ Remove one or more sites from spam.
     Success: Site 123 removed from spam.
 
 
-

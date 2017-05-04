@@ -22,4 +22,3 @@ Run the WordPress database update procedure.
     Success: WordPress database upgraded on 123/123 sites
 
 
-

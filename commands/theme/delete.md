@@ -18,4 +18,3 @@ Removes the theme from the filesystem.
     Success: Deleted 1 of 1 themes.
 
 
-

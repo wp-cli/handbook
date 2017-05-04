@@ -7,20 +7,3 @@ Verify WordPress core checksums.
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/checksum/core/">core</a></td>
-			<td>Verify WordPress files against WordPress.org's checksums.</td>
-		</tr>
-	</tbody>
-</table>

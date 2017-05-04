@@ -37,4 +37,3 @@ STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in 
     $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
 
 
-

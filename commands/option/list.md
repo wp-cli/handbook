@@ -79,4 +79,3 @@ These fields are optionally available:
     Success: Deleted 'theme_mods_twentyfourteen' option.
 
 
-

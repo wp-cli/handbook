@@ -20,4 +20,3 @@ Delete an existing role.
     Success: Role with key 'productadmin' deleted.
 
 
-

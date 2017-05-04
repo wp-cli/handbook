@@ -16,4 +16,3 @@ Load and execute a PHP file.
 : Load and execute file without loading WordPress.
 
 
-

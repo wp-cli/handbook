@@ -19,4 +19,3 @@ wp-config.php.
     Success: Database dropped.
 
 
-

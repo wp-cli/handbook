@@ -59,4 +59,3 @@ Create attachments from local files or URLs.
     Success: Imported 1 of 1 images.
 
 
-

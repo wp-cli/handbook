@@ -27,32 +27,3 @@ Manage transients.
     Success: 14 transients deleted from the database.
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/transient/delete/">delete</a></td>
-			<td>Delete a transient value.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/transient/get/">get</a></td>
-			<td>Get a transient value.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/transient/set/">set</a></td>
-			<td>Set a transient value.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/transient/type/">type</a></td>
-			<td>Determine type of transients implementation.</td>
-		</tr>
-	</tbody>
-</table>

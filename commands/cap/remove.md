@@ -19,4 +19,3 @@ Remove capabilities from a given role.
     Success: Removed 1 capability from 'author' role.
 
 
-

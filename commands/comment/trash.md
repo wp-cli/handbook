@@ -16,4 +16,3 @@ Trash a comment.
     Success: Trashed comment 1337.
 
 
-

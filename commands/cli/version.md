@@ -11,4 +11,3 @@ Print WP-CLI version.
     WP-CLI 0.24.1
 
 
-

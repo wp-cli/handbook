@@ -46,4 +46,3 @@ These fields are optionally available:
     "Inactive Widgets",wp_inactive_widgets
 
 
-

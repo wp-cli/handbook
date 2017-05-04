@@ -18,4 +18,3 @@ Remove a location from a menu.
     Success: Removed location from menu.
 
 
-

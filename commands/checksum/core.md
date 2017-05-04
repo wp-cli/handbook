@@ -39,4 +39,3 @@ For security, avoids loading WordPress when verifying checksums.
     Error: WordPress install doesn't verify against checksums.
 
 
-

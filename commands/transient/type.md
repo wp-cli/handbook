@@ -13,4 +13,3 @@ options table.
     Transients are saved to the wp_options table.
 
 
-

@@ -33,4 +33,3 @@ Schedule a new cron event.
     Success: Scheduled event with hook 'cron_test' for 2016-05-31 11:21:35 GMT.
 
 
-

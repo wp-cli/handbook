@@ -82,4 +82,3 @@ These fields are optionally available:
     $ wp user list --meta_key=last_activity --orderby=meta_value_num
 
 
-

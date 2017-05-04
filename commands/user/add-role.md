@@ -18,4 +18,3 @@ Add a role for a user.
     Success: Added 'author' role for johndoe (12).
 
 
-

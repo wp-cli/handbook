@@ -17,4 +17,3 @@ more details on the `REPAIR TABLE` statement.
     Success: Database repaired.
 
 
-

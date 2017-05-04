@@ -20,28 +20,3 @@ Manage super admins on WordPress multisite.
     Success: Revoked super-admin capabilities.
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/super-admin/add/">add</a></td>
-			<td>Grant super admin privileges to one or more users.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/super-admin/list/">list</a></td>
-			<td>List users with super admin capabilities.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/super-admin/remove/">remove</a></td>
-			<td>Remove super admin privileges from one or more users.</td>
-		</tr>
-	</tbody>
-</table>

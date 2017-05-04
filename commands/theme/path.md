@@ -24,4 +24,3 @@ theme's "style.css" file.
     $ cd $(wp theme path)
 
 
-

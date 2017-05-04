@@ -16,4 +16,3 @@ Delete the next scheduled cron event for the given hook.
     Success: Deleted 2 instances of the cron event 'cron_test'.
 
 
-

@@ -32,4 +32,3 @@ options:
     $ wp post get 123 --field=content > file.txt
 
 
-

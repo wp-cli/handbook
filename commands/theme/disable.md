@@ -28,4 +28,3 @@ enabled for them independently.
     Success: Network disabled the 'Twenty Sixteen' theme.
 
 
-

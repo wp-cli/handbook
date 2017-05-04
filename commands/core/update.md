@@ -58,4 +58,3 @@ update isn't actually running.
     Success: WordPress updated successfully.
 
 
-

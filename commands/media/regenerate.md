@@ -58,4 +58,3 @@ Regenerate thumbnails for one or more attachments.
     Success: Regenerated 3 of 3 images.
 
 
-

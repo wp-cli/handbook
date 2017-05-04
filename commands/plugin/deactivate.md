@@ -26,4 +26,3 @@ Deactivate a plugin.
     Success: Deactivated 1 of 1 plugins.
 
 
-

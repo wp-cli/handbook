@@ -19,4 +19,3 @@ Add capabilities to a given role.
     Success: Added 1 capability to 'author' role.
 
 
-
