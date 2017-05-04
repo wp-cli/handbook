@@ -25,4 +25,3 @@ Delete a site in a multisite install.
     Success: The site at 'http://www.example.com/example' was deleted.
 
 
-

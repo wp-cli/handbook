@@ -13,20 +13,3 @@ Manage sidebars.
     "Inactive Widgets",wp_inactive_widgets
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/sidebar/list/">list</a></td>
-			<td>List registered sidebars.</td>
-		</tr>
-	</tbody>
-</table>

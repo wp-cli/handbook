@@ -16,4 +16,3 @@ Delete an option.
     Success: Deleted 'my_option' option.
 
 
-

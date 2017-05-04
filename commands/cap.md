@@ -19,28 +19,3 @@ Manage user capabilities.
     Success: Removed 34 capabilities from 'editor' role.
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/cap/add/">add</a></td>
-			<td>Add capabilities to a given role.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/cap/list/">list</a></td>
-			<td>List capabilities for a given role.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/cap/remove/">remove</a></td>
-			<td>Remove capabilities from a given role.</td>
-		</tr>
-	</tbody>
-</table>

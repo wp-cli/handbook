@@ -38,4 +38,3 @@ WP_CLI::add_hook( 'after_invoke:site empty', function(){
     Success: The site at 'http://www.example.com' was emptied.
 
 
-

@@ -28,4 +28,3 @@ Update one or more existing posts.
     Success: Updated post 123.
 
 
-

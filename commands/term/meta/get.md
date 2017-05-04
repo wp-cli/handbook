@@ -14,4 +14,3 @@ Get meta field value.
 : Accepted values: table, json. Default: table
 
 
-

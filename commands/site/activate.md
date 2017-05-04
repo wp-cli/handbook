@@ -15,4 +15,3 @@ Activate one or more sites.
     Success: Site 123 activated.
 
 
-

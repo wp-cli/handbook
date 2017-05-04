@@ -27,4 +27,3 @@ Remove one or more theme mods.
     Success: 2 mods removed.
 
 
-

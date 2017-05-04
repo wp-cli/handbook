@@ -41,4 +41,3 @@ options:
     Success: Updated 'my_option' option.
 
 
-

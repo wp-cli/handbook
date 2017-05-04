@@ -19,4 +19,3 @@ Update options for an existing widget.
     Success: Widget updated.
 
 
-

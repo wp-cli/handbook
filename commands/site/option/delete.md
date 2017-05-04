@@ -15,4 +15,3 @@ Delete a site option.
     Success: Deleted 'my_option' site option.
 
 
-

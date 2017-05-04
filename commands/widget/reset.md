@@ -32,4 +32,3 @@ Removes all widgets from the sidebar and places them in Inactive Widgets.
     Success: Sidebar 'sidebar-3' reset.
 
 
-

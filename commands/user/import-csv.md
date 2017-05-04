@@ -37,4 +37,3 @@ the user is updated unless the `--skip-update` flag is used.
     existinguser,existinguser@example.com,Existing User,administrator
 
 
-

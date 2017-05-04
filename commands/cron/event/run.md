@@ -22,4 +22,3 @@ Run the next scheduled cron event for the given hook.
     Success: Executed a total of 2 cron events.
 
 
-

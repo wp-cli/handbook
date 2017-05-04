@@ -54,4 +54,3 @@ Update one or more plugins.
     Success: Updated 2 of 2 plugins.
 
 
-

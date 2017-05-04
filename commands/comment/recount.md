@@ -16,4 +16,3 @@ Recalculate the comment_count value for one or more posts.
     Updated post 123 comment count to 67.
 
 
-

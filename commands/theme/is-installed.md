@@ -19,4 +19,3 @@ Returns exit code 0 when installed, 1 when uninstalled.
     1
 
 
-

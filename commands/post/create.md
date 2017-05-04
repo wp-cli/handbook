@@ -36,4 +36,3 @@ Create a new post.
     Success: Created post 1922.
 
 
-

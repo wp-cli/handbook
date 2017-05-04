@@ -104,4 +104,3 @@ Warning: search-replace will take about 15-20x longer when using --regex.
     fi
 
 
-

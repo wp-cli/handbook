@@ -47,4 +47,3 @@ Update one or more themes.
     $ wp theme update --all
 
 
-

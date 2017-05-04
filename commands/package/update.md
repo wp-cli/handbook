@@ -21,4 +21,3 @@ Update all installed WP-CLI packages to their latest version.
     Success: Packages updated.
 
 
-

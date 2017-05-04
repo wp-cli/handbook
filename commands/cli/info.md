@@ -42,4 +42,3 @@ options:
     WP-CLI version: 0.24.1
 
 
-

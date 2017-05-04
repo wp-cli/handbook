@@ -28,4 +28,3 @@ options:
     Success: Added 'my_option' site option.
 
 
-

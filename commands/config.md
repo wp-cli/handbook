@@ -7,20 +7,3 @@ Manage the wp-config.php file
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/config/create/">create</a></td>
-			<td>Generate a wp-config.php file.</td>
-		</tr>
-	</tbody>
-</table>

@@ -17,4 +17,3 @@ for more details on the `CHECK TABLE` statement.
     Success: Database checked.
 
 
-

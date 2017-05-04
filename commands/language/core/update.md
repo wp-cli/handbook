@@ -21,4 +21,3 @@ Updates installed languages for core, plugins and themes.
     Success: Updated 2/2 translations.
 
 
-

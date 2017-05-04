@@ -32,4 +32,3 @@ Count comments, on whole blog or on a given post.
     total_comments:  19
 
 
-

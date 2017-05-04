@@ -56,4 +56,3 @@ Names can optionally include a version constraint
     $ wp package install google-sitemap-generator-cli.zip
 
 
-

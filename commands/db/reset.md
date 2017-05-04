@@ -19,4 +19,3 @@ specified in wp-config.php.
     Success: Database reset.
 
 
-

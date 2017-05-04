@@ -18,24 +18,3 @@ Manage a user's sessions.
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/session/destroy/">destroy</a></td>
-			<td>Destroy a session for the given user.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/session/list/">list</a></td>
-			<td>List sessions for the given user.</td>
-		</tr>
-	</tbody>
-</table>

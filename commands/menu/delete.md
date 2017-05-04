@@ -15,4 +15,3 @@ Delete one or more menus.
     Success: 1 menu deleted.
 
 
-
