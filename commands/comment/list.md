@@ -1,7 +1,5 @@
 # wp comment list
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acomment-list+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Get a list of comments.
 
 ### OPTIONS

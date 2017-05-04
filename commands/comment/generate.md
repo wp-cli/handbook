@@ -1,7 +1,5 @@
 # wp comment generate
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acomment-generate+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Generate some number of new dummy comments.
 
 Creates a specified number of new comments with dummy data.

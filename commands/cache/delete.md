@@ -1,7 +1,5 @@
 # wp cache delete
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acache-delete+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Remove a value from the object cache.
 
 Errors if the value can't be deleted.

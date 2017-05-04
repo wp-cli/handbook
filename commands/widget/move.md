@@ -1,7 +1,5 @@
 # wp widget move
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Awidget-move+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Move the position of a widget.
 
 Changes the order of a widget in its existing sidebar, or moves it to a

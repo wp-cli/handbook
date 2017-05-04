@@ -1,7 +1,5 @@
 # wp post meta update
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Apost-meta-update+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Update a meta field.
 
 ### OPTIONS

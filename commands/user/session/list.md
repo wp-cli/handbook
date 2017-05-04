@@ -1,7 +1,5 @@
 # wp user session list
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Auser-session-list+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 List sessions for the given user.
 
 ### OPTIONS

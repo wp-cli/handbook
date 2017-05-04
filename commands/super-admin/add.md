@@ -1,7 +1,5 @@
 # wp super-admin add
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Asuper-admin-add+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Grant super admin privileges to one or more users.
 
 ### OPTIONS

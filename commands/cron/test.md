@@ -1,7 +1,5 @@
 # wp cron test
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acron-test+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Test the WP Cron spawning system and report back its status.
 
 This command tests the spawning system by performing the following steps:

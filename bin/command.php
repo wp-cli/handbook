@@ -287,7 +287,6 @@ EOT;
 			$docs = preg_replace( '/#?## GLOBAL PARAMETERS.+/s', '', $docs );
 
 			$binding['docs'] = $docs;
-			$binding['github_issues_link'] = 'https://github.com/issues?q=is%3Aopen+label%3A' . urlencode( 'command:' . str_replace( ' ', '-', $binding['synopsis'] ) ) . '+sort%3Aupdated-desc+org%3Awp-cli';
 		}
 
 		$path = dirname( __DIR__ ) . "/commands/" . $binding['path'];

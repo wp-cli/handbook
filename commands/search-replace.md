@@ -1,7 +1,5 @@
 # wp search-replace
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Asearch-replace+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Search/replace strings in the database.
 
 Searches through all rows in a selection of tables and replaces

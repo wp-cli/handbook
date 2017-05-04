@@ -1,7 +1,5 @@
 # wp widget reset
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Awidget-reset+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Reset sidebar.
 
 Removes all widgets from the sidebar and places them in Inactive Widgets.

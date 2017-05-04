@@ -1,7 +1,5 @@
 # wp db optimize
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Adb-optimize+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Optimize the database.
 
 Runs `mysqlcheck` utility with `--optimize=true` using `DB_HOST`,

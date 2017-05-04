@@ -1,7 +1,5 @@
 # wp rewrite list
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Arewrite-list+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Get a list of the current rewrite rules.
 
 ### OPTIONS

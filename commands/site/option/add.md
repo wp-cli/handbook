@@ -1,7 +1,5 @@
 # wp site option add
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Asite-option-add+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Add a site option.
 
 ### OPTIONS

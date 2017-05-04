@@ -1,7 +1,5 @@
 # wp plugin get
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Aplugin-get+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Get details about an installed plugin.
 
 ### OPTIONS

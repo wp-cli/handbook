@@ -1,7 +1,5 @@
 # wp cli param-dump
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acli-param-dump+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Dump the list of global parameters, as JSON or in var_export format.
 
 ### OPTIONS

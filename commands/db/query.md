@@ -1,7 +1,5 @@
 # wp db query
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Adb-query+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Execute a SQL query against the database.
 
 Executes an arbitrary SQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
