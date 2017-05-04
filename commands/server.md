@@ -1,7 +1,5 @@
 # wp server
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Aserver+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Launch PHP's built-in web server for this specific WordPress installation.
 
 Uses `php -S` to launch a web server serving the WordPress webroot.

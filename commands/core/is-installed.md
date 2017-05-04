@@ -1,7 +1,5 @@
 # wp core is-installed
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acore-is-installed+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Check if WordPress is installed.
 
 Determines whether WordPress is installed by checking if the standard

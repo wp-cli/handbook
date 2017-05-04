@@ -1,7 +1,5 @@
 # wp core multisite-convert
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acore-multisite-convert+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Transform a single-site install into a WordPress multisite install.
 
 Creates the multisite database tables, and adds the multisite constants

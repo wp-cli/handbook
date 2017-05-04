@@ -1,7 +1,5 @@
 # wp package
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Apackage+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Manage WP-CLI packages.
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can

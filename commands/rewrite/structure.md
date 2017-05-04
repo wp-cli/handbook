@@ -1,7 +1,5 @@
 # wp rewrite structure
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Arewrite-structure+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Update the permalink structure.
 
 Sets the post permalink structure to the specified pattern.

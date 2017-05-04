@@ -1,7 +1,5 @@
 # wp menu item add-term
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Amenu-item-add-term+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Add a taxonomy term as a menu item.
 
 ### OPTIONS

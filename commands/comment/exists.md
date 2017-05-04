@@ -1,7 +1,5 @@
 # wp comment exists
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acomment-exists+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Verify whether a comment exists.
 
 Displays a success message if the comment does exist.

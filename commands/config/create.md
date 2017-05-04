@@ -1,7 +1,5 @@
 # wp config create
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Aconfig-create+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Generate a wp-config.php file.
 
 Creates a new wp-config.php with database constants, and verifies that

@@ -1,7 +1,5 @@
 # wp widget list
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Awidget-list+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 List widgets associated with a sidebar.
 
 ### OPTIONS

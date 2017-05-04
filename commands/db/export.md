@@ -1,7 +1,5 @@
 # wp db export
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Adb-export+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Exports the database to a file or to STDOUT.
 
 Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and

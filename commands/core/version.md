@@ -1,7 +1,5 @@
 # wp core version
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acore-version+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Display the WordPress version.
 
 ### OPTIONS
