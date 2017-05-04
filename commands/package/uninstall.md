@@ -18,4 +18,3 @@ Uninstall a WP-CLI package.
     Success: Uninstalled package.
 
 
-

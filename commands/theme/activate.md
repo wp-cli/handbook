@@ -15,4 +15,3 @@ Activate a theme.
     Success: Switched to 'Twenty Sixteen' theme.
 
 
-

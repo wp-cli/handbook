@@ -18,4 +18,3 @@ Assign a location to a menu.
     Success: Assigned location primary to menu primary-menu.
 
 
-

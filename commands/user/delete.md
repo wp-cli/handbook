@@ -34,4 +34,3 @@ make sure to reassign their posts prior to deleting the user.
     Success: Removed user 578 from http://example.com
 
 
-

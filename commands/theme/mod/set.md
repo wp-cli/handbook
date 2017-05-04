@@ -19,4 +19,3 @@ Set the value of a theme mod.
     Success: Theme mod background_color set to 000000
 
 
-

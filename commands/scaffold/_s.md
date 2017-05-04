@@ -39,4 +39,3 @@ See the [Underscores website](http://underscores.me/) for more details.
     Success: Created theme 'Sample Theme'.
 
 
-

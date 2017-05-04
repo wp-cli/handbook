@@ -15,4 +15,3 @@ Remove super admin privileges from one or more users.
     Success: Revoked super-admin capabilities.
 
 
-

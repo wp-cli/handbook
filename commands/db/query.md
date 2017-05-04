@@ -46,4 +46,3 @@ Executes an arbitrary SQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
     +---+------+------------------------------+-----+
 
 
-

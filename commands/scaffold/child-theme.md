@@ -42,4 +42,3 @@ Creates a child theme folder with `functions.php` and `style.css` files.
     Success: Created '/var/www/example.com/public_html/wp-content/themes/sample-theme'.
 
 
-

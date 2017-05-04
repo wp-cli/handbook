@@ -26,4 +26,3 @@ options:
     jpg jpeg png gif mov avi mpg
 
 
-

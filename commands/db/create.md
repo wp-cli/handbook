@@ -14,4 +14,3 @@ wp-config.php.
     Success: Database created.
 
 
-

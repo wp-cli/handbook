@@ -15,4 +15,3 @@ Mark one or more sites as spam.
     Success: Site 123 marked as spam.
 
 
-

@@ -18,4 +18,3 @@ Remove a user's capability.
     Success: Removed 'publish_newsletters' cap for supervisor (11).
 
 
-

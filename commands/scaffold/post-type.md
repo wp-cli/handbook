@@ -38,4 +38,3 @@ STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in 
     Success: Created '/var/www/example.com/public_html/wp-content/themes/simple-life/post-types/movie.php'.
 
 
-

@@ -19,4 +19,3 @@ used.
     Success: Added johndoe (12) to http://example.com as author.
 
 
-

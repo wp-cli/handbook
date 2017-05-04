@@ -28,4 +28,3 @@ sidebar.
     Success: Added widget to sidebar.
 
 
-

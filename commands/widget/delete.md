@@ -16,4 +16,3 @@ Delete one or more widgets from a sidebar.
     Success: Deleted 1 of 1 widgets.
 
 
-

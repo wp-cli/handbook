@@ -30,4 +30,3 @@ options:
     Mary is an WordPress developer.
 
 
-

@@ -35,4 +35,3 @@ Destroy a session for the given user.
     Success: Destroyed all sessions.
 
 
-

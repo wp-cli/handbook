@@ -46,4 +46,3 @@ Only works for the Phar installation mechanism.
     Success: Updated WP-CLI to 0.24.1.
 
 
-

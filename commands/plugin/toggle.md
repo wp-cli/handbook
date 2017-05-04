@@ -28,4 +28,3 @@ inactive, then it will be activated.
     Success: Toggled 1 of 1 plugins.
 
 
-

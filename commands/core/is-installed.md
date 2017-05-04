@@ -24,4 +24,3 @@ to communicate whether WordPress is installed.
     fi
 
 
-

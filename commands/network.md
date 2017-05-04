@@ -7,20 +7,3 @@
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/network/meta/">meta</a></td>
-			<td>Manage network custom fields.</td>
-		</tr>
-	</tbody>
-</table>
