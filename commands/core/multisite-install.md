@@ -1,7 +1,5 @@
 # wp core multisite-install
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acore-multisite-install+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Install WordPress multisite from scratch.
 
 Creates the WordPress tables in the database using the URL, title, and

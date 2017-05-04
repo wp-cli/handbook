@@ -1,7 +1,5 @@
 # wp rewrite flush
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Arewrite-flush+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Flush rewrite rules.
 
 Resets WordPress' rewrite rules based on registered post types, etc.

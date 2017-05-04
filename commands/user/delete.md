@@ -1,7 +1,5 @@
 # wp user delete
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Auser-delete+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Delete one or more users from the current site.
 
 On multisite, `wp user delete` only removes the user from the current

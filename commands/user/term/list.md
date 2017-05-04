@@ -1,7 +1,5 @@
 # wp user term list
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Auser-term-list+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 List all terms associated with an object.
 
 &lt;id&gt;

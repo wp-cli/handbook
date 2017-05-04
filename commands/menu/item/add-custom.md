@@ -1,7 +1,5 @@
 # wp menu item add-custom
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Amenu-item-add-custom+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Add a custom menu item.
 
 ### OPTIONS

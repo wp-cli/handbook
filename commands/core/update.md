@@ -1,7 +1,5 @@
 # wp core update
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acore-update+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Update WordPress to a newer version.
 
 Defaults to updating WordPress to the latest version.

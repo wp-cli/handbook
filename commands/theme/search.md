@@ -1,7 +1,5 @@
 # wp theme search
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Atheme-search+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Search the WordPress.org theme directory.
 
 Displays themes in the WordPress.org theme directory matching a given

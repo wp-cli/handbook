@@ -1,7 +1,5 @@
 # wp scaffold _s
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Ascaffold-_s+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Generate starter code for a theme based on _s.
 
 See the [Underscores website](http://underscores.me/) for more details.

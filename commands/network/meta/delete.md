@@ -1,7 +1,5 @@
 # wp network meta delete
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Anetwork-meta-delete+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Delete a meta field.
 
 &lt;id&gt;

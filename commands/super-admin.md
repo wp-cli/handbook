@@ -1,7 +1,5 @@
 # wp super-admin
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Asuper-admin+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Manage super admins on WordPress multisite.
 
 ### EXAMPLES

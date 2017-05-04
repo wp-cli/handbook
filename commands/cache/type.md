@@ -1,7 +1,5 @@
 # wp cache type
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acache-type+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Attempts to determine which object cache is being used.
 
 Note that the guesses made by this function are based on the

@@ -1,7 +1,5 @@
 # wp cli alias
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acli-alias+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 List available WP-CLI aliases.
 
 Aliases are shorthand references to WordPress installs. For instance,

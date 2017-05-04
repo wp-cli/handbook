@@ -1,7 +1,5 @@
 # wp user term remove
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Auser-term-remove+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Remove a term from an object.
 
 &lt;id&gt;

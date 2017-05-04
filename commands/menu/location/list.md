@@ -1,7 +1,5 @@
 # wp menu location list
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Amenu-location-list+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 List locations for the current theme.
 
 ### OPTIONS

@@ -1,7 +1,5 @@
 # wp widget delete
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Awidget-delete+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Delete one or more widgets from a sidebar.
 
 ### OPTIONS
