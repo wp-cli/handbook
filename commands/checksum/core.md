@@ -1,7 +1,5 @@
 # wp checksum core
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Achecksum-core+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Verify WordPress files against WordPress.org's checksums.
 
 Downloads md5 checksums for the current version from WordPress.org, and

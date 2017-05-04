@@ -1,7 +1,5 @@
 # wp scaffold
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Ascaffold+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Generate code for post types, taxonomies, plugins, child themes, etc.
 
 ### EXAMPLES

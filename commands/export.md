@@ -1,7 +1,5 @@
 # wp export
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Aexport+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Export WordPress content to a WXR file.
 
 Generates one or more WXR files containing authors, terms, posts,

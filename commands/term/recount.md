@@ -1,7 +1,5 @@
 # wp term recount
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Aterm-recount+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Recalculate number of posts assigned to each term.
 
 In instances where manual updates are made to the terms assigned to

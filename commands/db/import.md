@@ -1,7 +1,5 @@
 # wp db import
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Adb-import+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Import a database from a file or from STDIN.
 
 Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and

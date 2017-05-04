@@ -1,7 +1,5 @@
 # wp cache decr
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acache-decr+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Decrement a value in the object cache.
 
 Errors if the value can't be decremented.

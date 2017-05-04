@@ -1,7 +1,5 @@
 # wp core download
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acore-download+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Download core WordPress files.
 
 Downloads and extracts WordPress core files to the specified path. Uses

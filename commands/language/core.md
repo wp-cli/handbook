@@ -1,7 +1,5 @@
 # wp language core
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Alanguage-core+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Manage core language.
 
 ### EXAMPLES

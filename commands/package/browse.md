@@ -1,7 +1,5 @@
 # wp package browse
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Apackage-browse+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Browse WP-CLI packages available for installation.
 
 Lists packages available for installation from the [Package Index](http://wp-cli.org/package-index/).

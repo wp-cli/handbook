@@ -1,7 +1,5 @@
 # wp scaffold child-theme
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Ascaffold-child-theme+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Generate child theme based on an existing theme.
 
 Creates a child theme folder with `functions.php` and `style.css` files.

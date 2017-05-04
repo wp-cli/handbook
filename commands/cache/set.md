@@ -1,7 +1,5 @@
 # wp cache set
 
-<small>Quick links: <a href="https://github.com/issues?q=is%3Aopen+label%3Acommand%3Acache-set+sort%3Aupdated-desc+org%3Awp-cli">Github issues</a></small>
-
 Set a value to the object cache, regardless of whether it already exists.
 
 Errors if the value can't be set.
