@@ -16,4 +16,3 @@ Get status of a comment.
     approved
 
 
-

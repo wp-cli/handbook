@@ -15,4 +15,3 @@ Delete one or more items from a menu.
     Success: 1 menu item deleted.
 
 
-

@@ -22,4 +22,3 @@ Open a MySQL console using credentials from wp-config.php
     mysql&gt;
 
 
-

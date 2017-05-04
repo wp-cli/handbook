@@ -32,36 +32,3 @@ Manage user roles.
     Success: Reset 3/3 roles.
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/role/create/">create</a></td>
-			<td>Create a new role.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/role/delete/">delete</a></td>
-			<td>Delete an existing role.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/role/exists/">exists</a></td>
-			<td>Check if a role exists.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/role/list/">list</a></td>
-			<td>List all roles.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/role/reset/">reset</a></td>
-			<td>Reset any default role to default capabilities.</td>
-		</tr>
-	</tbody>
-</table>

@@ -22,4 +22,3 @@ If you want to contribute to a package, this is a great way to jump to it.
     /home/vagrant/.wp-cli/packages
 
 
-

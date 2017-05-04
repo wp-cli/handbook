@@ -21,24 +21,3 @@ Manage taxonomies.
     {"manage_terms":"manage_categories","edit_terms":"manage_categories","delete_terms":"manage_categories","assign_terms":"edit_posts"}
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/taxonomy/get/">get</a></td>
-			<td>Get details about a registered taxonomy.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/taxonomy/list/">list</a></td>
-			<td>List registered taxonomies.</td>
-		</tr>
-	</tbody>
-</table>

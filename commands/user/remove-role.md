@@ -18,4 +18,3 @@ Remove a user's role.
     Success: Removed 'author' role for johndoe (12).
 
 
-

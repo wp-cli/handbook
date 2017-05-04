@@ -20,4 +20,3 @@ plugin file.
     /var/www/wordpress/wp-content/plugins
 
 
-

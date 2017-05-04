@@ -18,4 +18,3 @@ Moves widgets to Inactive Widgets.
     Success: 1 widget deactivated.
 
 
-

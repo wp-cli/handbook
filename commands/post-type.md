@@ -22,24 +22,3 @@ Manage post types.
     +---------------+--------+
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/post-type/get/">get</a></td>
-			<td>Get details about a registered post type.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/post-type/list/">list</a></td>
-			<td>List registered post types.</td>
-		</tr>
-	</tbody>
-</table>

@@ -32,4 +32,3 @@ Delete an existing post.
     Success: Trashed post 1294.
 
 
-

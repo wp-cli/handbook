@@ -21,28 +21,3 @@ Manage theme mods.
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/theme/mod/get/">get</a></td>
-			<td>Get one or more theme mods.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/theme/mod/remove/">remove</a></td>
-			<td>Remove one or more theme mods.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/theme/mod/set/">set</a></td>
-			<td>Set the value of a theme mod.</td>
-		</tr>
-	</tbody>
-</table>

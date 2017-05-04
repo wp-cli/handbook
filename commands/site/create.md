@@ -30,4 +30,3 @@ Create a site in a multisite install.
     Success: Site 3 created: http://www.example.com/example/
 
 
-

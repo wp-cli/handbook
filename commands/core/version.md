@@ -23,4 +23,3 @@ Display the WordPress version.
     Package language:  en_US
 
 
-

@@ -6,7 +6,7 @@ Install a given language.
 
 Downloads the language pack from WordPress.org.
 
-&lt;language&gt;
+&lt;language&gt;...
 : Language code to install.
 
 [\--activate]
@@ -17,6 +17,5 @@ Downloads the language pack from WordPress.org.
     # Install the Japanese language.
     $ wp core language install ja
     Success: Language installed.
-
 
 

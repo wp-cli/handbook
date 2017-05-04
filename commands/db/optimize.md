@@ -17,4 +17,3 @@ for more details on the `OPTIMIZE TABLE` statement.
     Success: Database optimized.
 
 
-

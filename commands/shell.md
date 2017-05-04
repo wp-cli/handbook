@@ -23,4 +23,3 @@ that you can use within a WordPress plugin, for example.
     => string(6) "WP-CLI"
 
 
-

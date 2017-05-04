@@ -40,4 +40,3 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and
     Success: Exported to 'wordpress_dbase.sql'.
 
 
-

@@ -16,4 +16,3 @@ Approve a comment.
     Success: Approved comment 1337.
 
 
-

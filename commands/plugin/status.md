@@ -31,4 +31,3 @@ See the status of one or all plugins.
         Description: A simple and easy way to test your theme for all the latest WordPress standards and practices. A great theme development tool!
 
 
-

@@ -31,36 +31,3 @@ Manage user custom fields.
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/meta/add/">add</a></td>
-			<td>Add a meta field.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/meta/delete/">delete</a></td>
-			<td>Delete a meta field.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/meta/get/">get</a></td>
-			<td>Get meta field value.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/meta/list/">list</a></td>
-			<td>List all metadata associated with a user.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/meta/update/">update</a></td>
-			<td>Update a meta field.</td>
-		</tr>
-	</tbody>
-</table>

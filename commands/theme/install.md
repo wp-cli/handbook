@@ -39,4 +39,3 @@ for confirmation.
     $ wp theme install http://s3.amazonaws.com/bucketname/my-theme.zip?AWSAccessKeyId=123&amp;Expires=456&amp;Signature=abcdef
 
 
-

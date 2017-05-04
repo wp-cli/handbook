@@ -45,4 +45,3 @@ Add a post as a menu item.
     Success: Menu item added.
 
 
-

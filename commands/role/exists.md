@@ -18,4 +18,3 @@ Exits with return code 0 if the role exists, 1 if it does not.
     Success: Role with ID 'editor' exists.
 
 
-

@@ -32,4 +32,3 @@ default: /
     Success: Network installed. Don't forget to set up rewrite rules.
 
 
-

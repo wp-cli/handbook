@@ -19,24 +19,3 @@ Manage attachments.
     Success: Imported file '/home/person/Downloads/image.png' as attachment ID 1753 and attached to post 123 as featured image.
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/media/import/">import</a></td>
-			<td>Create attachments from local files or URLs.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/media/regenerate/">regenerate</a></td>
-			<td>Regenerate thumbnails for one or more attachments.</td>
-		</tr>
-	</tbody>
-</table>

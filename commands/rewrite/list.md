@@ -38,4 +38,3 @@ options:
     category/(.+?)/embed/?$,index.php?category_name=$matches[1]&amp;embed=true,category
 
 
-

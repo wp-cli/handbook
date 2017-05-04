@@ -37,4 +37,3 @@ These fields will be displayed by default for each location:
     +----------+-------------------+
 
 
-

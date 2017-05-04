@@ -13,32 +13,3 @@ Manage user terms.
 
 
 
-
-### SUBCOMMANDS
-
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/term/add/">add</a></td>
-			<td>Add a term to an object.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/term/list/">list</a></td>
-			<td>List all terms associated with an object.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/term/remove/">remove</a></td>
-			<td>Remove a term from an object.</td>
-		</tr>
-		<tr>
-			<td><a href="https://developer.wordpress.org/cli/commands/user/term/set/">set</a></td>
-			<td>Set object terms.</td>
-		</tr>
-	</tbody>
-</table>

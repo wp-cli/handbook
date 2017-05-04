@@ -22,4 +22,3 @@ Delete plugin files without deactivating or uninstalling.
     Success: Deleted 1 of 1 plugins.
 
 
-

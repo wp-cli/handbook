@@ -19,4 +19,3 @@ See the status of one or all themes.
     		Author: the WordPress team
 
 
-

@@ -29,4 +29,3 @@ new sidebar.
     Success: Widget moved.
 
 
-
