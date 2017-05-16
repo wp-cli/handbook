@@ -208,7 +208,7 @@ EOT;
 				'parent'          => 'internal-api',
 			);
 		}
-		file_put_contents( WP_CLI_HANDBOOK_PATH . '/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
+		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated handbook-manifest.json' );
 	}
 
