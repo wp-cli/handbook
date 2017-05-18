@@ -41,7 +41,7 @@ Some commands are bundled with WP-CLI, while others are independently installabl
 
 Nightly Phar builds are created by a Travis job that pushes to the [builds repository](http://github.com/wp-cli/builds). Releases are prepared manually [in accordance to the release checklist](https://make.wordpress.org/cli/handbook/release-checklist/).
 
-The `wp-cli.org` domain currently owned by [andreascreten](https://github.com/andreascreten). DNS is managed through a [Cloudflare](https://www.cloudflare.com/) account that [danielbachhuber](https://github.com/danielbachhuber) holds credentials to.
+The `wp-cli.org` domain is currently owned by [andreascreten](https://github.com/andreascreten). DNS is managed through a [Cloudflare](https://www.cloudflare.com/) account that [danielbachhuber](https://github.com/danielbachhuber) holds credentials to.
 
 Much of the WP-CLI documentation (command pages, etc.) are editable through [wp-cli/handbook](https://github.com/wp-cli/handbook/), and then synced to WordPress.org. The WP-CLI.org homepage is [hosted on GitHub Pages](http://github.com/wp-cli/wp-cli.github.com).
 
