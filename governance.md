@@ -24,12 +24,12 @@ Becoming a committer can seem glamorous, but it also comes with expectations of 
 
 As of December 2017, WP-CLI is a [formal WordPress project](https://make.wordpress.org/core/2016/12/28/supporting-the-future-of-wp-cli/).
 
-Practically-speaking, this means we get to take advantage of the WordPress project's people and software infrastructure:
+Practically speaking, this means we get to take advantage of the WordPress project's people and software infrastructure:
 
 * Much of the WP-CLI documentation is hosted on the wordpress.org domain.
 * We get to use the `#cli` channel in the [WordPress Slack organization](https://make.wordpress.org/chat/).
 * If we need help with something, we can ask.
-* A couple core committers ([dd32](https://github.com/dd32) and [pento](https://github.com/pento)) have ownership permissions to the WP-CLI GitHub organization, in the unlikely event everyone else gets hit by a bus.
+* Two core committers ([dd32](https://github.com/dd32) and [pento](https://github.com/pento)) have ownership permissions to the WP-CLI GitHub organization, in the unlikely event everyone else gets hit by a bus.
 
 Other than this, WP-CLI operates independently.
 
@@ -43,7 +43,7 @@ Nightly Phar builds are created by a Travis job that pushes to the [builds repos
 
 The `wp-cli.org` domain is currently owned by [andreascreten](https://github.com/andreascreten). DNS is managed through a [Cloudflare](https://www.cloudflare.com/) account that [danielbachhuber](https://github.com/danielbachhuber) holds credentials to.
 
-Much of the WP-CLI documentation (command pages, etc.) are editable through [wp-cli/handbook](https://github.com/wp-cli/handbook/), and then synced to WordPress.org. The WP-CLI.org homepage is [hosted on GitHub Pages](http://github.com/wp-cli/wp-cli.github.com).
+Much of the WP-CLI documentation (command pages, etc.) is editable through [wp-cli/handbook](https://github.com/wp-cli/handbook/), and then synced to WordPress.org. The WP-CLI.org homepage is [hosted on GitHub Pages](http://github.com/wp-cli/wp-cli.github.com).
 
 The [wpcli](https://twitter.com/wpcli) Twitter account is managed by [danielbachhuber](https://github.com/danielbachhuber).
 
