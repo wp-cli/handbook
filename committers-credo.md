@@ -23,7 +23,7 @@ A great product is a reflection of thoughtful, deliberate, and considered decisi
 
 The basis of this decision-making ensures:
 
-* New features fit within the scope and philosophy of the WP-CLI project.
+* New features fit within the [scope and philosophy of the WP-CLI project](https://make.wordpress.org/cli/handbook/philosophy/).
 * Bug fixes are prioritized, because bugs negatively affect the product quality.
 * Pull requests include tests covering the scope of the change.
 * Potential code additions are evaluated on their maintenance burden as well as their usefulness.
