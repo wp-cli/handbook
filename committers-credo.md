@@ -34,6 +34,8 @@ Effective involvement with the WP-CLI project requires consistent involvement, c
 
 As a widely adopted project, WP-CLI has a diverse user base. Helping this user base has tremendous opportunity for impact. WP-CLI committers prioritize clearing others’ blockers over their own work, knowing this is a key contributor to a stable community.
 
+Notably, the idea that "[pending code reviews represent blocked threads of execution](http://glen.nu/ramblings/oncodereview.php)" can be applied broadly across all forms of collaboration. Prioritize providing feedback to others over your own work, if your feedback is blocking their progress.
+
 Committer participation isn’t just committing code. Often, you can have a huge amount of impact by investing a little bit of your time into:
 
 * Refining an existing piece of documentation, or drafting a new one.
