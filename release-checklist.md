@@ -16,9 +16,15 @@ php-cli-tools is set to `dev-master` during the development cycle. During the WP
 
 ### Updating the contributor list
 
-Use `./utils/contrib-list` to see new contributors. Update the `.mailmap` file so that the names match their github handles.
+From the `wp-cli/wp-cli` project repo, use `utils/contrib-list.php` to generate a list of release contributors:
 
-When done, use `sort .mailmap -f -u -o .mailmap` to only add new contributors.
+    GITHUB_TOKEN=<token> wp --require=utils/contrib-list.php contrib-list --format=markdown
+
+This script identifies pull request creators from `wp-cli/wp-cli`, `wp-cli/handbook`, and all bundled WP-CLI commands (e.g. `wp-cli/*-command`).
+
+For `wp-cli/wp-cli` and `wp-cli/handbook`, the script uses the currently open release milestone.
+
+For all bundled WP-CLI commands, the script uses all closed milestones since the last WP-CLI release (as identified by the package version constraint).
 
 ### Updating the Phar build
 
