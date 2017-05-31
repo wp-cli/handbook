@@ -90,6 +90,19 @@ The current WP-CLI version will also need to be updated on the [roadmap](https:/
 
 Please also tag a release of the website, so it's easy to correlate versions of the website.
 
+### Regenerate command and internal API docs
+
+Command and internal API docs need to be regenerated before every major release, because they're meant to correlate with the release.
+
+To regenerate:
+
+    git clone git@github.com:wp-cli/handbook.git
+    cd handbook
+    wp handbook gen-api-docs
+    wp handbook gen-commands
+    wp handbook gen-commands-manifest
+    wp handbook gen-hb-manifest
+
 ### Writing the release post
 
 See prior release posts for a format to follow.
