@@ -12,7 +12,7 @@ Also update the WP-CLI version mention in the project's `README.md` ([ref](https
 
 ### Locking php-cli-tools version
 
-php-cli-tools is set to `dev-master` during the development cycle. During the WP-CLI release process, `composer.json` should be locked to a specific version. php-cli-tools may need a new version tagged as well.
+php-cli-tools is sometimes set to `dev-master` during the development cycle. During the WP-CLI release process, `composer.json` should be locked to a specific version. php-cli-tools may need a new version tagged as well.
 
 ### Updating the contributor list
 
@@ -25,6 +25,8 @@ This script identifies pull request creators from `wp-cli/wp-cli`, `wp-cli/handb
 For `wp-cli/wp-cli` and `wp-cli/handbook`, the script uses the currently open release milestone.
 
 For all bundled WP-CLI commands, the script uses all closed milestones since the last WP-CLI release (as identified by the package version constraint).
+
+The script will also produce a total contributor and pull request count you can use in the release post.
 
 ### Updating the Phar build
 
@@ -88,9 +90,22 @@ The current WP-CLI version will also need to be updated on the [roadmap](https:/
 
 Please also tag a release of the website, so it's easy to correlate versions of the website.
 
+### Regenerate command and internal API docs
+
+Command and internal API docs need to be regenerated before every major release, because they're meant to correlate with the release.
+
+To regenerate:
+
+    git clone git@github.com:wp-cli/handbook.git
+    cd handbook
+    wp handbook gen-api-docs
+    wp handbook gen-commands
+    wp handbook gen-commands-manifest
+    wp handbook gen-hb-manifest
+
 ### Writing the release post
 
-Use `./utils/contrib-list -l` to generate the list of code contributors. Documentation contributors will need to be identified by pull requests against the wp-cli.org repository.
+See prior release posts for a format to follow.
 
 ### Announcing
 
@@ -98,7 +113,6 @@ In addition to publishing the release post, a new release is announced in a few 
 
 * WP-CLI Twitter account (with some scheduled follow-up tweets).
 * `/announce` slash command in the `#cli` Slack room.
-* Mailchimp email announcement list (copy and paste the entire release post).
 
 ### Bumping WP-CLI version again
 
