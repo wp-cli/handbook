@@ -24,6 +24,8 @@ are typically called before WordPress is loaded.
 
 WP-CLI hooks include:
 
+* `before_add_command:<command>` - Before the command is added.
+* `after_add_command:<command>` - After the command was added.
 * `before_invoke:<command>` - Just before a command is invoked.
 * `after_invoke:<command>` - Just after a command is involved.
 * `before_wp_load` - Just before the WP load process begins.
@@ -32,6 +34,9 @@ WP-CLI hooks include:
 * `after_wp_load` - Just after the WP load process has completed.
 
 WP-CLI commands can create their own hooks with `WP_CLI::do_hook()`.
+
+If additional arguments are passed through the `WP_CLI::do_hook()` call,
+these will be passed on to the callback provided by `WP_CLI::add_hook()`.
 
 
     # `wp network meta` confirms command is executing in multisite context.

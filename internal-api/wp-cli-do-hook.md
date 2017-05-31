@@ -10,6 +10,7 @@ Execute callbacks registered to a given hook.
 
 <div>
 <strong>$when</strong> (string) Identifier for the hook.<br />
+<strong>...</strong> (mixed) Optional. Arguments that will be passed onto the<br />
 <strong>@return</strong> (null) <br />
 </div>
 
@@ -20,6 +21,7 @@ Execute callbacks registered to a given hook.
 
 See `WP_CLI::add_hook()` for details on WP-CLI's internal hook system.
 Commands can provide and call their own hooks.
+                 callback provided by `WP_CLI::add_hook()`.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
