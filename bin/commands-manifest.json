@@ -545,6 +545,13 @@
         "parent": "config",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/config\/create.md"
     },
+    "config\/path": {
+        "title": "config path",
+        "slug": "path",
+        "cmd_path": "config\/path",
+        "parent": "config",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/config\/path.md"
+    },
     "core\/check-update": {
         "title": "core check-update",
         "slug": "check-update",

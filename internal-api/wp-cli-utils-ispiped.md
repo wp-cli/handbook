@@ -1,18 +1,30 @@
-# WP_CLI\Utils\write_csv()
+# WP_CLI\Utils\isPiped()
 
-Write data as CSV to a given file.
+Checks whether the output of the current script is a TTY or a pipe / redirect
 
 ***
 
 ## Usage
 
-    WP_CLI\Utils\write_csv( $fd, $rows, $headers = array() )
+    WP_CLI\Utils\isPiped()
 
 <div>
-<strong>$fd</strong> (resource) File descriptor<br />
-<strong>$rows</strong> (array) Array of rows to output<br />
-<strong>$headers</strong> (array) List of CSV columns (optional)<br />
+<strong>@return</strong> (bool) <br />
 </div>
+
+
+***
+
+## Notes
+
+Returns true if STDOUT output is being redirected to a pipe or a file; false is
+output is being sent directly to the terminal.
+
+If an env variable SHELL_PIPE exists, returned result depends it's
+value. Strings like 1, 0, yes, no, that validate to booleans are accepted.
+
+To enable ASCII formatting even when shell is piped, use the
+ENV variable SHELL_PIPE=0
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
@@ -26,6 +38,9 @@ Write data as CSV to a given file.
 
 
 
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-write-csv/">WP_CLI\Utils\write_csv()</a></strong> - Write data as CSV to a given file.</li>
+
+
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-http-request/">WP_CLI\Utils\http_request()</a></strong> - Make a HTTP request to a remote URL.</li>
 
 
@@ -36,9 +51,6 @@ Write data as CSV to a given file.
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-basename/">WP_CLI\Utils\basename()</a></strong> - Locale-independent version of basename()</li>
-
-
-<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-ispiped/">WP_CLI\Utils\isPiped()</a></strong> - Checks whether the output of the current script is a TTY or a pipe / redirect</li>
 
 
 
