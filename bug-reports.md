@@ -14,6 +14,26 @@ Once you've done a bit of searching and discovered there isn't prior art for you
 * What you expected to see.
 * What you actually saw.
 
+
+Following this template will help guarantee you are submitting a full bug report:
+
+Environment: affected software and versions (please see environment-specific note below)
+
+Summary: in narrative form, such as “While testing feature x, I encountered z.”
+
+Steps to reproduce the bug (Please be as detailed and specific as possible. It's a good idea to go back and follow your steps a second time to make sure another user can recreate the issue by following the steps directly without assuming any actions)
+1. this
+2. is
+3. what
+4. you
+5. do
+
+Results and impacts:, including severity level (what were the expected results, what were the actual results? who, how and to what degree affected?)
+
+Workarounds (do any workarounds exist?, if so what are they?)
+
+Relevant diagnostics (include any crash reports, stack traces or debug output relevant to the issue. Any screenshots or gifs of issue are helpful too!)
+
 For instance, instead of:
 
 > I think WP-CLI is broken. Can you help me?
@@ -22,9 +42,9 @@ It's more helpful to give as much detail as you can:
 
 > When I run `wp post list`, I see a fatal error about a class being undefined. I expected to see the list of posts.
 
-If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --debug`), you may get more verbosity into the source of the error.
+If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --debug`), you may get more verbosity into the source of the error to include in the report.
 
-Your bug may also be environment-specific. Because WP-CLI is a tool whose behavior is different from system to system, it never hurts to include some environmental details in your issue if you think they're relevant.
+Your bug may also be environment-specific. Because WP-CLI is a tool whose behavior is different from system to system, please include some environmental details in your issue if you think they're relevant.
 
     # What is your system?
     lsb_release -a
@@ -41,4 +61,3 @@ Your bug may also be environment-specific. Because WP-CLI is a tool whose behavi
     stat $(which wp)
     # Are you running any packages? If one is causing a problem, you can use `--skip-packages` to skip loading them
     wp package list
-
