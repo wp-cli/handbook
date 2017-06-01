@@ -70,10 +70,12 @@ The script will also produce a total contributor and pull request count you can 
 
 ### Updating the Homebrew formula
 
-A pull request must be submitted to the Homebrew repo. This involves:
+WP-CLI's Homebrew formula is automatically updated with the [Homebrew updater application](https://github.com/BePsvPT/homebrew-updater). See [Homebrew/homebrew-php/pull/4195#issuecomment-305442172](https://github.com/Homebrew/homebrew-php/pull/4195#issuecomment-305442172).
+
+If the updater application doesn't work for some reason, a pull request must be submitted to the Homebrew repo. This involves:
 
 * Updating the url and sha256 here: https://github.com/Homebrew/homebrew-php/blob/master/Formula/wp-cli.rb#L8-L9
-* Making the commit with format "wp-cli 0.24.0"
+* Making the commit with format "wp-cli 1.x.0"
 
 To generate the sha256 (replace `x` with the minor version):
 
