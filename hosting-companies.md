@@ -29,5 +29,8 @@ In alphabetical order:
 * [SiteGround](http://www.siteground.com/)
 * [Synthesis](http://websynthesis.com/)
 * [TVC.Net](http://TVC.Net/)
-* [WordPress.com VIP](http://vip.wordpress.com/)
 * [WPEngine.com](http://wpengine.com)
+
+The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
+
+* [WordPress.com VIP](http://vip.wordpress.com/)
