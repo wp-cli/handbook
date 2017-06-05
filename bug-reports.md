@@ -17,22 +17,22 @@ Once you've done a bit of searching and discovered there isn't prior art for you
 
 Following this template will help guarantee you are submitting a full bug report:
 
-Environment: affected software and versions (see below)
+**Environment:** affected software and versions (see below)
 
-Summary: in narrative form, such as “While testing feature x, I encountered z.”
+**Summary:** in narrative form, such as “While testing feature x, I encountered z.”
 
-Steps to reproduce the bug (please be as detailed and specific as possible. It's a good idea to go back and follow your steps a second time to make sure another user can recreate the issue by following the steps directly without assuming any actions)
+**Steps to reproduce the bug:** (please be as detailed and specific as possible. It's a good idea to go back and follow your steps a second time to make sure another user can recreate the issue by following the steps directly without assuming any actions)
 1. this
 2. is
 3. what
 4. you
 5. do
 
-Results and impacts:, including severity level (what were the expected results, what were the actual results? who, how and to what degree affected?)
+**Results and impacts:** including severity level (what were the expected results, what were the actual results? who, how and to what degree affected?)
 
-Workarounds (do any workarounds exist?, if so what are they?)
+**Workarounds:** (do any workarounds exist, if so what are they?)
 
-Relevant diagnostics (include any crash reports, stack traces or debug output relevant to the issue. Any screenshots or gifs of issue are helpful too!)
+**Relevant diagnostics:** (include any crash reports, stack traces or debug output relevant to the issue. Any screenshots or gifs of issue are helpful too!)
 
 For instance, instead of:
 
