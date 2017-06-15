@@ -24,11 +24,11 @@ Please be as detailed and specific as possible. It's a good idea to go back and 
 
 > **Steps to reproduce:**
 >
-> 1. Run command 'wp package install somerepo/wp-cli-some-command:@stable'
+> 1. Run command 'wp package install wp-cli/scaffold-package-command:@stable'
 > 2. Allow installation process to complete
 > 3. 'Success: Package installed.' is displayed
-> 4. Run 'wp help some command'
-> 5. Observe 'Error: 'some command' is not a registered wp command.'
+> 4. Run 'wp help scaffold package'
+> 5. Observe 'Error: 'scaffold package' is not a registered wp command.'
 
 **Environment**
 
@@ -56,9 +56,9 @@ Explain how the bug affects your usage, including severity level (what were the 
 
 > **Severity** - High
 > 
-> **Expected Results:** Running `wp help some command` displays help information for installed command.
+> **Expected Results:** Running `wp help scaffold package` displays help information for installed command.
 > 
-> **Actual Results:** 'Error: 'some command' is not a registered wp command' is displayed.
+> **Actual Results:** 'Error: 'scaffold package' is not a registered wp command' is displayed.
 > 
 > This command is crucial for the daily function of our business. 1.2k other users also have installed this package and will be affected.
 > 
@@ -77,8 +77,8 @@ Include any crash reports, stack traces or debug output relevant to the issue. A
 If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --debug`), you may get more verbosity into the source of the error to include in the report.
 
 > ```
-> $ wp package install somerepo/wp-cli-some-command:@stable
-> Installing package somerepo/wp-cli-some-command (@stable)
+> $ wp package install wp-cli/scaffold-package-command:@stable
+> Installing package wp-cli/scaffold-package-command (@stable)
 > Updating /root/.wp-cli/packages/composer.json to require the package...
 > Using Composer to install the package...
 > ---
@@ -89,8 +89,8 @@ If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --de
 > Analyzed 421 packages to resolve dependencies
 > Analyzed 96 rules to resolve dependencies
 > Package operations: 1 install, 0 updates, 0 removals
-> Installs: somerepo/wp-cli-some-command:1.2.0
->  - Installing somerepo/wp-cli-some-command (1.2.0)
+> Installs: wp-cli/scaffold-package-command:1.2.0
+>  - Installing wp-cli/scaffold-package-command (1.2.0)
 > Writing lock file
 > Generating autoload files
 > ---
@@ -98,22 +98,22 @@ If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --de
 > ```
 
 >```
-> $ wp help scaffold some command --debug
+> $ wp help scaffold package --debug
 > Debug (bootstrap): Loading packages from: /root/.wp-cli/packages/vendor/autoload.php (0.044s)
 > Debug (bootstrap): No readable global config found (0.193s)
 > Debug (bootstrap): No project config found (0.194s)
-> Debug (bootstrap): argv: /usr/local/bin/wp help scaffold some command --debug (0.194s)
+> Debug (bootstrap): argv: /usr/local/bin/wp help scaffold package --debug (0.194s)
 > Debug (bootstrap): ABSPATH defined: /home/fu/public_html/ (0.195s)
 > Debug (bootstrap): Begin WordPress load (0.195s)
 > Debug (bootstrap): wp-config.php path: /home/fu/public_html/wp-config.php (0.196s)
 > Debug (bootstrap): Loaded WordPress (1.323s)
 > Debug (bootstrap): Running command: help (1.323s)
-> Error: 'scaffold some command' is not a registered wp command.
+> Error: 'scaffold package' is not a registered wp command.
 > ```
 
-> wp scaffold some command does not work either:
+> wp scaffold package does not work either:
 > 
 >```
-> $ wp scaffold some command
-> Error: 'some command' is not a registered subcommand of 'scaffold'. See 'wp help scaffold'.
+> $ wp scaffold package
+> Error: 'scaffold package' is not a registered subcommand of 'scaffold'. See 'wp help scaffold'.
 > ```
