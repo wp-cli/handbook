@@ -42,7 +42,7 @@ Wondering what to do next? Check out the [quick start guide](https://make.wordpr
 
 ### Updating WP-CLI
 
-If you have installed WP-CLI using the recommended Phar method, you can update it at any time by running `wp cli update` (although if WP-CLI is owned by root, that may be `sudo wp cli update`). If you installed WP-CLI using the Git or Composer-based installations, see the specific instructions for updating associated with each method below.  
+If you have installed WP-CLI using the recommended Phar method, you can update it at any time by running `wp cli update` (although if WP-CLI is owned by root, that may be `sudo wp cli update`). If you installed WP-CLI using the Composer or Git-based installations, see the specific instructions for updating associated with each method below.
 
 When you run `wp cli update`, you'll be prompted to confirm that you wish to update with a message similar to the following:
 
@@ -173,6 +173,10 @@ Then, just symlink the binary:
 
     sudo ln -s /usr/share/wp-cli/bin/wp /usr/bin/wp
 
+### Installing via Git
+
+If you intend to work on WP-CLI itself, see the [Setting up](https://make.wordpress.org/cli/handbook/pull-requests/#setting-up) section in [Pull Requests](https://make.wordpress.org/cli/handbook/pull-requests/).
+
 ### Installing via Homebrew
 
     brew install homebrew/php/wp-cli
@@ -224,7 +228,7 @@ Once you have added that and saved the file, reload the file with:
 
 After you've done that, run `wp --info` to make sure the change has been applied correctly.
 
-For Git and Composer-based WP-CLI installation, you can alternatively set the `WP_CLI_PHP` environment variable, if you don't want to modify `PATH` for some reason.
+For Composer and Git-based WP-CLI installation, you can alternatively set the `WP_CLI_PHP` environment variable, if you don't want to modify `PATH` for some reason.
 
 ### Installing on MediaTemple
 

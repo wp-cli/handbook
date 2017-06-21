@@ -4,3 +4,4 @@ Gemfile.lock
 composer.lock
 vendor
 _drafts/
+.*.swp
