@@ -2,15 +2,19 @@
 
 WP-CLI follows a pull request workflow for changes to its code (and documentation). Whether you want to fix a bug or implement a new feature, the process is pretty much the same:
 
-0. [Search existing issues](https://github.com/wp-cli/wp-cli/issues); if you can't find anything related to what you want to work on, open a new issue so that you can get some initial feedback.
-1. [Fork](https://github.com/wp-cli/wp-cli/fork) the repository.
+0. [Search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli); if you can't find anything related to what you want to work on, open a new issue in the appropriate repository so that you can get some initial feedback.
+1. Fork the repository you'd like to modify, either the framework or one of the command packages.
 2. Create a branch for each issue you'd like to address. Commit your changes.
 3. Push the code changes from your local clone to your fork.
-4. Open a pull request.
+4. Open a pull request. It doesn't matter if the code isn't perfect. The idea is to get it reviewed early and iterate on it.
 
 New to WP-CLI commands? You may want to [start with the commands cookbook](https://make.wordpress.org/cli/handbook/commands-cookbook/) to learn more about how commands work.
 
-It doesn't matter if the code isn't perfect. The idea is to get it reviewed early and iterate on it.
+There are three classes of repos you might want to edit:
+
+* [wp-cli/wp-cli](https://github.com/wp-cli/wp-cli/) is the framework implementation.
+* [wp-cli/scaffold-command](https://github.com/wp-cli/scaffold-command/) is an example of a command implementation. There are many others.
+* [wp-cli/handbook](https://github.com/wp-cli/handbook/) contains documentation rendered in the handbook.
 
 If you're adding a new feature, please add one or more functional tests for it in the `features/` directory. See below.
 
@@ -20,10 +24,14 @@ Lastly, please follow the [WordPress Coding Standards](http://make.wordpress.org
 
 If you haven't submitted a pull request before, you'll want to install WP-CLI for local development:
 
-1. Clone this git repository on your local machine.
+1. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
 2. Install [Composer](https://getcomposer.org/) if you don't already have it.
-3. Run `composer install` to fetch all the dependencies.
+3. Run `composer install --prefer-source` to fetch all the dependencies.
 4. Run `./bin/wp --info` to test if everything was installed properly.
+
+Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). You'll need to fork the repository appropriately in order to have an `origin` to push to.
+
+Commands available for standalone installation (e.g. `wp dist-archive`) can be installed from source (e.g. `wp package install git@github.com:wp-cli/dist-archive-command.git`). Run `wp package path <package-name>` to find the appropriate directory to edit.
 
 ## Running and writing tests
 
