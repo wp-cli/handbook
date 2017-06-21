@@ -16,9 +16,31 @@ There are three classes of repos you might want to edit:
 * [wp-cli/scaffold-command](https://github.com/wp-cli/scaffold-command/) is an example of a command implementation. There are many others.
 * [wp-cli/handbook](https://github.com/wp-cli/handbook/) contains documentation rendered in the handbook.
 
-If you're adding a new feature, please add one or more functional tests for it in the `features/` directory. See below.
+## Expectations
 
-Lastly, please follow the [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/).
+When submitting a pull request, there are several expectations to keep in mind.
+
+**Tests are required**
+
+Most of the time, we'll ask that functional or unit tests be added to cover the change. If it's a new feature, the pull request needs tests. If it's fixing a bug, the pull request needs tests.
+
+See the documentation below for more information on writing and running tests.
+
+**Follow WordPress Coding Standards**
+
+While not yet strictly enforced, the WP-CLI project generally follows the [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/). We may ask you to clean up your pull request if it deviates too much.
+
+**Contributions are atomic**
+
+To make it far easier to merge your code, each pull request should only contain one conceptual change.
+
+If you submit a pull request with multiple conceptual changes, we'll ask you to resubmit as separate pull requests.
+
+**Make regular process on your contribution**
+
+We'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
+
+If you need to step away for any reason, make a comment on the pull request or the related issue so we can pick things up or put things on hold when needed.
 
 ## Setting up
 
@@ -86,13 +108,6 @@ The unit test files are in the `tests/` directory.
 To run the unit tests, just execute:
 
     ./vendor/bin/phpunit
-
-
-## Abandoned pull requests
-
-We'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
-
-If you need to step away for any reason, make a comment on the pull request or the related issue so we can pick things up or put things on hold when needed.
 
 ## Finally...
 
