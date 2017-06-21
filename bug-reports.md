@@ -4,11 +4,11 @@ Think you've found a bug? We'd love for you to help us get it fixed.
 
 Before you create a new issue, you should:
 
-* [Search existing issues](https://github.com/wp-cli/wp-cli/issues?utf8=%E2%9C%93&q=is%3Aissue+bug) to see if there's an existing resolution to it, or if it's already been fixed in a newer version of WP-CLI.
-* Check our documentation on [common issues and their fixes](http://wp-cli.org/docs/common-issues/). It's worth reading through the Github issues linked on the page, as the error listed may not be exactly the error you're experiencing.
+* [Search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Awp-cli+label%3Abug) to see if there's an existing resolution to it, or if it's already been fixed in a newer version.
+* Check our documentation on [common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/). It's worth reading through the Github issues linked on the page, as the error listed may not be exactly the error you're experiencing.
 * Reproduce the issue in a fresh install of WordPress (e.g. Twenty Sixteen or similar, with no plugins active). If the issue only reproduces in a custom environment, then the issue is a bug in your environment, not WP-CLI.
 
-Once you've done a bit of searching and discovered there isn't prior art for your bug, please [create a new Github issue](https://github.com/wp-cli/wp-cli/issues/new). Providing the summary, steps to reproduce, environmental details, and other specifics identified below will help guarantee you are submitting a full bug report.
+Once you've done a bit of searching and discovered there isn't prior art for your bug, please create a new GitHub issue in the appropriate repository. Providing the summary, steps to reproduce, environmental details, and other specifics identified below will help guarantee you are submitting a full bug report.
 
 **Summary**
 
@@ -29,6 +29,8 @@ Please be as detailed and specific as possible. It's a good idea to go back and 
 > 3. 'Success: Package installed.' is displayed
 > 4. Run 'wp help scaffold package'
 > 5. Observe 'Error: 'scaffold package' is not a registered wp command.'
+
+If you have a great deal of output to share, please [create a GitHub gist](https://gist.github.com/) and link to it in the issue.
 
 **Environment**
 
@@ -73,6 +75,8 @@ Do any workarounds exist? If so, what are they?
 **Relevant diagnostics**
 
 Include any crash reports, stack traces or debug output relevant to the issue. Any screenshots or gifs of issue are helpful too!
+
+Have a lot of output? Make your issue easier to understand by [creating a GitHub gist](https://gist.github.com/) and linking to it in the issue.
 
 If you include the `--debug` flag when executing WP-CLI (e.g. `wp post list --debug`), you may get more verbosity into the source of the error to include in the report.
 
