@@ -45,7 +45,25 @@ supplied as an optional third argument during registration.
         WP_CLI::success( $args[0] );
     };
     WP_CLI::add_command( 'foo', $foo );
+
+
+    # Register a custom 'foo-assoc' command to output a supplied associative param.
+    #
+    # $ wp foo-assos --foo=bar
+    # Success: bar
     
+    /**
+     * My awesome closure command
+     *
+     * <message>
+     * : An awesome message to display
+     *
+     * @when before_wp_load
+     */
+    $foo_assoc = function( $args, $args_assoc ) {
+        WP_CLI::success( $args_assoc['foo'] );
+    };
+    WP_CLI::add_command( 'foo-assoc', $foo_assoc );
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
