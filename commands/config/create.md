@@ -69,7 +69,7 @@ default:
     Success: Generated 'wp-config.php' file.
 
     # Avoid disclosing password to bash history by reading from password.txt
-    $ wp core config --dbname=testing --dbuser=wp --prompt=dbpass < password.txt
+    $ wp core config --dbname=testing --dbuser=wp --dbpass=dbpass < password.txt
     Success: Generated 'wp-config.php' file.
 
 
