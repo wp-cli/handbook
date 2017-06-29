@@ -103,6 +103,20 @@ $ wp import wordpress.wxr --authors=create 2>&1 import.log
 
 When you're capturing output to a file, you won't see the output in your current shell session. However, you can open a second shell session and run `tail -f <file>` to see the output as it's added to the file.
 
+Alternatively, you can use `tee` that writes to both standard output and files. You only have to pipe the output to the command and specify the file name.
+
+```bash
+$ wp import wordpress.wxr --authors=create | tee import.log
+```
+
+This will display the output in the current shell screen and also write it to the log file.
+
+Note that if the file already exists, it will be overwritten. If you want to append the output to the file, use the `-a` option.
+
+```bash
+$ wp import wordpress.wxr --authors=create | tee -a import.log
+```
+
 ## Snippets
 
 Master of bash or zsh? Share your tips here.
@@ -153,10 +167,10 @@ $ wp_install new-site
 
 Explanation
 
-Add this function to your ~/.bashrc are reload your shell (or open a new shell). 
+Add this function to your ~/.bashrc are reload your shell (or open a new shell).
 You'll need to substitute these database credentials with your own.
 When you need create a new wordpress install, call this function and specify the
-name of the directory where you want to create the site. This emulates the 
+name of the directory where you want to create the site. This emulates the
 web-based install process.
 
 **List all image URL-s in posts**
