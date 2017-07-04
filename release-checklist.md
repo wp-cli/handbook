@@ -24,7 +24,7 @@ This script identifies pull request creators from `wp-cli/wp-cli`, `wp-cli/handb
 
 For `wp-cli/wp-cli` and `wp-cli/handbook`, the script uses the currently open release milestone.
 
-For all bundled WP-CLI commands, the script uses all closed milestones since the last WP-CLI release (as identified by the package version constraint).
+For all bundled WP-CLI commands, the script uses all closed milestones since the last WP-CLI release (as identified by the version present in the `composer.lock` file). If a command was newly bundled since last release, contributors to that command will need to be manually added to the list.
 
 The script will also produce a total contributor and pull request count you can use in the release post.
 
