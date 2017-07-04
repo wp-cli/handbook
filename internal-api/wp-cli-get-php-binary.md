@@ -34,6 +34,9 @@ Environment values permit specific binaries to be indicated.
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-get-temp-dir/">WP_CLI\Utils\get_temp_dir()</a></strong> - Get the system's temp directory. Warns user if it isn't writable.</li>
 
 
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-wp-clear-object-cache/">WP_CLI\Utils\wp_clear_object_cache()</a></strong> - Clear WordPress internal object caches.</li>
+
+
 
 </ul>
 
