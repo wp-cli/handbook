@@ -293,6 +293,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-http-request.md",
         "parent": "internal-api"
     },
+    "wp-cli-utils-ispiped": {
+        "title": "WP_CLI\\Utils\\isPiped()",
+        "slug": "wp-cli-utils-ispiped",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-ispiped.md",
+        "parent": "internal-api"
+    },
     "wp-cli-utils-launch-editor-for-input": {
         "title": "WP_CLI\\Utils\\launch_editor_for_input()",
         "slug": "wp-cli-utils-launch-editor-for-input",
