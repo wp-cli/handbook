@@ -323,6 +323,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-report-batch-operation-results.md",
         "parent": "internal-api"
     },
+    "wp-cli-utils-wp-clear-object-cache": {
+        "title": "WP_CLI\\Utils\\wp_clear_object_cache()",
+        "slug": "wp-cli-utils-wp-clear-object-cache",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-wp-clear-object-cache.md",
+        "parent": "internal-api"
+    },
     "wp-cli-utils-write-csv": {
         "title": "WP_CLI\\Utils\\write_csv()",
         "slug": "wp-cli-utils-write-csv",

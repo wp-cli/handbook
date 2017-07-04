@@ -219,6 +219,7 @@ EOT;
 	 */
 	public function api_dump() {
 		$apis = array();
+		require WP_CLI_ROOT . '/php/utils-wp.php';
 		$functions = get_defined_functions();
 		foreach( $functions['user'] as $function ) {
 			$reflection = new \ReflectionFunction( $function );
