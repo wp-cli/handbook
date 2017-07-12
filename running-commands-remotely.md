@@ -109,7 +109,7 @@ Running a command remotely through SSH requires having `wp` accessible on the `$
 
 One way to achieve this is to specify the `$PATH` in the remote machine user's `~/.ssh/environment` file, provided that that machine's `sshd` has been configured with `PermitUserEnvironment=yes` (see [OpenSSH documentation](https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files#.7E.2F.ssh.2Fenvironment)).
 
-You can do so by hooking into the `before_ssh` hook, and defining an environment variable with the command you’d like to run:
+Alternatively, in case you cannot make it work from within the server, you can achieve the same effect by hooking into the `before_ssh` hook, and defining an environment variable with the command you’d like to run:
 
 ```php
 WP_CLI::add_hook( 'before_ssh', function() {
