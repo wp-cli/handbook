@@ -8,6 +8,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 
 * **[Installing](https://make.wordpress.org/cli/handbook/installing/)** - Recommended and alternative installation mechanisms.
 * **[Quick start](https://make.wordpress.org/cli/handbook/quick-start/)** - Where to begin after you've installed WP-CLI for the first time.
+* **[Running commands remotely](https://make.wordpress.org/cli/handbook/running-commands-remotely/)** - Learn how to remotely control multiple servers at once. 
 * **[Commands cookbook](https://make.wordpress.org/cli/handbook/commands-cookbook/)** - The full 101 how commands work, writing your own, and sharing them with the world.
 * **[Common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/)** - In case of fire, break glass.
 * **[External resources](https://make.wordpress.org/cli/handbook/external-resources/)** - Blog posts, slides and videos from users.
