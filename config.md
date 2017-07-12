@@ -280,6 +280,12 @@ Here's an annotated example `wp-cli.yml` file:
 		user: wpcli
 		path: /srv/www/wp-cli.org
 
+	# Aliases can reference other aliases to create alias groups
+	# Alias groups can be nested
+	@both:
+	 - @staging
+	 - @production
+
 	# '_' is a special value denoting configuration options for this wp-cli.yml
 	_:
 		# Merge subcommand defaults from the upstream config.yml, instead of overriding
