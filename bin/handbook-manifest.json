@@ -113,6 +113,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/release-checklist.md",
         "parent": null
     },
+    "running-commands-remotely": {
+        "title": "Running Commands Remotely",
+        "slug": "running-commands-remotely",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/running-commands-remotely.md",
+        "parent": null
+    },
     "roadmap": {
         "title": "Roadmap",
         "slug": "roadmap",
