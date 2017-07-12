@@ -9,7 +9,7 @@ Under the hood, WP-CLI proxies commands to the ssh executable, which then passes
 * If you provide just the **host** (e.g. `wp --ssh=example.com`), the user will be inferred from your current system user, the port will be the default SSH port (22) and the path will be the SSH user’s home directory.
 * You can override the **user** by adding it as a prefix terminated by the at sign (e.g. `wp --ssh=admin_user@example.com`).
 * You can override the **port** by adding it as a suffix prepended by a colon (e.g. `wp --ssh=example.com:2222`). 
-* You can override the **path** by adding it as a a suffix (e.g. `wp --ssh=example.com~/webapps/production`). The path comes immediately after the port, or after the TLD of the host if you didn't explicitly set a port.
+* You can override the **path** by adding it as a suffix (e.g. `wp --ssh=example.com~/webapps/production`). The path comes immediately after the port, or after the TLD of the host if you didn't explicitly set a port.
 * You can alternatively provide a known **alias**, stored in `~/.ssh/config` (e.g. `wp --ssh=rc` for the `@rc` alias).
 
 **Note: you need to have a copy of WP-CLI installed on the remote server, accessible as `wp`.**
