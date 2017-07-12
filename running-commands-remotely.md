@@ -2,14 +2,15 @@
 
 ## Using an SSH connection
 
-WP-CLI accepts an `--ssh=<host>` global parameter for running a command against a remote WordPress install.
+WP-CLI accepts an `--ssh=[<user>@]<host>[:<port>][<path>]` global parameter for running a command against a remote WordPress install. This argument works similarly to how the SSH connection is parameterized in tools like `scp` or `git`.
 
-Under the hood, WP-CLI proxies commands to the ssh executable, which then passes them to WP-CLI installed on the remote machine. Your syntax for `--ssh=<host>` can be any of the following:
+Under the hood, WP-CLI proxies commands to the ssh executable, which then passes them to the WP-CLI installed on the remote machine. The syntax for `--ssh=[<user>@]<host>[:<port>][<path>]` is interpreted according to the following rules:
 
-* Just the host (e.g. `wp --ssh=runcommand.io`), which means the user will be inferred from your current system user, and the path will be the SSH user’s home directory.
-* The user and the host (e.g. `wp --ssh=runcommand@runcommand.io`).
-* The user, the host, and the path to the WordPress install (e.g. `wp --ssh=runcommand@runcommand.io~/webapps/production`). The path comes immediately after the TLD of the host.
-* A known alias, stored in `~/.ssh/config` (e.g. `wp --ssh=rc` for the `@rc` alias).
+* If you provide just the **host** (e.g. `wp --ssh=example.com`), the user will be inferred from your current system user, the port will be the default SSH port (22) and the path will be the SSH user’s home directory.
+* You can override the **user** by adding it as a prefix terminated by the at sign (e.g. `wp --ssh=admin_user@example.com`).
+* You can override the **port** by adding it as a suffix prepended by a colon (e.g. `wp --ssh=example.com:2222`). 
+* You can override the **path** by adding it as a a suffix (e.g. `wp --ssh=example.com~/webapps/production`). The path comes immediately after the port, or after the TLD of the host if you didn't explicitly set a port.
+* You can alternatively provide a known **alias**, stored in `~/.ssh/config` (e.g. `wp --ssh=rc` for the `@rc` alias).
 
 **Note: you need to have a copy of WP-CLI installed on the remote server, accessible as `wp`.**
 
@@ -37,7 +38,7 @@ Success: Rewrite rules flushed.
 
 You don't need to SSH into machines, change directories, and generally spend a full minute to get to a given WordPress install, you can just let WP-CLI know what machine to work with and it knows how to make the actual connection.
 
-Additionally, alias groups let you register groups of aliases. If I want to run a command against both configured example sites, I can use a group like `@both`:
+Additionally, alias groups let you register groups of aliases. If you want to run a command against both configured example sites, you can use a group like `@both`:
 
 ```
 # Run the update check on both environments
@@ -106,6 +107,8 @@ wp_users:user_email
 
 Running a command remotely through SSH requires having `wp` accessible on the `$PATH` on the remote server. Because SSH connections don’t load `~/.bashrc` or `~/.zshrc`, you may need to specify a custom `$PATH` when using `wp --ssh=<host>`.
 
+One way to achieve this is to specify the `$PATH` in the remote machine user's `~/.ssh/environment` file, provided that that machine's `sshd` has been configured with `PermitUserEnvironment=yes` (see [OpenSSH documentation](https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files#.7E.2F.ssh.2Fenvironment)).
+
 You can do so by hooking into the `before_ssh` hook, and defining an environment variable with the command you’d like to run:
 
 ```php
@@ -117,7 +120,7 @@ WP_CLI::add_hook( 'before_ssh', function() {
     );
 
     switch( $host ) {
-        case 'runcommand.io':
+        case 'example.com':
             putenv( 'WP_CLI_SSH_PRE_CMD=export PATH=$HOME/bin:$PATH' );
             break;
     }
