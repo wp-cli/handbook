@@ -80,7 +80,9 @@ To have this change take effect in your currently active shell, run `source ~/.b
 
 #### Oh My Zsh
 
-If you're using the _Oh My Zsh_ framework, you can enable the [built-in `wp-cli` plugin](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/wp-cli), by adding it to the `plugins=(plugin1 plugin2 [...])` line in your `~/.zshrc` file.
+If you're using the _Oh My Zsh_ framework, you can enable the [built-in `wp-cli` plugin](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/wp-cli), by adding it to the `plugins=(wp-cli git [...])` line in your `~/.zshrc` file.
+
+Note: the Oh My Zsh plugin comes with the bash completion script included, so it's unnecessary to have both.
 
 To have this change take effect in your currently active shell, run `source ~/.zshrc` afterwards.
 
