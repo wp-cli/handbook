@@ -18,7 +18,7 @@ Once you’ve done a bit of searching and discovered there isn’t an open or fi
 
 ### Creating a pull request
 
-Want to contribute a new feature? WP-CLI is a mature project, and already chock-full of useful functionality. Please first [open an ideas issue to suggest new commands](https://github.com/wp-cli/ideas/issues/new), or open an issue in the appropriate repository to suggest enhancements to existing commands.
+Want to contribute a new feature? WP-CLI is a mature project, and already chock-full of useful functionality. Please first [open an ideas issue to suggest new commands](https://github.com/wp-cli/ideas/issues/new), or open an issue in the appropriate repository to suggest enhancements to existing commands. Opening an issue before submitting a pull request helps us provide architectural and implementation guidance before you spend too much time on the code.
 
 New to the WP-CLI codebase? Check out [issues labeled 'good-first-issue'](https://make.wordpress.org/cli/good-first-issues/) for a place to start. These issues are specially earmarked for new contributors.
 
