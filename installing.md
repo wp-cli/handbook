@@ -68,13 +68,23 @@ For more information about `wp cli update`, including flags and options that can
 
 ### Tab completions
 
-WP-CLI also comes with a tab completion script for Bash and ZSH. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and source it from `~/.bash_profile`:
+#### Bash & Z-Shell
+
+WP-CLI also comes with a tab completion script for _Bash_ and _Z-Shell_. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and source it from `~/.bash_profile`:
 
 ```
 source /FULL/PATH/TO/wp-completion.bash
 ```
 
-Don't forget to run `source ~/.bash_profile` afterwards.
+To have this change take effect in your currently active shell, run `source ~/.bash_profile` afterwards.
+
+#### Oh My Zsh
+
+If you're using the _Oh My Zsh_ framework, you can enable the [built-in `wp-cli` plugin](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/wp-cli), by adding it to the `plugins=(wp-cli git [...])` line in your `~/.zshrc` file.
+
+Note: the Oh My Zsh plugin comes with the bash completion script included, so it's unnecessary to have both.
+
+To have this change take effect in your currently active shell, run `source ~/.zshrc` afterwards.
 
 ## Alternative installation methods
 
