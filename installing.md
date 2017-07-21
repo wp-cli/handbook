@@ -88,6 +88,10 @@ To have this change take effect in your currently active shell, run `source ~/.z
 
 ## Alternative installation methods
 
+### Installing via Git
+
+If you intend to work on WP-CLI itself, see the [Setting up](https://make.wordpress.org/cli/handbook/pull-requests/#setting-up) section in [Pull Requests](https://make.wordpress.org/cli/handbook/pull-requests/).
+
 ### Installing nightly via Phar
 
 The "nightly" is the bleeding-edge version of WP-CLI, built straight from the [master branch](https://github.com/wp-cli/wp-cli/commits/master).
@@ -182,10 +186,6 @@ You can specify a custom install path for WP-CLI, like so:
 Then, just symlink the binary:
 
     sudo ln -s /usr/share/wp-cli/bin/wp /usr/bin/wp
-
-### Installing via Git
-
-If you intend to work on WP-CLI itself, see the [Setting up](https://make.wordpress.org/cli/handbook/pull-requests/#setting-up) section in [Pull Requests](https://make.wordpress.org/cli/handbook/pull-requests/).
 
 ### Installing via Homebrew
 
