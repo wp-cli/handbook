@@ -53,11 +53,11 @@ Using cached file '/home/vagrant/.wp-cli/cache/core/wordpress-4.6.1-en_US.tar.gz
 Success: WordPress downloaded.
 ```
 
-2. Create a new wp-config.php file with `wp core config` ([doc](https://wp-cli.org/commands/core/config/)).
+2. Create a new wp-config.php file with `wp config create` ([doc](https://wp-cli.org/commands/config/create/)).
 
 ```
 $ cd wpclidemo.dev
-$ wp core config --dbname=wpclidemo --dbuser=root
+$ wp config create --dbname=wpclidemo --dbuser=root
 Success: Generated 'wp-config.php' file.
 ```
 

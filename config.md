@@ -261,8 +261,8 @@ Here's an annotated example `wp-cli.yml` file:
 	require:
 	  - path-to/command.php
 
-	# Subcommand defaults (e.g. `wp core config`)
-	core config:
+	# Subcommand defaults (e.g. `wp config create`)
+	config create:
 		dbuser: root
 		dbpass: 
 		extra-php: |
