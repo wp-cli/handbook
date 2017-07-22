@@ -488,9 +488,9 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 }
 ```
 	
-### Add to the package index
+### Distribute as a stand-alone command
 
-Standalone WP-CLI commands can be added to and installed from the [package index](http://wp-cli.org/package-index/). The only technical requirement for being listed in the package index is to include a valid composer.json file with an autoload declaration. We recommended including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
+Standalone WP-CLI commands can be installed from any git repository, ZIP file or folder. The only technical requirement is to include a valid composer.json file with an autoload declaration. We recommended including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
 
 Here's a full composer.json example from the server command:
 
@@ -520,4 +520,25 @@ Here's a full composer.json example from the server command:
 
 Note the `autoload` declaration, which loads `command.php`.
 
-Once you've added a valid composer.json file to your project repository, you can submit your project to the package index by [editing repositories.txt to include the URL to your project](https://github.com/wp-cli/package-index/blob/master/repositories.txt). Please make sure to add yours in alphabetical order.
+Once you've added a valid composer.json file to your project repository, WP-CLI users can pull it in via the package manager from the location you opted to store it in. Here's a few examples of storage locations and the corresponding syntax of installing it via the package manager:
+
+#### Git repository
+
+To install a package that is found in a git repository, you can provide either the HTTPS or the SSH link to the git repository to the `package install` command.
+
+```
+# Installing the package using an HTTPS link
+$ wp package install https://github.com/wp-cli/server-command.git
+
+# Installing the package using an SSH link
+$ wp package install git@github.com:wp-cli/server-command.git
+```
+
+#### ZIP file
+
+You can install a package from a ZIP file by providing the path to that file to the `wp package install` command.
+
+```
+# Installing the package using a ZIP file
+$ wp package install ~/Downloads/server-command-master.zip
+```
