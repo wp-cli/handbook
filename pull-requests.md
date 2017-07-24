@@ -5,6 +5,7 @@ WP-CLI follows a pull request workflow for changes to its code (and documentatio
 0. [Search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli); if you can't find anything related to what you want to work on, open a new issue in the appropriate repository so that you can get some initial feedback.
     1. Opening an issue before submitting a pull request helps us provide architectural and implementation guidance before you spend too much time on the code.
 1. Fork the repository you'd like to modify, either the framework or one of the command packages.
+    1. See [Setting Up](#setting-up) for more details on configuring the codebase for development.
 2. Create a branch for each issue you'd like to address. Commit your changes.
 3. Push the code changes from your local clone to your fork.
 4. Open a pull request. It doesn't matter if the code isn't perfect. The idea is to get it reviewed early and iterate on it.
@@ -47,14 +48,30 @@ If you need to step away for any reason, make a comment on the pull request or t
 
 If you haven't submitted a pull request before, you'll want to install WP-CLI for local development:
 
-1. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
-2. Install [Composer](https://getcomposer.org/) if you don't already have it.
-3. Run `composer install --prefer-source` to fetch all the dependencies.
-4. Run `./bin/wp --info` to test if everything was installed properly.
+1. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have them.
+2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
+3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli; hub fork`
+4. Install all Composer dependencies: `composer install --prefer-source`
+5. Alias the `wp` command to your new WP-CLI install: `alias wp=~/wp-cli/bin/wp`
+6. Verify WP-CLI was installed properly: `wp --info`
 
-Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). You'll need to fork the repository appropriately in order to have an `origin` to push to.
+Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). The `--prefer-source` flag when installing WP-CLI ensures each command is installed as a Git clone, making it easier to commit to.
 
 Commands available for standalone installation (e.g. `wp dist-archive`) can be installed from source (e.g. `wp package install git@github.com:wp-cli/dist-archive-command.git`). Run `wp package path <package-name>` to find the appropriate directory to edit.
+
+Importantly, you'll need to fork each repository in order to have an `origin` to push to. Run `hub fork` to fork a repository from the command-line:
+
+    $ cd vendor/wp-cli/scaffold-command
+    $ hub fork
+    Updating danielbachhuber
+    From https://github.com/wp-cli/scaffold-command
+     * [new branch]      master     -> danielbachhuber/master
+    new remote: danielbachhuber
+    $ git remote -v
+    danielbachhuber git@github.com:danielbachhuber/scaffold-command.git (fetch)
+    danielbachhuber git@github.com:danielbachhuber/scaffold-command.git (push)
+
+Once you've done so, you'll have a fork in your GitHub account and new remote you can push to. If you didn't install `hub`, you'll need to fork the target repo through the web UI and manually add your fork as a remote.
 
 ## Running and writing tests
 
