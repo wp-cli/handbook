@@ -48,13 +48,16 @@ If you need to step away for any reason, make a comment on the pull request or t
 
 If you haven't submitted a pull request before, you'll want to install WP-CLI for local development:
 
-1. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
-2. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have it.
-3. Run `composer install --prefer-source` to fetch all the Composer dependencies.
-4. Use `alias wp=~/wp-cli/bin/wp` to alias the `wp` command to your new development WP-CLI install.
-5. Run `./bin/wp --info` to test if everything was installed properly.
+1. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have it.
+2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
+3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli; hub fork`
+4. Install all Composer dependencies: `composer install --prefer-source`
+5. Alias the `wp` command to your new WP-CLI install: `alias wp=~/wp-cli/bin/wp`
+6. Verify WP-CLI was installed properly: `wp --info`
 
-Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). The `--prefer-source` flag ensures each command is installed as a Git clone, making it easier to commit to. Commands available for standalone installation (e.g. `wp dist-archive`) can be installed from source (e.g. `wp package install git@github.com:wp-cli/dist-archive-command.git`). Run `wp package path <package-name>` to find the appropriate directory to edit.
+Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). The `--prefer-source` flag when installing WP-CLI ensures each command is installed as a Git clone, making it easier to commit to.
+
+Commands available for standalone installation (e.g. `wp dist-archive`) can be installed from source (e.g. `wp package install git@github.com:wp-cli/dist-archive-command.git`). Run `wp package path <package-name>` to find the appropriate directory to edit.
 
 Importantly, you'll need to fork each repository in order to have an `origin` to push to. Run `hub fork` to fork a repository from the command-line:
 
