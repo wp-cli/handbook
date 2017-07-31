@@ -28,6 +28,7 @@ In alphabetical order:
 * [Site5](http://www.site5.com/)
 * [SiteGround](http://www.siteground.com/)
 * [Synthesis](http://websynthesis.com/)
+* [TitanHost](https://titanhost.io/)
 * [TVC.Net](http://TVC.Net/)
 * [WPEngine.com](http://wpengine.com)
 
