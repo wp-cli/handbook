@@ -8,6 +8,8 @@ We appreciate you taking the initiative to contribute to WP-CLI. It’s because 
 
 Please take a moment to read these guidelines at depth. Following the guidelines helps to communicate that you respect the time of the other contributors to the project. In turn, they’ll do their best to reciprocate that respect when working with you, across timezones and around the world.
 
+Should you have any questions about contributing, please join the `#cli` channel in the [WordPress.org Slack](https://make.wordpress.org/chat/).
+
 ### Reporting a bug
 
 Think you’ve found a bug? We’d love for you to help us get it fixed.
