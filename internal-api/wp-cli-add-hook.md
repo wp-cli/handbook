@@ -27,7 +27,7 @@ WP-CLI hooks include:
 * `before_add_command:<command>` - Before the command is added.
 * `after_add_command:<command>` - After the command was added.
 * `before_invoke:<command>` - Just before a command is invoked.
-* `after_invoke:<command>` - Just after a command is involved.
+* `after_invoke:<command>` - Just after a command is invoked.
 * `before_wp_load` - Just before the WP load process begins.
 * `before_wp_config_load` - After wp-config.php has been located.
 * `after_wp_config_load` - After wp-config.php has been loaded into scope.
