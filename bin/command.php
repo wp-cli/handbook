@@ -297,7 +297,7 @@ Common global parameters include:
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<theme>]` | Skip loading all or some themes. |
 
-See [Config](https://make.wordpress.org/cli/handbook/config/) for full details on global parameters.
+See [config](https://make.wordpress.org/cli/handbook/config/) for full details on global parameters.
 
 EOT;
 
