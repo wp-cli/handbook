@@ -83,13 +83,6 @@
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/export.md"
     },
-    "handbook": {
-        "title": "handbook",
-        "slug": "handbook",
-        "cmd_path": "handbook",
-        "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/handbook.md"
-    },
     "help": {
         "title": "help",
         "slug": "help",
