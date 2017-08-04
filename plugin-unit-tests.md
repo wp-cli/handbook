@@ -20,7 +20,7 @@ Running tests locally can be beneficial during development as it is quicker than
 We're going to assume that:
 
 * You already have a plugin called `my-plugin`
-* You have installed `git`, `php`, `apache` ([How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04))
+* You have installed `git`, `svn`, `php`, `apache` ([How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04))
 
 So, let's get started:
 
