@@ -1,5 +1,7 @@
 # Plugin Unit Tests
 
+This guide demonstrates how to run unit tests on both Travis CI and locally.
+
 ## Running tests on Travis CI
 
 If you host your plugin on Github and enable [Travis CI](http://about.travis-ci.org), the tests will be run automatically after every commit you make to the plugin.
@@ -27,14 +29,16 @@ So, let's get started:
 1. Generate the plugin test files: 
 
   ```bash
-  wp scaffold plugin-tests my-plugin```
+  wp scaffold plugin-tests my-plugin
+  ```
 
 This command will generate all the files needed for running tests, including a `.travis.yml` file. 
 
-1. Initialize the testing environment locally: `cd` into the plugin directory and run the install script.
+1. Initialize the testing environment locally: `cd` into the plugin directory and run the install script (you will need to have `wget` installed).
 
   ```bash
-  bin/install-wp-tests.sh wordpress_test root '' localhost latest```
+  bin/install-wp-tests.sh wordpress_test root '' localhost latest
+  ```
 
 The install script first it installs a copy of WordPress in the `/tmp` directory (by default) as well as the WordPress unit testing tools. Then it creates a database to be used while running tests. The parameters that are passed to `install-wp-tests.sh` setup the test database.
 
