@@ -11,7 +11,7 @@ All you need to do to enable this is copy and then edit the following files from
 * `.travis.yml`, `phpunit.xml.dist` and `phpcs.ruleset.xml` files
 * `tests` folder
 
-You will then need to specify your unit tests in `sample-tests.php`
+See the docs for an [explanation of what each file does](https://developer.wordpress.org/cli/commands/scaffold/plugin-tests/). You will then need to specify your unit tests in the `tests/` folder.
 
 ## Running tests locally
 
