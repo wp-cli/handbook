@@ -24,6 +24,9 @@ Create attachments from local files or URLs.
 [\--desc=&lt;description&gt;]
 : "Description" field (post content) of attachment post.
 
+[\--skip-copy]
+: If set, media files (local only) are imported to the library but not moved on disk.
+
 [\--featured_image]
 : If set, set the imported image as the Featured Image of the post its attached to.
 
@@ -36,7 +39,7 @@ Create attachments from local files or URLs.
     $ wp media import ~/Pictures/**\/*.jpg
     Imported file '/home/person/Pictures/beautiful-youg-girl-in-ivy.jpg' as attachment ID 1751.
     Imported file '/home/person/Pictures/fashion-girl.jpg' as attachment ID 1752.
-    Success: Imported 2 of 2 images.
+    Success: Imported 2 of 2 items.
 
     # Import a local image and set it to be the post thumbnail for a post.
     $ wp media import ~/Downloads/image.png --post_id=123 --title="A downloaded picture" --featured_image
@@ -56,4 +59,19 @@ Create attachments from local files or URLs.
     Imported file 'http://s.wordpress.org/style/images/wp-header-logo.png' as attachment ID 1755.
     Success: Imported 1 of 1 images.
 
+### GLOBAL PARAMETERS
+
+WP-CLI has a [series of global parameters](https://make.wordpress.org/cli/handbook/config/) that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress and have the same behavior across all commands.
+
+Common global parameters include:
+
+| **Argument**    | **Description**              |
+|:----------------|:-----------------------------|
+| `--path=<path>` | Path to the WordPress files. |
+| `--url=<url>`   | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
+| `--user=<user>` | Set the WordPress user.      |
+| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+
+See [global parameter documentation](https://make.wordpress.org/cli/handbook/config/) for the full list and other configuration options.
 

@@ -538,6 +538,13 @@
         "parent": "config",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/config\/create.md"
     },
+    "config\/get": {
+        "title": "config get",
+        "slug": "get",
+        "cmd_path": "config\/get",
+        "parent": "config",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/config\/get.md"
+    },
     "config\/path": {
         "title": "config path",
         "slug": "path",
@@ -678,6 +685,13 @@
         "parent": "db",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/db\/optimize.md"
     },
+    "db\/prefix": {
+        "title": "db prefix",
+        "slug": "prefix",
+        "cmd_path": "db\/prefix",
+        "parent": "db",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/db\/prefix.md"
+    },
     "db\/query": {
         "title": "db query",
         "slug": "query",
@@ -698,6 +712,20 @@
         "cmd_path": "db\/reset",
         "parent": "db",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/db\/reset.md"
+    },
+    "db\/search": {
+        "title": "db search",
+        "slug": "search",
+        "cmd_path": "db\/search",
+        "parent": "db",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/db\/search.md"
+    },
+    "db\/size": {
+        "title": "db size",
+        "slug": "size",
+        "cmd_path": "db\/size",
+        "parent": "db",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/db\/size.md"
     },
     "db\/tables": {
         "title": "db tables",

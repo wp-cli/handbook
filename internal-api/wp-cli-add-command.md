@@ -30,8 +30,8 @@ supplied as an optional third argument during registration.
 
     # Register a custom 'foo' command to output a supplied positional param.
     #
-    # $ wp foo bar
-    # Success: bar
+    # $ wp foo bar --append=qux
+    # Success: bar qux
     
     /**
      * My awesome closure command
@@ -39,10 +39,13 @@ supplied as an optional third argument during registration.
      * <message>
      * : An awesome message to display
      *
+     * --append=<message>
+     * : An awesome message to append to the original message.
+     *
      * @when before_wp_load
      */
-    $foo = function( $args ) {
-        WP_CLI::success( $args[0] );
+    $foo = function( $args, $assoc_args ) {
+        WP_CLI::success( $args[0] . ' ' . $assoc_args['append'] );
     };
     WP_CLI::add_command( 'foo', $foo );
     
