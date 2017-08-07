@@ -57,3 +57,15 @@ phpunit
 ```
 
 If you have trouble running the install script or phpunit, check [Support section](http://wp-cli.org/#support) for help and answers to common issues.
+
+## Integrating WP Unit Testing in Windows
+
+Tried and gotten stuck setting up unit tests for your project in Windows?
+
+First, know that some WP-CLI commands don't work in Windows, so you'll want to use use Cygwin. Cygwin is also [preferred by the WordPress core project](https://make.wordpress.org/core/handbook/tutorials/working-with-patches/).
+
+Second, the `bin/install-wp-tests.sh` script doesn't work directly in Windows. Windows 10 [introduced a Windows Subsystem for Linux](http://www.pcworld.com/article/3106463/windows/how-to-get-bash-on-windows-10-with-the-anniversary-update.html) but older versions require extra effort. Cygwin is preferred because it runs bash scripts by default.
+
+Third, the bash installation script uses `which`, a Linux command not available by defaultin Windows. `cURL`, `svn` and `wget` all can be installed in Windows as separate packages.
+
+Lastly, sometimes the bash script fails to build WordPress because of how it uses tmp folders. If it fails, then you can manually install WordPress to a writeable directory, and then manually create `wp-tests-config.php`.
