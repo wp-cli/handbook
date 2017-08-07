@@ -3,7 +3,7 @@ wp-cli/handbook
 
 These files comprise the WP-CLI handbook ([make.wordpress.org/cli/handbook](https://make.wordpress.org/cli/handbook/)) and WP-CLI commands directory ([developer.wordpress.org/cli/commands](https://developer.wordpress.org/cli/commands/)).
 
-The documentation is located in GitHub to enable a pull request-based editing workflow. Long-form documentation (e.g. "Commands cookbook") can be edited directly. Internal API docs and command pages are generated dynamically from the WP-CLI codebase using the `wp handbook` series of commands.
+The documentation is located in GitHub to enable a pull request-based editing workflow. Long-form documentation (e.g. "Commands cookbook") can be edited directly. Internal API docs and command pages are generated dynamically from the WP-CLI codebase using the `wp handbook` series of commands. `wp handbook gen-all` will regenerate all of the handbook pages.
 
 All documentation is imported automatically into WordPress.org in a two step process:
 
