@@ -39,6 +39,7 @@ Common global parameters include:
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>`   | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--user=<user>` | Set the WordPress user.      |
+| `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<theme>]` | Skip loading all or some themes. |
 
