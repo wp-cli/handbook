@@ -19,7 +19,7 @@ The following files are also included unless the `--skip-tests` is used:
 * `bin/install-wp-tests.sh` configures the WordPress test suite and a test database.
 * `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite.
 * `tests/test-sample.php` is a sample file containing test cases.
-* `phpcs.ruleset.xml` is a collenction of PHP_CodeSniffer rules.
+* `phpcs.xml.dist` is a collection of PHP_CodeSniffer rules.
 
 ### OPTIONS
 
@@ -72,4 +72,19 @@ options:
     Success: Created plugin files.
     Success: Created test files.
 
+### GLOBAL PARAMETERS
+
+WP-CLI has a [series of global parameters](https://make.wordpress.org/cli/handbook/config/) that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress and have the same behavior across all commands.
+
+Common global parameters include:
+
+| **Argument**    | **Description**              |
+|:----------------|:-----------------------------|
+| `--path=<path>` | Path to the WordPress files. |
+| `--url=<url>`   | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
+| `--user=<user>` | Set the WordPress user.      |
+| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+
+See [global parameter documentation](https://make.wordpress.org/cli/handbook/config/) for the full list and other configuration options.
 
