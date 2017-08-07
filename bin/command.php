@@ -316,7 +316,12 @@ See [global parameter documentation](https://make.wordpress.org/cli/handbook/con
 EOT;
 
 			// Replace Global parameters with a nice table
-			$docs = preg_replace( '/(#?## GLOBAL PARAMETERS).+/s', '$1' . PHP_EOL . PHP_EOL . $global_parameters, $docs );
+			if ( $binding['has-subcommands'] ) {
+				$replace_global = '';
+			} else {
+				$replace_global = '$1' . PHP_EOL . PHP_EOL . $global_parameters;
+			}
+			$docs = preg_replace( '/(#?## GLOBAL PARAMETERS).+/s', $replace_global, $docs );
 
 			$binding['docs'] = $docs;
 		}
