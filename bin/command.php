@@ -285,7 +285,7 @@ EOT;
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 
 			$global_parameters = <<<EOT
-WP-CLI has a series of global parameters that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress, and have the same behavior across all commands.
+WP-CLI has a [series of global parameters](https://make.wordpress.org/cli/handbook/config/) that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress and have the same behavior across all commands.
 
 Common global parameters include:
 
@@ -297,7 +297,7 @@ Common global parameters include:
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<theme>]` | Skip loading all or some themes. |
 
-See [config](https://make.wordpress.org/cli/handbook/config/) for full details on global parameters.
+See [global parameter documentation](https://make.wordpress.org/cli/handbook/config/) for the full list and other configuration options.
 
 EOT;
 
