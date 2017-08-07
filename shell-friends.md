@@ -190,5 +190,51 @@ Explanation
 ```bash
 wp post create new_page.html --post_type=page --post_title="New Page" --porcelain | xargs -I % wp post meta add % imported_from new_page.html
 ```
+
+Explanation
+
 - Create a page (--porcelain will return only the new post ID)
 - Create post meta with xargs using "-I %" to signify the placeholder template for the new post ID
+
+**Change to a certain WordPress installation's directory from a menu**
+
+```bash
+#!/bin/bash
+
+WP_TOP_PATH="/home/"
+MENU_TEXT="Choose an installation"
+GAUGE_TEXT="Searching for WordPress"
+
+declare -a MENU
+WPS="$(wp --allow-root find "$WP_TOP_PATH" --field=version_path)"
+WP_TOTAL="$(wc -l <<< "$WPS")"
+WP_COUNT="0"
+
+while read -r WP; do
+    WP_LOCAL="${WP%wp-includes/version.php}"
+
+    NAME="$(cd "$WP_LOCAL"; sudo -u "$(stat . -c %U)" -- wp --no-debug --quiet option get blogname)"
+    if [ -z "$NAME" ]; then
+        NAME="(unknown)"
+    fi
+    MENU+=( "$WP_LOCAL" "$NAME" )
+
+    echo "$((++WP_COUNT * 100 / WP_TOTAL))".
+done <<< "$WPS" > >(whiptail --gauge "$GAUGE_TEXT" 7 74 0)
+
+WP_LOCAL="$(whiptail --title "WordPress" --menu "$MENU_TEXT"  $((${#MENU[*]} / 2 + 7)) 74 10 "${MENU[@]}" 3>&1 1>&2 2>&3)"
+
+if [ $? -ne 0 ] || [ ! -d "$WP_LOCAL" ]; then
+    echo "Cannot find '${WP_LOCAL}'" 1>&2
+    exit 100
+fi
+
+echo "cd ${WP_LOCAL}"
+```
+
+Explanation
+
+- Needs `wp-cli/find-command` and `whiptail`
+- Find all WordPress installations below `$WP_TOP_PATH` - must be run as root
+- Display a progress bar while getting `blogname` of each installation
+- Choose one installation from a nice menu and display `cd` command for it

@@ -8,6 +8,8 @@ We appreciate you taking the initiative to contribute to WP-CLI. It’s because 
 
 Please take a moment to read these guidelines at depth. Following the guidelines helps to communicate that you respect the time of the other contributors to the project. In turn, they’ll do their best to reciprocate that respect when working with you, across timezones and around the world.
 
+Should you have any questions about contributing, please join the `#cli` channel in the [WordPress.org Slack](https://make.wordpress.org/chat/).
+
 ### Reporting a bug
 
 Think you’ve found a bug? We’d love for you to help us get it fixed.
@@ -22,7 +24,7 @@ Want to contribute a new feature? WP-CLI is a mature project, and already chock-
 
 New to the WP-CLI codebase? Check out [issues labeled 'good-first-issue'](https://make.wordpress.org/cli/good-first-issues/) for a place to start. These issues are specially earmarked for new contributors.
 
-Once you've decided to commit the time to seeing your pull request through, please [follow our guidelines for creating a pull request](https://make.wordpress.org/cli/handbook/pull-requests/) to make sure it's a pleasant experience. See the "Setting up" section for details on how to edit the code.
+Once you've decided to commit the time to seeing your pull request through, please [follow our guidelines for creating a pull request](https://make.wordpress.org/cli/handbook/pull-requests/) to make sure it's a pleasant experience. See "[Setting up](https://make.wordpress.org/cli/handbook/pull-requests/#setting-up)" for details on making local modifications to WP-CLI. Keep in mind pull requests are [expected to have tests](https://make.wordpress.org/cli/handbook/pull-requests/#running-and-writing-tests) covering the scope of the change.
 
 ### Improving our documentation
 
