@@ -76,6 +76,15 @@ Warning: search-replace will take about 15-20x longer when using --regex.
 [\--regex-flags=&lt;regex-flags&gt;]
 : Pass PCRE modifiers to regex search-replace (e.g. 'i' for case-insensitivity).
 
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - count
+\---
+
 ### EXAMPLES
 
     # Search and replace but skip one column
@@ -101,4 +110,19 @@ Warning: search-replace will take about 15-20x longer when using --regex.
         wp search-replace 'http://example.com' 'http://example.dev' --recurse-objects --skip-columns=guid
     fi
 
+### GLOBAL PARAMETERS
+
+WP-CLI has a [series of global parameters](https://make.wordpress.org/cli/handbook/config/) that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress and have the same behavior across all commands.
+
+Common global parameters include:
+
+| **Argument**    | **Description**              |
+|:----------------|:-----------------------------|
+| `--path=<path>` | Path to the WordPress files. |
+| `--url=<url>`   | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
+| `--user=<user>` | Set the WordPress user.      |
+| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+
+See [global parameter documentation](https://make.wordpress.org/cli/handbook/config/) for the full list and other configuration options.
 
