@@ -113,16 +113,16 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/release-checklist.md",
         "parent": null
     },
-    "running-commands-remotely": {
-        "title": "Running Commands Remotely",
-        "slug": "running-commands-remotely",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/running-commands-remotely.md",
-        "parent": null
-    },
     "roadmap": {
         "title": "Roadmap",
         "slug": "roadmap",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/roadmap.md",
+        "parent": null
+    },
+    "running-commands-remotely": {
+        "title": "Running Commands Remotely",
+        "slug": "running-commands-remotely",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/running-commands-remotely.md",
         "parent": null
     },
     "shell-friends": {
@@ -281,6 +281,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-flag-value.md",
         "parent": "internal-api"
     },
+    "wp-cli-utils-get-home-dir": {
+        "title": "WP_CLI\\Utils\\get_home_dir()",
+        "slug": "wp-cli-utils-get-home-dir",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-home-dir.md",
+        "parent": "internal-api"
+    },
     "wp-cli-utils-get-named-sem-ver": {
         "title": "WP_CLI\\Utils\\get_named_sem_ver()",
         "slug": "wp-cli-utils-get-named-sem-ver",
@@ -333,6 +339,12 @@
         "title": "WP_CLI\\Utils\\report_batch_operation_results()",
         "slug": "wp-cli-utils-report-batch-operation-results",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-report-batch-operation-results.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-trailingslashit": {
+        "title": "WP_CLI\\Utils\\trailingslashit()",
+        "slug": "wp-cli-utils-trailingslashit",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-trailingslashit.md",
         "parent": "internal-api"
     },
     "wp-cli-utils-wp-clear-object-cache": {
