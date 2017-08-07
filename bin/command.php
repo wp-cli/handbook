@@ -18,6 +18,19 @@ define( 'WP_CLI_HANDBOOK_PATH', dirname( dirname( __FILE__ ) ) );
 class Command {
 
 	/**
+	 * Regenerate all doc pages
+	 *
+	 * @subcommand gen-all
+	 */
+	public function gen_all() {
+		self::gen_api_docs();
+		self::gen_commands();
+		self::gen_commands_manifest();
+		self::gen_hb_manifest();
+		WP_CLI::success( 'Generated all doc pages.' );
+	}
+
+	/**
 	 * Generate internal API doc pages
 	 *
 	 * @subcommand gen-api-docs
