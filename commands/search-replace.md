@@ -5,9 +5,9 @@ Search/replace strings in the database.
 Searches through all rows in a selection of tables and replaces
 appearances of the first string with the second string.
 
-By default, the command uses tables registered to the $wpdb object. On
+By default, the command uses tables registered to the `$wpdb` object. On
 multisite, this will just be the tables for the current site unless
-\--network is specified.
+`--network` is specified.
 
 Search/replace intelligently handles PHP serialized data, and does not
 change primary key values.
@@ -112,18 +112,20 @@ options:
 
 ### GLOBAL PARAMETERS
 
-WP-CLI has a [series of global parameters](https://make.wordpress.org/cli/handbook/config/) that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress and have the same behavior across all commands.
-
-Common global parameters include:
+These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
 | **Argument**    | **Description**              |
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
-| `--url=<url>`   | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--user=<user>` | Set the WordPress user.      |
-| `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<theme>]` | Skip loading all or some themes. |
-
-See [global parameter documentation](https://make.wordpress.org/cli/handbook/config/) for the full list and other configuration options.
-
+| `--skip-packages` | Skip loading all installed packages. |
+| `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--[no-]color` | Whether to colorize the output. |
+| `--debug[=<group>]` | Show all PHP errors; add verbosity to WP-CLI bootstrap. |
+| `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
+| `--quiet` | Suppress informational messages. |
