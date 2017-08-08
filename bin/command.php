@@ -141,6 +141,47 @@ EOT;
 	}
 
 	/**
+	 * Update the commands data array with new data
+	 */
+	private static function update_commands_data( $command, &$commands_data, $parent ) {
+		$full = trim( $parent . ' ' . $command->get_name() );
+		$reflection = new \ReflectionClass( $command );
+		$repo_url = '';
+		if ( 'help' === substr( $full, 0, 4 )
+			|| 'cli' === substr( $full, 0, 3 ) ) {
+			$repo_url = 'https://github.com/wp-cli/wp-cli';
+		}
+		if ( $reflection->hasProperty( 'when_invoked' ) ) {
+			$when_invoked = $reflection->getProperty( 'when_invoked' );
+			$when_invoked->setAccessible( true );
+			$closure = $when_invoked->getValue( $command );
+			$closure_reflection = new \ReflectionFunction( $closure );
+			$static = $closure_reflection->getStaticVariables();
+			if ( isset( $static['callable'][0] ) ) {
+				$reflection_class = new \ReflectionClass( $static['callable'][0] );
+				$filename = $reflection_class->getFileName();
+				preg_match( '#vendor/([^/]+/[^/]+)#', $filename, $matches );
+				if ( ! empty( $matches[1] ) ) {
+					$repo_url = 'https://github.com/' . $matches[1];
+				}
+			} else {
+				WP_CLI::error( 'No callable for: ' . var_export( $static, true ) );
+			}
+		}
+		$commands_data[ $full ] = array(
+			'repo_url' => $repo_url,
+		);
+		$len = count( $commands_data );
+		foreach ( $command->get_subcommands() as $subcommand ) {
+			$sub_full = trim( $full . ' ' . $subcommand->get_name() );
+			self::update_commands_data( $subcommand, $commands_data, $full );
+		}
+		if ( isset( $sub_full ) && ! $commands_data[ $full ]['repo_url'] && ! empty( $commands_data[ $sub_full ]['repo_url'] ) ) {
+			$commands_data[ $full ]['repo_url'] = $commands_data[ $sub_full ]['repo_url'];
+		}
+	}
+
+	/**
 	 * Generate a manifest document of all command pages
 	 *
 	 * @subcommand gen-commands-manifest
@@ -152,6 +193,10 @@ EOT;
 			WP_CLI_HANDBOOK_PATH . '/commands/*/*.md',
 			WP_CLI_HANDBOOK_PATH . '/commands/*/*/*.md'
 		);
+		$commands_data = array();
+		foreach( WP_CLI::get_root_command()->get_subcommands() as $command ) {
+			self::update_commands_data( $command, $commands_data, '' );
+		}
 		foreach( $paths as $path ) {
 			foreach( glob( $path ) as $file ) {
 				$slug = basename( $file, '.md' );
@@ -174,6 +219,9 @@ EOT;
 					'parent'          => $parent,
 					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/commands/%s.md', $cmd_path ),
 				);
+				if ( ! empty( $commands_data[ $title ] ) ) {
+					$manifest[ $cmd_path ] = array_merge( $manifest[ $cmd_path ], $commands_data[ $title ] );
+				}
 			}
 		}
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/commands-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
