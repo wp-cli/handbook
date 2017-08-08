@@ -263,6 +263,11 @@ EOT;
 	private static function gen_cmd_pages( $cmd, $parent = array() ) {
 		$parent[] = $cmd['name'];
 
+		static $params;
+		if ( ! isset( $params ) ) {
+			$params = self::invoke_wp_cli( 'wp --skip-packages cli param-dump' );
+		}
+
 		$binding = $cmd;
 		$binding['synopsis'] = implode( ' ', $parent );
 		$binding['path'] = implode( '/', $parent );
@@ -298,22 +303,26 @@ EOT;
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 
 			$global_parameters = <<<EOT
-WP-CLI has a [series of global parameters](https://make.wordpress.org/cli/handbook/config/) that work with all commands. They are called _global parameters_ because they affect how WP-CLI interacts with WordPress and have the same behavior across all commands.
-
-Common global parameters include:
+These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
 | **Argument**    | **Description**              |
 |:----------------|:-----------------------------|
-| `--path=<path>` | Path to the WordPress files. |
-| `--url=<url>`   | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--user=<user>` | Set the WordPress user.      |
-| `--require=<path>` | Load PHP file before running the command (may be used more than once). |
-| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
-| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
-
-See [global parameter documentation](https://make.wordpress.org/cli/handbook/config/) for the full list and other configuration options.
-
 EOT;
+			foreach( $params as $param => $meta ) {
+				if ( false === $meta['runtime']
+					|| empty( $meta['desc'] )
+					|| ! empty( $meta['deprecated'] ) ) {
+					continue;
+				}
+				$param_arg = '--' . $param;
+				if ( ! empty( $meta['runtime'] ) && true !== $meta['runtime'] ) {
+					$param_arg .= $meta['runtime'];
+				}
+				if ( 'color' === $param ) {
+					$param_arg = '--[no-]color';
+				}
+				$global_parameters .= PHP_EOL . '| `' . $param_arg . '` | ' . $meta['desc'] . ' |';
+			}
 
 			// Replace Global parameters with a nice table
 			if ( $binding['has-subcommands'] ) {
