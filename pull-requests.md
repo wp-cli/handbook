@@ -82,7 +82,7 @@ There are two types of automated tests:
 
 ### Functional tests
 
-The functional test files for WP-CLI are in the `features/` directory. Each `.feature` file comprises one or more functional tests for a given feature (roughly organized by command).
+The functional test files for each WP-CLI repository are in the `features/` directory. Each `.feature` file comprises one or more functional tests for a given feature (roughly organized by command).
 
 A functional test can be as simple as:
 
@@ -118,6 +118,8 @@ Or to test a single feature:
     ./vendor/bin/behat features/core.feature
 
 More info can be found by using `./vendor/bin/behat --help`.
+
+Each repository is configured to run its tests on every code push. The [wp-cli/automated-tests](https://github.com/wp-cli/automated-tests) repository runs all tests for all repositories on a regular basis.
 
 ### Unit tests
 
