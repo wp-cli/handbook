@@ -34,7 +34,7 @@ While not yet strictly enforced, the WP-CLI project generally follows the [WordP
 
 **Contributions are atomic**
 
-To make it far easier to merge your code, each pull request should only contain one conceptual change.
+To make it far easier to merge your code, each pull request should only contain one conceptual change. Keeping contributions atomic keeps the pull request discussion focused on one topic and makes it possible to approve changes on a case-by-case basis.
 
 If you submit a pull request with multiple conceptual changes, we'll ask you to resubmit as separate pull requests.
 
