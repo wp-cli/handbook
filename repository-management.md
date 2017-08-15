@@ -12,6 +12,10 @@ Package version follow the [Semantic Versioning Specification (SemVer)](http://s
 
 ## Milestones
 
+Open milestones usually point to the next version to be released.
+
+As the release notes are built using the milestones, pull requests that are to be merged need to be set to the upcoming milestone, so that these pull requests will be part of the release notes.
+
 ## Labels
 
 ## Pull Requests
