@@ -89,6 +89,9 @@ When a pull request was submitted by one of the [committers](https://github.com/
 
 When a pull request was submitted by an external contributor, the [committers](https://github.com/orgs/wp-cli/teams/committers) should be responsive and provide quick feedback to encourage further contributions.
 
-Apart from needing to be approved, pull requests also need to have their tests in a passing state before they can be merged.
+Apart from needing to be approved, pull requests also need to have their tests in a passing state before they can be merged. When both of these conditions are true, any [committer](https://github.com/orgs/wp-cli/teams/committers) can merge the pull requestby:
+1. Ensuring that all applicable labels have been set.
+2. Ensuring that the correct milestone has been set.
+3. Ensuring that the branch is deleted after the merge (if applicable).
 
 ## Releases
