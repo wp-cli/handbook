@@ -8,6 +8,8 @@ Package names for WP-CLI commands must end with the `-command` suffix. Example: 
 
 ## Package Versions
 
+Package version follow the [Semantic Versioning Specification (SemVer)](http://semver.org/).
+
 ## Milestones
 
 ## Labels
