@@ -73,6 +73,20 @@ The `good-first-issue` label denotes an issue that is a good entry point for new
 
 Good first issues are small in scope and don't require extensive technical expertise or historical project knowledge to get started.
 
+## Commits
+
+No direct commits are to be done against the `master` branch of the packages. All code changes need to go through a pull request workflow. 
+
 ## Pull Requests
+
+All code changes go through a pull request.
+
+Every submitted pull request needs to go through a code review, and needs to be approved by at least one of the [committers](https://github.com/orgs/wp-cli/teams/committers).
+
+Non-trivial pull requests should be preceded by a related issue that defines the problem to solve and allows for discussion of the most appropriate solution before actually writing code.
+  
+When a pull request was submitted by one of the [committers](https://github.com/orgs/wp-cli/teams/committers), the submitter should set the "Reviewers" for that pull request to `wp-cli/committers` if a general code review is needed, or to one or more specific committer profiles if the expertise of a specific person is needed/wanted.
+
+When a pull request was submitted by an external contributor, the [committers](https://github.com/orgs/wp-cli/teams/committers) should be responsive and provide quick feedback to encourage further contributions.
 
 ## Releases
