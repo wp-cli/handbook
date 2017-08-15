@@ -95,3 +95,7 @@ Apart from needing to be approved, pull requests also need to have their tests i
 3. Ensuring that the branch is deleted after the merge (if applicable).
 
 ## Releases
+
+Releases are scheduled and communicated well in advance by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
+
+When the release is ready, it is being prepared and executed according to the [release checklist](release-checklist.md) by one of the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
