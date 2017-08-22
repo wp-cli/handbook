@@ -1,6 +1,6 @@
 # wp cap
 
-Manage user capabilities.
+Adds to, removes from, and lists capabilities of a user role.
 
 ### EXAMPLES
 
