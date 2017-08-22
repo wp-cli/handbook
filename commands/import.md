@@ -1,11 +1,10 @@
 # wp import
 
-Import content from a WXR file.
+Imports content from a WordPress eXtended RSS (WXR) file into the database.
 
-Provides a command line interface to the WordPress Importer plugin, for
-performing data migrations.
+Provides a command line interface to the WordPress Importer plugin, for performing data migrations.
 
-### OPTIONS
+### Options
 
 &lt;file&gt;...
 : Path to one or more valid WXR files for importing. Directories are also accepted.
@@ -16,7 +15,7 @@ performing data migrations.
 [\--skip=&lt;data-type&gt;]
 : Skip importing specific data. Supported options are: 'attachment' and 'image_resize' (skip time-consuming thumbnail generation).
 
-### EXAMPLES
+### Examples
 
     # Import content from a WXR file
     $ wp import example.wordpress.2016-06-21.xml --authors=create
@@ -27,7 +26,7 @@ performing data migrations.
     -- Imported post as post_id #1
     Success: Finished importing from 'example.wordpress.2016-06-21.xml' file.
 
-### GLOBAL PARAMETERS
+### Global Parameters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
