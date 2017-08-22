@@ -1,8 +1,8 @@
 # wp media
 
-Import new attachments or regenerate existing ones.
+Imports files as attachments and regenerates thumbnails.
 
-### EXAMPLES
+### Examples
 
     # Re-generate all thumbnails, without confirmation.
     $ wp media regenerate --yes
