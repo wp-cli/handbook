@@ -1,8 +1,8 @@
 # wp eval
 
-Execute arbitrary PHP code.
+Executes and tests PHP commands passed as parameters.
 
-### OPTIONS
+### Options
 
 &lt;php-code&gt;
 : The code to execute, as a string.
@@ -10,7 +10,7 @@ Execute arbitrary PHP code.
 [\--skip-wordpress]
 : Execute code without loading WordPress.
 
-### EXAMPLES
+### Examples
 
     # Display WordPress content directory.
     $ wp eval 'echo WP_CONTENT_DIR;'
@@ -20,7 +20,7 @@ Execute arbitrary PHP code.
     $ wp eval 'echo rand();' --skip-wordpress
     479620423
 
-### GLOBAL PARAMETERS
+### Global Parmaeters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
