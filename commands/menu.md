@@ -1,8 +1,10 @@
 # wp menu
 
-List, create, assign, and delete menus.
+Manages menus for the WordPress site.
 
-### EXAMPLES
+Lists, creates, assigns, and deletes the active theme's [navigation menus](https://developer.wordpress.org/themes/functionality/navigation-menus/).
+
+### Examples
 
     # Create a new menu
     $ wp menu create "My Menu"
