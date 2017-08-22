@@ -1,6 +1,6 @@
 # wp eval-file
 
-Load and execute a PHP file.
+Loads and executes a PHP file.
 
 ### Options
 
