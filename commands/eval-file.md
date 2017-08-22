@@ -2,7 +2,7 @@
 
 Load and execute a PHP file.
 
-### OPTIONS
+### Options
 
 &lt;file&gt;
 : The path to the PHP file to execute.
@@ -13,7 +13,7 @@ Load and execute a PHP file.
 [\--skip-wordpress]
 : Load and execute file without loading WordPress.
 
-### GLOBAL PARAMETERS
+### Global Parameters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
