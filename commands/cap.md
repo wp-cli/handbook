@@ -2,7 +2,7 @@
 
 Adds to, removes from, and lists capabilities of a user role.
 
-### EXAMPLES
+### Examples
 
     # Add 'spectate' capability to 'author' role.
     $ wp cap add 'author' 'spectate'
