@@ -5,6 +5,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/bug-reports.md",
         "parent": null
     },
+    "code-review": {
+        "title": "Code Review",
+        "slug": "code-review",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/code-review.md",
+        "parent": null
+    },
     "commands-cookbook": {
         "title": "Commands Cookbook",
         "slug": "commands-cookbook",
