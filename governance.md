@@ -35,15 +35,17 @@ Other than this, WP-CLI operates independently.
 
 ## How does all of this work?
 
-The [WP-CLI GitHub organization](https://github.com/wp-cli) contains all project code repositories. [wp-cli/wp-cli](https://github.com/wp-cli/wp-cli) is the main project repository, which pulls in command packages and other dependencies through Composer.
+The [WP-CLI GitHub organization](https://github.com/wp-cli) contains all project code repositories. Some commands are bundled with WP-CLI, while others are independently installable. Commands are bundled with WP-CLI when they're stable, closely aligned with the project philosophy, and useful to a majority of users.
 
-Some commands are bundled with WP-CLI, while others are independently installable. Commands are bundled with WP-CLI when they're stable, closely aligned with the project philosophy, and useful to a majority of users.
+[wp-cli/wp-cli](https://github.com/wp-cli/wp-cli) is the main project repository, which pulls in command packages and other dependencies through Composer. Composer defines which version of which dependencies is included in the build. Changes to command packages are included in WP-CLI proper when a stable release is tagged for the package.
 
-Nightly Phar builds are created by a Travis job that pushes to the [builds repository](http://github.com/wp-cli/builds). Releases are prepared manually [in accordance to the release checklist](https://make.wordpress.org/cli/handbook/release-checklist/).
+Nightly Phar builds are created by a Travis job that calls [deploy.sh](https://github.com/wp-cli/wp-cli/blob/master/ci/deploy.sh) and pushes the build artifact to the [builds repository](http://github.com/wp-cli/builds). Releases are prepared manually [in accordance to the release checklist](https://make.wordpress.org/cli/handbook/release-checklist/).
 
 The `wp-cli.org` domain is currently owned by [andreascreten](https://github.com/andreascreten). DNS is managed through a [Cloudflare](https://www.cloudflare.com/) account that [danielbachhuber](https://github.com/danielbachhuber) holds credentials to.
 
 Much of the WP-CLI documentation (command pages, etc.) is editable through [wp-cli/handbook](https://github.com/wp-cli/handbook/), and then synced to WordPress.org. The WP-CLI.org homepage is [hosted on GitHub Pages](http://github.com/wp-cli/wp-cli.github.com).
+
+From time to time, you may see a pull request from the `wp-make-coffee` bot. These originate from a donated WebFaction server running some cron jobs calling bash scripts.
 
 The [wpcli](https://twitter.com/wpcli) Twitter account is managed by [danielbachhuber](https://github.com/danielbachhuber).
 
