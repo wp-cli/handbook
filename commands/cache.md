@@ -2,7 +2,7 @@
 
 Manipulates the WP Object Cache.
 
-Use a persistent ([object cache](https://codex.wordpress.org/Class_Reference/WP_Object_Cache)) drop-in to persist cache values between requests.
+Use a persistent [object cache](https://codex.wordpress.org/Class_Reference/WP_Object_Cache) drop-in to persist cache values between requests.
 
 ### Examples
 
