@@ -1,8 +1,8 @@
 # wp post
 
-Manage posts.
+Manages posts, content, and meta.
 
-### EXAMPLES
+### Examples
 
     # Create a new post.
     $ wp post create --post_type=post --post_title='A sample post'
