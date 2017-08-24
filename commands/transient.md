@@ -5,7 +5,7 @@ Retrieves and sets data stored as WordPress transients.
 See reference for the [Transients API](https://codex.wordpress.org/Transients_API).
 
 
-## Examples
+### Examples
 
     # Set transient.
     $ wp transient set sample_key "test data" 3600
