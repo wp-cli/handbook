@@ -1,18 +1,14 @@
 # wp search-replace
 
-Search/replace strings in the database.
+Searches and replaces strings in the database (regex permitted).
 
-Searches through all rows in a selection of tables and replaces
-appearances of the first string with the second string.
+Searches through all rows in a selection of tables and replaces appearances of the first string with the second string.
 
-By default, the command uses tables registered to the `$wpdb` object. On
-multisite, this will just be the tables for the current site unless
-`--network` is specified.
+By default, the command uses tables registered to the `$wpdb` object. On multisite, this will just be the tables for the current site unless `--network` is specified.
 
-Search/replace intelligently handles PHP serialized data, and does not
-change primary key values.
+Search/replace intelligently handles PHP serialized data, and does not change primary key values.
 
-### OPTIONS
+### Options
 
 &lt;old&gt;
 : A string to search for within the database.
@@ -85,7 +81,7 @@ options:
   - count
 \---
 
-### EXAMPLES
+### Examples
 
     # Search and replace but skip one column
     $ wp search-replace 'http://example.dev' 'http://example.com' --skip-columns=guid
@@ -110,7 +106,7 @@ options:
         wp search-replace 'http://example.com' 'http://example.dev' --recurse-objects --skip-columns=guid
     fi
 
-### GLOBAL PARAMETERS
+### Global Parameters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
