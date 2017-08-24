@@ -1,8 +1,8 @@
 # wp theme
 
-Manage themes.
+Manages site themes, including installs, activations, and updates.
 
-### EXAMPLES
+### Examples
 
     # Install the latest version of a theme from wordpress.org and activate
     $ wp theme install twentysixteen --activate
@@ -31,5 +31,3 @@ Manage themes.
     		Status: Active
     		Version: 1.2
     		Author: the WordPress team
-
-
