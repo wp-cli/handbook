@@ -1,8 +1,8 @@
 # wp role
 
-Manage user roles.
+Manages user roles, including creating new roles and resetting to defaults.
 
-### EXAMPLES
+### Examples
 
     # List roles.
     $ wp role list --fields=role --format=csv
