@@ -47,6 +47,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | pdf-light-viewer      | [PDF Light Viewer](https://github.com/antongorodezkiy/pdf-light-viewer)
 | phpcompat             | [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/)
 | post-gen              | [Post Gen](https://github.com/trepmal/post-gen/)
+| quick-mail            | [Quick Mail](https://wordpress.org/plugins/quick-mail/)
 | rest-api-toolbox      | [REST API Toolbox](https://github.com/petenelson/wp-rest-api-toolbox)
 | redis-cache           | [Redis Object Cache](http://wordpress.org/extend/plugins/redis-cache/)
 | revisions             | [wp-revisions-cli](https://github.com/trepmal/wp-revisions-cli/)
