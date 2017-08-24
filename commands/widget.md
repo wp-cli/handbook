@@ -1,8 +1,10 @@
 # wp widget
 
-Manage sidebar widgets.
+Manages widgets, including adding and moving them within sidebars.
 
-### EXAMPLES
+A [widget](https://developer.wordpress.org/themes/functionality/widgets/) adds content and features to a widget area (also called a [sidebar](https://developer.wordpress.org/themes/functionality/sidebars/)).
+
+### Examples
 
     # List widgets on a given sidebar
     $ wp widget list sidebar-1
@@ -24,5 +26,3 @@ Manage sidebar widgets.
     # Delete one or more widgets entirely
     $ wp widget delete calendar-2 archive-1
     Success: 2 widgets removed from sidebar.
-
-
