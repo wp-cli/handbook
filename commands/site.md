@@ -1,8 +1,8 @@
 # wp site
 
-Perform site-wide operations.
+Performs site-wide operations on a multisite install.
 
-### EXAMPLES
+### Examples
 
     # Create site
     $ wp site create --slug=example
@@ -17,5 +17,3 @@ Perform site-wide operations.
     $ wp site delete 123
     Are you sure you want to delete the 'http://www.example.com/example' site? [y/n] y
     Success: The site at 'http://www.example.com/example' was deleted.
-
-
