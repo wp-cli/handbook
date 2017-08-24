@@ -1,6 +1,6 @@
 # wp cli
 
-Updates WP-CLI and displays its parameters, aliases, and environmental details.
+Updates WP-CLI, displays its parameters, aliases, and environmental details.
 
 ### Examples
 
