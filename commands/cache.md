@@ -6,11 +6,11 @@ Use a persistent [object cache](https://codex.wordpress.org/Class_Reference/WP_O
 
 ### Examples
 
-    # Set cache.
+    \# Set cache.
     $ wp cache set my_key my_value my_group 300
     Success: Set object 'my_key' in group 'my_group'.
 
-    # Get cache.
+    \# Get cache.
     $ wp cache get my_key my_group
     my_value
 
