@@ -1,11 +1,11 @@
 # wp server
 
-Launch PHP's built-in web server for this specific WordPress installation.
+Launches PHP's built-in web server for this specific WordPress installation.
 
 Uses `php -S` to launch a web server serving the WordPress webroot.
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 
-### OPTIONS
+### Options
 
 [\--host=&lt;host&gt;]
 : The hostname to bind the server to.
@@ -26,7 +26,7 @@ set, the default value is it.
 [\--config=&lt;file&gt;]
 : Configure the server with a specific .ini file.
 
-### EXAMPLES
+### Examples
 
     # Make the instance available on any address (with port 8080)
     $ wp server --host=0.0.0.0
@@ -49,7 +49,7 @@ set, the default value is it.
     Document root is /
     Press Ctrl-C to quit.
 
-### GLOBAL PARAMETERS
+### Global Parameters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
