@@ -1,8 +1,8 @@
 # wp plugin
 
-Manage plugins.
+Manages site plugins, including installs, activations, and updates.
 
-### EXAMPLES
+### Examples
 
     # Activate plugin
     $ wp plugin activate hello
