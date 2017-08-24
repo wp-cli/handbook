@@ -2,7 +2,7 @@
 
 Retrieves information on the site's registered post-types.
 
-Get details on built-in and [custom post types](https://developer.wordpress.org/plugins/post-types/).
+Get details on WordPress built-in and [custom post types](https://developer.wordpress.org/plugins/post-types/).
 
 ### Examples
 
