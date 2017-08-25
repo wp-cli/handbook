@@ -23,19 +23,19 @@ Progress bar is written to STDOUT, and disabled when command is piped. Progress
 advances with `$progress->tick()`, and completes with `$progress->finish()`.
 Process bar also indicates elapsed time and expected total time.
 
+```
+# `wp user generate` ticks progress bar each time a new user is created.
+#
+# $ wp user generate --count=500
+# Generating users  22 % [=======>                             ] 0:05 / 0:23
 
-    # `wp user generate` ticks progress bar each time a new user is created.
-    #
-    # $ wp user generate --count=500
-    # Generating users  22 % [=======>                             ] 0:05 / 0:23
-    
-    $progress = \WP_CLI\Utils\make_progress_bar( 'Generating users', $count );
-    for ( $i = 0; $i < $count; $i++ ) {
-        // uses wp_insert_user() to insert the user
-        $progress->tick();
-    }
-    $progress->finish();
-    
+$progress = \WP_CLI\Utils\make_progress_bar( 'Generating users', $count );
+for ( $i = 0; $i < $count; $i++ ) {
+    // uses wp_insert_user() to insert the user
+    $progress->tick();
+}
+$progress->finish();
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

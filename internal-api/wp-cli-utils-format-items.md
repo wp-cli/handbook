@@ -22,37 +22,37 @@ Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or
 
 Given a collection of items with a consistent data structure:
 
-
-    $items = array(
-        array(
-            'key'   => 'foo',
-            'value'  => 'bar',
-        )
-    );
-    
+```
+$items = array(
+    array(
+        'key'   => 'foo',
+        'value'  => 'bar',
+    )
+);
+```
 
 Render `$items` as an ASCII table:
 
+```
+WP_CLI\Utils\format_items( 'table', $items, array( 'key', 'value' ) );
 
-    WP_CLI\Utils\format_items( 'table', $items, array( 'key', 'value' ) );
-    
-    # +-----+-------+
-    # | key | value |
-    # +-----+-------+
-    # | foo | bar   |
-    # +-----+-------+
-    
+# +-----+-------+
+# | key | value |
+# +-----+-------+
+# | foo | bar   |
+# +-----+-------+
+```
 
 Or render `$items` as YAML:
 
+```
+WP_CLI\Utils\format_items( 'yaml', $items, array( 'key', 'value' ) );
 
-    WP_CLI\Utils\format_items( 'yaml', $items, array( 'key', 'value' ) );
-    
-    # ---
-    # -
-    #   key: foo
-    #   value: bar
-    
+# ---
+# -
+#   key: foo
+#   value: bar
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

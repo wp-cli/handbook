@@ -39,16 +39,16 @@ WP-CLI commands can create their own hooks with `WP_CLI::do_hook()`.
 If additional arguments are passed through the `WP_CLI::do_hook()` call,
 these will be passed on to the callback provided by `WP_CLI::add_hook()`.
 
-
-    # `wp network meta` confirms command is executing in multisite context.
-    WP_CLI::add_command( 'network meta', 'Network_Meta_Command', array(
-       'before_invoke' => function () {
-           if ( !is_multisite() ) {
-               WP_CLI::error( 'This is not a multisite install.' );
-           }
+```
+# `wp network meta` confirms command is executing in multisite context.
+WP_CLI::add_command( 'network meta', 'Network_Meta_Command', array(
+   'before_invoke' => function () {
+       if ( !is_multisite() ) {
+           WP_CLI::error( 'This is not a multisite install.' );
        }
-    ) );
-    
+   }
+) );
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

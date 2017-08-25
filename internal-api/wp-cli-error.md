@@ -25,12 +25,12 @@ with return code 1.
 Use `WP_CLI::warning()` instead when script execution should be permitted
 to continue.
 
-
-    # `wp cache flush` considers flush failure to be a fatal error.
-    if ( false === wp_cache_flush() ) {
-        WP_CLI::error( 'The object cache could not be flushed.' );
-    }
-    
+```
+# `wp cache flush` considers flush failure to be a fatal error.
+if ( false === wp_cache_flush() ) {
+    WP_CLI::error( 'The object cache could not be flushed.' );
+}
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

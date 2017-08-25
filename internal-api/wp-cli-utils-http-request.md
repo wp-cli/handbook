@@ -23,14 +23,14 @@ Make a HTTP request to a remote URL.
 
 Wraps the Requests HTTP library to ensure every request includes a cert.
 
+```
+# `wp core download` verifies the hash for a downloaded WordPress archive
 
-    # `wp core download` verifies the hash for a downloaded WordPress archive
-    
-    $md5_response = Utils\http_request( 'GET', $download_url . '.md5' );
-    if ( 20 != substr( $md5_response->status_code, 0, 2 ) ) {
-         WP_CLI::error( "Couldn't access md5 hash for release (HTTP code {$response->status_code})" );
-    }
-    
+$md5_response = Utils\http_request( 'GET', $download_url . '.md5' );
+if ( 20 != substr( $md5_response->status_code, 0, 2 ) ) {
+     WP_CLI::error( "Couldn't access md5 hash for release (HTTP code {$response->status_code})" );
+}
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

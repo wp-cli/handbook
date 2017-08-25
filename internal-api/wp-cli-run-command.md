@@ -26,11 +26,11 @@ To run a command using a new process with the same global parameters,
 use WP_CLI::launch_self(). To run a command using a new process with
 different global parameters, use WP_CLI::launch().
 
-
-    ob_start();
-    WP_CLI::run_command( array( 'cli', 'cmd-dump' ) );
-    $ret = ob_get_clean();
-    
+```
+ob_start();
+WP_CLI::run_command( array( 'cli', 'cmd-dump' ) );
+$ret = ob_get_clean();
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
