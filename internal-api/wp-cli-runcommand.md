@@ -27,7 +27,7 @@ Optionally:
 * Capture and return STDOUT, or full details about command execution.
 * Parse JSON output if the command rendered it.
 
-
+```
     $options = array(
       'return'     => true,   // Return 'STDOUT'; use 'all' for full object.
       'parse'      => 'json', // Parse captured STDOUT to JSON array.
@@ -35,7 +35,7 @@ Optionally:
       'exit_error' => true,   // Halt script execution on error.
     );
     $plugins = WP_CLI::runcommand( 'plugin list --format=json', $options );
-    
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
