@@ -24,19 +24,19 @@ Debug message is written to STDERR, and includes script execution time.
 Helpful for optionally showing greater detail when needed. Used throughout
 WP-CLI bootstrap process for easier debugging and profiling.
 
+```
+# Called in `WP_CLI\Runner::set_wp_root()`.
+private static function set_wp_root( $path ) {
+    define( 'ABSPATH', Utils\trailingslashit( $path ) );
+    WP_CLI::debug( 'ABSPATH defined: ' . ABSPATH );
+    $_SERVER['DOCUMENT_ROOT'] = realpath( $path );
+}
 
-    # Called in `WP_CLI\Runner::set_wp_root()`.
-    private static function set_wp_root( $path ) {
-        define( 'ABSPATH', Utils\trailingslashit( $path ) );
-        WP_CLI::debug( 'ABSPATH defined: ' . ABSPATH );
-        $_SERVER['DOCUMENT_ROOT'] = realpath( $path );
-    }
-    
-    # Debug details only appear when `--debug` is used.
-    # $ wp --debug
-    # [...]
-    # Debug: ABSPATH defined: /srv/www/wordpress-develop.dev/src/ (0.225s)
-    
+# Debug details only appear when `--debug` is used.
+# $ wp --debug
+# [...]
+# Debug: ABSPATH defined: /srv/www/wordpress-develop.dev/src/ (0.225s)
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

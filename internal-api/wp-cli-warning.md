@@ -23,15 +23,15 @@ Warning message is written to STDERR.
 Use instead of `WP_CLI::debug()` when script execution should be permitted
 to continue.
 
-
-    # `wp plugin activate` skips activation when plugin is network active.
-    $status = $this->get_status( $plugin->file );
-    // Network-active is the highest level of activation status
-    if ( 'active-network' === $status ) {
-      WP_CLI::warning( "Plugin '{$plugin->name}' is already network active." );
-      continue;
-    }
-    
+```
+# `wp plugin activate` skips activation when plugin is network active.
+$status = $this->get_status( $plugin->file );
+// Network-active is the highest level of activation status
+if ( 'active-network' === $status ) {
+  WP_CLI::warning( "Plugin '{$plugin->name}' is already network active." );
+  continue;
+}
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

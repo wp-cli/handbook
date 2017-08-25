@@ -21,9 +21,9 @@ Colorize a string for output.
 Yes, you too can change the color of command line text. For instance,
 here's how `WP_CLI::success()` colorizes "Success: "
 
-
-    WP_CLI::colorize( "%GSuccess:%n " )
-    
+```
+WP_CLI::colorize( "%GSuccess:%n " )
+```
 
 Uses `\cli\Colors::colorize()` to transform color tokens to display
 settings. Choose from the following tokens (and note 'reset'):

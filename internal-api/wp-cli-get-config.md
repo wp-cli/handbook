@@ -21,9 +21,9 @@ Get values of global configuration parameters.
 Provides access to `--path=<path>`, `--url=<url>`, and other values of
 the [global configuration parameters](https://wp-cli.org/config/).
 
-
-    WP_CLI::log( 'The --url=<url> value is: ' . WP_CLI::get_config( 'url' ) );
-    
+```
+WP_CLI::log( 'The --url=<url> value is: ' . WP_CLI::get_config( 'url' ) );
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
