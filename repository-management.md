@@ -14,7 +14,7 @@ _Example: `wp-cli/scaffold-package-command`._
 
 ## Package Versions
 
-Package version follow the [Semantic Versioning Specification (SemVer)](http://semver.org/).
+Package versions follow the [Semantic Versioning Specification (SemVer)](http://semver.org/).
 
 In layman's terms for us, this typically means:
 
