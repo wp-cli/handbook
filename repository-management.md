@@ -8,6 +8,8 @@ Before creating a new repository, it's important to discuss the repository first
 
 Package names for WP-CLI commands must end with the `-command` suffix.
 
+Before new repositories are created for commands, a decision needs to be made whether the command deserves its own repository or whether it should be included within an existing repository instead. 
+
 _Example: `wp-cli/scaffold-package-command`._
 
 ## Package Versions
