@@ -68,7 +68,7 @@ Used states:
 
 #### Command
 
-The labels that define what specific command a given issue/pull request is related to are prefix with `command:`.
+The labels that define what specific command a given issue/pull request is related to are prefixed with `command:`.
 
 Some examples:
 
