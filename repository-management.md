@@ -26,7 +26,7 @@ In layman's terms for us, this typically means:
 
 Open milestones usually point to the next version to be released.
 
-As the release notes are built using the milestones, pull requests that are to be merged need to be set to the upcoming milestone, so that these pull requests will be part of the release notes.
+As the release notes are built using the milestones, both pull requests and issues that are to be merged need to be set to the upcoming milestone, so that these pull requests will be part of the release notes.
 
 ## Labels
 
