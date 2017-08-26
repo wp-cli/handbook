@@ -51,7 +51,6 @@ The labels that define what scope the current issue/pull request applies to are 
 Used scopes:
 
 * `scope:bootstrap` - Part of the bootstrap process, which loads both WP-CLI as well as WordPress Core.
-* `scope:command` - Part of an individual command.
 * `scope:distribution` - Part of the distribution process, where the Phar is being built and releases are produced.
 * `scope:documentation` - Part of the handbook, command reference or inline help.
 * `scope:framework` - Part of the WP-CLI framework itself, which provides the architecture, API and helper functions to make commands possible.
@@ -65,8 +64,18 @@ The labels that defined what state a given issue/pull request is in are prefixed
 Used states:
 
 * `state:unconfirmed` - The bug/problem in the issue could not be replicated yet or might be related to the reporter's environment.
-* `state:unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](http://wp-cli.org/#support). 
+* `state:unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](http://wp-cli.org/#support).
 
+#### Command
+
+The labels that define what specific command a given issue/pull request is related to are prefix with `command:`.
+
+Some examples:
+
+* `command:core` - Relates to one or more of the subcommands under the `wp core` parent command.
+* `command:cli-check-update` - Relates to the `wp cli check-update` command.
+* `command:post-meta-update` - Relates to the `wp post-meta update` command.
+ 
 ### Required Labels
 
 Some labels have a special meaning and/or might be used for automated workflows down the road. These are required across all official packages.
