@@ -48,15 +48,13 @@ The labels that define what scope the current issue/pull request applies to are 
 
 Used scopes:
 
-* `bootstrap` - Part of the bootstrap process, which loads both WP-CLI as well as WordPress Core.
-* `command` - Part of an individual command.
-* `distribution` - Part of the distribution process, where the Phar is being built and releases are produced.
-* `documentation` - Part of the handbook, command reference or inline help.
-* `framework` - Part of the WP-CLI framework itself, which provides the architecture, API and helper functions to make commands possible.
-* `testing` - Part of the unit or functional tests.
-* `website` - Part of the website infrastructure on `wp-cli.org` or `make.wordpress.org`.
-
-_Example: `scope:documentation`_
+* `scope:bootstrap` - Part of the bootstrap process, which loads both WP-CLI as well as WordPress Core.
+* `scope:command` - Part of an individual command.
+* `scope:distribution` - Part of the distribution process, where the Phar is being built and releases are produced.
+* `scope:documentation` - Part of the handbook, command reference or inline help.
+* `scope:framework` - Part of the WP-CLI framework itself, which provides the architecture, API and helper functions to make commands possible.
+* `scope:testing` - Part of the unit or functional tests.
+* `scope:website` - Part of the website infrastructure on `wp-cli.org` or `make.wordpress.org`.
 
 #### State
 
@@ -64,10 +62,8 @@ The labels that defined what state a given issue/pull request is in are prefixed
 
 Used states:
 
-* `unconfirmed` - The bug/problem in the issue could not be replicated yet or might be related to the reporter's environment.
-* `unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](http://wp-cli.org/#support). 
-
-_Example: `state:unconfirmed`_
+* `state:unconfirmed` - The bug/problem in the issue could not be replicated yet or might be related to the reporter's environment.
+* `state:unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](http://wp-cli.org/#support). 
 
 ### Required Labels
 
