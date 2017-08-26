@@ -113,7 +113,7 @@ When the release is ready, it is being prepared and executed according to the [r
 
 ### Package Releases
 
-Package releases happen on an as-needed basis. A package is tagged for a release when:
+Package releases happen on an as-needed basis and are executed by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers). A package is tagged for a release when:
 
 * It has a reasonable number of changes that have been sitting for a while (couple weeks or more).
 * It has a substantial enhancement (e.g. a new command) that's worth getting into the nightly build.
