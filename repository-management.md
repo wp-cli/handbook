@@ -6,7 +6,7 @@ Package names for the official `wp-cli` GitHub repository need to be discussed u
 
 Before creating a new repository, it's important to discuss the repository first. This discussion helps establish consensus on what purpose the codebase serves, and where it lives best in the WP-CLI ecosystem.
 
-Package names for WP-CLI commands must end with the `-command` suffix.
+Package names for WP-CLI commands must end with the `-command` suffix for clarity, and also to distinguish them from the non-command repositories.
 
 Before new repositories are created for commands, a decision needs to be made whether the command deserves its own repository or whether it should be included within an existing repository instead. 
 
