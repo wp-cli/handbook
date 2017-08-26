@@ -16,6 +16,12 @@ _Example: `wp-cli/scaffold-package-command`._
 
 Package version follow the [Semantic Versioning Specification (SemVer)](http://semver.org/).
 
+In layman's terms for us, this typically means:
+
+* *Patch releases* (e.g. 1.0.x) are used for bug fixes, documentation changes, small enhancements, etc.
+* *Minor releases* (e.g. 1.x.0) are used when a new command is introduced to a package, or a major enhancement is made to an existing command.
+* *Major releases* (e.g. x.0.0) are used when changes to the framework change the WP-CLI API in a breaking way.
+
 ## Milestones
 
 Open milestones usually point to the next version to be released.
