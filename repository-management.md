@@ -119,3 +119,15 @@ Package releases happen on an as-needed basis and are executed by the [maintaine
 * It has a substantial enhancement (e.g. a new command) that's worth getting into the nightly build.
 
 Tagging a release should be postponed (for a few to several days) if there's an open pull request that makes sense to include in the release.
+
+## Tips & Tools
+
+### GitHub Searches
+
+There are a lot of useful ways to search GitHub. These searches can be put into bookmarks or embedded into pages as a link.
+
+Here are some examples:
+
+* [Open issues & pull requests across all WP-CLI repositories, sorted by last updated](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli)
+* [Merged pull requests across all WP-CLI repositories that have no milestone, sorted by last updated](https://github.com/issues?utf8=%E2%9C%93&q=is%3Amerged+no%3Amilestone+sort%3Aupdated-desc+org%3Awp-cli+)
+* [Closed issues & pull requests across all WP-CLI repositories that have no label, sorted by last updated](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+no%3Alabel+sort%3Aupdated-desc+org%3Awp-cli+)
