@@ -102,6 +102,17 @@ Apart from needing to be approved, pull requests also need to have their tests i
 
 ## Releases
 
-Releases are scheduled and communicated well in advance by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
+### WP-CLI Releases
+
+WP-CLI releases are scheduled and communicated well in advance by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
 When the release is ready, it is being prepared and executed according to the [release checklist](release-checklist.md) by one of the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
+
+### Package Releases
+
+Package releases happen on an as-needed basis. A package is tagged for a release when:
+
+* It has a reasonable number of changes that have been sitting for a while (couple weeks or more).
+* It has a substantial enhancement (e.g. a new command) that's worth getting into the nightly build.
+
+Tagging a release should be postponed (for a few to several days) if there's an open pull request that makes sense to include in the release.
