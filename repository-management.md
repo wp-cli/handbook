@@ -2,7 +2,7 @@
 
 ## Package Names
 
-Package names for the official `wp-cli` GitHub repository need to be discussed upfront with the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
+Package names for the official `wp-cli` GitHub organization need to be discussed upfront with the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
 Before creating a new repository, it's important to discuss the repository first. This discussion helps establish consensus on what purpose the codebase serves, and where it lives best in the WP-CLI ecosystem.
 
