@@ -118,7 +118,7 @@ Apart from needing to be approved, pull requests also need to have their tests i
 
 WP-CLI releases are scheduled and communicated well in advance by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
-When the release is ready, it is being prepared and executed according to the [release checklist](release-checklist.md) by one of the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
+When the release is ready, it is prepared and executed according to the [release checklist](release-checklist.md) by one of the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
 ### Package Releases
 
