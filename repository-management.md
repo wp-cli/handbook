@@ -4,6 +4,8 @@
 
 Package names for the official `wp-cli` GitHub repository need to be discussed upfront with the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
+Before creating a new repository, it's important to discuss the repository first. This discussion helps establish consensus on what purpose the codebase serves, and where it lives best in the WP-CLI ecosystem.
+
 Package names for WP-CLI commands must end with the `-command` suffix.
 
 _Example: `wp-cli/scaffold-package-command`._
