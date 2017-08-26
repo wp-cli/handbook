@@ -99,6 +99,7 @@ Apart from needing to be approved, pull requests also need to have their tests i
 1. Ensuring that all applicable labels have been set.
 2. Ensuring that the correct milestone has been set.
 3. Ensuring that the branch is deleted after the merge (if applicable).
+4. Adapting the title of the pull-request as needed. The ideal pull request title is one that we can copy and paste into release notes as is.
 
 ## Releases
 
