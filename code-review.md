@@ -17,7 +17,7 @@ We're currently using Github for everything. Read up on [our Github workflow](ht
 - Github's "Files Changed" tab is a good place to leave inline comments on specific parts of the changeset. More general comments can be left on the pull request's "Conversation" tab.
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
 - The developer will make changes suggested, discuss the issue for clarity, and may mention the reviewer when they are satisfied with their work.
-- If a pull request needs final cleanup before merging (for example, merging master back into the feature branch so that it can merge cleanly), the reviewer can commit directly to the branch. However, avoid rewriting code without consultation.
+- If a pull request needs final cleanup before merging, or has been abandoned, the [reviewer can commit directly to the branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/). However, avoid rewriting code without consultation.
 - When the reviewer is satisfied with changes, they can either merge or assign the pull request a second reviewer for merge. The original developer (and ideally the reviewer) should both be available for a couple days post-merge to address any issues that arise.
 
 ## What code review is
