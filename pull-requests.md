@@ -9,6 +9,8 @@ WP-CLI follows a pull request workflow for changes to its code (and documentatio
 2. Create a branch for each issue you'd like to address. Commit your changes.
 3. Push the code changes from your local clone to your fork.
 4. Open a pull request. It doesn't matter if the code isn't perfect. The idea is to get it reviewed early and iterate on it.
+5. Respond to [code review feedback](https://make.wordpress.org/cli/handbook/code-review/) in a timely manner, recognizing development is a collaborative process.
+6. Once your pull request has passed code review, it will be merged into master and be in the pipeline for the next release.
 
 New to WP-CLI commands? You may want to [start with the commands cookbook](https://make.wordpress.org/cli/handbook/commands-cookbook/) to learn more about how commands work.
 
@@ -40,7 +42,7 @@ If you submit a pull request with multiple conceptual changes, we'll ask you to 
 
 **Make regular process on your contribution**
 
-We'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
+Through [our code review process](https://make.wordpress.org/cli/handbook/code-review/), we'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
 
 If you need to step away for any reason, make a comment on the pull request or the related issue so we can pick things up or put things on hold when needed.
 

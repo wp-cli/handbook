@@ -14,7 +14,7 @@ WP-CLI is a project depended upon by the entire WordPress ecosystem. This trust 
 Practically-speaking:
 
 * Given a choice between Good, Fast, and Cheap, we pick Good and Slow. Creating great software is a journey, not a destination.
-* Pull requests need approval of at least one other committer before merging. If you’d like more than one code review, please don’t hesitate to request one. You can request a review from a specific person, or from the `@wp-cli/committers` team.
+* [Code review is an integral part of our development workflow](https://make.wordpress.org/cli/handbook/code-review/). Pull requests need approval of at least one other committer before merging. If you’d like more than one code review, please don’t hesitate to request one. You can request a review from a specific person, or from the `@wp-cli/committers` team.
 * If you need help with something, ask for help. Seriously, ask for help any time you feel like you need help. No sense getting stuck.
 
 ## Stellar judgement
@@ -34,7 +34,7 @@ Effective involvement with the WP-CLI project requires consistent involvement, c
 
 As a widely adopted project, WP-CLI has a diverse user base. Helping this user base has tremendous opportunity for impact. WP-CLI committers prioritize clearing others’ blockers over their own work, knowing this is a key contributor to a stable community.
 
-Notably, the idea that "[pending code reviews represent blocked threads of execution](http://glen.nu/ramblings/oncodereview.php)" can be applied broadly across all forms of collaboration. Prioritize providing feedback to others over your own work, if your feedback is blocking their progress. Request a code review for a pull request by assigning the `@wp-cli/committers` team for review.
+Notably, the idea that "[pending code reviews represent blocked threads of execution](http://glen.nu/ramblings/oncodereview.php)" can be applied broadly across all forms of collaboration. Prioritize providing feedback to others over your own work, if your feedback is blocking their progress. Request a [code review](https://make.wordpress.org/cli/handbook/code-review/) for a pull request by assigning the `@wp-cli/committers` team for review.
 
 Committer participation isn’t just committing code. Often, you can have a huge amount of impact by investing a little bit of your time into:
 
