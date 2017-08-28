@@ -22,15 +22,15 @@ Success message is written to STDOUT.
 
 Typically recommended to inform user of successful script conclusion.
 
-
-    # wp rewrite flush expects 'rewrite_rules' option to be set after flush.
-    flush_rewrite_rules( \WP_CLI\Utils\get_flag_value( $assoc_args, 'hard' ) );
-    if ( ! get_option( 'rewrite_rules' ) ) {
-        WP_CLI::warning( "Rewrite rules are empty." );
-    } else {
-        WP_CLI::success( 'Rewrite rules flushed.' );
-    }
-    
+```
+# wp rewrite flush expects 'rewrite_rules' option to be set after flush.
+flush_rewrite_rules( \WP_CLI\Utils\get_flag_value( $assoc_args, 'hard' ) );
+if ( ! get_option( 'rewrite_rules' ) ) {
+    WP_CLI::warning( "Rewrite rules are empty." );
+} else {
+    WP_CLI::success( 'Rewrite rules flushed.' );
+}
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

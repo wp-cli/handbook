@@ -21,11 +21,11 @@ Ask for confirmation before running a destructive operation.
 If 'y' is provided to the question, the script execution continues. If
 'n' or any other response is provided to the question, script exits.
 
+```
+# `wp db drop` asks for confirmation before dropping the database.
 
-    # `wp db drop` asks for confirmation before dropping the database.
-    
-    WP_CLI::confirm( "Are you sure you want to drop the database?", $assoc_args );
-    
+WP_CLI::confirm( "Are you sure you want to drop the database?", $assoc_args );
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

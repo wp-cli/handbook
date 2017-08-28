@@ -20,14 +20,14 @@ Launch an arbitrary external process that takes over I/O.
 
 ## Notes
 
-
-    # `wp core download` falls back to the `tar` binary when PharData isn't available
-    if ( ! class_exists( 'PharData' ) ) {
-        $cmd = "tar xz --strip-components=1 --directory=%s -f $tarball";
-        WP_CLI::launch( Utils\esc_cmd( $cmd, $dest ) );
-        return;
-    }
-    
+```
+# `wp core download` falls back to the `tar` binary when PharData isn't available
+if ( ! class_exists( 'PharData' ) ) {
+    $cmd = "tar xz --strip-components=1 --directory=%s -f $tarball";
+    WP_CLI::launch( Utils\esc_cmd( $cmd, $dest ) );
+    return;
+}
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
