@@ -19,9 +19,9 @@ Parse a SSH url for its host, port, and path.
 
 Similar to parse_url(), but adds support for defined SSH aliases.
 
-
-    host OR host/path/to/wordpress OR host:port/path/to/wordpress
-    
+```
+host OR host/path/to/wordpress OR host:port/path/to/wordpress
+```
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
