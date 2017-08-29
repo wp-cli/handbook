@@ -1,8 +1,10 @@
 # wp term
 
-Manage terms.
+Manages taxonomy terms and term meta, including create, delete, and list.
 
-### EXAMPLES
+See reference for [taxonomies and their terms](https://codex.wordpress.org/Taxonomies).
+
+### Examples
 
     # Create a new term.
     $ wp term create category Apple --description="A type of fruit"
@@ -28,5 +30,3 @@ Manage terms.
     $ wp term recount category post_tag
     Success: Updated category term count
     Success: Updated post_tag term count
-
-

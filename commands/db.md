@@ -1,8 +1,10 @@
 # wp db
 
-Perform basic database operations using credentials stored in wp-config.php
+Performs basic database operations using the wp-config credentials.
 
-### EXAMPLES
+Retrieve info on and run SQL commands in the [WordPress database](https://codex.wordpress.org/Database_Description).
+
+### Examples
 
     # Create a new database.
     $ wp db create

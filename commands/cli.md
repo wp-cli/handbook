@@ -1,8 +1,8 @@
 # wp cli
 
-Review current WP-CLI info, check for updates, or see defined aliases.
+Updates WP-CLI, displays its parameters, aliases, and environmental details.
 
-### EXAMPLES
+### Examples
 
     # Display the version currently installed.
     $ wp cli version

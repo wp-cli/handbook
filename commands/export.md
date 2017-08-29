@@ -1,12 +1,12 @@
 # wp export
 
-Export WordPress content to a WXR file.
+Exports selected database content into a WordPress eXtended RSS (WXR) file.
 
 Generates one or more WXR files containing authors, terms, posts,
 comments, and attachments. WXR files do not include site configuration
 (options) or the attachment files themselves.
 
-### OPTIONS
+### Options
 
 [\--dir=&lt;dirname&gt;]
 : Full path to directory where WXR export files should be stored. Defaults
@@ -21,7 +21,7 @@ to current working directory.
 default: 15
 \---
 
-### FILTERS
+### Filters
 
 [\--start_date=&lt;date&gt;]
 : Export only posts published after this date, in format YYYY-MM-DD.
@@ -58,7 +58,7 @@ with a comma. Defaults to none.
 [\--filename_format=&lt;format&gt;]
 : Use a custom format for export filenames. Defaults to '{site}.wordpress.{date}.{n}.xml'.
 
-### EXAMPLES
+### Examples
 
     # Export posts published by the user between given start and end date
     $ wp export --dir=/tmp/ --user=admin --post_type=post --start_date=2011-01-01 --end_date=2011-12-31
@@ -78,7 +78,7 @@ with a comma. Defaults to none.
     Writing to file /var/www/example.com/public_html/staging.wordpress.2016-05-24.000.xml
     Success: All done with export.
 
-### GLOBAL PARAMETERS
+### Global Parameters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 

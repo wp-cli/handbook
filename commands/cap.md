@@ -1,8 +1,8 @@
 # wp cap
 
-Manage user capabilities.
+Adds, removes, and lists capabilities of a user role.
 
-### EXAMPLES
+### Examples
 
     # Add 'spectate' capability to 'author' role.
     $ wp cap add 'author' 'spectate'

@@ -1,13 +1,13 @@
 # wp help
 
-Get help on WP-CLI, or on a specific command.
+Accesses the manual for WP-CLI and its commands.
 
-### OPTIONS
+### Options
 
 [&lt;command&gt;...]
 : Get help on a specific command.
 
-### EXAMPLES
+### Examples
 
     # get help for `core` command
     wp help core
@@ -15,7 +15,7 @@ Get help on WP-CLI, or on a specific command.
     # get help for `core download` subcommand
     wp help core download
 
-### GLOBAL PARAMETERS
+### Global Parameters
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 

@@ -1,8 +1,10 @@
 # wp post-type
 
-Manage post types.
+Retrieves information on the site's registered post-types.
 
-### EXAMPLES
+Get details on WordPress built-in and [custom post types](https://developer.wordpress.org/plugins/post-types/).
+
+### Examples
 
     # Get details about a post type
     $ wp post-type get page --fields=name,label,hierarchical --format=json

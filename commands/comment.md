@@ -1,8 +1,8 @@
 # wp comment
 
-Manage comments.
+Creates, updates, deletes, and moderates comments.
 
-### EXAMPLES
+### Examples
 
     # Create a new comment.
     $ wp comment create --comment_post_ID=15 --comment_content="hello blog" --comment_author="wp-cli"

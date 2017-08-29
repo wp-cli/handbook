@@ -1,8 +1,11 @@
 # wp transient
 
-Manage transients.
+Retrieves and sets data stored as WordPress transients.
 
-### EXAMPLES
+See reference for the [Transients API](https://codex.wordpress.org/Transients_API).
+
+
+### Examples
 
     # Set transient.
     $ wp transient set sample_key "test data" 3600
@@ -23,5 +26,3 @@ Manage transients.
     # Delete all transients.
     $ wp transient delete --all
     Success: 14 transients deleted from the database.
-
-

@@ -1,8 +1,10 @@
 # wp user
 
-Manage users.
+Manages users, along with their roles, capabilities, and meta.
 
-### EXAMPLES
+See references for [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities)and [WP User class](https://codex.wordpress.org/Class_Reference/WP_User).
+
+### Examples
 
     # List user IDs
     $ wp user list --field=ID
@@ -20,5 +22,3 @@ Manage users.
     # Delete user 123 and reassign posts to user 567
     $ wp user delete 123 --reassign=567
     Success: Removed user 123 from http://example.com
-
-
