@@ -1,5 +1,12 @@
 # Philosophy
 
+WP-CLI is the command-line interface for WordPress. It provides commands for actions that can be performed in the WordPress admin (e.g. `wp theme activate` and `wp user create`), as well as commands for actions that don't have equivalent web UI (e.g. `wp cron event run`, `wp search-replace`, and `wp scaffold child-theme`).
+
+WP-CLI's guiding principle is to be the fastest way to manage WordPress:
+
+* Speed is inherently present in the simplicitly of the command-line interface, and the ability to chain multiple commands together into a more complex operation.
+* "Managing WordPress" is the ever-evolving problem space in which we operate. WP-CLI should always focus on making *existing management patterns* more efficient.
+
 This page contains a list of guidelines that should inform decisions related to scope, command organization and behaviour:
 
 ## Don't assume anything.
