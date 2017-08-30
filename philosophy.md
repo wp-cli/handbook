@@ -10,6 +10,18 @@ WP-CLI's guiding principle is to be the fastest and canonical way to manage Word
 
 This page contains a list of guidelines that should inform decisions related to scope, command organization and behaviour:
 
+## Good commands are simple, interact with WordPress, and solve one unique problem.
+
+When a command implements existing WordPress functionality (e.g. `wp export`), it should mirror and re-use existing WordPress behavior as much as possible. Doing so ensures to meet the user's assumed expectations of behavior.
+
+When a command adds functionality not present in the WordPress admin (e.g. `wp search-replace`), it should solve one unique problem and interact with WordPress in some way. Good commands are born of true user need; for a new proposed WP-CLI command, there probably should be existing prior art in the ecosystem.
+
+If a command provides useful functionality, but it doesn't have anything to do with WordPress, it doesn't belong in WP-CLI.
+
+## Consistency makes an enjoyable user experience.
+
+Whenever possible, commands should emulate one another with consistent usage behavior, argument names, and documentation.
+
 ## Composability is always a good idea.
 
 One of the most useful ideas in UNIX was that of [pipelines](http://en.wikipedia.org/wiki/Pipeline_%28Unix%29).
@@ -28,8 +40,3 @@ Bundled commands MUST work on any given WordPress install (provided that it's a 
 
 As a corollary, bundled commands should not assume the presence of any plugin or theme.
 
-## Stay focused.
-
-Bundled commands should expose or make use of WordPress-specific functionality.
-
-If a command provides useful functionality, but it doesn't have anything to do with WordPress, it doesn't belong in WP-CLI.
