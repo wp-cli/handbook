@@ -4,7 +4,7 @@ WP-CLI is the command-line interface for WordPress. It provides commands for act
 
 WP-CLI's guiding principle is to be the fastest and canonical way to manage WordPress:
 
-* Speed is inherently present in the simplicitly of the command-line interface, and the ability to chain multiple commands together into a more complex operation.
+* Speed is inherently present in the simplicity of the command-line interface, and the ability to chain multiple commands together into a more complex operation.
 * When functionality ends up in WP-CLI, it should be good enough to become the defacto solution to the problem.
 * "Managing WordPress" is the ever-evolving problem space in which we operate. WP-CLI should always focus on making *existing management patterns* more efficient.
 
