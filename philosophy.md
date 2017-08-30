@@ -8,7 +8,7 @@ WP-CLI's guiding principle is to be the fastest and canonical way to manage Word
 * When functionality ends up in WP-CLI, it should be good enough to become the defacto solution to the problem.
 * "Managing WordPress" is the ever-evolving problem space in which we operate. WP-CLI should always focus on making *existing management patterns* more efficient.
 
-This page contains a list of guidelines that should inform decisions related to scope, command organization and behaviour:
+This page contains a list of guidelines that should inform decisions related to scope, command organization and behavior:
 
 ## Good commands are simple, interact with WordPress, and solve one unique problem.
 
