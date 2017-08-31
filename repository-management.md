@@ -84,6 +84,12 @@ Some labels have a special meaning and/or might be used for automated workflows 
 
 The `bug` label denotes an issue that is a confirmed bug where the code does not produce the expected result.
 
+Bugs are specific to unexpected behavior of existing functionality. Functionality perceived to be missing is not a bug, but an enhancement.
+
+#### Upstream Bug
+
+The `upstream-bug` label denotes an issue that is a bug in upstream software (e.g. WordPress core, PHP, etc.) that won't be fixed in WP-CLI.
+
 #### Good First Issue
 
 The `good-first-issue` label denotes an issue that is a good entry point for new contributors wanting to get their feet wet.
