@@ -129,6 +129,16 @@ Package releases happen on an as-needed basis and are executed by the [maintaine
 
 Tagging a release should be postponed (for a few to several days) if there's an open pull request that makes sense to include in the release.
 
+Package release notes should include the subject of and a link to each merged pull request. Feel free to edit the subject for clarity. See [wp-cli/scaffold-command v1.0.6](https://github.com/wp-cli/scaffold-command/releases/tag/v1.0.6) for an example.
+
+Importantly, tagging a package release is also an opportunity to perform a final review of product quality:
+
+* Each merged pull request makes sense to ship, and has sufficient test coverage and documentation.
+* The package's README.md is up-to-date.
+* No breaking changes were introduced, unless explicitly intended.
+
+Sometime after a new package version is tagged, the `wp-make-coffee` bot submit a pull request against `wp-cli/wp-cli` with the results of `composer update`. When this pull request is merged, the package release will end up in the WP-CLI nightly build.
+
 ## Tips & Tools
 
 ### GitHub Searches
