@@ -16,7 +16,7 @@ When a command implements existing WordPress functionality (e.g. `wp export`), i
 
 When a command adds functionality not present in the WordPress admin (e.g. `wp search-replace`), it should solve one unique problem and interact with WordPress in some way. Good commands are born of true user need; for a new proposed WP-CLI command, there probably should be existing prior art in the ecosystem.
 
-If a command provides useful functionality, but it doesn't have anything to do with WordPress, it doesn't belong in WP-CLI. Similarly, an idea for a command is often better implemented as documentation.
+If a command provides useful functionality, but it doesn't have anything to do with WordPress, it doesn't belong in WP-CLI. Similarly, an idea for a command is sometimes better implemented as a change to documentation instead.
 
 ## Consistency makes for an enjoyable user experience.
 
