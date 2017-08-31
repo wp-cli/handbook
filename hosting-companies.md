@@ -14,6 +14,7 @@ In alphabetical order:
 * [FatCow](http://www.fatcow.com/wordpress-hosting/)
 * [GoDaddy](https://www.godaddy.com/help/accessing-wp-cli-on-your-managed-wordpress-account-12066)
 * [HostGator](http://www.hostgator.com)
+* [Hostinger](https://www.hostinger.com)
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [LiquidWeb](https://liquidweb.com/wordpress)
 * [Kinsta](https://kinsta.com)
