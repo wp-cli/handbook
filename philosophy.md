@@ -18,7 +18,7 @@ When a command adds functionality not present in the WordPress admin (e.g. `wp s
 
 If a command provides useful functionality, but it doesn't have anything to do with WordPress, it doesn't belong in WP-CLI. Similarly, an idea for a command is often better implemented as documentation.
 
-## Consistency makes an enjoyable user experience.
+## Consistency makes for an enjoyable user experience.
 
 Whenever possible, commands should emulate one another with consistent usage behavior, argument names, and documentation.
 
