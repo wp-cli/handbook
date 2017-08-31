@@ -12,7 +12,7 @@ This page contains a list of guidelines that should inform decisions related to 
 
 ## Good commands are simple, interact with WordPress, and solve one unique problem.
 
-When a command implements existing WordPress functionality (e.g. `wp export`), it should mirror and re-use existing WordPress behavior as much as possible. Doing so ensures to meet the user's assumed expectations of behavior.
+When a command implements existing WordPress functionality (e.g. `wp export`), it should mirror and re-use existing WordPress behavior as much as possible. Doing so ensures it meets the user's assumed expectations of behavior.
 
 When a command adds functionality not present in the WordPress admin (e.g. `wp search-replace`), it should solve one unique problem and interact with WordPress in some way. Good commands are born of true user need; for a new proposed WP-CLI command, there probably should be existing prior art in the ecosystem.
 
