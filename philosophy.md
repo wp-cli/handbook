@@ -26,7 +26,7 @@ Whenever possible, commands should emulate one another with consistent usage beh
 
 WordPress' philosophy [states](https://wordpress.org/about/philosophy/):
 
-> When making decisions these are the users we consider first. A great example of this consideration is software options. Every time you give a user an option, you are asking them to make a decision. When a user doesn’t care or understand the option this ultimately leads to frustration. As developers we sometimes feel that providing options for everything is a good thing, you can never have too many choices, right? Ultimately these choices end up being technical ones, choices that the average end user has no interest in. It’s our duty as developers to make smart design decisions and avoid putting the weight of technical choices on our end users.
+> [The end user is considered first when making implementation decisions]. A great example of this consideration is software options. Every time you give a user an option, you are asking them to make a decision. When a user doesn’t care or understand the option this ultimately leads to frustration. As developers we sometimes feel that providing options for everything is a good thing, you can never have too many choices, right? Ultimately these choices end up being technical ones, choices that the average end user has no interest in. It’s our duty as developers to make smart design decisions and avoid putting the weight of technical choices on our end users.
 
 The same principle applies to WP-CLI. In every case, we should first try to improve the default behavior. Options should be added sparingly, only when a solution is required and no other solutions are available.
 
