@@ -137,7 +137,7 @@ Importantly, tagging a package release is also an opportunity to perform a final
 * The package's README.md is up-to-date.
 * No breaking changes were introduced, unless explicitly intended.
 
-Sometime after a new package version is tagged, the `wp-make-coffee` bot submit a pull request against `wp-cli/wp-cli` with the results of `composer update`. When this pull request is merged, the package release will end up in the WP-CLI nightly build.
+Sometime after a new package version is tagged, the `wp-make-coffee` bot submits a pull request against `wp-cli/wp-cli` with the results of `composer update`. When this pull request is merged, the package release will end up in the WP-CLI nightly build.
 
 ## Tips & Tools
 
