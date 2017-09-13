@@ -20,6 +20,7 @@ In alphabetical order:
 * [Kinsta](https://kinsta.com)
 * [Media Temple](http://mediatemple.net)
 * [Monarobase](https://monarobase.net/wordpress)
+* [NameHero](https://www.namehero.com)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 * [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
