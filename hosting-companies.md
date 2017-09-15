@@ -16,7 +16,7 @@ In alphabetical order:
 * [HostGator](http://www.hostgator.com)
 * [Hostinger](https://www.hostinger.com)
 * [iPage](http://www.ipage.com/ipage/index.html)
-* [LiquidWeb](https://liquidweb.com/wordpress)
+* [Liquid Web](https://liquidweb.com/wordpress)
 * [Kinsta](https://kinsta.com)
 * [Media Temple](http://mediatemple.net)
 * [Monarobase](https://monarobase.net/wordpress)
