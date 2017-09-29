@@ -23,18 +23,7 @@ First, create your Composer project.
 
     $ mkdir /usr/local/lib/wp-cli-packages
     $ cd /usr/local/lib/wp-cli-packages
-    $ vim composer.json
-    {
-        "name": "runcommand/wp-cli-packages",
-        "require": {},
-        "minimum-stability": "dev",
-        "repositories": [
-             {
-                 "type": "composer",
-                 "url": "https://wp-cli.org/package-index/"
-             }
-        ]
-    }
+    $ composer init -n --name=runcommand/wp-cli-packages -s=dev --repository=https://wp-cli.org/package-index/
     $ composer require runcommand/hook
     Using version dev-master for runcommand/hook
     ./composer.json has been updated
