@@ -9,7 +9,7 @@ Because the home directory is different for each user, this naturally means each
 To override the directory WP-CLI uses for installed packages, provide a `WP_CLI_PACKAGES_DIR` environment variable. If you wish for multiple users to share the same packages directory, you can simply provide the same `WP_CLI_PACKAGES_DIR` environment variable for each user.
 
     vim /etc/environment
-    export WP_CLI_PACKAGES_DIR=/usr/local/bin/wp-cli-packages
+    export WP_CLI_PACKAGES_DIR=/usr/local/lib/wp-cli-packages
 
 Similarly, you can make sure the directory is only writable by a specific user to make packages available to all users, but only installable by the specific user.
 
@@ -21,8 +21,8 @@ WP-CLI’s installed packages directory is simply a Composer project under the h
 
 First, create your Composer project.
 
-    $ mkdir /usr/local/bin/wp-cli-packages
-    $ cd /usr/local/bin/wp-cli-packages
+    $ mkdir /usr/local/lib/wp-cli-packages
+    $ cd /usr/local/lib/wp-cli-packages
     $ vim composer.json
     {
         "name": "runcommand/wp-cli-packages",
