@@ -58,6 +58,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | stream                | [WP Stream](http://wordpress.org/plugins/stream/)
 | super-cache           | [WP Super Cache CLI](https://github.com/wp-cli/wp-super-cache-cli)
 | supportpress          | [SupportFlow](https://github.com/SupportFlow/supportflow)
+| themecheck            | [wp-cli-themecheck](https://github.com/anhskohbo/wp-cli-themecheck)
 | thinkup               | [Thinkup Import WP CLI Commands](https://github.com/taras/wp-cli-thinkup-import)
 | total-cache           | [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/)
 | usergen               | [Generate random users](https://github.com/alessandrotesoro/wp-usergen-cli)
