@@ -2,8 +2,7 @@
 
 Display the database name and size.
 
-Display the database name and size for `DB_NAME` specified in wp-config.php.
-The size defaults to a human-readable number.
+Display the database name and size for `DB_NAME` specified in wp-config.php. The size defaults to a human-readable number.
 
 ### OPTIONS
 

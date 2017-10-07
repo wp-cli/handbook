@@ -3,9 +3,7 @@
 List available WP-CLI aliases.
 
 Aliases are shorthand references to WordPress installs. For instance,
-`@dev` could refer to a development install and `@prod` could refer to
-a production install. This command gives you visibility in what
-registered aliases you have available.
+`@dev` could refer to a development install and `@prod` could refer to a production install. This command gives you visibility in what registered aliases you have available.
 
 ### OPTIONS
 

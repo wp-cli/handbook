@@ -2,8 +2,7 @@
 
 Import content from a WXR file.
 
-Provides a command line interface to the WordPress Importer plugin, for
-performing data migrations.
+Provides a command line interface to the WordPress Importer plugin, for performing data migrations.
 
 ### OPTIONS
 
