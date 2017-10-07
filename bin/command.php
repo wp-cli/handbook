@@ -335,6 +335,31 @@ EOT;
 			$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
 			$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
 
+			// Remove wordwrapping from docs
+			// Match words, '().,;', and --arg before/after the newline
+			$bits = explode( "\n", $docs );
+			$in_yaml_doc = false;
+			for ( $i=0; $i < count( $bits ); $i++ ) {
+				if ( ! isset( $bits[ $i ] ) || ! isset( $bits[ $i + 1 ] ) ) {
+					continue;
+				}
+				if ( '---' === $bits[ $i ] || '\---' === $bits[ $i ] ) {
+					$in_yaml_doc = ! $in_yaml_doc;
+				}
+				if ( $in_yaml_doc ) {
+					continue;
+				}
+
+				if ( preg_match( '#[\w\(\)\.\,\;]$#', $bits[ $i ] )
+					&& preg_match( '#^([\w\(\)\.\,\;]|\\\--[\w])#', $bits[ $i + 1 ] ) ) {
+					$bits[ $i ] .= ' ' . $bits[ $i + 1 ];
+					unset( $bits[ $i + 1 ] );
+					--$i;
+					$bits = array_values( $bits );
+				}
+			}
+			$docs = implode( "\n", $bits );
+
 			// hack to prevent double encoding in code blocks
 			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 			$docs = preg_replace( '/ &gt; /', ' > ', $docs );

@@ -8,12 +8,10 @@ Install a plugin.
 : A plugin slug, the path to a local zip file, or URL to a remote zip file.
 
 [\--version=&lt;version&gt;]
-: If set, get that particular version from wordpress.org, instead of the
-stable version.
+: If set, get that particular version from wordpress.org, instead of the stable version.
 
 [\--force]
-: If set, the command will overwrite any installed version of the plugin, without prompting
-for confirmation.
+: If set, the command will overwrite any installed version of the plugin, without prompting for confirmation.
 
 [\--activate]
 : If set, the plugin will be activated immediately after install.

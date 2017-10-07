@@ -11,8 +11,7 @@ Uninstall a plugin.
 : Deactivate the plugin before uninstalling. Default behavior is to warn and skip if the plugin is active.
 
 [\--skip-delete]
-: If set, the plugin files will not be deleted. Only the uninstall procedure
-will be run.
+: If set, the plugin files will not be deleted. Only the uninstall procedure will be run.
 
 ### EXAMPLES
 

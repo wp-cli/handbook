@@ -2,8 +2,7 @@
 
 Add a value to the object cache.
 
-Errors if a value already exists for the key, which means the value can't
-be added.
+Errors if a value already exists for the key, which means the value can't be added.
 
 ### OPTIONS
 
