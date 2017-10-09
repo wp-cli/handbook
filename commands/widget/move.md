@@ -2,8 +2,7 @@
 
 Move the position of a widget.
 
-Changes the order of a widget in its existing sidebar, or moves it to a
-new sidebar.
+Changes the order of a widget in its existing sidebar, or moves it to a new sidebar.
 
 ### OPTIONS
 

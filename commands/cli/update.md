@@ -2,15 +2,11 @@
 
 Update WP-CLI to the latest release.
 
-Default behavior is to check the releases API for the newest stable
-version, and prompt if one is available.
+Default behavior is to check the releases API for the newest stable version, and prompt if one is available.
 
 Use `--stable` to install or reinstall the latest stable version.
 
-Use `--nightly` to install the latest built version of the master branch.
-While not recommended for production, nightly contains the latest and
-greatest, and should be stable enough for development and staging
-environments.
+Use `--nightly` to install the latest built version of the master branch. While not recommended for production, nightly contains the latest and greatest, and should be stable enough for development and staging environments.
 
 Only works for the Phar installation mechanism.
 

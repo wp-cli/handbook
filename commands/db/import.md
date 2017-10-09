@@ -2,10 +2,7 @@
 
 Import a database from a file or from STDIN.
 
-Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and
-`DB_PASSWORD` database credentials specified in wp-config.php. This
-does not create database by itself and only performs whatever tasks are
-defined in the SQL.
+Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php. This does not create database by itself and only performs whatever tasks are defined in the SQL.
 
 ### OPTIONS
 

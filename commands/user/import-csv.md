@@ -2,8 +2,7 @@
 
 Import users from a CSV file.
 
-If the user already exists (matching the email address or login), then
-the user is updated unless the `--skip-update` flag is used.
+If the user already exists (matching the email address or login), then the user is updated unless the `--skip-update` flag is used.
 
 ### OPTIONS
 
