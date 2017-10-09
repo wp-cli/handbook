@@ -2,8 +2,7 @@
 
 Delete the existing database.
 
-Runs `DROP_DATABASE` SQL statement using `DB_HOST`, `DB_NAME`,
-`DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
+Runs `DROP_DATABASE` SQL statement using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
 
 ### OPTIONS
 

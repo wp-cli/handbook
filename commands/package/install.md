@@ -11,8 +11,7 @@ Packages are required to be a valid Composer package, and can be specified as:
 
 When installing a local directory, WP-CLI simply registers a reference to the directory. If you move or delete the directory, WP-CLI's reference breaks.
 
-When installing a .zip file, WP-CLI extracts the package to
-`~/.wp-cli/packages/local/&lt;package-name&gt;`.
+When installing a .zip file, WP-CLI extracts the package to `~/.wp-cli/packages/local/&lt;package-name&gt;`.
 
 ### OPTIONS
 
