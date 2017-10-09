@@ -2,8 +2,7 @@
 
 Search the WordPress.org theme directory.
 
-Displays themes in the WordPress.org theme directory matching a given
-search query.
+Displays themes in the WordPress.org theme directory matching a given search query.
 
 ### OPTIONS
 

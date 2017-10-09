@@ -2,8 +2,7 @@
 
 Verify WordPress files against WordPress.org's checksums.
 
-Downloads md5 checksums for the current version from WordPress.org, and
-compares those checksums against the currently installed files.
+Downloads md5 checksums for the current version from WordPress.org, and compares those checksums against the currently installed files.
 
 For security, avoids loading WordPress when verifying checksums.
 

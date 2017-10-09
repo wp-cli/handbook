@@ -307,6 +307,17 @@ EOT;
 		static $params;
 		if ( ! isset( $params ) ) {
 			$params = self::invoke_wp_cli( 'wp --skip-packages cli param-dump' );
+			// Preserve positioning of 'url' param
+			$url_param = $params['url'];
+			unset( $params['url'] );
+			$new_params = array();
+			foreach( $params as $param => $meta ) {
+				$new_params[ $param ] = $meta;
+				if ( 'path' === $param ) {
+					$new_params['url'] = $url_param;
+				}
+			}
+			$params = $new_params;
 		}
 
 		$binding = $cmd;
@@ -334,6 +345,34 @@ EOT;
 			// escape `--` so that it doesn't get converted into `&mdash;`
 			$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
 			$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
+
+			// Remove wordwrapping from docs
+			// Match words, '().,;', and --arg before/after the newline
+			$bits = explode( "\n", $docs );
+			$in_yaml_doc = $in_code_bloc = false;
+			for ( $i=0; $i < count( $bits ); $i++ ) {
+				if ( ! isset( $bits[ $i ] ) || ! isset( $bits[ $i + 1 ] ) ) {
+					continue;
+				}
+				if ( '---' === $bits[ $i ] || '\---' === $bits[ $i ] ) {
+					$in_yaml_doc = ! $in_yaml_doc;
+				}
+				if ( '```' === $bits[ $i ] ) {
+					$in_code_bloc = ! $in_code_bloc;
+				}
+				if ( $in_yaml_doc || $in_code_bloc ) {
+					continue;
+				}
+
+				if ( preg_match( '#([\w\(\)\.\,\;]|[`]{1})$#', $bits[ $i ] )
+					&& preg_match( '#^([\w\(\)\.\,\;`]|\\\--[\w]|[`]{1})#', $bits[ $i + 1 ] ) ) {
+					$bits[ $i ] .= ' ' . $bits[ $i + 1 ];
+					unset( $bits[ $i + 1 ] );
+					--$i;
+					$bits = array_values( $bits );
+				}
+			}
+			$docs = implode( "\n", $bits );
 
 			// hack to prevent double encoding in code blocks
 			$docs = preg_replace( '/ &lt; /', ' < ', $docs );

@@ -2,27 +2,21 @@
 
 Install a WP-CLI package.
 
-Packages are required to be a valid Composer package, and can be
-specified as:
+Packages are required to be a valid Composer package, and can be specified as:
 
 * Package name from WP-CLI's package index.
 * Git URL accessible by the current shell user.
 * Path to a directory on the local machine.
 * Local or remote .zip file.
 
-When installing a local directory, WP-CLI simply registers a
-reference to the directory. If you move or delete the directory, WP-CLI's
-reference breaks.
+When installing a local directory, WP-CLI simply registers a reference to the directory. If you move or delete the directory, WP-CLI's reference breaks.
 
-When installing a .zip file, WP-CLI extracts the package to
-`~/.wp-cli/packages/local/&lt;package-name&gt;`.
+When installing a .zip file, WP-CLI extracts the package to `~/.wp-cli/packages/local/&lt;package-name&gt;`.
 
 ### OPTIONS
 
 &lt;name|git|path|zip&gt;
-: Name, git URL, directory path, or .zip file for the package to install.
-Names can optionally include a version constraint
-(e.g. wp-cli/server-command:@stable).
+: Name, git URL, directory path, or .zip file for the package to install. Names can optionally include a version constraint (e.g. wp-cli/server-command:@stable).
 
 ### EXAMPLES
 

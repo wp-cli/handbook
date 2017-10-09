@@ -2,15 +2,12 @@
 
 Export WordPress content to a WXR file.
 
-Generates one or more WXR files containing authors, terms, posts,
-comments, and attachments. WXR files do not include site configuration
-(options) or the attachment files themselves.
+Generates one or more WXR files containing authors, terms, posts, comments, and attachments. WXR files do not include site configuration (options) or the attachment files themselves.
 
 ### OPTIONS
 
 [\--dir=&lt;dirname&gt;]
-: Full path to directory where WXR export files should be stored. Defaults
-to current working directory.
+: Full path to directory where WXR export files should be stored. Defaults to current working directory.
 
 [\--skip_comments]
 : Don't include comments in the WXR export file.
@@ -30,15 +27,13 @@ default: 15
 : Export only posts published before this date, in format YYYY-MM-DD.
 
 [\--post_type=&lt;post-type&gt;]
-: Export only posts with this post_type. Separate multiple post types with a
-comma.
+: Export only posts with this post_type. Separate multiple post types with a comma.
 \---
 default: any
 \---
 
 [\--post_type__not_in=&lt;post-type&gt;]
-: Export all post types except those identified. Separate multiple post types
-with a comma. Defaults to none.
+: Export all post types except those identified. Separate multiple post types with a comma. Defaults to none.
 
 [\--post__in=&lt;pid&gt;]
 : Export all posts specified as a comma- or space-separated list of IDs.

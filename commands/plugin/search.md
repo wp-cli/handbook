@@ -2,8 +2,7 @@
 
 Search the WordPress.org plugin directory.
 
-Displays plugins in the WordPress.org plugin directory matching a given
-search query.
+Displays plugins in the WordPress.org plugin directory matching a given search query.
 
 ### OPTIONS
 

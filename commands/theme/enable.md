@@ -2,8 +2,7 @@
 
 Enable a theme on a WordPress multisite install.
 
-Permits theme to be activated from the dashboard of a site on a WordPress
-multisite install.
+Permits theme to be activated from the dashboard of a site on a WordPress multisite install.
 
 ### OPTIONS
 
@@ -14,8 +13,7 @@ multisite install.
 : If set, the theme is enabled for the entire network
 
 [\--activate]
-: If set, the theme is activated for the current site. Note that
-the "network" flag has no influence on this.
+: If set, the theme is activated for the current site. Note that the "network" flag has no influence on this.
 
 ### EXAMPLES
 

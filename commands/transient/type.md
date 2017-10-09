@@ -2,8 +2,7 @@
 
 Determine type of transients implementation.
 
-Indicates whether the transients API is using an object cache or the
-options table.
+Indicates whether the transients API is using an object cache or the options table.
 
 ### EXAMPLES
 

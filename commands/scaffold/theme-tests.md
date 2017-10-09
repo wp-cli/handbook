@@ -15,8 +15,7 @@ Learn more from the [plugin unit tests documentation](http://wp-cli.org/docs/plu
 
 ### ENVIRONMENT
 
-The `tests/bootstrap.php` file looks for the WP_TESTS_DIR environment
-variable.
+The `tests/bootstrap.php` file looks for the WP_TESTS_DIR environment variable.
 
 ### OPTIONS
 

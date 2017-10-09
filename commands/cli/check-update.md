@@ -2,8 +2,7 @@
 
 Check to see if there is a newer version of WP-CLI available.
 
-Queries the Github releases API. Returns available versions if there are
-updates available, or success message if using the latest release.
+Queries the Github releases API. Returns available versions if there are updates available, or success message if using the latest release.
 
 ### OPTIONS
 

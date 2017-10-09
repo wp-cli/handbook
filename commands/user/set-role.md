@@ -8,8 +8,7 @@ Set the user role.
 : User ID, user email, or user login.
 
 [&lt;role&gt;]
-: Make the user have the specified role. If not passed, the default role is
-used.
+: Make the user have the specified role. If not passed, the default role is used.
 
 ### EXAMPLES
 
