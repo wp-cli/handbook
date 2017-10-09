@@ -307,6 +307,17 @@ EOT;
 		static $params;
 		if ( ! isset( $params ) ) {
 			$params = self::invoke_wp_cli( 'wp --skip-packages cli param-dump' );
+			// Preserve positioning of 'url' param
+			$url_param = $params['url'];
+			unset( $params['url'] );
+			$new_params = array();
+			foreach( $params as $param => $meta ) {
+				$new_params[ $param ] = $meta;
+				if ( 'path' === $param ) {
+					$new_params['url'] = $url_param;
+				}
+			}
+			$params = $new_params;
 		}
 
 		$binding = $cmd;
