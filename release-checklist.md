@@ -78,6 +78,21 @@ The script will also produce a total contributor and pull request count you can 
     cp wp-cli.phar.md5 wp-cli-1.x.0.phar.md5
     cp wp-cli.phar.sha512 wp-cli-1.x.0.phar.sha512
 
+### Verify Phar release artifact
+
+Using some existing WP-CLI install, update to the latest release to verify the Phar release artifact works as expected.
+
+    $ wp cli update
+    You have version 1.4.0-alpha-88450b8. Would you like to update to 1.4.0? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v1.4.0/wp-cli-1.4.0.phar...
+    md5 hash verified: 179fc8dacbfe3ebc2d00ba57a333c982
+    New version works. Proceeding to replace.
+    Success: Updated WP-CLI to 1.4.0.
+    $ wp @daniel option get home
+    https://danielbachhuber.com
+
+This represents a final sanity check that the Phar isn't corrupt in some way.
+
 ### Updating the Debian build
 
 1) Run this script: <https://github.com/wp-cli/wp-cli/blob/master/utils/wp-cli-updatedeb.sh>
