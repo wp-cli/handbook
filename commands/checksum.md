@@ -1,6 +1,6 @@
 # wp checksum
 
-Verify WordPress core checksums.
+Verifies file integrity by comparing to published checksums.
 
 
 

@@ -36,16 +36,13 @@ default: 40
 \---
 
 [\--regex]
-: Runs the search as a regular expression (without delimiters). The search becomes case-sensitive (i.e. no PCRE flags are added, except 'u' if the database charset is UTF-8). Delimiters must be escaped if they occur in the expression.
+: Runs the search as a regular expression (without delimiters). The search becomes case-sensitive (i.e. no PCRE flags are added). Delimiters must be escaped if they occur in the expression.
 
 [\--regex-flags=&lt;regex-flags&gt;]
-: Pass PCRE modifiers to the regex search (e.g. 'i' for case-insensitivity). Note that 'u' (UTF-8 mode) will not be automatically added.
+: Pass PCRE modifiers to the regex search (e.g. 'i' for case-insensitivity).
 
 [\--regex-delimiter=&lt;regex-delimiter&gt;]
-: The delimiter to use for the regex. It must be escaped if it appears in the search string.
-\---
-default: /
-\---
+: The delimiter to use for the regex. It must be escaped if it appears in the search string. The default value is the result of `chr(1)`.
 
 [\--table_column_once]
 : Output the 'table:column' line once before all matching row lines in the table column rather than before each matching row.
@@ -96,6 +93,7 @@ The percent color codes available are:
 '%8' Reverse
 '%U' Underline
 '%F' Blink (unlikely to work)
+
 They can be concatenated. For instance, the default match color of black on a mustard (dark yellow) background '%3%k' can be made black on a bright yellow background with '%Y%0%8'.
 
 ### EXAMPLES
@@ -116,7 +114,7 @@ They can be concatenated. For instance, the default match color of black on a mu
         ...
 
     # Search through the database for the 'https?://' regular expression, printing stats.
-    $ wp db search 'https?:\/\/' --regex --stats
+    $ wp db search 'https?://' --regex --stats
     wp_comments:comment_author_url
     1:https://wordpress.org/
         ...
@@ -130,7 +128,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |

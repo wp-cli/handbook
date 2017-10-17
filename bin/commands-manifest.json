@@ -439,6 +439,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/completions.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
     },
+    "cli\/has-command": {
+        "title": "cli has-command",
+        "slug": "has-command",
+        "cmd_path": "cli\/has-command",
+        "parent": "cli",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/has-command.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
     "cli\/info": {
         "title": "cli info",
         "slug": "info",
@@ -847,6 +855,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/language\/core.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/language-command"
     },
+    "media\/image-size": {
+        "title": "media image-size",
+        "slug": "image-size",
+        "cmd_path": "media\/image-size",
+        "parent": "media",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/media\/image-size.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/media-command"
+    },
     "media\/import": {
         "title": "media import",
         "slug": "import",
@@ -941,6 +957,22 @@
         "cmd_path": "option\/list",
         "parent": "option",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/option\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "option\/patch": {
+        "title": "option patch",
+        "slug": "patch",
+        "cmd_path": "option\/patch",
+        "parent": "option",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/option\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "option\/pluck": {
+        "title": "option pluck",
+        "slug": "pluck",
+        "cmd_path": "option\/pluck",
+        "parent": "option",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/option\/pluck.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "option\/update": {
@@ -1375,12 +1407,36 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/list.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
+    "site\/mature": {
+        "title": "site mature",
+        "slug": "mature",
+        "cmd_path": "site\/mature",
+        "parent": "site",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/mature.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
     "site\/option": {
         "title": "site option",
         "slug": "option",
         "cmd_path": "site\/option",
         "parent": "site",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/option.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "site\/private": {
+        "title": "site private",
+        "slug": "private",
+        "cmd_path": "site\/private",
+        "parent": "site",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/private.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "site\/public": {
+        "title": "site public",
+        "slug": "public",
+        "cmd_path": "site\/public",
+        "parent": "site",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/public.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "site\/spam": {
@@ -1397,6 +1453,14 @@
         "cmd_path": "site\/unarchive",
         "parent": "site",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/unarchive.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "site\/unmature": {
+        "title": "site unmature",
+        "slug": "unmature",
+        "cmd_path": "site\/unmature",
+        "parent": "site",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/unmature.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "site\/unspam": {
@@ -1759,12 +1823,28 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/set-role.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
+    "user\/spam": {
+        "title": "user spam",
+        "slug": "spam",
+        "cmd_path": "user\/spam",
+        "parent": "user",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/spam.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
     "user\/term": {
         "title": "user term",
         "slug": "term",
         "cmd_path": "user\/term",
         "parent": "user",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/term.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/unspam": {
+        "title": "user unspam",
+        "slug": "unspam",
+        "cmd_path": "user\/unspam",
+        "parent": "user",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/unspam.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "user\/update": {
@@ -1861,6 +1941,22 @@
         "cmd_path": "comment\/meta\/list",
         "parent": "comment\/meta",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/comment\/meta\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "comment\/meta\/patch": {
+        "title": "comment meta patch",
+        "slug": "patch",
+        "cmd_path": "comment\/meta\/patch",
+        "parent": "comment\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/comment\/meta\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "comment\/meta\/pluck": {
+        "title": "comment meta pluck",
+        "slug": "pluck",
+        "cmd_path": "comment\/meta\/pluck",
+        "parent": "comment\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/comment\/meta\/pluck.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "comment\/meta\/update": {
@@ -2055,6 +2151,22 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/network\/meta\/list.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
+    "network\/meta\/patch": {
+        "title": "network meta patch",
+        "slug": "patch",
+        "cmd_path": "network\/meta\/patch",
+        "parent": "network\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/network\/meta\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "network\/meta\/pluck": {
+        "title": "network meta pluck",
+        "slug": "pluck",
+        "cmd_path": "network\/meta\/pluck",
+        "parent": "network\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/network\/meta\/pluck.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
     "network\/meta\/update": {
         "title": "network meta update",
         "slug": "update",
@@ -2093,6 +2205,22 @@
         "cmd_path": "post\/meta\/list",
         "parent": "post\/meta",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post\/meta\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "post\/meta\/patch": {
+        "title": "post meta patch",
+        "slug": "patch",
+        "cmd_path": "post\/meta\/patch",
+        "parent": "post\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post\/meta\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "post\/meta\/pluck": {
+        "title": "post meta pluck",
+        "slug": "pluck",
+        "cmd_path": "post\/meta\/pluck",
+        "parent": "post\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post\/meta\/pluck.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "post\/meta\/update": {
@@ -2167,6 +2295,22 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/option\/list.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
+    "site\/option\/patch": {
+        "title": "site option patch",
+        "slug": "patch",
+        "cmd_path": "site\/option\/patch",
+        "parent": "site\/option",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/option\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "site\/option\/pluck": {
+        "title": "site option pluck",
+        "slug": "pluck",
+        "cmd_path": "site\/option\/pluck",
+        "parent": "site\/option",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/site\/option\/pluck.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
     "site\/option\/update": {
         "title": "site option update",
         "slug": "update",
@@ -2205,6 +2349,22 @@
         "cmd_path": "term\/meta\/list",
         "parent": "term\/meta",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/term\/meta\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "term\/meta\/patch": {
+        "title": "term meta patch",
+        "slug": "patch",
+        "cmd_path": "term\/meta\/patch",
+        "parent": "term\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/term\/meta\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "term\/meta\/pluck": {
+        "title": "term meta pluck",
+        "slug": "pluck",
+        "cmd_path": "term\/meta\/pluck",
+        "parent": "term\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/term\/meta\/pluck.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "term\/meta\/update": {
@@ -2269,6 +2429,22 @@
         "cmd_path": "user\/meta\/list",
         "parent": "user\/meta",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/meta\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/meta\/patch": {
+        "title": "user meta patch",
+        "slug": "patch",
+        "cmd_path": "user\/meta\/patch",
+        "parent": "user\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/meta\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/meta\/pluck": {
+        "title": "user meta pluck",
+        "slug": "pluck",
+        "cmd_path": "user\/meta\/pluck",
+        "parent": "user\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/user\/meta\/pluck.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "user\/meta\/update": {

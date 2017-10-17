@@ -6,7 +6,7 @@ Report the results of the same operation against multiple resources.
 
 ## Usage
 
-    WP_CLI\Utils\report_batch_operation_results( $noun, $verb, $total, $successes, $failures )
+    WP_CLI\Utils\report_batch_operation_results( $noun, $verb, $total, $successes, $failures, $skips = null )
 
 <div>
 <strong>$noun</strong> (string) Resource being affected (e.g. plugin)<br />
@@ -14,6 +14,7 @@ Report the results of the same operation against multiple resources.
 <strong>$total</strong> (integer) Total number of resource being affected.<br />
 <strong>$successes</strong> (integer) Number of successful operations.<br />
 <strong>$failures</strong> (integer) Number of failures.<br />
+<strong>$skips</strong> (null|integer) Optional. Number of skipped operations. Default null (don't show skips).<br />
 </div>
 
 
