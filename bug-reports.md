@@ -6,7 +6,7 @@ Before you create a new issue, you should:
 
 * [Search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Awp-cli+label%3Abug) to see if there's an existing resolution to it, or if it's already been fixed in a newer version.
 * Check our documentation on [common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/). It's worth reading through the Github issues linked on the page, as the error listed may not be exactly the error you're experiencing.
-* Reproduce the issue in a fresh install of WordPress (e.g. Twenty Sixteen or similar, with no plugins active). If the issue only reproduces in a custom environment, then the issue is a bug in your environment, not WP-CLI.
+* Reproduce the issue in a fresh install of WordPress (e.g. Twenty Sixteen or similar, with no plugins active). If the issue only reproduces in a custom environment, then the issue is a bug in your environment, not WP-CLI (make sure `WP_DEBUG` is enabled, which will often give you more visibility into the issue).
 
 Once you've done a bit of searching and discovered there isn't prior art for your bug, please create a new GitHub issue in the appropriate repository. Providing the summary, steps to reproduce, environmental details, and other specifics identified below will help guarantee you are submitting a full bug report.
 
