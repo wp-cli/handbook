@@ -25,6 +25,25 @@ options:
   - yaml
 \---
 
+[\--orderby=&lt;fields&gt;]
+: Set orderby which field.
+\---
+default: id
+options:
+ - id
+ - meta_key
+ - meta_value
+\---
+
+[\--order=&lt;order&gt;]
+: Set ascending or descending order.
+\---
+default: asc
+options:
+ - asc
+ - desc
+\---
+
 ### EXAMPLES
 
     # List user meta
@@ -45,7 +64,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |

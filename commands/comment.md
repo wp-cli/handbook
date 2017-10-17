@@ -1,6 +1,6 @@
 # wp comment
 
-Manage comments.
+Creates, updates, deletes, and moderates comments.
 
 ### EXAMPLES
 
