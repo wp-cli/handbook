@@ -60,7 +60,7 @@ WP-CLI includes a good amount of setup code prior to calling `wp-settings.php`. 
 
 ### `wp-config.php` is parsed, and then executed
 
-Rather than calling `wp-config.php` directly, WP-CLI gets the contents of `wp-config.php`, parses out the `require_once ABSPATH . 'wp-settings.php';` statement, and loads the constants into scope with `eval()`.
+Rather than calling `wp-config.php` directly, WP-CLI gets the contents of `wp-config.php`, parses out the `require_once ABSPATH . 'wp-settings.php';` statement, and loads the constants into scope with `eval()`. Read "[How WP-CLI loads WordPress](https://make.wordpress.org/cli/2013/10/24/how-wp-cli-loads-wordpress/)" for a narrative on the historical reasons. After that, WP-CLI used a custom `wp-settings-cli.php` until v0.24.0 [[#2278](https://github.com/wp-cli/wp-cli/issues/2278)], but parsing `wp-config.php` was kept for backwards compatibility purposes. See also [#1631](https://github.com/wp-cli/wp-cli/issues/1631).
 
 ### WordPress is loaded inside of a function
 
