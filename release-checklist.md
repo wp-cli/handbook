@@ -4,6 +4,24 @@ This page describes the list of activities that developers must perform to produ
 
 ## Major/minor releases
 
+### Writing the release post
+
+See prior release posts for a format to follow.
+
+### Regenerate command and internal API docs
+
+Command and internal API docs need to be regenerated before every major release, because they're meant to correlate with the release.
+
+To regenerate:
+
+    git clone git@github.com:wp-cli/handbook.git
+    cd handbook
+    wp handbook gen-all
+
+### Verify automated tests
+
+Make sure the [automated test suite](https://github.com/wp-cli/automated-tests) is running correctly and passed. This represents the final build quality sanity check.
+
 ### Updating WP-CLI
 
 Make sure that the contents of [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) are changed to latest.
@@ -97,23 +115,6 @@ See <https://github.com/wp-cli/wp-cli.github.com#readme>
 The current WP-CLI version will also need to be updated on the [roadmap](https://wp-cli.org/docs/roadmap/).
 
 Please also tag a release of the website, so it's easy to correlate versions of the website.
-
-### Regenerate command and internal API docs
-
-Command and internal API docs need to be regenerated before every major release, because they're meant to correlate with the release.
-
-To regenerate:
-
-    git clone git@github.com:wp-cli/handbook.git
-    cd handbook
-    wp handbook gen-api-docs
-    wp handbook gen-commands
-    wp handbook gen-commands-manifest
-    wp handbook gen-hb-manifest
-
-### Writing the release post
-
-See prior release posts for a format to follow.
 
 ### Announcing
 
