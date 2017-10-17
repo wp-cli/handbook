@@ -4,7 +4,7 @@ Search/replace strings in the database.
 
 Searches through all rows in a selection of tables and replaces appearances of the first string with the second string.
 
-By default, the command uses tables registered to the $wpdb object. On multisite, this will just be the tables for the current site unless \--network is specified.
+By default, the command uses tables registered to the `$wpdb` object. On multisite, this will just be the tables for the current site unless `--network` is specified.
 
 Search/replace intelligently handles PHP serialized data, and does not change primary key values.
 
@@ -58,6 +58,9 @@ Search/replace intelligently handles PHP serialized data, and does not change pr
 [\--regex-flags=&lt;regex-flags&gt;]
 : Pass PCRE modifiers to regex search-replace (e.g. 'i' for case-insensitivity).
 
+[\--regex-delimiter=&lt;regex-delimiter&gt;]
+: The delimiter to use for the regex. It must be escaped if it appears in the search string. The default value is the result of `chr(1)`.
+
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
@@ -66,6 +69,21 @@ options:
   - table
   - count
 \---
+
+[\--report]
+: Produce report. Defaults to true.
+
+[\--report-changed-only]
+: Report changed fields only. Defaults to false, unless logging, when it defaults to true.
+
+[\--log[=&lt;file&gt;]]
+: Log the items changed. If &lt;file&gt; is not supplied or is "-", will output to STDOUT. Warning: causes a significant slow down, similar or worse to enabling --precise or --regex.
+
+[\--before_context=&lt;num&gt;]
+: For logging, number of characters to display before the old match and the new replacement. Default 40. Ignored if not logging.
+
+[\--after_context=&lt;num&gt;]
+: For logging, number of characters to display after the old match and the new replacement. Default 40. Ignored if not logging.
 
 ### EXAMPLES
 
@@ -100,7 +118,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |

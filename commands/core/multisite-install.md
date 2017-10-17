@@ -4,6 +4,8 @@ Install WordPress multisite from scratch.
 
 Creates the WordPress tables in the database using the URL, title, and default admin user details provided. Then, creates the multisite tables in the database and adds multisite constants to the wp-config.php.
 
+For those using WordPress with Apache, remember to update the `.htaccess` file with the appropriate multisite rewrite rules.
+
 ### OPTIONS
 
 [\--url=&lt;url&gt;]
@@ -57,7 +59,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |

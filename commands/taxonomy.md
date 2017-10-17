@@ -1,6 +1,8 @@
 # wp taxonomy
 
-Manage taxonomies.
+Retrieves information about registered taxonomies.
+
+See references for [built-in taxonomies](https://developer.wordpress.org/themes/basics/categories-tags-custom-taxonomies/) and [custom taxonomies](https://developer.wordpress.org/plugins/taxonomies/working-with-custom-taxonomies/).
 
 ### EXAMPLES
 
