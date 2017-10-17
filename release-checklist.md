@@ -4,6 +4,24 @@ This page describes the list of activities that developers must perform to produ
 
 ## Major/minor releases
 
+### Writing the release post
+
+See prior release posts for a format to follow.
+
+### Regenerate command and internal API docs
+
+Command and internal API docs need to be regenerated before every major release, because they're meant to correlate with the release.
+
+To regenerate:
+
+    git clone git@github.com:wp-cli/handbook.git
+    cd handbook
+    wp handbook gen-all
+
+### Verify automated tests
+
+Make sure the [automated test suite](https://github.com/wp-cli/automated-tests) is running correctly and passed. This represents the final build quality sanity check.
+
 ### Updating WP-CLI
 
 Make sure that the contents of [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) are changed to latest.
@@ -60,6 +78,21 @@ The script will also produce a total contributor and pull request count you can 
     cp wp-cli.phar.md5 wp-cli-1.x.0.phar.md5
     cp wp-cli.phar.sha512 wp-cli-1.x.0.phar.sha512
 
+### Verify Phar release artifact
+
+Using some existing WP-CLI install, update to the latest release to verify the Phar release artifact works as expected.
+
+    $ wp cli update
+    You have version 1.4.0-alpha-88450b8. Would you like to update to 1.4.0? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v1.4.0/wp-cli-1.4.0.phar...
+    md5 hash verified: 179fc8dacbfe3ebc2d00ba57a333c982
+    New version works. Proceeding to replace.
+    Success: Updated WP-CLI to 1.4.0.
+    $ wp @daniel option get home
+    https://danielbachhuber.com
+
+This represents a final sanity check that the Phar isn't corrupt in some way.
+
 ### Updating the Debian build
 
 1) Run this script: <https://github.com/wp-cli/wp-cli/blob/master/utils/wp-cli-updatedeb.sh>
@@ -97,23 +130,6 @@ See <https://github.com/wp-cli/wp-cli.github.com#readme>
 The current WP-CLI version will also need to be updated on the [roadmap](https://wp-cli.org/docs/roadmap/).
 
 Please also tag a release of the website, so it's easy to correlate versions of the website.
-
-### Regenerate command and internal API docs
-
-Command and internal API docs need to be regenerated before every major release, because they're meant to correlate with the release.
-
-To regenerate:
-
-    git clone git@github.com:wp-cli/handbook.git
-    cd handbook
-    wp handbook gen-api-docs
-    wp handbook gen-commands
-    wp handbook gen-commands-manifest
-    wp handbook gen-hb-manifest
-
-### Writing the release post
-
-See prior release posts for a format to follow.
 
 ### Announcing
 
