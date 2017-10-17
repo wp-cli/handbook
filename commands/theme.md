@@ -1,6 +1,8 @@
 # wp theme
 
-Manage themes.
+Manages site themes, including installs, activations, and updates.
+
+See the WordPress [Theme Handbook](https://developer.wordpress.org/themes/) developer resource.
 
 ### EXAMPLES
 

@@ -1,6 +1,6 @@
 # wp package
 
-Manage WP-CLI packages.
+Runs WP-CLI package manager commands.
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can contain WP-CLI commands, but they can also just extend WP-CLI in some way.
 

@@ -1,6 +1,8 @@
 # wp sidebar
 
-Manage sidebars.
+Lists registered sidebars.
+
+A [sidebar](https://developer.wordpress.org/themes/functionality/sidebars/) is any widgetized area of your theme.
 
 ### EXAMPLES
 

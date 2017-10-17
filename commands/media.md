@@ -1,6 +1,6 @@
 # wp media
 
-Import new attachments or regenerate existing ones.
+Imports files as attachments, regenerates thumbnails, lists registered image sizes.
 
 ### EXAMPLES
 

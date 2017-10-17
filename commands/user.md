@@ -1,6 +1,8 @@
 # wp user
 
-Manage users.
+Manages users, along with their roles, capabilities, and meta.
+
+See references for [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) and [WP User class](https://codex.wordpress.org/Class_Reference/WP_User).
 
 ### EXAMPLES
 

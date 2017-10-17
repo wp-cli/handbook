@@ -7,7 +7,7 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD`
 ### OPTIONS
 
 [&lt;file&gt;]
-: The name of the SQL file to export. If '-', then outputs to STDOUT. If omitted, it will be '{dbname}.sql'.
+: The name of the SQL file to export. If '-', then outputs to STDOUT. If omitted, it will be '{dbname}-{Y-m-d}-{random-hash}.sql'.
 
 [\--&lt;field&gt;=&lt;value&gt;]
 : Extra arguments to pass to mysqldump
@@ -25,31 +25,40 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD`
 
     # Export database with drop query included
     $ wp db export --add-drop-table
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
 
     # Export certain tables
     $ wp db export --tables=wp_options,wp_users
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
 
     # Export all tables matching a wildcard
     $ wp db export --tables=$(wp db tables 'wp_user*' --format=csv)
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
 
     # Export all tables matching prefix
     $ wp db export --tables=$(wp db tables --all-tables-with-prefix --format=csv)
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
 
     # Skip certain tables from the exported database
     $ wp db export --exclude_tables=wp_options,wp_users
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
 
     # Skip all tables matching a wildcard from the exported database
     $ wp db export --exclude_tables=$(wp db tables 'wp_user*' --format=csv)
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
 
     # Skip all tables matching prefix from the exported database
     $ wp db export --exclude_tables=$(wp db tables --all-tables-with-prefix --format=csv)
-    Success: Exported to 'wordpress_dbase.sql'.
+    Success: Exported to 'wordpress_dbase-db72bb5.sql'.
+
+    # Export database to STDOUT.
+    $ wp db export -
+    -- MySQL dump 10.13  Distrib 5.7.19, for osx10.12 (x86_64)
+    --
+    -- Host: localhost    Database: wpdev
+    -- ------------------------------------------------------
+    -- Server version	5.7.19
+    ...
 
 ### GLOBAL PARAMETERS
 
@@ -59,7 +68,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |

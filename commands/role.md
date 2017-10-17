@@ -1,6 +1,8 @@
 # wp role
 
-Manage user roles.
+Manages user roles, including creating new roles and resetting to defaults.
+
+See references for [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) and [WP User class](https://codex.wordpress.org/Class_Reference/WP_User).
 
 ### EXAMPLES
 

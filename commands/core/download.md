@@ -2,18 +2,21 @@
 
 Download core WordPress files.
 
-Downloads and extracts WordPress core files to the specified path. Uses an archive file stored in cache if WordPress has been previously downloaded.
+Downloads and extracts WordPress core files to the specified path. Uses current directory when no path is specified. Downloaded build is verified to have the correct md5 and then cached to the local filesytem. Subsequent uses of command will use the local cache if it still exists.
 
 ### OPTIONS
 
 [\--path=&lt;path&gt;]
-: Specify the path in which to install WordPress.
+: Specify the path in which to install WordPress. Defaults to current directory.
 
 [\--locale=&lt;locale&gt;]
 : Select which language you want to download.
 
 [\--version=&lt;version&gt;]
 : Select which version you want to download. Accepts a version number, 'latest' or 'nightly'
+
+[\--skip-content]
+: Download the latest version of WP without the default themes and plugins (en_US locale only)
 
 [\--force]
 : Overwrites existing files, if present.
@@ -33,7 +36,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker" or "docker-compose"). |
+| `--ssh=[<scheme>:][<user>@]<host|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id|login|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
