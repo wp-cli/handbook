@@ -11,13 +11,13 @@ Create a new user.
 : The email address of the user to create.
 
 [\--role=&lt;role&gt;]
-: The role of the user to create. Default: default role
+: The role of the user to create. Default: default role | Possible values role `administrator`, `editor`, `author`, `contributor`, `subscriber`.
 
 [\--user_pass=&lt;password&gt;]
-: The user password. Default: randomly generated
+: The user password. Default: randomly generated.
 
 [\--user_registered=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
-: The date the user registered. Default: current date
+: The date the user registered. Default: current date.
 
 [\--display_name=&lt;name&gt;]
 : The display name.
