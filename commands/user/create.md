@@ -11,7 +11,7 @@ Create a new user.
 : The email address of the user to create.
 
 [\--role=&lt;role&gt;]
-: The role of the user to create. Default: default role | Possible values role `administrator`, `editor`, `author`, `contributor`, `subscriber`.
+: The role of the user to create. Default: default role. Possible values include 'administrator', 'editor', 'author', 'contributor', 'subscriber'.
 
 [\--user_pass=&lt;password&gt;]
 : The user password. Default: randomly generated.
