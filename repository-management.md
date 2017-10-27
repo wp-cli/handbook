@@ -118,6 +118,8 @@ Apart from needing to be approved, pull requests also need to have their tests i
 3. Ensuring that the branch is deleted after the merge (if applicable).
 4. Adapting the title of the pull-request as needed. The ideal pull request title is one that can be copied and pasted into release notes as is.
 
+Once a pull request is merged, the committer should make sure any corresponding issues are also closed and assigned to the correct milestone.
+
 ## Releases
 
 ### WP-CLI Releases
