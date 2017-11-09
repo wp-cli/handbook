@@ -18,6 +18,7 @@ In alphabetical order:
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [Liquid Web](https://liquidweb.com/wordpress)
 * [Kinsta](https://kinsta.com)
+* [KnownHost](https://www.knownhost.com)
 * [Media Temple](http://mediatemple.net)
 * [Monarobase](https://monarobase.net/wordpress)
 * [NameHero](https://www.namehero.com)
