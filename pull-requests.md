@@ -40,7 +40,7 @@ To make it far easier to merge your code, each pull request should only contain 
 
 If you submit a pull request with multiple conceptual changes, we'll ask you to resubmit as separate pull requests.
 
-**Make regular process on your contribution**
+**Make regular progress on your contribution**
 
 Through [our code review process](https://make.wordpress.org/cli/handbook/code-review/), we'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
 
