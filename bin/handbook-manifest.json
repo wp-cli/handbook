@@ -65,6 +65,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/hosting-companies.md",
         "parent": null
     },
+    "identify-plugin-theme-conflict": {
+        "title": "Identify a Plugin or Theme Conflict",
+        "slug": "identify-plugin-theme-conflict",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/identify-plugin-theme-conflict.md",
+        "parent": null
+    },
     "implementation-details": {
         "title": "Implementation Details",
         "slug": "implementation-details",
