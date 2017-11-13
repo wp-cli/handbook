@@ -34,6 +34,10 @@ See the documentation below for more information on writing and running tests.
 
 While not yet strictly enforced, the WP-CLI project generally follows the [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/). We may ask you to clean up your pull request if it deviates too much.
 
+**Please refrain from unnecessary code churn**
+
+Code refactoring should not be done just because we can. With a years-old codebase, there's an infinite number of best practice, readability, or consistency improvements that could be made. However, engaging on any of them has non-obvious costs: our time and attention, making Git history more difficult to review, etc. Any code changes should have clear and obvious value.
+
 **Contributions are atomic**
 
 To make it far easier to merge your code, each pull request should only contain one conceptual change. Keeping contributions atomic keeps the pull request discussion focused on one topic and makes it possible to approve changes on a case-by-case basis.
