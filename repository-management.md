@@ -104,7 +104,7 @@ No direct commits are to be done against the `master` branch of the packages. Al
 
 All code changes go through a pull request.
 
-Every submitted pull request needs to go through a code review, and needs to be approved by at least one of the [committers](https://github.com/orgs/wp-cli/teams/committers).
+Every submitted pull request needs to go through a [code review](https://make.wordpress.org/cli/handbook/code-review/), and needs to be approved by at least one of the [committers](https://github.com/orgs/wp-cli/teams/committers).
 
 Non-trivial pull requests should be preceded by a related issue that defines the problem to solve and allows for discussion of the most appropriate solution before actually writing code.
   
