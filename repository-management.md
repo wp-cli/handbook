@@ -102,17 +102,40 @@ No direct commits are to be done against the `master` branch of the packages. Al
 
 ## Pull Requests
 
-All code changes go through a pull request.
+All code changes go through a pull request workflow.
 
 Every submitted pull request needs to go through a [code review](https://make.wordpress.org/cli/handbook/code-review/), and needs to be approved by at least one of the [committers](https://github.com/orgs/wp-cli/teams/committers).
 
+### Merge Pre-Conditions
+
 Non-trivial pull requests should be preceded by a related issue that defines the problem to solve and allows for discussion of the most appropriate solution before actually writing code.
-  
+
 If a pull request is submitted by one of the [committers](https://github.com/orgs/wp-cli/teams/committers), the submitter should set the "Reviewers" for that pull request to `wp-cli/committers` if a general code review is needed, or to one or more specific committer profiles if the expertise of a specific person is needed/wanted.
 
 If a pull request is submitted by an external contributor, the [committers](https://github.com/orgs/wp-cli/teams/committers) should be responsive and provide quick feedback to encourage further contributions.
 
+### Unmergeable Contributions
+
+Sometimes, a pull request may not be mergeable, no matter how much additional effort is applied to it (e.g. out of scope, etc.). In these cases, it's best to let the contributor down as softly and firmly as possible, both to encourage future involvement and avoid flame wars.
+
+Make sure to:
+
+1. Thank the contributor for their time and effort.
+2. Fully explain the reasoning behind the decision to close the pull request.
+3. Link to as much supporting documentation as possible.
+
+If you'd like a template to follow:
+
+> Thanks ________ for the time you've spent on this pull request.
+>
+> I'm closing this pull request because ________. To clarify further, ________.
+>
+> For more details, please see ________ and ________.
+
+### Merge Conditions
+
 Apart from needing to be approved, pull requests also need to have their tests in a passing state before they can be merged. When both of these conditions are true, any [committer](https://github.com/orgs/wp-cli/teams/committers) can merge the pull request by:
+
 1. Ensuring that all applicable labels have been set.
 2. Ensuring that the correct milestone has been set.
 3. Ensuring that the branch is deleted after the merge (if applicable).
