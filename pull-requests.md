@@ -34,13 +34,17 @@ See the documentation below for more information on writing and running tests.
 
 While not yet strictly enforced, the WP-CLI project generally follows the [WordPress Coding Standards](http://make.wordpress.org/core/handbook/coding-standards/). We may ask you to clean up your pull request if it deviates too much.
 
+**Please refrain from unnecessary code churn**
+
+Code refactoring should not be done just because we can. With a years-old codebase, there's an infinite number of best practice, readability, or consistency improvements that could be made. However, engaging on any of them has non-obvious costs: our time and attention, making Git history more difficult to review, etc. Any code changes should have clear and obvious value.
+
 **Contributions are atomic**
 
 To make it far easier to merge your code, each pull request should only contain one conceptual change. Keeping contributions atomic keeps the pull request discussion focused on one topic and makes it possible to approve changes on a case-by-case basis.
 
 If you submit a pull request with multiple conceptual changes, we'll ask you to resubmit as separate pull requests.
 
-**Make regular process on your contribution**
+**Make regular progress on your contribution**
 
 Through [our code review process](https://make.wordpress.org/cli/handbook/code-review/), we'll work with you to make sure your pull request is ready for merge. But if changes are needed and we haven't heard from you in **two weeks**, we'll consider the pull request abandoned. Someone else may pick it up and make the changes required. Or it may be closed.
 
