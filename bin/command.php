@@ -429,7 +429,7 @@ EOT;
 				if ( 'color' === $param ) {
 					$param_arg = '--[no-]color';
 				}
-				$global_parameters .= PHP_EOL . '| `' . $param_arg . '` | ' . $meta['desc'] . ' |';
+				$global_parameters .= PHP_EOL . '| `' . str_replace( '|', '\\|', $param_arg ) . '` | ' . str_replace( '|', '\\|', $meta['desc'] ) . ' |';
 			}
 
 			// Replace Global parameters with a nice table
