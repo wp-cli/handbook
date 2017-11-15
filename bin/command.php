@@ -120,16 +120,44 @@ EOT;
 	public function gen_commands() {
 		$wp = self::invoke_wp_cli( 'wp --skip-packages cli cmd-dump' );
 
+		$bundled_cmds = array();
 		foreach( $wp['subcommands'] as $k => $cmd ) {
 			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ) ) ) {
 				unset( $wp['subcommands'][ $k ] );
+				continue;
 			}
+			$bundled_cmds[] = $cmd['name'];
 		}
 		$wp['subcommands'] = array_values( $wp['subcommands'] );
 
 		foreach ( $wp['subcommands'] as $cmd ) {
 			self::gen_cmd_pages( $cmd );
 		}
+
+		$package_dir = dirname( __DIR__ ) . '/bin/packages';
+		foreach ( array(
+			'wp-cli/admin-command',
+			'wp-cli/find-command',
+			'wp-cli/profile-command',
+			'wp-cli/dist-archive-command'
+		) as $package ) {
+			WP_CLI::log( 'Installing ' . $package );
+			self::invoke_wp_cli( 'WP_CLI_PACKAGES_DIR=' . $package_dir . ' wp package install ' . $package );
+		}
+		$wp_with_packages = self::invoke_wp_cli( 'WP_CLI_PACKAGES_DIR=' . $package_dir . ' wp cli cmd-dump' );
+
+		foreach( $wp_with_packages['subcommands'] as $k => $cmd ) {
+			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ) )
+				|| in_array( $cmd['name'], $bundled_cmds ) ) {
+				unset( $wp_with_packages['subcommands'][ $k ] );
+			}
+		}
+		$wp_with_packages['subcommands'] = array_values( $wp_with_packages['subcommands'] );
+
+		foreach ( $wp_with_packages['subcommands'] as $cmd ) {
+			self::gen_cmd_pages( $cmd );
+		}
+
 		WP_CLI::success( 'Generated all command pages.' );
 	}
 
@@ -401,7 +429,7 @@ EOT;
 				if ( 'color' === $param ) {
 					$param_arg = '--[no-]color';
 				}
-				$global_parameters .= PHP_EOL . '| `' . $param_arg . '` | ' . $meta['desc'] . ' |';
+				$global_parameters .= PHP_EOL . '| `' . str_replace( '|', '\\|', $param_arg ) . '` | ' . str_replace( '|', '\\|', $meta['desc'] ) . ' |';
 			}
 
 			// Replace Global parameters with a nice table
