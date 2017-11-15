@@ -1,4 +1,11 @@
 {
+    "admin": {
+        "title": "admin",
+        "slug": "admin",
+        "cmd_path": "admin",
+        "parent": null,
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/admin.md"
+    },
     "cache": {
         "title": "cache",
         "slug": "cache",
