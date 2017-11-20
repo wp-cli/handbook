@@ -1,4 +1,11 @@
 {
+    "admin": {
+        "title": "admin",
+        "slug": "admin",
+        "cmd_path": "admin",
+        "parent": null,
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/admin.md"
+    },
     "cache": {
         "title": "cache",
         "slug": "cache",
@@ -71,6 +78,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/db.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/db-command"
     },
+    "dist-archive": {
+        "title": "dist-archive",
+        "slug": "dist-archive",
+        "cmd_path": "dist-archive",
+        "parent": null,
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/dist-archive.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/dist-archive-command"
+    },
     "eval-file": {
         "title": "eval-file",
         "slug": "eval-file",
@@ -94,6 +109,14 @@
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/export.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/export-command"
+    },
+    "find": {
+        "title": "find",
+        "slug": "find",
+        "cmd_path": "find",
+        "parent": null,
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/find.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/find-command"
     },
     "help": {
         "title": "help",
@@ -182,6 +205,14 @@
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "profile": {
+        "title": "profile",
+        "slug": "profile",
+        "cmd_path": "profile",
+        "parent": null,
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/profile.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/profile-command"
     },
     "rewrite": {
         "title": "rewrite",
@@ -1222,6 +1253,38 @@
         "parent": "post",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post\/update.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "profile\/eval-file": {
+        "title": "profile eval-file",
+        "slug": "eval-file",
+        "cmd_path": "profile\/eval-file",
+        "parent": "profile",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/profile\/eval-file.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/profile-command"
+    },
+    "profile\/eval": {
+        "title": "profile eval",
+        "slug": "eval",
+        "cmd_path": "profile\/eval",
+        "parent": "profile",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/profile\/eval.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/profile-command"
+    },
+    "profile\/hook": {
+        "title": "profile hook",
+        "slug": "hook",
+        "cmd_path": "profile\/hook",
+        "parent": "profile",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/profile\/hook.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/profile-command"
+    },
+    "profile\/stage": {
+        "title": "profile stage",
+        "slug": "stage",
+        "cmd_path": "profile\/stage",
+        "parent": "profile",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/profile\/stage.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/profile-command"
     },
     "rewrite\/flush": {
         "title": "rewrite flush",
