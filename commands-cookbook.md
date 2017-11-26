@@ -24,7 +24,7 @@ Third-party commands:
 
 * Can be defined in plugins or themes.
 * Can be easily scaffolded as standalone projects with `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)).
-* Can be distributed independent of a plugin or theme in the [Package Index](http://wp-cli.org/package-index/).
+* Can be distributed independent of a plugin or theme in the [Package Index](https://wp-cli.org/package-index/).
 
 All commands:
 
