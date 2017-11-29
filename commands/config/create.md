@@ -62,9 +62,9 @@ default:
 
     # Enable WP_DEBUG and WP_DEBUG_LOG
     $ wp config create --dbname=testing --dbuser=wp --dbpass=securepswd --extra-php <<PHP
-    $ define( 'WP_DEBUG', true );
-    $ define( 'WP_DEBUG_LOG', true );
-    $ PHP
+    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG_LOG', true );
+    PHP
     Success: Generated 'wp-config.php' file.
 
     # Avoid disclosing password to bash history by reading from password.txt
