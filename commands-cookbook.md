@@ -305,15 +305,18 @@ $hello_command = function( $args, $assoc_args ) {
 	list( $name ) = $args;
 	$type = $assoc_args['type'];
 	WP_CLI::$type( "Hello, $name!" );
-}
+	if ( isset( $assoc_args['honk'] ) ) {
+		WP_CLI::log( 'Honk!' );
+	}
+};
 WP_CLI::add_command( 'example hello', $hello_command, array(
 	'shortdesc' => 'Prints a greeting.',
 	'synopsis' => array(
 		array(
-			'type'     => 'positional',
-			'name'     => 'name',
-			'optional' => false,
-			'multiple' => false,
+			'type'      => 'positional',
+			'name'      => 'name',
+			'optional'  => false,
+			'repeating' => false,
 		),
 		array(
 			'type'     => 'assoc',
@@ -321,6 +324,11 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 			'optional' => true,
 			'default'  => 'success',
 			'options'  => array( 'success', 'error' ),
+		),
+		array(
+			'type'     => 'flag',
+			'name'     => 'honk',
+			'optional' => true,
 		),
 	),
 	'when' => 'after_wp_load',
