@@ -308,7 +308,7 @@ $hello_command = function( $args, $assoc_args ) {
 	if ( isset( $assoc_args['honk'] ) ) {
 		WP_CLI::log( 'Honk!' );
 	}
-}
+};
 WP_CLI::add_command( 'example hello', $hello_command, array(
 	'shortdesc' => 'Prints a greeting.',
 	'synopsis' => array(
@@ -328,6 +328,7 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 		array(
 			'type'     => 'flag',
 			'name'     => 'honk',
+			'optional' => true,
 		),
 	),
 	'when' => 'after_wp_load',
