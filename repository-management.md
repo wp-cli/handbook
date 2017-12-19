@@ -155,8 +155,8 @@ When the release is ready, it is prepared and executed according to the [release
 
 Package releases happen on an as-needed basis and are executed by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers). A package is tagged for a release when:
 
-* It has a reasonable number of changes that have been sitting for a while (couple weeks or more).
-* It has a substantial enhancement (e.g. a new command) that's worth getting into the nightly build.
+* It has a reasonable number of changes that have been sitting for a while (couple weeks or more) and would benefit from landing in the nightly build.
+* It has a substantial enhancement (e.g. a new command) that's worth getting into the nightly build for pre-release validation.
 
 Tagging a release should be postponed (for a few to several days) if there's an open pull request that makes sense to include in the release.
 
