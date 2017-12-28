@@ -517,7 +517,10 @@ EOT;
 	}
 
 	/**
-	 * Parse PHPDoc into a structured representation
+	 * Parse PHPDoc into a structured representation.
+	 * 
+	 * @param string $docblock
+	 * @return array
 	 */
 	private static function parse_docblock( $docblock ) {
 		$ret = array(
@@ -561,7 +564,11 @@ EOT;
 		}
 		$ret['description'] = str_replace( '\/', '/', trim( $ret['description'], PHP_EOL ) );
 		$bits = explode( PHP_EOL, $ret['description'] );
-		$ret['short_description'] = array_shift( $bits );
+		$short_desc = array( array_shift( $bits ) );
+		if ( !empty( $bits[0] ) ) {
+			$short_desc[] = array_shift( $bits );
+		}
+		$ret['short_description'] = trim( implode( PHP_EOL, $short_desc ), PHP_EOL );
 		$long_description = trim( implode( PHP_EOL, $bits ), PHP_EOL );
 		$ret['long_description'] = $long_description;
 		return $ret;
