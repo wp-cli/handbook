@@ -565,7 +565,7 @@ EOT;
 		$ret['description'] = str_replace( '\/', '/', trim( $ret['description'], PHP_EOL ) );
 		$bits = explode( PHP_EOL, $ret['description'] );
 		$short_desc = array( array_shift( $bits ) );
-		if ( !empty( $bits[0] ) ) {
+		while ( isset( $bits[0] ) && ! empty( $bits[0] ) ) {
 			$short_desc[] = array_shift( $bits );
 		}
 		$ret['short_description'] = trim( implode( PHP_EOL, $short_desc ), PHP_EOL );
