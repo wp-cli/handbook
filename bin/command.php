@@ -568,7 +568,7 @@ EOT;
 		while ( isset( $bits[0] ) && ! empty( $bits[0] ) ) {
 			$short_desc[] = array_shift( $bits );
 		}
-		$ret['short_description'] = trim( implode( PHP_EOL, $short_desc ), PHP_EOL );
+		$ret['short_description'] = trim( implode( ' ', $short_desc ) );
 		$long_description = trim( implode( PHP_EOL, $bits ), PHP_EOL );
 		$ret['long_description'] = $long_description;
 		return $ret;
