@@ -30,6 +30,7 @@ In alphabetical order:
 * [Seravo.com](https://seravo.com)
 * [Site5](http://www.site5.com/)
 * [SiteGround](http://www.siteground.com/)
+* [StrikeHawk eCommerce](https://www.strikehawk.com/secure-web-hosting/wordpress/)
 * [Synthesis](http://websynthesis.com/)
 * [TitanHost](https://titanhost.io/)
 * [TVC.Net](http://TVC.Net/)
