@@ -8,7 +8,7 @@ $ wp --user=wpcli eval 'echo wp_get_current_user()->user_email;'
 wpcli@example.com
 ```
 
-For repeated usage, WP-CLI can also read options from a YAML configuration file (e.g. `wp-cli.yml`). These configuration files enable specifying default values for both global parameters and subcommand-specific arguments.
+For repeated usage, WP-CLI can also read options from a YAML configuration file (e.g. `wp-cli.yml`). WP-CLI automatically discovers configuration files on the filesystem based on rules defined below. These configuration files enable specifying default values for both global parameters and subcommand-specific arguments.
 
 ```
 # WordPress develop includes a `wp-cli.yml` to enable easy use of WP-CLI
@@ -240,7 +240,7 @@ The table below lists the available <span class="argument">arguments</span> (spe
 
 ## Config files
 
-WP-CLI can read options from a few configuration file types (when present):
+WP-CLI can automatically discover and read options from a few configuration file types (when present):
 
 1. `wp-cli.local.yml` file inside the current working directory (or upwards).
 1. `wp-cli.yml` file inside the current working directory (or upwards).
