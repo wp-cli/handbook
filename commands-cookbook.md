@@ -338,7 +338,7 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 ) );
 ```
 
-Note that the longdesc will be appended to the description generated from the synopsis, so is the place to give examples of usage. If there's no synopsis, the longdesc will be used as is.
+Note that the longdesc will be appended to the description of the options generated from the synopsis, so is the place to give examples of usage. If there's no synopsis, the longdesc will be used as is.
 
 ### Command internals
 
