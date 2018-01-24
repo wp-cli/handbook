@@ -313,17 +313,19 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 	'shortdesc' => 'Prints a greeting.',
 	'synopsis' => array(
 		array(
-			'type'      => 'positional',
-			'name'      => 'name',
-			'optional'  => false,
-			'repeating' => false,
+			'type'        => 'positional',
+			'name'        => 'name',
+			'description' => 'The name of the person to greet.',
+			'optional'    => false,
+			'repeating'   => false,
 		),
 		array(
-			'type'     => 'assoc',
-			'name'     => 'type',
-			'optional' => true,
-			'default'  => 'success',
-			'options'  => array( 'success', 'error' ),
+			'type'        => 'assoc',
+			'name'        => 'type',
+			'description' => 'Whether or not to greet the person with success or error.',
+			'optional'    => true,
+			'default'     => 'success',
+			'options'     => array( 'success', 'error' ),
 		),
 		array(
 			'type'     => 'flag',
@@ -332,8 +334,11 @@ WP_CLI::add_command( 'example hello', $hello_command, array(
 		),
 	),
 	'when' => 'after_wp_load',
+	'longdesc' =>   '## EXAMPLES' . "\n\n" . 'wp example hello Newman',
 ) );
 ```
+
+Note that the longdesc will be appended to the description generated from the synopsis, so is the place to give examples of usage. If there's no synopsis, the longdesc will be used as is.
 
 ### Command internals
 
