@@ -10,6 +10,12 @@ Please take a moment to read these guidelines at depth. Following the guidelines
 
 Should you have any questions about contributing, please join the `#cli` channel in the [WordPress.org Slack](https://make.wordpress.org/chat/).
 
+### Reporting Security Issues
+
+The WP-CLI team and WordPress community take security bugs seriously. We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
+
+To report a security issue, please visit the [WordPress HackerOne](https://hackerone.com/wordpress) program.
+
 ### Reporting a bug
 
 Think you’ve found a bug? We’d love for you to help us get it fixed.
