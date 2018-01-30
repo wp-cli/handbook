@@ -1,6 +1,6 @@
 # wp term delete
 
-Delete an existing term.
+Deletes an existing term.
 
 Errors if the term doesn't exist, or there was a problem in deleting it.
 

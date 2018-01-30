@@ -1,6 +1,6 @@
 # wp plugin install
 
-Install a plugin.
+Installs a plugin.
 
 ### OPTIONS
 

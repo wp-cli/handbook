@@ -1,6 +1,6 @@
 # wp import
 
-Import content from a WXR file.
+Imports content from a given WXR file.
 
 Provides a command line interface to the WordPress Importer plugin, for performing data migrations.
 

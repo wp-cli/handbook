@@ -1,6 +1,6 @@
 # wp widget deactivate
 
-Deactivate one or more widgets from an active sidebar.
+Deactivates one or more widgets from an active sidebar.
 
 Moves widgets to Inactive Widgets.
 

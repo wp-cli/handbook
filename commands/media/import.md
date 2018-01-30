@@ -1,6 +1,6 @@
 # wp media import
 
-Create attachments from local files or URLs.
+Creates attachments from local files or URLs.
 
 ### OPTIONS
 

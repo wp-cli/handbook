@@ -1,6 +1,6 @@
 # wp site public
 
-Set one or more sites as public.
+Sets one or more sites as public.
 
 ### OPTIONS
 

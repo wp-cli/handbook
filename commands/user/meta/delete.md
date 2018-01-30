@@ -1,6 +1,6 @@
 # wp user meta delete
 
-Delete a meta field.
+Deletes a meta field.
 
 ### OPTIONS
 

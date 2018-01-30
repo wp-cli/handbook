@@ -1,6 +1,6 @@
 # wp scaffold post-type
 
-Generate PHP code for registering a custom post type.
+Generates PHP code for registering a custom post type.
 
 ### OPTIONS
 

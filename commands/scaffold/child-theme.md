@@ -1,6 +1,6 @@
 # wp scaffold child-theme
 
-Generate child theme based on an existing theme.
+Generates child theme based on an existing theme.
 
 Creates a child theme folder with `functions.php` and `style.css` files.
 

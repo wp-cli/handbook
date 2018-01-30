@@ -1,6 +1,6 @@
 # wp user get
 
-Get details about a user.
+Gets details about a user.
 
 ### OPTIONS
 

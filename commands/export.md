@@ -1,6 +1,6 @@
 # wp export
 
-Export WordPress content to a WXR file.
+Exports WordPress content to a WXR file.
 
 Generates one or more WXR files containing authors, terms, posts, comments, and attachments. WXR files do not include site configuration (options) or the attachment files themselves.
 

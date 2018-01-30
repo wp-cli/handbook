@@ -1,6 +1,6 @@
 # wp cron schedule
 
-Manage WP-Cron schedules.
+Gets WP-Cron schedules.
 
 ### EXAMPLES
 

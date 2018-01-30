@@ -1,6 +1,6 @@
 # wp post delete
 
-Delete an existing post.
+Deletes an existing post.
 
 ### OPTIONS
 

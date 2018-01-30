@@ -1,6 +1,6 @@
 # wp config get
 
-Get variables, constants, and file includes defined in wp-config.php file.
+Gets variables, constants, and file includes defined in wp-config.php file.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp sidebar list
 
-List registered sidebars.
+Lists registered sidebars.
 
 ### OPTIONS
 

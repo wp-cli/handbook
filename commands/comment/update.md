@@ -1,6 +1,6 @@
 # wp comment update
 
-Update one or more comments.
+Updates one or more comments.
 
 ### OPTIONS
 

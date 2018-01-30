@@ -1,6 +1,6 @@
 # wp menu item add-post
 
-Add a post as a menu item.
+Adds a post as a menu item.
 
 ### OPTIONS
 

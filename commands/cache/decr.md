@@ -1,6 +1,6 @@
 # wp cache decr
 
-Decrement a value in the object cache.
+Decrements a value in the object cache.
 
 Errors if the value can't be decremented.
 

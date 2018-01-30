@@ -1,6 +1,6 @@
 # wp theme delete
 
-Delete a theme.
+Deletes a theme.
 
 Removes the theme from the filesystem.
 

@@ -1,6 +1,6 @@
 # wp widget reset
 
-Reset sidebar.
+Resets sidebar.
 
 Removes all widgets from the sidebar and places them in Inactive Widgets.
 

@@ -1,6 +1,6 @@
 # wp theme get
 
-Get details about a theme.
+Gets details about a theme.
 
 ### OPTIONS
 

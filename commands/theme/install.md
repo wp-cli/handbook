@@ -1,6 +1,6 @@
 # wp theme install
 
-Install a theme.
+Installs a theme.
 
 ### OPTIONS
 

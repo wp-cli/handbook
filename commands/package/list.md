@@ -1,6 +1,6 @@
 # wp package list
 
-List installed WP-CLI packages.
+Lists installed WP-CLI packages.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp post meta
 
-Manage post custom fields.
+Adds, updates, deletes, and lists post custom fields.
 
 ### EXAMPLES
 

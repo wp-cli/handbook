@@ -1,6 +1,6 @@
 # wp cache get
 
-Get a value from the object cache.
+Gets a value from the object cache.
 
 Errors if the value doesn't exist.
 

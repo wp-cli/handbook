@@ -1,6 +1,6 @@
 # wp theme status
 
-See the status of one or all themes.
+Reveals the status of one or all themes.
 
 ### OPTIONS
 

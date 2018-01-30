@@ -1,6 +1,6 @@
 # wp theme path
 
-Get the path to a theme or to the theme directory.
+Gets the path to a theme or to the theme directory.
 
 ### OPTIONS
 

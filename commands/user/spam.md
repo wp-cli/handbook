@@ -1,6 +1,6 @@
 # wp user spam
 
-Mark one or more users as spam.
+Marks one or more users as spam.
 
 ### OPTIONS
 

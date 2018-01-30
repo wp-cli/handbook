@@ -1,6 +1,6 @@
 # wp plugin search
 
-Search the WordPress.org plugin directory.
+Searches the WordPress.org plugin directory.
 
 Displays plugins in the WordPress.org plugin directory matching a given search query.
 

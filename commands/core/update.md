@@ -1,6 +1,6 @@
 # wp core update
 
-Update WordPress to a newer version.
+Updates WordPress to a newer version.
 
 Defaults to updating WordPress to the latest version.
 
@@ -31,7 +31,7 @@ If you see "Error: Another update is currently in progress.", you may need to ru
     Downloading update from https://downloads.wordpress.org/release/wordpress-4.5.2-no-content.zip...
     Unpacking the update...
     Cleaning up files...
-    No files found that need cleaned up
+    No files found that need cleaning up
     Success: WordPress updated successfully.
 
     # Update WordPress to latest version of 3.8 release
@@ -50,7 +50,7 @@ If you see "Error: Another update is currently in progress.", you may need to ru
     Updating to version 3.1 (en_US)...
     Downloading update from https://wordpress.org/wordpress-3.1.zip...
     Unpacking the update...
-    Warning: Failed to fetch checksums. Please cleanup files manually.
+    Warning: Checksums not available for WordPress 3.1/en_US. Please cleanup files manually.
     Success: WordPress updated successfully.
 
 ### GLOBAL PARAMETERS

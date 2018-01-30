@@ -1,6 +1,6 @@
 # wp term create
 
-Create a new term.
+Creates a new term.
 
 ### OPTIONS
 

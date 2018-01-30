@@ -1,6 +1,6 @@
 # wp theme update
 
-Update one or more themes.
+Updates one or more themes.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp user remove-cap
 
-Remove a user's capability.
+Removes a user's capability.
 
 ### OPTIONS
 
