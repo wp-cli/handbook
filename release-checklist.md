@@ -24,6 +24,8 @@ Make sure the [automated test suite](https://github.com/wp-cli/automated-tests) 
 
 ### Updating WP-CLI
 
+Create a branch called `release-x-x-x` to prepare the release PR.
+
 Make sure that the contents of [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) are changed to latest.
 
 Also update the WP-CLI version mention in the project's `README.md` ([ref](https://github.com/wp-cli/wp-cli/issues/3647)).
@@ -48,30 +50,32 @@ The script will also produce a total contributor and pull request count you can 
 
 ### Updating the Phar build
 
-1) Create a git tag and push it.
+1) Create a PR from the `release-x-x-x` branch and merge it. This will trigger the `wp-cli-release.*` builds.
 
-2) Create a stable [Phar build](https://github.com/wp-cli/builds/tree/gh-pages/phar):
+2) Create a git tag and push it.
 
-    cd wp-cli-builds/phar
-    cp wp-cli-nightly.phar wp-cli.phar
+3) Create a stable [Phar build](https://github.com/wp-cli/builds/tree/gh-pages/phar):
+
+    cd wp-cli/builds/phar
+    cp wp-cli-release.phar wp-cli.phar
     md5 -q wp-cli.phar > wp-cli.phar.md5
     shasum -a 512 wp-cli.phar | cut -d ' ' -f 1 > wp-cli.phar.sha512
 
-3) Sign the release with GPG. See <https://github.com/wp-cli/wp-cli/issues/2121>
+4) Sign the release with GPG. See <https://github.com/wp-cli/wp-cli/issues/2121>
 
     gpg --output wp-cli.phar.gpg --sign wp-cli.phar
 
-3) Perform one last sanity check on the Phar by ensuring it displays its information
+5) Perform one last sanity check on the Phar by ensuring it displays its information
 
     php wp-cli.phar --info
 
-4) Commit the Phar and its hashes to the builds repo
+6) Commit the Phar and its hashes to the builds repo
 
     git status
     git add .
     git commit -m "Update stable to v1.x.0"
 
-5) Create a release on Github: <https://github.com/wp-cli/wp-cli/releases>. Make sure to upload the Phar from the builds directory.
+7) Create a release on Github: <https://github.com/wp-cli/wp-cli/releases>. Make sure to upload the Phar from the builds directory.
 
     cp wp-cli.phar wp-cli-1.x.0.phar
     cp wp-cli.phar.gpg wp-cli-1.x.0.phar.gpg
