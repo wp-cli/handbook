@@ -1,6 +1,6 @@
 # wp option delete
 
-Delete an option.
+Deletes an option.
 
 ### OPTIONS
 

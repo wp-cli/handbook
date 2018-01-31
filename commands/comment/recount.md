@@ -1,6 +1,6 @@
 # wp comment recount
 
-Recalculate the comment_count value for one or more posts.
+Recalculates the comment_count value for one or more posts.
 
 ### OPTIONS
 

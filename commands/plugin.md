@@ -1,8 +1,8 @@
 # wp plugin
 
-Manages site plugins, including installs, activations, and updates.
+Manages plugins, including installs, activations, and updates.
 
-See the WordPress [Plugin Handbook](https://developer.wordpress.org/plugins/) developer resource.
+See the WordPress [Plugin Handbook](https://developer.wordpress.org/plugins/) developer resource for more information on plugins.
 
 ### EXAMPLES
 

@@ -1,8 +1,10 @@
 # wp language core update
 
-Update installed languages.
+Updates installed languages.
 
 Updates installed languages for core, plugins and themes.
+
+### OPTIONS
 
 [\--dry-run]
 : Preview which translations would be updated.

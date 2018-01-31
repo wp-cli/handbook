@@ -1,43 +1,27 @@
 # wp config get
 
-Get variables, constants, and file includes defined in wp-config.php file.
+Gets the value of a specific constant or variable defined in wp-config.php file.
 
 ### OPTIONS
 
-[\--fields=&lt;fields&gt;]
-: Limit the output to specific fields. Defaults to all fields.
+&lt;name&gt;
+: Name of the wp-config.php constant or variable.
 
-[\--constant=&lt;constant&gt;]
-: Returns the value of a specific constant defined in the wp-config.php file.
-
-[\--global=&lt;global&gt;]
-: Returns the value of a specific global defined in the wp-config.php file.
-
-[\--format=&lt;format&gt;]
-: Render output in a particular format.
+[\--type=&lt;type&gt;]
+: Type of config value to retrieve. Defaults to 'all'.
 \---
-default: table
+default: all
 options:
-  - table
-  - csv
-  - json
-  - yaml
+  - constant
+  - variable
+  - all
 \---
 
 ### EXAMPLES
 
-    # List variables and constants defined in wp-config.php file.
-    $ wp config get --format=table
-    +------------------+------------------------------------------------------------------+----------+
-    | key              | value                                                            | type     |
-    +------------------+------------------------------------------------------------------+----------+
-    | table_prefix     | wp_                                                              | variable |
-    | DB_NAME          | wp_cli_test                                                      | constant |
-    | DB_USER          | root                                                             | constant |
-    | DB_PASSWORD      | root                                                             | constant |
-    | AUTH_KEY         | r6+@shP1yO&amp;$)1gdu.hl[/j;7Zrvmt~o;#WxSsa0mlQOi24j2cR,7i+QM/#7S:o^ | constant |
-    | SECURE_AUTH_KEY  | iO-z!_m--YH$Tx2tf/&amp;V,YW*13Z_HiRLqi)d?$o-tMdY+82pK$`T.NYW~iTLW;xp | constant |
-    +------------------+------------------------------------------------------------------+----------+
+    # Get the table_prefix as defined in wp-config.php file.
+    $ wp config get table_prefix
+    wp_
 
 ### GLOBAL PARAMETERS
 

@@ -1,6 +1,6 @@
 # wp user session
 
-Manage a user's sessions.
+Destroys and lists a user's sessions.
 
 ### EXAMPLES
 

@@ -1,8 +1,16 @@
 # wp db create
 
-Create a new database.
+Creates a new database.
 
 Runs `CREATE_DATABASE` SQL statement using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
+
+### OPTIONS
+
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysql. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysql. Defaults to DB_PASSWORD.
 
 ### EXAMPLES
 

@@ -1,6 +1,6 @@
 # wp theme list
 
-Get a list of themes.
+Gets a list of themes.
 
 ### OPTIONS
 

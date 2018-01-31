@@ -1,6 +1,6 @@
 # wp cache add
 
-Add a value to the object cache.
+Adds a value to the object cache.
 
 Errors if a value already exists for the key, which means the value can't be added.
 

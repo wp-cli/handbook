@@ -1,6 +1,6 @@
 # wp core check-update
 
-Check for WordPress updates via Version Check API.
+Checks for WordPress updates via Version Check API.
 
 Lists the most recent versions when there are updates available, or success message when up to date.
 

@@ -1,6 +1,6 @@
 # wp cap add
 
-Add capabilities to a given role.
+Adds capabilities to a given role.
 
 ### OPTIONS
 

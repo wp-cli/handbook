@@ -299,6 +299,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-basename.md",
         "parent": "internal-api"
     },
+    "wp-cli-utils-esc-like": {
+        "title": "WP_CLI\\Utils\\esc_like()",
+        "slug": "wp-cli-utils-esc-like",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-esc-like.md",
+        "parent": "internal-api"
+    },
     "wp-cli-utils-format-items": {
         "title": "WP_CLI\\Utils\\format_items()",
         "slug": "wp-cli-utils-format-items",
@@ -321,6 +327,12 @@
         "title": "WP_CLI\\Utils\\get_named_sem_ver()",
         "slug": "wp-cli-utils-get-named-sem-ver",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-named-sem-ver.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-get-php-binary": {
+        "title": "WP_CLI\\Utils\\get_php_binary()",
+        "slug": "wp-cli-utils-get-php-binary",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-get-php-binary.md",
         "parent": "internal-api"
     },
     "wp-cli-utils-get-temp-dir": {
@@ -363,6 +375,12 @@
         "title": "WP_CLI\\Utils\\parse_str_to_argv()",
         "slug": "wp-cli-utils-parse-str-to-argv",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-parse-str-to-argv.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-proc-open-compat": {
+        "title": "WP_CLI\\Utils\\proc_open_compat()",
+        "slug": "wp-cli-utils-proc-open-compat",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/internal-api\/wp-cli-utils-proc-open-compat.md",
         "parent": "internal-api"
     },
     "wp-cli-utils-report-batch-operation-results": {

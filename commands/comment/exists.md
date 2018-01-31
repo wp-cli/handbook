@@ -1,6 +1,6 @@
 # wp comment exists
 
-Verify whether a comment exists.
+Verifies whether a comment exists.
 
 Displays a success message if the comment does exist.
 

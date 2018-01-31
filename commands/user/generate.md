@@ -1,6 +1,6 @@
 # wp user generate
 
-Generate some users.
+Generates some users.
 
 Creates a specified number of new users with dummy data.
 

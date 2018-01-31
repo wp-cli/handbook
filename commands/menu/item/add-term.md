@@ -1,6 +1,6 @@
 # wp menu item add-term
 
-Add a taxonomy term as a menu item.
+Adds a taxonomy term as a menu item.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp cron event run
 
-Run the next scheduled cron event for the given hook.
+Runs the next scheduled cron event for the given hook.
 
 ### OPTIONS
 

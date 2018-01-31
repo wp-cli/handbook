@@ -1,6 +1,6 @@
 # wp super-admin
 
-Lists, adds, or removes super admin users on a multisite install.
+Lists, adds, or removes super admin users on a multisite installation.
 
 ### EXAMPLES
 

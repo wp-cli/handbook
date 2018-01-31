@@ -1,6 +1,6 @@
 # wp rewrite structure
 
-Update the permalink structure.
+Updates the permalink structure.
 
 Sets the post permalink structure to the specified pattern.
 

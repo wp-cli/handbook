@@ -1,6 +1,6 @@
 # wp user set-role
 
-Set the user role.
+Sets the user role.
 
 ### OPTIONS
 

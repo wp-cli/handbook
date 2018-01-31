@@ -1,6 +1,6 @@
 # wp comment untrash
 
-Untrash a comment.
+Untrashes a comment.
 
 ### OPTIONS
 

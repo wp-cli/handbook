@@ -1,6 +1,6 @@
 # wp rewrite flush
 
-Flush rewrite rules.
+Flushes rewrite rules.
 
 Resets WordPress' rewrite rules based on registered post types, etc.
 

@@ -1,10 +1,21 @@
 # wp db check
 
-Check the current status of the database.
+Checks the current status of the database.
 
 Runs `mysqlcheck` utility with `--check` using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
 
 [See docs](http://dev.mysql.com/doc/refman/5.7/en/check-table.html) for more details on the `CHECK TABLE` statement.
+
+### OPTIONS
+
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysqlcheck. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysqlcheck. Defaults to DB_PASSWORD.
+
+[\--&lt;field&gt;=&lt;value&gt;]
+: Extra arguments to pass to mysqlcheck.
 
 ### EXAMPLES
 

@@ -1,8 +1,10 @@
 # wp language core install
 
-Install a given language.
+Installs a given language.
 
 Downloads the language pack from WordPress.org.
+
+### OPTIONS
 
 &lt;language&gt;...
 : Language code to install.

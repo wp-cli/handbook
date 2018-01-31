@@ -1,6 +1,6 @@
 # wp post list
 
-Get a list of posts.
+Gets a list of posts.
 
 ### OPTIONS
 

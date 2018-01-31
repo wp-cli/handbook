@@ -9,8 +9,14 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD`
 [&lt;file&gt;]
 : The name of the SQL file to export. If '-', then outputs to STDOUT. If omitted, it will be '{dbname}-{Y-m-d}-{random-hash}.sql'.
 
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysqldump. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysqldump. Defaults to DB_PASSWORD.
+
 [\--&lt;field&gt;=&lt;value&gt;]
-: Extra arguments to pass to mysqldump
+: Extra arguments to pass to mysqldump.
 
 [\--tables=&lt;tables&gt;]
 : The comma separated list of specific tables to export. Excluding this parameter will export all tables in the database.

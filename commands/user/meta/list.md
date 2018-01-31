@@ -1,6 +1,6 @@
 # wp user meta list
 
-List all metadata associated with a user.
+Lists all metadata associated with a user.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp db cli
 
-Open a MySQL console using credentials from wp-config.php
+Opens a MySQL console using credentials from wp-config.php
 
 ### OPTIONS
 
@@ -10,8 +10,14 @@ Open a MySQL console using credentials from wp-config.php
 [\--default-character-set=&lt;character-set&gt;]
 : Use a specific character set. Defaults to DB_CHARSET when defined.
 
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysql. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysql. Defaults to DB_PASSWORD.
+
 [\--&lt;field&gt;=&lt;value&gt;]
-: Extra arguments to pass to the MySQL executable.
+: Extra arguments to pass to mysql.
 
 ### EXAMPLES
 

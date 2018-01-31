@@ -1,6 +1,6 @@
 # wp export
 
-Export WordPress content to a WXR file.
+Exports WordPress content to a WXR file.
 
 Generates one or more WXR files containing authors, terms, posts, comments, and attachments. WXR files do not include site configuration (options) or the attachment files themselves.
 
@@ -39,7 +39,10 @@ default: any
 : Export all post types except those identified. Separate multiple post types with a comma. Defaults to none.
 
 [\--post__in=&lt;pid&gt;]
-: Export all posts specified as a comma- or space-separated list of IDs.
+: Export all posts specified as a comma- or space-separated list of IDs. Post's attachments won't be exported unless --with_attachments is specified.
+
+[\--with_attachments]
+: Force including attachments in case --post__in has been specified.
 
 [\--start_id=&lt;pid&gt;]
 : Export only posts with IDs greater than or equal to this post ID.

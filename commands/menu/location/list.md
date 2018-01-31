@@ -1,6 +1,6 @@
 # wp menu location list
 
-List locations for the current theme.
+Lists locations for the current theme.
 
 ### OPTIONS
 

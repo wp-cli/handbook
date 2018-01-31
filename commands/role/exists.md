@@ -1,6 +1,6 @@
 # wp role exists
 
-Check if a role exists.
+Checks if a role exists.
 
 Exits with return code 0 if the role exists, 1 if it does not.
 

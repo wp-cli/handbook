@@ -1,6 +1,6 @@
 # wp theme mod get
 
-Get one or more theme mods.
+Gets one or more theme mods.
 
 ### OPTIONS
 

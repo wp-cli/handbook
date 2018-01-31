@@ -1,6 +1,6 @@
 # wp term update
 
-Update an existing term.
+Updates an existing term.
 
 ### OPTIONS
 

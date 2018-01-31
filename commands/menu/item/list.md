@@ -1,6 +1,6 @@
 # wp menu item list
 
-Get a list of items associated with a menu.
+Gets a list of items associated with a menu.
 
 ### OPTIONS
 
