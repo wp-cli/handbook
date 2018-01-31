@@ -1,6 +1,6 @@
 # wp site activate
 
-Activate one or more sites.
+Activates one or more sites.
 
 ### OPTIONS
 

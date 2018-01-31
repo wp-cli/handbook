@@ -1,6 +1,6 @@
 # wp cron event delete
 
-Delete the next scheduled cron event for the given hook.
+Deletes the next scheduled cron event for the given hook.
 
 ### OPTIONS
 

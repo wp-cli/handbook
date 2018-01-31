@@ -1,6 +1,6 @@
 # wp menu location remove
 
-Remove a location from a menu.
+Removes a location from a menu.
 
 ### OPTIONS
 

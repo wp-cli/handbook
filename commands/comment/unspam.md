@@ -1,6 +1,6 @@
 # wp comment unspam
 
-Unmark a comment as spam.
+Unmarks a comment as spam.
 
 ### OPTIONS
 

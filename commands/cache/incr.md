@@ -1,6 +1,6 @@
 # wp cache incr
 
-Increment a value in the object cache.
+Increments a value in the object cache.
 
 Errors if the value can't be incremented.
 

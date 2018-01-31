@@ -1,6 +1,6 @@
 # wp comment status
 
-Get status of a comment.
+Gets the status of a comment.
 
 ### OPTIONS
 

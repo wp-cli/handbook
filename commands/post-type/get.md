@@ -1,6 +1,6 @@
 # wp post-type get
 
-Get details about a registered post type.
+Gets details about a registered post type.
 
 ### OPTIONS
 

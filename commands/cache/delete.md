@@ -1,6 +1,6 @@
 # wp cache delete
 
-Remove a value from the object cache.
+Removes a value from the object cache.
 
 Errors if the value can't be deleted.
 

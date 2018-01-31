@@ -1,6 +1,6 @@
 # wp scaffold plugin
 
-Generate starter code for a plugin.
+Generates starter code for a plugin.
 
 The following files are always generated:
 

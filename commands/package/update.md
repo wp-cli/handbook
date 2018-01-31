@@ -1,6 +1,6 @@
 # wp package update
 
-Update all installed WP-CLI packages to their latest version.
+Updates all installed WP-CLI packages to their latest version.
 
 ### EXAMPLES
 

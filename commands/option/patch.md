@@ -1,6 +1,6 @@
 # wp option patch
 
-Update a nested value in an option.
+Updates a nested value in an option.
 
 ### OPTIONS
 

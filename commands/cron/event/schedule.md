@@ -1,6 +1,6 @@
 # wp cron event schedule
 
-Schedule a new cron event.
+Schedules a new cron event.
 
 ### OPTIONS
 

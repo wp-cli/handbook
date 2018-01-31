@@ -1,6 +1,6 @@
 # wp user unspam
 
-Remove one or more users from spam.
+Removes one or more users from spam.
 
 ### OPTIONS
 

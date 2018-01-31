@@ -1,6 +1,6 @@
 # wp site delete
 
-Delete a site in a multisite install.
+Deletes a site in a multisite installation.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp cache set
 
-Set a value to the object cache, regardless of whether it already exists.
+Sets a value to the object cache, regardless of whether it already exists.
 
 Errors if the value can't be set.
 

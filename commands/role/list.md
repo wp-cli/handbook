@@ -1,6 +1,6 @@
 # wp role list
 
-List all roles.
+Lists all roles.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp comment trash
 
-Trash a comment.
+Trashes a comment.
 
 ### OPTIONS
 

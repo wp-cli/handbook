@@ -1,6 +1,6 @@
 # wp db size
 
-Display the database name and size.
+Displays the database name and size.
 
 Display the database name and size for `DB_NAME` specified in wp-config.php. The size defaults to a human-readable number.
 
@@ -14,6 +14,8 @@ options:
  - b (bytes)
  - kb (kilobytes)
  - mb (megabytes)
+ - gb (gigabytes)
+ - tb (terabytes)
  ---
 
 [\--tables]
@@ -32,7 +34,7 @@ default: table options:
 : Can be all, global, ms_global, blog, or old tables. Defaults to all.
 
 [\--network]
-: List all the tables in a multisite install. Overrides --scope=&lt;scope&gt;.
+: List all the tables in a multisite install.
 
 [\--all-tables-with-prefix]
 : List all tables that match the table prefix even if not registered on $wpdb. Overrides --network.

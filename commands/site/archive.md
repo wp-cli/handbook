@@ -1,6 +1,6 @@
 # wp site archive
 
-Archive one or more sites.
+Archives one or more sites.
 
 ### OPTIONS
 

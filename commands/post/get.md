@@ -1,6 +1,6 @@
 # wp post get
 
-Get details about a post.
+Gets details about a post.
 
 ### OPTIONS
 

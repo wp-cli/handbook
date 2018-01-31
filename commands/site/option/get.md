@@ -1,6 +1,6 @@
 # wp site option get
 
-Get a site option.
+Gets a site option.
 
 ### OPTIONS
 
