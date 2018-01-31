@@ -56,7 +56,7 @@ The script will also produce a total contributor and pull request count you can 
 
 3) Create a stable [Phar build](https://github.com/wp-cli/builds/tree/gh-pages/phar):
 
-    cd wp-cli-builds/phar
+    cd wp-cli/builds/phar
     cp wp-cli-release.phar wp-cli.phar
     md5 -q wp-cli.phar > wp-cli.phar.md5
     shasum -a 512 wp-cli.phar | cut -d ' ' -f 1 > wp-cli.phar.sha512
