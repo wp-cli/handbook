@@ -80,7 +80,7 @@ Updates one or more existing posts.
 : Array of taxonomy terms keyed by their taxonomy name. Default empty.
 
 [\--meta_input=&lt;meta_input&gt;]
-: Array of post meta values keyed by their post meta key. Default empty.
+: Array in JSON format of post meta values keyed by their post meta key. Default empty.
 
 [&lt;file&gt;]
 : Read post content from &lt;file&gt;. If this value is present, the
@@ -98,6 +98,10 @@ Updates one or more existing posts.
 ### EXAMPLES
 
     $ wp post update 123 --post_name=something --post_status=draft
+    Success: Updated post 123.
+
+    # Update a post with multiple meta values.
+    $ wp post update 123 --meta_input='{"key1":"value1","key2":"value2"}
     Success: Updated post 123.
 
 ### GLOBAL PARAMETERS

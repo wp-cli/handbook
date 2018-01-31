@@ -1,27 +1,47 @@
-# wp config get
+# wp embed handler list
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Lists all available embed handlers.
 
 ### OPTIONS
 
-&lt;name&gt;
-: Name of the wp-config.php constant or variable.
+[\--field=&lt;field&gt;]
+: Display the value of a single field
 
-[\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific fields.
+
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
 \---
-default: all
+default: table
 options:
-  - constant
-  - variable
-  - all
+  - table
+  - csv
+  - json
 \---
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each handler:
+
+* id
+* regex
+
+These fields are optionally available:
+
+* callback
+* priority
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # List id,regex,priority fields of available handlers.
+    $ wp embed handler list --fields=priority,id
+    +----------+-------------------+
+    | priority | id                |
+    +----------+-------------------+
+    | 10       | youtube_embed_url |
+    | 9999     | audio             |
+    | 9999     | video             |
 
 ### GLOBAL PARAMETERS
 

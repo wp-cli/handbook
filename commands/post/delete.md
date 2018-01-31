@@ -26,8 +26,8 @@ Deletes an existing post.
 
     # Delete all posts in the trash
     $ wp post delete $(wp post list --post_status=trash --format=ids)
-    Success: Trashed post 1268.
-    Success: Trashed post 1294.
+    Success: Deleted post 1268.
+    Success: Deleted post 1294.
 
 ### GLOBAL PARAMETERS
 

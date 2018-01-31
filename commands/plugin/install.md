@@ -1,11 +1,11 @@
 # wp plugin install
 
-Installs a plugin.
+Installs one or more plugins.
 
 ### OPTIONS
 
 &lt;plugin|zip|url&gt;...
-: A plugin slug, the path to a local zip file, or URL to a remote zip file.
+: One or more plugins to install. Accepts a plugin slug, the path to a local zip file, or a URL to a remote zip file.
 
 [\--version=&lt;version&gt;]
 : If set, get that particular version from wordpress.org, instead of the stable version.

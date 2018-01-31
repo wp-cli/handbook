@@ -1,27 +1,39 @@
-# wp config get
+# wp plugin verify-checksums
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Verifies plugin files against WordPress.org's checksums.
 
 ### OPTIONS
 
-&lt;name&gt;
-: Name of the wp-config.php constant or variable.
+[&lt;plugin&gt;...]
+: One or more plugins to verify.
 
-[\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
+[\--all]
+: If set, all plugins will be verified.
+
+[\--strict]
+: If set, even "soft changes" like readme.txt changes will trigger checksum errors.
+
+[\--format=&lt;format&gt;]
+: Render output in a specific format.
 \---
-default: all
+default: table
 options:
-  - constant
-  - variable
-  - all
+  - table
+  - json
+  - csv
+  - yaml
+  - count
 \---
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # Verify the checksums of all installed plugins
+    $ wp plugin verify-checksums --all
+    Success: Verified 8 of 8 plugins.
+
+    # Verify the checksums of a single plugin, Akismet in this case
+    $ wp plugin verify-checksums akismet
+    Success: Verified 1 of 1 plugins.
 
 ### GLOBAL PARAMETERS
 

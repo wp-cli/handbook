@@ -1,6 +1,6 @@
 # wp plugin uninstall
 
-Uninstalls a plugin.
+Uninstalls one or more plugins.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
-# wp config get
+# wp config delete
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Deletes a specific constant or variable from the wp-config.php file.
 
 ### OPTIONS
 
@@ -8,7 +8,7 @@ Gets the value of a specific constant or variable defined in wp-config.php file.
 : Name of the wp-config.php constant or variable.
 
 [\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
+: Type of the config value to delete. Defaults to 'all'.
 \---
 default: all
 options:
@@ -19,9 +19,8 @@ options:
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # Delete the COOKIE_DOMAIN constant from the wp-config.php file.
+    $ wp config delete COOKIE_DOMAIN
 
 ### GLOBAL PARAMETERS
 

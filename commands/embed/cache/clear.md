@@ -1,27 +1,19 @@
-# wp config get
+# wp embed cache clear
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Deletes all oEmbed caches for a given post.
+
+oEmbed caches for a post are stored in the post's metadata.
 
 ### OPTIONS
 
-&lt;name&gt;
-: Name of the wp-config.php constant or variable.
-
-[\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
-\---
-default: all
-options:
-  - constant
-  - variable
-  - all
-\---
+&lt;post_id&gt;
+: ID of the post to clear the cache for.
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # Clear cache for a post
+    $ wp embed cache clear 123
+    Success: Cleared oEmbed cache.
 
 ### GLOBAL PARAMETERS
 

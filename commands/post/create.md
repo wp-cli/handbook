@@ -77,7 +77,7 @@ Creates a new post.
 : Array of taxonomy terms keyed by their taxonomy name. Default empty.
 
 [\--meta_input=&lt;meta_input&gt;]
-: Array of post meta values keyed by their post meta key. Default empty.
+: Array in JSON format of post meta values keyed by their post meta key. Default empty.
 
 [&lt;file&gt;]
 : Read post content from &lt;file&gt;. If this value is present, the
@@ -108,6 +108,10 @@ Creates a new post.
     # Create post with content from given file
     $ wp post create ./post-content.txt --post_category=201,345 --post_title='Post from file'
     Success: Created post 1922.
+
+    # Create a post with multiple meta values.
+    $ wp post create --post_title='A post' --post_content='Just a small post.' --meta_input='{"key1":"value1","key2":"value2"}
+    Success: Created post 1923.
 
 ### GLOBAL PARAMETERS
 

@@ -1,27 +1,31 @@
-# wp config get
+# wp embed provider match
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Gets the matching provider for a given URL.
 
 ### OPTIONS
 
-&lt;name&gt;
-: Name of the wp-config.php constant or variable.
+&lt;url&gt;
+: URL to retrieve provider for.
 
-[\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
+[\--discover]
+: Whether to use oEmbed discovery or not. Defaults to true.
+
+[\--limit-response-size=&lt;size&gt;]
+: Limit the size of the resulting HTML when using discovery. Default 150 KB (the standard WordPress limit). Not compatible with 'no-discover'.
+
+[\--link-type=&lt;json|xml&gt;]
+: Whether to accept only a certain link type when using discovery. Defaults to any (json or xml), preferring json. Not compatible with 'no-discover'.
 \---
-default: all
 options:
-  - constant
-  - variable
-  - all
+  - json
+  - xml
 \---
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # Get the matching provider for the URL.
+    $ wp embed provider match https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    https://www.youtube.com/oembed
 
 ### GLOBAL PARAMETERS
 

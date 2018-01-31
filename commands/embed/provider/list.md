@@ -1,27 +1,49 @@
-# wp config get
+# wp embed provider list
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Lists all available oEmbed providers.
 
 ### OPTIONS
 
-&lt;name&gt;
-: Name of the wp-config.php constant or variable.
+[\--field=&lt;field&gt;]
+: Display the value of a single field
 
-[\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific fields.
+
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
 \---
-default: all
+default: table
 options:
-  - constant
-  - variable
-  - all
+  - table
+  - csv
+  - json
 \---
+
+[\--force-regex]
+: Turn the asterisk-type provider URLs into regexes.
+
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each provider:
+
+* format
+* endpoint
+
+This field is optionally available:
+
+* regex
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # List format,endpoint fields of available providers.
+    $ wp embed provider list --fields=format,endpoint
+    +------------------------------+-----------------------------------------+
+    | format                       | endpoint                                |
+    +------------------------------+-----------------------------------------+
+    | #https?://youtu\.be/.*#i     | https://www.youtube.com/oembed          |
+    | #https?://flic\.kr/.*#i      | https://www.flickr.com/services/oembed/ |
+    | #https?://wordpress\.tv/.*#i | https://wordpress.tv/oembed/            |
 
 ### GLOBAL PARAMETERS
 

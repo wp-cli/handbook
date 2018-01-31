@@ -1,27 +1,22 @@
-# wp config get
+# wp user reset-password
 
-Gets the value of a specific constant or variable defined in wp-config.php file.
+Resets the password for one or more users.
 
 ### OPTIONS
 
-&lt;name&gt;
-: Name of the wp-config.php constant or variable.
+&lt;user&gt;...
+: one or more user logins or IDs.
 
-[\--type=&lt;type&gt;]
-: Type of config value to retrieve. Defaults to 'all'.
-\---
-default: all
-options:
-  - constant
-  - variable
-  - all
-\---
+[\--skip-email]
+: Don't send an email notification to the affected user(s).
 
 ### EXAMPLES
 
-    # Get the table_prefix as defined in wp-config.php file.
-    $ wp config get table_prefix
-    wp_
+    # Reset the password for two users and send them the change email.
+    $ wp user reset-password admin editor
+    Reset password for admin.
+    Reset password for editor.
+    Success: Passwords reset.
 
 ### GLOBAL PARAMETERS
 

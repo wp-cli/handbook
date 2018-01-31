@@ -1,6 +1,6 @@
 # wp config
 
-Creates and retrieves the wp-config.php file.
+Generates and reads the wp-config.php file.
 
 
 

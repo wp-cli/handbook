@@ -1,6 +1,6 @@
 # wp plugin deactivate
 
-Deactivates a plugin.
+Deactivates one or more plugins.
 
 ### OPTIONS
 
