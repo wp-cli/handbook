@@ -1,6 +1,6 @@
 # wp user add-cap
 
-Add a capability to a user.
+Adds a capability to a user.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp user delete
 
-Delete one or more users from the current site.
+Deletes one or more users from the current site.
 
 On multisite, `wp user delete` only removes the user from the current site. Include `--network` to also remove the user from the database, but make sure to reassign their posts prior to deleting the user.
 

@@ -1,6 +1,6 @@
 # wp taxonomy get
 
-Get details about a registered taxonomy.
+Gets details about a registered taxonomy.
 
 ### OPTIONS
 

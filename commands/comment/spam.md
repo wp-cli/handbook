@@ -1,6 +1,6 @@
 # wp comment spam
 
-Mark a comment as spam.
+Marks a comment as spam.
 
 ### OPTIONS
 

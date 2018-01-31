@@ -1,6 +1,6 @@
 # wp super-admin add
 
-Grant super admin privileges to one or more users.
+Grants super admin privileges to one or more users.
 
 ### OPTIONS
 

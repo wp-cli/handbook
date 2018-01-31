@@ -1,6 +1,6 @@
 # wp role create
 
-Create a new role.
+Creates a new role.
 
 ### OPTIONS
 

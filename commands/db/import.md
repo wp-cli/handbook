@@ -1,6 +1,6 @@
 # wp db import
 
-Import a database from a file or from STDIN.
+Imports a database from a file or from STDIN.
 
 Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php. This does not create database by itself and only performs whatever tasks are defined in the SQL.
 
@@ -8,6 +8,12 @@ Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` databas
 
 [&lt;file&gt;]
 : The name of the SQL file to import. If '-', then reads from STDIN. If omitted, it will look for '{dbname}.sql'.
+
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysql. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysql. Defaults to DB_PASSWORD.
 
 [\--skip-optimization]
 : When using an SQL file, do not include speed optimization such as disabling auto-commit and key checks.

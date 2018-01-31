@@ -1,6 +1,6 @@
 # wp comment create
 
-Create a new comment.
+Creates a new comment.
 
 ### OPTIONS
 

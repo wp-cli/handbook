@@ -1,6 +1,6 @@
 # wp term list
 
-List terms in a taxonomy.
+Lists terms in a taxonomy.
 
 ### OPTIONS
 

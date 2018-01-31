@@ -1,6 +1,6 @@
 # wp site deactivate
 
-Deactivate one or more sites.
+Deactivates one or more sites.
 
 ### OPTIONS
 

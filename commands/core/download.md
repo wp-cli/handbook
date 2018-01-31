@@ -1,6 +1,6 @@
 # wp core download
 
-Download core WordPress files.
+Downloads core WordPress files.
 
 Downloads and extracts WordPress core files to the specified path. Uses current directory when no path is specified. Downloaded build is verified to have the correct md5 and then cached to the local filesytem. Subsequent uses of command will use the local cache if it still exists.
 
@@ -16,7 +16,7 @@ Downloads and extracts WordPress core files to the specified path. Uses current 
 : Select which version you want to download. Accepts a version number, 'latest' or 'nightly'
 
 [\--skip-content]
-: Download the latest version of WP without the default themes and plugins (en_US locale only)
+: Download WP without the default themes and plugins.
 
 [\--force]
 : Overwrites existing files, if present.

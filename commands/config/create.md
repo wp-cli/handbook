@@ -1,6 +1,6 @@
 # wp config create
 
-Generate a wp-config.php file.
+Generates a wp-config.php file.
 
 Creates a new wp-config.php with database constants, and verifies that the database constants are correct.
 

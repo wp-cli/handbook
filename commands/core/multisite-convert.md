@@ -1,10 +1,12 @@
 # wp core multisite-convert
 
-Transform a single-site install into a WordPress multisite install.
+Transforms an existing single-site installation into a multisite installation.
 
 Creates the multisite database tables, and adds the multisite constants to wp-config.php.
 
 For those using WordPress with Apache, remember to update the `.htaccess` file with the appropriate multisite rewrite rules.
+
+[Review the multisite documentation](https://codex.wordpress.org/Create_A_Network) for more details about how multisite works.
 
 ### OPTIONS
 

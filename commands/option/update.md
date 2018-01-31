@@ -1,6 +1,6 @@
 # wp option update
 
-Update an option value.
+Updates an option value.
 
 ### OPTIONS
 

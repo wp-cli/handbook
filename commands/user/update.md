@@ -1,6 +1,6 @@
 # wp user update
 
-Update an existing user.
+Updates an existing user.
 
 ### OPTIONS
 
@@ -9,9 +9,6 @@ Update an existing user.
 
 [\--user_pass=&lt;password&gt;]
 : A string that contains the plain text password for the user.
-
-[\--user_login=&lt;login&gt;]
-: A string that contains the user's username for logging in.
 
 [\--user_nicename=&lt;nice_name&gt;]
 : A string that contains a URL-friendly name for the user. The default is the user's username.

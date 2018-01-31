@@ -1,6 +1,6 @@
 # wp theme is-installed
 
-Check if the theme is installed.
+Checks if a given theme is installed.
 
 Returns exit code 0 when installed, 1 when uninstalled.
 

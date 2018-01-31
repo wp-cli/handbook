@@ -1,6 +1,6 @@
 # wp user meta update
 
-Update a meta field.
+Updates a meta field.
 
 ### OPTIONS
 

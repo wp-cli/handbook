@@ -1,6 +1,6 @@
 # wp theme mod
 
-Manage theme mods.
+Sets, gets, and removes theme mods.
 
 ### EXAMPLES
 

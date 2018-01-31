@@ -1,6 +1,6 @@
 # wp site option add
 
-Add a site option.
+Adds a site option.
 
 ### OPTIONS
 

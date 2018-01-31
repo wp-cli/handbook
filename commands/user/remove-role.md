@@ -1,6 +1,6 @@
 # wp user remove-role
 
-Remove a user's role.
+Removes a user's role.
 
 ### OPTIONS
 

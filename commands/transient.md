@@ -1,8 +1,10 @@
 # wp transient
 
-Manipulate the WordPress Transient Cache.
+Adds, gets, and deletes entries in the WordPress Transient Cache.
 
-By default, the transient cache uses the WordPress database to persist values between requests. When a persistent object cache drop-in is installed, the transient cache also uses the WordPress Object Cache.
+By default, the transient cache uses the WordPress database to persist values between requests. On a single site installation, values are stored in the `wp_options` table. On a multisite installation, values are stored in the `wp_options` or the `wp_sitemeta` table, depending on use of the `--network` flag.
+
+When a persistent object cache drop-in is installed (e.g. Redis or Memcached), the transient cache skips the database and simply wraps the WP Object Cache.
 
 ### EXAMPLES
 

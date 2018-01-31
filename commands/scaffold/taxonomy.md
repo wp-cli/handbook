@@ -1,6 +1,6 @@
 # wp scaffold taxonomy
 
-Generate PHP code for registering a custom taxonomy.
+Generates PHP code for registering a custom taxonomy.
 
 ### OPTIONS
 

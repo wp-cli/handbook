@@ -1,6 +1,6 @@
 # wp post-type list
 
-List registered post types.
+Lists registered post types.
 
 ### OPTIONS
 

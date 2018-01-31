@@ -1,6 +1,6 @@
 # wp menu item update
 
-Update a menu item.
+Updates a menu item.
 
 ### OPTIONS
 

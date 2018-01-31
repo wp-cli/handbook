@@ -1,6 +1,6 @@
 # wp menu list
 
-Get a list of menus.
+Gets a list of menus.
 
 ### OPTIONS
 

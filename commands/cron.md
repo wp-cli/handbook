@@ -1,6 +1,6 @@
 # wp cron
 
-Manage WP-Cron events and schedules.
+Tests, runs, and deletes WP-Cron events; manages WP-Cron schedules.
 
 ### EXAMPLES
 

@@ -1,6 +1,6 @@
 # wp db tables
 
-List the database tables.
+Lists the database tables.
 
 Defaults to all tables registered to the $wpdb database handler.
 
@@ -13,7 +13,7 @@ Defaults to all tables registered to the $wpdb database handler.
 : Can be all, global, ms_global, blog, or old tables. Defaults to all.
 
 [\--network]
-: List all the tables in a multisite install. Overrides --scope=&lt;scope&gt;.
+: List all the tables in a multisite install.
 
 [\--all-tables-with-prefix]
 : List all tables that match the table prefix even if not registered on $wpdb. Overrides --network.

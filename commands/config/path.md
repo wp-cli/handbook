@@ -1,6 +1,6 @@
 # wp config path
 
-Get the path to wp-config.php file.
+Gets the path to wp-config.php file.
 
 ### EXAMPLES
 
