@@ -1,8 +1,10 @@
 # wp transient type
 
-Determine type of transients implementation.
+Determines the type of transients implementation.
 
 Indicates whether the transients API is using an object cache or the options table.
+
+For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
 
 ### EXAMPLES
 

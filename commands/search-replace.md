@@ -1,6 +1,6 @@
 # wp search-replace
 
-Search/replace strings in the database.
+Searches/replaces strings in the database.
 
 Searches through all rows in a selection of tables and replaces appearances of the first string with the second string.
 
@@ -36,6 +36,9 @@ Search/replace intelligently handles PHP serialized data, and does not change pr
 
 [\--export_insert_size=&lt;rows&gt;]
 : Define number of rows in single INSERT statement when doing SQL export. You might want to change this depending on your database configuration (e.g. if you need to do fewer queries). Default: 50
+
+[\--skip-tables=&lt;tables&gt;]
+: Do not perform the replacement on specific tables. Use commas to specify multiple tables.
 
 [\--skip-columns=&lt;columns&gt;]
 : Do not perform the replacement on specific columns. Use commas to specify multiple columns.
@@ -105,9 +108,9 @@ options:
     # Bash script: Search/replace production to development url (multisite compatible)
     #!/bin/bash
     if $(wp --url=http://example.com core is-installed --network); then
-        wp search-replace --url=http://example.com 'http://example.com' 'http://example.dev' --recurse-objects --network --skip-columns=guid
+        wp search-replace --url=http://example.com 'http://example.com' 'http://example.dev' --recurse-objects --network --skip-columns=guid --skip-tables=wp_users
     else
-        wp search-replace 'http://example.com' 'http://example.dev' --recurse-objects --skip-columns=guid
+        wp search-replace 'http://example.com' 'http://example.dev' --recurse-objects --skip-columns=guid --skip-tables=wp_users
     fi
 
 ### GLOBAL PARAMETERS

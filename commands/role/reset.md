@@ -1,6 +1,6 @@
 # wp role reset
 
-Reset any default role to default capabilities.
+Resets any default role to default capabilities.
 
 ### OPTIONS
 

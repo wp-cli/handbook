@@ -1,6 +1,6 @@
 # wp widget update
 
-Update options for an existing widget.
+Updates options for an existing widget.
 
 ### OPTIONS
 

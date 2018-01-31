@@ -1,6 +1,6 @@
 # wp core
 
-Download, install, update and manage a WordPress install.
+Downloads, installs, updates, and manages a WordPress installation.
 
 ### EXAMPLES
 

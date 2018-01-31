@@ -1,6 +1,6 @@
 # wp comment list
 
-Get a list of comments.
+Gets a list of comments.
 
 ### OPTIONS
 

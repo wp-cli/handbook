@@ -1,6 +1,6 @@
 # wp role delete
 
-Delete an existing role.
+Deletes an existing role.
 
 ### OPTIONS
 

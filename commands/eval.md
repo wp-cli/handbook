@@ -1,6 +1,6 @@
 # wp eval
 
-Execute arbitrary PHP code.
+Executes arbitrary PHP code.
 
 Note: because code is executed within a method, global variables need to be explicitly globalized.
 

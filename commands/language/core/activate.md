@@ -1,6 +1,8 @@
 # wp language core activate
 
-Activate a given language.
+Activates a given language.
+
+### OPTIONS
 
 &lt;language&gt;
 : Language code to activate.

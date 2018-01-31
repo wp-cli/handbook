@@ -1,6 +1,6 @@
 # wp rewrite list
 
-Get a list of the current rewrite rules.
+Gets a list of the current rewrite rules.
 
 ### OPTIONS
 

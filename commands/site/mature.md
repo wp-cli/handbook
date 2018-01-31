@@ -1,6 +1,6 @@
 # wp site mature
 
-Set one or more sites as mature.
+Sets one or more sites as mature.
 
 ### OPTIONS
 

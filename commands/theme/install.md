@@ -1,11 +1,11 @@
 # wp theme install
 
-Install a theme.
+Installs one or more themes.
 
 ### OPTIONS
 
 &lt;theme|zip|url&gt;...
-: A theme slug, the path to a local zip file, or URL to a remote zip file.
+: One or more themes to install. Accepts a theme slug, the path to a local zip file, or a URL to a remote zip file.
 
 [\--version=&lt;version&gt;]
 : If set, get that particular version from wordpress.org, instead of the stable version.

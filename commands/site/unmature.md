@@ -1,6 +1,6 @@
 # wp site unmature
 
-Set one or more sites as unmature.
+Sets one or more sites as immature.
 
 ### OPTIONS
 

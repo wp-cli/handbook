@@ -1,6 +1,6 @@
 # wp media regenerate
 
-Regenerate thumbnails for one or more attachments.
+Regenerates thumbnails for one or more attachments.
 
 ### OPTIONS
 

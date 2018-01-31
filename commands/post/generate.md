@@ -1,6 +1,6 @@
 # wp post generate
 
-Generate some posts.
+Generates some posts.
 
 Creates a specified number of new posts with dummy data.
 
@@ -22,6 +22,12 @@ default: post
 : The status of the generated posts.
 \---
 default: publish
+\---
+
+[\--post_title=&lt;post_title&gt;]
+: The post title.
+\---
+default:
 \---
 
 [\--post_author=&lt;login&gt;]

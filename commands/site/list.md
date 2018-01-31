@@ -1,6 +1,6 @@
 # wp site list
 
-List all sites in a multisite install.
+Lists all sites in a multisite installation.
 
 ### OPTIONS
 

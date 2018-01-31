@@ -1,6 +1,6 @@
 # wp site option list
 
-List site options.
+Lists site options.
 
 ### OPTIONS
 

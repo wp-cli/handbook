@@ -1,6 +1,6 @@
 # wp db query
 
-Execute a SQL query against the database.
+Executes a SQL query against the database.
 
 Executes an arbitrary SQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
  and `DB_PASSWORD` database credentials specified in wp-config.php.
@@ -9,6 +9,12 @@ Executes an arbitrary SQL query using `DB_HOST`, `DB_NAME`, `DB_USER`
 
 [&lt;sql&gt;]
 : A SQL query. If not passed, will try to read from STDIN.
+
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysql. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysql. Defaults to DB_PASSWORD.
 
 [\--&lt;field&gt;=&lt;value&gt;]
 : Extra arguments to pass to mysql.

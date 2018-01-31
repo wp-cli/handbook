@@ -6,11 +6,12 @@ Create a progress bar to display percent completion of a given operation.
 
 ## Usage
 
-    WP_CLI\Utils\make_progress_bar( $message, $count )
+    WP_CLI\Utils\make_progress_bar( $message, $count, $interval = 100 )
 
 <div>
 <strong>$message</strong> (string) Text to display before the progress bar.<br />
 <strong>$count</strong> (integer) Total number of ticks to be performed.<br />
+<strong>$interval</strong> (int) Optional. The interval in milliseconds between updates. Default 100.<br />
 <strong>@return</strong> (cli\progress\Bar|WP_CLI\NoOp) <br />
 </div>
 

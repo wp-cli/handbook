@@ -1,6 +1,6 @@
 # wp user list
 
-List users.
+Lists users.
 
 Display WordPress users based on all arguments supported by
 [WP_User_Query()](https://developer.wordpress.org/reference/classes/wp_user_query/prepare_query/).

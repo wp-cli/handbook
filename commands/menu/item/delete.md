@@ -1,6 +1,6 @@
 # wp menu item delete
 
-Delete one or more items from a menu.
+Deletes one or more items from a menu.
 
 ### OPTIONS
 
