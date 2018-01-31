@@ -1,6 +1,6 @@
 # wp super-admin remove
 
-Remove super admin privileges from one or more users.
+Removes super admin privileges from one or more users.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp package uninstall
 
-Uninstall a WP-CLI package.
+Uninstalls a WP-CLI package.
 
 ### OPTIONS
 

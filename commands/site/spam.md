@@ -1,6 +1,6 @@
 # wp site spam
 
-Mark one or more sites as spam.
+Marks one or more sites as spam.
 
 ### OPTIONS
 

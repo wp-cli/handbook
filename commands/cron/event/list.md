@@ -1,6 +1,6 @@
 # wp cron event list
 
-List scheduled cron events.
+Lists scheduled cron events.
 
 ### OPTIONS
 

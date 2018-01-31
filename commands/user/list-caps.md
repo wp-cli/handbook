@@ -1,6 +1,6 @@
 # wp user list-caps
 
-List all capabilities for a user.
+Lists all capabilities for a user.
 
 ### OPTIONS
 

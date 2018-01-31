@@ -1,6 +1,6 @@
 # wp user term
 
-Manage user terms.
+Adds, updates, removes, and lists user terms.
 
 ### EXAMPLES
 

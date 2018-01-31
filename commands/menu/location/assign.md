@@ -1,6 +1,6 @@
 # wp menu location assign
 
-Assign a location to a menu.
+Assigns a location to a menu.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp comment meta
 
-Manage comment custom fields.
+Adds, updates, deletes, and lists comment custom fields.
 
 ### EXAMPLES
 

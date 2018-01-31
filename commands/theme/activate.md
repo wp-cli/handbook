@@ -1,6 +1,6 @@
 # wp theme activate
 
-Activate a theme.
+Activates a theme.
 
 ### OPTIONS
 

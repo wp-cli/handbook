@@ -1,6 +1,6 @@
 # wp theme disable
 
-Disable a theme on a WordPress multisite install.
+Disables a theme on a WordPress multisite install.
 
 Removes ability for a theme to be activated from the dashboard of a site on a WordPress multisite install.
 

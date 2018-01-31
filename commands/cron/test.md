@@ -1,6 +1,6 @@
 # wp cron test
 
-Test the WP Cron spawning system and report back its status.
+Tests the WP Cron spawning system and reports back its status.
 
 This command tests the spawning system by performing the following steps:
 

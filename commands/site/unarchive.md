@@ -1,6 +1,6 @@
 # wp site unarchive
 
-Unarchive one or more sites.
+Unarchives one or more sites.
 
 ### OPTIONS
 

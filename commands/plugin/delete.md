@@ -1,6 +1,6 @@
 # wp plugin delete
 
-Delete plugin files without deactivating or uninstalling.
+Deletes plugin files without deactivating or uninstalling.
 
 ### OPTIONS
 

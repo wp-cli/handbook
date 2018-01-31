@@ -1,6 +1,6 @@
 # wp package path
 
-Get the path to an installed WP-CLI package, or the package directory.
+Gets the path to an installed WP-CLI package, or the package directory.
 
 If you want to contribute to a package, this is a great way to jump to it.
 

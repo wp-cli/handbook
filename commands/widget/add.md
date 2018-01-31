@@ -1,6 +1,6 @@
 # wp widget add
 
-Add a widget to a sidebar.
+Adds a widget to a sidebar.
 
 Creates a new widget entry in the database, and associates it with the sidebar.
 

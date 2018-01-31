@@ -1,6 +1,6 @@
 # wp scaffold
 
-Generate code for post types, taxonomies, plugins, child themes, etc.
+Generates code for post types, taxonomies, plugins, child themes, etc.
 
 ### EXAMPLES
 

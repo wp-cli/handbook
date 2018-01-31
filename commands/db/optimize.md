@@ -1,10 +1,21 @@
 # wp db optimize
 
-Optimize the database.
+Optimizes the database.
 
 Runs `mysqlcheck` utility with `--optimize=true` using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
 
 [See docs](http://dev.mysql.com/doc/refman/5.7/en/optimize-table.html) for more details on the `OPTIMIZE TABLE` statement.
+
+### OPTIONS
+
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysqlcheck. Defaults to DB_USER.
+
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysqlcheck. Defaults to DB_PASSWORD.
+
+[\--&lt;field&gt;=&lt;value&gt;]
+: Extra arguments to pass to mysqlcheck.
 
 ### EXAMPLES
 

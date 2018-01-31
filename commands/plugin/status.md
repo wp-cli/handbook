@@ -1,6 +1,6 @@
 # wp plugin status
 
-See the status of one or all plugins.
+Reveals the status of one or all plugins.
 
 ### OPTIONS
 

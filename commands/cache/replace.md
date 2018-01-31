@@ -1,6 +1,6 @@
 # wp cache replace
 
-Replace a value in the object cache, if the value already exists.
+Replaces a value in the object cache, if the value already exists.
 
 Errors if the value can't be replaced.
 

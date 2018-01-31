@@ -1,6 +1,6 @@
 # wp core version
 
-Display the WordPress version.
+Displays the WordPress version.
 
 ### OPTIONS
 

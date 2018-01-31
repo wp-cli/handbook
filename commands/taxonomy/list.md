@@ -1,6 +1,6 @@
 # wp taxonomy list
 
-List registered taxonomies.
+Lists registered taxonomies.
 
 ### OPTIONS
 

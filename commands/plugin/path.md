@@ -1,6 +1,6 @@
 # wp plugin path
 
-Get the path to a plugin or to the plugin directory.
+Gets the path to a plugin or to the plugin directory.
 
 ### OPTIONS
 

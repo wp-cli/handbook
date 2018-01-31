@@ -1,6 +1,6 @@
 # wp site option delete
 
-Delete a site option.
+Deletes a site option.
 
 ### OPTIONS
 

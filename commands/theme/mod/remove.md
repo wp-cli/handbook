@@ -1,6 +1,6 @@
 # wp theme mod remove
 
-Remove one or more theme mods.
+Removes one or more theme mods.
 
 ### OPTIONS
 

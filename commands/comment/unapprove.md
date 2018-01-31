@@ -1,6 +1,6 @@
 # wp comment unapprove
 
-Unapprove a comment.
+Unapproves a comment.
 
 ### OPTIONS
 

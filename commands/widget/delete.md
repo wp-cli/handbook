@@ -1,6 +1,6 @@
 # wp widget delete
 
-Delete one or more widgets from a sidebar.
+Deletes one or more widgets from a sidebar.
 
 ### OPTIONS
 
