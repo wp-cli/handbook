@@ -1,6 +1,6 @@
 # wp plugin toggle
 
-Toggle a plugin's activation state.
+Toggles a plugin's activation state.
 
 If the plugin is active, then it will be deactivated. If the plugin is inactive, then it will be activated.
 

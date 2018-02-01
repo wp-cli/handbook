@@ -1,6 +1,6 @@
 # wp site empty
 
-Empty a site of its content (posts, comments, terms, and meta).
+Empties a site of its content (posts, comments, terms, and meta).
 
 Truncates posts, comments, and terms tables to empty a site of its content. Doesn't affect site configuration (options) or users.
 

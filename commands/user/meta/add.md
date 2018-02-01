@@ -1,6 +1,6 @@
 # wp user meta add
 
-Add a meta field.
+Adds a meta field.
 
 ### OPTIONS
 

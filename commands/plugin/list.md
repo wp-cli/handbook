@@ -1,6 +1,6 @@
 # wp plugin list
 
-Get a list of plugins.
+Gets a list of plugins.
 
 Displays a list of the plugins installed on the site with activation status, whether or not there's an update available, etc.
 

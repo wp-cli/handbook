@@ -1,6 +1,6 @@
 # wp comment delete
 
-Delete a comment.
+Deletes a comment.
 
 ### OPTIONS
 

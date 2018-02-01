@@ -1,6 +1,6 @@
 # wp menu item add-custom
 
-Add a custom menu item.
+Adds a custom menu item.
 
 ### OPTIONS
 

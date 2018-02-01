@@ -1,8 +1,10 @@
 # wp transient set
 
-Set a transient value.
+Sets a transient value.
 
 `&lt;expiration&gt;` is the time until expiration, in seconds.
+
+For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
 
 ### OPTIONS
 
@@ -16,7 +18,7 @@ Set a transient value.
 : Time until expiration, in seconds.
 
 [\--network]
-: Set the transient value on the network, instead of single site.
+: Set the value of a network|site transient. On single site, this is is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
 
 ### EXAMPLES
 

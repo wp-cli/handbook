@@ -23,6 +23,14 @@ In order to profile callbacks on a specific hook, the action or filter will need
 
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - json
+  - yaml
+  - csv
+\---
 
 [\--order=&lt;order&gt;]
 : Ascending or Descending order.
@@ -35,13 +43,6 @@ options:
 
 [\--orderby=&lt;orderby&gt;]
 : Order by fields.
-
-default: table options:
-  - table
-  - json
-  - yaml
-  - csv
-\---
 
 ### GLOBAL PARAMETERS
 

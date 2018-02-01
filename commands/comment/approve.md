@@ -1,6 +1,6 @@
 # wp comment approve
 
-Approve a comment.
+Approves a comment.
 
 ### OPTIONS
 

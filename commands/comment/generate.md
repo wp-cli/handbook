@@ -1,6 +1,6 @@
 # wp comment generate
 
-Generate some number of new dummy comments.
+Generates some number of new dummy comments.
 
 Creates a specified number of new comments with dummy data.
 

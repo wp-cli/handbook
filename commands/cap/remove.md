@@ -1,6 +1,6 @@
 # wp cap remove
 
-Remove capabilities from a given role.
+Removes capabilities from a given role.
 
 ### OPTIONS
 

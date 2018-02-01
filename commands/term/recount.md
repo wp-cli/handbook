@@ -1,6 +1,6 @@
 # wp term recount
 
-Recalculate number of posts assigned to each term.
+Recalculates number of posts assigned to each term.
 
 In instances where manual updates are made to the terms assigned to posts in the database, the number of posts associated with a term can become out-of-sync with the actual number of posts.
 

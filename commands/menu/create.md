@@ -1,6 +1,6 @@
 # wp menu create
 
-Create a new menu.
+Creates a new menu.
 
 ### OPTIONS
 

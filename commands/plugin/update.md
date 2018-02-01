@@ -1,6 +1,6 @@
 # wp plugin update
 
-Update one or more plugins.
+Updates one or more plugins.
 
 ### OPTIONS
 

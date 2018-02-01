@@ -1,6 +1,6 @@
 # wp package install
 
-Install a WP-CLI package.
+Installs a WP-CLI package.
 
 Packages are required to be a valid Composer package, and can be specified as:
 

@@ -1,44 +1,19 @@
-# wp checksum core
+# wp embed cache trigger
 
-Verify WordPress files against WordPress.org's checksums.
+Triggers the caching of all oEmbed results for a given post.
 
-Downloads md5 checksums for the current version from WordPress.org, and compares those checksums against the currently installed files.
-
-For security, avoids loading WordPress when verifying checksums.
-
-If you experience issues verifying from this command, ensure you are 
-passing the relevant `--locale` and `--version` arguments according to 
-the values from the `Dashboard-&gt;Updates` menu in the admin area of the 
-site.
+oEmbed caches for a post are stored in the post's metadata.
 
 ### OPTIONS
 
-[\--version=&lt;version&gt;]
-: Verify checksums against a specific version of WordPress.
-
-[\--locale=&lt;locale&gt;]
-: Verify checksums against a specific locale of WordPress.
+&lt;post_id&gt;
+: ID of the post to do the caching for.
 
 ### EXAMPLES
 
-    # Verify checksums
-    $ wp core verify-checksums
-    Success: WordPress install verifies against checksums.
-
-    # Verify checksums for given WordPress version
-    $ wp core verify-checksums --version=4.0
-    Success: WordPress install verifies against checksums.
-
-    # Verify checksums for given locale
-    $ wp core verify-checksums --locale=en_US
-    Success: WordPress install verifies against checksums.
-
-    # Verify checksums for given locale
-    $ wp core verify-checksums --locale=ja
-    Warning: File doesn't verify against checksum: wp-includes/version.php
-    Warning: File doesn't verify against checksum: readme.html
-    Warning: File doesn't verify against checksum: wp-config-sample.php
-    Error: WordPress install doesn't verify against checksums.
+    # Triggers cache for a post
+    $ wp embed cache trigger 456
+    Success: Caching triggered!
 
 ### GLOBAL PARAMETERS
 

@@ -1,6 +1,6 @@
 # wp menu delete
 
-Delete one or more menus.
+Deletes one or more menus.
 
 ### OPTIONS
 

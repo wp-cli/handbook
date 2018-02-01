@@ -1,6 +1,6 @@
 # wp widget list
 
-List widgets associated with a sidebar.
+Lists widgets associated with a sidebar.
 
 ### OPTIONS
 

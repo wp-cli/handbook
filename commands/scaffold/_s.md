@@ -1,6 +1,6 @@
 # wp scaffold _s
 
-Generate starter code for a theme based on _s.
+Generates starter code for a theme based on _s.
 
 See the [Underscores website](https://underscores.me/) for more details.
 

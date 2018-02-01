@@ -1,6 +1,6 @@
 # wp theme search
 
-Search the WordPress.org theme directory.
+Searches the WordPress.org theme directory.
 
 Displays themes in the WordPress.org theme directory matching a given search query.
 

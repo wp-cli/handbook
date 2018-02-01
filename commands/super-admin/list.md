@@ -1,6 +1,6 @@
 # wp super-admin list
 
-List users with super admin capabilities.
+Lists users with super admin capabilities.
 
 ### OPTIONS
 

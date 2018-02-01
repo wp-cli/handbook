@@ -1,6 +1,6 @@
 # wp cap list
 
-List capabilities for a given role.
+Lists capabilities for a given role.
 
 ### OPTIONS
 

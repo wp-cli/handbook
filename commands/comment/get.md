@@ -1,6 +1,6 @@
 # wp comment get
 
-Get data of a single comment.
+Gets the data of a single comment.
 
 ### OPTIONS
 

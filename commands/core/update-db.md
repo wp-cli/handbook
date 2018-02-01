@@ -1,6 +1,6 @@
 # wp core update-db
 
-Run the WordPress database update procedure.
+Runs the WordPress database update procedure.
 
 [\--network]
 : Update databases for all sites on a network

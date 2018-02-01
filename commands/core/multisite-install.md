@@ -1,6 +1,6 @@
 # wp core multisite-install
 
-Install WordPress multisite from scratch.
+Installs WordPress multisite from scratch.
 
 Creates the WordPress tables in the database using the URL, title, and default admin user details provided. Then, creates the multisite tables in the database and adds multisite constants to the wp-config.php.
 

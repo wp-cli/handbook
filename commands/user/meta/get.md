@@ -1,6 +1,6 @@
 # wp user meta get
 
-Get meta field value.
+Gets meta field value.
 
 ### OPTIONS
 

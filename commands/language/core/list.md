@@ -1,6 +1,8 @@
 # wp language core list
 
-List all available languages.
+Lists all available languages.
+
+### OPTIONS
 
 [\--field=&lt;field&gt;]
 : Display the value of a single field

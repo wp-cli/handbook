@@ -1,6 +1,6 @@
 # wp term meta
 
-Manage term custom fields.
+Adds, updates, deletes, and lists term custom fields.
 
 ### EXAMPLES
 

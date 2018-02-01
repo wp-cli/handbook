@@ -17,6 +17,14 @@ Code execution happens after WordPress has loaded entirely, which means you can 
 
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - json
+  - yaml
+  - csv
+\---
 
 [\--order=&lt;order&gt;]
 : Ascending or Descending order.
@@ -29,15 +37,6 @@ options:
 
 [\--orderby=&lt;orderby&gt;]
 : Order by fields.
-
-\---
-default: table
-options:
-  - table
-  - json
-  - yaml
-  - csv
-\---
 
 ### GLOBAL PARAMETERS
 

@@ -1,6 +1,6 @@
 # wp plugin is-installed
 
-Check if the plugin is installed.
+Checks if a given plugin is installed.
 
 Returns exit code 0 when installed, 1 when uninstalled.
 
