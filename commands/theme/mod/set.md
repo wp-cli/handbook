@@ -1,6 +1,6 @@
 # wp theme mod set
 
-Set the value of a theme mod.
+Sets the value of a theme mod.
 
 ### OPTIONS
 

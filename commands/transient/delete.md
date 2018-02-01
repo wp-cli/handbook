@@ -1,6 +1,8 @@
 # wp transient delete
 
-Delete a transient value.
+Deletes a transient value.
+
+For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
 
 ### OPTIONS
 
@@ -8,7 +10,7 @@ Delete a transient value.
 : Key for the transient.
 
 [\--network]
-: Delete the value of a network transient, instead of that on a single site.
+: Delete the value of a network|site transient. On single site, this is is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
 
 [\--all]
 : Delete all transients.

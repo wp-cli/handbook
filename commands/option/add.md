@@ -1,6 +1,6 @@
 # wp option add
 
-Add a new option value.
+Adds a new option value.
 
 Errors if the option already exists.
 

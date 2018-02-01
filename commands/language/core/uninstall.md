@@ -1,6 +1,8 @@
 # wp language core uninstall
 
-Uninstall a given language.
+Uninstalls a given language.
+
+### OPTIONS
 
 &lt;language&gt;...
 : Language code to uninstall.

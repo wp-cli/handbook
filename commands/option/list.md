@@ -1,6 +1,6 @@
 # wp option list
 
-List options and their values.
+Lists options and their values.
 
 ### OPTIONS
 

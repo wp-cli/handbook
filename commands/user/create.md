@@ -1,6 +1,6 @@
 # wp user create
 
-Create a new user.
+Creates a new user.
 
 ### OPTIONS
 

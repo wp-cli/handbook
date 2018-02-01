@@ -1,6 +1,6 @@
 # wp term generate
 
-Generate some terms.
+Generates some terms.
 
 Creates a specified number of new terms with dummy data.
 

@@ -1,6 +1,6 @@
 # wp site create
 
-Create a site in a multisite install.
+Creates a site in a multisite installation.
 
 ### OPTIONS
 

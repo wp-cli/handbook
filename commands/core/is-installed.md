@@ -1,11 +1,11 @@
 # wp core is-installed
 
-Check if WordPress is installed.
+Checks if WordPress is installed.
 
 Determines whether WordPress is installed by checking if the standard database tables are installed. Doesn't produce output; uses exit codes to communicate whether WordPress is installed.
 
 [\--network]
-: Check if this is a multisite install.
+: Check if this is a multisite installation.
 
 ### EXAMPLES
 

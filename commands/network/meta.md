@@ -1,6 +1,6 @@
 # wp network meta
 
-Manage network custom fields.
+Gets, adds, updates, deletes, and lists network custom fields.
 
 ### EXAMPLES
 
@@ -9,7 +9,5 @@ Manage network custom fields.
     array (
       0 => 'supervisor',
     )
-
-
 
 

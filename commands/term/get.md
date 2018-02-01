@@ -1,6 +1,6 @@
 # wp term get
 
-Get details about a term.
+Gets details about a term.
 
 ### OPTIONS
 

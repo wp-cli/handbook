@@ -1,6 +1,6 @@
 # wp user meta
 
-Manage user custom fields.
+Adds, updates, deletes, and lists user custom fields.
 
 ### EXAMPLES
 

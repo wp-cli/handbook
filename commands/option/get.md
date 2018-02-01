@@ -1,6 +1,6 @@
 # wp option get
 
-Get the value for an option.
+Gets the value for an option.
 
 ### OPTIONS
 

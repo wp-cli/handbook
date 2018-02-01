@@ -1,6 +1,6 @@
 # wp site private
 
-Set one or more sites as private.
+Sets one or more sites as private.
 
 ### OPTIONS
 

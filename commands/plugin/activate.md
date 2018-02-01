@@ -1,6 +1,6 @@
 # wp plugin activate
 
-Activate a plugin.
+Activates one or more plugins.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp plugin search
 
-Search the WordPress.org plugin directory.
+Searches the WordPress.org plugin directory.
 
 Displays plugins in the WordPress.org plugin directory matching a given search query.
 
@@ -36,11 +36,23 @@ default: 10
     **requires**: Plugin Minimum Requirements
     **tested**: Plugin Tested Up To
     **compatibility**: Plugin Compatible With
-    **rating**: Plugin Rating
+    **rating**: Plugin Rating in Percent and Total Number
+    **ratings**: Plugin Ratings for each star (1-5)
     **num_ratings**: Number of Plugin Ratings
     **homepage**: Plugin Author's Homepage
     **description**: Plugin's Description
     **short_description**: Plugin's Short Description
+    **sections**: Plugin Readme Sections: description, installation, FAQ, screenshots, other notes, and changelog
+    **downloaded**: Plugin Download Count
+    **last_updated**: Plugin's Last Update
+    **added**: Plugin's Date Added to wordpress.org Repository
+    **tags**: Plugin's Tags
+    **versions**: Plugin's Available Versions with D/L Link
+    **donate_link**: Plugin's Donation Link
+    **banners**: Plugin's Banner Image Link
+    **icons**: Plugin's Icon Image Link
+    **active_installs**: Plugin's Number of Active Installs
+    **contributors**: Plugin's List of Contributors
 
 [\--format=&lt;format&gt;]
 : Render output in a particular format.

@@ -1,6 +1,6 @@
 # wp site option pluck
 
-Get a nested value from an option.
+Gets a nested value from an option.
 
 ### OPTIONS
 

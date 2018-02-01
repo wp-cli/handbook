@@ -1,6 +1,6 @@
 # wp cache
 
-Manipulate the WP Object Cache object.
+Adds, removes, fetches, and flushes the WP Object Cache object.
 
 By default, the WP Object Cache exists in PHP memory for the length of the request (and is emptied at the end). Use a persistent object cache drop-in to persist the object cache between requests.
 

@@ -1,6 +1,6 @@
 # wp post edit
 
-Launch system editor to edit post content.
+Launches system editor to edit post content.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp site option update
 
-Update a site option.
+Updates a site option.
 
 ### OPTIONS
 

@@ -1,6 +1,6 @@
 # wp db
 
-Perform basic database operations using credentials stored in wp-config.php
+Performs basic database operations using credentials stored in wp-config.php.
 
 ### EXAMPLES
 

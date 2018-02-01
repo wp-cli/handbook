@@ -1,6 +1,6 @@
 # WP_CLI::run_command()
 
-Run a given command within the current process using the same global
+Run a given command within the current process using the same global parameters.
 
 ***
 
@@ -17,8 +17,6 @@ Run a given command within the current process using the same global
 ***
 
 ## Notes
-
-parameters.
 
 Use `WP_CLI::runcommand()` instead, which is easier to use and works better.
 

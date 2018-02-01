@@ -1,6 +1,6 @@
 # wp plugin get
 
-Get details about an installed plugin.
+Gets details about an installed plugin.
 
 ### OPTIONS
 

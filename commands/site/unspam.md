@@ -1,6 +1,6 @@
 # wp site unspam
 
-Remove one or more sites from spam.
+Removes one or more sites from spam.
 
 ### OPTIONS
 

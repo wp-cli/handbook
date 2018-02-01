@@ -1,6 +1,6 @@
 # wp user add-role
 
-Add a role for a user.
+Adds a role for a user.
 
 ### OPTIONS
 
