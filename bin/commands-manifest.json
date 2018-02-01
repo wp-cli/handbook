@@ -4,7 +4,8 @@
         "slug": "admin",
         "cmd_path": "admin",
         "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/admin.md"
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/admin.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/admin-command"
     },
     "cache": {
         "title": "cache",
@@ -21,13 +22,6 @@
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cap.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/role-command"
-    },
-    "checksum": {
-        "title": "checksum",
-        "slug": "checksum",
-        "cmd_path": "checksum",
-        "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/checksum.md"
     },
     "cli": {
         "title": "cli",
@@ -82,7 +76,8 @@
         "slug": "dist-archive",
         "cmd_path": "dist-archive",
         "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/dist-archive.md"
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/dist-archive.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/dist-archive-command"
     },
     "embed": {
         "title": "embed",
@@ -121,7 +116,8 @@
         "slug": "find",
         "cmd_path": "find",
         "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/find.md"
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/find.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/find-command"
     },
     "help": {
         "title": "help",
@@ -193,7 +189,7 @@
         "cmd_path": "plugin",
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/plugin.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/checksum-command"
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
     },
     "post-type": {
         "title": "post-type",
@@ -434,13 +430,6 @@
         "parent": "cap",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cap\/remove.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/role-command"
-    },
-    "checksum\/core": {
-        "title": "checksum core",
-        "slug": "core",
-        "cmd_path": "checksum\/core",
-        "parent": "checksum",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/checksum\/core.md"
     },
     "cli\/alias": {
         "title": "cli alias",
