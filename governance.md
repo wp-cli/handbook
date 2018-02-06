@@ -4,7 +4,7 @@ This document describes the governance structure of the WP-CLI project.
 
 ## Who's in charge?
 
-WP-CLI has two project maintainers: [danielbachhuber](https://github.com/danielbachhuber) and [schlessera](http://github.com/schlessera). On a day to day basis, final decision-making authority resides with them.
+WP-CLI has one maintainer: [schlessera](http://github.com/schlessera). On a day to day basis, final decision-making authority resides with him.
 
 The project roadmap is an organic, evolving vision developed between the project's maintainers, committers, and contributors. Generally, we try to make decisions in [alignment with the project's philosophy](https://make.wordpress.org/cli/handbook/philosophy/) and [committers credo](https://make.wordpress.org/cli/handbook/committers-credo/).
 
@@ -18,7 +18,7 @@ On occasion, we [grant write access to contributors](https://github.com/orgs/wp-
 
 Becoming a committer can seem glamorous, but it also comes with expectations of responsibility, commitment, and humility.
 
-[andreascreten](https://github.com/andreascreten) is the original author of WP-CLI, and [scribu](https://github.com/scribu) was a long time maintainer.
+[andreascreten](https://github.com/andreascreten) is the original author of WP-CLI. [scribu](https://github.com/scribu) and [danielbachhuber](https://github.com/danielbachhuber) have been long time maintainers.
 
 ## What's the connection between WP-CLI and WordPress?
 
