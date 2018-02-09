@@ -178,13 +178,13 @@ EOT;
 			$repo_url = 'https://github.com/wp-cli/wp-cli';
 		}
 		if ( $reflection->hasProperty( 'when_invoked' ) ) {
+			// See `CommandFactory::create_subcommand()`.
 			$when_invoked = $reflection->getProperty( 'when_invoked' );
 			$when_invoked->setAccessible( true );
 			$closure = $when_invoked->getValue( $command );
 			$closure_reflection = new \ReflectionFunction( $closure );
 			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
 			$static = $closure_reflection->getStaticVariables();
-			// See `CommandFactory::create_subcommand()`.
 			if ( is_array( $static ) && isset( $static['callable'] ) && is_callable( $static['callable'] ) ) {
 				$reflection_func = new \ReflectionFunction( $static['callable'] );
 				$filename = $reflection_func->getFileName();
