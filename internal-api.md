@@ -134,9 +134,6 @@ This also means functions and methods not listed here are considered part of the
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-get-php-binary/">WP_CLI\Utils\get_php_binary()</a></strong> - Get the path to the PHP binary used when executing WP-CLI.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-wp-clear-object-cache/">WP_CLI\Utils\wp_clear_object_cache()</a></strong> - Clear WordPress internal object caches.</li>
-
-
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-get-php-binary/">WP_CLI::get_php_binary()</a></strong> - Get the path to the PHP binary used when executing WP-CLI.</li>
 
 
