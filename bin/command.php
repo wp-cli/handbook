@@ -178,24 +178,16 @@ EOT;
 			$repo_url = 'https://github.com/wp-cli/wp-cli';
 		}
 		if ( $reflection->hasProperty( 'when_invoked' ) ) {
-			$filename = '';
 			$when_invoked = $reflection->getProperty( 'when_invoked' );
 			$when_invoked->setAccessible( true );
 			$closure = $when_invoked->getValue( $command );
 			$closure_reflection = new \ReflectionFunction( $closure );
 			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
 			$static = $closure_reflection->getStaticVariables();
-			if ( is_array( $static ) && isset( $static['callable'] ) ) {
-				// See `CommandFactory::create_subcommand()`.
-				if ( is_array( $static['callable'] ) && isset( $static['callable'][0] ) ) {
-					$reflection_class = new \ReflectionClass( $static['callable'][0] );
-					$filename = $reflection_class->getFileName();
-				} elseif ( is_callable( $static['callable'] ) ) {
-					$reflection_func = new \ReflectionFunction( $static['callable'] );
-					$filename = $reflection_func->getFileName();
-				}
-			}
-			if ( $filename ) {
+			// See `CommandFactory::create_subcommand()`.
+			if ( is_array( $static ) && isset( $static['callable'] ) && is_callable( $static['callable'] ) ) {
+				$reflection_func = new \ReflectionFunction( $static['callable'] );
+				$filename = $reflection_func->getFileName();
 				preg_match( '#vendor/([^/]+/[^/]+)#', $filename, $matches );
 				if ( ! empty( $matches[1] ) ) {
 					$repo_url = 'https://github.com/' . $matches[1];
