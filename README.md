@@ -3,7 +3,21 @@ wp-cli/handbook
 
 These files comprise the WP-CLI handbook ([make.wordpress.org/cli/handbook](https://make.wordpress.org/cli/handbook/)) and WP-CLI commands directory ([developer.wordpress.org/cli/commands](https://developer.wordpress.org/cli/commands/)).
 
-The documentation is located in GitHub to enable a pull request-based editing workflow. Long-form documentation (e.g. "Commands cookbook") can be edited directly. Internal API docs and command pages are generated dynamically from the WP-CLI codebase using the `wp handbook` series of commands. `wp handbook gen-all` will regenerate all of the handbook pages.
+The documentation is located in GitHub to enable a pull request-based editing workflow.
+
+Long-form documentation (e.g. "Commands cookbook") can be edited directly.
+
+Internal API docs and command pages are generated dynamically from the WP-CLI codebase using the `wp handbook` series of commands.
+
+Before running these commands the bash script `bin/install-packages.sh` should be run to install the latest versions of the non-bundled commands in `bin/packages`. Note `wp` must point to the target WP-CLI instance, i.e. the phar/git that contains the docblocks to be generated against, and should be run with `WP_CLI_PACKAGES_DIR=bin/packages` and `WP_CLI_CONFIG_PATH=/dev/null`.
+
+So for instance to generate all dynamically created documentation against the nightly phar run:
+
+```
+wp cli update --nightly
+bin/install-packages.sh
+WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
+```
 
 All documentation is imported automatically into WordPress.org in a two step process:
 
