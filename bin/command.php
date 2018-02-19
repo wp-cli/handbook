@@ -4,6 +4,7 @@ namespace WP_CLI\Handbook;
 
 use WP_CLI;
 use Mustache_Engine;
+use WP_CLI\Utils;
 
 /**
  * WP-CLI commands to generate docs from the codebase.
@@ -18,25 +19,35 @@ define( 'WP_CLI_HANDBOOK_PATH', dirname( dirname( __FILE__ ) ) );
 class Command {
 
 	/**
-	 * Regenerate all doc pages
+	 * Regenerates all doc pages.
+	 *
+	 * ## OPTIONS
+	 *
+	 * [--verbose]
+	 * : If set will list command pages as they are generated.
 	 *
 	 * @subcommand gen-all
 	 */
-	public function gen_all() {
+	public function gen_all( $args, $assoc_args ) {
+		// Warn if not invoked with null WP_CLI_CONFIG_PATH.
+		if ( '/dev/null' !== getenv( 'WP_CLI_CONFIG_PATH' ) ) {
+			WP_CLI::warning( "Should be invoked on the target WP-CLI with 'WP_CLI_CONFIG_PATH=/dev/null'." );
+		}
+
 		self::gen_api_docs();
-		self::gen_commands();
+		self::gen_commands( $args, $assoc_args );
 		self::gen_commands_manifest();
 		self::gen_hb_manifest();
 		WP_CLI::success( 'Generated all doc pages.' );
 	}
 
 	/**
-	 * Generate internal API doc pages
+	 * Generates internal API doc pages.
 	 *
 	 * @subcommand gen-api-docs
 	 */
 	public function gen_api_docs() {
-		$apis = self::invoke_wp_cli( 'wp handbook api-dump' );
+		$apis = WP_CLI::runcommand( 'handbook api-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
 		$categories = array(
 			'Registration' => array(),
 			'Output' => array(),
@@ -80,6 +91,8 @@ This also means functions and methods not listed here are considered part of the
 
 EOT;
 
+		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/internal-api/' );
+
 		foreach( $categories as $name => $apis ) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
 			$out .= self::render( 'internal-api-list.mustache', array( 'apis' => $apis ) );
@@ -109,53 +122,46 @@ EOT;
 		}
 
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/internal-api.md', $out );
-		WP_CLI::success( 'Generated /docs/internal-api/' );
+		WP_CLI::success( 'Generated internal-api/' );
 	}
 
 	/**
-	 * Generate command pages
+	 * Generates all command pages.
+	 *
+	 * ## OPTIONS
+	 *
+	 * [--verbose]
+	 * : If set will list command pages as they are generated.
 	 *
 	 * @subcommand gen-commands
 	 */
-	public function gen_commands() {
-		$wp = self::invoke_wp_cli( 'wp --skip-packages cli cmd-dump' );
-
-		$bundled_cmds = array();
-		foreach( $wp['subcommands'] as $k => $cmd ) {
-			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ) ) ) {
-				unset( $wp['subcommands'][ $k ] );
-				continue;
-			}
-			$bundled_cmds[] = $cmd['name'];
+	public function gen_commands( $args, $assoc_args ) {
+		// Check invoked with packages directory set to `bin/packages'.
+		if ( ! preg_match( '/bin\/packages\/?$/', getenv( 'WP_CLI_PACKAGES_DIR' ) ) ) {
+			WP_CLI::error( "Needs to be invoked on the target WP-CLI with 'WP_CLI_PACKAGES_DIR=bin/packages'." );
 		}
-		$wp['subcommands'] = array_values( $wp['subcommands'] );
+
+		// Check non-bundled commands installed.
+		$runner = WP_CLI::get_runner();
+		$have_nonbundled_installed = true;
+		foreach ( array( 'admin', 'find', 'profile', 'dist-archive' ) as $cmd ) {
+			$have_nonbundled_installed = $have_nonbundled_installed && is_array( $runner->find_command_to_run( array( $cmd ) ) );
+		}
+		if ( ! $have_nonbundled_installed ) {
+			WP_CLI::error( sprintf( "Install non-bundled packages by running '%s' first.", 'bin/install_packages.sh' ) );
+		}
+
+		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/commands/' );
+
+		$wp = WP_CLI::runcommand( 'cli cmd-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
+
+		$verbose = Utils\get_flag_value( $assoc_args, 'verbose', false );
 
 		foreach ( $wp['subcommands'] as $cmd ) {
-			self::gen_cmd_pages( $cmd );
-		}
-
-		$package_dir = dirname( __DIR__ ) . '/bin/packages';
-		foreach ( array(
-			'wp-cli/admin-command',
-			'wp-cli/find-command',
-			'wp-cli/profile-command',
-			'wp-cli/dist-archive-command'
-		) as $package ) {
-			WP_CLI::log( 'Installing ' . $package );
-			self::invoke_wp_cli( 'WP_CLI_PACKAGES_DIR=' . $package_dir . ' wp package install ' . $package );
-		}
-		$wp_with_packages = self::invoke_wp_cli( 'WP_CLI_PACKAGES_DIR=' . $package_dir . ' wp cli cmd-dump' );
-
-		foreach( $wp_with_packages['subcommands'] as $k => $cmd ) {
-			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ) )
-				|| in_array( $cmd['name'], $bundled_cmds ) ) {
-				unset( $wp_with_packages['subcommands'][ $k ] );
+			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ), true ) ) {
+				continue;
 			}
-		}
-		$wp_with_packages['subcommands'] = array_values( $wp_with_packages['subcommands'] );
-
-		foreach ( $wp_with_packages['subcommands'] as $cmd ) {
-			self::gen_cmd_pages( $cmd );
+			self::gen_cmd_pages( $cmd, array() /*parent*/, $verbose );
 		}
 
 		WP_CLI::success( 'Generated all command pages.' );
@@ -164,8 +170,7 @@ EOT;
 	/**
 	 * Update the commands data array with new data
 	 */
-	private static function update_commands_data( $command, &$commands_data, $parent ) {
-		$full = trim( $parent . ' ' . $command->get_name() );
+	private static function update_commands_data( $command, &$commands_data, $full ) {
 		$reflection = new \ReflectionClass( $command );
 		$repo_url = '';
 		if ( 'help' === substr( $full, 0, 4 )
@@ -173,14 +178,24 @@ EOT;
 			$repo_url = 'https://github.com/wp-cli/wp-cli';
 		}
 		if ( $reflection->hasProperty( 'when_invoked' ) ) {
+			$filename = '';
 			$when_invoked = $reflection->getProperty( 'when_invoked' );
 			$when_invoked->setAccessible( true );
 			$closure = $when_invoked->getValue( $command );
 			$closure_reflection = new \ReflectionFunction( $closure );
+			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
 			$static = $closure_reflection->getStaticVariables();
-			if ( isset( $static['callable'][0] ) ) {
-				$reflection_class = new \ReflectionClass( $static['callable'][0] );
-				$filename = $reflection_class->getFileName();
+			if ( is_array( $static ) && isset( $static['callable'] ) ) {
+				// See `CommandFactory::create_subcommand()`.
+				if ( is_array( $static['callable'] ) && isset( $static['callable'][0] ) ) {
+					$reflection_class = new \ReflectionClass( $static['callable'][0] );
+					$filename = $reflection_class->getFileName();
+				} elseif ( is_callable( $static['callable'] ) ) {
+					$reflection_func = new \ReflectionFunction( $static['callable'] );
+					$filename = $reflection_func->getFileName();
+				}
+			}
+			if ( $filename ) {
 				preg_match( '#vendor/([^/]+/[^/]+)#', $filename, $matches );
 				if ( ! empty( $matches[1] ) ) {
 					$repo_url = 'https://github.com/' . $matches[1];
@@ -189,21 +204,22 @@ EOT;
 				WP_CLI::error( 'No callable for: ' . var_export( $static, true ) );
 			}
 		}
-		$commands_data[ $full ] = array(
-			'repo_url' => $repo_url,
-		);
-		$len = count( $commands_data );
 		foreach ( $command->get_subcommands() as $subcommand ) {
 			$sub_full = trim( $full . ' ' . $subcommand->get_name() );
-			self::update_commands_data( $subcommand, $commands_data, $full );
+			self::update_commands_data( $subcommand, $commands_data, $sub_full );
+			if ( '' === $repo_url && isset( $commands_data[ $sub_full ]['repo_url'] ) ) {
+				$repo_url = $commands_data[ $sub_full ]['repo_url'];
+			}
 		}
-		if ( isset( $sub_full ) && ! $commands_data[ $full ]['repo_url'] && ! empty( $commands_data[ $sub_full ]['repo_url'] ) ) {
-			$commands_data[ $full ]['repo_url'] = $commands_data[ $sub_full ]['repo_url'];
+		if ( $repo_url ) {
+			$commands_data[ $full ] = array(
+				'repo_url' => $repo_url,
+			);
 		}
 	}
 
 	/**
-	 * Generate a manifest document of all command pages
+	 * Generates a manifest document of all command pages.
 	 *
 	 * @subcommand gen-commands-manifest
 	 */
@@ -216,7 +232,7 @@ EOT;
 		);
 		$commands_data = array();
 		foreach( WP_CLI::get_root_command()->get_subcommands() as $command ) {
-			self::update_commands_data( $command, $commands_data, '' );
+			self::update_commands_data( $command, $commands_data, $command->get_name() );
 		}
 		foreach( $paths as $path ) {
 			foreach( glob( $path ) as $file ) {
@@ -247,11 +263,11 @@ EOT;
 		}
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/commands-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		$count = count( $manifest );
-		WP_CLI::success( "Generated commands-manifest.json of {$count} commands" );
+		WP_CLI::success( "Generated bin/commands-manifest.json of {$count} commands" );
 	}
 
 	/**
-	 * Generate a manifest document of all handbook pages
+	 * Generates a manifest document of all handbook pages.
 	 *
 	 * @subcommand gen-hb-manifest
 	 */
@@ -291,17 +307,16 @@ EOT;
 			);
 		}
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
-		WP_CLI::success( 'Generated handbook-manifest.json' );
+		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
 	}
 
 	/**
-	 * Dump internal API PHPDoc to JSON
+	 * Dumps internal API PHPDoc to JSON.
 	 *
 	 * @subcommand api-dump
 	 */
 	public function api_dump() {
 		$apis = array();
-		require WP_CLI_ROOT . '/php/utils-wp.php';
 		$functions = get_defined_functions();
 		foreach( $functions['user'] as $function ) {
 			$reflection = new \ReflectionFunction( $function );
@@ -329,12 +344,12 @@ EOT;
 		echo json_encode( $apis );
 	}
 
-	private static function gen_cmd_pages( $cmd, $parent = array() ) {
+	private static function gen_cmd_pages( $cmd, $parent = array(), $verbose = false ) {
 		$parent[] = $cmd['name'];
 
 		static $params;
 		if ( ! isset( $params ) ) {
-			$params = self::invoke_wp_cli( 'wp --skip-packages cli param-dump' );
+			$params = WP_CLI::runcommand( 'cli param-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
 			// Preserve positioning of 'url' param
 			$url_param = $params['url'];
 			unset( $params['url'] );
@@ -448,13 +463,15 @@ EOT;
 			mkdir( dirname( $path ) );
 		}
 		file_put_contents( "$path.md", self::render( 'subcmd-list.mustache', $binding ) );
-		WP_CLI::log( 'Generated /commands/' . $binding['path'] . '/' );
+		if ( $verbose ) {
+			WP_CLI::log( 'Generated commands/' . $binding['path'] . '/' );
+		}
 
 		if ( !isset( $cmd['subcommands'] ) )
 			return;
 
 		foreach ( $cmd['subcommands'] as $subcmd ) {
-			self::gen_cmd_pages( $subcmd, $parent );
+			self::gen_cmd_pages( $subcmd, $parent, $verbose );
 		}
 	}
 
@@ -574,25 +591,29 @@ EOT;
 		return $ret;
 	}
 
-	private static function invoke_wp_cli( $cmd ) {
-		ob_start();
-		system( "WP_CLI_CONFIG_PATH=/dev/null $cmd", $return_code );
-		$json = ob_get_clean();
-
-		if ( $return_code ) {
-			echo "WP-CLI returned error code: $return_code\n";
-			exit(1);
-		}
-
-		return json_decode( $json, true );
-	}
-
 	private static function render( $path, $binding ) {
 		$m = new Mustache_Engine;
 		$template = file_get_contents( WP_CLI_HANDBOOK_PATH . "/bin/templates/$path" );
 		return $m->render( $template, $binding );
 	}
 
+	/**
+	 * Removes existing contents of given directory.
+	 *
+	 * @param string $dir Name of directory to empty.
+	 */
+	private static function empty_dir( $dir ) {
+		$cmd = Utils\esc_cmd( 'rm -rf %s', $dir );
+		$pr = WP_CLI::launch( $cmd, false /*exit_on_error*/, true /*return_detailed*/ ); // Won't fail if directory doesn't exist.
+		if ( $pr->return_code ) {
+			WP_CLI::error( sprintf( "Failed to `%s`: (%d) %s", $cmd, $pr->return_code, $pr->stderr ) );
+		}
+		if ( ! mkdir( $dir ) ) {
+			$error = error_get_last();
+			WP_CLI::error( sprintf( "Failed to create '%s' directory: %s", $dir, $error['message'] ) );
+		}
+		WP_CLI::log( sprintf( "Removed existing contents of '%s'", $dir ) );
+	}
 }
 
 WP_CLI::add_command( 'handbook', '\WP_CLI\Handbook\Command' );
