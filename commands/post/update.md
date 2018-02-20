@@ -101,7 +101,7 @@ Updates one or more existing posts.
     Success: Updated post 123.
 
     # Update a post with multiple meta values.
-    $ wp post update 123 --meta_input='{"key1":"value1","key2":"value2"}
+    $ wp post update 123 --meta_input='{"key1":"value1","key2":"value2"}'
     Success: Updated post 123.
 
 ### GLOBAL PARAMETERS
