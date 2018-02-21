@@ -116,6 +116,16 @@ When using `$_SERVER['HTTP_HOST']` in your `wp-config.php`, you'll need to set a
 
 See also: [#730](https://github.com/wp-cli/wp-cli/issues/730)
 
+### PHP Parse error:  syntax error, unexpected '?' in ... /php/WP_CLI/Runner.php ... eval()'d code on line 1
+
+If you get this error running the `wp` command, the most likely cause is a [Unicode `BOM`](https://en.wikipedia.org/wiki/Byte_order_mark) at the start of your `wp-config.php`. This issue will be addressed in a future release of WP-CLI, but in the meantime you can solve the issue by running:
+
+    $ sed -i '1s/^\xEF\xBB\xBF//' $(wp config path)
+
+or by manually removing the `BOM` using your favorite editor.
+
+See also: [wp-cli/search-replace-command#71](https://github.com/wp-cli/search-replace-command/issues/71)
+
 ### Can't find wp-content directory / use of `$_SERVER['document_root']`
 
 `$_SERVER['document_root']` is defined by the webserver based on the incoming web request. Because this type of context is unavailable to PHP CLI, `$_SERVER['document_root']` is unavailable to WP-CLI. Furthermore, WP-CLI can't safely mock `$_SERVER['document_root']` as it does with `$_SERVER['http_host']` and a few other `$_SERVER` values.
