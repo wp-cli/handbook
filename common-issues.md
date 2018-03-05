@@ -161,6 +161,18 @@ Quick fix, other than disabling the protection, is to pass the user parameter: `
 
 See also: [#477](https://github.com/wp-cli/wp-cli/issues/477)
 
+### Cannot create a post with Latin characters in the title on Windows
+
+Considering the following example:
+
+    wp post create --post_title="Perícias Contábeis"
+
+Using UTF-8 in PHP arguments doesn't work on Windows for PHP <= 7.0, however it will work for PHP >= 7.1, as it was fixed as part of [Support for long and UTF-8 path](http://php.net/manual/en/migration71.windows-support.php). A workaround for PHP <= 7.0 is to use the `--prompt` option:
+
+    echo "Perícias Contábeis" | wp post create --post_type=page --post_status=publish --prompt=post_title
+
+See also: [#4714](https://github.com/wp-cli/wp-cli/issues/4714)
+
 ### The installation hangs
 
 If the installation seems to hang forever while trying to clone the resources from GitHub, please ensure that you are allowed to connect to Github using SSL (port 443) and Git (port 9418) for outbound connections.
