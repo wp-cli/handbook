@@ -1,6 +1,7 @@
 # Wish List
 
 An ongoing list of ideas and potential improvements for wp-cli.org.
+wp media replace [media_id] [path_to_new_media]
 
 ### WP-CLI
 
