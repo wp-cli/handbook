@@ -20,6 +20,7 @@ In alphabetical order:
 * [Kinsta](https://kinsta.com)
 * [KnownHost](https://www.knownhost.com)
 * [Media Temple](http://mediatemple.net)
+* [Mittwald](https://www.mittwald.de/)
 * [Monarobase](https://monarobase.net/wordpress)
 * [NameHero](https://www.namehero.com)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
