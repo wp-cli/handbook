@@ -195,6 +195,14 @@ Then, just symlink the binary:
 
 Here's the [formula](https://github.com/homebrew/homebrew-php/blob/master/Formula/wp-cli.rb).
 
+### Installing via Docker
+
+The Docker community maintains [WordPress and WP-CLI images](https://hub.docker.com/_/wordpress/).
+
+To include the WP-CLI image in your own project:
+
+    image: wordpress:cli
+
 ### Installing on Windows
 
 Install via [composer as described above](#installing-via-composer) or use the following method.
