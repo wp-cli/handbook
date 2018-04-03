@@ -301,7 +301,8 @@ WP-CLI's behavior can be changed at runtime through the use of environment varia
 * `WP_CLI_CONFIG_PATH` - Path to the global `config.yml` file. Default is `~/.wp-cli/config.yml`.
 * `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` - Disable WP-CLI automatic checks for updates.
 * `WP_CLI_PACKAGES_DIR` - Directory to store packages installed through WP-CLI's package management. Default is `~/.wp-cli/packages/`.
-* `WP_CLI_PHP` - PHP binary path to use when overriding the system default (only works for non-Phar installation). 
+* `WP_CLI_PHP` - PHP binary path to use when overriding the system default (only works for non-Phar installation).
+* `WP_CLI_PHP_ARGS` - Arguments to pass to the PHP binary when invoking WP-CLI (only works for non-Phar installation).
 * `WP_CLI_SSH_PRE_CMD` - When using `--ssh=<ssh>`, perform a command before WP-CLI calls WP-CLI on the remote server.
 * `WP_CLI_STRICT_ARGS_MODE` - Avoid ambiguity by telling WP-CLI to treat any arguments before the command as global, and after the command as local.
 
