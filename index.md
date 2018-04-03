@@ -37,4 +37,3 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 ## Misc
 
 * **[Plugin unit tests](https://make.wordpress.org/cli/handbook/plugin-unit-tests/)** - How to set up and run PHPUnit tests for a WordPress plugin.
-* **[Website and Package Index wish list](https://make.wordpress.org/cli/handbook/wish-list/)** - A list of ideas and potential improvements for wp-cli.org

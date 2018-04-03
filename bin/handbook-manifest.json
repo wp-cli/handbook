@@ -167,12 +167,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/tools.md",
         "parent": null
     },
-    "wish-list": {
-        "title": "Wish List",
-        "slug": "wish-list",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/wish-list.md",
-        "parent": null
-    },
     "wp-cli-add-command": {
         "title": "WP_CLI::add_command()",
         "slug": "wp-cli-add-command",
