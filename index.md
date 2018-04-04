@@ -27,6 +27,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 
 * **[Bug reports](https://make.wordpress.org/cli/handbook/bug-reports/)** - Help ensure your issue is resolved in a timely manner.
 * **[Contributing](https://make.wordpress.org/cli/handbook/contributing/)** - An introduction to the contributing process.
+* **[Ideas](https://github.com/wp-cli/ideas)** - Up-vote existing ideas or submit your own.
 * **[Governance](https://make.wordpress.org/cli/handbook/governance/)** - Summary of those behind WP-CLI.
 * **[Implementation details](https://make.wordpress.org/cli/handbook/implementation-details/)** - Catalog of historical design decisions.
 * **[Philosophy](https://make.wordpress.org/cli/handbook/philosophy/)** - Guidelines which inform project scope, command organization, and behavior.
