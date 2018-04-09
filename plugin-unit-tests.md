@@ -40,7 +40,7 @@ This command will generate all the files needed for running tests, including a `
   bin/install-wp-tests.sh wordpress_test root '' localhost latest
   ```
 
-The install script first it installs a copy of WordPress in the `/tmp` directory (by default) as well as the WordPress unit testing tools. Then it creates a database to be used while running tests. The parameters that are passed to `install-wp-tests.sh` setup the test database.
+The install script first installs a copy of WordPress in the `/tmp` directory (by default) as well as the WordPress unit testing tools. Then it creates a database to be used while running tests. The parameters that are passed to `install-wp-tests.sh` setup the test database.
 
 * `wordpress_test` is the name of the test database (**all data will be deleted!**)
 * `root` is the MySQL user name
