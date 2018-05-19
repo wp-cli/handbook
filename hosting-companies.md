@@ -30,6 +30,7 @@ In alphabetical order:
 * [Pressjitsu](https://pressjitsu.com)
 * [RoseHosting](https://www.rosehosting.com)
 * [Seravo.com](https://seravo.com)
+* [Servebolt.com](https://servebolt.com)
 * [Site5](http://www.site5.com/)
 * [SiteGround](http://www.siteground.com/)
 * [StrikeHawk eCommerce](https://www.strikehawk.com/secure-web-hosting/wordpress/)
