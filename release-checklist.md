@@ -61,9 +61,12 @@ The script will also produce a total contributor and pull request count you can 
     md5 -q wp-cli.phar > wp-cli.phar.md5
     shasum -a 512 wp-cli.phar | cut -d ' ' -f 1 > wp-cli.phar.sha512
 
-4) Sign the release with GPG. See <https://github.com/wp-cli/wp-cli/issues/2121>
+4) Sign the release with GPG (see <https://github.com/wp-cli/wp-cli/issues/2121>):
 
-    gpg --output wp-cli.phar.gpg --sign wp-cli.phar
+    gpg --output wp-cli.phar.gpg --default-key releases@wp-cli.org --sign wp-cli.phar
+    gpg --output wp-cli.phar.asc --default-key releases@wp-cli.org --detach-sig --armor wp-cli.phar
+
+> Note: The GPG key for `releases@wp-cli.org` has to be shared amongst maintainers.
 
 5) Perform one last sanity check on the Phar by ensuring it displays its information
 
@@ -79,6 +82,7 @@ The script will also produce a total contributor and pull request count you can 
 
     cp wp-cli.phar wp-cli-1.x.0.phar
     cp wp-cli.phar.gpg wp-cli-1.x.0.phar.gpg
+    cp wp-cli.phar.asc wp-cli-1.x.0.phar.asc
     cp wp-cli.phar.md5 wp-cli-1.x.0.phar.md5
     cp wp-cli.phar.sha512 wp-cli-1.x.0.phar.sha512
 
