@@ -25,6 +25,7 @@ In alphabetical order:
 * [Monarobase](https://monarobase.net/wordpress)
 * [NameHero](https://www.namehero.com)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
+* [Nexcess.Net](https://www.nexcess.net/)
 * [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
 * [Pressjitsu](https://pressjitsu.com)
