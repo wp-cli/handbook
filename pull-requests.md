@@ -58,7 +58,7 @@ If you haven't submitted a pull request before, you'll want to install WP-CLI fo
 2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
 3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli`. If you are going to work on the core framework itself, run `hub fork` here to create a pushable-repository on Github.
 4. Install all Composer dependencies: `composer install --prefer-source`
-5. Alias the `wp` command to your new WP-CLI install: `alias wp=~/wp-cli/bin/wp`
+5. Alias the `wp` command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
 6. Verify WP-CLI was installed properly: `wp --info`
 
 Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). The `--prefer-source` flag when installing WP-CLI ensures each command is installed as a Git clone, making it easier to commit to.
