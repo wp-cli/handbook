@@ -193,7 +193,7 @@ Then, just symlink the binary:
 
     brew install wp-cli
 
-Here's the [formula](https://github.com/homebrew/homebrew-php/blob/master/Formula/wp-cli.rb).
+Here's the [formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/wp-cli.rb).
 
 ### Installing via Docker
 
