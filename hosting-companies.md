@@ -17,6 +17,7 @@ In alphabetical order:
 * [HostGator](http://www.hostgator.com)
 * [Hostinger](https://www.hostinger.com)
 * [iPage](http://www.ipage.com/ipage/index.html)
+* [JDM.pl](https://jdm.pl)
 * [Liquid Web](https://liquidweb.com/wordpress)
 * [Kinsta](https://kinsta.com)
 * [KnownHost](https://www.knownhost.com)
