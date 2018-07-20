@@ -7,7 +7,6 @@
 * [Mika Epstein: Command Line WP](http://halfelf.org/2012/command-line-wp/)
 * [Treehouse Blog: Tame WordPress from the Command Line with wp-cli](http://blog.teamtreehouse.com/tame-wordpress-from-the-command-line-with-wp-cli)
 * [Matt Wiebe: Why You Should Develop Plugins With wp-cli](http://wp.mattwie.be/2014/01/15/why-you-should-develop-plugins-with-wp-cli/)
-* [Arnaud Sellenet: A Decent Wordpress Deploy Workflow](http://demental.info/blog/2013/04/09/a-decent-wordpress-deploy-workflow/)
 * [Torque: Using WP CLI to Set Up a Test Version of Your Site](http://torquemag.io/using-wp-cli-to-set-up-a-test-version-of-your-site/)
 * [WP Bullet Guides: Useful Bash Scripts Utilizing WP-CLI](https://guides.wp-bullet.com/category/wp-cli/) 
 
