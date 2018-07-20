@@ -38,7 +38,7 @@ Next, check for readability. Functions, variables, and files should be named cle
 
 > All code in any code-base should look like a single person typed it, no  matter how many people contributed.
 >
-> -- [Principles of writing Idiomatic Javascript](https://github.com/rwaldron/idiomatic.js/)
+> -- [Principles of writing Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
 
 As readability is inherently subjective, this requires the ability to look back from the immediate code changes to the bigger picture. Think of someone months down the road trying to trace a given code path through the current changeset. Are there unnecessary steps that could be simplified? Are code comments and inline documentation robust enough to recreate the thought process behind the code?
 
