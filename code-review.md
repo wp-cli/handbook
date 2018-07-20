@@ -8,7 +8,7 @@ Code review is a core part of the WP-CLI project's software development workflow
 
 ## A typical code review workflow
 
-We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler, because each review stage wil be looking at a small code.
+We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler, because each review stage will be looking at a small code.
 
 - On every commit pushed to a GH branch, our CI automated tests -- linting for all code, unit tests for functional code, and ideally, behavioral and automated acceptance testing -- are run on Travis.
 - If the build passes, the PR can be reviewed. If not, the original developer is responsible for getting the build to the point where it passes.
