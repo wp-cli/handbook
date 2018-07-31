@@ -52,8 +52,8 @@ Rename or delete your configuration file(s) and compare the result, to find out 
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can contain WP-CLI commands, but they can also just extend WP-CLI in some way. While WP-CLI might be perfectly working, a package with errors can cause unexpected results, too. To skip loading all installed packages, use `wp --skip-packages`.
 
-
 #### WordPress Configuration File (`wp-config.php`)
+
 Errors may result from moving or editing `wp-config.php` beyond what WP-CLI supports. If you get a parse error, check the file encoding of your `wp-config.php` (UTF-8 without BOM).
 
 Make sure that the line `require_once(ABSPATH . 'wp-settings.php');` remains in the `wp-config.php` file and don't modify `wp-config.php` beyond constant definitions. If you call WordPress functions within `wp-config.php`, PHP will fail with a fatal error.
@@ -84,11 +84,11 @@ Additionally you can use WP-CLI's global parameter `--debug` to show all PHP err
 
 ### I have checked all above, but still have an issue. Where can I report issues?
 
-If you think, you’ve found a bug, we’d love to hear from you to get it fixed.
+If you think you’ve found a bug, we’d love to hear from you to get it fixed.
 
 Bug reporting for WP-CLI is handled on GitHub. Before you create a new issue, please [search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Awp-cli+label%3Abug) to see if there’s an existing resolution to it. If there isn’t an open or fixed issue for your bug, please [follow our guidelines for submitting a bug report](https://make.wordpress.org/cli/handbook/bug-reports/) to make sure it gets addressed in a timely manner. Providing the summary, steps to reproduce, environmental details, and other specifics identified below will help guarantee you are submitting a full bug report.
 
-Please provide us with
+Please provide us with:
 * a summary of the issue in narrative form,
 * a detailed and specific list of steps to reproduce the issue,
 * details of the environment you're working on,
@@ -97,4 +97,3 @@ Please provide us with
 * relevant diagnostics, such as crash reports, stack traces or debug output.
 
 You can find a verbose description of these details of an issue report in the [guidelines for submitting a bug report](https://make.wordpress.org/cli/handbook/bug-reports/).
-
