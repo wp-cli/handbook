@@ -6,7 +6,7 @@ WP-CLI is released every 3-4 months, typically around the beta period of [WordPr
 
 Patch versions are released on an as-needed basis, usually to address bugs or regressions. The current version of WP-CLI is the only officially supported version.
 
-Just like WordPress has plugins, the future of WP-CLI is [packages of commands](https://wp-cli.org/package-index/). WP-CLI's current product focus is to:
+Just like WordPress has plugins, the future of WP-CLI is packages of commands. WP-CLI's current product focus is to:
 
 * Help packages be considered first-class citizens amongst the commands bundled with WP-CLI (in build quality, documentation, test coverage, and discoverability).
 * Encourage package maintenance to be a communal activity, instead of falling upon a single person.
