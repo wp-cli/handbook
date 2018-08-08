@@ -6,10 +6,12 @@ Launch system's $EDITOR for the user to edit some text.
 
 ## Usage
 
-    WP_CLI\Utils\launch_editor_for_input( $input, $filename = WP-CLI )
+    WP_CLI\Utils\launch_editor_for_input( $input, $title = WP-CLI, $ext = tmp )
 
 <div>
 <strong>string</strong> () $content  Some form of text to edit (e.g. post content)<br />
+<strong>string</strong> () $title    Title to display in the editor.<br />
+<strong>string</strong> () $ext      Extension to use with the temp file.<br />
 <strong>@return</strong> (string|bool) text, if file is saved from editor; false, if no change to file.<br />
 </div>
 
