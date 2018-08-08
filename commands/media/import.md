@@ -40,8 +40,8 @@ Creates attachments from local files or URLs.
 
     # Import all jpgs in the current user's "Pictures" directory, not attached to any post.
     $ wp media import ~/Pictures/**\/*.jpg
-    Imported file '/home/person/Pictures/beautiful-youg-girl-in-ivy.jpg' as attachment ID 1751.
-    Imported file '/home/person/Pictures/fashion-girl.jpg' as attachment ID 1752.
+    Imported file '/home/person/Pictures/landscape-photo.jpg' as attachment ID 1751.
+    Imported file '/home/person/Pictures/fashion-icon.jpg' as attachment ID 1752.
     Success: Imported 2 of 2 items.
 
     # Import a local image and set it to be the post thumbnail for a post.
@@ -62,6 +62,10 @@ Creates attachments from local files or URLs.
     Imported file 'http://s.wordpress.org/style/images/wp-header-logo.png' as attachment ID 1755.
     Success: Imported 1 of 1 images.
 
+    # Get the URL for an attachment after import.
+    $ wp media import http://s.wordpress.org/style/images/wp-header-logo.png --porcelain | xargs -I {} wp post list --post__in={} --field=url --post_type=attachment
+    http://wordpress-develop.dev/wp-header-logo/
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -73,11 +77,11 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
-| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
-| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+| `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
-| `--debug[=<group>]` | Show all PHP errors; add verbosity to WP-CLI bootstrap. |
+| `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |

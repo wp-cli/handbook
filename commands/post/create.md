@@ -43,6 +43,9 @@ Creates a new post.
 [\--post_name=&lt;post_name&gt;]
 : The post name. Default is the sanitized post title when creating a new post.
 
+[\--from-post=&lt;post_id&gt;]
+: Post id of a post to be duplicated.
+
 [\--to_ping=&lt;to_ping&gt;]
 : Space or carriage return-separated list of URLs to ping. Default empty.
 
@@ -113,6 +116,10 @@ Creates a new post.
     $ wp post create --post_title='A post' --post_content='Just a small post.' --meta_input='{"key1":"value1","key2":"value2"}
     Success: Created post 1923.
 
+    # Create a duplicate post from existing posts.
+    $ wp post create --from-post=123 --post_title='Different Title'
+    Success: Created post 2350.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -124,11 +131,11 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
-| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
-| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+| `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
-| `--debug[=<group>]` | Show all PHP errors; add verbosity to WP-CLI bootstrap. |
+| `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
