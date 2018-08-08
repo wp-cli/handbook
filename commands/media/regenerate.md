@@ -50,9 +50,9 @@ Regenerates thumbnails for one or more attachments.
     $ wp media regenerate --image_size=large
     Do you really want to regenerate the "large" image size for all images? [y/n] y
     Found 3 images to regenerate.
-    1/3 Regenerated "large" thumbnail for "Yoogest Image Ever, Really" (ID 9999).
-    2/3 No "large" thumbnail regeneration needed for "Snowflake" (ID 9998).
-    3/3 Regenerated "large" thumbnail for "Even Yooger than the Yoogest Image Ever, Really" (ID 9997).
+    1/3 Regenerated "large" thumbnail for "Sydney Harbor Bridge" (ID 760).
+    2/3 No "large" thumbnail regeneration needed for "Boardwalk" (ID 757).
+    3/3 Regenerated "large" thumbnail for "Sunburst Over River" (ID 756).
     Success: Regenerated 3 of 3 images.
 
 ### GLOBAL PARAMETERS
@@ -66,11 +66,11 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
-| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
-| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+| `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
-| `--debug[=<group>]` | Show all PHP errors; add verbosity to WP-CLI bootstrap. |
+| `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |

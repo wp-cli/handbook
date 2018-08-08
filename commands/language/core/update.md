@@ -1,8 +1,6 @@
 # wp language core update
 
-Updates installed languages.
-
-Updates installed languages for core, plugins and themes.
+Updates installed languages for core.
 
 ### OPTIONS
 
@@ -12,13 +10,10 @@ Updates installed languages for core, plugins and themes.
 ### EXAMPLES
 
     $ wp language core update
-    Updating 'Japanese' translation for Akismet 3.1.11...
-    Downloading translation from https://downloads.wordpress.org/translation/plugin/akismet/3.1.11/ja.zip...
+    Updating 'Japanese' translation for WordPress 4.9.2...
+    Downloading translation from https://downloads.wordpress.org/translation/core/4.9.2/ja.zip...
     Translation updated successfully.
-    Updating 'Japanese' translation for Twenty Fifteen 1.5...
-    Downloading translation from https://downloads.wordpress.org/translation/theme/twentyfifteen/1.5/ja.zip...
-    Translation updated successfully.
-    Success: Updated 2/2 translations.
+    Success: Updated 1/1 translation.
 
 ### GLOBAL PARAMETERS
 
@@ -31,11 +26,11 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
-| `--skip-plugins[=<plugin>]` | Skip loading all or some plugins. Note: mu-plugins are still loaded. |
-| `--skip-themes[=<theme>]` | Skip loading all or some themes. |
+| `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
+| `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
-| `--debug[=<group>]` | Show all PHP errors; add verbosity to WP-CLI bootstrap. |
+| `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
