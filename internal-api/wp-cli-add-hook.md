@@ -33,6 +33,7 @@ WP-CLI hooks include:
 * `before_wp_config_load` - After wp-config.php has been located.
 * `after_wp_config_load` - After wp-config.php has been loaded into scope.
 * `after_wp_load` - Just after the WP load process has completed.
+* `before_run_command` - Just before the command is executed.
 
 WP-CLI commands can create their own hooks with `WP_CLI::do_hook()`.
 

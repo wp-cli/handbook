@@ -1,6 +1,6 @@
 # wp site option
 
-Adds, updates, deletes, and lists site options in a multisite install.
+Adds, updates, deletes, and lists site options in a multisite installation.
 
 ### EXAMPLES
 
