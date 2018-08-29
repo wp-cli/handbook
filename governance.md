@@ -45,7 +45,12 @@ The `wp-cli.org` domain is currently owned by [andreascreten](https://github.com
 
 Much of the WP-CLI documentation (command pages, etc.) is editable through [wp-cli/handbook](https://github.com/wp-cli/handbook/), and then synced to WordPress.org. The WP-CLI.org homepage is [hosted on GitHub Pages](http://github.com/wp-cli/wp-cli.github.com).
 
-From time to time, you may see a pull request from the `wp-make-coffee` bot. These originate from a donated WebFaction server running some cron jobs calling bash scripts.
+From time to time, you may see a pull request from the `wp-make-coffee` bot. These originate from a donated WebFaction server running some cron jobs calling bash scripts:
+
+```bash
+5 4 * * 1,3,5 source ~/.bash_profile; WP_CLI_DIR=~/wp-cli bash ~/wp-cli/utils/auto-composer-update.sh > ~/auto-composer-update.log 2>&1
+5 6 * * 1,3,5 source ~/.bash_profile; WP_CLI_DIR=~/wp-cli-bundle bash ~/wp-cli-bundle/utils/auto-composer-update.sh > ~/auto-composer-update-bundle.log 2>&1
+```
 
 The [wpcli](https://twitter.com/wpcli) Twitter account is managed by [danielbachhuber](https://github.com/danielbachhuber).
 
