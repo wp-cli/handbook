@@ -5,7 +5,7 @@ Activates a theme.
 ### OPTIONS
 
 &lt;theme&gt;
-: The theme to activate.
+: The theme to activate. Since 2.0.1: This has to be lower case.
 
 ### EXAMPLES
 
