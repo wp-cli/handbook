@@ -92,6 +92,8 @@ Importantly, classes behave a bit differently than functions and closures in tha
 * Any public methods on a class are registered as subcommands of the command. For instance, given the examples above, a method `bar()` on the class `Foo` would be registered as `wp foo bar`. But...
 * `__invoke()` is treated as a magic method. If a class implements `__invoke()`, the command name will be registered to that method and no other methods of that class will be registered as commands.
 
+*Note:* Historically, WP-CLI provided a base `WP_CLI_Command` class to extend, however extending this class is not required and will not change how your command behaves.
+
 All commands can be registered to their own top-level namespace (e.g. `wp foo`), or as subcommands to an existing namespace (e.g. `wp core foo`). For the latter, simply include the existing namespace as a part of the command definition.
 
 ```
@@ -129,7 +131,7 @@ A typical WP-CLI class looks like this:
 /**
  * Implements example command.
  */
-class Example_Command extends WP_CLI_Command {
+class Example_Command {
 
 	/**
 	 * Prints a greeting.
