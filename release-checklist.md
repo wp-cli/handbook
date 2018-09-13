@@ -24,25 +24,31 @@ Make sure the [automated test suite](https://github.com/wp-cli/automated-tests) 
 
 ### Updating WP-CLI
 
-Create a branch called `release-x-x-x` to prepare the release PR.
+Create a branch called `release-x-x-x` on `wp-cli/wp-cli-bundle` to prepare the release PR.
 
-Make sure that the contents of [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) are changed to latest.
+Make sure that the contents of [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) in `wp-cli/wp-cli` are changed to latest.
 
-Also update the WP-CLI version mention in the project's `README.md` ([ref](https://github.com/wp-cli/wp-cli/issues/3647)).
+Also update the WP-CLI version mention in `wp-cli/wp-cli`'s `README.md` ([ref](https://github.com/wp-cli/wp-cli/issues/3647)).
 
 ### Locking php-cli-tools version
 
 php-cli-tools is sometimes set to `dev-master` during the development cycle. During the WP-CLI release process, `composer.json` should be locked to a specific version. php-cli-tools may need a new version tagged as well.
 
+### Locking the framework
+
+The version constraint of the `wp-cli/wp-cli` framework requirement is usually set to `"dev-master"`. Set it to the stable tagged release that represents the version to be published.
+
+As an example, if releasing version 2.1.0 of WP-CLI, the `wp-cli/wp-cli-bundle` should require `"wp-cli/wp-cli": "^2.1.0"`.
+
 ### Updating the contributor list
 
-From the `wp-cli/wp-cli` project repo, use `utils/contrib-list.php` to generate a list of release contributors:
+From within the `wp-cli/wp-cli-dev` project repo, use `wp maintenance contrib-list` to generate a list of release contributors:
 
-    GITHUB_TOKEN=<token> wp --require=utils/contrib-list.php contrib-list --format=markdown
+    GITHUB_TOKEN=<token> wp maintenance contrib-list --format=markdown
 
-This script identifies pull request creators from `wp-cli/wp-cli`, `wp-cli/handbook`, and all bundled WP-CLI commands (e.g. `wp-cli/*-command`).
+This script identifies pull request creators from `wp-cli/wp-cli-bundle`, `wp-cli/wp-cli`, `wp-cli/handbook`, and all bundled WP-CLI commands (e.g. `wp-cli/*-command`).
 
-For `wp-cli/wp-cli` and `wp-cli/handbook`, the script uses the currently open release milestone.
+For `wp-cli/wp-cli-bundle`, `wp-cli/wp-cli` and `wp-cli/handbook`, the script uses the currently open release milestone.
 
 For all bundled WP-CLI commands, the script uses all closed milestones since the last WP-CLI release (as identified by the version present in the `composer.lock` file). If a command was newly bundled since last release, contributors to that command will need to be manually added to the list.
 
@@ -50,7 +56,7 @@ The script will also produce a total contributor and pull request count you can 
 
 ### Updating the Phar build
 
-1) Create a PR from the `release-x-x-x` branch and merge it. This will trigger the `wp-cli-release.*` builds.
+1) Create a PR from the `release-x-x-x` branch in `wp-cli/wp-cli-bundle` and merge it. This will trigger the `wp-cli-release.*` builds.
 
 2) Create a git tag and push it.
 
@@ -145,9 +151,13 @@ In addition to publishing the release post, a new release is announced in a few 
 
 ### Bumping WP-CLI version again
 
-After all of the release steps are complete, make sure to bump [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) again.
+After all of the release steps are complete, make sure to bump [VERSION](https://github.com/wp-cli/wp-cli/blob/master/VERSION) in `wp-cli/wp-cli` again.
 
 For instance, if the release version was `0.24.0`, the version should be bumped to `0.25.0-alpha`. Doing so ensure `wp cli update --nightly` works as expected.
+
+## Hooking the bundle back up to the latest framework again
+
+Change the version constraint on `"wp-cli/wp-cli"` in `wp-cli/wp-cli-bundle`'s [`composer.json`](https://github.com/wp-cli/wp-cli-bundle/blob/master/composer.json) file back to `"dev-master"`.
 
 ## Patch releases
 
