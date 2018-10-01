@@ -116,6 +116,10 @@ When using `$_SERVER['HTTP_HOST']` in your `wp-config.php`, you'll need to set a
 
 See also: [#730](https://github.com/wp-cli/wp-cli/issues/730)
 
+### PHP notice: Use of undefined constant STDOUT
+
+The `STDOUT` constant is defined by the PHP CLI. If you receive an error notice that `STDOUT` is missing, it's likely because you're not running WP-CLI by PHP CLI. Please review your server configuration accordingly.
+
 ### PHP Parse error:  syntax error, unexpected '?' in ... /php/WP_CLI/Runner.php ... eval()'d code on line 1
 
 If you get this error running the `wp` command, the most likely cause is a [Unicode `BOM`](https://en.wikipedia.org/wiki/Byte_order_mark) at the start of your `wp-config.php`. This issue will be addressed in a future release of WP-CLI, but in the meantime you can solve the issue by running:
