@@ -15,7 +15,7 @@ So for instance to generate all dynamically created documentation against the ni
 
 ```
 wp cli update --nightly
-bin/install-packages.sh
+bin/install_packages.sh
 WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
 ```
 
