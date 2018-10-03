@@ -45,7 +45,7 @@ these will be passed on to the callback provided by `WP_CLI::add_hook()`.
 WP_CLI::add_command( 'network meta', 'Network_Meta_Command', array(
    'before_invoke' => function () {
        if ( !is_multisite() ) {
-           WP_CLI::error( 'This is not a multisite install.' );
+           WP_CLI::error( 'This is not a multisite installation.' );
        }
    }
 ) );
