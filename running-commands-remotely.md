@@ -109,10 +109,29 @@ wp_users:user_email
 
 ## Making WP-CLI accessible on a remote server
 
-Running a command remotely through SSH requires having `wp` accessible on the `$PATH` on the remote server. Because SSH connections don’t load `~/.bashrc` or `~/.zshrc`, you may need to specify a custom `$PATH` when using `wp --ssh=<host>`.
+Running a command remotely through SSH requires having `wp` accessible on the `$PATH` on the remote server. Because SSH connections don’t load `~/.bashrc` or `~/.zshrc`, you may need to specify a custom `$PATH` when using `wp --ssh=<host>`.  A few ways to make `wp` available on the remote server are:
 
-One way to achieve this is to specify the `$PATH` in the remote machine user's `~/.ssh/environment` file, provided that that machine's `sshd` has been configured with `PermitUserEnvironment=yes` (see [OpenSSH documentation](https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files#.7E.2F.ssh.2Fenvironment)).
++ **Copy WP-CLI binary to `$HOME/bin`**:  
+In many Linux distros, `$HOME/bin` is in the `$PATH` by default, so a way to make `wp` accessible is to create a `$HOME/bin` directory, if it doesn't already exist, and move the WP-CLI binary into `$HOME/bin/wp`:
 
+```sh
+mkdir -p ~/bin
+cd ~/bin
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+chmod +x wp-cli.phar
+mv chmod +x wp-cli.phar wp
+```
+If `$HOME/bin` is not already in your path, then you can define it in `~/.bash_profile` or `.profile`:
+
+```sh
+#.bash_profile or .profile
+PATH="$HOME/bin:$PATH"
+```
+
++ **Specify the `$PATH` in  `~/.ssh/environment`**:  
+Another way to achieve this is to specify the `$PATH` in the remote machine user's `~/.ssh/environment` file, provided that that machine's `sshd` has been configured with `PermitUserEnvironment=yes` (see [OpenSSH documentation](https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files#.7E.2F.ssh.2Fenvironment)).
+
++ **Using the `before_ssh` hook**:  
 Alternatively, in case you cannot make it work from within the server, you can achieve the same effect by hooking into the `before_ssh` hook, and defining an environment variable with the command you’d like to run:
 
 ```php
