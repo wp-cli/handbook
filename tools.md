@@ -55,6 +55,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | revision-strike       | [Revision Strike](https://wordpress.org/plugins/revision-strike/)
 | safe-redirect-manager | [Safe Redirect Manager](https://github.com/tlovett1/Safe-Redirect-Manager)
 | scheduled-unsticky    | [Scheduled Unsticky](http://wordpress.org/plugins/scheduled-unsticky/)
+| simple-history        | [Simple History](https://simple-history.com/)
 | site duplicate        | [MultiSite Clone Duplicator](http://wordpress.org/plugins/multisite-clone-duplicator/)
 | stream                | [WP Stream](http://wordpress.org/plugins/stream/)
 | super-cache           | [WP Super Cache CLI](https://github.com/wp-cli/wp-super-cache-cli)
