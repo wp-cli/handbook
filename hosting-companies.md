@@ -19,6 +19,7 @@ In alphabetical order:
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [JDM.pl](https://jdm.pl)
 * [Liquid Web](https://liquidweb.com/wordpress)
+* [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Kinsta](https://kinsta.com)
 * [KnownHost](https://www.knownhost.com)
 * [Media Temple](http://mediatemple.net)
