@@ -18,6 +18,7 @@ In alphabetical order:
 * [Hostinger](https://www.hostinger.com)
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [JDM.pl](https://jdm.pl)
+* [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Liquid Web](https://liquidweb.com/wordpress)
 * [Kinsta](https://kinsta.com)
 * [KnownHost](https://www.knownhost.com)
