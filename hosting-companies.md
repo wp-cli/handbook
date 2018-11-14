@@ -42,6 +42,7 @@ In alphabetical order:
 * [TitanHost](https://titanhost.io/)
 * [TVC.Net](http://TVC.Net/)
 * [WPEngine.com](http://wpengine.com)
+* [WPMU DEV](https://wpmudev.com)
 * [XEL](https://xel.nl)
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
