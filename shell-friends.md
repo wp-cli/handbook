@@ -15,6 +15,13 @@ bck-i-search: wp
 
 When 'bck-i-search' appears, your keystrokes will search against commands saved in your bash history. Hit `return` to run the current selection.
 
+Or another way to search history is grepping the output from the `history` command like:
+
+```bash
+$ history | grep wp
+```
+Any of the commands found in that list can be re-executed by bang-number, so for example if the output says your desired command is #218, you just do `!218`
+
 ###  Combine WP-CLI commands
 
 In many cases, it can be extremely powerful to be able to pass the results of one command to another. Composability is a [key philosophy](https://make.wordpress.org/cli/handbook/philosophy/) of WP-CLI, and there are two common approaches for composing commands.
