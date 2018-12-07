@@ -37,7 +37,7 @@ This command will generate all the files needed for running tests, including a `
 1. Initialize the testing environment locally: `cd` into the plugin directory and run the install script (you will need to have `wget` installed).
 
   ```bash
-  bin/install-wp-tests.sh wordpress_test root '' localhost latest
+  bash bin/install-wp-tests.sh wordpress_test root '' localhost latest
   ```
 
 The install script first installs a copy of WordPress in the `/tmp` directory (by default) as well as the WordPress unit testing tools. Then it creates a database to be used while running tests. The parameters that are passed to `install-wp-tests.sh` setup the test database.
