@@ -73,7 +73,6 @@ Within this package, you should preferably use `vendor/bin/wp` to run the comman
 5. Alias the `wp` command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
 6. Verify WP-CLI was installed properly: `wp --info`
 
-
 Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). The `--prefer-source` flag when installing WP-CLI ensures each command is installed as a Git clone, making it easier to commit to.
 
 Commands available for standalone installation (e.g. `wp dist-archive`) can be installed from source (e.g. `wp package install git@github.com:wp-cli/dist-archive-command.git`). Run `wp package path <package-name>` to find the appropriate directory to edit.
