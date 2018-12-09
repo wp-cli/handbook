@@ -52,14 +52,27 @@ If you need to step away for any reason, make a comment on the pull request or t
 
 ## Setting up
 
-If you haven't submitted a pull request before, you'll want to install WP-CLI for local development:
+If you haven't submitted a pull request before, you'll want to install WP-CLI for local development. Depending on whether you want to work on a particular command/package or on the entire project as a whole, the process is slightly different.
+
+### Working on a specific command/package
+
+1. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have them.
+2. Clone the git repository of the command/package you want to work on to your local machine. As an example for working on the `wp core` command: `hub clone wp-cli/core-command`
+3. Change into the cloned directory and fork WP-CLI: `cd core-command`.
+4. Install all Composer dependencies: `composer install`
+5. Verify WP-CLI was installed properly: `vendor/bin/wp --info`
+
+Within this package, you should preferably use `vendor/bin/wp` to run the command. Just using `wp` should work as well, but by doing that you might run the command through a different version of the framework an thus getting an unexpected result.
+
+### Working on the project as a whole
 
 1. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have them.
 2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
-3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli`. If you are going to work on the core framework itself, run `hub fork` here to create a pushable-repository on Github.
+3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli`. If you are going to work on the core framework itself, run `hub fork` here to create a pushable repository on Github.
 4. Install all Composer dependencies: `composer install --prefer-source`
-5. Alias the `wp` command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
+5. Alias the wp command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
 6. Verify WP-CLI was installed properly: `wp --info`
+
 
 Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from the `vendor/wp-cli` directory (e.g. `vendor/wp-cli/scaffold-command`). The `--prefer-source` flag when installing WP-CLI ensures each command is installed as a Git clone, making it easier to commit to.
 
@@ -81,10 +94,25 @@ Once you've done so, you'll have a fork in your GitHub account and new remote yo
 
 ## Running and writing tests
 
-There are two types of automated tests:
+There are three types of automated tests:
 
+* code style sniffers, implemented using [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer)
 * functional tests, implemented using [Behat](http://behat.org)
 * unit tests, implemented using [PHPUnit](http://phpunit.de/)
+
+### Code style sniffers
+
+The sniffers ensure that the code adheres to a given code style, to avoid unneeded discussions about less relevant details like spacing or alignments.
+
+They also check for known sources of bugs and PHP compatibility problems.
+
+To run the sniffs:
+
+    composer phpcs
+
+To fix the errors and warnings that can be automatically fixed:
+
+    vendor/bin/phpcbf
 
 ### Functional tests
 
@@ -117,23 +145,39 @@ Before running the functional tests, you'll need a MySQL (or MariaDB) user calle
 
 Then, to run the entire test suite:
 
-    ./vendor/bin/behat --expand
+    composer behat
 
 Or to test a single feature:
 
-    ./vendor/bin/behat features/core.feature
+    composer behat -- features/core.feature
 
-More info can be found by using `./vendor/bin/behat --help`.
+To run only the tests that failed during the previous run:
 
-Each repository is configured to run its tests on every code push. The [wp-cli/automated-tests](https://github.com/wp-cli/automated-tests) repository runs all tests for all repositories on a regular basis.
+    composer behat-rerun
+
+More info can be found by using `composer behat -- --help`.
 
 ### Unit tests
 
 The unit test files are in the `tests/` directory.
 
-To run the unit tests, just execute:
+To run the unit tests, execute:
 
-    ./vendor/bin/phpunit
+    composer phpunit
+
+To run a specific unit test, you can use:
+
+    composer phpunit -- filter=<method name>
+
+### Running all tests in one go
+
+To run all tests in one go:
+
+    composer test
+
+This will run all the tests that the package is set up to use, based on the presence of the respective configuration files.
+    
+Each repository is configured to run all of its active tests on every code push. The [wp-cli/automated-tests](https://github.com/wp-cli/automated-tests) repository runs all tests for all repositories on a regular basis.
 
 ## Finally...
 
