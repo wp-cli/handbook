@@ -70,7 +70,7 @@ Within this package, you should preferably use `vendor/bin/wp` to run the comman
 2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
 3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli`. If you are going to work on the core framework itself, run `hub fork` here to create a pushable repository on Github.
 4. Install all Composer dependencies: `composer install --prefer-source`
-5. Alias the wp command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
+5. Alias the `wp` command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
 6. Verify WP-CLI was installed properly: `wp --info`
 
 
