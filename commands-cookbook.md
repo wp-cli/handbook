@@ -430,7 +430,7 @@ $find_unused_themes_command = function() {
 WP_CLI::add_command( 'find-unused-themes', $find_unused_themes_command, array(
 	'before_invoke' => function(){
 		if ( ! is_multisite() ) {
-			WP_CLI::error( 'This is not a multisite install.' );
+			WP_CLI::error( 'This is not a multisite installation.' );
 		}
 	},
 ) );
