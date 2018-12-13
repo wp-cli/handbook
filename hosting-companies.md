@@ -34,6 +34,7 @@ In alphabetical order:
 * [Pantheon](https://pantheon.io)
 * [Pressjitsu](https://pressjitsu.com)
 * [RoseHosting](https://www.rosehosting.com)
+* [Savvii](https://www.savvii.com/)
 * [Seravo.com](https://seravo.com)
 * [Servebolt.com](https://servebolt.com)
 * [Site5](http://www.site5.com/)
