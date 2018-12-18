@@ -17,6 +17,22 @@ $ wp find ./
 +--------------------------------------+---------------------+-------+--------+
 ```
 
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for each installation:
+
+* version_path - Path to the version.php file.
+* version - WordPress version.
+* depth - Directory depth at which the installation was found.
+* alias - WP-CLI alias, if one is registered.
+
+These fields are optionally available:
+
+* wp_path - Path that can be passed to `--path=&lt;path&gt;` global parameter.
+* db_host - Host name for the database.
+* db_user - User name for the database.
+* db_name - Database name for the database.
+
 ### OPTIONS
 
 &lt;path&gt;
@@ -61,7 +77,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
