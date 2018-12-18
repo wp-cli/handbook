@@ -39,7 +39,10 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 [\--skip-js]
 : Skips JavaScript string extraction. Useful when this is done in another build step, e.g. through Babel.
 
-[\--file-comment]
+[\--skip-audit]
+: Skips string audit where it tries to find possible mistakes in translatable strings. Useful when running in an automated environment.
+
+[\--file-comment=&lt;file-comment&gt;]
 : String that should be added as a comment to the top of the resulting POT file. By default, a copyright comment is added for WordPress plugins and themes in the following manner:
 
 		```
@@ -74,7 +77,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |

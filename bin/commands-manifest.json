@@ -447,6 +447,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/alias.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
     },
+    "cli\/cache": {
+        "title": "cli cache",
+        "slug": "cache",
+        "cmd_path": "cli\/cache",
+        "parent": "cli",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/cache.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
     "cli\/check-update": {
         "title": "cli check-update",
         "slug": "check-update",
@@ -983,6 +991,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/embed\/provider.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/embed-command"
     },
+    "i18n\/make-json": {
+        "title": "i18n make-json",
+        "slug": "make-json",
+        "cmd_path": "i18n\/make-json",
+        "parent": "i18n",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/i18n\/make-json.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
+    },
     "i18n\/make-pot": {
         "title": "i18n make-pot",
         "slug": "make-pot",
@@ -1349,6 +1365,14 @@
         "cmd_path": "post\/edit",
         "parent": "post",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post\/edit.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "post\/exists": {
+        "title": "post exists",
+        "slug": "exists",
+        "cmd_path": "post\/exists",
+        "parent": "post",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/post\/exists.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "post\/generate": {
@@ -1935,6 +1959,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/transient\/get.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
     },
+    "transient\/list": {
+        "title": "transient list",
+        "slug": "list",
+        "cmd_path": "transient\/list",
+        "parent": "transient",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/transient\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
+    },
     "transient\/set": {
         "title": "transient set",
         "slug": "set",
@@ -2167,6 +2199,22 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/widget\/update.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/widget-command"
     },
+    "cli\/cache\/clear": {
+        "title": "cli cache clear",
+        "slug": "clear",
+        "cmd_path": "cli\/cache\/clear",
+        "parent": "cli\/cache",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/cache\/clear.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
+    "cli\/cache\/prune": {
+        "title": "cli cache prune",
+        "slug": "prune",
+        "cmd_path": "cli\/cache\/prune",
+        "parent": "cli\/cache",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/cache\/prune.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
     "comment\/meta\/add": {
         "title": "comment meta add",
         "slug": "add",
@@ -2317,14 +2365,6 @@
         "cmd_path": "language\/core\/activate",
         "parent": "language\/core",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/language\/core\/activate.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/language-command"
-    },
-    "language\/core\/activate_language": {
-        "title": "language core activate_language",
-        "slug": "activate_language",
-        "cmd_path": "language\/core\/activate_language",
-        "parent": "language\/core",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/language\/core\/activate_language.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/language-command"
     },
     "language\/core\/install": {

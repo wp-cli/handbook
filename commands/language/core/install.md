@@ -16,7 +16,12 @@ Downloads the language pack from WordPress.org.
 
     # Install the Japanese language.
     $ wp language core install ja
-    Success: Language installed.
+    Downloading translation from https://downloads.wordpress.org/translation/core/4.9.8/ja.zip...
+    Unpacking the update...
+    Installing the latest version...
+    Translation updated successfully.
+    Language 'ja' installed.
+    Success: Installed 1 of 1 languages.
 
 ### GLOBAL PARAMETERS
 
@@ -27,7 +32,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |

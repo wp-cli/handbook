@@ -4,15 +4,15 @@ Installs, activates, and manages plugin language packs.
 
 ### EXAMPLES
 
-    # Install the Dutch theme language pack.
+    # Install the Dutch plugin language pack.
     $ wp language plugin install hello-dolly nl_NL
     Success: Language installed.
 
-    # Uninstall the Dutch theme language pack.
+    # Uninstall the Dutch plugin language pack.
     $ wp language plugin uninstall hello-dolly nl_NL
     Success: Language uninstalled.
 
-    # List installed theme language packages.
+    # List installed plugin language packages.
     $ wp language plugin list --status=installed
     +----------+--------------+-------------+-----------+-----------+---------------------+
     | language | english_name | native_name | status    | update    | updated             |

@@ -28,9 +28,20 @@ For a more complete explanation of the transient cache, including the network|si
     $ wp transient delete --expired
     Success: 12 expired transients deleted from the database.
 
+    # Delete expired site transients.
+    $ wp transient delete --expired --network
+    Success: 1 expired transient deleted from the database.
+
     # Delete all transients.
     $ wp transient delete --all
     Success: 14 transients deleted from the database.
+
+    # Delete all site transients.
+    $ wp transient delete --all --network
+    Success: 2 transients deleted from the database.
+
+    # Delete all transients in a multsite.
+    $ wp transient delete --all --network &amp;&amp; wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all
 
 ### GLOBAL PARAMETERS
 
@@ -41,7 +52,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
