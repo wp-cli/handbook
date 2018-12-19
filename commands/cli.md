@@ -19,4 +19,8 @@ Review current WP-CLI info, check for updates, or see defined aliases.
     New version works. Proceeding to replace.
     Success: Updated WP-CLI to 0.24.1.
 
+    # Clear the internal WP-CLI cache.
+    $ wp cli cache clear
+    Success: Cache cleared.
+
 

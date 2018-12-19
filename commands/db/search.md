@@ -123,6 +123,16 @@ They can be concatenated. For instance, the default match color of black on a mu
         ...
     Success: Found 99146 matches in 10.752s (10.559s searching). Searched 12 tables, 53 columns, 1358907 rows. 1 table skipped: wp_term_relationships.
 
+    # SQL search database table 'wp_options' where 'option_name' match 'foo'
+    wp db query 'SELECT * FROM wp_options WHERE option_name like "%foo%"' --skip-column-names
+    +----+--------------+--------------------------------+-----+
+    | 98 | foo_options  | a:1:{s:12:"_multiwidget";i:1;} | yes |
+    | 99 | foo_settings | a:0:{}                         | yes |
+    +----+--------------+--------------------------------+-----+
+
+    # SQL search and delete records from database table 'wp_options' where 'option_name' match 'foo'
+    wp db query "DELETE from wp_options where option_id in ($(wp db query "SELECT GROUP_CONCAT(option_id SEPARATOR ',') from wp_options where option_name like '%foo%';" --silent --skip-column-names))"
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -132,7 +142,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
