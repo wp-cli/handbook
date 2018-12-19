@@ -17,7 +17,7 @@ Opens a MySQL console using credentials from wp-config.php
 : Password to pass to mysql. Defaults to DB_PASSWORD.
 
 [\--&lt;field&gt;=&lt;value&gt;]
-: Extra arguments to pass to mysql.
+: Extra arguments to pass to mysql. [Refer to mysql docs](https://dev.mysql.com/doc/en/mysql-command-options.html).
 
 ### EXAMPLES
 
@@ -34,7 +34,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
