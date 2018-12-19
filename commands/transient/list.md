@@ -1,8 +1,59 @@
-# wp language core activate_language
+# wp transient list
 
+Lists transients and their values.
 
+### OPTIONS
 
+[\--search=&lt;pattern&gt;]
+: Use wildcards ( * and ? ) to match transient name.
 
+[\--exclude=&lt;pattern&gt;]
+: Pattern to exclude. Use wildcards ( * and ? ) to match transient name.
+
+[\--network]
+: Get the values of network|site transients. On single site, this is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
+
+[\--unserialize]
+: Unserialize transient values in output.
+
+[\--human-readable]
+: Human-readable output for expirations.
+
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific object fields.
+
+[\--format=&lt;format&gt;]
+: The serialization format for the value.
+\---
+default: table
+options:
+  - table
+  - json
+  - csv
+  - count
+  - yaml
+\---
+
+### AVAILABLE FIELDS
+
+This field will be displayed by default for each matching option:
+
+* name
+* value
+* expiration
+
+### EXAMPLES
+
+    # List all transients
+    $ wp transient list
+     +------+-------+---------------+
+     | name | value | expiration    |
+     +------+-------+---------------+
+     | foo  | bar   | 39 mins       |
+     | foo2 | bar2  | no expiration |
+     | foo3 | bar2  | expired       |
+     | foo4 | bar4  | 4 hours       |
+     +------+-------+---------------+
 
 ### GLOBAL PARAMETERS
 
@@ -13,7 +64,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
-| `--http=<http>` | Perform operation against a remote WordPress install over HTTP. |
+| `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
