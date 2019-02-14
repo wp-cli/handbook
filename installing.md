@@ -109,8 +109,8 @@ Just follow the normal [installation instructions](/#install), except change the
 Add the following line to your projects `composer.json` file:
 
     "require" : {
-    	"wp-cli/wp-cli" : "~0.22",
-    	"psy/psysh" : "~0.6"
+    	"wp-cli/wp-cli-bundle": "*",
+        "psy/psysh": "*"
     }
 
 where the `psy/psysh` package is just a _suggestion_ by the WP CLI package and _optional_.
