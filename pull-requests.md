@@ -156,6 +156,8 @@ To run only the tests that failed during the previous run:
 
 More info can be found by using `composer behat -- --help`.
 
+**Note: If you are using MySQL >= 8.0, you may experience inconsistencies with WP-CLI successfully connecting to the database. MySQL 8.0 changed the default authentication plugin and some clients (such as PHP) do not yet support this change. More information can be found on [this blog post](https://jonathandesrosiers.com/2019/02/trouble-connecting-to-database-when-using-mysql-8-x/).**
+
 ### Unit tests
 
 The unit test files are in the `tests/` directory.
