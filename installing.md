@@ -114,7 +114,9 @@ Add the following line to your projects `composer.json` file:
 
 To add any additional suggested packages seen in the `wp-cli-bundle` package, such as `psy/psysh`, run: 
 
-`composer require --dev $(composer suggests --by-package | awk '/wp-cli\/wp-cli-bundle/' RS= | grep -o -P '(?<=- ).*(?=:)')`
+```
+composer require --dev $(composer suggests --by-package | awk '/wp-cli\/wp-cli-bundle/' RS= | grep -o -P '(?<=- ).*(?=:)')
+```
 
 Optionally (if run on a server or for e.g. in a virtual machine locally) you can automate setting up the command and making it available in the users path. Let's assume _Composer_ installed into `/var/www/vendor` (you can get the composer `vendor-dir` config variable specific to your machine via `composer config --list | grep "\[vendor-dir\]"`), we can add the following `scripts`/commands to the `composer.json` file. The second and third line set up [bash completion](https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash) so we don't have to remember every single command:
 
