@@ -109,13 +109,16 @@ Just follow the normal [installation instructions](/#install), except change the
 Add the following line to your projects `composer.json` file:
 
     "require" : {
-    	"wp-cli/wp-cli" : "~0.22",
-    	"psy/psysh" : "~0.6"
+    	"wp-cli/wp-cli-bundle": "*"
     }
 
-where the `psy/psysh` package is just a _suggestion_ by the WP CLI package and _optional_.
+To add any additional suggested packages seen in the `wp-cli-bundle` package, such as `psy/psysh`, run: 
 
-Optionally (if run on a server or for e.g. in a virtual machine locally) you can automate setting up the command and making it available in the users path. Let's assume _Composer_ installed into `/var/www/vendor`, we can add the following `scripts`/commands to the `composer.json` file. The second and third line set up [bash completion](https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash) so we don't have to remember every single command:
+```
+composer require --dev $(composer suggests --by-package | awk '/wp-cli\/wp-cli-bundle/' RS= | grep -o -P '(?<=- ).*(?=:)')
+```
+
+Optionally (if run on a server or for e.g. in a virtual machine locally) you can automate setting up the command and making it available in the users path. Let's assume _Composer_ installed into `/var/www/vendor` (you can get the composer `vendor-dir` config variable specific to your machine via `composer config --list | grep "\[vendor-dir\]"`), we can add the following `scripts`/commands to the `composer.json` file. The second and third line set up [bash completion](https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash) so we don't have to remember every single command:
 
     "scripts" : {
     	"post-install-cmd" : [
@@ -146,13 +149,13 @@ In case you got `bash` available and installed for your OS, you can switch dynam
 
 Needs `php` and `composer` (or `php composer.phar`) set up as console commands.
 
-    composer create-project wp-cli/wp-cli --prefer-source
+    composer create-project wp-cli/wp-cli-bundle --prefer-source
 
-Then run `wp-cli/bin/wp` or add `wp-cli/bin` folder to `PATH` for global `wp` command (on Windows, use `wp-cli/bin/wp.bat` instead).
+Then run `wp-cli-bundle/vendor/wp-cli/wp-cli/bin/wp` or add `wp-cli-bundle/vendor/wp-cli/wp-cli/bin` folder to `PATH` for global `wp` command (on Windows, use `wp-cli/bin/wp.bat` instead).
 
 To update, you'll need to:
 
-    cd wp-cli
+    cd wp-cli-bundle
     git pull origin master
     composer install
 
@@ -160,7 +163,7 @@ To update, you'll need to:
 
 If you prefer to have PHP tools installed globally via Composer and have something like `~/.composer/vendor/bin` in your PATH (or `C:\Users\you\AppData\Roaming\Composer\vendor\bin` on Windows), you can just run:
 
-    composer global require wp-cli/wp-cli
+    composer global require wp-cli/wp-cli-bundle
 
 To update everything globally, run `composer global update`.
 
@@ -168,8 +171,7 @@ To update everything globally, run `composer global update`.
 
 If you want to install a specific version of WP-CLI then append the version numbers behind the packages
 
-
-    composer create-project wp-cli/wp-cli:0.22.0 --no-dev
+    composer create-project wp-cli/wp-cli-bundle:2.1.0 --no-dev
 
 The version must be in a [format](https://getcomposer.org/doc/04-schema.md#version) that Composer can understand and can be found on [packagist.org](https://packagist.org/packages/wp-cli/wp-cli).
 
@@ -177,17 +179,17 @@ The version must be in a [format](https://getcomposer.org/doc/04-schema.md#versi
 
 If you want to install bleeding-edge then use `dev-master`:
 
-    composer create-project wp-cli/wp-cli:dev-master --no-dev
+    composer create-project wp-cli/wp-cli-bundle:dev-master --no-dev
 
 #### Installing globally as a project
 
 You can specify a custom install path for WP-CLI, like so:
 
-    composer create-project wp-cli/wp-cli /usr/share/wp-cli --no-dev
+    composer create-project wp-cli/wp-cli-bundle /usr/share/wp-cli --no-dev
 
 Then, just symlink the binary:
 
-    sudo ln -s /usr/share/wp-cli/bin/wp /usr/bin/wp
+    sudo ln -s /usr/share/wp-cli-bundle/vendor/wp-cli/wp-cli/bin /usr/bin/wp
 
 ### Installing via Homebrew
 
