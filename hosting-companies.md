@@ -11,6 +11,7 @@ In alphabetical order:
 * [Bluehost](http://www.bluehost.com/)
 * [Byte](https://www.byte.nl)
 * [Cloudways](http://cloudways.com)
+* [D9 Hosting](https://d9.hosting)
 * [Dreamhost](http://dreamhost.com)
 * [FatCow](http://www.fatcow.com/wordpress-hosting/)
 * [GoDaddy](https://www.godaddy.com/help/accessing-wp-cli-on-your-managed-wordpress-account-12066)
