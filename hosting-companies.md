@@ -15,6 +15,7 @@ In alphabetical order:
 * [Dreamhost](http://dreamhost.com)
 * [FatCow](http://www.fatcow.com/wordpress-hosting/)
 * [GoDaddy](https://www.godaddy.com/help/accessing-wp-cli-on-your-managed-wordpress-account-12066)
+* [GreenGeeks](https://www.greengeeks.com/tutorials/article/wp-cli/)
 * [Host4Geeks](https://host4geeks.com/managed-wordpress-hosting)
 * [HostGalaxy](https://www.hostgalaxy.com)
 * [HostGator](http://www.hostgator.com)
