@@ -8,7 +8,7 @@ a) you're using MAMP, but WP-CLI is not using the MAMP PHP binary.
 
 You can check which PHP WP-CLI is using by running `wp --info`.
 
-If you need to specify an alternate PHP binary, see [using a custom PHP binary](http://wp-cli.org/docs/installing/#using-a-custom-php-binary).
+If you need to specify an alternate PHP binary, see [using a custom PHP binary](https://make.wordpress.org/cli/handbook/installing/#using-a-custom-php-binary).
 
 b) it's a WordPress multisite install.
 
