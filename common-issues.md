@@ -90,6 +90,19 @@ Set `memory_limit` on the fly as a temporary fix:
 $ php -d memory_limit=512M "$(which wp)" package install <package-name>
 ```
 
+If you still run into a PHP fatal error, try these steps:
+
+1. Restart PHP.
+2. Check for additional php.ini files:
+
+```bash
+$ php -i | grep additional
+Scan this dir for additional .ini files => /usr/local/etc/php/7.1/conf.d
+# Edit the additional file(s) and increase the memory_limit to 51M or greater
+$ vim /usr/local/etc/php/7.1/conf.d
+memory_limit = 512M
+```
+
 ### Error: YIKES! It looks like you're running this as root.
 
 Running WP-CLI as root is extremely dangerous. When you execute WP-CLI as root, any code within your WordPress instance (including third-party plugins and themes you've installed) will have full privileges to the entire server. This can enable malicious code within the WordPress instance to compromise the entire server.
