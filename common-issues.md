@@ -90,7 +90,7 @@ Set `memory_limit` on the fly as a temporary fix:
 $ php -d memory_limit=512M "$(which wp)" package install <package-name>
 ```
 
-If you still run into a PHP fatal error, try these steps:
+If your PHP process is still running out of memory, try these steps:
 
 1. Restart PHP.
 2. Check for additional php.ini files:
