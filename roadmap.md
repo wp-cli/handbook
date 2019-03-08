@@ -2,14 +2,14 @@
 
 WP-CLI is released every 3-4 months, typically around the beta period of [WordPress's release cycle](https://wordpress.org/about/roadmap/):
 
-* Current: [v2.0.1](https://github.com/wp-cli/wp-cli/releases/tag/v2.0.1) (August 24, 2018)
+* Current: [v2.1.0](https://github.com/wp-cli/wp-cli/releases/tag/v2.1.0) (December 18, 2018)
 
 Patch versions are released on an as-needed basis, usually to address bugs or regressions. The current version of WP-CLI is the only officially supported version.
 
-Just like WordPress has plugins, the future of WP-CLI is packages of commands. WP-CLI's current product focus is to:
+The current longer-term goals of the project are:
 
-* Help packages be considered first-class citizens amongst the commands bundled with WP-CLI (in build quality, documentation, test coverage, and discoverability).
-* Encourage package maintenance to be a communal activity, instead of falling upon a single person.
+* Improve contributor onboarding by streamlining development environment setup, testing and documentation.
+* Rethink the role of WP-CLI scaffolding as an educational tool and a practical application of best practices.
 
 New features are developed as packages first. Doing so enables:
 
@@ -19,4 +19,4 @@ New features are developed as packages first. Doing so enables:
 
 To suggest new ideas, head on over to the [wp-cli/ideas](https://github.com/wp-cli/ideas) repository.
 
-For more details on how WP-CLI releases are produced, please see [Philosophy](https://make.wordpress.org/cli/handbook/philosophy/) and [Governance](https://make.wordpress.org/cli/handbook/governance/).
+For more details on how WP-CLI releases are produced, please see [Philosophy](https://make.wordpress.org/cli/handbook/philosophy/) and [Governance](https://make.wordpress.org/cli/handbook/governance/). For more information about how WP-CLI handles its requirements, please see [WP-CLI PHP Requirements Strategy](https://make.wordpress.org/cli/2019/01/15/wp-cli-php-requirements-strategy/).
