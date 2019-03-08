@@ -98,7 +98,7 @@ If you still run into a PHP fatal error, try these steps:
 ```bash
 $ php -i | grep additional
 Scan this dir for additional .ini files => /usr/local/etc/php/7.1/conf.d
-# Edit the additional file(s) and increase the memory_limit to 51M or greater
+# Edit the additional file(s) and increase the memory_limit to 512M or greater
 $ vim /usr/local/etc/php/7.1/conf.d
 memory_limit = 512M
 ```
