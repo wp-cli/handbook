@@ -121,10 +121,10 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 chmod +x wp-cli.phar
 mv chmod +x wp-cli.phar wp
 ```
-If `$HOME/bin` is not already in your path, then you can define it in `~/.bash_profile` or `.profile`:
+If `$HOME/bin` is not already in your path, then you can define it in your `~/.bashrc` file or equivalent for your remote server's specific shell:
 
 ```sh
-#.bash_profile or .profile
+#.bashrc
 PATH="$HOME/bin:$PATH"
 ```
 
