@@ -139,7 +139,7 @@ class Example_Command {
 	 * ## OPTIONS
 	 *
 	 * <name>
-	 * : The name of the person to greet.
+	 * The name of the person to greet.
 	 *
 	 * [--type=<type>]
 	 * : Whether or not to greet the person with success or error.
