@@ -215,7 +215,6 @@ Options defined in the longdesc are interpreted as the command's **synopsis**:
 	 * [--<field>=<value>]
 	 * : Allow unlimited number of associative parameters.
 ```
-
 A command's synopsis is used for validating the arguments, before passing them to the implementation.
 
 The longdesc is also displayed when calling the `help` command, for example, `wp help example hello`. Its syntax is [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and here are a few more notes on how it's handled by WP-CLI:
