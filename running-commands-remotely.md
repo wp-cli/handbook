@@ -2,10 +2,11 @@
 
 ## Using an SSH connection
 
-WP-CLI accepts an `--ssh=[<user>@]<host>[:<port>][<path>]` global parameter for running a command against a remote WordPress install. This argument works similarly to how the SSH connection is parameterized in tools like `scp` or `git`.
+WP-CLI accepts an `--ssh=[<scheme>][<user>@]<host>[:<port>][<path>]` global parameter for running a command against a remote WordPress install. This argument works similarly to how the SSH connection is parameterized in tools like `scp` or `git`.
 
-Under the hood, WP-CLI proxies commands to the ssh executable, which then passes them to the WP-CLI installed on the remote machine. The syntax for `--ssh=[<user>@]<host>[:<port>][<path>]` is interpreted according to the following rules:
+Under the hood, WP-CLI proxies commands to the ssh executable, which then passes them to the WP-CLI installed on the remote machine. The syntax for `--ssh=[<scheme>][<user>@]<host>[:<port>][<path>]` is interpreted according to the following rules:
 
+* The **scheme** argument defaults to `ssh` and alternately accepts options for `vagrant`, `docker` and `docker-compose`.
 * If you provide just the **host** (e.g. `wp --ssh=example.com`), the user will be inferred from your current system user, the port will be the default SSH port (22) and the path will be the SSH user’s home directory.
 * You can override the **user** by adding it as a prefix terminated by the at sign (e.g. `wp --ssh=admin_user@example.com`).
 * You can override the **port** by adding it as a suffix prepended by a colon (e.g. `wp --ssh=example.com:2222`). 
