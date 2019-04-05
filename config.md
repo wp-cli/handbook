@@ -299,6 +299,7 @@ WP-CLI's behavior can be changed at runtime through the use of environment varia
 
 * `WP_CLI_CACHE_DIR` - Directory to store the WP-CLI file cache. Default is `~/.wp-cli/cache/`.
 * `WP_CLI_CONFIG_PATH` - Path to the global `config.yml` file. Default is `~/.wp-cli/config.yml`.
+* `WP_CLI_CUSTOM_SHELL` - Allows the user to override the default `/bin/bash` shell used.
 * `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` - Disable WP-CLI automatic checks for updates.
 * `WP_CLI_PACKAGES_DIR` - Directory to store packages installed through WP-CLI's package management. Default is `~/.wp-cli/packages/`.
 * `WP_CLI_PHP` - PHP binary path to use when overriding the system default (only works for non-Phar installation).
