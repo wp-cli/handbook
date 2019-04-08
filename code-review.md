@@ -18,7 +18,7 @@ We're currently using Github for everything. Read up on [our Github workflow](ht
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
 - The developer will make changes suggested, discuss the issue for clarity, and may mention the reviewer when they are satisfied with their work.
 - If a pull request needs final cleanup before merging, or has been abandoned, the [reviewer can commit directly to the branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/). However, avoid rewriting code without consultation.
-- When the reviewer is satisfied with changes, they can either merge or assign the pull request a second reviewer for merge. The original developer (and ideally the reviewer) should both be available for a couple of days post-merge to address any issues that arise.
+- When the reviewer is satisfied with changes, they can either merge or assign the pull request to a second reviewer for merge. The original developer (and ideally the reviewer) should both be available for a couple of days post-merge to address any issues that arise.
 
 ## What code review is
 
