@@ -36,16 +36,10 @@ If you have a great deal of output to share, please [create a GitHub gist](https
 
 Your bug may also be environment-specific. Because WP-CLI is a tool whose behavior is different from system to system, please include some environmental details in your issue if you think they're relevant.
 
-    # What is your system?
-    lsb_release -a
-    uname -a
-    # Which version of PHP are you using?
-    which -a php
-    php -v
+    # What PHP environment does WP-CLI run in?
+    wp cli info
     # Are you running suhosin? If so, make sure you've added `suhosin.executor.include.whitelist = phar` to your php.ini
     php -m | grep -i suhosin
-    # Which version of WordPress are you using?
-    grep '^\$wp_version\s' wp-includes/version.php
     # Can you share the results of which wp ?
     which -a wp
     stat $(which wp)
