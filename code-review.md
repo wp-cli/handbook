@@ -13,7 +13,7 @@ We're currently using Github for everything. Read up on [our Github workflow](ht
 - On every commit pushed to a GH branch, our CI automated tests -- linting for all code, unit tests for functional code, and ideally, behavioral and automated acceptance testing -- are run on Travis.
 - If the build passes, the PR can be reviewed. If not, the original developer is responsible for getting the build to the point where it passes.
 - When the original developer is satisfied with their work, they can request review from the [committers team](https://make.wordpress.org/cli/handbook/committers-credo/) by assigning `@wp-cli/committers` for review.
-- Simple pull requests can often be merged by the developer who reviews them. More complex changesets will often require conversations back and forth between reviewer, developer and should have secondary reviewers.
+- Simple pull requests can often be merged by the developer who reviews them. More complex changesets will often require conversations back and forth between reviewer and developer, and should have secondary reviewers.
 - Github's "Files Changed" tab is a good place to leave inline comments on specific parts of the changeset. More general comments can be left on the pull request's "Conversation" tab.
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
 - The developer will make changes suggested, discuss the issue for clarity, and may mention the reviewer when they are satisfied with their work.
