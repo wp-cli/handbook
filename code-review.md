@@ -8,7 +8,7 @@ Code review is a core part of the WP-CLI project's software development workflow
 
 ## A typical code review workflow
 
-We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler, because each review stage will be looking at a small code.
+We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler because each review stage will be looking at a small code.
 
 - On every commit pushed to a GH branch, our CI automated tests -- linting for all code, unit tests for functional code, and ideally, behavioral and automated acceptance testing -- are run on Travis.
 - If the build passes, the PR can be reviewed. If not, the original developer is responsible for getting the build to the point where it passes.
@@ -17,7 +17,7 @@ We're currently using Github for everything. Read up on [our Github workflow](ht
 - Github's "Files Changed" tab is a good place to leave inline comments on specific parts of the changeset. More general comments can be left on the pull request's "Conversation" tab.
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
 - The developer will make changes suggested, discuss the issue for clarity, and may mention the reviewer when they are satisfied with their work.
-- If a pull request needs final cleanup before merging, or has been abandoned, the [reviewer can commit directly to the branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/). However, avoid rewriting code without consultation.
+- If a pull request needs final cleanup before merging or has been abandoned, the [reviewer can commit directly to the branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/). However, avoid rewriting code without consultation.
 - When the reviewer is satisfied with changes, they can either merge or assign the pull request to a second reviewer for merge. The original developer (and ideally the reviewer) should both be available for a couple of days post-merge to address any issues that arise.
 
 ## What code review is
@@ -42,7 +42,7 @@ Next, check for readability. Functions, variables, and files should be named cle
 
 As readability is inherently subjective, this requires the ability to look back from the immediate code changes to the bigger picture. Think of someone months down the road trying to trace a given code path through the current changeset. Are there unnecessary steps that could be simplified? Are code comments and inline documentation robust enough to recreate the thought process behind the code?
 
-Finally, check for elegance and overall quality. Code should follow existing and known patterns, so that others can understand it at a glance. If a change introduces a chance to refactor surrounding functionality, to abstract and standardize old code into new patterns, suggest those opportunities. 
+Finally, check for elegance and overall quality. Code should follow existing and known patterns so that others can understand it at a glance. If a change introduces a chance to refactor surrounding functionality, to abstract and standardize old code into new patterns, suggest those opportunities. 
 
 ### How to receive code review
 
@@ -54,4 +54,4 @@ It's best to respond to the issues addressed by the reviewer as quickly as possi
 
 * [Glen Sanford: On code review](http://glen.nu/ramblings/oncodereview.php) - "Pending code reviews represent blocked threads of execution[, code review should always be your top priority]"
 
-* [The Ten Commandments of Egoless Programming](http://www.techrepublic.com/article/the-ten-commandments-of-egoless-programming/) - "Understand and accept that you will make mistakes. The point is to find them early, before they make it into production." 
+* [The Ten Commandments of Egoless Programming](http://www.techrepublic.com/article/the-ten-commandments-of-egoless-programming/) - "Understand and accept that you will make mistakes. The point is to find them early before they make it into production." 
