@@ -11,7 +11,7 @@ Delete a meta field.
 : The name of the meta field to delete.
 
 [&lt;value&gt;]
-: The value to delete. If omitted, all rows with key will deleted.
+: The value to delete. If omitted, all rows with the key will be deleted.
 
 [\--all]
 : Delete all meta for the object.
