@@ -19,7 +19,3 @@ Schedules, runs, and deletes WP-Cron events.
     # List scheduled cron events in JSON
     $ wp cron event list --fields=hook,next_run --format=json
     [{"hook":"wp_version_check","next_run":"2016-05-31 10:15:13"},{"hook":"wp_update_plugins","next_run":"2016-05-31 10:15:13"},{"hook":"wp_update_themes","next_run":"2016-05-31 10:15:14"}]
-
-
-
-
