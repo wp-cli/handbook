@@ -13,7 +13,3 @@ Gets WP-Cron schedules.
     | twicedaily | Twice Daily | 43200    |
     | daily      | Once Daily  | 86400    |
     +------------+-------------+----------+
-
-
-
-
