@@ -11,7 +11,3 @@ Manages the internal WP-CLI cache,.
     # Remove all cached files except for the newest version of each one.
     $ wp cli cache prune
     Success: Cache pruned.
-
-
-
-
