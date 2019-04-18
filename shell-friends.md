@@ -176,7 +176,7 @@ Explanation
 
 Add this function to your ~/.bashrc are reload your shell (or open a new shell).
 You'll need to substitute these database credentials with your own.
-When You'll need to create a new site and install wordpress, call this function and specify the
+When You need to create a new WordPress site, call this function and specify the
 name of the directory where you want to create the site. This emulates the
 web-based install process.
 
