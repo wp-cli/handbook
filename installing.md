@@ -169,7 +169,7 @@ To update everything globally, run `composer global update`.
 
 **Installing a specific version**
 
-If you want to install a specific version of WP-CLI then append the version numbers behind the packages
+If you want to install a specific version of WP-CLI then append the version numbers behind the packages:
 
     composer create-project wp-cli/wp-cli-bundle:2.1.0 --no-dev
 
@@ -226,7 +226,7 @@ You can now use WP-CLI from anywhere in Windows command line.
 
 ### Installing via .deb package
 
-On Debian or Ubuntu, just download and open one of the .deb packages: <https://github.com/wp-cli/builds/tree/gh-pages/deb>
+On Debian or Ubuntu, just download and open one of the .deb packages: <https://github.com/wp-cli/builds/tree/gh-pages/deb>.
 
 
 ### Using a custom PHP binary
@@ -254,4 +254,4 @@ For Composer and Git-based WP-CLI installation, you can alternatively set the `W
 
 ### Installing on MediaTemple
 
-See [http://razorfrog.com/installing-wp-cli-on-mediatemple-grid-server/](http://razorfrog.com/installing-wp-cli-on-mediatemple-grid-server/)
+See [http://razorfrog.com/installing-wp-cli-on-mediatemple-grid-server/](http://razorfrog.com/installing-wp-cli-on-mediatemple-grid-server/).
