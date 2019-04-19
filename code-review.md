@@ -52,6 +52,6 @@ It's best to respond to the issues addressed by the reviewer as quickly as possi
 
 ## Additional readings
 
-* [Glen Sanford: On code review](http://glen.nu/ramblings/oncodereview.php) - "Pending code reviews represent blocked threads of execution[, code review should always be your top priority]"
+* [Glen Sanford: On code review](http://glen.nu/ramblings/oncodereview.php) - "Pending code reviews represent blocked threads of execution[ code review should always be your top priority]"
 
 * [The Ten Commandments of Egoless Programming](http://www.techrepublic.com/article/the-ten-commandments-of-egoless-programming/) - "Understand and accept that you will make mistakes. The point is to find them early before they make it into production." 
