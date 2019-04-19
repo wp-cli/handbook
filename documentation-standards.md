@@ -48,11 +48,11 @@ To break the example down piece by piece:
 * The options section should begin with `## OPTIONS`. Keep a blank line before and after the heading.
 * Each option should be named in a manner that concisely describes its purpose.
 * Example section should start with `## EXAMPLES`. Keep blank line before and after the heading.
-* Include a blank line before and after each example to help visually indicate each as a separate example
+* Include a blank line before and after each example to help visually indicate each as a separate example.
 * Each example should have 3 parts.
     - Description
         + Must start with `#` and a space.
-        + Sentence should start with capital letter
+        + Sentence should start with capital letter.
         + Comment must end in full-stops, exclamation marks, or question marks.
         + Eg: `# Create database.`
     - Command
