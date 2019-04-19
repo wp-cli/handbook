@@ -13,7 +13,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | any-ipsum             | [Any Ipsum](https://wordpress.org/plugins/any-ipsum/)
 | backup                | [BackUpWordPress](http://wordpress.org/extend/plugins/backupwordpress/)
 | backupbuddy           | [BackupBuddy](http://getbackupbuddy.com/)
-| backwpup              | [BackWPup](https://marketpress.de/product/backwpup-pro/)
+| backwpup              | [BackWPup](https://wordpress.org/plugins/backwpup/)
 | blog-dupe             | [blog-duplicator](https://github.com/trepmal/blog-duplicator)
 | camptix               | [CampTix](https://github.com/Automattic/camptix)
 | check-content         | [CheckContent](https://github.com/mattclegg/wp-cli_check-content)
