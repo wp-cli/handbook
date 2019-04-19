@@ -45,7 +45,7 @@ WP-CLI also has a [series of global arguments](https://make.wordpress.org/cli/ha
 
 ### Required registration arguments
 
-When registering a command, `WP_CLI::add_command()` requires two arguments::
+When registering a command, `WP_CLI::add_command()` requires two arguments:
 
 1. `$name` is the command's name within WP-CLI's namespace (e.g. `plugin install` or `post list`).
 2. `$callable` is the implementation of the command, as a callable class, function, or closure.
