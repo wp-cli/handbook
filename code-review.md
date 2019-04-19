@@ -1,6 +1,6 @@
 # Code Review
 
-Code review is a core part of the WP-CLI project's software development workflow. Code review and pairing on code are necessary to maintain quality output, as well as build cohesive styles in our work. Having a well-understood and cohesive style can make all our work easier to approach and maintain for new as well as established developers. If done right, code review can also be a learning process for all involved. Here's [a typical code review workflow](#a-typical-code-review-workflow):
+Code review is a core part of the WP-CLI project's software development workflow. Code review and pairing on the code are necessary to maintain quality output, as well as build cohesive styles in our work. Having a well-understood and cohesive style can make all our work easier to approach and maintain for new as well as established developers. If done right, a code review can also be a learning process for all involved. Here's [a typical code review workflow](#a-typical-code-review-workflow):
 
 - [What code review is](#what-code-review-is)
 - [How to review code](#how-to-review-code)
@@ -8,11 +8,11 @@ Code review is a core part of the WP-CLI project's software development workflow
 
 ## A typical code review workflow
 
-We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler because each review stage will be looking at a small code.
+We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of the process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler because each review stage will be looking at a small code.
 
 - On every commit pushed to a GH branch, our CI automated tests -- linting for all code, unit tests for functional code, and ideally, behavioral and automated acceptance testing -- are run on Travis.
 - If the build passes, the PR can be reviewed. If not, the original developer is responsible for getting the build to the point where it passes.
-- When the original developer is satisfied with their work, they can request review from the [committers team](https://make.wordpress.org/cli/handbook/committers-credo/) by assigning `@wp-cli/committers` for review.
+- When the original developer is satisfied with their work, they can request a review from the [committers team](https://make.wordpress.org/cli/handbook/committers-credo/) by assigning `@wp-cli/committers` for review.
 - Simple pull requests can often be merged by the developer who reviews them. More complex changesets will often require conversations back and forth between reviewer and developer, and should have secondary reviewers.
 - Github's "Files Changed" tab is a good place to leave inline comments on specific parts of the changeset. More general comments can be left on the pull request's "Conversation" tab.
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
@@ -42,7 +42,7 @@ Next, check for readability. Functions, variables, and files should be named cle
 
 As readability is inherently subjective, this requires the ability to look back from the immediate code changes to the bigger picture. Think of someone months down the road trying to trace a given code path through the current changeset. Are there unnecessary steps that could be simplified? Are code comments and inline documentation robust enough to recreate the thought process behind the code?
 
-Finally, check for elegance and overall quality. Code should follow existing and known patterns so that others can understand it at a glance. If a change introduces a chance to refactor surrounding functionality, to abstract and standardize old code into new patterns, suggest those opportunities. 
+Finally, check for elegance and overall quality. The code should follow existing and known patterns so that others can understand it at a glance. If a change introduces a chance to refactor surrounding functionality, to abstract and standardize old code into new patterns, suggest those opportunities. 
 
 ### How to receive code review
 
@@ -52,6 +52,6 @@ It's best to respond to the issues addressed by the reviewer as quickly as possi
 
 ## Additional readings
 
-* [Glen Sanford: On code review](http://glen.nu/ramblings/oncodereview.php) - "Pending code reviews represent blocked threads of execution[, code review should always be your top priority]"
+* [Glen Sanford: On code review](http://glen.nu/ramblings/oncodereview.php) - "Pending code reviews represent blocked threads of execution[,a code review should always be your top priority]"
 
 * [The Ten Commandments of Egoless Programming](http://www.techrepublic.com/article/the-ten-commandments-of-egoless-programming/) - "Understand and accept that you will make mistakes. The point is to find them early before they make it into production." 
