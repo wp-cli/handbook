@@ -12,11 +12,11 @@ Once you've done a bit of searching and discovered there isn't prior art for you
 
 **Summary**
 
-In narrative form, such as “While testing feature x, I encountered z.”
+In narrative forms, such as “While testing feature x, I encountered z.”
 
 > **Summary:**
 >
-> After installing the following package on newest nightly version of the WP-CLI, I receive "is not a registered wp command error"
+> After installing the following package on the newest nightly version of the WP-CLI, I receive "is not a registered wp command error"
 
 **Steps to reproduce the bug**
 
@@ -25,7 +25,7 @@ Please be as detailed and specific as possible. It's a good idea to go back and 
 > **Steps to reproduce:**
 >
 > 1. Run command 'wp package install wp-cli/scaffold-package-command:@stable'
-> 2. Allow installation process to complete
+> 2. Allow the installation process to complete
 > 3. 'Success: Package installed.' is displayed
 > 4. Run 'wp help scaffold package'
 > 5. Observe 'Error: 'scaffold package' is not a registered wp command.'
