@@ -5,7 +5,7 @@ Some people have write access to WP-CLI repositories. These people are identifie
 * [maintainers](https://github.com/orgs/wp-cli/teams/maintainers) - Project leadership
 * [committers](https://github.com/orgs/wp-cli/teams/committers) - Trusted contributors
 
-This “Committers credo” is a living document. It’s meant to establish generally agreed upon standards for committers, and will continue to evolve over time.
+This “Committers credo” is a living document. It’s meant to establish generally agreed upon standards for committers and will continue to evolve over time.
 
 ## Product quality
 
@@ -15,12 +15,12 @@ Practically-speaking:
 
 * Given a choice between Good, Fast, and Cheap, we pick Good and Slow. Creating great software is a journey, not a destination.
 * Product decisions are made [in alignment with our core philosophy](https://make.wordpress.org/cli/handbook/philosophy/).
-* [Code review is an integral part of our development workflow](https://make.wordpress.org/cli/handbook/code-review/). Pull requests need approval of at least one other committer before merging. If you’d like more than one code review, please don’t hesitate to request one. You can request a review from a specific person, or from the `@wp-cli/committers` team.
+* [Code review is an integral part of our development workflow](https://make.wordpress.org/cli/handbook/code-review/). Pull requests need the approval of at least one other committer before merging. If you’d like more than one code review, please don’t hesitate to request one. You can request a review from a specific person, or from the `@wp-cli/committers` team.
 * If you need help with something, ask for help. Seriously, ask for help any time you feel like you need help. No sense getting stuck.
 
-## Stellar judgement
+## Stellar judgment
 
-A great product is a reflection of thoughtful, deliberate, and considered decision-making. WP-CLI committers exhibit stellar judgement with making decisions on new features, fixing bugs, merging others pull requests, and generally working on the project.
+A great product is a reflection of thoughtful, deliberate, and considered decision-making. WP-CLI committers exhibit stellar judgment with making decisions on new features, fixing bugs, merging others pull requests, and generally working on the project.
 
 The basis of this decision-making ensures:
 
