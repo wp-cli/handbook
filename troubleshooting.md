@@ -5,14 +5,14 @@ Before you start to report a new issue on the GitHub repository, make sure to ch
 ### How do I get more verbose informations about my WP-CLI installation?
 
 WP-CLI offers the command `wp --info`, which provides you with a lot of information about your WP-CLI install environment. The output will tell you,
-* what operating system and shell you work on
-* which PHP binary is used to run WP-CLI
-* what version of PHP is used
-* where to find WP-CLI's root directory
-* where to find the vendor directory of WP-CLI
-* which WP-CLI binary  you are currently working with (phar path)
-* where WP-CLI packages are stored
-* where to find global and project configuration files for WP-CLI and
+* what operating system and shell you work on.
+* which PHP binary is used to run WP-CLI.
+* what version of PHP is used.
+* where to find WP-CLI's root directory.
+* where to find the vendor directory of WP-CLI.
+* which WP-CLI binary  you are currently working with (phar path).
+* where WP-CLI packages are stored.
+* where to find global and project configuration files for WP-CLI and.
 * which version of WP-CLI you use.
 
 ### What should I do, before I start debugging issues?
