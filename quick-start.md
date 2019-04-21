@@ -57,7 +57,8 @@ Success: WordPress downloaded.
 
 ```
 $ cd wpclidemo.dev
-$ wp config create --dbname=wpclidemo --dbuser=root
+$ wp config create --dbname=wpclidemo --dbuser=root --prompt=dbpass
+1/10 [--dbpass=<dbpass>]:
 Success: Generated 'wp-config.php' file.
 ```
 
