@@ -35,7 +35,7 @@ Other than this, WP-CLI operates independently.
 
 ## How does all of this work?
 
-The [WP-CLI GitHub organization](https://github.com/wp-cli) contains all project code repositories. Some commands are bundled with WP-CLI, while others are independently installable. Commands are bundled with WP-CLI when they're stable, closely aligned with the project philosophy, and useful to a majority of users.
+The [WP-CLI GitHub organization](https://github.com/wp-cli) contains all project code repositories. Some commands are bundled with WP-CLI, while others are independently installable. Commands are bundled with WP-CLI when they're stable, closely aligned with the [project philosophy](https://make.wordpress.org/cli/handbook/philosophy/), and useful to a majority of users.
 
 [wp-cli/wp-cli](https://github.com/wp-cli/wp-cli) is the main project repository, which pulls in command packages and other dependencies through Composer. Composer defines which version of which dependencies is included in the build. Changes to command packages are included in WP-CLI proper when a stable release is tagged for the package.
 
