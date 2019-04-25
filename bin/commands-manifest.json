@@ -151,6 +151,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/language.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/language-command"
     },
+    "maintenance-mode": {
+        "title": "maintenance-mode",
+        "slug": "maintenance-mode",
+        "cmd_path": "maintenance-mode",
+        "parent": null,
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/maintenance-mode.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
+    },
     "media": {
         "title": "media",
         "slug": "media",
@@ -1030,6 +1038,38 @@
         "parent": "language",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/language\/theme.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/language-command"
+    },
+    "maintenance-mode\/activate": {
+        "title": "maintenance-mode activate",
+        "slug": "activate",
+        "cmd_path": "maintenance-mode\/activate",
+        "parent": "maintenance-mode",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/maintenance-mode\/activate.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
+    },
+    "maintenance-mode\/deactivate": {
+        "title": "maintenance-mode deactivate",
+        "slug": "deactivate",
+        "cmd_path": "maintenance-mode\/deactivate",
+        "parent": "maintenance-mode",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/maintenance-mode\/deactivate.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
+    },
+    "maintenance-mode\/is-active": {
+        "title": "maintenance-mode is-active",
+        "slug": "is-active",
+        "cmd_path": "maintenance-mode\/is-active",
+        "parent": "maintenance-mode",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/maintenance-mode\/is-active.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
+    },
+    "maintenance-mode\/status": {
+        "title": "maintenance-mode status",
+        "slug": "status",
+        "cmd_path": "maintenance-mode\/status",
+        "parent": "maintenance-mode",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/maintenance-mode\/status.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
     },
     "media\/image-size": {
         "title": "media image-size",

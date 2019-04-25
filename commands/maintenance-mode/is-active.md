@@ -1,34 +1,12 @@
-# wp rewrite structure
+# wp maintenance-mode is-active
 
-Updates the permalink structure.
-
-Sets the post permalink structure to the specified pattern.
-
-To regenerate a .htaccess file with WP-CLI, you'll need to add the mod_rewrite module to your [WP-CLI config](https://make.wordpress.org/cli/handbook/config/#config-files). For example:
-
-```
-apache_modules:
-  - mod_rewrite
-```
-
-### OPTIONS
-
-&lt;permastruct&gt;
-: The new permalink structure to apply.
-
-[\--category-base=&lt;base&gt;]
-: Set the base for category permalinks, i.e. '/category/'.
-
-[\--tag-base=&lt;base&gt;]
-: Set the base for tag permalinks, i.e. '/tag/'.
-
-[\--hard]
-: Perform a hard flush - update `.htaccess` rules as well as rewrite rules in database.
+Detects maintenance mode status.
 
 ### EXAMPLES
 
-    $ wp rewrite structure '/%year%/%monthnum%/%postname%/'
-    Success: Rewrite structure set.
+    $ wp maintenance-mode is-active
+    $ echo $?
+    1
 
 ### GLOBAL PARAMETERS
 
