@@ -20,11 +20,11 @@ Checks whether the output of the current script is a TTY or a pipe / redirect
 Returns true if STDOUT output is being redirected to a pipe or a file; false is
 output is being sent directly to the terminal.
 
-If an env variable SHELL_PIPE exists, returned result depends it's
+If an env variable SHELL_PIPE exists, returned result depends on its
 value. Strings like 1, 0, yes, no, that validate to booleans are accepted.
 
-To enable ASCII formatting even when shell is piped, use the
-ENV variable SHELL_PIPE=0
+To enable ASCII formatting even when the shell is piped, use the
+ENV variable SHELL_PIPE=0.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

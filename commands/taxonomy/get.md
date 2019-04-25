@@ -24,6 +24,24 @@ options:
   - yaml
 \---
 
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for the specified taxonomy:
+
+* name
+* label
+* description
+* object_type
+* show_tagcloud
+* hierarchical
+* public
+* labels
+* cap
+
+These fields are optionally available:
+
+* count
+
 ### EXAMPLES
 
     # Get details of `category` taxonomy.

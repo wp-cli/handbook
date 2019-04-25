@@ -9,9 +9,9 @@ Launch system's $EDITOR for the user to edit some text.
     WP_CLI\Utils\launch_editor_for_input( $input, $title = WP-CLI, $ext = tmp )
 
 <div>
-<strong>string</strong> () $content  Some form of text to edit (e.g. post content)<br />
-<strong>string</strong> () $title    Title to display in the editor.<br />
-<strong>string</strong> () $ext      Extension to use with the temp file.<br />
+<strong>$content</strong> (string) Some form of text to edit (e.g. post content).<br />
+<strong>$title</strong> (string) Title to display in the editor.<br />
+<strong>$ext</strong> (string) Extension to use with the temp file.<br />
 <strong>@return</strong> (string|bool) text, if file is saved from editor; false, if no change to file.<br />
 </div>
 
@@ -40,6 +40,9 @@ Launch system's $EDITOR for the user to edit some text.
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-read-value/">WP_CLI::read_value()</a></strong> - Read a value, from various formats.</li>
+
+
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-has-config/">WP_CLI::has_config()</a></strong> - Confirm that a global configuration parameter does exist.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-get-config/">WP_CLI::get_config()</a></strong> - Get values of global configuration parameters.</li>
