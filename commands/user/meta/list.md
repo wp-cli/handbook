@@ -44,6 +44,9 @@ options:
  - desc
 \---
 
+[\--unserialize]
+: Unserialize meta_value output.
+
 ### EXAMPLES
 
     # List user meta
