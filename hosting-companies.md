@@ -50,6 +50,7 @@ In alphabetical order:
 * [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
+* [CloudHostWorld](https://www.cloudhostworld.com)
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 
