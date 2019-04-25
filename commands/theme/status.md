@@ -11,10 +11,10 @@ Reveals the status of one or all themes.
 
     $ wp theme status twentysixteen
     Theme twentysixteen details:
-    		Name: Twenty Sixteen
-    		Status: Inactive
-    		Version: 1.2
-    		Author: the WordPress team
+         Name: Twenty Sixteen
+         Status: Inactive
+         Version: 1.2
+         Author: the WordPress team
 
 ### GLOBAL PARAMETERS
 

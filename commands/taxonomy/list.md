@@ -32,10 +32,14 @@ These fields will be displayed by default for each term:
 * name
 * label
 * description
-* public
+* object_type
+* show_tagcloud
 * hierarchical
+* public
 
-There are no optionally available fields.
+These fields are optionally available:
+
+* count
 
 ### EXAMPLES
 

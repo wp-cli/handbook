@@ -55,6 +55,9 @@ WP_CLI::log( 'The --url=<url> value is: ' . WP_CLI::get_config( 'url' ) );
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-read-value/">WP_CLI::read_value()</a></strong> - Read a value, from various formats.</li>
 
 
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-has-config/">WP_CLI::has_config()</a></strong> - Confirm that a global configuration parameter does exist.</li>
+
+
 
 </ul>
 
