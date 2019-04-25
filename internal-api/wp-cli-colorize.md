@@ -18,7 +18,7 @@ Colorize a string for output.
 
 ## Notes
 
-Yes, you too can change the color of command line text. For instance,
+Yes, you can change the color of command line text too. For instance,
 here's how `WP_CLI::success()` colorizes "Success: "
 
 ```

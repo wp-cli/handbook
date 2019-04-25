@@ -1,25 +1,47 @@
-# wp theme delete
+# wp cli alias update
 
-Deletes one or more themes.
-
-Removes the theme or themes from the filesystem.
+Updates an alias.
 
 ### OPTIONS
 
-[&lt;theme&gt;...]
-: One or more themes to delete.
+&lt;key&gt;
+: Key for the alias.
 
-[\--all]
-: If set, all themes will be deleted except active theme.
+[\--set-user=&lt;user&gt;]
+: Set user for alias.
 
-[\--force]
-: To delete active theme use this.
+[\--set-url=&lt;url&gt;]
+: Set url for alias.
+
+[\--set-path=&lt;path&gt;]
+: Set path for alias.
+
+[\--set-ssh=&lt;ssh&gt;]
+: Set ssh for alias.
+
+[\--set-http=&lt;http&gt;]
+: Set http for alias.
+
+[\--grouping=&lt;grouping&gt;]
+: For grouping multiple aliases.
+
+[\--config=&lt;config&gt;]
+: Config file to be considered for operations.
+\---
+options:
+  - global
+  - project
+\---
 
 ### EXAMPLES
 
-    $ wp theme delete twentytwelve
-    Deleted 'twentytwelve' theme.
-    Success: Deleted 1 of 1 themes.
+    # Update alias.
+    $ wp cli alias update @prod --set-user=newuser --set-path=/new/path/to/wordpress/install/
+    Success: Updated 'prod' alias.
+
+    # Update project alias.
+    $ wp cli alias update @prod --set-user=newuser --set-path=/new/path/to/wordpress/install/ --config=project
+    Success: Updated 'prod' alias.
 
 ### GLOBAL PARAMETERS
 

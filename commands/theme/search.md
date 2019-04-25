@@ -9,6 +9,12 @@ Displays themes in the WordPress.org theme directory matching a given search que
 &lt;search&gt;
 : The string to search for.
 
+[\--page=&lt;page&gt;]
+: Optional page to display.
+\---
+default: 1
+\---
+
 [\--per-page=&lt;per-page&gt;]
 : Optional number of results to display. Defaults to 10.
 

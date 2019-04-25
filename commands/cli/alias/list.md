@@ -1,25 +1,32 @@
-# wp theme delete
+# wp cli alias list
 
-Deletes one or more themes.
-
-Removes the theme or themes from the filesystem.
+List available WP-CLI aliases.
 
 ### OPTIONS
 
-[&lt;theme&gt;...]
-: One or more themes to delete.
-
-[\--all]
-: If set, all themes will be deleted except active theme.
-
-[\--force]
-: To delete active theme use this.
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: yaml
+options:
+  - yaml
+  - json
+  - var_export
+\---
 
 ### EXAMPLES
 
-    $ wp theme delete twentytwelve
-    Deleted 'twentytwelve' theme.
-    Success: Deleted 1 of 1 themes.
+    # List all available aliases.
+    $ wp cli alias list
+    ---
+    @all: Run command against every registered alias.
+    @prod:
+      ssh: runcommand@runcommand.io~/webapps/production
+    @dev:
+      ssh: vagrant@192.168.50.10/srv/www/runcommand.dev
+    @both:
+      - @prod
+      - @dev
 
 ### GLOBAL PARAMETERS
 

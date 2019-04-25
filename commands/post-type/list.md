@@ -27,7 +27,7 @@ options:
 
 ### AVAILABLE FIELDS
 
-These fields will be displayed by default for each term:
+These fields will be displayed by default for each post type:
 
 * name
 * label
@@ -36,7 +36,9 @@ These fields will be displayed by default for each term:
 * public
 * capability_type
 
-There are no optionally available fields.
+These fields are optionally available:
+
+* count
 
 ### EXAMPLES
 

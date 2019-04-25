@@ -15,7 +15,7 @@ Windows compatible `proc_open()`. Works around bug in PHP, and also deals with *
 <strong>$cwd</strong> (string) Initial working directory for the command.<br />
 <strong>$env</strong> (array) Array of environment variables.<br />
 <strong>$other_options</strong> (array) Array of additional options (Windows only).<br />
-<strong>@return</strong> (string) stripped of any environment variable settings.<br />
+<strong>@return</strong> (resource) stripped of any environment variable settings.<br />
 </div>
 
 

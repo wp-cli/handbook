@@ -6,10 +6,7 @@ Downloads md5 checksums for the current version from WordPress.org, and compares
 
 For security, avoids loading WordPress when verifying checksums.
 
-If you experience issues verifying from this command, ensure you are 
-passing the relevant `--locale` and `--version` arguments according to 
-the values from the `Dashboard-&gt;Updates` menu in the admin area of the 
-site.
+If you experience issues verifying from this command, ensure you are passing the relevant `--locale` and `--version` arguments according to the values from the `Dashboard-&gt;Updates` menu in the admin area of the site.
 
 ### OPTIONS
 

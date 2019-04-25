@@ -1519,14 +1519,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/role\/reset.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/role-command"
     },
-    "scaffold\/_s": {
-        "title": "scaffold _s",
-        "slug": "_s",
-        "cmd_path": "scaffold\/_s",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/scaffold\/_s.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-command"
-    },
     "scaffold\/block": {
         "title": "scaffold block",
         "slug": "block",
@@ -1581,6 +1573,14 @@
         "cmd_path": "scaffold\/theme-tests",
         "parent": "scaffold",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/scaffold\/theme-tests.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-command"
+    },
+    "scaffold\/underscores": {
+        "title": "scaffold underscores",
+        "slug": "underscores",
+        "cmd_path": "scaffold\/underscores",
+        "parent": "scaffold",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/scaffold\/underscores.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-command"
     },
     "sidebar\/list": {
@@ -1813,6 +1813,14 @@
         "cmd_path": "term\/meta",
         "parent": "term",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/term\/meta.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "term\/migrate": {
+        "title": "term migrate",
+        "slug": "migrate",
+        "cmd_path": "term\/migrate",
+        "parent": "term",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/term\/migrate.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "term\/recount": {
@@ -2198,6 +2206,46 @@
         "parent": "widget",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/widget\/update.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/widget-command"
+    },
+    "cli\/alias\/add": {
+        "title": "cli alias add",
+        "slug": "add",
+        "cmd_path": "cli\/alias\/add",
+        "parent": "cli\/alias",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/alias\/add.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
+    "cli\/alias\/delete": {
+        "title": "cli alias delete",
+        "slug": "delete",
+        "cmd_path": "cli\/alias\/delete",
+        "parent": "cli\/alias",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/alias\/delete.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
+    "cli\/alias\/get": {
+        "title": "cli alias get",
+        "slug": "get",
+        "cmd_path": "cli\/alias\/get",
+        "parent": "cli\/alias",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/alias\/get.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
+    "cli\/alias\/list": {
+        "title": "cli alias list",
+        "slug": "list",
+        "cmd_path": "cli\/alias\/list",
+        "parent": "cli\/alias",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/alias\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
+    },
+    "cli\/alias\/update": {
+        "title": "cli alias update",
+        "slug": "update",
+        "cmd_path": "cli\/alias\/update",
+        "parent": "cli\/alias",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cli\/alias\/update.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/wp-cli"
     },
     "cli\/cache\/clear": {
         "title": "cli cache clear",
