@@ -1,25 +1,34 @@
-# wp theme delete
+# wp term migrate
 
-Deletes one or more themes.
-
-Removes the theme or themes from the filesystem.
+Migrate a term of a taxonomy to another taxonomy.
 
 ### OPTIONS
 
-[&lt;theme&gt;...]
-: One or more themes to delete.
+&lt;term&gt;
+: Slug or ID of the term to migrate.
 
-[\--all]
-: If set, all themes will be deleted except active theme.
+[\--by=&lt;field&gt;]
+: Explicitly handle the term value as a slug or id.
+\---
+default: id
+options:
+  - slug
+  - id
+\---
 
-[\--force]
-: To delete active theme use this.
+[\--from=&lt;taxonomy&gt;]
+: Taxonomy slug of the term to migrate.
+
+[\--to=&lt;taxonomy&gt;]
+: Taxonomy slug to migrate to.
 
 ### EXAMPLES
 
-    $ wp theme delete twentytwelve
-    Deleted 'twentytwelve' theme.
-    Success: Deleted 1 of 1 themes.
+    # Migrate a category's term (video) to tag taxonomy.
+    $ wp term migrate 9190 --from=category --to=post_tag
+    Term '9190' migrated!
+    Old instance of term '9190' removed from its original taxonomy.
+    Success: Migrated the term '9190' from taxonomy 'category' to taxonomy 'post_tag' for 1 posts
 
 ### GLOBAL PARAMETERS
 

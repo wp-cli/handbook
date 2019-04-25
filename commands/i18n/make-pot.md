@@ -45,17 +45,18 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 [\--file-comment=&lt;file-comment&gt;]
 : String that should be added as a comment to the top of the resulting POT file. By default, a copyright comment is added for WordPress plugins and themes in the following manner:
 
-		```
-		Copyright (C) 2018 Example Plugin Author
-		This file is distributed under the same license as the Example Plugin package.
-		```
+     ```
+     Copyright (C) 2018 Example Plugin Author
+     This file is distributed under the same license as the Example Plugin package.
+     ```
 
-		If a plugin or theme specifies a license in their main plugin file or stylesheet, the comment looks like this:
+     If a plugin or theme specifies a license in their main plugin file or stylesheet, the comment looks like
+     this:
 
-		```
-		Copyright (C) 2018 Example Plugin Author
-		This file is distributed under the GPLv2.
-		```
+     ```
+     Copyright (C) 2018 Example Plugin Author
+     This file is distributed under the GPLv2.
+     ```
 
 [\--package-name=&lt;name&gt;]
 : Name to use for package name in the resulting POT file's `Project-Id-Version` header. Overrides plugin or theme name, if applicable.
@@ -66,7 +67,8 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
     $ wp i18n make-pot . languages/my-plugin.pot
 
     # Create a POT file for the continents and cities list in WordPress core.
-    $ wp i18n make-pot . continents-and-cities.pot --include="wp-admin/includes/continents-cities.php" --ignore-domain
+    $ wp i18n make-pot . continents-and-cities.pot --include="wp-admin/includes/continents-cities.php"
+    --ignore-domain
 
 ### GLOBAL PARAMETERS
 

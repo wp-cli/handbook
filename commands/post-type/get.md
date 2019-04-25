@@ -24,6 +24,24 @@ options:
   - yaml
 \---
 
+### AVAILABLE FIELDS
+
+These fields will be displayed by default for the specified post type:
+
+* name
+* label
+* description
+* hierarchical
+* public
+* capability_type
+* labels
+* cap
+* supports
+
+These fields are optionally available:
+
+* count
+
 ### EXAMPLES
 
     # Get details about the 'page' post type.

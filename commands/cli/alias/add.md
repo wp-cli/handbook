@@ -1,25 +1,52 @@
-# wp theme delete
+# wp cli alias add
 
-Deletes one or more themes.
-
-Removes the theme or themes from the filesystem.
+Creates an alias.
 
 ### OPTIONS
 
-[&lt;theme&gt;...]
-: One or more themes to delete.
+&lt;key&gt;
+: Key for the alias.
 
-[\--all]
-: If set, all themes will be deleted except active theme.
+[\--set-user=&lt;user&gt;]
+: Set user for alias.
 
-[\--force]
-: To delete active theme use this.
+[\--set-url=&lt;url&gt;]
+: Set url for alias.
+
+[\--set-path=&lt;path&gt;]
+: Set path for alias.
+
+[\--set-ssh=&lt;ssh&gt;]
+: Set ssh for alias.
+
+[\--set-http=&lt;http&gt;]
+: Set http for alias.
+
+[\--grouping=&lt;grouping&gt;]
+: For grouping multiple aliases.
+
+[\--config=&lt;config&gt;]
+: Config file to be considered for operations.
+\---
+default: global
+options:
+  - global
+  - project
+\---
 
 ### EXAMPLES
 
-    $ wp theme delete twentytwelve
-    Deleted 'twentytwelve' theme.
-    Success: Deleted 1 of 1 themes.
+    # Add alias to global config.
+    $ wp cli alias add @prod  --set-ssh=login@host --set-path=/path/to/wordpress/install/ --set-user=wpcli
+    Success: Added '@prod' alias.
+
+    # Add alias to project config.
+    $ wp cli alias add @prod --set-ssh=login@host --set-path=/path/to/wordpress/install/ --set-user=wpcli --config=project
+    Success: Added '@prod' alias.
+
+    # Add group of aliases.
+    $ wp cli alias add @multiservers --grouping=servera,serverb
+    Success: Added '@multiservers' alias.
 
 ### GLOBAL PARAMETERS
 

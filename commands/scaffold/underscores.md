@@ -1,4 +1,4 @@
-# wp scaffold _s
+# wp scaffold underscores
 
 Generates starter code for a theme based on _s.
 

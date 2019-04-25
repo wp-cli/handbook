@@ -1,25 +1,29 @@
-# wp theme delete
+# wp cli alias delete
 
-Deletes one or more themes.
-
-Removes the theme or themes from the filesystem.
+Deletes an alias.
 
 ### OPTIONS
 
-[&lt;theme&gt;...]
-: One or more themes to delete.
+&lt;key&gt;
+: Key for the alias.
 
-[\--all]
-: If set, all themes will be deleted except active theme.
-
-[\--force]
-: To delete active theme use this.
+[\--config=&lt;config&gt;]
+: Config file to be considered for operations.
+\---
+options:
+  - global
+  - project
+\---
 
 ### EXAMPLES
 
-    $ wp theme delete twentytwelve
-    Deleted 'twentytwelve' theme.
-    Success: Deleted 1 of 1 themes.
+    # Delete alias.
+    $ wp cli alias delete @prod
+    Success: Deleted '@prod' alias.
+
+    # Delete project alias.
+    $ wp cli alias delete @prod --config=project
+    Success: Deleted '@prod' alias.
 
 ### GLOBAL PARAMETERS
 
