@@ -62,7 +62,7 @@ If you haven't submitted a pull request before, you'll want to install WP-CLI fo
 4. Install all Composer dependencies: `composer install`
 5. Verify WP-CLI was installed properly: `vendor/bin/wp --info`
 
-Within this package, you should preferably use `vendor/bin/wp` to run the command. Just using `wp` should work as well, but by doing that you might run the command through a different version of the framework an thus getting an unexpected result.
+Within this package, you should preferably use `vendor/bin/wp` to run the command. Just using `wp` should work as well, but by doing that you might run the command through a different version of the framework and thus getting an unexpected result.
 
 ### Working on the project as a whole
 
