@@ -12,7 +12,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | amt                   | [Add-Meta-Tags command line interface](http://www.codetrax.org/projects/wp-add-meta-tags/wiki/Command_Line_Interface)
 | any-ipsum             | [Any Ipsum](https://wordpress.org/plugins/any-ipsum/)
 | backup                | [BackUpWordPress](http://wordpress.org/extend/plugins/backupwordpress/)
-| backupbuddy           | [BackupBuddy](http://getbackupbuddy.com/)
+| backupbuddy           | [BackupBuddy](https://ithemes.com/purchase/backupbuddy/)
 | backwpup              | [BackWPup](https://wordpress.org/plugins/backwpup/)
 | blog-dupe             | [blog-duplicator](https://github.com/trepmal/blog-duplicator)
 | camptix               | [CampTix](https://github.com/Automattic/camptix)
@@ -35,7 +35,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | jekyll-export         | [WordPress to Jekyll Exporter](https://github.com/benbalter/wordpress-to-jekyll-exporter/)
 | jetpack               | [Jetpack by WordPress.com](http://wordpress.org/plugins/jetpack/)
 | liveblog              | [Liveblog](http://wordpress.org/plugins/liveblog/)
-| mainwp                | [MainWP](http://docs.mainwp.com/wp-cli-commands/)
+| mainwp                | [MainWP](https://mainwp.com/)
 | migrate               | [WP Migrate DB CLI Interface](https://github.com/duncanjbrown/WP-CLI-Migrate/)
 | migratedb             | [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/doc/cli-addon/)
 | more-plugin-info      | [More Plugin Info](http://wordpress.org/plugins/more-plugin-info/)
@@ -79,7 +79,7 @@ If you implement a WP-CLI command in one of your plugins, please list it here.
 * [wplib](https://github.com/szepeviktor/wplib) - shell scripts for managing multiple sites
 * [wpcli helpers](https://github.com/kartonnade/wp_cli_helpers) - a bundle of time saver aliases and functions for the shell
 * [cPanel-wp-management](https://github.com/MarioKnight/cPanel-wp-management) - shell scripts designed to loop through all accounts on cPanel servers
-* [Plesk WordPress Toolkit](https://www.plesk.com/features-automation/wordpress-toolkit/) - WordPress installations management UI backed by WP-CLI
+* [Plesk WordPress Toolkit](https://www.plesk.com/wp-toolkit/) - WordPress installations management UI backed by WP-CLI
 
 ## Editor plugins
 
