@@ -12,7 +12,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | amt                   | [Add-Meta-Tags command line interface](http://www.codetrax.org/projects/wp-add-meta-tags/wiki/Command_Line_Interface)
 | any-ipsum             | [Any Ipsum](https://wordpress.org/plugins/any-ipsum/)
 | backup                | [BackUpWordPress](http://wordpress.org/extend/plugins/backupwordpress/)
-| backupbuddy           | [BackupBuddy](https://ithemes.com/purchase/backupbuddy/)
+| backupbuddy           | [BackupBuddy](http://getbackupbuddy.com/)
 | backwpup              | [BackWPup](https://wordpress.org/plugins/backwpup/)
 | blog-dupe             | [blog-duplicator](https://github.com/trepmal/blog-duplicator)
 | camptix               | [CampTix](https://github.com/Automattic/camptix)
