@@ -93,9 +93,12 @@ To have this change take effect in your currently active shell, run `source ~/.z
 If you're using _Dash_ and _Alfred_, you can look up WP-CLI command information.
 
 #### Setup
-
+ 
 Open Dash and download the [WP-CLI docset](https://github.com/wp-cli/dash-docset-generator):
 Dash › Preferences › Downloads › User Contributions › Search for WP-CLI
+
+Still in Dash, activate the Alfred integration:
+Dash › Preferences › Integration › Alfred
 
 #### Usage
 
