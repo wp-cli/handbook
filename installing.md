@@ -88,6 +88,19 @@ Note: the Oh My Zsh plugin comes with the bash completion script included, so it
 
 To have this change take effect in your currently active shell, run `source ~/.zshrc` afterwards.
 
+### Dash/Alfred workflow
+
+If you're using _Dash_ and _Alfred_, you can look up WP-CLI command information.
+
+#### Setup
+
+Open Dash and download the [WP-CLI docset](https://github.com/wp-cli/dash-docset-generator):
+Dash › Preferences › Downloads › User Contributions › Search for WP-CLI
+
+#### Usage
+
+Open Alfred and search for: `wp-cli plugin`
+
 ## Alternative installation methods
 
 ### Installing via Git
