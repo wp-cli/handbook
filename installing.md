@@ -102,7 +102,7 @@ Dash › Preferences › Integration › Alfred
 
 #### Usage
 
-Open Alfred and search for: `wp-cli plugin`
+Open Alfred and try searching for a specific command. For example, this gives you an overview of the `plugin` command and its subcommands: `wp-cli plugin`
 
 ## Alternative installation methods
 
