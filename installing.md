@@ -90,7 +90,7 @@ To have this change take effect in your currently active shell, run `source ~/.z
 
 ### Dash/Alfred workflow
 
-If you're using _Dash_ and _Alfred_, you can look up WP-CLI command information.
+If you're using _Dash_ and _Alfred_, you can add a custom Alfred workflow to look up WP-CLI command information.
 
 #### Setup
  
