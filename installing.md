@@ -244,7 +244,14 @@ You can now use WP-CLI from anywhere in Windows command line.
 
 On Debian or Ubuntu, just download and open one of the .deb packages: <https://github.com/wp-cli/builds/tree/gh-pages/deb>
 
+### Installing on Fedora 30+
 
+    su -c 'dnf install wp-cli'
+
+### Installing on CentOS
+
+    su -c 'yum install wp-cli'
+    
 ### Using a custom PHP binary
 
 In some cases, like for MAMP installs, you might not want to use the default PHP binary.
