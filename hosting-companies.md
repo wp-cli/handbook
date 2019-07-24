@@ -49,6 +49,7 @@ In alphabetical order:
 * [StrikeHawk eCommerce](https://www.strikehawk.com/secure-web-hosting/wordpress/)
 * [Synthesis](http://websynthesis.com/)
 * [TitanHost](https://titanhost.io/)
+* [Titibate](https://titibate.com/)
 * [TVC.Net](http://TVC.Net/)
 * [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
