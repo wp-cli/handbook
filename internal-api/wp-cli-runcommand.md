@@ -16,8 +16,8 @@ Type | Key | Description | Default
 ------------ | ------------- | ------------ | -------------
 bool | $launch | Launch a new process, or reuse the existing. | true
 bool | $exit_error | Exit on error. | true
-bool|string | $return | Capture and return output, or render in realtime. | false
-bool|string | $parse | Parse returned output as a particular format. | false
+bool\|string | $return | Capture and return output, or render in realtime. | false
+bool\|string | $parse | Parse returned output as a particular format. | false
 
 **@return** (mixed)
 
