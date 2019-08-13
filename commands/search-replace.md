@@ -38,7 +38,7 @@ Search/replace intelligently handles PHP serialized data, and does not change pr
 : Define number of rows in single INSERT statement when doing SQL export. You might want to change this depending on your database configuration (e.g. if you need to do fewer queries). Default: 50
 
 [\--skip-tables=&lt;tables&gt;]
-: Do not perform the replacement on specific tables. Use commas to specify multiple tables.
+: Do not perform the replacement on specific tables. Use commas to specify multiple tables. Wildcards are supported, e.g. `'wp_*options'` or `'wp_post*'`.
 
 [\--skip-columns=&lt;columns&gt;]
 : Do not perform the replacement on specific columns. Use commas to specify multiple columns.

@@ -1,54 +1,33 @@
-# wp server
+# wp media fix-orientation
 
-Launches PHP's built-in web server for a specific WordPress installation.
-
-Uses `php -S` to launch a web server serving the WordPress webroot.
-&lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
-
-Importantly, PHP's built-in web server doesn't support `.htaccess` files. If this is a requirement, please use a more advanced web server.
+Fix image orientation for one or more attachments.
 
 ### OPTIONS
 
-[\--host=&lt;host&gt;]
-: The hostname to bind the server to.
-\---
-default: localhost
-\---
+[&lt;attachment-id&gt;...]
+: One or more IDs of the attachments to regenerate.
 
-[\--port=&lt;port&gt;]
-: The port number to bind the server to.
-\---
-default: 8080
-\---
-
-[\--docroot=&lt;path&gt;]
-: The path to use as the document root. If the path global parameter is set, the default value is it.
-
-[\--config=&lt;file&gt;]
-: Configure the server with a specific .ini file.
+[\--dry-run]
+: Check images needing orientation without performing the operation.
 
 ### EXAMPLES
 
-    # Make the instance available on any address (with port 8080)
-    $ wp server --host=0.0.0.0
-    PHP 5.6.9 Development Server started at Tue May 24 01:27:11 2016
-    Listening on http://0.0.0.0:8080
-    Document root is /
-    Press Ctrl-C to quit.
+    # Fix orientation for all images.
+    $ wp media fix-orientation
+    1/3 Fixing orientation for "Landscape_4" (ID 62).
+    2/3 Fixing orientation for "Landscape_3" (ID 61).
+    3/3 Fixing orientation for "Landscape_2" (ID 60).
+    Success: Fixed 3 of 3 images.
 
-    # Run on port 80 (for multisite)
-    $ wp server --host=localhost.localdomain --port=80
-    PHP 5.6.9 Development Server started at Tue May 24 01:30:06 2016
-    Listening on http://localhost1.localdomain1:80
-    Document root is /
-    Press Ctrl-C to quit.
+    # Fix orientation dry run.
+    $ wp media fix-orientation 63 -dry run
+    1/1 "Portrait_6" (ID 63) will be affected.
+    Success: 1 of 1 image will be affected.
 
-    # Configure the server with a specific .ini file
-    $ wp server --config=development.ini
-    PHP 7.0.9 Development Server started at Mon Aug 22 12:09:04 2016
-    Listening on http://localhost:8080
-    Document root is /
-    Press Ctrl-C to quit.
+    # Fix orientation for specific images.
+    $ wp media fix-orientation 63
+    1/1 Fixing orientation for "Portrait_6" (ID 63).
+    Success: Fixed 1 of 1 images.
 
 ### GLOBAL PARAMETERS
 
