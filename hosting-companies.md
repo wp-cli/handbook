@@ -30,6 +30,7 @@ In alphabetical order:
 * [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Liquid Web](https://liquidweb.com/wordpress)
 * [Media Temple](http://mediatemple.net)
+* [MinHost](https://minhost.no)
 * [Mittwald](https://www.mittwald.de/)
 * [Monarobase](https://monarobase.net/wordpress)
 * [NameHero](https://www.namehero.com)
