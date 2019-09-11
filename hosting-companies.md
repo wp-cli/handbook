@@ -53,12 +53,15 @@ In alphabetical order:
 * [Titibate](https://titibate.com/)
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
+* [WooCart](https://woocart.com)
 * [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
+
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 
 * [Pressidium](https://pressidium.com)
 * [Presslabs](https://www.presslabs.com)
+* [WooCart](https://woocart.com)
 * [WordPress.com VIP](http://vip.wordpress.com/)
