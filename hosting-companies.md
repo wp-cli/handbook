@@ -51,6 +51,7 @@ In alphabetical order:
 * [Synthesis](http://websynthesis.com/)
 * [TitanHost](https://titanhost.io/)
 * [Titibate](https://titibate.com/)
+* [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
 * [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
