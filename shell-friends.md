@@ -105,7 +105,7 @@ $ wp import wordpress.wxr --authors=create > import.log
 Redirect STDERR to STDOUT with `2>&1`, and then capture STDOUT to a log file.
 
 ```bash
-$ wp import wordpress.wxr --authors=create 2>&1 import.log
+$ wp import wordpress.wxr --authors=create > import.log 2>&1
 ```
 
 When you're capturing output to a file, you won't see the output in your current shell session. However, you can open a second shell session and run `tail -f <file>` to see the output as it's added to the file.
