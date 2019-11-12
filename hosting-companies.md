@@ -46,6 +46,7 @@ In alphabetical order:
 * [Seravo.com](https://seravo.com)
 * [Servebolt.com](https://servebolt.com)
 * [Site5](http://www.site5.com/)
+* [SiteDistrict](https://sitedistrict.com/)
 * [SiteGround](http://www.siteground.com/)
 * [StrikeHawk eCommerce](https://www.strikehawk.com/secure-web-hosting/wordpress/)
 * [Synthesis](http://websynthesis.com/)
