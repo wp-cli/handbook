@@ -1,6 +1,6 @@
 # wp cli info
 
-Print various details about the WP-CLI environment.
+Prints various details about the WP-CLI environment.
 
 Helpful for diagnostic purposes, this command shares:
 

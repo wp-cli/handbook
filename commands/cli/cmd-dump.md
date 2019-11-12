@@ -1,6 +1,6 @@
 # wp cli cmd-dump
 
-Dump the list of installed commands, as JSON.
+Dumps the list of installed commands, as JSON.
 
 ### EXAMPLES
 

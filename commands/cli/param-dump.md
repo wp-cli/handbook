@@ -1,6 +1,6 @@
 # wp cli param-dump
 
-Dump the list of global parameters, as JSON or in var_export format.
+Dumps the list of global parameters, as JSON or in var_export format.
 
 ### OPTIONS
 

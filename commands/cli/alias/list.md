@@ -1,6 +1,6 @@
 # wp cli alias list
 
-List available WP-CLI aliases.
+Lists available WP-CLI aliases.
 
 ### OPTIONS
 

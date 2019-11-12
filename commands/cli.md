@@ -1,6 +1,6 @@
 # wp cli
 
-Review current WP-CLI info, check for updates, or see defined aliases.
+Reviews current WP-CLI info, checks for updates, or views defined aliases.
 
 ### EXAMPLES
 

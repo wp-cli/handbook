@@ -45,6 +45,7 @@ These fields are optionally available:
 * update_id
 * title
 * description
+* file
 
 ### EXAMPLES
 

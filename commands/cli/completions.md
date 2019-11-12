@@ -1,6 +1,6 @@
 # wp cli completions
 
-Generate tab completion strings.
+Generates tab completion strings.
 
 ### OPTIONS
 

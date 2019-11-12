@@ -67,7 +67,7 @@ options:
     Generating posts  100% [================================================] 0:01 / 0:04
 
     # Generate posts with fetched content.
-    $ curl http://loripsum.net/api/5 | wp post generate --post_content --count=10
+    $ curl -N http://loripsum.net/api/5 | wp post generate --post_content --count=10
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
     100  2509  100  2509    0     0    616      0  0:00:04  0:00:04 --:--:--   616
