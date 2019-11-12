@@ -1,6 +1,6 @@
 # wp cli update
 
-Update WP-CLI to the latest release.
+Updates WP-CLI to the latest release.
 
 Default behavior is to check the releases API for the newest stable version, and prompt if one is available.
 

@@ -1,6 +1,6 @@
 # wp cli cache prune
 
-Prune the internal cache.
+Prunes the internal cache.
 
 Removes all cached files except for the newest version of each one.
 

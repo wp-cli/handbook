@@ -6,7 +6,7 @@ The following files are always generated:
 
 * `plugin-slug.php` is the main PHP plugin file.
 * `readme.txt` is the readme file for the plugin.
-* `package.json` needed by NPM holds various metadata relevant to the project. Packages: `grunt`, `grunt-wp-i18n` and `grunt-wp-readme-to-markdown`.
+* `package.json` needed by NPM holds various metadata relevant to the project. Packages: `grunt`, `grunt-wp-i18n` and `grunt-wp-readme-to-markdown`. Scripts: `start`, `readme`, `i18n`.
 * `Gruntfile.js` is the JS file containing Grunt tasks. Tasks: `i18n` containing `addtextdomain` and `makepot`, `readme` containing `wp_readme_to_markdown`.
 * `.editorconfig` is the configuration file for Editor.
 * `.gitignore` tells which files (or patterns) git should ignore.

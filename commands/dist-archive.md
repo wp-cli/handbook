@@ -25,6 +25,9 @@ Use one distibution archive command for many projects, instead of a bash script 
 [&lt;target&gt;]
 : Path and file name for the distribution archive. Defaults to project directory name plus version, if discoverable.
 
+[\--create-target-dir]
+: Automatically create the target directory as needed.
+
 [\--format=&lt;format&gt;]
 : Choose the format for the archive.
 \---

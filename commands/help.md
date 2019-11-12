@@ -1,6 +1,6 @@
 # wp help
 
-Get help on WP-CLI, or on a specific command.
+Gets help on WP-CLI, or on a specific command.
 
 ### OPTIONS
 
