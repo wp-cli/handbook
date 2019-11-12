@@ -1,6 +1,6 @@
 # wp cli version
 
-Print WP-CLI version.
+Prints WP-CLI version.
 
 ### EXAMPLES
 

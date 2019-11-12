@@ -6,6 +6,9 @@ Downloads and extracts WordPress core files to the specified path. Uses current 
 
 ### OPTIONS
 
+[&lt;download-url&gt;]
+: Download directly from a provided URL instead of fetching the URL from the wordpress.org servers.
+
 [\--path=&lt;path&gt;]
 : Specify the path in which to install WordPress. Defaults to current directory.
 
@@ -13,7 +16,7 @@ Downloads and extracts WordPress core files to the specified path. Uses current 
 : Select which language you want to download.
 
 [\--version=&lt;version&gt;]
-: Select which version you want to download. Accepts a version number, 'latest' or 'nightly'
+: Select which version you want to download. Accepts a version number, 'latest' or 'nightly'.
 
 [\--skip-content]
 : Download WP without the default themes and plugins.

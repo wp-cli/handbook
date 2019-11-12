@@ -16,7 +16,7 @@ Resets the password for one or more users.
     $ wp user reset-password admin editor
     Reset password for admin.
     Reset password for editor.
-    Success: Passwords reset.
+    Success: Passwords reset for 2 users.
 
 ### GLOBAL PARAMETERS
 

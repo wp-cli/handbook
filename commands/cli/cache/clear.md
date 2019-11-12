@@ -1,6 +1,6 @@
 # wp cli cache clear
 
-Clear the internal cache.
+Clears the internal cache.
 
 ### EXAMPLES
 
