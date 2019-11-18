@@ -6,6 +6,7 @@ In alphabetical order:
 
 * [1&1](http://1and1.com/)
 * [2020Media](https://www.2020media.com/)
+* [20i](https://www.20i.com/)
 * [A2 Hosting](https://www.a2hosting.com/)
 * [Amimoto](http://megumi-cloud.com/)
 * [Bluehost](http://www.bluehost.com/)
