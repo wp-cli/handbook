@@ -58,7 +58,6 @@ In alphabetical order:
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
 
-
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 
 * [Pressidium](https://pressidium.com)
