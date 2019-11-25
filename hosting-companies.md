@@ -63,5 +63,4 @@ The following is a list of hosting companies that use WP-CLI, whereby their cust
 
 * [Pressidium](https://pressidium.com)
 * [Presslabs](https://www.presslabs.com)
-* [WooCart](https://woocart.com)
 * [WordPress.com VIP](http://vip.wordpress.com/)
