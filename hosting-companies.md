@@ -55,6 +55,7 @@ In alphabetical order:
 * [Titibate](https://titibate.com/)
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
+* [WooCart](https://woocart.com)
 * [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
