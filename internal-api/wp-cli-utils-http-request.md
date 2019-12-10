@@ -11,6 +11,7 @@ Make a HTTP request to a remote URL.
 <div>
 <strong>$method</strong> (string) HTTP method (GET, POST, DELETE, etc.)<br />
 <strong>$url</strong> (string) URL to make the HTTP request to.<br />
+<strong>$data</strong> (array) Data to send either as a query string for GET/HEAD requests, or in the body for POST requests<br />
 <strong>$headers</strong> (array) Add specific headers to the request.<br />
 <strong>$options</strong> (array) <br />
 <strong>@return</strong> (object) <br />
