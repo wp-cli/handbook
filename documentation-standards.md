@@ -18,7 +18,7 @@ Here's an example of the PHPdoc annotating the `wp cron event schedule` command:
  * : The hook name.
  *
  * [<next-run>]
- * : A Unix timestamp or an English textual date time description compatible with `strtotime()`. Defaults to now.
+ * : A Unix timestamp or an English textual datetime description compatible with `strtotime()`. Defaults to now.
  *
  * [<recurrence>]
  * : How often the event should recur. See `wp cron schedule list` for available schedule names. Defaults to no recurrence.
