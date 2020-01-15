@@ -382,10 +382,10 @@ EOT;
 			$docs = $cmd['longdesc'];
 			$docs = htmlspecialchars( $docs, ENT_COMPAT, 'UTF-8' );
 
-			// decrease header level.
+			// Decrease header level.
 			$docs = preg_replace( '/^## /m', '### ', $docs );
 
-			// escape `--` so that it doesn't get converted into `&mdash;`.
+			// Escape `--` so that it doesn't get converted into `&mdash;`.
 			$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
 			$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
 
@@ -417,7 +417,7 @@ EOT;
 			}
 			$docs = implode( "\n", $bits );
 
-			// hack to prevent double encoding in code blocks.
+			// Hack to prevent double encoding in code blocks.
 			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 			$docs = preg_replace( '/ &gt; /', ' > ', $docs );
 			$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
