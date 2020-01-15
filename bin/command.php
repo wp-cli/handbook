@@ -291,7 +291,7 @@ EOT;
 				'parent'          => null,
 			);
 		}
-		// Internal API pages
+		// Internal API pages.
 		foreach( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
 			$slug = basename( $file, '.md' );
 			$title = '';
@@ -350,7 +350,7 @@ EOT;
 		static $params;
 		if ( ! isset( $params ) ) {
 			$params = WP_CLI::runcommand( 'cli param-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
-			// Preserve positioning of 'url' param
+			// Preserve positioning of 'url' param.
 			$url_param = $params['url'];
 			unset( $params['url'] );
 			$new_params = array();
@@ -382,15 +382,15 @@ EOT;
 			$docs = $cmd['longdesc'];
 			$docs = htmlspecialchars( $docs, ENT_COMPAT, 'UTF-8' );
 
-			// decrease header level
+			// decrease header level.
 			$docs = preg_replace( '/^## /m', '### ', $docs );
 
-			// escape `--` so that it doesn't get converted into `&mdash;`
+			// escape `--` so that it doesn't get converted into `&mdash;`.
 			$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
 			$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
 
-			// Remove wordwrapping from docs
-			// Match words, '().,;', and --arg before/after the newline
+			// Remove word wrapping from docs
+			// Match words, '().,;', and --arg before/after the newline.
 			$bits = explode( "\n", $docs );
 			$in_yaml_doc = $in_code_bloc = false;
 			for ( $i=0; $i < count( $bits ); $i++ ) {
@@ -417,7 +417,7 @@ EOT;
 			}
 			$docs = implode( "\n", $bits );
 
-			// hack to prevent double encoding in code blocks
+			// hack to prevent double encoding in code blocks.
 			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 			$docs = preg_replace( '/ &gt; /', ' > ', $docs );
 			$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
@@ -447,7 +447,7 @@ EOT;
 				$global_parameters .= PHP_EOL . '| `' . str_replace( '|', '\\|', $param_arg ) . '` | ' . str_replace( '|', '\\|', $meta['desc'] ) . ' |';
 			}
 
-			// Replace Global parameters with a nice table
+			// Replace Global parameters with a nice table.
 			if ( $binding['has-subcommands'] ) {
 				$replace_global = '';
 			} else {

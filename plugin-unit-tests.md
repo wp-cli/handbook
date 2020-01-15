@@ -4,7 +4,7 @@ This guide demonstrates how to run unit tests on both Travis CI and locally.
 
 ## Running tests on Travis CI
 
-If you host your plugin on Github and enable [Travis CI](http://about.travis-ci.org), the tests will be run automatically after every commit you make to the plugin.
+If you host your plugin on GitHub and enable [Travis CI](http://about.travis-ci.org), the tests will be run automatically after every commit you make to the plugin.
 
 All you need to do to enable this is copy and then edit the following files from the [WP-CLI sample plugin](https://github.com/wp-cli/sample-plugin):
 
@@ -66,6 +66,6 @@ First, know that some WP-CLI commands don't work in Windows, so you'll want to u
 
 Second, the `bin/install-wp-tests.sh` script doesn't work directly in Windows. Windows 10 [introduced a Windows Subsystem for Linux](http://www.pcworld.com/article/3106463/windows/how-to-get-bash-on-windows-10-with-the-anniversary-update.html) but older versions require extra effort. Cygwin is preferred because it runs bash scripts by default.
 
-Third, the bash installation script uses `which`, a Linux command not available by defaultin Windows. `cURL`, `svn` and `wget` all can be installed in Windows as separate packages.
+Third, the bash installation script uses `which`, a Linux command not available by default in Windows. `cURL`, `svn` and `wget` all can be installed in Windows as separate packages.
 
 Lastly, sometimes the bash script fails to build WordPress because of how it uses tmp folders. If it fails, then you can manually install WordPress to a writeable directory, and then manually create `wp-tests-config.php`.
