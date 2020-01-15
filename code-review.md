@@ -8,13 +8,13 @@ Code review is a core part of the WP-CLI project's software development workflow
 
 ## A typical code review workflow
 
-We're currently using Github for everything. Read up on [our Github workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler because each review stage will be looking at a small code.
+We're currently using GitHub for everything. Read up on [our GitHub workflow](https://make.wordpress.org/cli/handbook/pull-requests/) for details of process, naming, usage of issues and pull requests. A moderately complex issue will typically be addressed across multiple pull requests, each tackling a distinct part of the issue. This makes review simpler because each review stage will be looking at a small code.
 
 - On every commit pushed to a GH branch, our CI automated tests -- linting for all code, unit tests for functional code, and ideally, behavioral and automated acceptance testing -- are run on Travis.
 - If the build passes, the PR can be reviewed. If not, the original developer is responsible for getting the build to the point where it passes.
 - When the original developer is satisfied with their work, they can request review from the [committers team](https://make.wordpress.org/cli/handbook/committers-credo/) by assigning `@wp-cli/committers` for review.
 - Simple pull requests can often be merged by the developer who reviews them. More complex changesets will often require conversations back and forth between reviewer and developer, and should have secondary reviewers.
-- Github's "Files Changed" tab is a good place to leave inline comments on specific parts of the changeset. More general comments can be left on the pull request's "Conversation" tab.
+- GitHub's "Files Changed" tab is a good place to leave inline comments on specific parts of the changeset. More general comments can be left on the pull request's "Conversation" tab.
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
 - The developer will make changes suggested, discuss the issue for clarity, and may mention the reviewer when they are satisfied with their work.
 - If a pull request needs final cleanup before merging or has been abandoned, the [reviewer can commit directly to the branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/). However, avoid rewriting code without consultation.
