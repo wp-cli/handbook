@@ -39,7 +39,7 @@ Is documentation your strength? Take a look at the currently open [documentation
 There are a couple different types of documentation currently part of WP-CLI:
 
 * Documentation for individual WP-CLI commands (anything underneath [developer.wordpress.org/commands](https://developer.wordpress.org/cli/commands/)) is contained in the PHPDoc for each command. This means that to edit the documentation for a command, you will need to edit the file that actually provides the functionality for that command. The web documentation is generated from these files at the time of release, so you may not see your changes until the next release.
-* Individual documentation pages (anything under [make.wordpress.org/cli/handbook](https://make.wordpress.org/cli/handbook/)) can be edited by contributing to the [handbook repository on GitHub](https://github.com/wp-cli/handbook/). You don't necessarily need to navigate the Github repo though; any page that is part of this repository will have an 'Edit' link in the top right of the page which will take you to the corresponding file on GitHub.
+* Individual documentation pages (anything under [make.wordpress.org/cli/handbook](https://make.wordpress.org/cli/handbook/)) can be edited by contributing to the [handbook repository on GitHub](https://github.com/wp-cli/handbook/). You don't necessarily need to navigate the GitHub repo though; any page that is part of this repository will have an 'Edit' link in the top right of the page which will take you to the corresponding file on GitHub.
 
 ### Contributing in other ways
 
