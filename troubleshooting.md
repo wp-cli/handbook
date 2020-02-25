@@ -2,7 +2,7 @@
 
 Before you start to report a new issue on the GitHub repository, make sure to check your local installation, as some settings may typically result in an unexpected outcome of your WP-CLI commands.
 
-### How do I get more verbose informations about my WP-CLI installation?
+### How does I get more verbose informations about my WP-CLI installation?
 
 WP-CLI offers the command `wp --info`, which provides you with a lot of information about your WP-CLI install environment. The output will tell you,
 * what operating system and shell you work on
