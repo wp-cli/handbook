@@ -16,7 +16,7 @@ Practically-speaking:
 * Given a choice between Good, Fast, and Cheap, we pick Good and Slow. Creating great software is a journey, not a destination.
 * Product decisions are made [in alignment with our core philosophy](https://make.wordpress.org/cli/handbook/philosophy/).
 * [Code review is an integral part of our development workflow](https://make.wordpress.org/cli/handbook/code-review/). Pull requests need approval of at least one other committer before merging. If you’d like more than one code review, please don’t hesitate to request one. You can request a review from a specific person, or from the `@wp-cli/committers` team.
-* If you need help with something, ask for help. Seriously, ask for help any time you feel like you need help. No sense getting stuck.
+* If you need help with something, ask for help. Seriously, ask for help any time you feel like you need help. No sense of getting stuck.
 
 ## Stellar judgement
 
