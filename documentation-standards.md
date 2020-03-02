@@ -1,6 +1,6 @@
 # Documentation Standards
 
-To promote similarity and consistency between WP-CLI commands, we've produced these documentation standards we'd encourage you to follow. The commonality is a key component of usability, because it reduces the mental overhead required when switching between commands.
+To promote similarity and consistency between WP-CLI commands, we've produced these documentation standards we'd encourage you to follow. Commonality is a key component of usability, because it reduces the mental overhead required when switching between commands.
 
 Pull requests against the WP-CLI project are reviewed for these standards. Please follow these standards for your custom commands as well.
 

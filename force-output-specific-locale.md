@@ -1,6 +1,6 @@
 # Force output to a specific locale
 
-WP-CLI always outputs English because it doesn't support localization. But, because WordPress supports localization, you may see the non-English output when performing specific commands.
+WP-CLI always outputs English because it doesn't support localization. But, because WordPress supports localization, you may see non-English output when performing specific commands.
 
 For instance:
 

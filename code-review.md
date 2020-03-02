@@ -42,7 +42,7 @@ Next, check for readability. Functions, variables, and files should be named cle
 
 As readability is inherently subjective, this requires the ability to look back from the immediate code changes to the bigger picture. Think of someone months down the road trying to trace a given code path through the current changeset. Are there unnecessary steps that could be simplified? Are code comments and inline documentation robust enough to recreate the thought process behind the code?
 
-Finally, check for elegance and overall quality. The code should follow existing and known patterns so that others can understand it at a glance. If a change introduces a chance to refactor surrounding functionality, to abstract and standardize old code into new patterns, suggest those opportunities. 
+Finally, check for elegance and overall quality. Code should follow existing and known patterns so that others can understand it at a glance. If a change introduces a chance to refactor surrounding functionality, to abstract and standardize old code into new patterns, suggest those opportunities. 
 
 ### How to receive code review
 
