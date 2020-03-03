@@ -47,12 +47,12 @@ To break the example down piece by piece:
 * "Schedule a new cron event." is the command description. The command description should be under 50 characters and written in an active, present tense.
 * The options section should begin with `## OPTIONS`. Keep a blank line before and after the heading.
 * Each option should be named in a manner that concisely describes its purpose.
-* Example section should start with `## EXAMPLES`. Keep blank line before and after the heading.
+* The example section should start with `## EXAMPLES`. Keep a blank line before and after the heading.
 * Include a blank line before and after each example to help visually indicate each as a separate example.
 * Each example should have 3 parts.
     - Description
         + Must start with `#` and a space.
-        + Sentence should start with capital letter.
+        + Sentence should start with a capital letter.
         + Comment must end in full-stops, exclamation marks, or question marks.
         + Eg: `# Create database.`
     - Command
@@ -101,8 +101,8 @@ $ wp theme activate twentysixteen
 Success: Switched to 'Twenty Sixteen' theme.
 ```
 
-* Message must start with capital letter.
-    - Exception: When message starts with special key and is wrapped with quotes. Eg - `'movie' is not registered post type.`
+* Message must start with a capital letter.
+    - Exception: When message starts with a special key and is wrapped with quotes. Eg - `'movie' is not a registered post type.`
 * If single line message, it must end with `.`.
     - Exception: There should be no trailing character in the end when colon `:` is used like this. `Invalid ID: 123`
     - Exception: Message to display in progress bar can omit trailing period. Eg - `Generating comments`

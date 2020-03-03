@@ -14,7 +14,7 @@ On occasion, we [grant write access to contributors](https://github.com/orgs/wp-
 
 * Hold product and code quality in the highest regard.
 * Exhibit stellar judgement and communication.
-* Participate with the project on a consistent basis.
+* Participate in the project on a consistent basis.
 
 Becoming a committer can seem glamorous, but it also comes with expectations of responsibility, commitment, and humility.
 

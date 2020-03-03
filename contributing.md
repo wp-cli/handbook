@@ -6,7 +6,7 @@ We appreciate you taking the initiative to contribute to WP-CLI. It’s because 
 
 **Contributing isn’t limited to just code.** We encourage you to contribute in the way that best fits your abilities, by writing tutorials, giving a demo at your local meetup, helping other users with their support questions, or revising our documentation.
 
-Please take a moment to read these guidelines at depth. Following the guidelines helps to communicate that you respect the time of the other contributors to the project. In turn, they’ll do their best to reciprocate that respect when working with you, across timezones and around the world.
+Please take a moment to read these guidelines in depth. Following the guidelines helps to communicate that you respect the time of the other contributors to the project. In turn, they’ll do their best to reciprocate that respect when working with you, across timezones and around the world.
 
 Should you have any questions about contributing, please join the `#cli` channel in the [WordPress.org Slack](https://make.wordpress.org/chat/).
 
