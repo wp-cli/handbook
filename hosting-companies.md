@@ -22,6 +22,7 @@ In alphabetical order:
 * [HostGalaxy](https://www.hostgalaxy.com)
 * [HostGator](http://www.hostgator.com)
 * [Hostinger](https://www.hostinger.com)
+* [HostPresto](https://hostpresto.com)
 * [ICDSoft](https:///www.icdsoft.com)
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [JDM.pl](https://jdm.pl)
