@@ -57,6 +57,7 @@ In alphabetical order:
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
+* [WebhostUK LTD](http://webhostuk.co.uk)
 * [WooCart](https://woocart.com)
 * [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
