@@ -52,6 +52,6 @@ From time to time, you may see a pull request from the `wp-make-coffee` bot. The
 5 6 * * 1,3,5 source ~/.bash_profile; WP_CLI_DIR=~/wp-cli-bundle bash ~/wp-cli-bundle/utils/auto-composer-update.sh > ~/auto-composer-update-bundle.log 2>&1
 ```
 
-The [wpcli](https://twitter.com/wpcli) Twitter account is managed by [danielbachhuber](https://github.com/danielbachhuber).
+The [wpcli](https://twitter.com/wpcli) Twitter account is managed by [schlessera](https://github.com/schlessera).
 
 If you [subscribe for email updates](https://make.wordpress.org/cli/subscribe/), your email address is registered with WordPress.com through Automattic's Jetpack plugin.
