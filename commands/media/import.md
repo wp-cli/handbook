@@ -16,7 +16,7 @@ Creates attachments from local files or URLs.
 : Attachment title (post title field).
 
 [\--caption=&lt;caption&gt;]
-: Caption for attachent (post excerpt field).
+: Caption for attachment (post excerpt field).
 
 [\--alt=&lt;alt_text&gt;]
 : Alt text for image (saved as post meta).
