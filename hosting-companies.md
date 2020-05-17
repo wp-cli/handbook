@@ -50,6 +50,7 @@ In alphabetical order:
 * [Site5](http://www.site5.com/)
 * [SiteDistrict](https://sitedistrict.com/)
 * [SiteGround](http://www.siteground.com/)
+* [SpinupWP](https://spinupwp.com/)
 * [StrikeHawk eCommerce](https://www.strikehawk.com/secure-web-hosting/wordpress/)
 * [Synthesis](http://websynthesis.com/)
 * [TitanHost](https://titanhost.io/)
