@@ -1,4 +1,4 @@
-# Plugin Unit Tests
+# Plugin Integration Tests
 
 This guide demonstrates how to run unit tests on both Travis CI and locally.
 
