@@ -58,6 +58,8 @@ options:
     $ wp option update timezone_string "America/New_York"
     Success: Updated 'timezone_string' option.
 
+You can find a list of keys in the [Option Reference](https://codex.wordpress.org/Option_Reference) page of the WordPress Codex.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
