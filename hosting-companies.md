@@ -31,6 +31,7 @@ In alphabetical order:
 * [Krystal Hosting](https://www.krystal.co.uk)
 * [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Liquid Web](https://liquidweb.com/wordpress)
+* [ManagedWPHosting](https://www.managedwphosting.nl/)
 * [Media Temple](http://mediatemple.net)
 * [MinHost](https://minhost.no)
 * [Mittwald](https://www.mittwald.de/)
