@@ -306,6 +306,7 @@ WP-CLI's behavior can be changed at runtime through the use of environment varia
 * `WP_CLI_PHP_ARGS` - Arguments to pass to the PHP binary when invoking WP-CLI (only works for non-Phar installation).
 * `WP_CLI_SSH_PRE_CMD` - When using `--ssh=<ssh>`, perform a command before WP-CLI calls WP-CLI on the remote server.
 * `WP_CLI_STRICT_ARGS_MODE` - Avoid ambiguity by telling WP-CLI to treat any arguments before the command as global, and after the command as local.
+* `WP_CLI_SUPPRESS_GLOBAL_PARAMS` - If you know your way around WP-CLI, you probably don't need information on usage of Global parameters, setting this variable to `true` will hide the Global parameters in command help.
 
 To set an environment variable on demand, simply place the environment variable definition before the WP-CLI command you mean to run.
 
