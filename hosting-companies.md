@@ -57,6 +57,7 @@ In alphabetical order:
 * [Titibate](https://titibate.com/)
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
+* [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [WooCart](https://woocart.com)
 * [WPEngine.com](http://wpengine.com)
