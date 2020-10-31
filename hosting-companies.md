@@ -38,6 +38,7 @@ In alphabetical order:
 * [NameHero](https://www.namehero.com)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 * [Nexcess.Net](https://www.nexcess.net/)
+* [Oderland Hosting Services](https://www.oderland.com/)
 * [One.com](https://www.one.com/)
 * [Onyx](https://www.onyx.io/)
 * [Pagely](https://pagely.com/)
