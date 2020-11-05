@@ -14,6 +14,7 @@ In alphabetical order:
 * [CloudHostWorld](https://www.cloudhostworld.com)
 * [Cloudways](http://cloudways.com)
 * [D9 Hosting](https://d9.hosting)
+* [Dhosting.pl](https://dhosting.pl/)
 * [Dreamhost](http://dreamhost.com)
 * [FatCow](http://www.fatcow.com/wordpress-hosting/)
 * [GoDaddy](https://www.godaddy.com/help/accessing-wp-cli-on-your-managed-wordpress-account-12066)
