@@ -62,6 +62,7 @@ In alphabetical order:
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [WooCart](https://woocart.com)
 * [WPEngine.com](http://wpengine.com)
+* [WP Provider](https://wpprovider.nl/)
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca)
