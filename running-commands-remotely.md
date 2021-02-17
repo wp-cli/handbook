@@ -120,7 +120,7 @@ mkdir -p ~/bin
 cd ~/bin
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
-mv chmod +x wp-cli.phar wp
+mv wp-cli.phar wp
 ```
 If `$HOME/bin` is not already in your path, then you can define it in your `~/.bashrc` file or equivalent for your remote server's specific shell:
 
