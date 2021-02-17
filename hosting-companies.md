@@ -4,7 +4,6 @@ The following is a list of hosting companies that have WP-CLI installed by defau
 
 In alphabetical order:
 
-* [1&1](http://1and1.com/)
 * [2020Media](https://www.2020media.com/)
 * [20i](https://www.20i.com/)
 * [A2 Hosting](https://www.a2hosting.com/)
@@ -25,6 +24,7 @@ In alphabetical order:
 * [Hostinger](https://www.hostinger.com)
 * [HostPresto](https://hostpresto.com)
 * [ICDSoft](https:///www.icdsoft.com)
+* [IONOS by 1&1](https://www.ionos.com/)
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [JDM.pl](https://jdm.pl)
 * [Kinsta](https://kinsta.com)
