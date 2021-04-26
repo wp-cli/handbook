@@ -8,6 +8,7 @@ In alphabetical order:
 * [20i](https://www.20i.com/)
 * [A2 Hosting](https://www.a2hosting.com/)
 * [Amimoto](http://megumi-cloud.com/)
+* [AltusHost](http://altushost.com/)
 * [Bluehost](http://www.bluehost.com/)
 * [Byte](https://www.byte.nl)
 * [CloudHostWorld](https://www.cloudhostworld.com)
