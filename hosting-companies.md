@@ -22,6 +22,7 @@ In alphabetical order:
 * [Host4Geeks](https://host4geeks.com/managed-wordpress-hosting)
 * [HostGalaxy](https://www.hostgalaxy.com)
 * [HostGator](http://www.hostgator.com)
+* [Hostico](https://hostico.ro)
 * [Hostinger](https://www.hostinger.com)
 * [HostPresto](https://hostpresto.com)
 * [ICDSoft](https:///www.icdsoft.com)
