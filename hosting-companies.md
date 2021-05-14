@@ -68,4 +68,3 @@ The following is a list of hosting companies that use WP-CLI, whereby their cust
 * [Pressidium](https://pressidium.com)
 * [Presslabs](https://www.presslabs.com)
 * [WordPress.com VIP](http://vip.wordpress.com/)
-* [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/wordpress-cli-hosting-provider/)
