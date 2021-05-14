@@ -29,7 +29,7 @@ WP_CLI::add_hook( 'after_invoke:site empty', function(){
 ### EXAMPLES
 
     $ wp site empty
-    Are you sure you want to empty the site at http://www.example.com of all posts, comments, and terms? [y/n] y
+    Are you sure you want to empty the site at http://www.example.com of all posts, links, comments, and terms? [y/n] y
     Success: The site at 'http://www.example.com' was emptied.
 
 ### GLOBAL PARAMETERS
@@ -47,6 +47,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

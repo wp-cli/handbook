@@ -15,7 +15,7 @@ Determines whether WordPress is installed by checking if the standard database t
     1
 
     # Bash script for checking whether WordPress is installed or not
-    if ! $(wp core is-installed); then
+    if ! wp core is-installed; then
         wp core install
     fi
 
@@ -34,6 +34,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

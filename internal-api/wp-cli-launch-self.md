@@ -15,7 +15,7 @@ Run a WP-CLI command in a new process reusing the current runtime arguments.
 <strong>$exit_on_error</strong> (bool) Whether to exit if the command returns an elevated return code.<br />
 <strong>$return_detailed</strong> (bool) Whether to return an exit status (default) or detailed execution results.<br />
 <strong>$runtime_args</strong> (array) Override one or more global args (path,url,user,allow-root)<br />
-<strong>@return</strong> (int|\WP_CLI\ProcessRun) command exit status, or a ProcessRun instance<br />
+<strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun instance<br />
 </div>
 
 

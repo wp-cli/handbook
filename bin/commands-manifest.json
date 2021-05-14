@@ -1007,6 +1007,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/i18n\/make-json.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
     },
+    "i18n\/make-mo": {
+        "title": "i18n make-mo",
+        "slug": "make-mo",
+        "cmd_path": "i18n\/make-mo",
+        "parent": "i18n",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/i18n\/make-mo.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
+    },
     "i18n\/make-pot": {
         "title": "i18n make-pot",
         "slug": "make-pot",
@@ -1261,6 +1269,14 @@
         "cmd_path": "plugin\/activate",
         "parent": "plugin",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/plugin\/activate.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
+    "plugin\/auto-updates": {
+        "title": "plugin auto-updates",
+        "slug": "auto-updates",
+        "cmd_path": "plugin\/auto-updates",
+        "parent": "plugin",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/plugin\/auto-updates.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
     },
     "plugin\/deactivate": {
@@ -1895,6 +1911,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/theme\/activate.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
     },
+    "theme\/auto-updates": {
+        "title": "theme auto-updates",
+        "slug": "auto-updates",
+        "cmd_path": "theme\/auto-updates",
+        "parent": "theme",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/theme\/auto-updates.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
     "theme\/delete": {
         "title": "theme delete",
         "slug": "delete",
@@ -2399,6 +2423,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cron\/event\/schedule.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/cron-command"
     },
+    "cron\/event\/unschedule": {
+        "title": "cron event unschedule",
+        "slug": "unschedule",
+        "cmd_path": "cron\/event\/unschedule",
+        "parent": "cron\/event",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/cron\/event\/unschedule.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/cron-command"
+    },
     "cron\/schedule\/list": {
         "title": "cron schedule list",
         "slug": "list",
@@ -2711,6 +2743,30 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/network\/meta\/update.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
+    "plugin\/auto-updates\/disable": {
+        "title": "plugin auto-updates disable",
+        "slug": "disable",
+        "cmd_path": "plugin\/auto-updates\/disable",
+        "parent": "plugin\/auto-updates",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/plugin\/auto-updates\/disable.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
+    "plugin\/auto-updates\/enable": {
+        "title": "plugin auto-updates enable",
+        "slug": "enable",
+        "cmd_path": "plugin\/auto-updates\/enable",
+        "parent": "plugin\/auto-updates",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/plugin\/auto-updates\/enable.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
+    "plugin\/auto-updates\/status": {
+        "title": "plugin auto-updates status",
+        "slug": "status",
+        "cmd_path": "plugin\/auto-updates\/status",
+        "parent": "plugin\/auto-updates",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/plugin\/auto-updates\/status.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
     "post\/meta\/add": {
         "title": "post meta add",
         "slug": "add",
@@ -2966,6 +3022,30 @@
         "parent": "term\/meta",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/term\/meta\/update.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "theme\/auto-updates\/disable": {
+        "title": "theme auto-updates disable",
+        "slug": "disable",
+        "cmd_path": "theme\/auto-updates\/disable",
+        "parent": "theme\/auto-updates",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/theme\/auto-updates\/disable.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
+    "theme\/auto-updates\/enable": {
+        "title": "theme auto-updates enable",
+        "slug": "enable",
+        "cmd_path": "theme\/auto-updates\/enable",
+        "parent": "theme\/auto-updates",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/theme\/auto-updates\/enable.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
+    "theme\/auto-updates\/status": {
+        "title": "theme auto-updates status",
+        "slug": "status",
+        "cmd_path": "theme\/auto-updates\/status",
+        "parent": "theme\/auto-updates",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/master\/commands\/theme\/auto-updates\/status.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
     },
     "theme\/mod\/get": {
         "title": "theme mod get",

@@ -23,6 +23,9 @@ If you see "Error: Another update is currently in progress.", you may need to ru
 [\--locale=&lt;locale&gt;]
 : Select which language you want to download.
 
+[\--insecure]
+: Retry download without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
+
 ### EXAMPLES
 
     # Update WordPress
@@ -68,6 +71,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

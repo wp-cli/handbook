@@ -9,6 +9,9 @@ Returns exit code 0 when active, 1 when not active.
 &lt;plugin&gt;
 : The plugin to check.
 
+[\--network]
+: If set, check if plugin is network-activated.
+
 ### EXAMPLES
 
     # Check whether plugin is Active; exit status 0 if active, otherwise 1
@@ -31,6 +34,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

@@ -21,6 +21,9 @@ Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` databas
 [\--skip-optimization]
 : When using an SQL file, do not include speed optimization such as disabling auto-commit and key checks.
 
+[\--defaults]
+: Loads the environment's MySQL option files. Default behavior is to skip loading them to avoid failures due to misconfiguration.
+
 ### EXAMPLES
 
     # Import MySQL from a file.
@@ -42,6 +45,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
