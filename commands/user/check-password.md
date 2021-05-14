@@ -10,6 +10,9 @@ Checks if a user's password is valid or not.
 &lt;user_pass&gt;
 : A string that contains the plain text password for the user.
 
+[\--escape-chars]
+: Escape password with `wp_slash()` to mimic the same behavior as `wp-login.php`.
+
 ### EXAMPLES
 
     # Check whether given credentials are valid; exit status 0 if valid, otherwise 1
@@ -37,6 +40,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

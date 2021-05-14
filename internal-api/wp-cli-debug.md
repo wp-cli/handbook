@@ -9,7 +9,7 @@ Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.
     WP_CLI::debug( $message, $group = false )
 
 <div>
-<strong>$message</strong> (string) Message to write to STDERR.<br />
+<strong>$message</strong> (string|WP_Error|Exception|Throwable) Message to write to STDERR.<br />
 <strong>$group</strong> (string|bool) Organize debug message to a specific group.<br />
 <strong>@return</strong> (null) <br />
 </div>
@@ -51,10 +51,10 @@ Use `false` to not group the message.
 
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-make-progress-bar/">WP_CLI\Utils\make_progress_bar()</a></strong> - Create a progress bar to display percent completion of a given operation.</li>
-
-
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-format-items/">WP_CLI\Utils\format_items()</a></strong> - Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or count.</li>
+
+
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-make-progress-bar/">WP_CLI\Utils\make_progress_bar()</a></strong> - Create a progress bar to display percent completion of a given operation.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-colorize/">WP_CLI::colorize()</a></strong> - Colorize a string for output.</li>

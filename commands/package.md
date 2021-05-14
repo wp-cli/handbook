@@ -4,11 +4,8 @@ Lists, installs, and removes WP-CLI packages.
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can contain WP-CLI commands, but they can also just extend WP-CLI in some way.
 
-Installable packages are listed in the
-[Package Index](http://wp-cli.org/package-index/).
-
 Learn how to create your own command from the
-[Commands Cookbook](http://wp-cli.org/docs/commands-cookbook/)
+[Commands Cookbook](https://make.wordpress.org/cli/handbook/commands-cookbook/)
 
 ### EXAMPLES
 

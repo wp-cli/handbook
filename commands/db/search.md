@@ -2,7 +2,7 @@
 
 Finds a string in the database.
 
-Searches through all or a selection of database tables for a given string, Outputs colorized references to the string.
+Searches through all of the text columns in a selection of database tables for a given string, Outputs colorized references to the string.
 
 Defaults to searching through all tables registered to $wpdb. On multisite, this default is limited to the tables for the current site.
 
@@ -36,7 +36,7 @@ default: 40
 \---
 
 [\--regex]
-: Runs the search as a regular expression (without delimiters). The search becomes case-sensitive (i.e. no PCRE flags are added). Delimiters must be escaped if they occur in the expression.
+: Runs the search as a regular expression (without delimiters). The search becomes case-sensitive (i.e. no PCRE flags are added). Delimiters must be escaped if they occur in the expression. Because the search is run on individual columns, you can use the `^` and `$` tokens to mark the start and end of a match, respectively.
 
 [\--regex-flags=&lt;regex-flags&gt;]
 : Pass PCRE modifiers to the regex search (e.g. 'i' for case-insensitivity).
@@ -148,6 +148,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
