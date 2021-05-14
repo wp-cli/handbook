@@ -24,17 +24,22 @@ We're going to assume that:
 
 So, let's get started:
 
-1. [Install PHPUnit](https://github.com/sebastianbergmann/phpunit#installation) (5.x is only supported when running php7, phpunit 4.8 is required when running php5).
+### 1. [Install PHPUnit](https://github.com/sebastianbergmann/phpunit#installation)
 
-1. Generate the plugin test files: 
+The version of PHPUnit to install depends on both PHP and WordPress versions.
+See: [PHPUnit Compatibility and WordPress Versions – Make WordPress Core](https://make.wordpress.org/core/handbook/references/phpunit-compatibility-and-wordpress-versions/)
+
+### 2. Generate the plugin test files
 
   ```bash
   wp scaffold plugin-tests my-plugin
   ```
 
-This command will generate all the files needed for running tests, including a `.travis.yml` file. 
+This command will generate all the files needed for running tests, including a `.travis.yml` file.
 
-1. Initialize the testing environment locally: `cd` into the plugin directory and run the install script (you will need to have `wget` installed).
+### 3. Initialize the testing environment locally
+
+`cd` into the plugin directory and run the install script (you will need to have `wget` installed).
 
   ```bash
   bash bin/install-wp-tests.sh wordpress_test root '' localhost latest
@@ -50,13 +55,13 @@ The install script first installs a copy of WordPress in the `/tmp` directory (b
 
 NOTE: This script can be run multiple times without errors, but it will *not* overwrite previously existing files. So if your DB credentials change, or you want to switch to a different instance of mysql, simply re-running the script won't be enough. You'll need to manually edit the `wp-config.php` that's installed in `/tmp`.
 
-4) Run the plugin tests: 
+### 4. Run the plugin tests
 
 ```bash
 phpunit
 ```
 
-If you have trouble running the install script or phpunit, check [Support section](http://wp-cli.org/#support) for help and answers to common issues.
+If you have trouble running the install script or PHPUnit, check [Support section](http://wp-cli.org/#support) for help and answers to common issues.
 
 ## Integrating WP Unit Testing in Windows
 
