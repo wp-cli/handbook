@@ -9,7 +9,7 @@ Display error message prefixed with &quot;Error: &quot; and exit script.
     WP_CLI::error( $message, $exit = true )
 
 <div>
-<strong>$message</strong> (string|WP_Error) Message to write to STDERR.<br />
+<strong>$message</strong> (string|WP_Error|Exception|Throwable) Message to write to STDERR.<br />
 <strong>$exit</strong> (boolean|integer) True defaults to exit(1).<br />
 <strong>@return</strong> (null) <br />
 </div>
@@ -44,10 +44,10 @@ if ( false === wp_cache_flush() ) {
 
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-make-progress-bar/">WP_CLI\Utils\make_progress_bar()</a></strong> - Create a progress bar to display percent completion of a given operation.</li>
-
-
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-format-items/">WP_CLI\Utils\format_items()</a></strong> - Render a collection of items as an ASCII table, JSON, CSV, YAML, list of ids, or count.</li>
+
+
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-make-progress-bar/">WP_CLI\Utils\make_progress_bar()</a></strong> - Create a progress bar to display percent completion of a given operation.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-colorize/">WP_CLI::colorize()</a></strong> - Colorize a string for output.</li>

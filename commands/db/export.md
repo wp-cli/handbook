@@ -2,7 +2,7 @@
 
 Exports the database to a file or to STDOUT.
 
-Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
+Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php. Accepts any valid `mysqldump` flags.
 
 ### OPTIONS
 
@@ -24,8 +24,14 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD`
 [\--exclude_tables=&lt;tables&gt;]
 : The comma separated list of specific tables that should be skipped from exporting. Excluding this parameter will export all tables in the database.
 
+[\--include-tablespaces]
+: Skips adding the default --no-tablespaces option to mysqldump.
+
 [\--porcelain]
 : Output filename for the exported database.
+
+[\--defaults]
+: Loads the environment's MySQL option files. Default behavior is to skip loading them to avoid failures due to misconfiguration.
 
 ### EXAMPLES
 
@@ -89,6 +95,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

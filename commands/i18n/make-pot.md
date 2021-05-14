@@ -39,6 +39,12 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 [\--skip-js]
 : Skips JavaScript string extraction. Useful when this is done in another build step, e.g. through Babel.
 
+[\--skip-php]
+: Skips PHP string extraction.
+
+[\--skip-block-json]
+: Skips string extraction from block.json files.
+
 [\--skip-audit]
 : Skips string audit where it tries to find possible mistakes in translatable strings. Useful when running in an automated environment.
 
@@ -85,6 +91,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-themes[=<themes>]` | Skip loading all themes, or a comma-separated list of themes. |
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
+| `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
