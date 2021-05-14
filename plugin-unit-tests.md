@@ -26,9 +26,8 @@ So, let's get started:
 
 ### 1. [Install PHPUnit](https://github.com/sebastianbergmann/phpunit#installation)
 
-* [The latest version of WordPress supports PHPUnit 7.x](https://make.wordpress.org/core/handbook/testing/automated-testing/phpunit/#setup)
-* The legacy version of WordPress supported PHPUnit 5.x only when running PHP 7
-* The legacy version of WordPress required PHPUnit 4.8 when running PHP 5
+The version of PHPUnit to install depends on both PHP and WordPress versions.
+See: [PHPUnit Compatibility and WordPress Versions – Make WordPress Core](https://make.wordpress.org/core/handbook/references/phpunit-compatibility-and-wordpress-versions/)
 
 ### 2. Generate the plugin test files
 
