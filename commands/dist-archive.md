@@ -15,7 +15,7 @@ You can specify files or directories you'd like to exclude from the archive with
 circle.yml
 ```
 
-Use one distibution archive command for many projects, instead of a bash script in each project.
+Use one distribution archive command for many projects, instead of a bash script in each project.
 
 ### OPTIONS
 
