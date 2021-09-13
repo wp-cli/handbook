@@ -13,7 +13,9 @@ In alphabetical order:
 * [Byte](https://www.byte.nl)
 * [CloudHostWorld](https://www.cloudhostworld.com)
 * [Cloudways](http://cloudways.com)
+* [Curanet](https://curanet.dk)
 * [D9 Hosting](https://d9.hosting)
+* [DanDomain](https://dandomain.dk)
 * [Dhosting.pl](https://dhosting.pl/)
 * [Dreamhost](http://dreamhost.com)
 * [FatCow](http://www.fatcow.com/wordpress-hosting/)
@@ -50,8 +52,10 @@ In alphabetical order:
 * [Pressjitsu](https://pressjitsu.com)
 * [RoseHosting](https://www.rosehosting.com)
 * [Savvii](https://www.savvii.com/)
+* [ScanNet](https://www.scannet.dk)
 * [Seravo.com](https://seravo.com)
 * [Servebolt.com](https://servebolt.com)
+* [Simply.com](https://www.simply.com)
 * [Site5](http://www.site5.com/)
 * [SiteDistrict](https://sitedistrict.com/)
 * [SiteGround](http://www.siteground.com/)
@@ -65,11 +69,12 @@ In alphabetical order:
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [WooCart](https://woocart.com)
-* [WPEngine.com](http://wpengine.com)
 * [WP Provider](https://wpprovider.nl/)
+* [WPEngine.com](http://wpengine.com)
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/)
+
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 
