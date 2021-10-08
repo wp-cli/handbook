@@ -138,9 +138,8 @@ Functional tests typically follow this pattern:
 * **When** a user performs a specific action,
 * **Then** the end result should be X (and Y and Z).
 
-Before running the functional tests, you'll need a MySQL (or MariaDB) user called `wp_cli_test` with the password `password1` that has full privileges on the MySQL database `wp_cli_test`. Running the following as root in MySQL should do the trick:
-
-    CREATE DATABASE `wp_cli_test`; GRANT ALL PRIVILEGES ON wp_cli_test.* TO "wp_cli_test"@"localhost" IDENTIFIED BY "password1";
+Before running the functional tests, you'll need a MySQL (or MariaDB) user called `wp_cli_test` with the password `password1` that has full privileges on the MySQL database `wp_cli_test`.
+The database can be setup by running `composer prepare-tests` Is should create the database and the user.
 
 Then, to run the entire test suite:
 
