@@ -4,7 +4,7 @@ If you want to create your plugins, WP-CLI has a powerful scaffold command that 
 
 ### Step 1 - Scaffold the plugin files
 
-The following command uses several options to lets us specify the plugin slug, its name, description, author name and uri as well as the plugin uri. You can replace the values passed to the options below to curomize the plugin based on your needs.
+The following command uses several options to lets us specify the plugin slug, its name, description, author name and uri as well as the plugin uri. You can replace the values passed to the options below to customize the plugin based on your needs.
 
 ```
     $ wp scaffold plugin wpcli-demo-plugin --plugin_name="WP-CLI Demo Plugin" --plugin_description="This is a wp-cli demo plugin" --plugin_author=wp-cli --plugin_author_uri="https://wp-cli.org" --plugin_uri="https://plugins.wp-cli.org/demo-plugin"Success: Created plugin files.
