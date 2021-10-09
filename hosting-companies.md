@@ -29,6 +29,7 @@ In alphabetical order:
 * [IONOS by 1&1](https://www.ionos.com/)
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [JDM.pl](https://jdm.pl)
+* [KDAWS.com](https://kdaws.com)
 * [Kinsta](https://kinsta.com)
 * [KnownHost](https://www.knownhost.com)
 * [Krystal Hosting](https://www.krystal.co.uk)
