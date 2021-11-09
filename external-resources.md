@@ -3,7 +3,7 @@
 ## Blog posts & tutorials
 
 * [scribu: A Command-Line Interface for WordPress](http://scribu.net/wordpress/a-command-line-interface-for-wordpress.html)
-* [A bit of bits: WP-CLI: WordPress Command Line Tools](http://madewithlove.be/abob/2011/12/wp-cli-wordpress-command-line-tools/)
+* [madewithlove: WP-CLI: WordPress Command Line Tools](https://madewithlove.com/blog/this-is-madewithlove/wp-cli-wordpress-command-line-tools/)
 * [Mika Epstein: Command Line WP](http://halfelf.org/2012/command-line-wp/)
 * [Treehouse Blog: Tame WordPress from the Command Line with wp-cli](http://blog.teamtreehouse.com/tame-wordpress-from-the-command-line-with-wp-cli)
 * [Matt Wiebe: Why You Should Develop Plugins With wp-cli](https://mattwiebe.wordpress.com/2014/01/15/why-you-should-develop-plugins-with-wp-cli/)
