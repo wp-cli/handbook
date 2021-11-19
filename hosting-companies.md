@@ -60,6 +60,7 @@ In alphabetical order:
 * [SpinupWP](https://spinupwp.com/)
 * [StrikeHawk eCommerce](https://www.strikehawk.com/secure-web-hosting/wordpress/)
 * [Synthesis](http://websynthesis.com/)
+* [Templ](https://templ.io/)
 * [TitanHost](https://titanhost.io/)
 * [Titibate](https://titibate.com/)
 * [TrulyWP](https://trulywp.com/)
