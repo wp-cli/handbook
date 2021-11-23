@@ -205,7 +205,7 @@ The longdesc is middle part of the PHPDoc:
 
 Options defined in the longdesc are interpreted as the command's **synopsis**:
 
-* `<name>` is a required positional argument. Changing it to `<name>...` would mean the command could accept one or more positional arguments.
+* `<name>` is a required positional argument. Changing it to `<name>...` would mean the command can accept one or more positional arguments. Changing it to `[<name>]` would mean that the positional argument is optional and finally, changing it to `[<name>...]` would mean that the command can accept multiple optional positional arguments.
 * `[--type=<type>]` is an optional associative argument which defaults to 'success' and accepts either 'success' or 'error'. Changing it to `[--error]` would change the argument to behave as an optional boolean flag.
 * `[--field[=<value>]]` allows an optional argument to be used with or without a value. An example of this would be using a global parameter like `--skip-plugins[=<plugins>]` which can either skip loading all plugins, or skip a comma-separated list of plugins. 
 
