@@ -65,6 +65,7 @@ In alphabetical order:
 * [Titibate](https://titibate.com/)
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
+* [UNLIMITED.RS](https://unlimited.rs/)
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [WooCart](https://woocart.com)
