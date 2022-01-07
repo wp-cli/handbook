@@ -158,6 +158,19 @@ The table below lists the available <span class="argument">arguments</span> (spe
 	</tr>
 	<tr>
 		<td>
+			Execute PHP code before running the command (may be used more than once).
+			<br />
+			Default value: <code>[]</code>
+		</td>
+		<td>
+			<code class="flag">--exec=&lt;php-code&gt;</code>
+		</td>
+		<td>
+			<code class="option">exec: &lt;php-code&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
 			(Sub)commands to disable.
 			<br />
 			Default value: <code>[]</code>
