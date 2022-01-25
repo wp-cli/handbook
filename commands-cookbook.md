@@ -556,5 +556,5 @@ You can install a package from a ZIP file by providing the path to that file to 
 
 ```
 # Installing the package using a ZIP file
-$ wp package install ~/Downloads/server-command-master.zip
+$ wp package install ~/Downloads/server-command-main.zip
 ```

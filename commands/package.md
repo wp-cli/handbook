@@ -14,12 +14,12 @@ Learn how to create your own command from the
     +-----------------------+------------------------------------------+---------+------------+
     | name                  | description                              | authors | version    |
     +-----------------------+------------------------------------------+---------+------------+
-    | wp-cli/server-command | Start a development server for WordPress |         | dev-master |
+    | wp-cli/server-command | Start a development server for WordPress |         | dev-main |
     +-----------------------+------------------------------------------+---------+------------+
 
     # Install the latest development version of the package
     $ wp package install wp-cli/server-command
-    Installing package wp-cli/server-command (dev-master)
+    Installing package wp-cli/server-command (dev-main)
     Updating /home/person/.wp-cli/packages/composer.json to require the package...
     Using Composer to install the package...
     ---

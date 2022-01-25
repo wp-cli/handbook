@@ -172,7 +172,7 @@ Then run `wp-cli-bundle/vendor/wp-cli/wp-cli/bin/wp` or add `wp-cli-bundle/vendo
 To update, you'll need to:
 
     cd wp-cli-bundle
-    git pull origin master
+    git pull origin main
     composer install
 
 **Global require**
@@ -193,9 +193,9 @@ The version must be in a [format](https://getcomposer.org/doc/04-schema.md#versi
 
 **Installing bleeding-edge**
 
-If you want to install bleeding-edge then use `dev-master`:
+If you want to install bleeding-edge then use `dev-main`:
 
-    composer create-project wp-cli/wp-cli-bundle:dev-master --no-dev
+    composer create-project wp-cli/wp-cli-bundle:dev-main --no-dev
 
 #### Installing globally as a project
 

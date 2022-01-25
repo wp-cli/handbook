@@ -39,7 +39,7 @@ These fields are optionally available:
     +-----------------------+------------------------------------------+---------+------------+
     | name                  | description                              | authors | version    |
     +-----------------------+------------------------------------------+---------+------------+
-    | wp-cli/server-command | Start a development server for WordPress |         | dev-master |
+    | wp-cli/server-command | Start a development server for WordPress |         | dev-main |
     +-----------------------+------------------------------------------+---------+------------+
 
 ### GLOBAL PARAMETERS

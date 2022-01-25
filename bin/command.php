@@ -254,7 +254,7 @@ EOT;
 					'slug'            => $slug,
 					'cmd_path'        => $cmd_path,
 					'parent'          => $parent,
-					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/commands/%s.md', $cmd_path ),
+					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/commands/%s.md', $cmd_path ),
 				);
 				if ( ! empty( $commands_data[ $title ] ) ) {
 					$manifest[ $cmd_path ] = array_merge( $manifest[ $cmd_path ], $commands_data[ $title ] );
@@ -287,7 +287,7 @@ EOT;
 			$manifest[ $slug ] = array(
 				'title'           => $title,
 				'slug'            => 'index' === $slug ? 'handbook' : $slug,
-				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/%s.md', $slug ),
+				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/%s.md', $slug ),
 				'parent'          => null,
 			);
 		}
@@ -302,7 +302,7 @@ EOT;
 			$manifest[ $slug ] = array(
 				'title'           => $title,
 				'slug'            => $slug,
-				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/master/internal-api/%s.md', $slug ),
+				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/internal-api/%s.md', $slug ),
 				'parent'          => 'internal-api',
 			);
 		}

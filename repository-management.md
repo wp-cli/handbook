@@ -98,7 +98,7 @@ Good first issues are small in scope and don't require extensive technical exper
 
 ## Commits
 
-No direct commits are to be done against the `master` branch of the packages. All code changes need to go through a pull request workflow. 
+No direct commits are to be done against the default branch (`main`/`master`) branch of the packages. All code changes need to go through a pull request workflow. 
 
 ## Pull Requests
 

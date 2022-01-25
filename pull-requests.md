@@ -10,7 +10,7 @@ WP-CLI follows a pull request workflow for changes to its code (and documentatio
 3. Push the code changes from your local clone to your fork.
 4. Open a pull request. It doesn't matter if the code isn't perfect. The idea is to get it reviewed early and iterate on it.
 5. Respond to [code review feedback](https://make.wordpress.org/cli/handbook/code-review/) in a timely manner, recognizing development is a collaborative process.
-6. Once your pull request has passed code review, it will be merged into master and be in the pipeline for the next release.
+6. Once your pull request has passed code review, it will be merged into the default branch and be in the pipeline for the next release.
 
 New to WP-CLI commands? You may want to [start with the commands cookbook](https://make.wordpress.org/cli/handbook/commands-cookbook/) to learn more about how commands work.
 

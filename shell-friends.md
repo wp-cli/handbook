@@ -126,7 +126,7 @@ $ wp import wordpress.wxr --authors=create | tee -a import.log
 
 ## Snippets
 
-Master of bash or zsh? Share your tips here.
+Are you an expert in bash or zsh? Share your tips here.
 
 **Take a look at the plugin changelog**
 
