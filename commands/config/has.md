@@ -17,6 +17,9 @@ options:
   - all
 \---
 
+[\--config-file=&lt;path&gt;]
+: Specify the file path to the config file to be checked. Defaults to the root of the WordPress installation and the filename "wp-config.php".
+
 ### EXAMPLES
 
     # Check whether the DB_PASSWORD constant exists in the wp-config.php file.
@@ -38,6 +41,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

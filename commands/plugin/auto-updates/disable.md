@@ -16,7 +16,7 @@ Disables the auto-updates for a plugin.
 ### EXAMPLES
 
     # Disable the auto-updates for a plugin
-    $ wp plugin auto-updates disable activate hello
+    $ wp plugin auto-updates disable hello
     Plugin auto-updates for 'hello' disabled.
     Success: Disabled 1 of 1 plugin auto-updates.
 
@@ -36,6 +36,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

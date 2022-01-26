@@ -6,7 +6,7 @@ Run a WP-CLI command.
 
 ## Usage
 
-    WP_CLI::runcommand( $command, $options = array() )
+    WP_CLI::runcommand( $command, $options = [] )
 
 <div>
 <strong>$command</strong> (string) WP-CLI command to run, including arguments.<br />

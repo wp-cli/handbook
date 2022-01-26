@@ -6,7 +6,7 @@ Write data as CSV to a given file.
 
 ## Usage
 
-    WP_CLI\Utils\write_csv( $fd, $rows, $headers = array() )
+    WP_CLI\Utils\write_csv( $fd, $rows, $headers = [] )
 
 <div>
 <strong>$fd</strong> (resource) File descriptor.<br />

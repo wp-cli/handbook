@@ -104,6 +104,16 @@ Updates one or more existing posts.
     $ wp post update 123 --meta_input='{"key1":"value1","key2":"value2"}'
     Success: Updated post 123.
 
+    # Update multiple posts at once.
+    $ wp post update 123 456 --post_author=789
+    Success: Updated post 123.
+    Success: Updated post 456.
+
+    # Update all posts of a given post type at once.
+    $ wp post update $(wp post list --post_type=page --format=ids) --post_author=123
+    Success: Updated post 123.
+    Success: Updated post 456.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -120,6 +130,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

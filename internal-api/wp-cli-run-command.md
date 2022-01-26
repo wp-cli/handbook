@@ -6,7 +6,7 @@ Run a given command within the current process using the same global parameters.
 
 ## Usage
 
-    WP_CLI::run_command( $args, $assoc_args = array() )
+    WP_CLI::run_command( $args, $assoc_args = [] )
 
 <div>
 <strong>$args</strong> (array) Positional arguments including command name.<br />

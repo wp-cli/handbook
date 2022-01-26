@@ -40,17 +40,17 @@ There are no optionally available fields.
       name: 10up/mu-migration
       description: A set of WP-CLI commands to support the migration of single WordPress instances to multisite
       authors: Nícholas André
-      version: dev-master, dev-develop
+      version: dev-main, dev-develop
     aaemnnosttv/wp-cli-dotenv-command:
       name: aaemnnosttv/wp-cli-dotenv-command
       description: Dotenv commands for WP-CLI
       authors: Evan Mattson
-      version: v0.1, v0.1-beta.1, v0.2, dev-master, dev-dev, dev-develop, dev-tests/behat
+      version: v0.1, v0.1-beta.1, v0.2, dev-main, dev-dev, dev-develop, dev-tests/behat
     aaemnnosttv/wp-cli-http-command:
       name: aaemnnosttv/wp-cli-http-command
       description: WP-CLI command for using the WordPress HTTP API
       authors: Evan Mattson
-      version: dev-master
+      version: dev-main
 
 ### GLOBAL PARAMETERS
 
@@ -68,6 +68,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

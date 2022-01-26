@@ -2,8 +2,7 @@
 
 Gets a list of posts.
 
-Display posts based on all arguments supported by
-[WP_Query()](https://developer.wordpress.org/reference/classes/wp_query/).
+Display posts based on all arguments supported by [WP_Query()](https://developer.wordpress.org/reference/classes/wp_query/). Only shows post types marked as post by default.
 
 ### OPTIONS
 
@@ -96,6 +95,14 @@ These fields are optionally available:
     | 1  | Hello world! | hello-world | 2016-06-01 14:31:12 | publish     |
     +----+--------------+-------------+---------------------+-------------+
 
+    # List given post by a specific author
+    $ wp post list --author=2
+    +----+-------------------+-------------------+---------------------+-------------+
+    | ID | post_title        | post_name         | post_date           | post_status |
+    +----+-------------------+-------------------+---------------------+-------------+
+    | 14 | New documentation | new-documentation | 2021-06-18 21:05:11 | publish     |
+    +----+-------------------+-------------------+---------------------+-------------+
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -112,6 +119,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

@@ -106,13 +106,13 @@ They can be concatenated. For instance, the default match color of black on a mu
     wp_options:option_value
     1:http://wordpress-develop.dev
     wp_options:option_value
-    1:http://example.com/foo
+    1:https://example.com/foo
         ...
 
     # Search through a multisite database on the subsite 'foo' for the 'example.com' string
     $ wp db search example.com --url=example.com/foo
     wp_2_comments:comment_author_url
-    1:http://example.com/
+    1:https://example.com/
     wp_2_options:option_value
         ...
 
@@ -149,6 +149,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
