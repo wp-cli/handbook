@@ -47,23 +47,23 @@ class Command {
 	 * @subcommand gen-api-docs
 	 */
 	public function gen_api_docs() {
-		$apis = WP_CLI::runcommand( 'handbook api-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
-		$categories = array(
-			'Registration' => array(),
-			'Output' => array(),
-			'Input'  => array(),
-			'Execution' => array(),
-			'System' => array(),
-			'Misc'   => array(),
-		);
+		$apis = WP_CLI::runcommand( 'handbook api-dump', [ 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ] );
+		$categories = [
+            'Registration' => [],
+            'Output'       => [],
+            'Input'        => [],
+            'Execution'    => [],
+            'System'       => [],
+            'Misc'         => [],
+        ];
 
 		$prepare_api_slug = function( $full_name ) {
-			$replacements = array(
-				'()'      => '',
-				'::'      => '-',
-				'_'       => '-',
-				'\\'      => '-',
-			);
+			$replacements = [
+                '()' => '',
+                '::' => '-',
+                '_'  => '-',
+                '\\' => '-',
+            ];
 			return strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
 		};
 
@@ -95,19 +95,18 @@ EOT;
 
 		foreach( $categories as $name => $apis ) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-			$out .= self::render( 'internal-api-list.mustache', array( 'apis' => $apis ) );
+			$out .= self::render( 'internal-api-list.mustache', [ 'apis' => $apis ] );
 			foreach( $apis as $i => $api ) {
 				$api['category'] = $name;
 				$api['related'] = $apis;
-				$api['phpdoc']['parameters'] = array_map( function( $parameter ){
-					foreach( $parameter as $key => $values ) {
-						if ( isset( $values[2] ) ) {
-							$values[2] = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
-							$parameter[ $key ] = $values;
-						}
-					}
-					return $parameter;
-				}, $api['phpdoc']['parameters'] );
+                $array_map       = [];
+                foreach ( $parameter as $key => $values ) {
+                    if ( isset( $values[2] ) ) {
+                        $values[2]       = str_replace( [ PHP_EOL ], [ '<br />' ], $values[2]);
+                        $parameter[$key] = $values;
+                    }
+                }
+                $api['phpdoc']['parameters'] = $array_map;
 				unset( $api['related'][ $i ] );
 				$api['related'] = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
@@ -144,8 +143,8 @@ EOT;
 		// Check non-bundled commands installed.
 		$runner = WP_CLI::get_runner();
 		$have_nonbundled_installed = true;
-		foreach ( array( 'admin', 'find', 'profile', 'dist-archive' ) as $cmd ) {
-			$have_nonbundled_installed = $have_nonbundled_installed && is_array( $runner->find_command_to_run( array( $cmd ) ) );
+		foreach ( [ 'admin', 'find', 'profile', 'dist-archive' ] as $cmd ) {
+			$have_nonbundled_installed = $have_nonbundled_installed && is_array( $runner->find_command_to_run( [ $cmd ] ) );
 		}
 		if ( ! $have_nonbundled_installed ) {
 			WP_CLI::error( sprintf( "Install non-bundled packages by running '%s' first.", 'bin/install_packages.sh' ) );
@@ -153,15 +152,15 @@ EOT;
 
 		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/commands/' );
 
-		$wp = WP_CLI::runcommand( 'cli cmd-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
+		$wp = WP_CLI::runcommand( 'cli cmd-dump', [ 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ] );
 
 		$verbose = Utils\get_flag_value( $assoc_args, 'verbose', false );
 
 		foreach ( $wp['subcommands'] as $cmd ) {
-			if ( in_array( $cmd['name'], array( 'website', 'api-dump', 'handbook' ), true ) ) {
+			if ( in_array( $cmd['name'], [ 'website', 'api-dump', 'handbook' ], true ) ) {
 				continue;
 			}
-			self::gen_cmd_pages( $cmd, array() /*parent*/, $verbose );
+			self::gen_cmd_pages( $cmd, [] /*parent*/, $verbose );
 		}
 
 		WP_CLI::success( 'Generated all command pages.' );
@@ -212,9 +211,9 @@ EOT;
 			}
 		}
 		if ( $repo_url ) {
-			$commands_data[ $full ] = array(
+			$commands_data[ $full ] = [
 				'repo_url' => $repo_url,
-			);
+            ];
 		}
 	}
 
@@ -224,20 +223,20 @@ EOT;
 	 * @subcommand gen-commands-manifest
 	 */
 	public function gen_commands_manifest() {
-		$manifest = array();
-		$paths = array(
+		$manifest = [];
+		$paths = [
 			WP_CLI_HANDBOOK_PATH . '/commands/*.md',
 			WP_CLI_HANDBOOK_PATH . '/commands/*/*.md',
 			WP_CLI_HANDBOOK_PATH . '/commands/*/*/*.md'
-		);
-		$commands_data = array();
+        ];
+		$commands_data = [];
 		foreach( WP_CLI::get_root_command()->get_subcommands() as $command ) {
 			self::update_commands_data( $command, $commands_data, $command->get_name() );
 		}
 		foreach( $paths as $path ) {
 			foreach( glob( $path ) as $file ) {
 				$slug = basename( $file, '.md' );
-				$cmd_path = str_replace( array( WP_CLI_HANDBOOK_PATH . '/commands/', '.md' ), '', $file );
+				$cmd_path = str_replace( [ WP_CLI_HANDBOOK_PATH . '/commands/', '.md' ], '', $file );
 				$title = '';
 				$contents = file_get_contents( $file );
 				if ( preg_match( '/^#\swp\s(.+)/', $contents, $matches ) ) {
@@ -249,13 +248,13 @@ EOT;
 					array_pop( $bits );
 					$parent = implode( '/', $bits );
 				}
-				$manifest[ $cmd_path ] = array(
+				$manifest[ $cmd_path ] = [
 					'title'           => $title,
 					'slug'            => $slug,
 					'cmd_path'        => $cmd_path,
 					'parent'          => $parent,
 					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/commands/%s.md', $cmd_path ),
-				);
+                ];
 				if ( ! empty( $commands_data[ $title ] ) ) {
 					$manifest[ $cmd_path ] = array_merge( $manifest[ $cmd_path ], $commands_data[ $title ] );
 				}
@@ -272,7 +271,7 @@ EOT;
 	 * @subcommand gen-hb-manifest
 	 */
 	public function gen_hb_manifest() {
-		$manifest = array();
+		$manifest = [];
 		// Top-level pages
 		foreach( glob( WP_CLI_HANDBOOK_PATH . '/*.md' ) as $file ) {
 			$slug = basename( $file, '.md' );
@@ -284,12 +283,12 @@ EOT;
 			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
 				$title = $matches[1];
 			}
-			$manifest[ $slug ] = array(
+			$manifest[ $slug ] = [
 				'title'           => $title,
 				'slug'            => 'index' === $slug ? 'handbook' : $slug,
 				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/%s.md', $slug ),
 				'parent'          => null,
-			);
+            ];
 		}
 		// Internal API pages.
 		foreach( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
@@ -299,12 +298,12 @@ EOT;
 			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
 				$title = $matches[1];
 			}
-			$manifest[ $slug ] = array(
+			$manifest[ $slug ] = [
 				'title'           => $title,
 				'slug'            => $slug,
 				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/internal-api/%s.md', $slug ),
 				'parent'          => 'internal-api',
-			);
+            ];
 		}
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
@@ -316,7 +315,7 @@ EOT;
 	 * @subcommand api-dump
 	 */
 	public function api_dump() {
-		$apis = array();
+		$apis = [];
 		$functions = get_defined_functions();
 		foreach( $functions['user'] as $function ) {
 			$reflection = new \ReflectionFunction( $function );
@@ -344,16 +343,16 @@ EOT;
 		echo json_encode( $apis );
 	}
 
-	private static function gen_cmd_pages( $cmd, $parent = array(), $verbose = false ) {
+	private static function gen_cmd_pages( $cmd, $parent = [], $verbose = false ) {
 		$parent[] = $cmd['name'];
 
 		static $params;
 		if ( ! isset( $params ) ) {
-			$params = WP_CLI::runcommand( 'cli param-dump', array( 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ) );
+			$params = WP_CLI::runcommand( 'cli param-dump', [ 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ] );
 			// Preserve positioning of 'url' param.
 			$url_param = $params['url'];
 			unset( $params['url'] );
-			$new_params = array();
+			$new_params = [];
 			foreach( $params as $param => $meta ) {
 				$new_params[ $param ] = $meta;
 				if ( 'path' === $param ) {
@@ -376,7 +375,7 @@ EOT;
 				$binding['breadcrumbs'] .= " &raquo; {$p}";
 			}
 		}
-		$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? array(true) : false;
+		$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? [ true ] : false;
 
 		if ( $cmd['longdesc'] ) {
 			$docs = $cmd['longdesc'];
@@ -483,15 +482,15 @@ EOT;
 	 */
 	private static function get_simple_representation( $reflection ) {
 		$signature = $reflection->getName();
-		$parameters = array();
+		$parameters = [];
 		foreach( $reflection->getParameters() as $parameter ) {
 			$parameter_signature = '$' . $parameter->getName();
 			if ( $parameter->isOptional() ) {
 				$default_value = $parameter->getDefaultValue();
 				if ( false === $default_value ) {
 					$parameter_signature .= ' = false';
-				} else if ( array() === $default_value ) {
-					$parameter_signature .= ' = array()';
+				} else if ( [] === $default_value ) {
+					$parameter_signature .= ' = []';
 				} else if ( '' === $default_value ) {
 					$parameter_signature .= " = ''";
 				} else if ( null === $default_value ) {
@@ -523,14 +522,14 @@ EOT;
 				$signature = $class . $separator . $signature;
 				break;
 		}
-		return array(
-			'phpdoc'       => self::parse_docblock( $phpdoc ),
-			'type'         => $type,
-			'signature'    => $signature,
-			'short_name'   => $reflection->getShortName(),
-			'full_name'    => $full_name,
-			'class'        => $class,
-		);
+		return [
+            'phpdoc'     => self::parse_docblock($phpdoc),
+            'type'       => $type,
+            'signature'  => $signature,
+            'short_name' => $reflection->getShortName(),
+            'full_name'  => $full_name,
+            'class'      => $class,
+        ];
 	}
 
 	/**
@@ -540,10 +539,10 @@ EOT;
 	 * @return array
 	 */
 	private static function parse_docblock( $docblock ) {
-		$ret = array(
+		$ret = [
 			'description' => '',
-			'parameters'  => array(),
-		);
+			'parameters'  => [],
+        ];
 		$extra_line = '';
 		$in_param = false;
 		foreach( preg_split("/(\r?\n)/", $docblock ) as $line ){
@@ -563,7 +562,7 @@ EOT;
 					$param_name = $matches[1];
 					$value = str_replace( "@$param_name ", '', $info );
 					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
-						$ret['parameters'][ $param_name ] = array();
+						$ret['parameters'][ $param_name ] = [];
 					}
 					$ret['parameters'][ $param_name ][] = preg_split( '/[\s]+/', $value, 3 );
 					end( $ret['parameters'][ $param_name ] );
@@ -571,7 +570,7 @@ EOT;
 					reset( $ret['parameters'][ $param_name ] );
 					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][ 2 ] )
 						&& '{' === substr( $ret['parameters'][ $param_name ][ $key ][ 2 ] , -1 ) ) {
-						$in_param = array( $param_name, $key );
+						$in_param = [ $param_name, $key ];
 					}
 				}
 				$extra_line = '';
@@ -581,7 +580,7 @@ EOT;
 		}
 		$ret['description'] = str_replace( '\/', '/', trim( $ret['description'], PHP_EOL ) );
 		$bits = explode( PHP_EOL, $ret['description'] );
-		$short_desc = array( array_shift( $bits ) );
+		$short_desc = [ array_shift( $bits ) ];
 		while ( isset( $bits[0] ) && ! empty( $bits[0] ) ) {
 			$short_desc[] = array_shift( $bits );
 		}
