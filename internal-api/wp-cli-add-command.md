@@ -6,7 +6,7 @@ Register a command to WP-CLI.
 
 ## Usage
 
-    WP_CLI::add_command( $name, $callable, $args = array() )
+    WP_CLI::add_command( $name, $callable, $args = [] )
 
 <div>
 <strong>$name</strong> (string) Name for the command (e.g. "post list" or "site empty").<br />

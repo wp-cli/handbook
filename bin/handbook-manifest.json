@@ -71,6 +71,36 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/hosting-companies.md",
         "parent": null
     },
+    "how-to-create-custom-plugins": {
+        "title": "",
+        "slug": "how-to-create-custom-plugins",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to-create-custom-plugins.md",
+        "parent": null
+    },
+    "how-to-install": {
+        "title": "How to install WordPress",
+        "slug": "how-to-install",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to-install.md",
+        "parent": null
+    },
+    "how-to-maintenance-mode": {
+        "title": "How to put the site in maintenance mode",
+        "slug": "how-to-maintenance-mode",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to-maintenance-mode.md",
+        "parent": null
+    },
+    "how-to-start-webserver": {
+        "title": "How to start the webserver",
+        "slug": "how-to-start-webserver",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to-start-webserver.md",
+        "parent": null
+    },
+    "how-to": {
+        "title": "How to WP-CLI",
+        "slug": "how-to",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to.md",
+        "parent": null
+    },
     "identify-plugin-theme-conflict": {
         "title": "Identify a Plugin or Theme Conflict",
         "slug": "identify-plugin-theme-conflict",
@@ -108,7 +138,7 @@
         "parent": null
     },
     "plugin-unit-tests": {
-        "title": "Plugin Unit Tests",
+        "title": "Plugin Integration Tests",
         "slug": "plugin-unit-tests",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/plugin-unit-tests.md",
         "parent": null

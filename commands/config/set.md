@@ -17,7 +17,7 @@ Sets the value of a specific constant or variable defined in wp-config.php file.
 : Place the value into the wp-config.php file as is, instead of as a quoted string.
 
 [\--anchor=&lt;anchor&gt;]
-: Anchor string where additions of new values are anchored around. Defaults to "/* That's all, stop editing!".
+: Anchor string where additions of new values are anchored around. Defaults to "/* That's all, stop editing!". The special case "EOF" string uses the end of the file as the anchor.
 
 [\--placement=&lt;placement&gt;]
 : Where to place the new values in relation to the anchor string.
@@ -41,6 +41,9 @@ options:
   - all
 \---
 
+[\--config-file=&lt;path&gt;]
+: Specify the file path to the config file to be modified. Defaults to the root of the WordPress installation and the filename "wp-config.php".
+
 ### EXAMPLES
 
     # Set the WP_DEBUG constant to true.
@@ -50,7 +53,7 @@ options:
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
-| **Argument**    | **Description**              |
+| **Argument**    | **Description**			  |
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
@@ -62,6 +65,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

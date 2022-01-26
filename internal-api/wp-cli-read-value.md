@@ -6,7 +6,7 @@ Read a value, from various formats.
 
 ## Usage
 
-    WP_CLI::read_value( $raw_value, $assoc_args = array() )
+    WP_CLI::read_value( $raw_value, $assoc_args = [] )
 
 <div>
 <strong>$raw_value</strong> (mixed) <br />

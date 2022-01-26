@@ -6,7 +6,7 @@ Ask for confirmation before running a destructive operation.
 
 ## Usage
 
-    WP_CLI::confirm( $question, $assoc_args = array() )
+    WP_CLI::confirm( $question, $assoc_args = [] )
 
 <div>
 <strong>$question</strong> (string) Question to display before the prompt.<br />

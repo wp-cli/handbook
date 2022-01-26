@@ -17,8 +17,14 @@ See https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wo
 [\--purge]
 : Whether to purge the strings that were extracted from the original source file. Defaults to true, use `--no-purge` to skip the removal.
 
+[\--update-mo-files]
+: Whether MO files should be updated as well after updating PO files. Only has an effect when used in combination with `--purge`.
+
 [\--pretty-print]
 : Pretty-print resulting JSON files.
+
+[\--use-map=&lt;paths_or_maps&gt;]
+: Whether to use a mapping file for the strings, as a JSON value, array to specify multiple. Each element can either be a string (file path) or object (map).
 
 ### EXAMPLES
 
@@ -28,11 +34,20 @@ See https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wo
     # Create JSON files for my-plugin-de_DE.po and leave the PO file untouched.
     $ wp i18n make-json my-plugin-de_DE.po /tmp --no-purge
 
+    # Create JSON files with mapping
+    $ wp i18n make-json languages --use-map=build/map.json
+
+    # Create JSON files with multiple mappings
+    $ wp i18n make-json languages '--use-map=["build/map.json","build/map2.json"]'
+
+    # Create JSON files with object mapping
+    $ wp i18n make-json languages '--use-map={"source/index.js":"build/index.js"}'
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
-| **Argument**    | **Description**              |
+| **Argument**    | **Description**			  |
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
@@ -44,6 +59,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

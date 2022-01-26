@@ -25,7 +25,10 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 : Comma-separated list of POT files whose contents should be merged with the extracted strings. If left empty, defaults to the destination POT file. POT file headers will be ignored.
 
 [\--subtract=&lt;paths&gt;]
-: Comma-separated list of POT files whose contents should act as some sort of blacklist for string extraction. Any string which is found on that blacklist will not be extracted. This can be useful when you want to create multiple POT files from the same source directory with slightly different content and no duplicate strings between them.
+: Comma-separated list of POT files whose contents should act as some sort of denylist for string extraction. Any string which is found on that denylist will not be extracted. This can be useful when you want to create multiple POT files from the same source directory with slightly different content and no duplicate strings between them.
+
+[\--subtract-and-merge]
+: Whether source code references and comments from the generated POT file should be instead added to the POT file used for subtraction. Warning: this modifies the files passed to `--subtract`!
 
 [\--include=&lt;paths&gt;]
 : Comma-separated list of files and paths that should be used for string extraction. If provided, only these files and folders will be taken into account for string extraction. For example, `--include="src,my-file.php` will ignore anything besides `my-file.php` and files in the `src` directory. Simple glob patterns can be used, i.e. `--include=foo-*.php` includes any PHP file with the `foo-` prefix. Leading and trailing slashes are ignored, i.e. `/my/directory/` is the same as `my/directory`.
@@ -36,6 +39,9 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 [\--headers=&lt;headers&gt;]
 : Array in JSON format of custom headers which will be added to the POT file. Defaults to empty array.
 
+[\--location]
+: Whether to write `#: filename:line` lines. Defaults to true, use `--no-location` to skip the removal. Note that disabling this option makes it harder for technically skilled translators to understand each message’s context.
+
 [\--skip-js]
 : Skips JavaScript string extraction. Useful when this is done in another build step, e.g. through Babel.
 
@@ -44,6 +50,9 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 
 [\--skip-block-json]
 : Skips string extraction from block.json files.
+
+[\--skip-theme-json]
+: Skips string extraction from theme.json files.
 
 [\--skip-audit]
 : Skips string audit where it tries to find possible mistakes in translatable strings. Useful when running in an automated environment.
@@ -80,7 +89,7 @@ Scans PHP and JavaScript files for translatable strings, as well as theme styles
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
-| **Argument**    | **Description**              |
+| **Argument**    | **Description**			  |
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
@@ -92,6 +101,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

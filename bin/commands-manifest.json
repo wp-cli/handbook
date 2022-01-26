@@ -2079,6 +2079,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/add-role.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
+    "user\/application-password": {
+        "title": "user application-password",
+        "slug": "application-password",
+        "cmd_path": "user\/application-password",
+        "parent": "user",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
     "user\/check-password": {
         "title": "user check-password",
         "slug": "check-password",
@@ -3078,6 +3086,62 @@
         "parent": "theme\/mod",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/theme\/mod\/set.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/extension-command"
+    },
+    "user\/application-password\/create": {
+        "title": "user application-password create",
+        "slug": "create",
+        "cmd_path": "user\/application-password\/create",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/create.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/application-password\/delete": {
+        "title": "user application-password delete",
+        "slug": "delete",
+        "cmd_path": "user\/application-password\/delete",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/delete.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/application-password\/exists": {
+        "title": "user application-password exists",
+        "slug": "exists",
+        "cmd_path": "user\/application-password\/exists",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/exists.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/application-password\/get": {
+        "title": "user application-password get",
+        "slug": "get",
+        "cmd_path": "user\/application-password\/get",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/get.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/application-password\/list": {
+        "title": "user application-password list",
+        "slug": "list",
+        "cmd_path": "user\/application-password\/list",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/application-password\/record-usage": {
+        "title": "user application-password record-usage",
+        "slug": "record-usage",
+        "cmd_path": "user\/application-password\/record-usage",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/record-usage.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/application-password\/update": {
+        "title": "user application-password update",
+        "slug": "update",
+        "cmd_path": "user\/application-password\/update",
+        "parent": "user\/application-password",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/application-password\/update.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "user\/meta\/add": {
         "title": "user meta add",

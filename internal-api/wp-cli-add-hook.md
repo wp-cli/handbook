@@ -29,11 +29,16 @@ WP-CLI hooks include:
 * `before_invoke:<command>` - Just before a command is invoked.
 * `after_invoke:<command>` - Just after a command is invoked.
 * `find_command_to_run_pre` - Just before WP-CLI finds the command to run.
+* `before_registering_contexts` (1) - Before the contexts are registered.
 * `before_wp_load` - Just before the WP load process begins.
 * `before_wp_config_load` - After wp-config.php has been located.
 * `after_wp_config_load` - After wp-config.php has been loaded into scope.
 * `after_wp_load` - Just after the WP load process has completed.
-* `before_run_command` - Just before the command is executed.
+* `before_run_command` (3) - Just before the command is executed.
+
+The parentheses behind the hook name denote the number of arguments
+being passed into the hook. For such hooks, the callback should return
+the first argument again, making them work like a WP filter.
 
 WP-CLI commands can create their own hooks with `WP_CLI::do_hook()`.
 

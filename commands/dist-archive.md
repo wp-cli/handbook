@@ -15,7 +15,7 @@ You can specify files or directories you'd like to exclude from the archive with
 circle.yml
 ```
 
-Use one distibution archive command for many projects, instead of a bash script in each project.
+Use one distribution archive command for many projects, instead of a bash script in each project.
 
 ### OPTIONS
 
@@ -27,6 +27,9 @@ Use one distibution archive command for many projects, instead of a bash script 
 
 [\--create-target-dir]
 : Automatically create the target directory as needed.
+
+[\--plugin-dirname=&lt;plugin-slug&gt;]
+: Set the archive extract directory name. Defaults to project directory name.
 
 [\--format=&lt;format&gt;]
 : Choose the format for the archive.
@@ -41,7 +44,7 @@ options:
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
-| **Argument**    | **Description**              |
+| **Argument**    | **Description**			  |
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
@@ -53,6 +56,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--skip-packages` | Skip loading all installed packages. |
 | `--require=<path>` | Load PHP file before running the command (may be used more than once). |
 | `--exec=<php-code>` | Execute PHP code before running the command (may be used more than once). |
+| `--context=<context>` | Load WordPress in a given context. |
 | `--[no-]color` | Whether to colorize the output. |
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |

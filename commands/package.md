@@ -11,11 +11,11 @@ Learn how to create your own command from the
 
     # List installed packages
     $ wp package list
-    +-----------------------+------------------------------------------+---------+------------+
-    | name                  | description                              | authors | version    |
-    +-----------------------+------------------------------------------+---------+------------+
+    +-----------------------+------------------------------------------+---------+----------+
+    | name                  | description                              | authors | version  |
+    +-----------------------+------------------------------------------+---------+----------+
     | wp-cli/server-command | Start a development server for WordPress |         | dev-main |
-    +-----------------------+------------------------------------------+---------+------------+
+    +-----------------------+------------------------------------------+---------+----------+
 
     # Install the latest development version of the package
     $ wp package install wp-cli/server-command

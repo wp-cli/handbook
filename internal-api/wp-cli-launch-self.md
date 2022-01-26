@@ -6,7 +6,7 @@ Run a WP-CLI command in a new process reusing the current runtime arguments.
 
 ## Usage
 
-    WP_CLI::launch_self( $command, $args = array(), $assoc_args = array(), $exit_on_error = true, $return_detailed = false, $runtime_args = array() )
+    WP_CLI::launch_self( $command, $args = [], $assoc_args = [], $exit_on_error = true, $return_detailed = false, $runtime_args = [] )
 
 <div>
 <strong>$command</strong> (string) WP-CLI command to call.<br />
