@@ -438,7 +438,7 @@ EOT;
 			$global_parameters = <<<EOT
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
-| **Argument**    | **Description**			  |
+| **Argument**    | **Description**              |
 |:----------------|:-----------------------------|
 EOT;
 			foreach( $params as $param => $meta ) {
