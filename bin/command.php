@@ -2,8 +2,9 @@
 
 namespace WP_CLI\Handbook;
 
-use WP_CLI;
 use Mustache_Engine;
+use Reflection;
+use WP_CLI;
 use WP_CLI\Utils;
 
 /**
@@ -49,21 +50,21 @@ class Command {
 	public function gen_api_docs() {
 		$apis = WP_CLI::runcommand( 'handbook api-dump', [ 'launch' => false, 'return' => 'stdout', 'parse' => 'json' ] );
 		$categories = [
-            'Registration' => [],
-            'Output'       => [],
-            'Input'        => [],
-            'Execution'    => [],
-            'System'       => [],
-            'Misc'         => [],
-        ];
+			'Registration' => [],
+			'Output'       => [],
+			'Input'        => [],
+			'Execution'    => [],
+			'System'       => [],
+			'Misc'         => [],
+		];
 
 		$prepare_api_slug = function( $full_name ) {
 			$replacements = [
-                '()' => '',
-                '::' => '-',
-                '_'  => '-',
-                '\\' => '-',
-            ];
+				'()' => '',
+				'::' => '-',
+				'_'  => '-',
+				'\\' => '-',
+			];
 			return strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
 		};
 
@@ -99,14 +100,15 @@ EOT;
 			foreach( $apis as $i => $api ) {
 				$api['category'] = $name;
 				$api['related'] = $apis;
-                $array_map       = [];
-                foreach ( $parameter as $key => $values ) {
-                    if ( isset( $values[2] ) ) {
-                        $values[2]       = str_replace( [ PHP_EOL ], [ '<br />' ], $values[2]);
-                        $parameter[$key] = $values;
-                    }
-                }
-                $api['phpdoc']['parameters'] = $array_map;
+				$api['phpdoc']['parameters'] = array_map( function( $parameter ){
+					foreach( $parameter as $key => $values ) {
+						if ( isset( $values[2] ) ) {
+							$values[2] = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
+							$parameter[ $key ] = $values;
+						}
+					}
+					return $parameter;
+				}, $api['phpdoc']['parameters'] );
 				unset( $api['related'][ $i ] );
 				$api['related'] = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
@@ -213,7 +215,7 @@ EOT;
 		if ( $repo_url ) {
 			$commands_data[ $full ] = [
 				'repo_url' => $repo_url,
-            ];
+			];
 		}
 	}
 
@@ -228,7 +230,7 @@ EOT;
 			WP_CLI_HANDBOOK_PATH . '/commands/*.md',
 			WP_CLI_HANDBOOK_PATH . '/commands/*/*.md',
 			WP_CLI_HANDBOOK_PATH . '/commands/*/*/*.md'
-        ];
+		];
 		$commands_data = [];
 		foreach( WP_CLI::get_root_command()->get_subcommands() as $command ) {
 			self::update_commands_data( $command, $commands_data, $command->get_name() );
@@ -253,8 +255,11 @@ EOT;
 					'slug'            => $slug,
 					'cmd_path'        => $cmd_path,
 					'parent'          => $parent,
-					'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/commands/%s.md', $cmd_path ),
-                ];
+					'markdown_source' => sprintf(
+						'https://github.com/wp-cli/handbook/blob/main/commands/%s.md',
+						$cmd_path
+					),
+				];
 				if ( ! empty( $commands_data[ $title ] ) ) {
 					$manifest[ $cmd_path ] = array_merge( $manifest[ $cmd_path ], $commands_data[ $title ] );
 				}
@@ -286,9 +291,12 @@ EOT;
 			$manifest[ $slug ] = [
 				'title'           => $title,
 				'slug'            => 'index' === $slug ? 'handbook' : $slug,
-				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/%s.md', $slug ),
+				'markdown_source' => sprintf(
+					'https://github.com/wp-cli/handbook/blob/main/%s.md',
+					$slug
+				),
 				'parent'          => null,
-            ];
+			];
 		}
 		// Internal API pages.
 		foreach( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
@@ -301,9 +309,12 @@ EOT;
 			$manifest[ $slug ] = [
 				'title'           => $title,
 				'slug'            => $slug,
-				'markdown_source' => sprintf( 'https://github.com/wp-cli/handbook/blob/main/internal-api/%s.md', $slug ),
+				'markdown_source' => sprintf(
+					'https://github.com/wp-cli/handbook/blob/main/internal-api/%s.md',
+					$slug
+				),
 				'parent'          => 'internal-api',
-            ];
+			];
 		}
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
@@ -427,7 +438,7 @@ EOT;
 			$global_parameters = <<<EOT
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
-| **Argument**    | **Description**              |
+| **Argument**    | **Description**			  |
 |:----------------|:-----------------------------|
 EOT;
 			foreach( $params as $param => $meta ) {
@@ -485,7 +496,7 @@ EOT;
 		$parameters = [];
 		foreach( $reflection->getParameters() as $parameter ) {
 			$parameter_signature = '$' . $parameter->getName();
-			if ( $parameter->isOptional() ) {
+			if ( $parameter->isOptional() && $parameter->isDefaultValueAvailable() ) {
 				$default_value = $parameter->getDefaultValue();
 				if ( false === $default_value ) {
 					$parameter_signature .= ' = false';
@@ -512,29 +523,30 @@ EOT;
 		$type = strtolower( str_replace( 'Reflection', '', get_class( $reflection ) ) );
 		$class = '';
 		switch ( $type ) {
-			case 'function':
-				$full_name = $reflection->getName();
-				break;
 			case 'method':
 				$separator = $reflection->isStatic() ? '::' : '->';
 				$class = $reflection->class;
 				$full_name = $class . $separator . $reflection->getName();
 				$signature = $class . $separator . $signature;
 				break;
+			case 'function':
+			default:
+				$full_name = $reflection->getName();
+				break;
 		}
 		return [
-            'phpdoc'     => self::parse_docblock($phpdoc),
-            'type'       => $type,
-            'signature'  => $signature,
-            'short_name' => $reflection->getShortName(),
-            'full_name'  => $full_name,
-            'class'      => $class,
-        ];
+			'phpdoc'     => self::parse_docblock($phpdoc),
+			'type'       => $type,
+			'signature'  => $signature,
+			'short_name' => $reflection->getShortName(),
+			'full_name'  => $full_name,
+			'class'      => $class,
+		];
 	}
 
 	/**
 	 * Parse PHPDoc into a structured representation.
-	 * 
+	 *
 	 * @param string $docblock
 	 * @return array
 	 */
@@ -542,7 +554,7 @@ EOT;
 		$ret = [
 			'description' => '',
 			'parameters'  => [],
-        ];
+		];
 		$extra_line = '';
 		$in_param = false;
 		foreach( preg_split("/(\r?\n)/", $docblock ) as $line ){
@@ -550,7 +562,7 @@ EOT;
 				$info = trim( $matches[1] );
 				$info = preg_replace( '/^(\*\s+?)/', '', $info );
 				if ( $in_param ) {
-					list( $param, $key ) = $in_param;
+					list( $param_name, $key ) = $in_param;
 					$ret['parameters'][ $param_name ][ $key ][2] .= PHP_EOL . $info;
 					if ( '}' === substr( $info, -1 ) ) {
 						$in_param = false;
