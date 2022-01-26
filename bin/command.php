@@ -500,13 +500,13 @@ EOT;
 				$default_value = $parameter->getDefaultValue();
 				if ( false === $default_value ) {
 					$parameter_signature .= ' = false';
-				} else if ( [] === $default_value ) {
+				} elseif ( [] === $default_value ) {
 					$parameter_signature .= ' = []';
-				} else if ( '' === $default_value ) {
+				} elseif ( '' === $default_value ) {
 					$parameter_signature .= " = ''";
-				} else if ( null === $default_value ) {
+				} elseif ( null === $default_value ) {
 					$parameter_signature .= ' = null';
-				} else if ( true === $default_value ) {
+				} elseif ( true === $default_value ) {
 					$parameter_signature .= ' = true';
 				} else {
 					$parameter_signature .= ' = ' . $default_value;
@@ -567,7 +567,7 @@ EOT;
 					if ( '}' === substr( $info, -1 ) ) {
 						$in_param = false;
 					}
-				} else if ( $info[0] !== "@" ) {
+				} elseif ( $info[0] !== "@" ) {
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
