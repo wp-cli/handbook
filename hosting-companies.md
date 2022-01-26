@@ -15,6 +15,7 @@ In alphabetical order:
 * [Cloudways](http://cloudways.com)
 * [Curanet](https://curanet.dk)
 * [D9 Hosting](https://d9.hosting)
+* [DanDomain](https://dandomain.dk)
 * [Dhosting.pl](https://dhosting.pl/)
 * [dinahosting](https://dinahosting.com/)
 * [Dreamhost](http://dreamhost.com)
