@@ -80,6 +80,13 @@ source /FULL/PATH/TO/wp-completion.bash
 
 To have this change take effect in your currently active shell, run `source ~/.bash_profile` afterwards.
 
+If you are using a Linux operating system, this process is slightly different. Instead of sourcing `wp-completion.bash` from your `~/.bash_profile`, you need to do so from your `~/.bashrc`. Make sure the `wp-completion.bash` file is in your home directory, then run the following commands from the home directory.
+
+```
+cat wp-completion.bash >> .bashrc
+source .bashrc
+```
+
 #### Oh My Zsh
 
 If you're using the _Oh My Zsh_ framework, you can enable the [built-in `wp-cli` plugin](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/wp-cli), by adding it to the `plugins=(wp-cli git [...])` line in your `~/.zshrc` file.
