@@ -72,6 +72,7 @@ In alphabetical order:
 * [UNLIMITED.RS](https://unlimited.rs/)
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
+* [Viral Hosting](https://viralhosting.dk)
 * [Wannafind](https://www.wannafind.dk)
 * [WooCart](https://woocart.com)
 * [WP Engine.com](https://wpengine.com)
