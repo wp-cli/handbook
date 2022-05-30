@@ -139,7 +139,7 @@ Functional tests typically follow this pattern:
 * **Then** the end result should be X (and Y and Z).
 
 Before running the functional tests, you'll need a MySQL (or MariaDB) user called `wp_cli_test` with the password `password1` that has full privileges on the MySQL database `wp_cli_test`.
-To override these credentials checkout [database credentials of wp-cli-tests](https://github.com/wp-cli/wp-cli-tests#the-database-credentials)
+To override these credentials you can make use of the [database credentials constants of wp-cli-tests](https://github.com/wp-cli/wp-cli-tests#the-database-credentials)
 
 The database can be set up by running `composer prepare-tests`. This will create the database and the user and configure the necessary privileges. Note that this operation is not needed for every test run, it only needs to be run the first time for the initial setup.
 
