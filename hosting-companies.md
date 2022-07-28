@@ -31,6 +31,7 @@ In alphabetical order:
 * [Hostinger](https://www.hostinger.com)
 * [HostPresto](https://hostpresto.com)
 * [ICDSoft](https:///www.icdsoft.com)
+* [Infomaniak](https://www.infomaniak.com/en/create-a-website/wordpress-hosting)
 * [IONOS](https://www.ionos.com/)
 * [iPage](http://www.ipage.com/ipage/index.html)
 * [JDM.pl](https://jdm.pl)
