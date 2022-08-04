@@ -25,6 +25,7 @@ In alphabetical order:
 * [GoDaddy](https://www.godaddy.com/help/accessing-wp-cli-on-your-managed-wordpress-account-12066)
 * [GreenGeeks](https://www.greengeeks.com/tutorials/article/wp-cli/)
 * [Grid Hosting](https://gridhosting.co.uk/)
+* [Hosting4Agency](https://www.hosting4agency.com/news/wp-cli-come-usarlo/)
 * [Host4Geeks](https://host4geeks.com/managed-wordpress-hosting)
 * [Hosterion](https://www.hosterion.com)
 * [HostGalaxy](https://www.hostgalaxy.com)
