@@ -76,6 +76,7 @@ In alphabetical order:
 * [TVC.Net](http://TVC.Net/)
 * [UNLIMITED.RS](https://unlimited.rs/)
 * [Veerotech](https://www.veerotech.net/)
+* [Viral Hosting](https://viralhosting.dk)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
 * [WooCart](https://woocart.com)
