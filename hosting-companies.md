@@ -26,6 +26,7 @@ In alphabetical order:
 * [GreenGeeks](https://www.greengeeks.com/tutorials/article/wp-cli/)
 * [Grid Hosting](https://gridhosting.co.uk/)
 * [Host4Geeks](https://host4geeks.com/managed-wordpress-hosting)
+* [Hosterion](https://www.hosterion.com)
 * [HostGalaxy](https://www.hostgalaxy.com)
 * [HostGator](http://www.hostgator.com)
 * [Hostico](https://hostico.ro)
