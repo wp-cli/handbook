@@ -7,6 +7,7 @@ In alphabetical order:
 * [2020Media](https://www.2020media.com/)
 * [20i](https://www.20i.com/)
 * [A2 Hosting](https://www.a2hosting.com/)
+* [Altis Cloud Platform](https://www.altis-dxp.com/cloud/)
 * [AltusHost](http://altushost.com/)
 * [Amimoto](http://megumi-cloud.com/)
 * [Bluehost](http://www.bluehost.com/)
