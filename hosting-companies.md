@@ -82,6 +82,7 @@ In alphabetical order:
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
 * [WooCart](https://woocart.com)
+* [WordPress.com](https://wordpress.com/)
 * [WP Engine.com](https://wpengine.com)
 * [WP Provider](https://wpprovider.nl/)
 * [XEL](https://xel.nl)
