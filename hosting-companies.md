@@ -58,6 +58,7 @@ In alphabetical order:
 * [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
 * [Pressjitsu](https://pressjitsu.com)
+* [Rocket.net](https://rocket.net)
 * [RoseHosting](https://www.rosehosting.com)
 * [Savvii](https://www.savvii.com/)
 * [ScanNet](https://www.scannet.dk)
