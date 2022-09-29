@@ -122,7 +122,7 @@ Just follow the normal [installation instructions](/#install), except change the
 
 **As part of a project**
 
-Add the following line to your projects `composer.json` file:
+Add the following line to your project's `composer.json` file:
 
     "require" : {
     	"wp-cli/wp-cli-bundle": "*"
