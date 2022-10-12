@@ -1,34 +1,17 @@
-# wp theme enable
+# wp i18n update-po
 
-Enables a theme on a WordPress multisite install.
+Update PO files from a POT file.
 
-Permits theme to be activated from the dashboard of a site on a WordPress multisite install.
+This behaves similarly to the [msgmerge](https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html) command.
 
 ### OPTIONS
 
-&lt;theme&gt;
-: The theme to enable.
+&lt;source&gt;
+: Path to an existing POT file to use for updating
 
-[\--network]
-: If set, the theme is enabled for the entire network
-
-[\--activate]
-: If set, the theme is activated for the current site. Note that the "network" flag has no influence on this.
-
-### EXAMPLES
-
-    # Enable theme
-    $ wp theme enable twentysixteen
-    Success: Enabled the 'Twenty Sixteen' theme.
-
-    # Network enable theme
-    $ wp theme enable twentysixteen --network
-    Success: Network enabled the 'Twenty Sixteen' theme.
-
-    # Network enable and activate theme for current site
-    $ wp theme enable twentysixteen --activate
-    Success: Enabled the 'Twenty Sixteen' theme.
-    Success: Switched to 'Twenty Sixteen' theme.
+[&lt;destination&gt;]
+: PO file to update or a directory containing multiple PO files.
+  Defaults to all PO files in the source directory.
 
 ### GLOBAL PARAMETERS
 

@@ -31,6 +31,32 @@ options:
   - json
 \---
 
+### EXAMPLES
+
+    # Add 'bar' to the 'foo' key on an option with name 'option_name'
+    $ wp option patch insert option_name foo bar
+    Success: Updated 'option_name' option.
+
+    # Update the value of 'foo' key to 'new' on an option with name 'option_name'
+    $ wp option patch update option_name foo new
+    Success: Updated 'option_name' option.
+
+    # Set nested value of 'bar' key to value we have in the patch file on an option with name 'option_name'.
+    $ wp option patch update option_name foo bar < patch
+    Success: Updated 'option_name' option.
+
+    # Update the value for the key 'not-a-key' which is not exist on an option with name 'option_name'.
+    $ wp option patch update option_name foo not-a-key new-value
+    Error: No data exists for key "not-a-key"
+
+    # Update the value for the key 'foo' without passing value on an option with name 'option_name'.
+    $ wp option patch update option_name foo
+    Error: Please provide value to update.
+
+    # Delete the nested key 'bar' under 'foo' key on an option with name 'option_name'.
+    $ wp option patch delete option_name foo bar
+    Success: Updated 'option_name' option.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -39,7 +65,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
+| `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |

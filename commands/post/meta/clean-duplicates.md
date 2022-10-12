@@ -1,34 +1,20 @@
-# wp theme enable
+# wp post meta clean-duplicates
 
-Enables a theme on a WordPress multisite install.
-
-Permits theme to be activated from the dashboard of a site on a WordPress multisite install.
+Cleans up duplicate post meta values on a post.
 
 ### OPTIONS
 
-&lt;theme&gt;
-: The theme to enable.
+&lt;id&gt;
+: ID of the post to clean.
 
-[\--network]
-: If set, the theme is enabled for the entire network
-
-[\--activate]
-: If set, the theme is activated for the current site. Note that the "network" flag has no influence on this.
+&lt;key&gt;
+: Meta key to clean up.
 
 ### EXAMPLES
 
-    # Enable theme
-    $ wp theme enable twentysixteen
-    Success: Enabled the 'Twenty Sixteen' theme.
-
-    # Network enable theme
-    $ wp theme enable twentysixteen --network
-    Success: Network enabled the 'Twenty Sixteen' theme.
-
-    # Network enable and activate theme for current site
-    $ wp theme enable twentysixteen --activate
-    Success: Enabled the 'Twenty Sixteen' theme.
-    Success: Switched to 'Twenty Sixteen' theme.
+    # Delete duplicate post meta.
+    wp post meta clean-duplicates 1234 enclosure
+    Success: Cleaned up duplicate 'enclosure' meta values.
 
 ### GLOBAL PARAMETERS
 

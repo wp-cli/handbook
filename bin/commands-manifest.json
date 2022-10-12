@@ -1023,6 +1023,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/i18n\/make-pot.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
     },
+    "i18n\/update-po": {
+        "title": "i18n update-po",
+        "slug": "update-po",
+        "cmd_path": "i18n\/update-po",
+        "parent": "i18n",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/i18n\/update-po.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
+    },
     "language\/core": {
         "title": "language core",
         "slug": "core",
@@ -2781,6 +2789,14 @@
         "cmd_path": "post\/meta\/add",
         "parent": "post\/meta",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/post\/meta\/add.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "post\/meta\/clean-duplicates": {
+        "title": "post meta clean-duplicates",
+        "slug": "clean-duplicates",
+        "cmd_path": "post\/meta\/clean-duplicates",
+        "parent": "post\/meta",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/post\/meta\/clean-duplicates.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "post\/meta\/delete": {

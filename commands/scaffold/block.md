@@ -2,11 +2,11 @@
 
 Generates PHP, JS and CSS code for registering a Gutenberg block for a plugin or theme.
 
-Blocks are the fundamental element of the Gutenberg editor. They are the primary way in which plugins and themes can register their own functionality and extend the capabilities of the editor.
+**Warning: `wp scaffold block` is deprecated.**
 
-Visit the [Gutenberg handbook](https://wordpress.org/gutenberg/handbook/block-api/) to learn more about Block API.
+The official script to generate a block is the [@wordpress/create-block](https://developer.wordpress.org/block-editor/designers-developers/developers/packages/packages-create-block/) package.
 
-When you scaffold a block you must use either the theme or plugin option. The latter is recommended.
+See the [Create a Block tutorial](https://developer.wordpress.org/block-editor/getting-started/create-block/) for a complete walk-through.
 
 ### OPTIONS
 
@@ -40,24 +40,6 @@ options:
 [\--force]
 : Overwrite files that already exist.
 
-### EXAMPLES
-
-    # Generate a 'movie' block for the 'movies' plugin
-    $ wp scaffold block movie --title="Movie block" --plugin=movies
-    Success: Created block 'Movie block'.
-
-    # Generate a 'movie' block for the 'simple-life' theme
-    $ wp scaffold block movie --title="Movie block" --theme=simple-life
-     Success: Created block 'Movie block'.
-
-    # Create a new plugin and add two blocks
-    # Create plugin called books
-    $ wp scaffold plugin books
-    # Add a block called book to plugin books
-    $ wp scaffold block book --title="Book" --plugin=books
-    # Add a second block to plugin called books.
-    $ wp scaffold block books --title="Book List" --plugin=books
-
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -66,7 +48,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
+| `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |

@@ -10,6 +10,7 @@ Halt script execution with a specific return code.
 
 <div>
 <strong>$return_code</strong> (integer) <br />
+<strong>@return</strong> (never) <br />
 </div>
 
 

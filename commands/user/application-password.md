@@ -5,7 +5,7 @@ Creates, updates, deletes, lists and retrieves application passwords.
 ### EXAMPLES
 
     # List user application passwords and only show app name and password hash
-    $ wp user application-passwords list 123 --fields=name,password
+    $ wp user application-password list 123 --fields=name,password
     +--------+------------------------------------+
     | name   | password                           |
     +--------+------------------------------------+
@@ -13,7 +13,7 @@ Creates, updates, deletes, lists and retrieves application passwords.
     +--------+------------------------------------+
 
     # Get a specific application password and only show app name and created timestamp
-    $ wp user application-passwords get 123 6633824d-c1d7-4f79-9dd5-4586f734d69e --fields=name,created
+    $ wp user application-password get 123 6633824d-c1d7-4f79-9dd5-4586f734d69e --fields=name,created
     +--------+------------+
     | name   | created    |
     +--------+------------+
@@ -21,20 +21,20 @@ Creates, updates, deletes, lists and retrieves application passwords.
     +--------+------------+
 
     # Create user application password
-    $ wp user application-passwords create 123 myapp
+    $ wp user application-password create 123 myapp
     Success: Created application password.
     Password: ZG1bxdxdzjTwhsY8vK8l1C65
 
     # Only print the password without any chrome
-    $ wp user application-passwords create 123 myapp --porcelain
+    $ wp user application-password create 123 myapp --porcelain
     ZG1bxdxdzjTwhsY8vK8l1C65
 
     # Update an existing application password
-    $ wp user application-passwords update 123 6633824d-c1d7-4f79-9dd5-4586f734d69e --name=newappname
+    $ wp user application-password update 123 6633824d-c1d7-4f79-9dd5-4586f734d69e --name=newappname
     Success: Updated application password.
 
     # Check if an application password for a given application exists
-    $ wp user application-passwords exists 123 myapp
+    $ wp user application-password exists 123 myapp
     $ echo $?
     1
 

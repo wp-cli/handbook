@@ -19,16 +19,16 @@ Creates a new application password.
 ### EXAMPLES
 
     # Create user application password
-    $ wp user application-passwords create 123 myapp
+    $ wp user application-password create 123 myapp
     Success: Created application password.
     Password: ZG1bxdxdzjTwhsY8vK8l1C65
 
     # Only print the password without any chrome
-    $ wp user application-passwords create 123 myapp --porcelain
+    $ wp user application-password create 123 myapp --porcelain
     ZG1bxdxdzjTwhsY8vK8l1C65
 
     # Create user application with a custom application ID for internal tracking
-    $ wp user application-passwords create 123 myapp --app-id=42 --porcelain
+    $ wp user application-password create 123 myapp --app-id=42 --porcelain
     ZG1bxdxdzjTwhsY8vK8l1C65
 
 ### GLOBAL PARAMETERS
@@ -39,7 +39,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 |:----------------|:-----------------------------|
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
-| `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "vagrant"). |
+| `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
