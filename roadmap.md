@@ -2,7 +2,7 @@
 
 WP-CLI is released every 3-4 months, typically around the beta period of [WordPress's release cycle](https://wordpress.org/about/roadmap/):
 
-* Current: [v2.7.0](https://github.com/wp-cli/wp-cli/releases/tag/v2.7.0) (October 11th, 2022)
+* Current: [v2.7.1](https://github.com/wp-cli/wp-cli/releases/tag/v2.7.1) (October 17th, 2022)
 
 Patch versions are released on an as-needed basis, usually to address bugs or regressions. The current version of WP-CLI is the only officially supported version.
 
