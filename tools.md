@@ -64,7 +64,6 @@ The following table is an alphabetical list of known commands defined in WordPre
 | thinkup               | [Thinkup Import WP CLI Commands](https://github.com/taras/wp-cli-thinkup-import)
 | total-cache           | [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/)
 | updraftplus           | [UpdraftPlus](https://updraftplus.com/)
-| usergen               | [Generate random users](https://github.com/alessandrotesoro/wp-usergen-cli)
 | Unsplash              | [Import images from Unsplash into your Media Library](https://github.com/A5hleyRich/wp-cli-unsplash-command)
 | wp2static             | [Generate & deploy a static HTML version of your site](https://github.com/leonstafford/wp2static)
 
