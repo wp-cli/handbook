@@ -72,7 +72,7 @@ For more information about `wp cli update`, including flags and options that can
 
 #### Bash & Z-Shell
 
-WP-CLI also comes with a tab completion script for _Bash_ and _Z-Shell_. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/master/utils/wp-completion.bash) and source it from `~/.bash_profile`:
+WP-CLI also comes with a tab completion script for _Bash_ and _Z-Shell_. Just download [wp-completion.bash](https://github.com/wp-cli/wp-cli/raw/main/utils/wp-completion.bash) and source it from `~/.bash_profile`:
 
 ```
 source /FULL/PATH/TO/wp-completion.bash
@@ -112,7 +112,7 @@ If you intend to work on WP-CLI itself, see the [Setting up](https://make.wordpr
 
 ### Installing nightly via Phar
 
-The "nightly" is the bleeding-edge version of WP-CLI, built straight from the [master branch](https://github.com/wp-cli/wp-cli/commits/master).
+The "nightly" is the bleeding-edge version of WP-CLI, built straight from the [main branch](https://github.com/wp-cli/wp-cli/commits/main).
 
 Just follow the normal [installation instructions](/#install), except change the URL to the phar file:
 
@@ -134,7 +134,7 @@ To add any additional suggested packages seen in the `wp-cli-bundle` package, su
 composer require --dev $(composer suggests --by-package | awk '/wp-cli\/wp-cli-bundle/' RS= | grep -o -P '(?<=- ).*(?=:)')
 ```
 
-Optionally (if run on a server or for e.g. in a virtual machine locally) you can automate setting up the command and making it available in the users path. Let's assume _Composer_ installed into `/var/www/vendor` (you can get the composer `vendor-dir` config variable specific to your machine via `composer config --list | grep "\[vendor-dir\]"`), we can add the following `scripts`/commands to the `composer.json` file. The second and third line set up [bash completion](https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash) so we don't have to remember every single command:
+Optionally (if run on a server or for e.g. in a virtual machine locally) you can automate setting up the command and making it available in the users path. Let's assume _Composer_ installed into `/var/www/vendor` (you can get the composer `vendor-dir` config variable specific to your machine via `composer config --list | grep "\[vendor-dir\]"`), we can add the following `scripts`/commands to the `composer.json` file. The second and third line set up [bash completion](https://github.com/wp-cli/wp-cli/blob/main/utils/wp-completion.bash) so we don't have to remember every single command:
 
     "scripts" : {
     	"post-install-cmd" : [
