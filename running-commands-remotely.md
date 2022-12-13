@@ -112,7 +112,7 @@ wp_users:user_email
 
 Running a command remotely through SSH requires having `wp` accessible on the `$PATH` on the remote server. Because SSH connections don’t load `~/.bashrc` or `~/.zshrc`, you may need to specify a custom `$PATH` when using `wp --ssh=<host>`.  A few ways to make `wp` available on the remote server are:
 
-### Copy WP-CLI binary to $HOME / bin
+### Copy WP-CLI binary to $HOME/bin
 
 In many Linux distros, `$HOME/bin` is in the `$PATH` by default, so a way to make `wp` accessible is to create a `$HOME/bin` directory, if it doesn't already exist, and move the WP-CLI binary into `$HOME/bin/wp`:
 
