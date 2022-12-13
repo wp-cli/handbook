@@ -137,8 +137,8 @@ Another way to achieve this is to specify the `$PATH` in the remote machine user
 ### Remote non-interactive shell resolves aliases and runs wp as alias with php
 
 Some webhosts are configured very restrictive:
-- They do not allow you to execute your own shellscripts, so everything from method [WP-CLI binary](#copy-wp-cli-binary-to-home--bin) fails.
-- `sshd` is configured with `PermitUserEnvironment=no`, so customizing [~/.ssh/environment](#specify-the-path-in-home--ssh--environment) has no effect and fails too.
+- They do not allow you to execute your own shellscripts, so everything from method [WP-CLI binary](#copy-wp-cli-binary-to-home-bin) fails.
+- `sshd` is configured with `PermitUserEnvironment=no`, so customizing [~/.ssh/environment](#specify-the-path-in-home-ssh-environment) has no effect and fails too.
 - Also [using the before_ssh hook on the client machine](#using-before_ssh-hook-on-client-machine) will not help you, as in all cases you cannot run `wp` on the remote.
 
 The solution: On the remote configure `~/.bashrc` like this:
