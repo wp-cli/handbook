@@ -130,7 +130,7 @@ If `$HOME/bin` is not already in your path, then you can define it in your `~/.b
 PATH="$HOME/bin:$PATH"
 ```
 
-### Specify the $PATH in $HOME / .ssh / environment
+### Specify the $PATH in $HOME/.ssh/environment
 
 Another way to achieve this is to specify the `$PATH` in the remote machine user's `~/.ssh/environment` file, provided that that machine's `sshd` has been configured with `PermitUserEnvironment=yes` (see [OpenSSH documentation](https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files#.7E.2F.ssh.2Fenvironment)).
 
