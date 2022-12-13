@@ -112,7 +112,8 @@ wp_users:user_email
 
 Running a command remotely through SSH requires having `wp` accessible on the `$PATH` on the remote server. Because SSH connections don’t load `~/.bashrc` or `~/.zshrc`, you may need to specify a custom `$PATH` when using `wp --ssh=<host>`.  A few ways to make `wp` available on the remote server are:
 
-+ **Copy WP-CLI binary to `$HOME/bin`**:  
+### Copy WP-CLI binary to $HOME/bin
+
 In many Linux distros, `$HOME/bin` is in the `$PATH` by default, so a way to make `wp` accessible is to create a `$HOME/bin` directory, if it doesn't already exist, and move the WP-CLI binary into `$HOME/bin/wp`:
 
 ```sh
@@ -129,10 +130,46 @@ If `$HOME/bin` is not already in your path, then you can define it in your `~/.b
 PATH="$HOME/bin:$PATH"
 ```
 
-+ **Specify the `$PATH` in  `~/.ssh/environment`**:  
+### Specify the $PATH in $HOME/.ssh/environment
+
 Another way to achieve this is to specify the `$PATH` in the remote machine user's `~/.ssh/environment` file, provided that that machine's `sshd` has been configured with `PermitUserEnvironment=yes` (see [OpenSSH documentation](https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files#.7E.2F.ssh.2Fenvironment)).
 
-+ **Using the `before_ssh` hook**:  
+### Remote non-interactive shell resolves aliases and runs wp as alias with php
+
+Some webhosts are configured very restrictive:
+- They do not allow you to execute your own shellscripts, so everything from method [WP-CLI binary](#copy-wp-cli-binary-to-home--bin) fails.
+- `sshd` is configured with `PermitUserEnvironment=no`, so customizing [~/.ssh/environment](#specify-the-path-in-home--ssh--environment) has no effect and fails too.
+- Also [using the before_ssh hook on the client machine](#using-before_ssh-hook-on-client-machine) will not help you, as in all cases you cannot run `wp` on the remote.
+
+The solution: On the remote configure `~/.bashrc` like this:
+
+#### Configure the remote non-interactive shell to resolve aliases
+
+- By default [aliases in non-interactive shells are not resolved](https://unix.stackexchange.com/questions/425319/how-do-i-execute-a-remote-alias-over-an-ssh/425323#425323) but you can change that:
+  - Somewhere very much on top of your `~/.bashrc` (certainly before the first alias definitions) insert:
+
+    ```
+    shopt -s expand_aliases
+    ```
+  - Be also sure that there's no mechanism which exits the non-interactive shell too early! If you have something like the following construct on top (e.g. Ubuntu is configured like this) then outcomment or delete all lines of the construct:
+    ```
+    # If not running interactively, don't do anything
+    [ -z "$PS1" ] && return
+    ```
+
+#### Alias wp to php which runs the WP-CLI binary
+
+- Somewhere after the `shopt -s expand_aliases` line insert:
+  - `alias wp="php ~/bin/wp"`
+  - or
+  - `alias wp="php ~/bin/wp-cli.phar"`
+- In other words: You have an alias "wp" which is a one liner where php runs the WP-CLI binary by stating the path to the `wpi-cli.phar` file, wherever it may be, under whatever name it may have.
+  - `php` is allowed on basically any webhost.
+  - And the `wp-cli.phar` file itself must not even have the execute flag set (="can be entirely passive"), as formally the file gets run (=interpreted) by `php`. **Note:** An executable `~/bin/wp` file (the renamed `wp-cli.phar` with an execute flag) of course also gets run by the `php` interpreter eventually. But the invocation in the shell is formally different. And that is what makes the crucial difference here.
+
+
+### Using before_ssh hook on client machine
+
 Alternatively, in case you cannot make it work from within the server, you can achieve the same effect by hooking into the `before_ssh` hook, and defining an environment variable with the command you’d like to run:
 
 ```php
