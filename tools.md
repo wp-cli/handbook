@@ -40,6 +40,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | more-plugin-info      | [More Plugin Info](http://wordpress.org/plugins/more-plugin-info/)
 | multi-device          | [Multi Device Switcher](https://wordpress.org/plugins/multi-device-switcher/)
 | nginx                 | [Nginx Cache Controller](http://wordpress.org/plugins/nginx-champuru/)
+| orderweight           | [Order Weight for WooCommerce](https://wordpress.org/plugins/woo-order-weight/)
 | optimize              | [WP-Optimize](https://getwpo.com/)
 | p2-by-email           | [P2 By Email](https://github.com/humanmade/P2-By-Email)
 | p2-resolved-posts     | [P2 Resolved Posts](http://wordpress.org/plugins/p2-resolved-posts/)
