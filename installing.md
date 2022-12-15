@@ -4,7 +4,7 @@
 
 The recommended way to install WP-CLI is by downloading the Phar build (archives similar to Java JAR files, [see this article for more detail](http://php.net/manual/en/phar.using.intro.php)), marking it executable, and placing it on your PATH.
 
-First, download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
+First, download [wp-cli.phar](https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) using `wget` or `curl`. For example:
 
 ```
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
@@ -227,7 +227,7 @@ Install via [composer as described above](#installing-via-composer) or use the f
 
 Make sure you have php installed and [in your path](http://php.net/manual/en/faq.installation.php#faq.installation.addtopath) so you can execute it globally.
 
-Download [wp-cli.phar](https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) manually and save it to a folder, for example `c:\wp-cli`
+Download [wp-cli.phar](https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar) manually and save it to a folder, for example `c:\wp-cli`
 
 Create a file named `wp.bat` in `c:\wp-cli` with the following contents:
 
