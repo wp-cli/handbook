@@ -41,6 +41,18 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/contributing.md",
         "parent": null
     },
+    "doctor-customize-config": {
+        "title": "Customize doctor diagnostic checks",
+        "slug": "doctor-customize-config",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/doctor-customize-config.md",
+        "parent": null
+    },
+    "doctor-default-checks": {
+        "title": "",
+        "slug": "doctor-default-checks",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/doctor-default-checks.md",
+        "parent": null
+    },
     "documentation-standards": {
         "title": "Documentation Standards",
         "slug": "documentation-standards",
