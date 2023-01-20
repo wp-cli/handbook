@@ -1,6 +1,6 @@
 # Write a check for asserting the value of a given option
 
-One of the check types included in `wp doctor` is `Option_Value`, or the ability to assert that a given option is a specific value. The check type is in use by a couple of the [default diagnostic checks](https://make.wordpress.org/cli/handbook/references/doctor/doctor-default-checks/), and you can use the `Option_Value` check type in your [custom `doctor.yml` configuration file](https://make.wordpress.org/cli/handbook/references/doctor/doctor-customize-config/).
+One of the check types included in `wp doctor` is `Option_Value`, or the ability to assert that a given option is a specific value. The check type is in use by a couple of the [default diagnostic checks](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-default-checks/), and you can use the `Option_Value` check type in your [custom `doctor.yml` configuration file](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-customize-config/).
 
 As an example, here are two checks using `Option_Value`, one which ensures the blog is public and the other which ensures users can't register:
 
