@@ -1,6 +1,6 @@
 # Write a check for verifying contents of WordPress files
 
-One of the check types included in `wp doctor` is `File_Contents`, or the ability to check all or a selection of WordPress files for a given regex pattern. The check type is in use by a couple of the [default diagnostic checks](https://make.wordpress.org/cli/handbook/references/doctor/doctor-default-checks/), and you can use the `File_Contents` check type in your [custom `doctor.yml` configuration file](https://make.wordpress.org/cli/handbook/references/doctor/doctor-customize-config/).
+One of the check types included in `wp doctor` is `File_Contents`, or the ability to check all or a selection of WordPress files for a given regex pattern. The check type is in use by a couple of the [default diagnostic checks](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-default-checks/), and you can use the `File_Contents` check type in your [custom `doctor.yml` configuration file](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-customize-config/).
 
 The `File_Contents` check type is the most efficient way to check WordPress files because it only iterates the filesystem once, regardless of how many file checks you've registered.
 

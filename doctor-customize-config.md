@@ -55,7 +55,7 @@ This custom `doctor.yml` file:
 *   Inherits all default diagnostic checks except for 'autoload-options-size'.
 *   Defines a 'constant-disallow-file-mods-falsy' check to ensure the `DISALLOW_FILE_MODS` constant is falsy.
 *   Defines a 'plugin-akismet-active' check to ensure Akismet is active.
-*   Defines a 'plugin-akismet-valid-api-key' [custom check in a akismet-valid-api-key.php file](https://make.wordpress.org/cli/handbook/references/doctor/doctor-write-custom-check/) to ensure Akismet has a valid API key.
+*   Defines a 'plugin-akismet-valid-api-key' [custom check in a akismet-valid-api-key.php file](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-write-custom-check/) to ensure Akismet has a valid API key.
 
 ## Available check types
 
@@ -71,10 +71,10 @@ The configurable check types include:
 
 The abstracted check types include:
 
-*   `check: Constant_Definition`: Assert a given constant as defined, a specific value, or falsy. [Learn more](https://make.wordpress.org/cli/handbook/references/doctor/doctor-check-constant-value/).
-*   `check: File_Contents`: Check all or a selection of WordPress files for a given regex pattern. [Learn more](https://make.wordpress.org/cli/handbook/references/doctor/doctor-check-file-contents/).
-*   `check: Option_Value`: Assert a given option as a specific value. [Learn more](https://make.wordpress.org/cli/handbook/references/doctor/doctor-check-option-value/).
-*   `check: Plugin_Status`: Assert a given plugin as active, installed, or uninstalled. [Learn more](https://make.wordpress.org/cli/handbook/references/doctor/doctor-check-plugin-status/).
+*   `check: Constant_Definition`: Assert a given constant as defined, a specific value, or falsy. [Learn more](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-check-constant-value/).
+*   `check: File_Contents`: Check all or a selection of WordPress files for a given regex pattern. [Learn more](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-check-file-contents/).
+*   `check: Option_Value`: Assert a given option as a specific value. [Learn more](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-check-option-value/).
+*   `check: Plugin_Status`: Assert a given plugin as active, installed, or uninstalled. [Learn more](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-check-plugin-status/).
 
 Of course, some check types don't need configuration options:
 
@@ -83,4 +83,4 @@ Of course, some check types don't need configuration options:
 *   `check: Plugin_Update`: Warns when there are plugin updates available.
 *   `check: Theme_Update`: Warns when there are theme updates available.
 
-You can [write your own custom check type](https://make.wordpress.org/cli/handbook/references/doctor/doctor-write-custom-check/) by extending the `runcommand\Doctor\Checks\Check` class.
+You can [write your own custom check type](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-write-custom-check/) by extending the `runcommand\Doctor\Checks\Check` class.
