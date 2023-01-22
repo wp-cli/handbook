@@ -49,6 +49,7 @@ In alphabetical order:
 * [MinHost](https://minhost.no)
 * [Mittwald](https://www.mittwald.de/)
 * [Monarobase](https://monarobase.net/wordpress)
+* [MonsterMegs](https://www.monstermegs.com)
 * [NameHero](https://www.namehero.com)
 * [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 * [Nexcess.Net](https://www.nexcess.net/)
