@@ -1,4 +1,4 @@
-# Committers credo
+# Committers Credo
 
 Some people have write access to WP-CLI repositories. These people are identified in the following teams:
 
