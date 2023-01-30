@@ -245,3 +245,20 @@ Explanation
 - Find all WordPress installations below `$WP_TOP_PATH` - must be run as root
 - Display a progress bar while getting `blogname` of each installation
 - Choose one installation from a nice menu and display `cd` command for it
+
+**Discard header row from a CSV**
+
+By default, `--format=csv` includes a header row:
+
+```bash
+$ wp user list --format=csv
+ID,user_login,display_name,user_email,user_registered,roles
+1,daniel,daniel,daniel@handbuilt.co,"2022-12-21 23:05:16",administrator
+```
+
+If you'd like to discard the header row, `tail` is pretty helpful:
+
+```bash
+$ wp user list --format=csv | tail -n +2
+1,daniel,daniel,daniel@handbuilt.co,"2022-12-21 23:05:16",administrator
+```
