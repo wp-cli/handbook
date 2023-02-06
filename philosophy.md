@@ -40,6 +40,8 @@ WP-CLI commands should be composable, i.e. the output from one command should be
 
 A corollary of this is that commands should be _orthogonal_, which means that there should be no overlapping functionality between commands. (`wp plugin install --activate` is an exception).
 
+See [Shell Friends](https://make.wordpress.org/cli/handbook/references/shell-friends/) for specific examples of how this philosophy is applied.
+
 ## Readability trumps number of keystrokes.
 
 Most of the commands in WP-CLI will be used non-interactively, so make the parameter names self-documenting.
