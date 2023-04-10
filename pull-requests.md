@@ -151,9 +151,17 @@ Or to test a single feature:
 
     composer behat -- features/core.feature
 
+Or to test a single feature with more verbosity:
+
+    composer behat -- features/core.feature --format pretty
+
 To run only the tests that failed during the previous run:
 
     composer behat-rerun
+
+When writing new tests, to see which step definitions are available:
+
+    composer behat -- --definitions l
 
 More info can be found by using `composer behat -- --help`.
 
@@ -178,7 +186,7 @@ To run all tests in one go:
     composer test
 
 This will run all the tests that the package is set up to use, based on the presence of the respective configuration files.
-    
+
 Each repository is configured to run all of its active tests on every code push. The [wp-cli/automated-tests](https://github.com/wp-cli/automated-tests) repository runs all tests for all repositories on a regular basis.
 
 ## Finally...
