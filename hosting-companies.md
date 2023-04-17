@@ -17,6 +17,7 @@ In alphabetical order:
 * [Curanet](https://curanet.dk)
 * [D9 Hosting](https://d9.hosting)
 * [DanDomain](https://dandomain.dk)
+* [DataPerk](https://dataperk.com)
 * [Dhosting.pl](https://dhosting.pl/)
 * [dinahosting](https://dinahosting.com/)
 * [Dreamhost](http://dreamhost.com)
