@@ -34,6 +34,7 @@ In alphabetical order:
 * [Hostico](https://hostico.ro)
 * [Hostinger](https://www.hostinger.com)
 * [HostPresto](https://hostpresto.com)
+* [HostRiver](https://hostriver.ro/gazduire-wordpress)
 * [ICDSoft](https:///www.icdsoft.com)
 * [Infomaniak](https://www.infomaniak.com/en/create-a-website/wordpress-hosting)
 * [IONOS](https://www.ionos.com/)
