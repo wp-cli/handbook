@@ -18,7 +18,13 @@ On occasion, we [grant write access to contributors](https://github.com/orgs/wp-
 
 Becoming a committer can seem glamorous, but it also comes with expectations of responsibility, commitment, and humility.
 
-[andreascreten](https://github.com/andreascreten) is the original author of WP-CLI. [scribu](https://github.com/scribu) and [danielbachhuber](https://github.com/danielbachhuber) have been long time maintainers.
+[andreascreten](https://github.com/andreascreten) is the original author of WP-CLI. [scribu](https://github.com/scribu) and [danielbachhuber](https://github.com/danielbachhuber) have been long time maintainers. [schlessera](https://github.com/schlessera) is the current maintainer.
+
+The maintainer is the person most directly responsible for the reliability and longevity of the project. They are expected to:
+* Hold WP-CLI's overall quality in the utmost regard.
+* Refine the project's vision and direction, and make sure it's understood by all.
+* Enable everyone from new users to experienced committers.
+* Take care of the boring day-to-day work (keeping CI passing, triaging new issues, etc.).
 
 ## What's the connection between WP-CLI and WordPress?
 
