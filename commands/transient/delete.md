@@ -41,7 +41,7 @@ For a more complete explanation of the transient cache, including the network|si
     Success: 2 transients deleted from the database.
 
     # Delete all transients in a multsite.
-    $ wp transient delete --all --network &amp;&amp; wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all
+    $ wp transient delete --all --network && wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all
 
 ### GLOBAL PARAMETERS
 
