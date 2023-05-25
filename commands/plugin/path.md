@@ -12,7 +12,7 @@ Gets the path to a plugin or to the plugin directory.
 
 ### EXAMPLES
 
-    $ cd $(wp plugin path) &amp;&amp; pwd
+    $ cd $(wp plugin path) && pwd
     /var/www/wordpress/wp-content/plugins
 
 ### GLOBAL PARAMETERS

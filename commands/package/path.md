@@ -16,7 +16,7 @@ If you want to contribute to a package, this is a great way to jump to it.
     /home/person/.wp-cli/packages/
 
     # Change directory to package path
-    $ cd $(wp package path) &amp;&amp; pwd
+    $ cd $(wp package path) && pwd
     /home/vagrant/.wp-cli/packages
 
 ### GLOBAL PARAMETERS
