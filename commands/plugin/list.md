@@ -82,6 +82,14 @@ These fields are optionally available:
     | hello   | inactive       | none   | 1.6     |
     +---------+----------------+--------+---------+
 
+### USE CASES POSSIBLE WITH EXTRA CLI SOFTWARE
+
+#### Sort plugins by status, then by name
+
+    $ wp plugin list --format=csv | mlr --icsv --opprint sort -nr status
+
+- `mlr` a.k.a. miller available at: https://github.com/johnkerl/miller#readme
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
