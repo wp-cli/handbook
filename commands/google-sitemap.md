@@ -1,0 +1,7 @@
+# wp google-sitemap
+
+
+
+
+
+

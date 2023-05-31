@@ -10,6 +10,9 @@ If you experience issues verifying from this command, ensure you are passing the
 
 ### OPTIONS
 
+[\--include-root]
+: Verify all files and folders in the root directory, and warn if any non-WordPress items are found.
+
 [\--version=&lt;version&gt;]
 : Verify checksums against a specific version of WordPress.
 

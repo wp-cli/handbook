@@ -60,6 +60,7 @@ These fields are optionally available:
 * title
 * description
 * file
+* auto_update
 
 ### EXAMPLES
 

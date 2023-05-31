@@ -21,6 +21,12 @@ Generates one or more WXR files containing authors, terms, posts, comments, and 
 default: 15
 \---
 
+[\--filename_format=&lt;format&gt;]
+: Use a custom format for export filenames. Defaults to '{site}.wordpress.{date}.{n}.xml'.
+
+[\--include_once=&lt;before_posts&gt;]
+: Include specified export section only in the first export file. Valid options are categories, tags, nav_menu_items, custom_taxonomies_terms. Separate multiple sections with a comma. Defaults to none.
+
 ### FILTERS
 
 [\--start_date=&lt;date&gt;]
@@ -39,7 +45,7 @@ default: any
 : Export all post types except those identified. Separate multiple post types with a comma. Defaults to none.
 
 [\--post__in=&lt;pid&gt;]
-: Export all posts specified as a comma- or space-separated list of IDs. Post's attachments won't be exported unless --with_attachments is specified.
+: Export all posts specified as a comma-separated or space-separated list of IDs. Post's attachments won't be exported unless --with_attachments is specified.
 
 [\--with_attachments]
 : Force including attachments in case --post__in has been specified.
@@ -58,9 +64,6 @@ default: any
 
 [\--post_status=&lt;status&gt;]
 : Export only posts with this status.
-
-[\--filename_format=&lt;format&gt;]
-: Use a custom format for export filenames. Defaults to '{site}.wordpress.{date}.{n}.xml'.
 
 ### EXAMPLES
 

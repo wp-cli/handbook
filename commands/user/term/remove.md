@@ -11,11 +11,12 @@ Remove a term from an object.
 : The name of the term's taxonomy.
 
 [&lt;term&gt;...]
-: The name of the term or terms to be removed from the object.
+: The slug of the term or terms to be removed from the object.
 
 [\--by=&lt;field&gt;]
 : Explicitly handle the term value as a slug or id.
 \---
+default: slug
 options:
   - slug
   - id

@@ -20,7 +20,7 @@ Fix image orientation for one or more attachments.
     Success: Fixed 3 of 3 images.
 
     # Fix orientation dry run.
-    $ wp media fix-orientation 63 -dry run
+    $ wp media fix-orientation 63 --dry-run
     1/1 "Portrait_6" (ID 63) will be affected.
     Success: 1 of 1 image will be affected.
 

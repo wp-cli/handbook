@@ -19,6 +19,12 @@ Deletes an existing post.
     $ wp post delete 123 --force
     Success: Deleted post 123.
 
+    # Delete multiple posts
+    $ wp post delete 123 456 789
+    Success: Trashed post 123.
+    Success: Trashed post 456.
+    Success: Trashed post 789.
+
     # Delete all pages
     $ wp post delete $(wp post list --post_type='page' --format=ids)
     Success: Trashed post 1164.

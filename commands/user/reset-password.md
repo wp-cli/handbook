@@ -10,6 +10,12 @@ Resets the password for one or more users.
 [\--skip-email]
 : Don't send an email notification to the affected user(s).
 
+[\--show-password]
+: Show the new password(s).
+
+[\--porcelain]
+: Output only the new password(s).
+
 ### EXAMPLES
 
     # Reset the password for two users and send them the change email.
@@ -17,6 +23,10 @@ Resets the password for one or more users.
     Reset password for admin.
     Reset password for editor.
     Success: Passwords reset for 2 users.
+
+    # Reset the password for one user, displaying only the new password, and not sending the change email.
+    $ wp user reset-password admin --skip-email --porcelain
+    yV6BP*!d70wg
 
 ### GLOBAL PARAMETERS
 

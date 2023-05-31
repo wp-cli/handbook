@@ -12,6 +12,9 @@ Creates attachments from local files or URLs.
 [\--post_id=&lt;post_id&gt;]
 : ID of the post to attach the imported files to.
 
+[\--post_name=&lt;post_name&gt;]
+: Name of the post to attach the imported files to.
+
 [\--title=&lt;title&gt;]
 : Attachment title (post title field).
 
@@ -31,7 +34,7 @@ Creates attachments from local files or URLs.
 : Use the file modified time as the post published &amp; modified dates. Remote files will always use the current time.
 
 [\--featured_image]
-: If set, set the imported image as the Featured Image of the post its attached to.
+: If set, set the imported image as the Featured Image of the post it is attached to.
 
 [\--porcelain]
 : Output just the new attachment ID.

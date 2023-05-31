@@ -26,8 +26,8 @@ WP-CLI hooks include:
 
 * `before_add_command:<command>` - Before the command is added.
 * `after_add_command:<command>` - After the command was added.
-* `before_invoke:<command>` - Just before a command is invoked.
-* `after_invoke:<command>` - Just after a command is invoked.
+* `before_invoke:<command>` (1) - Just before a command is invoked.
+* `after_invoke:<command>` (1) - Just after a command is invoked.
 * `find_command_to_run_pre` - Just before WP-CLI finds the command to run.
 * `before_registering_contexts` (1) - Before the contexts are registered.
 * `before_wp_load` - Just before the WP load process begins.
@@ -48,7 +48,7 @@ these will be passed on to the callback provided by `WP_CLI::add_hook()`.
 ```
 # `wp network meta` confirms command is executing in multisite context.
 WP_CLI::add_command( 'network meta', 'Network_Meta_Command', array(
-   'before_invoke' => function () {
+   'before_invoke' => function ( $name ) {
        if ( !is_multisite() ) {
            WP_CLI::error( 'This is not a multisite installation.' );
        }

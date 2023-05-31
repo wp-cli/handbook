@@ -16,6 +16,7 @@ Replaces existing terms on the object.
 [\--by=&lt;field&gt;]
 : Explicitly handle the term value as a slug or id.
 \---
+default: slug
 options:
   - slug
   - id

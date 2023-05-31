@@ -15,6 +15,9 @@ Note: because code is executed within a method, global variables need to be expl
 [\--skip-wordpress]
 : Load and execute file without loading WordPress.
 
+[\--use-include]
+: Process the provided file via include instead of evaluating its contents.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.

@@ -9,7 +9,7 @@ Lists all sites in a multisite installation.
 
 [\--&lt;field&gt;=&lt;value&gt;]
 : Filter by one or more fields (see "Available Fields" section). However,
-'url' isn't an available filter, because it's created from domain + path.
+'url' isn't an available filter, as it comes from 'home' in wp_options.
 
 [\--site__in=&lt;value&gt;]
 : Only list the sites with these blog_id values (comma-separated).

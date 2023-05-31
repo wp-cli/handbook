@@ -10,6 +10,9 @@ Runs the next scheduled cron event for the given hook.
 [\--due-now]
 : Run all hooks due right now.
 
+[\--exclude=&lt;hooks&gt;]
+: Comma-separated list of hooks to exclude.
+
 [\--all]
 : Run all hooks.
 

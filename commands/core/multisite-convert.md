@@ -22,6 +22,9 @@ default: /
 [\--subdomains]
 : If passed, the network will use subdomains, instead of subdirectories. Doesn't work with 'localhost'.
 
+[\--skip-config]
+: Don't add multisite constants to wp-config.php.
+
 ### EXAMPLES
 
     $ wp core multisite-convert

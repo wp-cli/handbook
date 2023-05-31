@@ -26,13 +26,15 @@ Optionally:
 * Prevent halting script execution on error.
 * Capture and return STDOUT, or full details about command execution.
 * Parse JSON output if the command rendered it.
+* Include additional arguments that are passed to the command.
 
 ```
 $options = array(
-  'return'     => true,   // Return 'STDOUT'; use 'all' for full object.
-  'parse'      => 'json', // Parse captured STDOUT to JSON array.
-  'launch'     => false,  // Reuse the current process.
-  'exit_error' => true,   // Halt script execution on error.
+  'return'       => true,                // Return 'STDOUT'; use 'all' for full object.
+  'parse'        => 'json',              // Parse captured STDOUT to JSON array.
+  'launch'       => false,               // Reuse the current process.
+  'exit_error'   => true,                // Halt script execution on error.
+  'command_args' => [ '--skip-themes' ], // Additional arguments to be passed to the $command.
 );
 $plugins = WP_CLI::runcommand( 'plugin list --format=json', $options );
 ```

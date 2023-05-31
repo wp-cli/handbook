@@ -13,6 +13,9 @@ Verifies plugin files against WordPress.org's checksums.
 [\--strict]
 : If set, even "soft changes" like readme.txt changes will trigger checksum errors.
 
+[\--version=&lt;version&gt;]
+: Verify checksums against a specific plugin version.
+
 [\--format=&lt;format&gt;]
 : Render output in a specific format.
 \---

@@ -19,6 +19,18 @@ Shows the status of auto-updates for a plugin.
 [\--field=&lt;field&gt;]
 : Only show the provided field.
 
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+  - count
+\---
+
 ### EXAMPLES
 
     # Get the status of plugin auto-updates

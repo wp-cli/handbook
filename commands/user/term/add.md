@@ -16,6 +16,7 @@ Append the term to the existing set of terms on the object.
 [\--by=&lt;field&gt;]
 : Explicitly handle the term value as a slug or id.
 \---
+default: slug
 options:
   - slug
   - id

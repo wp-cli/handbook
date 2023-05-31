@@ -4,6 +4,8 @@ Imports content from a given WXR file.
 
 Provides a command line interface to the WordPress Importer plugin, for performing data migrations.
 
+Use `define( 'IMPORT_DEBUG', true );` for more verbosity during importing.
+
 ### OPTIONS
 
 &lt;file&gt;...

@@ -13,7 +13,7 @@ Deactivates one or more plugins.
 [\--all]
 : If set, all plugins will be deactivated.
 
- [--exclude=&lt;name&gt;]
+[\--exclude=&lt;name&gt;]
 : Comma separated list of plugin slugs that should be excluded from deactivation.
 
 [\--network]

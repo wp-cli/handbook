@@ -16,7 +16,7 @@ Quickly identify what's slow with WordPress.
     | total (3)  | 1.6037s | 92.91%      |
     +------------+---------+-------------+
 
-    # Dive into the hooks for a given state
+    # Dive into hook performance for a given stage.
     $ wp profile stage bootstrap --fields=hook,time,cache_ratio --spotlight
     +--------------------------+---------+-------------+
     | hook                     | time    | cache_ratio |

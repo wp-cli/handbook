@@ -21,7 +21,7 @@ Returns `true` if `STDOUT` output is being redirected to a pipe or a file; `fals
 output is being sent directly to the terminal.
 
 If an env variable `SHELL_PIPE` exists, the returned result depends on its
-value. Strings like `1`, `0`, `yes`, `no` that validate to booleans are accepted.
+value. Strings like `1`, `0`, `yes`, `no`, that validate to booleans are accepted.
 
 To enable ASCII formatting even when the shell is piped, use the
 ENV variable `SHELL_PIPE=0`.
@@ -34,6 +34,7 @@ variable. For db commands, pass the `--table` option instead.
 ```
 wp db query --table "SELECT 1" | cat
 ```
+
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 
