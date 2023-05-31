@@ -128,7 +128,7 @@ $ wp import wordpress.wxr --authors=create | tee -a import.log
 
 Are you an expert in bash or zsh? Share your tips here.
 
-**Take a look at the plugin changelog**
+### Take a look at the plugin changelog
 
 Needs `elinks` to browse HTML.
 
@@ -143,7 +143,7 @@ Explanation
 - echo the changelog part from the API's reply
 - fire up elinks (a console browser) to view the changelog
 
-**Start wp-cli with ABSPATH in the current dir and under the current dir's owner**
+### Start wp-cli with ABSPATH in the current dir and under the current dir's owner
 
 ```bash
 #!/bin/bash
@@ -155,7 +155,7 @@ Explanation
 
 The `stat` command returns the owner of the current directory, WordPress root.
 
-**Install and Configure WordPress with WP-CLI**
+### Install and Configure WordPress with WP-CLI
 
 ```bash
 wp_install () 
@@ -180,7 +180,7 @@ When you need to create a new WordPress site, call this function and specify the
 name of the directory where you want to create the site. This emulates the
 web-based install process.
 
-**List all image URL-s in posts**
+### List all image URL-s in posts
 
 ```bash
 wp post list --field=ID|xargs -I % wp post get % --field=post_content|sed -ne 's;.*\(https\?\S\+\(jpe\?g\|png\|gif\)\).*;\1;gp'
@@ -192,7 +192,7 @@ Explanation
 - Get each content (xargs)
 - Display only image URL-s (sed)
 
-**Create a page from a file and flag it with the file name**
+### Create a page from a file and flag it with the file name
 
 ```bash
 wp post create new_page.html --post_type=page --post_title="New Page" --porcelain | xargs -I % wp post meta add % imported_from new_page.html
@@ -203,7 +203,7 @@ Explanation
 - Create a page (--porcelain will return only the new post ID)
 - Create post meta with xargs using "-I %" to signify the placeholder template for the new post ID
 
-**Change to a certain WordPress installation's directory from a menu**
+### Change to a certain WordPress installation's directory from a menu
 
 ```bash
 #!/bin/bash
@@ -246,7 +246,7 @@ Explanation
 - Display a progress bar while getting `blogname` of each installation
 - Choose one installation from a nice menu and display `cd` command for it
 
-**Discard header row from a CSV**
+### Discard header row from a CSV
 
 By default, `--format=csv` includes a header row:
 
@@ -262,3 +262,16 @@ If you'd like to discard the header row, `tail` is pretty helpful:
 $ wp user list --format=csv | tail -n +2
 1,daniel,daniel,daniel@handbuilt.co,"2022-12-21 23:05:16",administrator
 ```
+
+
+### Sort plugins or themes by certain column(s)
+
+- **Challenge**: wp-cli's `<plugin|theme> list` commands have no option by which column(s) to sort.
+- **Solution**: You can output as `--format=csv` and then simply pipe into a CLI app which has sorting functions built-in.
+  - E.g. if you want to sort by status and then by name with [miller](https://github.com/johnkerl/miller#readme), short form `mlr`:
+
+        $ wp plugin list --format=csv | mlr --icsv --opprint sort -f status,name
+
+  - Explanation:
+    - Manpage says: `sort -f {comma-separated field names} Lexical ascending`
+    - In our example this means: Sort the plugins lexically ascending, first by status, then by name.
