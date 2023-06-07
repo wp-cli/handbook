@@ -138,10 +138,16 @@ Functional tests typically follow this pattern:
 * **When** a user performs a specific action,
 * **Then** the end result should be X (and Y and Z).
 
+#### Creating a test database
+
 Before running the functional tests, you'll need a MySQL (or MariaDB) user called `wp_cli_test` with the password `password1` that has full privileges on the MySQL database `wp_cli_test`.
 To override these credentials you can make use of the [database credentials constants of wp-cli-tests](https://github.com/wp-cli/wp-cli-tests#the-database-credentials)
 
 The database can be set up by running `composer prepare-tests`. This will create the database and the user and configure the necessary privileges. Note that this operation is not needed for every test run, it only needs to be run the first time for the initial setup.
+
+**Note: If you are using MySQL >= 8.0, you may experience inconsistencies with WP-CLI successfully connecting to the database. MySQL 8.0 changed the default authentication plugin and some clients (such as PHP) do not yet support this change. More information can be found on [this blog post](https://jonathandesrosiers.com/2019/02/trouble-connecting-to-database-when-using-mysql-8-x/).**
+
+#### Running the test suite
 
 Then, to run the entire test suite:
 
@@ -164,8 +170,6 @@ When writing new tests, to see which step definitions are available:
     composer behat -- --definitions l
 
 More info can be found by using `composer behat -- --help`.
-
-**Note: If you are using MySQL >= 8.0, you may experience inconsistencies with WP-CLI successfully connecting to the database. MySQL 8.0 changed the default authentication plugin and some clients (such as PHP) do not yet support this change. More information can be found on [this blog post](https://jonathandesrosiers.com/2019/02/trouble-connecting-to-database-when-using-mysql-8-x/).**
 
 ### Unit tests
 
