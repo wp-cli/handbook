@@ -23,15 +23,18 @@ You can utilize the scheme component of the ssh argument to define a shorthand f
 
 The **scheme** argument is set to `ssh` by default, but it also accepts `vagrant`, `docker`, and `docker-compose` as alternate options.
 
-#### docker 
+#### docker
+
 To use Docker, the command is: `wp rewrite flush --ssh=docker:<name>`
 The Docker container's name can be found by using the `docker ps` command.
 
 #### docker-compose
+
 For Docker Compose, the command is: `wp option get home_url --ssh=docker-compose:<name>`
 The Docker container's name can be located in the `docker-compose.yml` file.
 
 #### vagrant
+
 With Vagrant, you can use the command: `wp rewrite flush --ssh=vagrant:<name>`
 
 ## Aliases
