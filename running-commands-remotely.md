@@ -2,9 +2,9 @@
 
 ## Using an SSH connection
 
-WP-CLI accepts an `--ssh=[<scheme>][<user>@]<host>[:<port>][<path>]` global parameter for running a command against a remote WordPress install. This argument works similarly to how the SSH connection is parameterized in tools like `scp` or `git`.
+WP-CLI accepts an `--ssh=[<scheme>:][<user>@]<host>[:<port>][<path>]` global parameter for running a command against a remote WordPress install. This argument works similarly to how the SSH connection is parameterized in tools like `scp` or `git`.
 
-Under the hood, WP-CLI proxies commands to the ssh executable, which then passes them to the WP-CLI installed on the remote machine. The syntax for `--ssh=[<scheme>][<user>@]<host>[:<port>][<path>]` is interpreted according to the following rules:
+Under the hood, WP-CLI proxies commands to the ssh executable, which then passes them to the WP-CLI installed on the remote machine. The syntax for `--ssh=[<scheme>:][<user>@]<host>[:<port>][<path>]` is interpreted according to the following rules:
 
 * The **scheme** argument defaults to `ssh` and alternately accepts options for `vagrant`, `docker` and `docker-compose`.
 * If you provide just the **host** (e.g. `wp --ssh=example.com`), the user will be inferred from your current system user, the port will be the default SSH port (22) and the path will be the SSH user’s home directory.
@@ -16,6 +16,26 @@ Under the hood, WP-CLI proxies commands to the ssh executable, which then passes
 **Note: you need to have a copy of WP-CLI installed on the remote server, accessible as `wp`.**
 
 Furthermore, `--ssh=<host>` won’t load your `~/.bash_profile` if you have a shell alias defined, or are extending the `$PATH` environment variable. If this affects you, [here’s a more thorough explanation](https://make.wordpress.org/cli/handbook/running-commands-remotely/#making-wp-cli-accessible-on-a-remote-server) of how you can make `wp` accessible.
+
+### Scheme
+
+You can utilize the scheme component of the ssh argument to define a shorthand for connecting to local containerized or virtualized machines.
+
+The **scheme** argument is set to `ssh` by default, but it also accepts `vagrant`, `docker`, and `docker-compose` as alternate options.
+
+#### docker
+
+To use Docker, the command is: `wp rewrite flush --ssh=docker:<name>`
+The Docker container's name can be found by using the `docker ps` command.
+
+#### docker-compose
+
+For Docker Compose, the command is: `wp option get home_url --ssh=docker-compose:<name>`
+The Docker container's name can be located in the `docker-compose.yml` file.
+
+#### vagrant
+
+With Vagrant, you can use the command: `wp rewrite flush --ssh=vagrant:<name>`
 
 ## Aliases
 
