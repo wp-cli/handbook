@@ -206,3 +206,18 @@ The `wp core update` command is designed to work for WordPress 3.4 and above. To
 
 1. **Fully-automated:** Run `wp core download --force` to download latest WordPress and replace it with your files (don't worry, `wp-config.php` will remain intact). Then, run `wp core update-db` to update the database. Since the procedure isn't ideal, run once again `wp core download --force` and the new version should be available.
 2. **Semi-automated:** Run `wp core download --force` to download all files and replace them in your current installation, then navigate to `/wp-admin/` and run the database upgrade when prompted.
+
+### PHP Fatal error: Maximum function nesting level of '#' reached, aborting!
+
+You're encountering a limitation associated with [PHP xdebug](https://xdebug.org/). Here are a few solutions to the problem:
+
+1. Temporarily turn off xdebug while executing the CLI command: `XDEBUG_MODE=off wp <command> ...`
+2. Increase the value of xdebug.max_nesting_level in your php.ini file. You can learn more about it here - [xdebug.max-nesting-level](https://xdebug.org/docs/all_settings#max_nesting_level)
+
+If you're looking for a quick fix, while still retaining debugging tools, you can change the `max_nesting_level` value to execute the command just once:
+
+`php -d xdebug.max_nesting_level=512 wp <command> ...`
+
+If you're not in the process of debugging code, it's advisable to completely disable xdebug. For instructions on how to permanently switch off xdebug, please refer to the documentation of your local environment or your hosting provider.
+
+You might experience similar issues with the alternate error message: `Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '#' frames`
