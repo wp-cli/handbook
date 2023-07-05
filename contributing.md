@@ -20,7 +20,7 @@ To report a security issue, please visit the [WordPress HackerOne](https://hacke
 
 Think you’ve found a bug? We’d love for you to help us get it fixed.
 
-Before you create a new issue, you should [search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Awp-cli+label%3Abug) to see if there’s an existing resolution to it, or if it’s already been fixed in a newer version of WP-CLI. You should also check our [documentation on common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/).
+Before you create a new issue, you should [search existing issues](https://github.com/search?q=org%3Awp-cli+label%3Abug+is%3Aopen+sort%3Aupdated-desc&type=issues) to see if there’s an existing resolution to it, or if it’s already been fixed in a newer version of WP-CLI. You should also check our [documentation on common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/).
 
 Once you’ve done a bit of searching and discovered there isn’t an open or fixed issue for your bug, please [follow our guidelines for submitting a bug report](https://make.wordpress.org/cli/handbook/bug-reports/) to make sure it gets addressed in a timely manner.
 
@@ -34,7 +34,7 @@ Once you've decided to commit the time to seeing your pull request through, plea
 
 ### Improving our documentation
 
-Is documentation your strength? Take a look at the currently open [documentation issues](https://github.com/issues?q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli+label%3Ascope%3Adocumentation) and see if you can tackle any of those.
+Is documentation your strength? Take a look at the currently open [documentation issues](https://github.com/search?q=org%3Awp-cli+label%3Ascope%3Adocumentation+is%3Aopen+sort%3Aupdated-desc&type=issues) and see if you can tackle any of those.
 
 There are a couple different types of documentation currently part of WP-CLI:
 
