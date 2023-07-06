@@ -4,7 +4,7 @@ Think you've found a bug? We'd love for you to help us get it fixed.
 
 Before you create a new issue, you should:
 
-* [Search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Awp-cli+label%3Abug) to see if there's an existing resolution to it, or if it's already been fixed in a newer version.
+* [Search existing issues](https://github.com/search?q=org%3Awp-cli+label%3Abug+is%3Aopen+sort%3Aupdated-desc&type=issues) to see if there's an existing resolution to it, or if it's already been fixed in a newer version.
 * Check our documentation on [common issues and their fixes](https://make.wordpress.org/cli/handbook/common-issues/). It's worth reading through the GitHub issues linked on the page, as the error listed may not be exactly the error you're experiencing.
 * Reproduce the issue in a fresh installation of WordPress (e.g. Twenty Sixteen or similar, with no plugins active). If the issue only reproduces in a custom environment, then the issue is a bug in your environment, not WP-CLI (make sure `WP_DEBUG` is enabled, which will often give you more visibility into the issue). You may be able to [track down the error to a specific plugin or theme](https://make.wordpress.org/cli/handbook/identify-plugin-theme-conflict/).
 

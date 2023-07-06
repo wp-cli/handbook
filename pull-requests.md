@@ -2,7 +2,7 @@
 
 WP-CLI follows a pull request workflow for changes to its code (and documentation). Whether you want to fix a bug or implement a new feature, the process is pretty much the same:
 
-0. [Search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli); if you can't find anything related to what you want to work on, open a new issue in the appropriate repository so that you can get some initial feedback.
+0. [Search existing issues](https://github.com/search?q=org%3Awp-cli+is%3Aopen+sort%3Aupdated-desc&type=issues); if you can't find anything related to what you want to work on, open a new issue in the appropriate repository so that you can get some initial feedback.
     1. Opening an issue before submitting a pull request helps us provide architectural and implementation guidance before you spend too much time on the code.
 1. Fork the repository you'd like to modify, either the framework or one of the command packages.
     1. See [Setting Up](#setting-up) for more details on configuring the codebase for development.

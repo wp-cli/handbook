@@ -86,7 +86,7 @@ Additionally you can use WP-CLI's global parameter `--debug` to show all PHP err
 
 If you think you’ve found a bug, we’d love to hear from you to get it fixed.
 
-Bug reporting for WP-CLI is handled on GitHub. Before you create a new issue, please [search existing issues](https://github.com/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+org%3Awp-cli+label%3Abug) to see if there’s an existing resolution to it. If there isn’t an open or fixed issue for your bug, please [follow our guidelines for submitting a bug report](https://make.wordpress.org/cli/handbook/bug-reports/) to make sure it gets addressed in a timely manner. Providing the summary, steps to reproduce, environmental details, and other specifics identified below will help guarantee you are submitting a full bug report.
+Bug reporting for WP-CLI is handled on GitHub. Before you create a new issue, please [search existing issues](https://github.com/search?q=org%3Awp-cli+label%3Abug+is%3Aopen+sort%3Aupdated-desc&type=issues) to see if there’s an existing resolution to it. If there isn’t an open or fixed issue for your bug, please [follow our guidelines for submitting a bug report](https://make.wordpress.org/cli/handbook/bug-reports/) to make sure it gets addressed in a timely manner. Providing the summary, steps to reproduce, environmental details, and other specifics identified below will help guarantee you are submitting a full bug report.
 
 Please provide us with:
 * a summary of the issue in narrative form,

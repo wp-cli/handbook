@@ -178,6 +178,6 @@ There are a lot of useful ways to search GitHub. These searches can be put into 
 
 Here are some examples:
 
-* [Open issues & pull requests across all WP-CLI repositories, sorted by last updated](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+sort%3Aupdated-desc+org%3Awp-cli)
-* [Merged pull requests across all WP-CLI repositories that have no milestone, sorted by last updated](https://github.com/issues?utf8=%E2%9C%93&q=is%3Amerged+no%3Amilestone+sort%3Aupdated-desc+org%3Awp-cli+)
-* [Closed issues & pull requests across all WP-CLI repositories that have no label, sorted by last updated](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+no%3Alabel+sort%3Aupdated-desc+org%3Awp-cli+)
+* [Open issues & pull requests across all WP-CLI repositories, sorted by last updated](https://github.com/search?q=org%3Awp-cli+is%3Aopen+sort%3Aupdated-desc&type=issues)
+* [Merged pull requests across all WP-CLI repositories that have no milestone, sorted by last updated](https://github.com/search?q=org%3Awp-cli+is%3Amerged+no%3Amilestone+sort%3Aupdated-desc&type=issues)
+* [Closed issues & pull requests across all WP-CLI repositories that have no label, sorted by last updated](https://github.com/search?q=org%3Awp-cli+is%3Aclosed+no%3Alabel+sort%3Aupdated-desc&type=issues)
