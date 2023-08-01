@@ -4,7 +4,7 @@ This guide demonstrates how to run integration tests on both Travis CI and local
 
 ## Running tests on Travis CI
 
-If you host your plugin on GitHub and enable [Travis CI]([http://about.travis-ci.org](https://docs.travis-ci.com/)), the tests will be run automatically after every commit you make to the plugin.
+If you host your plugin on GitHub and enable [Travis CI](https://docs.travis-ci.com/), the tests will be run automatically after every commit you make to the plugin.
 
 All you need to do to enable this is copy and then edit the following files from the [WP-CLI sample plugin](https://github.com/wp-cli/sample-plugin):
 
