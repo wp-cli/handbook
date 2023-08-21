@@ -31,6 +31,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 
 * **[Bug reports](https://make.wordpress.org/cli/handbook/contributions/bug-reports/)** - Help ensure your issue is resolved in a timely manner.
 * **[Contributing](https://make.wordpress.org/cli/handbook/contributions/contributing/)** - An introduction to the contributing process.
+* **[WordCamp Contributor Day](https://make.wordpress.org/cli/handbook/contributions/contributor-day/)** - Quick-start guide for WordCamp Contributor Days.
 * **[Ideas](https://github.com/wp-cli/ideas)** - Up-vote existing ideas or submit your own.
 * **[Governance](https://make.wordpress.org/cli/handbook/contributions/governance/)** - Summary of those behind WP-CLI.
 * **[Implementation details](https://make.wordpress.org/cli/handbook/contributions/implementation-details/)** - Catalog of historical design decisions.
