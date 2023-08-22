@@ -61,6 +61,7 @@ In alphabetical order:
 * [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
 * [Pressjitsu](https://pressjitsu.com)
+* [Rad Web Hosting](https://radwebhosting.com)
 * [Rocket.net](https://rocket.net)
 * [RoseHosting](https://www.rosehosting.com)
 * [Savvii](https://www.savvii.com/)
