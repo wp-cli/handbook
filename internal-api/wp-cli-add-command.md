@@ -61,7 +61,6 @@ WP_CLI::add_command( 'foo', $foo );
 <ul>
 
 
-
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-add-hook/">WP_CLI::add_hook()</a></strong> - Schedule a callback to be executed at a certain point.</li>
 
 
