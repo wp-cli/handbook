@@ -41,5 +41,8 @@ To help you be successful during Contributor Day, we curated a list of reasonabl
 - [Run the test suite with SQLite](https://github.com/wp-cli/wp-cli/issues/5831)
 - [Set WP_CLI_PACKAGES_DIR in config file](https://github.com/wp-cli/wp-cli/issues/5645)
 - [Improve speed of import when uploads are available locally](https://github.com/wp-cli/import-command/issues/83)
+- [Introduce a dedicated search-replace url command](https://github.com/wp-cli/search-replace-command/issues/186)
+- [Path errors when running wp dist-archive on Windows](https://github.com/wp-cli/dist-archive-command/issues/76)
+- [Prompt if archive file already exists, instead of overwriting automatically](https://github.com/wp-cli/dist-archive-command/issues/70)
 
 You're obviously welcome to work on any other issue you'd like too! Contributor Day can be a good opportunity to discuss trickier issues and brainstorm approaches.
