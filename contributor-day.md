@@ -2,7 +2,7 @@
 
 Welcome to WCUS Contributor Day! We appreciate you sharing your time with WP-CLI.
 
-We'd love to help you submit at least one pull request, so we put together this guide to make it as straightforward as possible. We're here to support you however we can.
+We'd love to help you submit at least one pull request, so we put together this guide to make it as straightforward as possible. We're here to support you however we can. When you submit your pull request, add `Related https://github.com/wp-cli/wp-cli/issues/5832` so we can see all pull requests created during the day!
 
 Your table leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber)
 
