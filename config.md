@@ -306,6 +306,22 @@ Here's an annotated example `wp-cli.yml` file:
 		# Inherit configuration from an arbitrary YAML file
 		inherit: prod.yml
 
+## Remote (SSH) configuration
+
+Using the `ssh` option, WP-CLI can be configured to run on a remote system rather than the current system. Along with the SSH protocol, WP-CLI also supports connecting to Docker containers (including docker-compose) and Vagrant VMs.
+
+The connection type can be passed via the scheme of the `--ssh` parameter or `ssh` option.
+
+Supported types are:
+
+* `docker:[<user>@]<container_id>` - Runs WP-CLI in a running Docker container via `docker exec [--user <user>] <container_id> ...`
+* `docker-compose:[<user>@]<container_id>` - Runs WP-CLI in a running Docker container via `docker-compose exec [--user <user>] <container_id> ...`
+* `docker-compose-run:[<user>@]<container_id>` - Runs WP-CLI in a new Docker container via `docker-compose run [--user <user>] <container_id> ...`
+* `vagrant` - Runs WP-CLI in a running Vagrant VM via `vagrant ssh ...`
+* `[<user>@]<host>[:<port>]` (ssh) - Runs WP-CLI on a remote machine through an SSH connection via `ssh [-p <port>] [<user>@]<host> ...`
+
+All connection types support an optional `path` suffix to specify a directory to `cd` to before running WP-CLI; `path` is a full system path starting with either `/` or `~`. (If `WP_CLI_SSH_PRE_CMD` is specified, `cd` is run after this pre-command.)
+
 ## Environment variables
 
 WP-CLI's behavior can be changed at runtime through the use of environment variables:
