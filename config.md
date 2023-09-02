@@ -322,6 +322,11 @@ Supported types are:
 
 All connection types support an optional `path` suffix to specify a directory to `cd` to before running WP-CLI; `path` is a full system path starting with either `/` or `~`. (If `WP_CLI_SSH_PRE_CMD` is specified, `cd` is run after this pre-command.)
 
+The SSH connection type also supports two advanced connection configuration options, which must be specified via an alias in the YAML configuration:
+
+* `proxyjump` - Specifies a jumpbox connection string, which is passed to `ssh -J`
+* `key` - Specifies the key (identify file) to use, which is passed to `ssh -i`
+
 ## Environment variables
 
 WP-CLI's behavior can be changed at runtime through the use of environment variables:
