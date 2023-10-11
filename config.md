@@ -247,7 +247,6 @@ The table below lists the available <span class="argument">arguments</span> (spe
 			<code class="option">apache_modules: &lt;list&gt;</code>
 		</td>
 	</tr>
-
 	</tbody>
 </table>
 
