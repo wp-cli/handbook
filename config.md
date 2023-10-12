@@ -171,6 +171,19 @@ The table below lists the available <span class="argument">arguments</span> (spe
 	</tr>
 	<tr>
 		<td>
+			Load WordPress in a given context.
+			<br />
+			Default value: <code>auto</code>
+		</td>
+		<td>
+			<code class="flag">--context[=&lt;context&gt;]</code>
+		</td>
+		<td>
+			<code class="option">context: &lt;context&gt;</code>
+		</td>
+	</tr>
+	<tr>
+		<td>
 			(Sub)commands to disable.
 			<br />
 			Default value: <code>[]</code>
@@ -325,6 +338,23 @@ The SSH connection type also supports two advanced connection configuration opti
 
 * `proxyjump` - Specifies a jumpbox connection string, which is passed to `ssh -J`
 * `key` - Specifies the key (identify file) to use, which is passed to `ssh -i`
+
+## Context configuration
+
+In WP-CLI v2.6.0, a new global flag `--context=<context>` was added which allows users to select the WordPress context in which WP-CLI is supposed to execute its command(s).
+
+One of the main goals is to allow WP-CLI to run updates on premium plugins and themes without requiring any special setup. From our initial testing, this allows a large range of popular premium extensions to *just work*™ with WP-CLI in terms of their update procedures.
+
+Possible values for this flag:
+
+* `cli`: The context which has been the default before introduction of this flag. This is something in-between a frontend and an admin request, to get around some of the quirks of WordPress when running on the console.
+* `admin`: A context that simulates running a command as if it would be executed in the administration backend. This is meant to be used to get around issues with plugins that limit functionality behind an `is_admin()` check.
+* `auto`: Switches between `cli` and `admin` depending on which command is being used. Currently, all `wp plugin *` and `wp theme *` commands use `admin`, while all other commands use `cli`.
+* `frontend`: [WIP] This does nothing yet.
+
+By default, the `--context` flag was set to `cli` in the initial release (v2.6.0). In WP-CLI v2.7.0 and later versions, the default was changed to `auto`. This gradual deployment allowed hosters and site owners to run tests on v2.6.0 by manually setting the context before the default behavior was changed.
+
+If you are still using WP-CLI v2.6.0 but you want to use the default of `--context=auto`, you can do so by adding the necessary `context: auto` line to your global `wp-cli.yml` configuration file. Feel free to check the documentation on [WP-CLI configuration files](#config-files) if this is new to you.
 
 ## Environment variables
 
