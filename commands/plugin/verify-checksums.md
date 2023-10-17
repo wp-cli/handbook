@@ -31,6 +31,9 @@ options:
 [\--insecure]
 : Retry downloads without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
 
+[\--exclude=&lt;name&gt;]
+: Comma separated list of plugin names that should be excluded from verifying.
+
 ### EXAMPLES
 
     # Verify the checksums of all installed plugins

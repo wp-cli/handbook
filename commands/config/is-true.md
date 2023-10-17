@@ -1,19 +1,33 @@
-# wp site unspam
+# wp config is-true
 
-Removes one or more sites from spam.
+Determines whether value of a specific defined constant or variable is truthy.
+
+This determination is made by evaluating the retrieved value via boolval().
 
 ### OPTIONS
 
-[&lt;id&gt;...]
-: One or more IDs of sites to remove from spam. If not provided, you must set the --slug parameter.
+&lt;name&gt;
+: Name of the wp-config.php constant or variable.
 
-[\--slug=&lt;slug&gt;]
-: Path of the site to be removed from spam. Subdomain on subdomain installs, directory on subdirectory installs.
+[\--type=&lt;type&gt;]
+: Type of config value to retrieve. Defaults to 'all'.
+\---
+default: all
+options:
+  - constant
+  - variable
+  - all
+\---
+
+[\--config-file=&lt;path&gt;]
+: Specify the file path to the config file to be read. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 ### EXAMPLES
 
-    $ wp site unspam 123
-    Success: Site 123 removed from spam.
+    # Assert if MULTISITE is true
+    $ wp config is-true MULTISITE
+    $ echo $?
+    0
 
 ### GLOBAL PARAMETERS
 

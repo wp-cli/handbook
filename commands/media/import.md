@@ -36,8 +36,12 @@ Creates attachments from local files or URLs.
 [\--featured_image]
 : If set, set the imported image as the Featured Image of the post it is attached to.
 
-[\--porcelain]
-: Output just the new attachment ID.
+[\--porcelain[=&lt;field&gt;]]
+: Output a single field for each imported image. Defaults to attachment ID when used as flag.
+\---
+options:
+  - url
+\---
 
 ### EXAMPLES
 

@@ -4,12 +4,18 @@ Sets one or more sites as immature.
 
 ### OPTIONS
 
-&lt;id&gt;...
-: One or more IDs of sites to set as unmature.
+[&lt;id&gt;...]
+: One or more IDs of sites to set as unmature. If not provided, you must set the --slug parameter.
+
+[\--slug=&lt;slug&gt;]
+: Path of the site to be set as unmature. Subdomain on subdomain installs, directory on subdirectory installs.
 
 ### EXAMPLES
 
-    $ wp site general 123
+    $ wp site unmature 123
+    Success: Site 123 marked as unmature.
+
+    $ wp site unmature --slug=demo
     Success: Site 123 marked as unmature.
 
 ### GLOBAL PARAMETERS

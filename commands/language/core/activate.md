@@ -2,6 +2,8 @@
 
 Activates a given language.
 
+**Warning: `wp language core activate` is deprecated. Use `wp site switch-language` instead.**
+
 ### OPTIONS
 
 &lt;language&gt;
