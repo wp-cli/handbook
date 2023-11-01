@@ -37,10 +37,10 @@ default:
 \---
 
 [\--post_date=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
-: The date of the generated posts. Default: current date
+: The date of the post. Default is the current time.
 
 [\--post_date_gmt=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
-: The GMT date of the generated posts. Default: value of post_date (or current date if it's not set)
+: The date of the post in the GMT timezone. Default is the value of --post_date.
 
 [\--post_content]
 : If set, the command reads the post_content from STDIN.

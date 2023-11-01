@@ -28,6 +28,18 @@ Resets the password for one or more users.
     $ wp user reset-password admin --skip-email --porcelain
     yV6BP*!d70wg
 
+    # Reset password for all users.
+    $ wp user reset-password $(wp user list --format=ids)
+    Reset password for admin
+    Reset password for editor
+    Reset password for subscriber
+    Success: Passwords reset for 3 users.
+
+    # Reset password for all users with a particular role.
+    $ wp user reset-password $(wp user list --format=ids --role=administrator)
+    Reset password for admin
+    Success: Password reset for 1 user.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.

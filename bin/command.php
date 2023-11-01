@@ -197,9 +197,9 @@ EOT;
 				}
 			}
 			if ( $filename ) {
-				preg_match( '#vendor/([^/]+/[^/]+)#', $filename, $matches );
+				preg_match( '#wp-cli-dev/([^/]+)#', $filename, $matches );
 				if ( ! empty( $matches[1] ) ) {
-					$repo_url = 'https://github.com/' . $matches[1];
+					$repo_url = 'https://github.com/wp-cli/' . $matches[1];
 				}
 			} else {
 				WP_CLI::error( 'No callable for: ' . var_export( $static, true ) );
@@ -250,6 +250,17 @@ EOT;
 					array_pop( $bits );
 					$parent = implode( '/', $bits );
 				}
+				$ignored = [
+					'doctor',
+					'google-sitemap',
+					'maintenance',
+					'maintenance/release',
+					'super-cache',
+				];
+				if ( in_array( $slug, $ignored, true ) || in_array( $parent, $ignored, true ) ) {
+					continue;
+				}
+
 				$manifest[ $cmd_path ] = [
 					'title'           => $title,
 					'slug'            => $slug,

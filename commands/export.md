@@ -27,6 +27,9 @@ default: 15
 [\--include_once=&lt;before_posts&gt;]
 : Include specified export section only in the first export file. Valid options are categories, tags, nav_menu_items, custom_taxonomies_terms. Separate multiple sections with a comma. Defaults to none.
 
+[\--allow_orphan_terms]
+: Export orphaned terms with `parent=0`, instead of throwing an exception.
+
 ### FILTERS
 
 [\--start_date=&lt;date&gt;]

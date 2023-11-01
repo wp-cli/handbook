@@ -4,12 +4,18 @@ Sets one or more sites as private.
 
 ### OPTIONS
 
-&lt;id&gt;...
-: One or more IDs of sites to set as private.
+[&lt;id&gt;...]
+: One or more IDs of sites to set as private. If not provided, you must set the --slug parameter.
+
+[\--slug=&lt;slug&gt;]
+: Path of the site to be set as private. Subdomain on subdomain installs, directory on subdirectory installs.
 
 ### EXAMPLES
 
     $ wp site private 123
+    Success: Site 123 marked as private.
+
+    $ wp site private --slug=demo
     Success: Site 123 marked as private.
 
 ### GLOBAL PARAMETERS

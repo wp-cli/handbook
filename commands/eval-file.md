@@ -10,7 +10,7 @@ Note: because code is executed within a method, global variables need to be expl
 : The path to the PHP file to execute.  Use '-' to run code from STDIN.
 
 [&lt;arg&gt;...]
-: One or more arguments to pass to the file. They are placed in the $args variable.
+: One or more positional arguments to pass to the file. They are placed in the $args variable.
 
 [\--skip-wordpress]
 : Load and execute file without loading WordPress.

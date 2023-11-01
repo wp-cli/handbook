@@ -61,6 +61,7 @@ These fields are optionally available:
 * description
 * file
 * auto_update
+* author
 
 ### EXAMPLES
 
