@@ -79,14 +79,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/dist-archive.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/dist-archive-command"
     },
-    "doctor": {
-        "title": "doctor",
-        "slug": "doctor",
-        "cmd_path": "doctor",
-        "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/doctor.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/doctor-command"
-    },
     "embed": {
         "title": "embed",
         "slug": "embed",
@@ -174,14 +166,6 @@
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance-mode.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
-    },
-    "maintenance": {
-        "title": "maintenance",
-        "slug": "maintenance",
-        "cmd_path": "maintenance",
-        "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
     },
     "media": {
         "title": "media",
@@ -326,14 +310,6 @@
         "parent": null,
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-admin.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/super-admin-command"
-    },
-    "super-cache": {
-        "title": "super-cache",
-        "slug": "super-cache",
-        "cmd_path": "super-cache",
-        "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-cache.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/wp-super-cache-cli"
     },
     "taxonomy": {
         "title": "taxonomy",
@@ -1023,22 +999,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/db\/tables.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/db-command"
     },
-    "doctor\/check": {
-        "title": "doctor check",
-        "slug": "check",
-        "cmd_path": "doctor\/check",
-        "parent": "doctor",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/doctor\/check.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/doctor-command"
-    },
-    "doctor\/list": {
-        "title": "doctor list",
-        "slug": "list",
-        "cmd_path": "doctor\/list",
-        "parent": "doctor",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/doctor\/list.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/doctor-command"
-    },
     "embed\/cache": {
         "title": "embed cache",
         "slug": "cache",
@@ -1166,62 +1126,6 @@
         "parent": "maintenance-mode",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance-mode\/status.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/maintenance-mode-command"
-    },
-    "maintenance\/contrib-list": {
-        "title": "maintenance contrib-list",
-        "slug": "contrib-list",
-        "cmd_path": "maintenance\/contrib-list",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/contrib-list.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
-    },
-    "maintenance\/milestones-after": {
-        "title": "maintenance milestones-after",
-        "slug": "milestones-after",
-        "cmd_path": "maintenance\/milestones-after",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/milestones-after.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
-    },
-    "maintenance\/milestones-since": {
-        "title": "maintenance milestones-since",
-        "slug": "milestones-since",
-        "cmd_path": "maintenance\/milestones-since",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/milestones-since.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
-    },
-    "maintenance\/release-date": {
-        "title": "maintenance release-date",
-        "slug": "release-date",
-        "cmd_path": "maintenance\/release-date",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/release-date.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
-    },
-    "maintenance\/release-notes": {
-        "title": "maintenance release-notes",
-        "slug": "release-notes",
-        "cmd_path": "maintenance\/release-notes",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/release-notes.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
-    },
-    "maintenance\/release": {
-        "title": "maintenance release",
-        "slug": "release",
-        "cmd_path": "maintenance\/release",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/release.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
-    },
-    "maintenance\/replace-label": {
-        "title": "maintenance replace-label",
-        "slug": "replace-label",
-        "cmd_path": "maintenance\/replace-label",
-        "parent": "maintenance",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/maintenance\/replace-label.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/.maintenance"
     },
     "media\/fix-orientation": {
         "title": "media fix-orientation",
@@ -2006,46 +1910,6 @@
         "parent": "super-admin",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-admin\/remove.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/super-admin-command"
-    },
-    "super-cache\/disable": {
-        "title": "super-cache disable",
-        "slug": "disable",
-        "cmd_path": "super-cache\/disable",
-        "parent": "super-cache",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-cache\/disable.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/wp-super-cache-cli"
-    },
-    "super-cache\/enable": {
-        "title": "super-cache enable",
-        "slug": "enable",
-        "cmd_path": "super-cache\/enable",
-        "parent": "super-cache",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-cache\/enable.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/wp-super-cache-cli"
-    },
-    "super-cache\/flush": {
-        "title": "super-cache flush",
-        "slug": "flush",
-        "cmd_path": "super-cache\/flush",
-        "parent": "super-cache",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-cache\/flush.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/wp-super-cache-cli"
-    },
-    "super-cache\/preload": {
-        "title": "super-cache preload",
-        "slug": "preload",
-        "cmd_path": "super-cache\/preload",
-        "parent": "super-cache",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-cache\/preload.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/wp-super-cache-cli"
-    },
-    "super-cache\/status": {
-        "title": "super-cache status",
-        "slug": "status",
-        "cmd_path": "super-cache\/status",
-        "parent": "super-cache",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/super-cache\/status.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/wp-super-cache-cli"
     },
     "taxonomy\/get": {
         "title": "taxonomy get",

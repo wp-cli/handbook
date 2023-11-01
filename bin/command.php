@@ -250,6 +250,16 @@ EOT;
 					array_pop( $bits );
 					$parent = implode( '/', $bits );
 				}
+				$ignored = [
+					'doctor',
+					'googe-sitemap',
+					'maintenance',
+					'super-cache',
+				];
+				if ( in_array( $slug, $ignored, true ) || in_array( $parent, $ignored, true ) ) {
+					continue;
+				}
+
 				$manifest[ $cmd_path ] = [
 					'title'           => $title,
 					'slug'            => $slug,
