@@ -255,10 +255,6 @@ EOT;
 					'google-sitemap',
 					'maintenance',
 					'maintenance/release',
-					'package',
-					'package-github',
-					'package-readme',
-					'package-tests',
 					'super-cache',
 				];
 				if ( in_array( $slug, $ignored, true ) || in_array( $parent, $ignored, true ) ) {
