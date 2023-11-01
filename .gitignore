@@ -6,3 +6,8 @@ vendor
 _drafts/
 bin/packages
 .*.swp
+commands/doctor*
+commands/google-sitemap*
+commands/maintenance*
+commands/scaffold/package*
+commands/super-cache*
