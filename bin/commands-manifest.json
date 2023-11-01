@@ -119,14 +119,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/find.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/find-command"
     },
-    "google-sitemap": {
-        "title": "google-sitemap",
-        "slug": "google-sitemap",
-        "cmd_path": "google-sitemap",
-        "parent": null,
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/google-sitemap.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/google-sitemap-generator-cli"
-    },
     "help": {
         "title": "help",
         "slug": "help",
@@ -1030,14 +1022,6 @@
         "parent": "embed",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/embed\/provider.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/embed-command"
-    },
-    "google-sitemap\/rebuild": {
-        "title": "google-sitemap rebuild",
-        "slug": "rebuild",
-        "cmd_path": "google-sitemap\/rebuild",
-        "parent": "google-sitemap",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/google-sitemap\/rebuild.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/google-sitemap-generator-cli"
     },
     "i18n\/make-json": {
         "title": "i18n make-json",

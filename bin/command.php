@@ -252,7 +252,7 @@ EOT;
 				}
 				$ignored = [
 					'doctor',
-					'googe-sitemap',
+					'google-sitemap',
 					'maintenance',
 					'super-cache',
 				];
