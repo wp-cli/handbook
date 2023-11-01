@@ -197,9 +197,9 @@ EOT;
 				}
 			}
 			if ( $filename ) {
-				preg_match( '#vendor/([^/]+/[^/]+)#', $filename, $matches );
+				preg_match( '#wp-cli-dev/([^/]+)#', $filename, $matches );
 				if ( ! empty( $matches[1] ) ) {
-					$repo_url = 'https://github.com/' . $matches[1];
+					$repo_url = 'https://github.com/wp-cli/' . $matches[1];
 				}
 			} else {
 				WP_CLI::error( 'No callable for: ' . var_export( $static, true ) );
