@@ -1,28 +1,45 @@
-# WordCamp Contributor Day
+# WP-CLI Hack Day
 
-Welcome to WCUS Contributor Day! We appreciate you sharing your time with WP-CLI.
+Welcome to WP-CLI Hack Day! We appreciate you taking time to contribute to the project.
 
-We'd love to help you submit at least one pull request, so we put together this guide to make it as straightforward as possible. We're here to support you however we can.
+We'd love to help you submit at least one pull request today. Given this goal, you'll likely want to _start with something small and attainable_. After you've submitted your first pull request for the day, you're welcome to work on something more ambitious.
 
-When you submit your pull request, add `Related https://github.com/wp-cli/wp-cli/issues/5832` so we can see all pull requests created during the day. We'll give these some special promotion in the next release notes.
+When do you submit a pull request during Hack Day, please add `Related https://github.com/wp-cli/wp-cli/issues/5859` so we can easily keep track of them. We'll include them in a recap post at the end of the day.
 
-Your table leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber)
+We put together this guide to make contributing as straightforward as possible. Please also join the [#cli channel in WordPress.org Slack](https://wordpress.slack.com/messages/C02RP4T41) ([sign up instructions](https://make.wordpress.org/chat/)) to chat with other contributors, for questions, etc.
+
+Your leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber), [swissspidy]
 
 A few seasoned WP-CLI contributors are also helping out: TBD
 
 ## Getting Started
 
-If you normally use WP-CLI on your web host or via Brew, you're most likely using the Phar executable. The Phar executable is the "built", single-file version of WP-CLI. It's compiled from a couple dozen repositories in the WP-CLI GitHub organization, so modifying WP-CLI requires working amongst those repositories.
+If you normally use WP-CLI on your web host or via Brew, you're most likely using the Phar executable (`wp-cli.phar`). This Phar executable file is the "built", singular version of WP-CLI, and is compiled from a couple dozen repositories in the WP-CLI GitHub organization.
 
-Before you can work on WP-CLI, you'll need to first make sure you have PHP and a functioning MySQL or MariaDB server. Once those prerequisites are met, install the [`wp-cli-dev` development environment](https://github.com/wp-cli/wp-cli-dev) to start contributing:
+In order to make code changes to WP-CLI, you'll need to set up the `wp-cli-dev` development environment on your local machine.
 
+First, clone the GitHub repository:
+
+```bash
+git clone https://github.com/wp-cli/wp-cli-dev wp-cli-dev
 ```
-git clone https://github.com/wp-cli/wp-cli-dev
+
+Before you can proceed further, you'll need to make sure you have [Composer](https://getcomposer.org/), PHP, and a functioning MySQL or MariaDB server on your local machine too.
+
+Once those prequisites are met, finish the installation process:
+
+```bash
 cd wp-cli-dev
 composer install
+composer prepare-tests
 ```
 
-The `wp-cli-dev` installation process clones all of WP-CLI's repositories to your local machine. After it's complete, you'll be able to make changes in whichever repository you'd like. However, you'll need to fork the repository and add it as a remote in order to push your feature branch.
+The `wp-cli-dev` installation process clones all of WP-CLI's repositories to your local machine. After the installation process is complete, you can make changes in whichever repository you like. You'll need to fork the repository in order to push your feature branch, however. [GitHub's CLI](https://github.com/cli/cli) is pretty helpful for this:
+
+```bash
+cd core-command
+gh repo fork
+```
 
 All WP-CLI pull requests are expected to have tests. See [running and writing tests](https://make.wordpress.org/cli/handbook/contributions/pull-requests/#running-and-writing-tests) for a complete introduction.
 
