@@ -14,7 +14,7 @@ A few seasoned WP-CLI contributors are also helping out: TBD
 
 ## Getting Started
 
-If you normally use WP-CLI on your web host or via Brew, you're most likely using the Phar executable (`wp-cli.phar`). This Phar executable file is the "built", singular version of WP-CLI, and is compiled from a couple dozen repositories in the WP-CLI GitHub organization.
+If you normally use WP-CLI on your web host or via Brew, you're most likely using the Phar executable (`wp-cli.phar`). This Phar executable file is the "built", singular version of WP-CLI. It is compiled from a couple dozen repositories in the WP-CLI GitHub organization.
 
 In order to make code changes to WP-CLI, you'll need to set up the `wp-cli-dev` development environment on your local machine.
 
