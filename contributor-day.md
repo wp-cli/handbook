@@ -45,23 +45,26 @@ All WP-CLI pull requests are expected to have tests. See [running and writing te
 
 ## Suggested Tickets
 
-To help you be successful during Contributor Day, we curated a list of reasonably approachable and actionable issues. Feel free to comment directly on the issue if you plan to work on it. We don't usually assign issues, so no need to worry about that.
+To help you be successful during the day, we curated a list of reasonably approachable and actionable issues. Feel free to comment directly on the issue if you plan to work on it. We don't usually assign issues, so no need to worry about that.
 
 **New contributors**
 
-- [Optional field for plugin author](https://github.com/wp-cli/extension-command/issues/368)
-- [Add --all flag to uninstall commands](https://github.com/wp-cli/language-command/issues/122)
-- [wp plugin update does not respect minimum PHP requirements](https://github.com/wp-cli/extension-command/issues/357)
-- [WP-CLI overrides default WP password when no password is set](https://github.com/wp-cli/core-command/issues/183)
-- [Add support for site archive and site deactivate by slug](https://github.com/wp-cli/entity-command/issues/257)
+- [Admin context crashes because of admin.php file formatting](https://github.com/wp-cli/wp-cli/issues/5844)
+- [Add url-to-id commands for each entity](https://github.com/wp-cli/entity-command/issues/429)
+- [Support multiple roles in user add-role and user remove-role](https://github.com/wp-cli/entity-command/issues/423)
+- [Support for forcing an update check](https://github.com/wp-cli/core-command/issues/154)
+- [Include `update_version` in default plugin list and theme list fields](https://github.com/wp-cli/extension-command/issues/198)
+- [Output only matching IDs in db search](https://github.com/wp-cli/db-command/issues/158)
+- [Provide hardcoded edge case for hello plugin installed by Core](https://github.com/wp-cli/checksum-command/issues/33)
+
+See [issues labeled 'good-first-issue'](https://github.com/issues?q=is%3Aopen+org%3Awp-cli+is%3Aissue+sort%3Aupdated-desc+label%3Agood-first-issue+) for a broader list.
 
 **Seasoned contributors**
 
-- [Run the test suite with SQLite](https://github.com/wp-cli/wp-cli/issues/5831)
 - [Set WP_CLI_PACKAGES_DIR in config file](https://github.com/wp-cli/wp-cli/issues/5645)
 - [Improve speed of import when uploads are available locally](https://github.com/wp-cli/import-command/issues/83)
 - [Introduce a dedicated search-replace url command](https://github.com/wp-cli/search-replace-command/issues/186)
 - [Path errors when running wp dist-archive on Windows](https://github.com/wp-cli/dist-archive-command/issues/76)
 - [Prompt if archive file already exists, instead of overwriting automatically](https://github.com/wp-cli/dist-archive-command/issues/70)
 
-You're obviously welcome to work on any other issue you'd like too! Contributor Day can be a good opportunity to discuss trickier issues and brainstorm approaches.
+You're obviously welcome to work on [any other issue](https://github.com/issues?q=is%3Aopen+org%3Awp-cli+is%3Aissue+sort%3Aupdated-desc) you'd like too! This day can be a good opportunity to discuss trickier issues and brainstorm approaches.
