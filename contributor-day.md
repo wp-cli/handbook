@@ -8,7 +8,7 @@ When do you submit a pull request during Hack Day, please add `Related https://g
 
 We put together this guide to make contributing as straightforward as possible. Please also join the [#cli channel in WordPress.org Slack](https://wordpress.slack.com/messages/C02RP4T41) ([sign up instructions](https://make.wordpress.org/chat/)) to chat with other contributors, for questions, etc.
 
-Your leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber), [swissspidy]
+Your leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber), [swissspidy](https://github.com/swissspidy)
 
 A few seasoned WP-CLI contributors are also helping out: TBD
 
