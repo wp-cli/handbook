@@ -16,19 +16,12 @@ A few seasoned WP-CLI contributors are also helping out: TBD
 
 If you normally use WP-CLI on your web host or via Brew, you're most likely using the Phar executable (`wp-cli.phar`). This Phar executable file is the "built", singular version of WP-CLI. It is compiled from a couple dozen repositories in the WP-CLI GitHub organization.
 
-In order to make code changes to WP-CLI, you'll need to set up the `wp-cli-dev` development environment on your local machine.
+In order to make code changes to WP-CLI, you'll need to set up the `wp-cli-dev` development environment on your local machine. Before you can proceed, though, you'll need to make sure you have [Composer](https://getcomposer.org/), PHP, and a functioning MySQL or MariaDB server on your local machine.
 
-First, clone the GitHub repository:
+Once the prequisites are met, clone the GitHub repository and run the installation process:
 
 ```bash
 git clone https://github.com/wp-cli/wp-cli-dev wp-cli-dev
-```
-
-Before you can proceed further, you'll need to make sure you have [Composer](https://getcomposer.org/), PHP, and a functioning MySQL or MariaDB server on your local machine too.
-
-Once those prequisites are met, finish the installation process:
-
-```bash
 cd wp-cli-dev
 composer install
 composer prepare-tests
