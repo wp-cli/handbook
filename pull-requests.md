@@ -115,35 +115,45 @@ To fix the errors and warnings that can be automatically fixed:
 
 ### Functional tests
 
-The functional test files for each WP-CLI repository are in the `features/` directory. Each `.feature` file comprises one or more functional tests for a given feature (roughly organized by command).
+WP-CLI uses [Behat](https://behat.org/) as its functional test suite. Stability between releases is an important contact WP-CLI makes with its users. Functional tests are different than unit tests in that they execute the entire WP-CLI command, and ensure they always work as expected.
 
-A functional test can be as simple as:
+Every repository has a `features/` directory with one or more [YAML](https://yaml.org/)-formatted `*.feature` files. Here's an example of what you might see:
 
-```
-Feature: Evaluating PHP code and files.
+```yml
+Feature: Manage WordPress options
 
-  Scenario: Basics
+  Scenario: Read an individual option
     Given a WP install
 
-    When I run `wp eval 'var_dump(defined("WP_CONTENT_DIR"));'`
-    Then STDOUT should contain:
+	When I run `wp option get home`
+	Then STDOUT should be:
       """
-      bool(true)
-      """
+	  https://example.com
+	  """
 ```
 
-Functional tests typically follow this pattern:
+In this example:
 
-* **Given** some background,
-* **When** a user performs a specific action,
-* **Then** the end result should be X (and Y and Z).
+- `Feature:` documents the scope of the file.
+- `Scenario:` describes a specific test.
+- `Given` provides the initial environment for the test.
+- `When` causes an event to occur.
+- `Then` asserts what's expected after the event is complete.
+
+In a slightly more human-friendly form:
+
+> I have a WordPress installation. When I run `wp option get home`, then the output from the command should be 'https://example.org'.
+
+Essentially, WP-CLI's functional test suite lets you _describe how a command should work_, and then run that description as a functional test.
+
+Notably, Behat is simply the framework for writing these tests. We've written our own custom `Given`, `When`, and `Then` step definitions ([example](https://github.com/wp-cli/wp-cli-tests/blob/560ed5ca2776b6b3b66c79a6e6dc62904ae20b3b/src/Context/GivenStepDefinitions.php#L105-L110), [example](https://github.com/wp-cli/wp-cli-tests/blob/560ed5ca2776b6b3b66c79a6e6dc62904ae20b3b/src/Context/WhenStepDefinitions.php#L34-L42)).
 
 #### Creating a test database
 
 Before running the functional tests, you'll need a MySQL (or MariaDB) user called `wp_cli_test` with the password `password1` that has full privileges on the MySQL database `wp_cli_test`.
 To override these credentials you can make use of the [database credentials constants of wp-cli-tests](https://github.com/wp-cli/wp-cli-tests#the-database-credentials)
 
-The database can be set up by running `composer prepare-tests`. This will create the database and the user and configure the necessary privileges. Note that this operation is not needed for every test run, it only needs to be run the first time for the initial setup.
+If your user has the correct permissions, the database can also be set up by running `composer prepare-tests`. This will create the database and the user and configure the necessary privileges. Note that this operation is not needed for every test run, it only needs to be run the first time for the initial setup.
 
 **Note: If you are using MySQL >= 8.0, you may experience inconsistencies with WP-CLI successfully connecting to the database. MySQL 8.0 changed the default authentication plugin and some clients (such as PHP) do not yet support this change. More information can be found on [this blog post](https://jonathandesrosiers.com/2019/02/trouble-connecting-to-database-when-using-mysql-8-x/).**
 
@@ -152,6 +162,10 @@ The database can be set up by running `composer prepare-tests`. This will create
 Then, to run the entire test suite:
 
     composer behat
+
+Or to test a scenario at a specific line:
+
+    composer behat -- features/core.feature:10
 
 Or to test a single feature:
 
