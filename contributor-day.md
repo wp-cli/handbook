@@ -60,4 +60,4 @@ See [issues labeled 'good-first-issue'](https://github.com/issues?q=is%3Aopen+or
 - [Path errors when running wp dist-archive on Windows](https://github.com/wp-cli/dist-archive-command/issues/76)
 - [Prompt if archive file already exists, instead of overwriting automatically](https://github.com/wp-cli/dist-archive-command/issues/70)
 
-You're obviously welcome to work on [any other issue](https://github.com/issues?q=is%3Aopen+org%3Awp-cli+is%3Aissue+sort%3Aupdated-desc) you'd like too! This day can be a good opportunity to discuss trickier issues and brainstorm approaches.
+You're obviously welcome to work on [any other issue](https://github.com/issues?q=is%3Aopen+org%3Awp-cli+is%3Aissue+sort%3Aupdated-desc) you'd like too! Bug fixes are very welcome. This day can be a good opportunity to discuss trickier issues and brainstorm approaches.
