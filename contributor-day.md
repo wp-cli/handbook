@@ -16,8 +16,8 @@ A few seasoned WP-CLI contributors are also helping out: TBD
 
 During the Hack Day, we’ll have two open video chat sessions:
 
-- From 🕓 08:00 WET to 09:00 WET
-- From 🕓 15:00 WET to 16:00 WET
+- From 🕓 00:00-01:00 PST / 03:00-04:00 EST / 08:00-07:00 UTC /  09:00-10:00 CET / 17:00-18:00 JST
+- From 🕓 07:00-08:00 PST / 10:00-11:00 EST / 15:00-16:00 UTC / 16:00-17:00 CET / 00:00-01:00 JST
 
 These sessions are a great opportunity to discuss remaining issues live, chat about the progress we’ve made, and to connect with the community. Feel free to join these to talk through any challenges or share your updates!
 
