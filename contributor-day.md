@@ -2,7 +2,7 @@
 
 Welcome to [WP-CLI Hack Day](https://make.wordpress.org/cli/handbook/contributions/contributor-day/)! We appreciate you taking time to contribute to the project.
 
-We'd love to help you submit at least one pull request today. Given this goal, you'll likely want to _start with something small and attainable_. After you've submitted your first pull request for the day, you're welcome to work on something more ambitious.
+**We'd love to help you submit at least one pull request today**. Given this goal, you'll likely want to **start with something small and attainable**. After you've submitted your first pull request for the day, you're welcome to work on something more ambitious.
 
 When do you submit a pull request during Hack Day, please add <code>Related https://github.com/wp-cli/wp-cli/issues/5859</code> so we can easily keep track of them. We'll include them in a recap post at the end of the day.
 
