@@ -1,6 +1,6 @@
 # WP-CLI Hack Day
 
-Welcome to WP-CLI Hack Day! We appreciate you taking time to contribute to the project.
+Welcome to [WP-CLI Hack Day](https://make.wordpress.org/cli/handbook/contributions/contributor-day/)! We appreciate you taking time to contribute to the project.
 
 We'd love to help you submit at least one pull request today. Given this goal, you'll likely want to _start with something small and attainable_. After you've submitted your first pull request for the day, you're welcome to work on something more ambitious.
 
@@ -9,8 +9,6 @@ When do you submit a pull request during Hack Day, please add `Related https://g
 We put together this guide to make contributing as straightforward as possible. Please also join the [#cli channel in WordPress.org Slack](https://wordpress.slack.com/messages/C02RP4T41) ([sign up instructions](https://make.wordpress.org/chat/)) to chat with other contributors, for questions, etc.
 
 Your leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber), [swissspidy](https://github.com/swissspidy)
-
-A few seasoned WP-CLI contributors are also helping out: TBD
 
 ## Getting Started
 
@@ -38,7 +36,9 @@ All WP-CLI pull requests are expected to have tests. [Watch a ~10 minute video i
 
 ## Suggested Tickets
 
-To help you be successful during the day, we curated a list of reasonably approachable and actionable issues. Feel free to comment directly on the issue if you plan to work on it. We don't usually assign issues, so no need to worry about that.
+To help you be successful during the day, we curated a list of reasonably approachable and actionable issues.
+
+Feel free to comment directly on the issue if you plan to work on it. We don't usually assign issues, so no need to worry about that.
 
 **New contributors**
 
