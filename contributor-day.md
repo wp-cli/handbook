@@ -10,8 +10,6 @@ We put together this guide to make contributing as straightforward as possible. 
 
 Your leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber), [swissspidy](https://github.com/swissspidy)
 
-A few seasoned WP-CLI contributors are also helping out: TBD
-
 ## Open Video Sessions
 
 During the Hack Day, we’ll have two open video chat sessions:
