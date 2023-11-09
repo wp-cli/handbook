@@ -1,10 +1,10 @@
 # WP-CLI Hack Day
 
-Welcome to WP-CLI Hack Day! We appreciate you taking time to contribute to the project.
+Welcome to [WP-CLI Hack Day](https://make.wordpress.org/cli/handbook/contributions/contributor-day/)! We appreciate you taking time to contribute to the project.
 
 We'd love to help you submit at least one pull request today. Given this goal, you'll likely want to _start with something small and attainable_. After you've submitted your first pull request for the day, you're welcome to work on something more ambitious.
 
-When do you submit a pull request during Hack Day, please add `Related https://github.com/wp-cli/wp-cli/issues/5859` so we can easily keep track of them. We'll include them in a recap post at the end of the day.
+When do you submit a pull request during Hack Day, please add <code>Related https://github.com/wp-cli/wp-cli/issues/5859</code> so we can easily keep track of them. We'll include them in a recap post at the end of the day.
 
 We put together this guide to make contributing as straightforward as possible. Please also join the [#cli channel in WordPress.org Slack](https://wordpress.slack.com/messages/C02RP4T41) ([sign up instructions](https://make.wordpress.org/chat/)) to chat with other contributors, for questions, etc.
 
@@ -47,7 +47,9 @@ All WP-CLI pull requests are expected to have tests. [Watch a ~10 minute video i
 
 ## Suggested Tickets
 
-To help you be successful during the day, we curated a list of reasonably approachable and actionable issues. Feel free to comment directly on the issue if you plan to work on it. We don't usually assign issues, so no need to worry about that.
+To help you be successful during the day, we curated a list of reasonably approachable and actionable issues.
+
+Feel free to comment directly on the issue if you plan to work on it. We don't usually assign issues, so no need to worry about that.
 
 **New contributors**
 
@@ -70,3 +72,7 @@ See [issues labeled 'good-first-issue'](https://github.com/issues?q=is%3Aopen+or
 - [Prompt if archive file already exists, instead of overwriting automatically](https://github.com/wp-cli/dist-archive-command/issues/70)
 
 You're obviously welcome to work on [any other issue](https://github.com/issues?q=is%3Aopen+org%3Awp-cli+is%3Aissue+sort%3Aupdated-desc) you'd like too! Bug fixes are very welcome. This day can be a good opportunity to discuss trickier issues and brainstorm approaches.
+
+## Thank You for Contributing
+
+We appreciate your taking the time to participate in the Hack Day and contribute to `wp-cli`. Have fun, and we look forward to seeing you on [Slack](https://wordpress.slack.com/messages/C02RP4T41)!
