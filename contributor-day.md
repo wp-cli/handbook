@@ -10,6 +10,17 @@ We put together this guide to make contributing as straightforward as possible. 
 
 Your leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber), [swissspidy](https://github.com/swissspidy)
 
+A few seasoned WP-CLI contributors are also helping out: TBD
+
+## Open Video Sessions
+
+During the Hack Day, we’ll have two open video chat sessions:
+
+- [🕓 00:00-01:00 PST / 03:00-04:00 EST / 08:00-09:00 UTC / 09:00-10:00 CET / 17:00-18:00 JST](https://www.timeanddate.com/worldclock/fixedtime.html?iso=20231110T0800)
+- [🕓 07:00-08:00 PST / 10:00-11:00 EST / 15:00-16:00 UTC / 16:00-17:00 CET / 00:00-01:00 JST](https://www.timeanddate.com/worldclock/fixedtime.html?iso=20231110T1500)
+
+These sessions are a great opportunity to discuss remaining issues live, chat about the progress we’ve made, and to connect with the community. Feel free to join these to talk through any challenges or share your updates!
+
 ## Getting Started
 
 If you normally use WP-CLI on your web host or via Brew, you're most likely using the Phar executable (`wp-cli.phar`). This Phar executable file is the "built", singular version of WP-CLI. It is compiled from a couple dozen repositories in the WP-CLI GitHub organization.
