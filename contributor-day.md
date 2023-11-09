@@ -34,7 +34,7 @@ cd core-command
 gh repo fork
 ```
 
-All WP-CLI pull requests are expected to have tests. See [running and writing tests](https://make.wordpress.org/cli/handbook/contributions/pull-requests/#running-and-writing-tests) for a complete introduction.
+All WP-CLI pull requests are expected to have tests. [Watch a ~10 minute video introduction](https://github.com/wp-cli/wp-cli/issues/5858), or see [running and writing tests](https://make.wordpress.org/cli/handbook/contributions/pull-requests/#running-and-writing-tests) for the written version.
 
 ## Suggested Tickets
 
