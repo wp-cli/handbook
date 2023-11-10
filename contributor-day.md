@@ -55,7 +55,6 @@ Feel free to comment directly on the issue if you plan to work on it. We don't u
 - [Add url-to-id commands for each entity](https://github.com/wp-cli/entity-command/issues/429)
 - [Support multiple roles in user add-role and user remove-role](https://github.com/wp-cli/entity-command/issues/423)
 - [Support for forcing an update check](https://github.com/wp-cli/core-command/issues/154)
-- [Include `update_version` in default plugin list and theme list fields](https://github.com/wp-cli/extension-command/issues/198)
 - [Output only matching IDs in db search](https://github.com/wp-cli/db-command/issues/158)
 - [Provide hardcoded edge case for hello plugin installed by Core](https://github.com/wp-cli/checksum-command/issues/33)
 
