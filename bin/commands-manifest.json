@@ -1647,38 +1647,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/child-theme.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-command"
     },
-    "scaffold\/package-github": {
-        "title": "scaffold package-github",
-        "slug": "package-github",
-        "cmd_path": "scaffold\/package-github",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package-github.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
-    "scaffold\/package-readme": {
-        "title": "scaffold package-readme",
-        "slug": "package-readme",
-        "cmd_path": "scaffold\/package-readme",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package-readme.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
-    "scaffold\/package-tests": {
-        "title": "scaffold package-tests",
-        "slug": "package-tests",
-        "cmd_path": "scaffold\/package-tests",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package-tests.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
-    "scaffold\/package": {
-        "title": "scaffold package",
-        "slug": "package",
-        "cmd_path": "scaffold\/package",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
     "scaffold\/plugin-tests": {
         "title": "scaffold plugin-tests",
         "slug": "plugin-tests",

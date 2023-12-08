@@ -41,7 +41,10 @@ options:
 \---
 
 [\--filename-format=&lt;filename-format&gt;]
-: Use a custom format for archive filename. Defaults to '{name}.{version}'. This is ignored if a custom filename is provided or version does not exist.
+: Use a custom format for archive filename. Available substitutions: {name}, {version}. This is ignored if the &lt;target&gt; parameter is provided or the version cannot be determined.
+\---
+default: "{name}.{version}"
+\---
 
 ### GLOBAL PARAMETERS
 
