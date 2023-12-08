@@ -11,6 +11,7 @@ Make a HTTP request to a remote URL.
 <div>
 <strong>$method</strong> (string) HTTP method (GET, POST, DELETE, etc.).<br />
 <strong>$url</strong> (string) URL to make the HTTP request to.<br />
+<strong>$data</strong> (array|null) Data to send either as a query string for GET/HEAD requests,<br />
 <strong>$headers</strong> (array) Add specific headers to the request.<br />
 <strong>$options</strong> (array) {<br />    Optional. An associative array of additional request options.<br />    @type bool $halt_on_error Whether or not command execution should be halted on error. Default: true<br />    @type bool|string $verify A boolean to use enable/disable SSL verification<br />                              or string absolute path to CA cert to use.<br />                              Defaults to detected CA cert bundled with the Requests library.<br />    @type bool $insecure      Whether to retry automatically without certificate validation.<br />}<br />
 <strong>@return</strong> (object) <br />
@@ -31,6 +32,7 @@ if ( 20 != substr( $md5_response->status_code, 0, 2 ) ) {
      WP_CLI::error( "Couldn't access md5 hash for release (HTTP code {$response->status_code})" );
 }
 ```
+                           or in the body for POST requests.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

@@ -197,7 +197,7 @@ EOT;
 				}
 			}
 			if ( $filename ) {
-				preg_match( '#wp-cli-dev/([^/]+)#', $filename, $matches );
+				preg_match( '#(?:vendor/wp-cli/|wp-cli-dev/)([^/]+)#', $filename, $matches );
 				if ( ! empty( $matches[1] ) ) {
 					$repo_url = 'https://github.com/wp-cli/' . $matches[1];
 				}
