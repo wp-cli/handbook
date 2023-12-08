@@ -196,7 +196,6 @@ EOT;
 					$filename = $reflection_func->getFileName();
 				}
 			}
-			var_dump( $filename );
 			if ( $filename ) {
 				preg_match( '#(?:vendor/wp-cli/|wp-cli-dev/)([^/]+)#', $filename, $matches );
 				if ( ! empty( $matches[1] ) ) {
