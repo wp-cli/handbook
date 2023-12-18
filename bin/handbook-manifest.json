@@ -251,6 +251,30 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/tools.md",
         "parent": null
     },
+		"for-beginners": {
+			"title": "For Beginners",
+			"slug": "for-beginners",
+			"markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/for-beginners.md",
+			"parent": "for-beginners"
+		},
+		"for-beginners-conntect-ssh": {
+			"title": "SSH Setup for WordPress CLI",
+			"slug": "conntect-ssh",
+			"markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/for-beginners-conntect-ssh.md",
+			"parent": "for-beginners"
+		},
+		"for-beginners-save-commands-in-cli": {
+			"title": "Saving Commands in WordPress CLI",
+			"slug": "save-commands-in-cli",
+			"markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/for-beginners-save-commands-in-cli.md",
+			"parent": "for-beginners"
+		},
+		"for-beginners-save-commands-in-terminal": {
+			"title": "Saving Commands in Terminal",
+			"slug": "save-commands-in-terminal",
+			"markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/for-beginners-save-commands-in-terminal.md",
+			"parent": "for-beginners"
+		},
     "troubleshooting": {
         "title": "Troubleshooting Guide",
         "slug": "troubleshooting",
