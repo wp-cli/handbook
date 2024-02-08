@@ -12,6 +12,9 @@ Lists the most recent versions when there are updates available, or success mess
 [\--major]
 : Compare only the first part of the version number.
 
+[\--force-check]
+: Bypass the transient cache and force a fresh update check.
+
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each update.
 

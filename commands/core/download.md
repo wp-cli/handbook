@@ -2,7 +2,7 @@
 
 Downloads core WordPress files.
 
-Downloads and extracts WordPress core files to the specified path. Uses current directory when no path is specified. Downloaded build is verified to have the correct md5 and then cached to the local filesytem. Subsequent uses of command will use the local cache if it still exists.
+Downloads and extracts WordPress core files to the specified path. Uses current directory when no path is specified. Downloaded build is verified to have the correct md5 and then cached to the local filesystem. Subsequent uses of command will use the local cache if it still exists.
 
 ### OPTIONS
 

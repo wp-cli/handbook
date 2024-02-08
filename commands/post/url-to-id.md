@@ -1,47 +1,17 @@
-# wp transient delete
+# wp post url-to-id
 
-Deletes a transient value.
-
-For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
+Gets the post ID for a given URL.
 
 ### OPTIONS
 
-[&lt;key&gt;]
-: Key for the transient.
-
-[\--network]
-: Delete the value of a network|site transient. On single site, this is is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
-
-[\--all]
-: Delete all transients.
-
-[\--expired]
-: Delete all expired transients.
+&lt;url&gt;
+: The URL of the post to get.
 
 ### EXAMPLES
 
-    # Delete transient.
-    $ wp transient delete sample_key
-    Success: Transient deleted.
-
-    # Delete expired transients.
-    $ wp transient delete --expired
-    Success: 12 expired transients deleted from the database.
-
-    # Delete expired site transients.
-    $ wp transient delete --expired --network
-    Success: 1 expired transient deleted from the database.
-
-    # Delete all transients.
-    $ wp transient delete --all
-    Success: 14 transients deleted from the database.
-
-    # Delete all site transients.
-    $ wp transient delete --all --network
-    Success: 2 transients deleted from the database.
-
-    # Delete all transients in a multisite.
-    $ wp transient delete --all --network && wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all
+    # Get post ID by URL
+    $ wp post url-to-id https://example.com/?p=1
+    1
 
 ### GLOBAL PARAMETERS
 

@@ -15,6 +15,9 @@ Creates attachments from local files or URLs.
 [\--post_name=&lt;post_name&gt;]
 : Name of the post to attach the imported files to.
 
+[\--file_name=&lt;name&gt;]
+: Attachment name (post_name field).
+
 [\--title=&lt;title&gt;]
 : Attachment title (post title field).
 

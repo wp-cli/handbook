@@ -10,7 +10,7 @@ Errors if the option already exists.
 : The name of the option to add.
 
 [&lt;value&gt;]
-: The value of the option to add. If ommited, the value is read from STDIN.
+: The value of the option to add. If omitted, the value is read from STDIN.
 
 [\--format=&lt;format&gt;]
 : The serialization format for the value.

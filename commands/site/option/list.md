@@ -44,7 +44,7 @@ These fields are optionally available:
 
 ### EXAMPLES
 
-    # List all site options begining with "i2f_"
+    # List all site options beginning with "i2f_"
     $ wp site option list --search="i2f_*"
     +-------------+--------------+
     | meta_key    | meta_value   |

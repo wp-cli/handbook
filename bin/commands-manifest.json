@@ -1039,6 +1039,14 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/i18n\/make-mo.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
     },
+    "i18n\/make-php": {
+        "title": "i18n make-php",
+        "slug": "make-php",
+        "cmd_path": "i18n\/make-php",
+        "parent": "i18n",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/i18n\/make-php.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/i18n-command"
+    },
     "i18n\/make-pot": {
         "title": "i18n make-pot",
         "slug": "make-pot",
@@ -1533,6 +1541,14 @@
         "cmd_path": "post\/update",
         "parent": "post",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/post\/update.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "post\/url-to-id": {
+        "title": "post url-to-id",
+        "slug": "url-to-id",
+        "cmd_path": "post\/url-to-id",
+        "parent": "post",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/post\/url-to-id.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "profile\/eval-file": {

@@ -8,7 +8,7 @@ Create MO files from PO files.
 : Path to an existing PO file or a directory containing multiple PO files.
 
 [&lt;destination&gt;]
-: Path to the destination directory for the resulting MO files. Defaults to the source directory.
+: Path to the destination file or directory for the resulting MO files. Defaults to the source directory.
 
 ### EXAMPLES
 
@@ -17,6 +17,9 @@ Create MO files from PO files.
 
     # Create a MO file from a single PO file in a specific directory.
     $ wp i18n make-mo example-plugin-de_DE.po languages
+
+    # Create a MO file from a single PO file to a specific file destination
+    $ wp i18n make-mo example-plugin-de_DE.po languages/bar.mo
 
 ### GLOBAL PARAMETERS
 

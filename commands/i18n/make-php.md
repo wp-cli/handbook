@@ -1,47 +1,24 @@
-# wp transient delete
+# wp i18n make-php
 
-Deletes a transient value.
-
-For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
+Create PHP files from PO files.
 
 ### OPTIONS
 
-[&lt;key&gt;]
-: Key for the transient.
+&lt;source&gt;
+: Path to an existing PO file or a directory containing multiple PO files.
 
-[\--network]
-: Delete the value of a network|site transient. On single site, this is is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
-
-[\--all]
-: Delete all transients.
-
-[\--expired]
-: Delete all expired transients.
+[&lt;destination&gt;]
+: Path to the destination directory for the resulting PHP files. Defaults to the source directory.
 
 ### EXAMPLES
 
-    # Delete transient.
-    $ wp transient delete sample_key
-    Success: Transient deleted.
+    # Create PHP files for all PO files in the current directory.
+    $ wp i18n make-php .
+    Success: Created 3 files.
 
-    # Delete expired transients.
-    $ wp transient delete --expired
-    Success: 12 expired transients deleted from the database.
-
-    # Delete expired site transients.
-    $ wp transient delete --expired --network
-    Success: 1 expired transient deleted from the database.
-
-    # Delete all transients.
-    $ wp transient delete --all
-    Success: 14 transients deleted from the database.
-
-    # Delete all site transients.
-    $ wp transient delete --all --network
-    Success: 2 transients deleted from the database.
-
-    # Delete all transients in a multisite.
-    $ wp transient delete --all --network && wp site list --field=url | xargs -n1 -I % wp --url=% transient delete --all
+    # Create a PHP file from a single PO file in a specific directory.
+    $ wp i18n make-php example-plugin-de_DE.po languages
+    Success: Created 1 file.
 
 ### GLOBAL PARAMETERS
 

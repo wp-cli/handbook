@@ -14,6 +14,9 @@ Lists all sites in a multisite installation.
 [\--site__in=&lt;value&gt;]
 : Only list the sites with these blog_id values (comma-separated).
 
+[\--site_user=&lt;value&gt;]
+: Only list the sites with this user.
+
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each site.
 

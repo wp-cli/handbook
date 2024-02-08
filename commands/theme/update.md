@@ -13,6 +13,12 @@ Updates one or more themes.
 [\--exclude=&lt;theme-names&gt;]
 : Comma separated list of theme names that should be excluded from updating.
 
+[\--minor]
+: Only perform updates for minor releases (e.g. from 1.3 to 1.4 instead of 2.0)
+
+[\--patch]
+: Only perform updates for patch releases (e.g. from 1.3 to 1.3.3 instead of 1.4)
+
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---

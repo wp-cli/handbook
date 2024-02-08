@@ -8,7 +8,7 @@ Updates an option value.
 : The name of the option to update.
 
 [&lt;value&gt;]
-: The new value. If ommited, the value is read from STDIN.
+: The new value. If omitted, the value is read from STDIN.
 
 [\--autoload=&lt;autoload&gt;]
 : Requires WP 4.2. Should this option be automatically loaded.

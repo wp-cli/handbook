@@ -33,6 +33,10 @@ Creates, updates, deletes, lists and retrieves application passwords.
     $ wp user application-password update 123 6633824d-c1d7-4f79-9dd5-4586f734d69e --name=newappname
     Success: Updated application password.
 
+    # Delete an existing application password
+    $ wp user application-password delete 123 6633824d-c1d7-4f79-9dd5-4586f734d69e
+    Success: Deleted 1 of 1 application password.
+
     # Check if an application password for a given application exists
     $ wp user application-password exists 123 myapp
     $ echo $?

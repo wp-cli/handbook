@@ -20,6 +20,19 @@ options:
   - yaml
 \---
 
+[\--origin=&lt;origin&gt;]
+: Render output in a particular format.
+\---
+default: all
+options:
+  - all
+  - user
+  - role
+\---
+
+[\--exclude-role-names]
+: Exclude capabilities that match role names from output.
+
 ### EXAMPLES
 
     $ wp user list-caps 21

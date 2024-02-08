@@ -7,13 +7,16 @@ Adds a role for a user.
 &lt;user&gt;
 : User ID, user email, or user login.
 
-&lt;role&gt;
-: Add the specified role to the user.
+[&lt;role&gt;...]
+: Add the specified role(s) to the user.
 
 ### EXAMPLES
 
     $ wp user add-role 12 author
     Success: Added 'author' role for johndoe (12).
+
+    $ wp user add-role 12 author editor
+    Success: Added 'author', 'editor' roles for johndoe (12).
 
 ### GLOBAL PARAMETERS
 

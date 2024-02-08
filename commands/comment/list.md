@@ -79,6 +79,32 @@ These fields are optionally available:
     | 29         | 2013-03-14 11:56:08 | Jane Doe       |
     +------------+---------------------+----------------+
 
+    # List unapproved comments.
+    $ wp comment list --number=3 --status=hold --fields=ID,comment_date,comment_author
+    +------------+---------------------+----------------+
+    | comment_ID | comment_date        | comment_author |
+    +------------+---------------------+----------------+
+    | 8          | 2023-11-10 13:13:06 | John Doe       |
+    | 7          | 2023-11-10 13:09:55 | Mr WordPress   |
+    | 9          | 2023-11-10 11:22:31 | Jane Doe       |
+    +------------+---------------------+----------------+
+
+    # List comments marked as spam.
+    $ wp comment list --status=spam --fields=ID,comment_date,comment_author
+    +------------+---------------------+----------------+
+    | comment_ID | comment_date        | comment_author |
+    +------------+---------------------+----------------+
+    | 2          | 2023-11-10 11:22:31 | Jane Doe       |
+    +------------+---------------------+----------------+
+
+    # List comments in trash.
+    $ wp comment list --status=trash --fields=ID,comment_date,comment_author
+    +------------+---------------------+----------------+
+    | comment_ID | comment_date        | comment_author |
+    +------------+---------------------+----------------+
+    | 3          | 2023-11-10 11:22:31 | John Doe       |
+    +------------+---------------------+----------------+
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
