@@ -31,6 +31,9 @@ Shell:   /usr/bin/zsh
 PHP binary:    /usr/bin/php
 PHP version:     7.1.12-1+ubuntu16.04.1+deb.sury.org+1
 php.ini used:   /etc/php/7.1/cli/php.ini
+MySQL binary:
+MySQL version:
+SQL modes:
 WP-CLI root dir:        /home/wp-cli/.wp-cli
 WP-CLI packages dir:    /home/wp-cli/.wp-cli/packages/
 WP-CLI global config:   /home/wp-cli/.wp-cli/config.yml
