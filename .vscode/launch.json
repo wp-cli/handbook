@@ -4,7 +4,15 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "name": "Run",
+            "type": "lightcode",
+            "request": "launch",
+            "program": "/build/Debug-iphoneos/<App Name>.app",
+            "buildCommand": "xcodebuild -configuration Debug -sdk iphoneos -allowProvisioningUpdates",
+            "appBundleId": "<Bundle Identifier of the app>"
+        },
+
         {
             "name": "Attach to Chrome",
             "port": 9222,
