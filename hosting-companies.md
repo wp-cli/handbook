@@ -14,6 +14,7 @@ In alphabetical order:
 * [Hypernode](https://www.hypernode.com/nl/)
 * [CloudHostWorld](https://www.cloudhostworld.com)
 * [Cloudways](http://cloudways.com)
+* [Convesio](https://convesio.com)
 * [Curanet](https://curanet.dk)
 * [D9 Hosting](https://d9.hosting)
 * [DanDomain](https://dandomain.dk)
