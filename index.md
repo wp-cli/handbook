@@ -15,7 +15,15 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Force output to a specific locale](https://make.wordpress.org/cli/handbook/guides/force-output-specific-locale/)** - Localisation issue
 * **[Identify a Plugin or Theme Conflict](https://make.wordpress.org/cli/handbook/guides/identify-plugin-theme-conflict/)** - Debugging advise
 * **[Sharing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/sharing-wp-cli-packages/)** - Some words about your environment
-* **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to troubleshoot 
+* **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to 
+troubleshoot 
+
+## For Beginners
+
+* **[Quick Start](https://make.wordpress.org/cli/handbook/for-beginners)** - Quick Start documentation for beginners into WordPress CLI. 
+* **[SSH Configuration](https://make.wordpress.org/cli/handbook/for-beginners/conntect-ssh/)** - Documentation how to setup your SSH Environment. 
+* **[Save Commands in WP-CLI](https://make.wordpress.org/cli/handbook/for-beginners/save-commands-in-cli/)** - Quick Starter documentation how to save your Commands in the WordPress CLI.
+* **[Save Commands in your Terminal](https://make.wordpress.org/cli/handbook/for-beginners/save-commands-in-terminal/)** - Documentation how to save your Commands in your Terminal.
 
 ## References
 
