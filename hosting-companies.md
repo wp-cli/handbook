@@ -80,6 +80,7 @@ In alphabetical order:
 * [Viral Hosting](https://viralhosting.dk)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
+* [WNPower Hosting](https://www.wnpower.com/)
 * [WordPress.com](https://wordpress.com/)
 * [WP Engine.com](https://wpengine.com)
 * [WP Provider](https://wpprovider.nl/)
