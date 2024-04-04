@@ -59,7 +59,7 @@ Success: Rewrite rules flushed.
 
 You don't need to SSH into machines, change directories, and generally spend a full minute to get to a given WordPress install, you can just let WP-CLI know what machine to work with and it knows how to make the actual connection.
 
-It can also easily utilize Vagrant's ssh helper command to figure out the SSH parameters, by piping the WP-CLI command to `vagrant ssh` using the `vagrant` scheme like `--ssh=vagrant:default` where `default` is the Vagrant machine name/id, or if defined as an alias like the examples below. Some Vagrant boxes [ship this by default](https://github.com/Chassis/Chassis/blob/master/wp-cli.yml) so you can use WP-CLI from the host machine out-of-the-box.
+It can also easily utilize Vagrant's ssh helper command to figure out the SSH parameters, by piping the WP-CLI command to `vagrant ssh` using the `vagrant` scheme like `--ssh=vagrant:default` where `default` is the Vagrant machine name/id, or if defined as an alias like the examples below. Some Vagrant boxes [ship this by default](https://github.com/Chassis/Chassis/tree/main) so you can use WP-CLI from the host machine out-of-the-box.
 
 Additionally, alias groups let you register groups of aliases. If you want to run a command against both configured example sites, you can use a group like `@both`:
 
