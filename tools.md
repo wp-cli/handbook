@@ -76,7 +76,7 @@ If you implement a WP-CLI command in one of your plugins, please list it here.
 * [Puppet WP-CLI](https://github.com/rmccue/puppet-wp) - WP provisioning using Puppet
 * [wpcli gem](https://github.com/hasanen/wpcli) - run WP-CLI commands from Ruby
 * [wplib](https://github.com/szepeviktor/wplib) - shell scripts for managing multiple sites
-* [wpcli helpers](https://github.com/kartonnade/wp_cli_helpers) - a bundle of time saver aliases and functions for the shell
+* [wpcli helpers](https://github.com/charleslouis/wp_cli_helpers) - a bundle of time saver aliases and functions for the shell
 * [cPanel-wp-management](https://github.com/MarioKnight/cPanel-wp-management) - shell scripts designed to loop through all accounts on cPanel servers
 * [Plesk WordPress Toolkit](https://www.plesk.com/wp-toolkit/) - WordPress installations management UI backed by WP-CLI
 
