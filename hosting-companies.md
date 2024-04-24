@@ -73,6 +73,7 @@ In alphabetical order:
 * [SpinupWP](https://spinupwp.com/)
 * [The Email Shop](https://theemailshop.co.uk/)
 * [Templ](https://templ.io/)
+* [True-False Hosting](https://truefalsehosting.com)
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](http://TVC.Net/)
 * [UNLIMITED.RS](https://unlimited.rs/)
@@ -87,7 +88,6 @@ In alphabetical order:
 * [XEL](https://xel.nl)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/)
-* [True-False Hosting](https://truefalsehosting.com)
   
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 
