@@ -41,6 +41,8 @@ cd core-command
 gh repo fork
 ```
 
+We have started a video tutorial series that you can watch here: [WP-CLI Contribution Tutorials](https://www.youtube.com/playlist?list=PL_B8Y6K6MH2d6T7pYa6dloUgk67mfBT4K). These videos will provide an overview of the packages and then go through setting up the development environment to allow you to run automated tests locally.
+
 All WP-CLI pull requests are expected to have tests. [Watch a ~10 minute video introduction](https://github.com/wp-cli/wp-cli/issues/5858), or see [running and writing tests](https://make.wordpress.org/cli/handbook/contributions/pull-requests/#running-and-writing-tests) for the written version.
 
 ## Suggested Tickets
