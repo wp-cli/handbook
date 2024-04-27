@@ -399,6 +399,16 @@ EOT;
 		}
 		$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? [ true ] : false;
 
+		$hook_name = $cmd['hook'];
+		$hook_description = $hook_name ? Utils\get_hook_description( $hook_name ) : null;
+		if ( $hook_description && 'after_wp_load' !== $hook_name ) {
+			if ( $binding['has-subcommands'] ) {
+				$binding['description'] .= "\n\nUnless overridden, these commands run on the `$hook_name` hook, $hook_description";
+			} else {
+				$binding['description'] .= "\n\nThis command runs on the `$hook_name` hook, $hook_description";
+			}
+		}
+
 		if ( $cmd['longdesc'] ) {
 			$docs = $cmd['longdesc'];
 			$docs = htmlspecialchars( $docs, ENT_COMPAT, 'UTF-8' );
