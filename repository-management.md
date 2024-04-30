@@ -149,7 +149,7 @@ Once a pull request is merged, the committer should make sure any corresponding 
 
 WP-CLI releases are scheduled and communicated well in advance by the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
-When the release is ready, it is prepared and executed according to the [release checklist](release-checklist.md) by one of the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
+When the release is ready, it is prepared and executed according to the [release checklist](https://make.wordpress.org/cli/handbook/contributions/release-checklist/) by one of the [maintainers](https://github.com/orgs/wp-cli/teams/maintainers).
 
 ### Package Releases
 
