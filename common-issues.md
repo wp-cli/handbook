@@ -153,7 +153,7 @@ See also: [#785](https://github.com/wp-cli/wp-cli/issues/785)
 
 ### Conflict between global parameters and command arguments
 
-All of the [global parameters](http://wp-cli.org/config/) (e.g. `--url=<url>`) may conflict with the arguments you'd like to accept for your command. For instance, adding a RSS widget to a sidebar will not populate the feed URL for that widget:
+All of the [global parameters](https://make.wordpress.org/cli/handbook/references/config/#global-parameters) (e.g. `--url=<url>`) may conflict with the arguments you'd like to accept for your command. For instance, adding a RSS widget to a sidebar will not populate the feed URL for that widget:
 
 
     $ wp widget add rss sidebar-1 1 --url="http://www.smashingmagazine.com/feed/" --items=3
