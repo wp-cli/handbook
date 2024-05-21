@@ -1,0 +1,12 @@
+name: Code Quality Checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  code-quality:
+    uses: wp-cli/.github/.github/workflows/reusable-code-quality.yml@main
