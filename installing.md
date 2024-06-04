@@ -91,6 +91,11 @@ Note: the Oh My Zsh plugin comes with the bash completion script included, so it
 
 To have this change take effect in your currently active shell, run `source ~/.zshrc` afterwards.
 
+#### Fish
+
+If you're using the _Fish_ shell, you can download [wp.fish](https://github.com/wp-cli/wp-cli/raw/main/utils/wp.fish) and move it to `~/.config/fish/completions/wp.fish`. 
+Afterwards just type `wp ` and press `TAB`, and fish will automatically source `wp.fish`.
+
 ### Dash/Alfred workflow
 
 If you're using _Dash_ and _Alfred_, you can add a custom Alfred workflow to look up WP-CLI command information.
