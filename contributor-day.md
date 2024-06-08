@@ -4,7 +4,7 @@ Welcome to WordCamp Contributor Day! We appreciate you sharing your time with WP
 
 We'd love to help you submit at least one pull request, so we put together this guide to make it as straightforward as possible. We're here to support you however we can.
 
-When you submit your pull request, add `Related ISSUE LINK` so we can see all pull requests created during the day. We'll give these some special promotion in the next release notes.
+When you submit your pull request, add `Related https://github.com/wp-cli/wp-cli/issues/5955` so we can see all pull requests created during the day. We'll give these some special promotion in the next release notes.
 
 Your table leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber)
 
@@ -32,10 +32,22 @@ To help you be successful during Contributor Day, we curated a list of reasonabl
 
 **New contributors**
 
-- TBD
+- [Clarify docs arugment](https://github.com/wp-cli/language-command/issues/90)
+- ["wp config create" generates wrong DB_PASSWORD in wp-config.php when db password has "](https://github.com/wp-cli/config-command/issues/180)
+- [Import into specific directory/location](https://github.com/wp-cli/media-command/issues/146)
+- [Add --exclude=<file>,<file> argument to skip files](https://github.com/wp-cli/checksum-command/issues/64)
+- [Not possible to install translations for en_US](https://github.com/wp-cli/language-command/issues/84)
+- [Support WP-Stash in 'wp cache type'](https://github.com/wp-cli/cache-command/issues/68)
+- [Add reason for skipping regeneration](https://github.com/wp-cli/media-command/issues/95)
+- [wp export is not exporting term meta data](https://github.com/wp-cli/export-command/issues/42)
 
 **Seasoned contributors**
 
-- TBD
+- [Add commands to export and import SQLite databases](https://github.com/wp-cli/ideas/issues/188)
+- [SQLite Compatibility (multiple issues)](https://github.com/wp-cli/.github/issues/94)
+- [Regenerating a single image size (re-)generates auto-scaled big images & auto-rotated images](https://github.com/wp-cli/media-command/issues/196)
+- [wp cron event run --due-now doesn't respect doing_cron transient](https://github.com/wp-cli/cron-command/issues/27)
+- [Update command doesn't escape php_binary path, update fails when path has spaces](https://github.com/wp-cli/wp-cli/issues/5815)
+- [Associative argument contains double quotes if the command is called with WP_CLI::runcommand()](https://github.com/wp-cli/wp-cli/issues/5541)
 
 You're obviously welcome to work on any other issue you'd like too! Contributor Day can be a good opportunity to discuss trickier issues and brainstorm approaches.
