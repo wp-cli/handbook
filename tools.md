@@ -84,13 +84,11 @@ If you implement a WP-CLI command in one of your plugins, please list it here.
 
 * Vim - [https://github.com/dsawardekar/wordpress.vim](https://github.com/dsawardekar/wordpress.vim)
 * Netbeans - [https://github.com/junichi11/netbeans-wordpress-plugin](https://github.com/junichi11/netbeans-wordpress-plugin)
-* Netbeans - [http://plugins.netbeans.org/plugin/46542/php-wordpress-blog-cms](http://plugins.netbeans.org/plugin/46542/php-wordpress-blog-cms)
 
 ## Vagrant boxes
 
 * [Trellis](https://github.com/roots/trellis)
 * [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
-* [VCCW](http://vccw.cc/)
 
 ## Misc
 
