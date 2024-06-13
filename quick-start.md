@@ -125,4 +125,20 @@ Found 1 image to regenerate.
 Success: Finished regenerating the image.
 ```
 
-Wondering what's next? Browse through [all of WP-CLI's commands](https://developer.wordpress.org/cli/commands/) to explore your new world. Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.
+**Search and replace URLs**
+
+If you're moving a database from one domain to another, `wp search-replace` ([doc](https://developer.wordpress.org/cli/commands/search-replace/)) makes it easy to update all URL references in your database.
+
+To see which links will be replaced in your database, use the --dry-run flag:
+
+```
+wp search-replace 'http://oldsite.com' 'http://newsite.com' --dry-run
+```
+
+When ready to replace the links, run:
+
+```
+wp search-replace 'http://oldsite.com' 'http://newsite.com'
+```
+
+Wondering what's next? Browse through [all of WP-CLI's commands](https://developer.wordpress.org/cli/commands/) to explore your new world. For more detailed information about creating custom commands, visit the [WP-CLI Commands Cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/). Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.
