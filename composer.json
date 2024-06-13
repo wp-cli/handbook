@@ -1,4 +1,6 @@
 {
+    "name": "wp-cli/handbook",
+    "description": "Source files for the handbook that is generated for make.wordpress.org.",
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
