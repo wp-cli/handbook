@@ -66,6 +66,7 @@ The following table is an alphabetical list of known commands defined in WordPre
 | updraftplus           | [UpdraftPlus](https://updraftplus.com/)
 | Unsplash              | [Import images from Unsplash into your Media Library](https://github.com/A5hleyRich/wp-cli-unsplash-command)
 | wp2static             | [Generate & deploy a static HTML version of your site](https://github.com/leonstafford/wp2static)
+| yoast                 | [Indexables on Yoast](https://developer.yoast.com/features/wp-cli/reindex-indexables/)
 
 If you implement a WP-CLI command in one of your plugins, please list it here.
 
