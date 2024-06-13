@@ -126,3 +126,49 @@ Success: Finished regenerating the image.
 ```
 
 Wondering what's next? Browse through [all of WP-CLI's commands](https://developer.wordpress.org/cli/commands/) to explore your new world. Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.
+
+
+**Search and Replace Links**
+
+1. Navigate to Your WordPress Project:
+   Open a terminal and navigate to the root directory of your WordPress project.
+
+2. Preview Changes (Optional) 
+   To see which links will be replaced in your database, use the --dry-run flag:
+```bash
+   wp search-replace 'http://oldsite.com' 'http://newsite.com' --dry-run
+```
+
+3. Replace Links: 
+   When ready to replace the links, run:
+
+```bash
+   wp search-replace 'http://oldsite.com' 'http://newsite.com'
+```
+
+**Adding New Commands**
+
+1. Navigate to Your WordPress Project:
+   Open a terminal and navigate to the root directory of your WordPress project.
+
+2. Create or Open `wp-cli.yml`:**
+   Use a text editor to create or open the `wp-cli.yml` configuration file:
+
+   ```bash
+   nano wp-cli.yml
+   ```
+
+3. Add Custom Commands:
+   Inside the `wp-cli.yml` file, under the `commands` section, add your custom commands. For example:
+
+   ```yaml
+   commands:
+     yournewcommand:
+       run:
+         - plugin activate my-plugin
+         - theme activate my-theme
+   ```
+
+4. Save and exit the editor. 
+
+For more detailed information about WP-CLI commands, visit the [WP-CLI Commands Cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/).
