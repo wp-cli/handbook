@@ -620,7 +620,7 @@ EOT;
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
-					$param_name = $matches[1];
+					$param_name = count( $matches ) > 1 ? $matches[1] : null;
 					$value      = str_replace( "@$param_name ", '', $info );
 					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
 						$ret['parameters'][ $param_name ] = [];
