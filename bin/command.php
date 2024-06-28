@@ -616,7 +616,7 @@ EOT;
 					if ( '}' === substr( $info, -1 ) ) {
 						$in_param = false;
 					}
-				} elseif ( '@' === $info[0] ) {
+				} elseif ( '@' !== $info[0] ) {
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
