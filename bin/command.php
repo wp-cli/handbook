@@ -600,10 +600,10 @@ EOT;
 	 * @return array
 	 */
 	private static function parse_docblock( $docblock ) {
-		$ret        = [
+		$ret        = array(
 			'description' => '',
-			'parameters'  => [],
-		];
+			'parameters'  => array(),
+		);
 		$extra_line = '';
 		$in_param   = false;
 		foreach ( preg_split( "/(\r?\n)/", $docblock ) as $line ) {
@@ -611,19 +611,19 @@ EOT;
 				$info = trim( $matches[1] );
 				$info = preg_replace( '/^(\*\s+?)/', '', $info );
 				if ( $in_param ) {
-					list( $param_name, $key )                     = $in_param;
+					list( $param, $key )                          = $in_param;
 					$ret['parameters'][ $param_name ][ $key ][2] .= PHP_EOL . $info;
 					if ( '}' === substr( $info, -1 ) ) {
 						$in_param = false;
 					}
-				} elseif ( '@' === $info[0] ) {
+				} elseif ( '@' !== $info[0] ) {
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
 					$param_name = $matches[1];
 					$value      = str_replace( "@$param_name ", '', $info );
 					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
-						$ret['parameters'][ $param_name ] = [];
+						$ret['parameters'][ $param_name ] = array();
 					}
 					$ret['parameters'][ $param_name ][] = preg_split( '/[\s]+/', $value, 3 );
 					end( $ret['parameters'][ $param_name ] );
@@ -631,7 +631,7 @@ EOT;
 					reset( $ret['parameters'][ $param_name ] );
 					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] )
 						&& '{' === substr( $ret['parameters'][ $param_name ][ $key ][2], -1 ) ) {
-						$in_param = [ $param_name, $key ];
+						$in_param = array( $param_name, $key );
 					}
 				}
 				$extra_line = '';
@@ -639,13 +639,9 @@ EOT;
 				$extra_line .= PHP_EOL;
 			}
 		}
-		$ret['description'] = str_replace( '\/', '/', trim( $ret['description'], PHP_EOL ) );
-		$bits               = explode( PHP_EOL, $ret['description'] );
-		$short_desc         = [ array_shift( $bits ) ];
-		while ( isset( $bits[0] ) && ! empty( $bits[0] ) ) {
-			$short_desc[] = array_shift( $bits );
-		}
-		$ret['short_description'] = trim( implode( ' ', $short_desc ) );
+		$ret['description']       = str_replace( '\/', '/', trim( $ret['description'], PHP_EOL ) );
+		$bits                     = explode( PHP_EOL, $ret['description'] );
+		$ret['short_description'] = array_shift( $bits );
 		$long_description         = trim( implode( PHP_EOL, $bits ), PHP_EOL );
 		$ret['long_description']  = $long_description;
 		return $ret;
