@@ -15,6 +15,7 @@ Updates installed languages for one or more themes.
 
 ### EXAMPLES
 
+    # Update all installed language packs for all themes.
     $ wp language theme update --all
     Updating 'Japanese' translation for Twenty Fifteen 1.5...
     Downloading translation from https://downloads.wordpress.org/translation/theme/twentyfifteen/1.5/ja.zip...

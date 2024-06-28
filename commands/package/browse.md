@@ -2,6 +2,8 @@
 
 Browses WP-CLI packages available for installation.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Lists packages available for installation from the [Package Index](http://wp-cli.org/package-index/). Although the package index will remain in place for backward compatibility reasons, it has been deprecated and will not be updated further. Please refer to https://github.com/wp-cli/ideas/issues/51 to read about its potential replacement.
 
 ### OPTIONS

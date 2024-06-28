@@ -2,6 +2,8 @@
 
 Opens a MySQL console using credentials from wp-config.php
 
+This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
+
 ### OPTIONS
 
 [\--database=&lt;database&gt;]

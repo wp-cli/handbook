@@ -2,6 +2,8 @@
 
 Updates WP-CLI to the latest release.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Default behavior is to check the releases API for the newest stable version, and prompt if one is available.
 
 Use `--stable` to install or reinstall the latest stable version.

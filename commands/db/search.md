@@ -65,6 +65,12 @@ default: 40
 [\--match_color=&lt;color_code&gt;]
 : Percent color code to use for the match (unless both before and after context are 0, when no color code is used). For a list of available percent color codes, see below. Default '%3%k' (black on a mustard background).
 
+[\--fields=&lt;fields&gt;]
+: Get a specific subset of the fields.
+
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+
 The percent color codes available are:
 
 | Code | Color
@@ -132,6 +138,21 @@ They can be concatenated. For instance, the default match color of black on a mu
 
     # SQL search and delete records from database table 'wp_options' where 'option_name' match 'foo'
     wp db query "DELETE from wp_options where option_id in ($(wp db query "SELECT GROUP_CONCAT(option_id SEPARATOR ',') from wp_options where option_name like '%foo%';" --silent --skip-column-names))"
+
+    # Search for a string and print the result as a table
+    $ wp db search https://localhost:8889 --format=table --fields=table,column,match
+    +------------+--------------+-----------------------------+
+    | table      | column       | match                       |
+    +------------+--------------+-----------------------------+
+    | wp_options | option_value | https://localhost:8889      |
+    | wp_options | option_value | https://localhost:8889      |
+    | wp_posts   | guid         | https://localhost:8889/?p=1 |
+    | wp_users   | user_url     | https://localhost:8889      |
+    +------------+--------------+-----------------------------+
+
+    # Search for a string and get only the IDs (only works for a single table)
+    $ wp db search https://localhost:8889 wp_options --format=ids
+    1 2
 
 ### GLOBAL PARAMETERS
 

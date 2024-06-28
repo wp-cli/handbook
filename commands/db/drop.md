@@ -2,6 +2,8 @@
 
 Deletes the existing database.
 
+This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
+
 Runs `DROP_DATABASE` SQL statement using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
 
 ### OPTIONS

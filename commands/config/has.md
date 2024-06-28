@@ -2,6 +2,8 @@
 
 Checks whether a specific constant or variable exists in the wp-config.php file.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 &lt;name&gt;

@@ -7,6 +7,12 @@ Gets the 'autoload' value for an option.
 &lt;key&gt;
 : The name of the option to get 'autoload' of.
 
+### EXAMPLES
+
+    # Get the 'autoload' value for an option.
+    $ wp option get-autoload blogname
+    yes
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.

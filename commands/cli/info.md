@@ -2,6 +2,8 @@
 
 Prints various details about the WP-CLI environment.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Helpful for diagnostic purposes, this command shares:
 
 * OS information.

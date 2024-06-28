@@ -2,6 +2,8 @@
 
 Create a distribution archive based on a project's .distignore file.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 For a plugin in a directory 'wp-content/plugins/hello-world', this command creates a distribution archive 'wp-content/plugins/hello-world.zip'.
 
 You can specify files or directories you'd like to exclude from the archive with a .distignore file in your project repository:

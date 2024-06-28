@@ -2,6 +2,8 @@
 
 Installs a WP-CLI package.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Packages are required to be a valid Composer package, and can be specified as:
 
 * Package name from WP-CLI's package index.

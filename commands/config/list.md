@@ -2,6 +2,8 @@
 
 Lists variables, constants, and file includes defined in wp-config.php file.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 [&lt;filter&gt;...]

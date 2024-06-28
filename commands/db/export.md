@@ -2,6 +2,8 @@
 
 Exports the database to a file or to STDOUT.
 
+This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
+
 Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php. Accepts any valid `mysqldump` flags.
 
 ### OPTIONS

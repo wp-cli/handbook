@@ -2,6 +2,8 @@
 
 Create a POT file for a WordPress project.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Scans PHP, Blade-PHP and JavaScript files for translatable strings, as well as theme stylesheets and plugin files if the source directory is detected as either a plugin or theme.
 
 ### OPTIONS

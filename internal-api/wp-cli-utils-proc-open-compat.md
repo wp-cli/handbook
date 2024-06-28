@@ -1,6 +1,6 @@
 # WP_CLI\Utils\proc_open_compat()
 
-Windows compatible `proc_open()`. Works around bug in PHP, and also deals with *nix-like `ENV_VAR=blah cmd` environment variable prefixes.
+Windows compatible `proc_open()`.
 
 ***
 
@@ -17,6 +17,13 @@ Windows compatible `proc_open()`. Works around bug in PHP, and also deals with *
 <strong>$other_options</strong> (array) Array of additional options (Windows only).<br />
 <strong>@return</strong> (resource) stripped of any environment variable settings.<br />
 </div>
+
+
+***
+
+## Notes
+
+Works around bug in PHP, and also deals with *nix-like `ENV_VAR=blah cmd` environment variable prefixes.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*

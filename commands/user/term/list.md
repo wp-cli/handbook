@@ -2,6 +2,8 @@
 
 List all terms associated with an object.
 
+### OPTIONS
+
 &lt;id&gt;
 : ID for the object.
 

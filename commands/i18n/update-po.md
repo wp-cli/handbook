@@ -2,6 +2,8 @@
 
 Update PO files from a POT file.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 This behaves similarly to the [msgmerge](https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html) command.
 
 ### OPTIONS

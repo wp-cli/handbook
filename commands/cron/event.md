@@ -10,11 +10,13 @@ Schedules, runs, and deletes WP-Cron events.
 
     # Run all cron events due right now
     $ wp cron event run --due-now
+    Executed the cron event 'cron_test_1' in 0.01s.
+    Executed the cron event 'cron_test_2' in 0.006s.
     Success: Executed a total of 2 cron events.
 
     # Delete all scheduled cron events for the given hook
     $ wp cron event delete cron_test
-    Success: Deleted 2 instances of the cron event 'cron_test'.
+    Success: Deleted a total of 2 cron events.
 
     # List scheduled cron events in JSON
     $ wp cron event list --fields=hook,next_run --format=json
