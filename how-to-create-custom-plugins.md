@@ -60,7 +60,7 @@ require('post-types/books.php');
 ### Step 4 - Activate the plugin
 
 You can now use two wp-cli commands to check the list of plugins and activate your newly created plugin.
-`wp plugin list` and `wp plugin activate`. The first command lists all plguins installed while the second
+`wp plugin list` and `wp plugin activate`. The first command lists all plugins installed while the second
 activates a given plugin.
 
 ```
