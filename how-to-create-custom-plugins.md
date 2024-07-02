@@ -49,7 +49,7 @@ The main plugin file `wpcli-demo-plugin.php` is the starting point that we can u
 
 Inside the main plugin file lets now reference the new post type we just created.
 
-Open in your favorite text editor the file `wpcli-demo-plugin.php`
+Open in your favourite text editor the file `wpcli-demo-plugin.php`
 and under the line saying "your code starts here" add the following:
 
 ```
