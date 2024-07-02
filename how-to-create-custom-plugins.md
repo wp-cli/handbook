@@ -49,7 +49,7 @@ The main plugin file `wpcli-demo-plugin.php` is the starting point that we can u
 
 Inside the main plugin file lets now reference the new post type we just created.
 
-Open in your favourite text editor the file `wpcli-demo-plugin.php`
+Open in your favorite text editor the file `wpcli-demo-plugin.php`
 and under the line saying "your code starts here" add the following:
 
 ```
@@ -60,7 +60,7 @@ require('post-types/books.php');
 ### Step 4 - Activate the plugin
 
 You can now use two wp-cli commands to check the list of plugins and activate your newly created plugin.
-`wp plugin list` and `wp plugin activate`. The first command lists all plguins installed while the second
+`wp plugin list` and `wp plugin activate`. The first command lists all plugins installed while the second
 activates a given plugin.
 
 ```
