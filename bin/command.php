@@ -630,7 +630,9 @@ EOT;
 					$key = key( $ret['parameters'][ $param_name ] );
 					reset( $ret['parameters'][ $param_name ] );
 					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] )
-						&& '{' === substr( $ret['parameters'][ $param_name ][ $key ][2], -1 ) ) {
+						&&
+						in_array( substr( $ret['parameters'][ $param_name ][ $key ][2], -1 ), [ '{', ',' ], true )
+					) {
 						$in_param = [ $param_name, $key ];
 					}
 				}
