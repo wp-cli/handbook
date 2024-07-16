@@ -600,26 +600,36 @@ EOT;
 	 * @return array
 	 */
 	private static function parse_docblock( $docblock ) {
-		$ret        = [
+		$ret                          = [
 			'description' => '',
 			'parameters'  => [],
 		];
-		$extra_line = '';
-		$in_param   = false;
+		$extra_line                   = '';
+		$in_param                     = false;
+		$description_parsing_complete = false;
+
 		foreach ( preg_split( "/(\r?\n)/", $docblock ) as $line ) {
 			if ( preg_match( '/^(?=\s+?\*[^\/])(.+)/', $line, $matches ) ) {
 				$info = trim( $matches[1] );
 				$info = preg_replace( '/^(\*\s+?)/', '', $info );
-				if ( $in_param ) {
+
+				if ( '@' !== $info[0] && false === $description_parsing_complete ) {
+					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
+					$extra_line          = '';
+					continue;
+				}
+
+				$description_parsing_complete = true;
+
+				if ( '@' !== $info[0] ) {
+					if ( false === $in_param ) {
+						continue;
+					}
 					list( $param_name, $key )                     = $in_param;
 					$ret['parameters'][ $param_name ][ $key ][2] .= PHP_EOL . $info;
-					if ( '}' === substr( $info, -1 ) ) {
-						$in_param = false;
-					}
-				} elseif ( '@' !== $info[0] ) {
-					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
+					error_log( print_r( $info, true ) );
 					$param_name = $matches[1];
 					$value      = str_replace( "@$param_name ", '', $info );
 					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
@@ -629,13 +639,9 @@ EOT;
 					end( $ret['parameters'][ $param_name ] );
 					$key = key( $ret['parameters'][ $param_name ] );
 					reset( $ret['parameters'][ $param_name ] );
-					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] )
-						&&
-						in_array( substr( $ret['parameters'][ $param_name ][ $key ][2], -1 ), [ '{', ',' ], true )
-					) {
-						$in_param = [ $param_name, $key ];
-					}
 				}
+
+				$in_param   = [ $param_name, $key ];
 				$extra_line = '';
 			} else {
 				$extra_line .= PHP_EOL;
