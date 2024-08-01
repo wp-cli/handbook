@@ -24,20 +24,26 @@ Resets the password for one or more users.
     Reset password for editor.
     Success: Passwords reset for 2 users.
 
+    # Reset and display the password.
+    $ wp user reset-password editor --show-password
+    Reset password for editor.
+    Password: N6hAau0fXZMN#rLCIirdEGOh
+    Success: Password reset for 1 user.
+
     # Reset the password for one user, displaying only the new password, and not sending the change email.
     $ wp user reset-password admin --skip-email --porcelain
     yV6BP*!d70wg
 
     # Reset password for all users.
     $ wp user reset-password $(wp user list --format=ids)
-    Reset password for admin
-    Reset password for editor
-    Reset password for subscriber
+    Reset password for admin.
+    Reset password for editor.
+    Reset password for subscriber.
     Success: Passwords reset for 3 users.
 
     # Reset password for all users with a particular role.
     $ wp user reset-password $(wp user list --format=ids --role=administrator)
-    Reset password for admin
+    Reset password for admin.
     Success: Password reset for 1 user.
 
 ### GLOBAL PARAMETERS

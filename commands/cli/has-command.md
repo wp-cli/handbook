@@ -20,6 +20,14 @@ This commands checks if a command is registered with WP-CLI. If the command is f
     $ echo $?
     1
 
+    # Install a WP-CLI package if not already installed
+    $ if ! $(wp cli has-command doctor); then wp package install wp-cli/doctor-command; fi
+    Installing package wp-cli/doctor-command (dev-main || dev-master || dev-trunk)
+    Updating /home/person/.wp-cli/packages/composer.json to require the package...
+    Using Composer to install the package...
+    ---
+    Success: Package installed.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.

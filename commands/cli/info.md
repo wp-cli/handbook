@@ -2,6 +2,8 @@
 
 Prints various details about the WP-CLI environment.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Helpful for diagnostic purposes, this command shares:
 
 * OS information.
@@ -14,7 +16,7 @@ Helpful for diagnostic purposes, this command shares:
 * WP-CLI project config: where the project config YAML file is located.
 * WP-CLI version: currently installed version.
 
-See [config docs](https://wp-cli.org/config/) for more details on global and project config YAML files.
+See [config docs](https://make.wordpress.org/cli/handbook/references/config/) for more details on global and project config YAML files.
 
 ### OPTIONS
 

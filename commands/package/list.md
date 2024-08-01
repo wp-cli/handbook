@@ -2,6 +2,8 @@
 
 Lists installed WP-CLI packages.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 [\--fields=&lt;fields&gt;]
@@ -35,12 +37,13 @@ These fields are optionally available:
 
 ### EXAMPLES
 
+    # List installed packages.
     $ wp package list
-    +-----------------------+------------------------------------------+---------+----------+
-    | name                  | description                              | authors | version  |
-    +-----------------------+------------------------------------------+---------+----------+
-    | wp-cli/server-command | Start a development server for WordPress |         | dev-main |
-    +-----------------------+------------------------------------------+---------+----------+
+    +-----------------------+------------------+----------+-----------+----------------+
+    | name                  | authors          | version  | update    | update_version |
+    +-----------------------+------------------+----------+-----------+----------------+
+    | wp-cli/server-command | Daniel Bachhuber | dev-main | available | 2.x-dev        |
+    +-----------------------+------------------+----------+-----------+----------------+
 
 ### GLOBAL PARAMETERS
 

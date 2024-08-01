@@ -2,6 +2,8 @@
 
 Launches PHP's built-in web server for a specific WordPress installation.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Uses `php -S` to launch a web server serving the WordPress webroot.
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 

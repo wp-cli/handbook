@@ -16,9 +16,9 @@ Creates, updates, deletes, and moderates comments.
     $ wp comment delete 1337 --force
     Success: Deleted comment 1337.
 
-    # Delete all spam comments.
+    # Trash all spam comments.
     $ wp comment delete $(wp comment list --status=spam --format=ids)
-    Success: Deleted comment 264.
-    Success: Deleted comment 262.
+    Success: Trashed comment 264.
+    Success: Trashed comment 262.
 
 

@@ -11,6 +11,7 @@ Activates a given language.
 
 ### EXAMPLES
 
+    # Activate the given language.
     $ wp language core activate ja
     Success: Language activated.
 

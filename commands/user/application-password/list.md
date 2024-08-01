@@ -26,6 +26,7 @@ options:
   - json
   - count
   - yaml
+  - ids
 \---
 
 [\--orderby=&lt;fields&gt;]

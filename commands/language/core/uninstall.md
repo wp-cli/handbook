@@ -9,6 +9,7 @@ Uninstalls a given language.
 
 ### EXAMPLES
 
+    # Uninstall the Japanese core language pack.
     $ wp language core uninstall ja
     Success: Language uninstalled.
 

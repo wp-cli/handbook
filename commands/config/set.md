@@ -2,6 +2,8 @@
 
 Sets the value of a specific constant or variable defined in wp-config.php file.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 &lt;name&gt;
@@ -48,6 +50,7 @@ options:
 
     # Set the WP_DEBUG constant to true.
     $ wp config set WP_DEBUG true --raw
+    Success: Updated the constant 'WP_DEBUG' in the 'wp-config.php' file with the raw value 'true'.
 
 ### GLOBAL PARAMETERS
 

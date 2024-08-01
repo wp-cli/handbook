@@ -2,6 +2,8 @@
 
 Lists available WP-CLI aliases.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 [\--format=&lt;format&gt;]

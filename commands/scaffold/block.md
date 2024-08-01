@@ -4,9 +4,9 @@ Generates PHP, JS and CSS code for registering a Gutenberg block for a plugin or
 
 **Warning: `wp scaffold block` is deprecated.**
 
-The official script to generate a block is the [@wordpress/create-block](https://developer.wordpress.org/block-editor/designers-developers/developers/packages/packages-create-block/) package.
+The official script to generate a block is the [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) package.
 
-See the [Create a Block tutorial](https://developer.wordpress.org/block-editor/getting-started/create-block/) for a complete walk-through.
+See the [Create a Block tutorial](https://developer.wordpress.org/block-editor/getting-started/tutorial/) for a complete walk-through.
 
 ### OPTIONS
 

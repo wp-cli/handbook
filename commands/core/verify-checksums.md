@@ -2,6 +2,8 @@
 
 Verifies WordPress files against WordPress.org's checksums.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Downloads md5 checksums for the current version from WordPress.org, and compares those checksums against the currently installed files.
 
 For security, avoids loading WordPress when verifying checksums.

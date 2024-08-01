@@ -30,6 +30,7 @@ Installs one or more themes.
     Theme installed successfully.
     Activating 'twentysixteen'...
     Success: Switched to 'Twenty Sixteen' theme.
+    Success: Installed 1 of 1 themes.
 
     # Install from a local zip file
     $ wp theme install ../my-theme.zip

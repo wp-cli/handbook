@@ -2,6 +2,8 @@
 
 Activates maintenance mode.
 
+### OPTIONS
+
 [\--force]
 : Force maintenance mode activation operation.
 

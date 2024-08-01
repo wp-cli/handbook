@@ -2,6 +2,8 @@
 
 Updates all installed WP-CLI packages to their latest version.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### EXAMPLES
 
     $ wp package update

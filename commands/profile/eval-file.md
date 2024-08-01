@@ -35,8 +35,18 @@ options:
   - DESC
 \---
 
-[\--orderby=&lt;orderby&gt;]
-: Order by fields.
+[\--orderby=&lt;fields&gt;]
+: Set orderby which field.
+
+### EXAMPLES
+
+    # Profile from a file `request.php` containing `&lt;?php wp_remote_get( "https://www.apple.com/" );`.
+    $ wp profile eval-file request.php --fields=time,cache_ratio,request_count
+    +---------+-------------+---------------+
+    | time    | cache_ratio | request_count |
+    +---------+-------------+---------------+
+    | 0.1009s | 100%        | 1             |
+    +---------+-------------+---------------+
 
 ### GLOBAL PARAMETERS
 
