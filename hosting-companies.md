@@ -45,6 +45,7 @@ In alphabetical order:
 * [Kinsta](https://kinsta.com)
 * [KnownHost](https://www.knownhost.com)
 * [Krystal Hosting](https://krystal.io/)
+* [LH.pl](https://www.lh.pl/hosting?ref=wnojszewski)
 * [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Liquid Web](https://liquidweb.com/wordpress)
 * [ManagedWPHosting](https://www.managedwphosting.nl/)
