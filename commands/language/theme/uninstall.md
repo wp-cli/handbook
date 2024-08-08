@@ -26,8 +26,15 @@ options:
 
 ### EXAMPLES
 
+    # Uninstall the Japanese theme language pack for Twenty Ten.
     $ wp language theme uninstall twentyten ja
-    Success: Language uninstalled.
+    Language 'ja' for 'twentyten' uninstalled.
+    +-----------+--------+-------------+
+    | name      | locale | status      |
+    +-----------+--------+-------------+
+    | twentyten | ja     | uninstalled |
+    +-----------+--------+-------------+
+    Success: Uninstalled 1 of 1 languages.
 
 ### GLOBAL PARAMETERS
 

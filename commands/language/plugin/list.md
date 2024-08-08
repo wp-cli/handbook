@@ -27,6 +27,7 @@ options:
   - table
   - csv
   - json
+  - count
 \---
 
 ### AVAILABLE FIELDS
@@ -43,8 +44,8 @@ These fields will be displayed by default for each translation:
 
 ### EXAMPLES
 
-    # List language,english_name,status fields of available languages.
-    $ wp language plugin list --fields=language,english_name,status
+    # List available language packs for the plugin.
+    $ wp language plugin list hello-dolly --fields=language,english_name,status
     +----------------+-------------------------+-------------+
     | language       | english_name            | status      |
     +----------------+-------------------------+-------------+

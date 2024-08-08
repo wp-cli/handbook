@@ -14,6 +14,8 @@ Updates an option value.
 : Requires WP 4.2. Should this option be automatically loaded.
 \---
 options:
+  - 'on'
+  - 'off'
   - 'yes'
   - 'no'
 \---

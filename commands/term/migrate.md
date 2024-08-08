@@ -26,9 +26,10 @@ options:
 
     # Migrate a category's term (video) to tag taxonomy.
     $ wp term migrate 9190 --from=category --to=post_tag
-    Term '9190' migrated!
-    Old instance of term '9190' removed from its original taxonomy.
-    Success: Migrated the term '9190' from taxonomy 'category' to taxonomy 'post_tag' for 1 posts
+    Term 'video' assigned to post 1155.
+    Term 'video' migrated.
+    Old instance of term 'video' removed from its original taxonomy.
+    Success: Migrated the term 'video' from taxonomy 'category' to taxonomy 'post_tag' for 1 post.
 
 ### GLOBAL PARAMETERS
 

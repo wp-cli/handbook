@@ -10,7 +10,8 @@ Deletes one or more menus.
 ### EXAMPLES
 
     $ wp menu delete "My Menu"
-    Success: 1 menu deleted.
+    Deleted menu 'My Menu'.
+    Success: Deleted 1 of 1 menus.
 
 ### GLOBAL PARAMETERS
 

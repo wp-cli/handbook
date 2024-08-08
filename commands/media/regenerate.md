@@ -16,6 +16,9 @@ Regenerates thumbnails for one or more attachments.
 [\--only-missing]
 : Only generate thumbnails for images missing image sizes.
 
+[\--delete-unknown]
+: Only delete thumbnails for old unregistered image sizes.
+
 [\--yes]
 : Answer yes to the confirmation message. Confirmation only shows when no IDs passed as arguments.
 

@@ -11,9 +11,17 @@ Sets the 'autoload' value for an option.
 : Should this option be automatically loaded.
 \---
 options:
+  - 'on'
+  - 'off'
   - 'yes'
   - 'no'
 \---
+
+### EXAMPLES
+
+    # Set the 'autoload' value for an option.
+    $ wp option set-autoload abc_options no
+    Success: Updated autoload value for 'abc_options' option.
 
 ### GLOBAL PARAMETERS
 

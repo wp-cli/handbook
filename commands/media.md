@@ -14,7 +14,8 @@ Imports files as attachments, regenerates thumbnails, or lists registered image 
 
     # Import a local image and set it to be the featured image for a post.
     $ wp media import ~/Downloads/image.png --post_id=123 --title="A downloaded picture" --featured_image
-    Success: Imported file '/home/person/Downloads/image.png' as attachment ID 1753 and attached to post 123 as featured image.
+    Imported file '/home/person/Downloads/image.png' as attachment ID 1753 and attached to post 123 as featured image.
+    Success: Imported 1 of 1 images.
 
     # List all registered image sizes
     $ wp media image-size
@@ -28,5 +29,10 @@ Imports files as attachments, regenerates thumbnails, or lists registered image 
     | medium                    | 300   | 300    | soft  |
     | thumbnail                 | 150   | 150    | hard  |
     +---------------------------+-------+--------+-------+
+
+    # Fix orientation for specific images.
+    $ wp media fix-orientation 63
+    1/1 Fixing orientation for "Portrait_6" (ID 63).
+    Success: Fixed 1 of 1 images.
 
 

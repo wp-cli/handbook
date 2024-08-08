@@ -25,6 +25,8 @@ options:
 : Should this option be automatically loaded.
 \---
 options:
+  - 'on'
+  - 'off'
   - 'yes'
   - 'no'
 \---

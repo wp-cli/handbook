@@ -2,6 +2,8 @@
 
 Extract JavaScript strings from PO files and add them to individual JSON files.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 For JavaScript internationalization purposes, WordPress requires translations to be split up into one Jed-formatted JSON file per JavaScript source file.
 
 See https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wordpress/ to learn more about WordPress JavaScript internationalization.

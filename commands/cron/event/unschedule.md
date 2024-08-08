@@ -11,7 +11,7 @@ Unschedules all cron events for a given hook.
 
     # Unschedule a cron event on given hook.
     $ wp cron event unschedule cron_test
-    Success: Unscheduled 2 events with hook 'cron_test'.
+    Success: Unscheduled 2 events for hook 'cron_test'.
 
 ### GLOBAL PARAMETERS
 

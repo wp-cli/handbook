@@ -28,6 +28,18 @@ Activates one or more plugins.
     Plugin 'hello' network activated.
     Success: Network activated 1 of 1 plugins.
 
+    # Activate plugins that were recently active.
+    $ wp plugin activate $(wp plugin list --recently-active --field=name)
+    Plugin 'bbpress' activated.
+    Plugin 'buddypress' activated.
+    Success: Activated 2 of 2 plugins.
+
+    # Activate plugins that were recently active on a multisite.
+    $ wp plugin activate $(wp plugin list --recently-active --field=name) --network
+    Plugin 'bbpress' network activated.
+    Plugin 'buddypress' network activated.
+    Success: Activated 2 of 2 plugins.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.

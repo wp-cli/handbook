@@ -2,6 +2,8 @@
 
 Performs basic database operations using credentials stored in wp-config.php.
 
+Unless overridden, these commands run on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
+
 ### EXAMPLES
 
     # Create a new database.
