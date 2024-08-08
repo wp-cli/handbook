@@ -14,7 +14,7 @@ Sets the value of a theme mod.
 
     # Set theme mod
     $ wp theme mod set background_color 000000
-    Success: Theme mod background_color set to 000000
+    Success: Theme mod background_color set to 000000.
 
 ### GLOBAL PARAMETERS
 

@@ -15,8 +15,8 @@ Deactivates one or more sites.
     $ wp site deactivate 123
     Success: Site 123 deactivated.
 
-     $ wp site deactivate --slug=demo
-     Success: Site 123 marked as deactivated.
+    $ wp site deactivate --slug=demo
+    Success: Site 123 deactivated.
 
 ### GLOBAL PARAMETERS
 

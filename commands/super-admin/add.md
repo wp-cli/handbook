@@ -9,8 +9,9 @@ Grants super admin privileges to one or more users.
 
 ### EXAMPLES
 
+    # Grant super-admin privileges to the user.
     $ wp super-admin add superadmin2
-    Success: Granted super-admin capabilities.
+    Success: Granted super-admin capabilities to 1 user.
 
 ### GLOBAL PARAMETERS
 

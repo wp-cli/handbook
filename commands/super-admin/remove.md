@@ -9,8 +9,9 @@ Removes super admin privileges from one or more users.
 
 ### EXAMPLES
 
+    # Revoke super-admin privileges from the user.
     $ wp super-admin remove superadmin2
-    Success: Revoked super-admin capabilities.
+    Success: Revoked super-admin capabilities from 1 user.
 
 ### GLOBAL PARAMETERS
 

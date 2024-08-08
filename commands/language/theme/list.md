@@ -27,6 +27,7 @@ options:
   - table
   - csv
   - json
+  - count
 \---
 
 ### AVAILABLE FIELDS
@@ -43,8 +44,8 @@ These fields will be displayed by default for each translation:
 
 ### EXAMPLES
 
-    # List language,english_name,status fields of available languages.
-    $ wp language theme list --fields=language,english_name,status
+    # List available language packs for the theme.
+    $ wp language theme list twentyten --fields=language,english_name,status
     +----------------+-------------------------+-------------+
     | language       | english_name            | status      |
     +----------------+-------------------------+-------------+

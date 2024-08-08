@@ -21,6 +21,7 @@ options:
   - table
   - csv
   - json
+  - count
 \---
 
 ### AVAILABLE FIELDS

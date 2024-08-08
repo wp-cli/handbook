@@ -25,6 +25,6 @@ See the [Navigation Menus](https://developer.wordpress.org/themes/functionality/
 
     # Assign the 'my-menu' menu to the 'primary' location
     $ wp menu location assign my-menu primary
-    Success: Assigned location to menu.
+    Success: Assigned location primary to menu my-menu.
 
 

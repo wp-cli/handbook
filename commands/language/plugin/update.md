@@ -15,6 +15,7 @@ Updates installed languages for one or more plugins.
 
 ### EXAMPLES
 
+    # Update all installed language packs for all plugins.
     $ wp language plugin update --all
     Updating 'Japanese' translation for Akismet 3.1.11...
     Downloading translation from https://downloads.wordpress.org/translation/plugin/akismet/3.1.11/ja.zip...

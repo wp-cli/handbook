@@ -26,8 +26,15 @@ options:
 
 ### EXAMPLES
 
+    # Uninstall the Japanese plugin language pack for Hello Dolly.
     $ wp language plugin uninstall hello-dolly ja
-    Success: Language uninstalled.
+    Language 'ja' for 'hello-dolly' uninstalled.
+    +-------------+--------+-------------+
+    | name        | locale | status      |
+    +-------------+--------+-------------+
+    | hello-dolly | ja     | uninstalled |
+    +-------------+--------+-------------+
+    Success: Uninstalled 1 of 1 languages.
 
 ### GLOBAL PARAMETERS
 

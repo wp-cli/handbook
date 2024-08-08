@@ -4,14 +4,23 @@ Deletes all scheduled cron events for the given hook.
 
 ### OPTIONS
 
-&lt;hook&gt;
-: The hook name.
+[&lt;hook&gt;...]
+: One or more hooks to delete.
+
+[\--due-now]
+: Delete all hooks due right now.
+
+[\--exclude=&lt;hooks&gt;]
+: Comma-separated list of hooks to exclude.
+
+[\--all]
+: Delete all hooks.
 
 ### EXAMPLES
 
     # Delete all scheduled cron events for the given hook
     $ wp cron event delete cron_test
-    Success: Deleted 2 instances of the cron event 'cron_test'.
+    Success: Deleted a total of 2 cron events.
 
 ### GLOBAL PARAMETERS
 

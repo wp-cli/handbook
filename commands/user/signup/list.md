@@ -1,64 +1,65 @@
-# wp scaffold package
+# wp user signup list
 
-Generate the files needed for a basic WP-CLI command.
+Lists signups.
 
-This command runs on the `before_wp_load` hook, just before the WP load process begins.
+[\--&lt;field&gt;=&lt;value&gt;]
+: Filter the list by a specific field.
 
-Default behavior is to create the following files:
-- command.php
-- composer.json (with package name, description, and license)
-- .gitignore, .editorconfig, and .distignore
-- README.md (via wp scaffold package-readme)
-- Test harness (via wp scaffold package-tests)
+[\--field=&lt;field&gt;]
+: Prints the value of a single field for each signup.
 
-Unless specified with `--dir=&lt;dir&gt;`, the command package is placed in the WP-CLI `packages/local/` directory.
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific object fields.
 
-### OPTIONS
-
-&lt;name&gt;
-: Name for the new package. Expects &lt;author&gt;/&lt;package&gt; (e.g. 'wp-cli/scaffold-package').
-
-[\--description=&lt;description&gt;]
-: Human-readable description for the package.
-
-[\--homepage=&lt;homepage&gt;]
-: Homepage for the package. Defaults to 'https://github.com/&lt;name&gt;'
-
-[\--dir=&lt;dir&gt;]
-: Specify a destination directory for the command. Defaults to WP-CLI's `packages/local/` directory.
-
-[\--license=&lt;license&gt;]
-: License for the package.
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
 \---
-default: MIT
+default: table
+options:
+  - table
+  - csv
+  - ids
+  - json
+  - count
+  - yaml
 \---
 
-[\--require_wp_cli=&lt;version&gt;]
-: Required WP-CLI version for the package.
-\---
-default: ^2.5
-\---
+[\--per_page=&lt;per_page&gt;]
+: Limits the signups to the given number. Defaults to none.
 
-[\--require_wp_cli_tests=&lt;version&gt;]
-: Required WP-CLI testing framework version for the package.
-\---
-default: ^3.0.11
-\---
+### AVAILABLE FIELDS
 
-[\--skip-tests]
-: Don't generate files for integration testing.
+These fields will be displayed by default for each signup:
 
-[\--skip-readme]
-: Don't generate a README.md for the package.
+* signup_id
+* user_login
+* user_email
+* registered
+* active
+* activation_key
 
-[\--skip-github]
-: Don't generate GitHub issue and pull request templates.
+These fields are optionally available:
 
-[\--skip-install]
-: Don't install the package after scaffolding.
+* domain
+* path
+* title
+* activated
+* meta
 
-[\--force]
-: Overwrite files that already exist.
+### EXAMPLES
+
+    # List signup IDs.
+    $ wp user signup list --field=signup_id
+    1
+
+    # List all signups.
+    $ wp user signup list
+    +-----------+------------+---------------------+---------------------+--------+------------------+
+    | signup_id | user_login | user_email          | registered          | active | activation_key   |
+    +-----------+------------+---------------------+---------------------+--------+------------------+
+    | 1         | bobuser    | bobuser@example.com | 2024-03-13 05:46:53 | 1      | 7320b2f009266618 |
+    | 2         | johndoe    | johndoe@example.com | 2024-03-13 06:24:44 | 0      | 9068d859186cd0b5 |
+    +-----------+------------+---------------------+---------------------+--------+------------------+
 
 ### GLOBAL PARAMETERS
 

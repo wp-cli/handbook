@@ -19,7 +19,7 @@ Get values of global configuration parameters.
 ## Notes
 
 Provides access to `--path=<path>`, `--url=<url>`, and other values of
-the [global configuration parameters](https://make.wordpress.org/cli/handbook/references/config/#global-parameters).
+the [global configuration parameters](https://make.wordpress.org/cli/handbook/references/config/).
 
 ```
 WP_CLI::log( 'The --url=<url> value is: ' . WP_CLI::get_config( 'url' ) );

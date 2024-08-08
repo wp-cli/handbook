@@ -10,7 +10,7 @@ Deletes one or more items from a menu.
 ### EXAMPLES
 
     $ wp menu item delete 45
-    Success: 1 menu item deleted.
+    Success: Deleted 1 of 1 menu items.
 
 ### GLOBAL PARAMETERS
 

@@ -19,9 +19,9 @@ If the user already exists (matching the email address or login), then the user 
 
     # Import users from local CSV file
     $ wp user import-csv /path/to/users.csv
-    Success: bobjones created
-    Success: newuser1 created
-    Success: existinguser created
+    Success: bobjones created.
+    Success: newuser1 created.
+    Success: existinguser created.
 
     # Import users from remote CSV file
     $ wp user import-csv http://example.com/users.csv

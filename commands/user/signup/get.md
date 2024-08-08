@@ -1,34 +1,37 @@
-# wp db cli
+# wp user signup get
 
-Opens a MySQL console using credentials from wp-config.php
-
-This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
+Gets details about a signup.
 
 ### OPTIONS
 
-[\--database=&lt;database&gt;]
-: Use a specific database. Defaults to DB_NAME.
+&lt;signup&gt;
+: The signup ID, user login, user email, or activation key.
 
-[\--default-character-set=&lt;character-set&gt;]
-: Use a specific character set. Defaults to DB_CHARSET when defined.
+[\--field=&lt;field&gt;]
+: Instead of returning the whole signup, returns the value of a single field.
 
-[\--dbuser=&lt;value&gt;]
-: Username to pass to mysql. Defaults to DB_USER.
+[\--fields=&lt;fields&gt;]
+: Limit the output to specific fields. Defaults to all fields.
 
-[\--dbpass=&lt;value&gt;]
-: Password to pass to mysql. Defaults to DB_PASSWORD.
-
-[\--&lt;field&gt;=&lt;value&gt;]
-: Extra arguments to pass to mysql. [Refer to mysql docs](https://dev.mysql.com/doc/en/mysql-command-options.html).
-
-[\--defaults]
-: Loads the environment's MySQL option files. Default behavior is to skip loading them to avoid failures due to misconfiguration.
+[\--format=&lt;format&gt;]
+: Render output in a particular format.
+\---
+default: table
+options:
+  - table
+  - csv
+  - json
+  - yaml
+\---
 
 ### EXAMPLES
 
-    # Open MySQL console
-    $ wp db cli
-    mysql&gt;
+    # Get signup.
+    $ wp user signup get 1 --field=user_login
+    bobuser
+
+    # Get signup and export to JSON file.
+    $ wp user signup get bobuser --format=json > bobuser.json
 
 ### GLOBAL PARAMETERS
 

@@ -46,6 +46,7 @@ These fields will be displayed by default for each theme:
 * update
 * version
 * update_version
+* auto_update
 
 These fields are optionally available:
 
@@ -53,15 +54,14 @@ These fields are optionally available:
 * update_id
 * title
 * description
-* auto_update
 
 ### EXAMPLES
 
-    # List themes
+    # List inactive themes.
     $ wp theme list --status=inactive --format=csv
-    name,status,update,version,update_version
-    twentyfourteen,inactive,none,1.7,
-    twentysixteen,inactive,available,1.1,
+    name,status,update,version,update_version,auto_update
+    twentyfourteen,inactive,none,3.8,,off
+    twentysixteen,inactive,available,3.0,3.1,off
 
 ### GLOBAL PARAMETERS
 

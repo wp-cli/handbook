@@ -2,6 +2,8 @@
 
 Determines whether value of a specific defined constant or variable is truthy.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 This determination is made by evaluating the retrieved value via boolval().
 
 ### OPTIONS

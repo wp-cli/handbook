@@ -2,6 +2,8 @@
 
 Refreshes the salts defined in the wp-config.php file.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 [&lt;keys&gt;...]
@@ -24,6 +26,7 @@ Refreshes the salts defined in the wp-config.php file.
 
     # Add a cache key salt to the wp-config.php file
     $ wp config shuffle-salts WP_CACHE_KEY_SALT --force
+    Success: Shuffled the salt keys.
 
 ### GLOBAL PARAMETERS
 
