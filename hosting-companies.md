@@ -11,6 +11,7 @@ In alphabetical order:
 * [Altis Cloud Platform](https://www.altis-dxp.com/)
 * [AltusHost](https://www.altushost.com/)
 * [Amimoto](https://amimoto-ami.com/)
+* [BigCloudy](https://bigcloudy.com/)
 * [Bluehost](https://www.bluehost.com/)
 * [Hypernode](https://www.hypernode.com/nl/)
 * [CloudHostWorld](https://www.cloudhostworld.com)
