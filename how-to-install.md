@@ -1,6 +1,6 @@
 # How to install WordPress
 
-Download and install WordPress using WP-CLI is straight forward. It takes four steps.
+Downloading and installing WordPress using WP-CLI is straight forward. It takes four steps.
 First, you will need to download WordPress using the `wp core download` command.
 
 ### Step 1 - Download WordPress
@@ -59,4 +59,4 @@ Remember to replace the values passed to each of the following options with your
 - `--admin_user=wpcli` replace wpcli with the username you want to assign to the website administrator
 - `--admin_password=wpcli` replace wpcli with the password you want to use to access the WordPress administrator panel.
 
-Congratulation! You have successfully installed WordPress using WP-CLI.
+Congratulations! You have successfully installed WordPress using WP-CLI.
