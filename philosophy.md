@@ -1,3 +1,4 @@
+# vecnax
 # Philosophy
 
 WP-CLI is the command-line interface for WordPress. It provides commands for actions that can be performed in the WordPress backend (e.g. `wp theme activate` and `wp user create`), as well as commands for actions that don't have an equivalent web UI (e.g. `wp cron event run`, `wp search-replace`, and `wp scaffold child-theme`).
