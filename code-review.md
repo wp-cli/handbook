@@ -18,11 +18,11 @@ We're currently using GitHub for everything. Read up on [our GitHub workflow](ht
 - The reviewer may suggest changes in the form of a pull request off of the branch being reviewed, or in comments.
 - The developer will make changes suggested, discuss the issue for clarity, and may mention the reviewer when they are satisfied with their work.
 - If a pull request needs final cleanup before merging or has been abandoned, the [reviewer can commit directly to the branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/). However, avoid rewriting code without consultation.
-- When the reviewer is satisfied with changes, they can either merge or assign the pull request to a second reviewer for merge. The original developer (and ideally the reviewer) should both be available for a couple of days post-merge to address any issues that arise.
+- When the reviewer is satisfied with the changes, they can either merge or assign the pull request to a second reviewer for merge. The original developer (and ideally the reviewer) should both be available for a couple of days post-merge to address any issues that arise.
 
 ## What code review is
 
-A good way to visualize the objectives of code review is [this analogy](http://blog.d3in.org/post/111338685456/maslows-pyramid-of-code-review) to Maslow's "Hierarchy of Needs" pyramid. From most basic to the highest level, a reviewer is checking that code is **Correct**, **Secure**, **Readable**, **Elegant**, and **Altruistic**. It's important to keep this sense of priorities: if a change introduces unhandled edge cases, bugs, or security vulnerabilities, those issues need to be addressed before coding style guidelines or beautification practices preferences will matter.
+A good way to visualize the objectives of code review is [this analogy](https://www.dein.fr/posts/2015-02-18-maslows-pyramid-of-code-review) to Maslow's "Hierarchy of Needs" pyramid. From the most basic to the highest level, a reviewer checks that code is **Correct**, **Secure**, **Readable**, **Elegant**, and **Altruistic**. It's important to keep this sense of priorities: if a change introduces unhandled edge cases, bugs, or security vulnerabilities, those issues need to be addressed before coding style guidelines or beautification practices preferences will matter.
 
 ![code-review-pyramid](https://cloud.githubusercontent.com/assets/665992/7326019/1603bcd2-ea77-11e4-8510-4d7f76ca2ad1.png)
 
@@ -30,7 +30,7 @@ A good way to visualize the objectives of code review is [this analogy](http://b
 
 *As a reviewer*, your first job is to get an understanding of what the proposed change does and why it's essential. There's no point in critiquing anything until you understand what it does, why it's necessary, and what decisions went into the way this was built.
 
-Next, look it over for correctness. Are all functions which take parameters and produce output covered by functional unit tests? Do they actually do what they're supposed to? Can you picture an edge case where a function would error unexpectedly or return something other than the expected result? If this command has output, does it render properly in all situations? Are all global flags handled? Does it have unsurprising fallbacks for uncommon situations? Does it handle errors with clear output messages?
+Next, look it over for correctness. Are all functions that take parameters and produce output covered by functional unit tests? Do they actually do what they're supposed to? Can you picture an edge case where a function would error unexpectedly or return something other than the expected result? If this command has output, does it render properly in all situations? Are all global flags handled? Does it have unsurprising fallbacks for uncommon situations? Does it handle errors with clear output messages?
 
 If it addresses the business and UX requirements, the next thing to check for is security. Does it follow basic sanitization and escaping practices for all untrusted input? If it interacts with other aspects of the codebase, is it liberal in the inputs it accepts and conservative in its output, making sure to only pass expected values? Think like an attacker. If there's any way a malicious agent could exploit this code, or an unlucky user could trigger a bug that fatals or looks bad, it's your job to find it.
 
