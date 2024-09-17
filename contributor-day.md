@@ -4,9 +4,9 @@ Welcome to WordCamp Contributor Day! We appreciate you sharing your time with WP
 
 We'd love to help you submit at least one pull request, so we put together this guide to make it as straightforward as possible. We're here to support you however we can.
 
-When you submit your pull request, add `Related https://github.com/wp-cli/wp-cli/issues/5955` so we can see all pull requests created during the day. We'll give these some special promotion in the next release notes.
+When you submit your pull request, add `Related https://github.com/wp-cli/wp-cli/issues/5985` so we can see all pull requests created during the day. We'll give these some special promotion in the next release notes.
 
-Your table leads for the day are: [schlessera](https://github.com/schlessera), [danielbachhuber](https://github.com/danielbachhuber)
+Your table leads for the day are: [schlessera](https://github.com/schlessera), [BrianHenryIE](https://github.com/BrianHenryIE)
 
 A few seasoned WP-CLI contributors are also helping out: TBD
 
@@ -32,7 +32,6 @@ To help you be successful during Contributor Day, we curated a list of reasonabl
 
 **New contributors**
 
-- [Clarify docs arugment](https://github.com/wp-cli/language-command/issues/90)
 - ["wp config create" generates wrong DB_PASSWORD in wp-config.php when db password has "](https://github.com/wp-cli/config-command/issues/180)
 - [Import into specific directory/location](https://github.com/wp-cli/media-command/issues/146)
 - [Add --exclude=<file>,<file> argument to skip files](https://github.com/wp-cli/checksum-command/issues/64)
