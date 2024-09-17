@@ -32,7 +32,6 @@ To help you be successful during Contributor Day, we curated a list of reasonabl
 
 **New contributors**
 
-- [Clarify docs arugment](https://github.com/wp-cli/language-command/issues/90)
 - ["wp config create" generates wrong DB_PASSWORD in wp-config.php when db password has "](https://github.com/wp-cli/config-command/issues/180)
 - [Import into specific directory/location](https://github.com/wp-cli/media-command/issues/146)
 - [Add --exclude=<file>,<file> argument to skip files](https://github.com/wp-cli/checksum-command/issues/64)
