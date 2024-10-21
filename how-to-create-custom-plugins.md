@@ -1,8 +1,8 @@
-## How to create a custom plugin:
+# How to create a custom plugin:
 
 If you want to create your plugins, WP-CLI has a powerful scaffold command that allows us to generate starter code. In this guide we will see how to generate starter code for a basic plugin.
 
-### Step 1 - Scaffold the plugin files
+## Step 1 - Scaffold the plugin files
 
 The following command uses several options to lets us specify the plugin slug, its name, description, author name and uri as well as the plugin uri. You can replace the values passed to the options below to customize the plugin based on your needs.
 
@@ -34,7 +34,7 @@ Unless you use the --skip-tests flag the following files are always generated:
 - `tests/test-sample.php` is a sample file containing test cases.
 - `.phpcs.xml.dist` is a collection of PHP_CodeSniffer rules.
 
-### Step 2 - create a custom post type:
+## Step 2 - create a custom post type:
 
 We can now use the scaffold command again to add a custom post type inside our new plugin using the `wp scaffold post-type` command.
 
@@ -43,7 +43,7 @@ We can now use the scaffold command again to add a custom post type inside our n
     Success: Created '/wpcli-demo-plugin/post-types/books.php'.
 ```
 
-### Step 3 - Write code inside the main file:
+## Step 3 - Write code inside the main file:
 
 The main plugin file `wpcli-demo-plugin.php` is the starting point that we can use to write our plugin logic.
 
@@ -57,7 +57,7 @@ and under the line saying "your code starts here" add the following:
 require('post-types/books.php');
 ```
 
-### Step 4 - Activate the plugin
+## Step 4 - Activate the plugin
 
 You can now use two wp-cli commands to check the list of plugins and activate your newly created plugin.
 `wp plugin list` and `wp plugin activate`. The first command lists all plugins installed while the second
