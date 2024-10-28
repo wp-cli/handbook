@@ -480,6 +480,7 @@ EOT;
 			$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
 			$docs = preg_replace( '/&quot;/', '"', $docs );
 			$docs = preg_replace( '/wp&gt; /', 'wp> ', $docs );
+			$docs = preg_replace( '/2&gt;\//', '2>/', $docs );
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 			$docs = preg_replace( '/ &amp;&amp; /', ' && ', $docs );
 
