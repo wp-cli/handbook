@@ -339,6 +339,8 @@ The SSH connection type also supports two advanced connection configuration opti
 * `proxyjump` - Specifies a jumpbox connection string, which is passed to `ssh -J`
 * `key` - Specifies the key (identify file) to use, which is passed to `ssh -i`
 
+See the documentation about [running WP-CLI commands remotely](https://make.wordpress.org/cli/handbook/guides/running-commands-remotely/) for more information.
+
 ## Context configuration
 
 In WP-CLI v2.6.0, a new global flag `--context=<context>` was added which allows users to select the WordPress context in which WP-CLI is supposed to execute its command(s).
