@@ -37,6 +37,7 @@ If you want to run WP-CLI remotely using SSH, it is required that the command `w
 * `WP_CLI_PHP_ARGS` – Arguments to pass to the PHP binary when invoking WP-CLI (only works for non-Phar installation).
 * `WP_CLI_SSH_PRE_CMD` – When using `--ssh=<ssh>`, perform a command before WP-CLI calls WP-CLI on the remote server.
 * `WP_CLI_STRICT_ARGS_MODE` – Avoid ambiguity by telling WP-CLI to treat any arguments before the command as global, and after the command as local.
+* `WP_CLI_EARLY_REQUIRE` - Load a custom PHP file early on in the bootstrap process.
 
 To set an environment variable on demand, you can place the environment variable definition before the WP-CLI command you mean to run (e.g. `EDITOR=vim wp post edit 1`); to overwrite environment variables, use `export VARIABLE=value` in your `~/.bashrc` or `~.zhsrc`.
 
