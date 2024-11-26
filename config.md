@@ -373,6 +373,7 @@ WP-CLI's behavior can be changed at runtime through the use of environment varia
 * `WP_CLI_STRICT_ARGS_MODE` - Avoid ambiguity by telling WP-CLI to treat any arguments before the command as global, and after the command as local.
 * `WP_CLI_SUPPRESS_GLOBAL_PARAMS` - Set to `true` to skip showing the global parameters at the end of the help screen. This saves screen estate for advanced users.
 * `WP_CLI_FORCE_USER_LOGIN` - Set to `1` to force the value provided to the `--user` flag to be interpreted as a login instead of an ID, to get around ambiguous types.
+* `WP_CLI_EARLY_REQUIRE` - Load a custom PHP file early on in the bootstrap process.
 
 To set an environment variable on demand, simply place the environment variable definition before the WP-CLI command you mean to run.
 
