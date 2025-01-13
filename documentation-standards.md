@@ -94,7 +94,7 @@ For classes representing a collection of subcommands, we'd encourage you to use 
 
 * Class could have multiple examples. Please follow standards for examples on a command doc.
 
-## Messages within command execution
+### Messages within command execution
 
 ```
 $ wp theme activate twentysixteen
@@ -110,7 +110,7 @@ Success: Switched to 'Twenty Sixteen' theme.
 * Roles, sidebar ID, post type key, taxonomy key must be wrapped with quotes.
 * Message in the context of ongoing action could end with `...`. Eg - `Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.23.1/wp-cli-0.23.1.phar...`
 
-## Command parameter description
+### Command parameter description
 
 If there is a set of allowed values for a command parameter, we have set special format (mostly similar to YAML) for default value and available options.
 
