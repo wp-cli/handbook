@@ -4,6 +4,8 @@ Some people have write access to WP-CLI repositories. These people are identifie
 
 * [maintainers](https://github.com/orgs/wp-cli/teams/maintainers) - Project leadership
 * [committers](https://github.com/orgs/wp-cli/teams/committers) - Trusted contributors
+ 
+    The above links are not public; they only work for GitHub users who are part of the WP-CLI GitHub organization.
 
 This “Committers credo” is a living document. It’s meant to establish generally agreed upon standards for committers, and will continue to evolve over time.
 
@@ -41,5 +43,5 @@ Committer participation isn’t just committing code. Often, you can have a huge
 
 * Refining an existing piece of documentation, or drafting a new one.
 * Helping a contributor with whatever is needed to finish up their pull request.
-    * If a contributor abandons a pull request (e.g. no activity in two weeks) that's close to a mergeable state, you can [perform any necessary cleanup by committing directly to their branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/) and get it over the finish line.
+    * If a contributor abandons a pull request (e.g., no activity in two weeks) that's close to a mergeable state, you can [perform any necessary cleanup by committing directly to their branch](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/) and get it over the finish line.
 * Triaging issues by spending 5-10 minutes further diagnosing the report and commenting with additional information you’ve discovered.
