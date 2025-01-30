@@ -79,7 +79,7 @@ In alphabetical order:
 * [SpinupWP](https://spinupwp.com/)
 * [The Email Shop](https://theemailshop.co.uk/)
 * [Templ](https://templ.io/)
-* [True-False Hosting](https://truefalsehosting.com)
+* [True-False Hosting](https://truefalsehosting.rs)
 * [TrulyWP](https://trulywp.com/)
 * [TVC.Net](https://tvcnet.com/)
 * [UNLIMITED.RS](https://unlimited.rs/)
