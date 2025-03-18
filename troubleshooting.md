@@ -33,7 +33,7 @@ If you want to run WP-CLI remotely using SSH, it is required that the command `w
 * `WP_CLI_CONFIG_PATH` - Path to the global `config.yml` file. Default is `~/.wp-cli/config.yml`.
 * `WP_CLI_CUSTOM_SHELL` - Allows the user to override the default `/bin/bash` shell used.
 * `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` - Disable WP-CLI automatic checks for updates.
-* `WP_CLI_DOCKER_NO_TTY` - Ignore detected tty status and remove the `-tty` flag from `docker exec` when running WP-CLI against a docker container via ssh.
+* `WP_CLI_DOCKER_NO_TTY` - Ignore detected tty status and remove the `--tty` flag from `docker exec` when running WP-CLI against a docker container via ssh.
 * `WP_CLI_DOCKER_NO_INTERACTIVE` - Ignore detected tty status and remove the `--interactive` flag from `docker exec` when running WP-CLI against a docker container via ssh.
 * `WP_CLI_PACKAGES_DIR` - Directory to store packages installed through WP-CLI's package management. Default is `~/.wp-cli/packages/`.
 * `WP_CLI_PHP` - PHP binary path to use when overriding the system default (only works for non-Phar installation).
