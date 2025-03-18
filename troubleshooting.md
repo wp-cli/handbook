@@ -29,15 +29,22 @@ The setup of your working environment is a prerequisite for running WP-CLI. You 
 
 If you want to run WP-CLI remotely using SSH, it is required that the command `wp` is accessible on the path of the remote server. WP-CLI’s behavior can also be changed at runtime through the use of environment variables:
 
-* `WP_CLI_CACHE_DIR` – Directory to store the WP-CLI file cache. Default is `~/.wp-cli/cache/`.
-* `WP_CLI_CONFIG_PATH` – Path to the global config.yml file. Default is `~/.wp-cli/config.yml`.
-* `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` – Disable WP-CLI automatic checks for updates.
-* `WP_CLI_PACKAGES_DIR` – Directory to store packages installed through WP-CLI’s package management. Default is `* ~/.wp-cli/packages/`.
-* `WP_CLI_PHP` – PHP binary path to use when overriding the system default (only works for non-Phar installation).
-* `WP_CLI_PHP_ARGS` – Arguments to pass to the PHP binary when invoking WP-CLI (only works for non-Phar installation).
-* `WP_CLI_SSH_PRE_CMD` – When using `--ssh=<ssh>`, perform a command before WP-CLI calls WP-CLI on the remote server.
-* `WP_CLI_STRICT_ARGS_MODE` – Avoid ambiguity by telling WP-CLI to treat any arguments before the command as global, and after the command as local.
-* `WP_CLI_EARLY_REQUIRE` - Load a custom PHP file early on in the bootstrap process.
+* `WP_CLI_CACHE_DIR` - Directory to store the WP-CLI file cache. Default is `~/.wp-cli/cache/`.
+* `WP_CLI_CONFIG_PATH` - Path to the global `config.yml` file. Default is `~/.wp-cli/config.yml`.
+* `WP_CLI_CUSTOM_SHELL` - Allows the user to override the default `/bin/bash` shell used.
+* `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` - Disable WP-CLI automatic checks for updates.
+* `WP_CLI_DOCKER_NO_TTY` - Ignore detected tty status and remove the `-tty` flag from `docker exec` when running WP-CLI against a docker container via ssh.
+* `WP_CLI_DOCKER_NO_INTERACTIVE` - Ignore detected tty status and remove the `--interactive` flag from `docker exec` when running WP-CLI against a docker container via ssh.
+* `WP_CLI_PACKAGES_DIR` - Directory to store packages installed through WP-CLI's package management. Default is `~/.wp-cli/packages/`.
+* `WP_CLI_PHP` - PHP binary path to use when overriding the system default (only works for non-Phar installation).
+* `WP_CLI_PHP_ARGS` - Arguments to pass to the PHP binary when invoking WP-CLI (only works for non-Phar installation).
+* `WP_CLI_SSH_PRE_CMD` - When using `--ssh=<ssh>`, perform a command before WP-CLI calls WP-CLI on the remote server.
+* `WP_CLI_STRICT_ARGS_MODE` - Avoid ambiguity by telling WP-CLI to treat any arguments before the command as global, and after the command as local.
+* `WP_CLI_SUPPRESS_GLOBAL_PARAMS` - Set to `true` to skip showing the global parameters at the end of the help screen. This saves screen estate for advanced users.
+* `WP_CLI_FORCE_USER_LOGIN` - Set to `1` to force the value provided to the `--user` flag to be interpreted as a login instead of an ID, to get around ambiguous types.
+* `WP_CLI_EARLY_REQUIRE` - Load one or more custom PHP files (comma-separated) early on in the bootstrap process.
+* `WP_CLI_REQUIRE` - Load one or more custom PHP files (comma-separated) after the bootstrap process. This has the same effect as `--require` on the command line or a `require` mapping in a wp-cli.yml config file.
+* `WP_CLI_USER_AGENT` - Sets the `$_SERVER['HTTP_USER_AGENT']` value that some plugins and tools rely on.
 
 To set an environment variable on demand, you can place the environment variable definition before the WP-CLI command you mean to run (e.g. `EDITOR=vim wp post edit 1`); to overwrite environment variables, use `export VARIABLE=value` in your `~/.bashrc` or `~.zhsrc`.
 
