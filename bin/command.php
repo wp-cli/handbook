@@ -36,10 +36,30 @@ class Command {
 		}
 
 		self::gen_api_docs();
+		self::gen_behat_docs();
 		self::gen_commands( $args, $assoc_args );
 		self::gen_commands_manifest();
 		self::gen_hb_manifest();
 		WP_CLI::success( 'Generated all doc pages.' );
+	}
+
+	private function prepare_api_slug( $full_name ) {
+		$replacements = [
+			'\\w+' => '',
+			'\\s'  => '',
+			's?'   => '',
+			'::'   => '-',
+			'_'    => '-',
+			'\\'   => '-',
+			' '    => '-',
+			'.'    => '-',
+			'|'    => '-',
+		];
+		$full_name    = strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
+		$full_name    = preg_replace( '/[^a-zA-Z0-9-]/', '', $full_name );
+		$full_name    = preg_replace( '/-+/', '-', $full_name );
+		$full_name    = trim( $full_name, '-' );
+		return $full_name;
 	}
 
 	/**
@@ -48,14 +68,8 @@ class Command {
 	 * @subcommand gen-api-docs
 	 */
 	public function gen_api_docs() {
-		$apis       = WP_CLI::runcommand(
-			'handbook api-dump',
-			[
-				'launch' => false,
-				'return' => 'stdout',
-				'parse'  => 'json',
-			]
-		);
+		$apis = $this->get_internal_apis();
+
 		$categories = [
 			'Registration' => [],
 			'Output'       => [],
@@ -65,19 +79,9 @@ class Command {
 			'Misc'         => [],
 		];
 
-		$prepare_api_slug = function ( $full_name ) {
-			$replacements = [
-				'()' => '',
-				'::' => '-',
-				'_'  => '-',
-				'\\' => '-',
-			];
-			return strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
-		};
-
 		foreach ( $apis as $api ) {
 
-			$api['api_slug'] = $prepare_api_slug( $api['full_name'] );
+			$api['api_slug'] = $this->prepare_api_slug( $api['full_name'] );
 
 			if ( ! empty( $api['phpdoc']['parameters']['category'][0][0] )
 				&& isset( $categories[ $api['phpdoc']['parameters']['category'][0][0] ] ) ) {
@@ -122,8 +126,9 @@ EOT;
 				unset( $api['related'][ $i ] );
 				$api['related']     = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
-				$api_doc            = self::render( 'internal-api.mustache', $api );
-				$path               = WP_CLI_HANDBOOK_PATH . "/internal-api/{$api['api_slug']}.md";
+
+				$api_doc = self::render( 'internal-api.mustache', $api );
+				$path    = WP_CLI_HANDBOOK_PATH . "/internal-api/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
 					mkdir( dirname( $path ) );
 				}
@@ -134,6 +139,81 @@ EOT;
 
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/internal-api.md', $out );
 		WP_CLI::success( 'Generated internal-api/' );
+	}
+
+	/**
+	 * Generates Behat steps doc pages.
+	 *
+	 * @subcommand gen-behat-docs
+	 */
+	public function gen_behat_docs() {
+		$apis = $this->get_behat_steps();
+
+		$categories = [
+			'Given' => [],
+			'When'  => [],
+			'Then'  => [],
+		];
+
+		foreach ( $apis as $api ) {
+
+			$api['api_slug'] = $this->prepare_api_slug( $api['full_name'] );
+
+			if ( isset( $api['phpdoc']['parameters']['Given'] ) ) {
+				$categories['Given'][] = $api;
+			} elseif ( isset( $api['phpdoc']['parameters']['When'] ) ) {
+				$categories['When'][] = $api;
+			} elseif ( isset( $api['phpdoc']['parameters']['Then'] ) ) {
+				$categories['Then'][] = $api;
+			}
+		}
+		$out = <<<EOT
+# Behat Steps
+
+WP-CLI makes use of a Behat-based testing framework and provides a set of custom step definitions to write feature tests.
+
+*Behat steps documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
+***
+
+EOT;
+
+		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/behat-steps/' );
+
+		foreach ( $categories as $name => $apis ) {
+			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
+			$out .= self::render( 'behat-steps-list.mustache', [ 'apis' => $apis ] );
+			foreach ( $apis as $i => $api ) {
+				$api['category']             = $name;
+				$api['related']              = $apis;
+				$api['phpdoc']['parameters'] = array_map(
+					function ( $parameter ) {
+						foreach ( $parameter as $key => $values ) {
+							if ( isset( $values[2] ) ) {
+								$values[2]         = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
+								$parameter[ $key ] = $values;
+							}
+						}
+						return $parameter;
+					},
+					$api['phpdoc']['parameters']
+				);
+				unset( $api['related'][ $i ] );
+				$api['related']     = array_values( $api['related'] );
+				$api['has_related'] = ! empty( $api['related'] );
+
+				$api_doc = self::render( 'behat-steps.mustache', $api );
+				$path    = WP_CLI_HANDBOOK_PATH . "/behat-steps/{$api['api_slug']}.md";
+				if ( ! is_dir( dirname( $path ) ) ) {
+					mkdir( dirname( $path ) );
+				}
+				file_put_contents( $path, $api_doc );
+			}
+			$out .= PHP_EOL . PHP_EOL;
+		}
+
+		file_put_contents( WP_CLI_HANDBOOK_PATH . '/behat-steps.md', $out );
+		WP_CLI::success( 'Generated behat-steps/' );
 	}
 
 	/**
@@ -176,7 +256,7 @@ EOT;
 		$verbose = Utils\get_flag_value( $assoc_args, 'verbose', false );
 
 		foreach ( $wp['subcommands'] as $cmd ) {
-			if ( in_array( $cmd['name'], [ 'website', 'api-dump', 'handbook' ], true ) ) {
+			if ( in_array( $cmd['name'], [ 'website', 'handbook' ], true ) ) {
 				continue;
 			}
 			self::gen_cmd_pages( $cmd, [] /*parent*/, $verbose );
@@ -348,12 +428,7 @@ EOT;
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
 	}
 
-	/**
-	 * Dumps internal API PHPDoc to JSON.
-	 *
-	 * @subcommand api-dump
-	 */
-	public function api_dump() {
+	private function get_internal_apis() {
 		$apis      = [];
 		$functions = get_defined_functions();
 		foreach ( $functions['user'] as $function ) {
@@ -364,11 +439,13 @@ EOT;
 			}
 			$apis[] = self::get_simple_representation( $reflection );
 		}
+
 		$classes = get_declared_classes();
 		foreach ( $classes as $class ) {
 			if ( false === stripos( $class, 'WP_CLI' ) ) {
 				continue;
 			}
+
 			$reflection = new \ReflectionClass( $class );
 			foreach ( $reflection->getMethods() as $method ) {
 				$method_reflection = new \ReflectionMethod( $method->class, $method->name );
@@ -379,7 +456,33 @@ EOT;
 				$apis[] = self::get_simple_representation( $method_reflection );
 			}
 		}
-		echo json_encode( $apis );
+
+		return $apis;
+	}
+
+	private function get_behat_steps() {
+		$apis    = [];
+		$classes = [
+			'\WP_CLI\Tests\Context\FeatureContext',
+		];
+
+		foreach ( $classes as $class ) {
+			if ( false === stripos( $class, 'WP_CLI' ) ) {
+				continue;
+			}
+
+			$reflection = new \ReflectionClass( $class );
+			foreach ( $reflection->getMethods() as $method ) {
+				$method_reflection = new \ReflectionMethod( $method->class, $method->name );
+				$phpdoc            = $method_reflection->getDocComment();
+				if ( false === stripos( $phpdoc, '@access public' ) ) {
+					continue;
+				}
+				$apis[] = self::get_simple_representation( $method_reflection );
+			}
+		}
+
+		return $apis;
 	}
 
 	private static function gen_cmd_pages( $cmd, $parent = [], $verbose = false ) { // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
@@ -569,7 +672,7 @@ EOT;
 		} else {
 			$signature = $signature . '()';
 		}
-		$phpdoc = $reflection->getDocComment();
+		$phpdoc = self::parse_docblock( $reflection->getDocComment() );
 		$type   = strtolower( str_replace( 'Reflection', '', get_class( $reflection ) ) );
 		$class  = '';
 		switch ( $type ) {
@@ -584,8 +687,13 @@ EOT;
 				$full_name = $reflection->getName();
 				break;
 		}
+
+		if ( isset( $phpdoc['behat_step'] ) ) {
+			$full_name = $phpdoc['behat_step'];
+		}
+
 		return [
-			'phpdoc'     => self::parse_docblock( $phpdoc ),
+			'phpdoc'     => $phpdoc,
 			'type'       => $type,
 			'signature'  => $signature,
 			'short_name' => $reflection->getShortName(),
@@ -623,6 +731,11 @@ EOT;
 					preg_match( '/@(\w+)/', $info, $matches );
 					$param_name = $matches[1];
 					$value      = str_replace( "@$param_name ", '', $info );
+
+					if ( in_array( $param_name, [ 'Given', 'Then', 'When' ], true ) ) {
+						$ret['behat_step'] = "$param_name $value";
+					}
+
 					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
 						$ret['parameters'][ $param_name ] = [];
 					}
