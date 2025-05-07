@@ -10,11 +10,11 @@ Windows compatible `proc_open()`. Works around bug in PHP, and also deals with *
 
 <div>
 <strong>$cmd</strong> (string) Command to execute.<br />
-<strong>$descriptorspec</strong> (array) Indexed array of descriptor numbers and their values.<br />
-<strong>&amp;$pipes</strong> (array) Indexed array of file pointers that correspond to PHP's end of any pipes that are created.<br />
+<strong>string&gt;</strong> (array&lt;int,) $descriptorspec Indexed array of descriptor numbers and their values.<br />
+<strong>string&gt;</strong> (array&lt;int,) &$pipes         Indexed array of file pointers that correspond to PHP's end of any pipes that are created.<br />
 <strong>$cwd</strong> (string) Initial working directory for the command.<br />
-<strong>$env</strong> (array) Array of environment variables.<br />
-<strong>$other_options</strong> (array) Array of additional options (Windows only).<br />
+<strong>string&gt;</strong> (array&lt;string,) $env            Array of environment variables.<br />
+<strong>$other_options</strong> (array&lt;string&gt;) Array of additional options (Windows only).<br />
 <strong>@return</strong> (resource) stripped of any environment variable settings.<br />
 </div>
 

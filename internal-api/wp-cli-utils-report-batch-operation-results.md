@@ -15,6 +15,7 @@ Report the results of the same operation against multiple resources.
 <strong>$successes</strong> (integer) Number of successful operations.<br />
 <strong>$failures</strong> (integer) Number of failures.<br />
 <strong>$skips</strong> (null|integer) Optional. Number of skipped operations. Default null (don't show skips).<br />
+<strong>@return</strong> (void) <br />
 </div>
 
 

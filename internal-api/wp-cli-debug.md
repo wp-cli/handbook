@@ -11,7 +11,7 @@ Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.
 <div>
 <strong>$message</strong> (string|WP_Error|Exception|Throwable) Message to write to STDERR.<br />
 <strong>$group</strong> (string|bool) Organize debug message to a specific group.<br />
-<strong>@return</strong> (null) <br />
+<strong>@return</strong> (void) <br />
 </div>
 
 
