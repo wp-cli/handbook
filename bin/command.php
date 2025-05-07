@@ -408,6 +408,7 @@ EOT;
 				'parent'          => null,
 			];
 		}
+
 		// Internal API pages.
 		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
 			$slug     = basename( $file, '.md' );
@@ -426,6 +427,26 @@ EOT;
 				'parent'          => 'internal-api',
 			];
 		}
+
+		// Behat steps pages.
+		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/behat-steps/*.md' ) as $file ) {
+			$slug     = basename( $file, '.md' );
+			$title    = '';
+			$contents = file_get_contents( $file );
+			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
+				$title = $matches[1];
+			}
+			$manifest[ $slug ] = [
+				'title'           => $title,
+				'slug'            => $slug,
+				'markdown_source' => sprintf(
+					'https://github.com/wp-cli/handbook/blob/main/behat-steps/%s.md',
+					$slug
+				),
+				'parent'          => 'ibehat-stepsapi',
+			];
+		}
+
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
 	}
