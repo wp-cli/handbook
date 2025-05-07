@@ -10,7 +10,7 @@ Display success message prefixed with &quot;Success: &quot;.
 
 <div>
 <strong>$message</strong> (string) Message to write to STDOUT.<br />
-<strong>@return</strong> (null) <br />
+<strong>@return</strong> (void) <br />
 </div>
 
 
@@ -18,7 +18,7 @@ Display success message prefixed with &quot;Success: &quot;.
 
 ## Notes
 
-Success message is written to STDOUT.
+Success message is written to STDOUT, or discarded when `--quiet` flag is supplied.
 
 Typically recommended to inform user of successful script conclusion.
 

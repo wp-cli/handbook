@@ -10,8 +10,8 @@ Write data as CSV to a given file.
 
 <div>
 <strong>$fd</strong> (resource) File descriptor.<br />
-<strong>$rows</strong> (array) Array of rows to output.<br />
-<strong>$headers</strong> (array) List of CSV columns (optional).<br />
+<strong>$rows</strong> (array&lt;string&gt;) Array of rows to output.<br />
+<strong>$headers</strong> (array&lt;string&gt;) List of CSV columns (optional).<br />
 </div>
 
 

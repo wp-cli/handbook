@@ -9,6 +9,8 @@ Parse a SSH url for its host, port, and path.
     WP_CLI\Utils\parse_ssh_url( $url, $component = -1 )
 
 <div>
+<strong>$url</strong> (string) <br />
+<strong>$component</strong> (int) <br />
 <strong>@return</strong> (mixed) <br />
 </div>
 

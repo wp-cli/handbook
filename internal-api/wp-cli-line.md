@@ -10,7 +10,7 @@ Display informational message without prefix, and ignore `--quiet`.
 
 <div>
 <strong>$message</strong> (string) Message to display to the end user.<br />
-<strong>@return</strong> (null) <br />
+<strong>@return</strong> (void) <br />
 </div>
 
 

@@ -10,7 +10,7 @@ Parse a string of command line arguments into an $argv-esqe variable.
 
 <div>
 <strong>$arguments</strong> (string) <br />
-<strong>@return</strong> (array) <br />
+<strong>@return</strong> (array&lt;string&gt;) <br />
 </div>
 
 

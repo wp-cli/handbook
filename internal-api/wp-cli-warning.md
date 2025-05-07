@@ -10,7 +10,7 @@ Display warning message prefixed with &quot;Warning: &quot;.
 
 <div>
 <strong>$message</strong> (string|WP_Error|Exception|Throwable) Message to write to STDERR.<br />
-<strong>@return</strong> (null) <br />
+<strong>@return</strong> (void) <br />
 </div>
 
 
@@ -18,7 +18,7 @@ Display warning message prefixed with &quot;Warning: &quot;.
 
 ## Notes
 
-Warning message is written to STDERR.
+Warning message is written to STDERR, or discarded when `--quiet` flag is supplied.
 
 Use instead of `WP_CLI::debug()` when script execution should be permitted
 to continue.

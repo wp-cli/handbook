@@ -10,7 +10,7 @@ Run a WP-CLI command.
 
 <div>
 <strong>$command</strong> (string) WP-CLI command to run, including arguments.<br />
-<strong>$options</strong> (array) Configuration options for command execution.<br />
+<strong>$options</strong> (array) {<br />    Configuration options for command execution.<br />    @type bool        $launch     Launches a new process (true) or reuses the existing process (false). Default: true.<br />    @type bool        $exit_error Halts the script on error. Default: true.<br />    @type bool|string $return     Returns output as an object when set to 'all' (string), return just the 'stdout', 'stderr', or 'return_code' (string) of command, or print directly to stdout/stderr (false). Default: false.<br />    @type bool|string $parse      Parse returned output as 'json' (string); otherwise, output is unchanged (false). Default: false.<br />@param array $command_args Contains additional command line arguments for the command. Each element represents a single argument. Default: empty array.<br />}<br />
 <strong>@return</strong> (mixed) <br />
 </div>
 
