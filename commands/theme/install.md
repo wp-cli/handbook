@@ -13,6 +13,9 @@ Installs one or more themes.
 [\--force]
 : If set, the command will overwrite any installed version of the theme, without prompting for confirmation.
 
+[\--ignore-requirements]
+: If set, the command will install the theme while ignoring any WordPress or PHP version requirements specified by the theme authors.
+
 [\--activate]
 : If set, the theme will be activated immediately after install.
 

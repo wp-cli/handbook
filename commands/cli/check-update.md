@@ -21,7 +21,7 @@ Queries the GitHub releases API. Returns available versions if there are updates
 : Prints the value of a single field for each update.
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Defaults to version,update_type,package_url.
+: Limit the output to specific object fields. Defaults to version,update_type,package_url,status,requires_php.
 
 [\--format=&lt;format&gt;]
 : Render output in a particular format.

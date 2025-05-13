@@ -2,6 +2,8 @@
 
 Lists signups.
 
+### OPTIONS
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : Filter the list by a specific field.
 

@@ -1,24 +1,27 @@
-# wp post meta get
+# wp cache pluck
 
-Get meta field value.
+Get a nested value from the cache.
 
 ### OPTIONS
 
-&lt;id&gt;
-: The ID of the object.
-
 &lt;key&gt;
-: The name of the meta field to get.
+: Cache key.
 
-[\--single]
-: Whether to return a single value.
+&lt;key-path&gt;...
+: The name(s) of the keys within the value to locate the value to pluck.
+
+[\--group=&lt;group&gt;]
+: Method for grouping data within the cache which allows the same key to be used across groups.
+\---
+default: default
+\---
 
 [\--format=&lt;format&gt;]
-: Get value in a particular format.
+: The output format of the value.
 \---
-default: var_export
+default: plaintext
 options:
-  - var_export
+  - plaintext
   - json
   - yaml
 \---
