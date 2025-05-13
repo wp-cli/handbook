@@ -1,27 +1,27 @@
-# wp post meta get
+# wp transient pluck
 
-Get meta field value.
+Get a nested value from a transient.
 
 ### OPTIONS
 
-&lt;id&gt;
-: The ID of the object.
-
 &lt;key&gt;
-: The name of the meta field to get.
+: Key for the transient.
 
-[\--single]
-: Whether to return a single value.
+&lt;key-path&gt;...
+: The name(s) of the keys within the value to locate the value to pluck.
 
 [\--format=&lt;format&gt;]
-: Get value in a particular format.
+: The output format of the value.
 \---
-default: var_export
+default: plaintext
 options:
-  - var_export
+  - plaintext
   - json
   - yaml
 \---
+
+[\--network]
+: Get the value of a network|site transient. On single site, this is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
 
 ### GLOBAL PARAMETERS
 

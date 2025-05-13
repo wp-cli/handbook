@@ -13,6 +13,9 @@ Installs one or more plugins.
 [\--force]
 : If set, the command will overwrite any installed version of the plugin, without prompting for confirmation.
 
+[\--ignore-requirements]
+:If set, the command will install the plugin while ignoring any WordPress or PHP version requirements specified by the plugin authors.
+
 [\--activate]
 : If set, the plugin will be activated immediately after install.
 

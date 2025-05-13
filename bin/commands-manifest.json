@@ -2119,6 +2119,22 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/transient\/list.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
     },
+    "transient\/patch": {
+        "title": "transient patch",
+        "slug": "patch",
+        "cmd_path": "transient\/patch",
+        "parent": "transient",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/transient\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
+    },
+    "transient\/pluck": {
+        "title": "transient pluck",
+        "slug": "pluck",
+        "cmd_path": "transient\/pluck",
+        "parent": "transient",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/transient\/pluck.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
+    },
     "transient\/set": {
         "title": "transient set",
         "slug": "set",

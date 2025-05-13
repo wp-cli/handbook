@@ -66,6 +66,8 @@ These fields are optionally available:
 * file
 * author
 * tested_up_to
+* requires
+* requires_php
 * wporg_status
 * wporg_last_updated
 

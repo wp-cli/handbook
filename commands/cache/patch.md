@@ -1,26 +1,46 @@
-# wp post meta get
+# wp cache patch
 
-Get meta field value.
+Update a nested value from the cache.
 
 ### OPTIONS
 
-&lt;id&gt;
-: The ID of the object.
+&lt;action&gt;
+: Patch action to perform.
+\---
+options:
+  - insert
+  - update
+  - delete
+\---
 
 &lt;key&gt;
-: The name of the meta field to get.
+: Cache key.
 
-[\--single]
-: Whether to return a single value.
+&lt;key-path&gt;...
+: The name(s) of the keys within the value to locate the value to patch.
+
+[&lt;value&gt;]
+: The new value. If omitted, the value is read from STDIN.
+
+[\--group=&lt;group&gt;]
+: Method for grouping data within the cache which allows the same key to be used across groups.
+\---
+default: default
+\---
+
+[\--expiration=&lt;expiration&gt;]
+ : Define how long to keep the value, in seconds. `0` means as long as possible.
+ ---
+ default: 0
+ ---
 
 [\--format=&lt;format&gt;]
-: Get value in a particular format.
+: The serialization format for the value.
 \---
-default: var_export
+default: plaintext
 options:
-  - var_export
+  - plaintext
   - json
-  - yaml
 \---
 
 ### GLOBAL PARAMETERS

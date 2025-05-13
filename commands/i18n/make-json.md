@@ -16,6 +16,12 @@ See https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wo
 [&lt;destination&gt;]
 : Path to the destination directory for the resulting JSON files. Defaults to the source directory.
 
+[\--domain=&lt;domain&gt;]
+: Text domain to use for the JSON file name. Overrides the default one extracted from the PO file.
+
+[\--extensions=&lt;extensions&gt;]
+: Additional custom JS extensions, comma separated list. By default searches for .min.js and .js extensions.
+
 [\--purge]
 : Whether to purge the strings that were extracted from the original source file. Defaults to true, use `--no-purge` to skip the removal.
 

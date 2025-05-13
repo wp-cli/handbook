@@ -30,6 +30,9 @@ Use one distribution archive command for many projects, instead of a bash script
 [\--create-target-dir]
 : Automatically create the target directory as needed.
 
+[\--force]
+: Forces overwriting of the archive file if it already exists.
+
 [\--plugin-dirname=&lt;plugin-slug&gt;]
 : Set the archive extract directory name. Defaults to project directory name.
 
