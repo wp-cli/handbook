@@ -519,282 +519,282 @@
         "title": "Given a custom wp-content directory",
         "slug": "given-a-custom-wp-content-directory",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-custom-wp-content-directory.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-database": {
         "title": "Given a database",
         "slug": "given-a-database",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-database.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-dependency-on-current-wp-cli": {
         "title": "Given a dependency on current wp-cli",
         "slug": "given-a-dependency-on-current-wp-cli",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-dependency-on-current-wp-cli.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-downloaded-phar-with-the-same-version-version": {
         "title": "Given \/^a downloaded Phar with (?:the same version|version &quot;([^&quot;]+)&quot;)$\/",
         "slug": "given-a-downloaded-phar-with-the-same-version-version",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-downloaded-phar-with-the-same-version-version.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-misconfigured-wp-content-dir-constant-directory": {
         "title": "Given a misconfigured WP_CONTENT_DIR constant directory",
         "slug": "given-a-misconfigured-wp-content-dir-constant-directory",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-misconfigured-wp-content-dir-constant-directory.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-new-phar-with-the-same-version-version": {
         "title": "Given \/^a new Phar with (?:the same version|version &quot;([^&quot;]+)&quot;)$\/",
         "slug": "given-a-new-phar-with-the-same-version-version",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-new-phar-with-the-same-version-version.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-php-built-in-web-server-to-serve-subdir": {
         "title": "Given a PHP built-in web server to serve :subdir",
         "slug": "given-a-php-built-in-web-server-to-serve-subdir",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-php-built-in-web-server-to-serve-subdir.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-php-built-in-web-server": {
         "title": "Given a PHP built-in web server",
         "slug": "given-a-php-built-in-web-server",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-php-built-in-web-server.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-wp-installation-in-subdir": {
         "title": "Given a WP install(ation) in :subdir",
         "slug": "given-a-wp-installation-in-subdir",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-wp-installation-in-subdir.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-wp-installation-with-composer-and-a-custom-vendor-directory-vendor-directory": {
         "title": "Given a WP install(ation) with Composer and a custom vendor directory :vendor_directory",
         "slug": "given-a-wp-installation-with-composer-and-a-custom-vendor-directory-vendor-directory",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-wp-installation-with-composer-and-a-custom-vendor-directory-vendor-directory.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-wp-installation-with-composer": {
         "title": "Given a WP install(ation) with Composer",
         "slug": "given-a-wp-installation-with-composer",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-wp-installation-with-composer.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-wp-installation": {
         "title": "Given a WP install(ation)",
         "slug": "given-a-wp-installation",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-wp-installation.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-a-wp-multisite-subdirectory-subdomaininstall-installation": {
         "title": "Given \/^a WP multisite (subdirectory|subdomain)?\\s?(install|installation)$\/",
         "slug": "given-a-wp-multisite-subdirectory-subdomaininstall-installation",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-a-wp-multisite-subdirectory-subdomaininstall-installation.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-an-empty-cache": {
         "title": "Given an empty cache",
         "slug": "given-an-empty-cache",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-an-empty-cache.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-an-empty-directory": {
         "title": "Given an empty directory",
         "slug": "given-an-empty-directory",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-an-empty-directory.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-an-empty-non-existent-directory": {
         "title": "Given \/^an? (empty|non-existent) ([^\\s]+) directory$\/",
         "slug": "given-an-empty-non-existent-directory",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-an-empty-non-existent-directory.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-an-file-cache-file": {
         "title": "Given \/^an? ([^\\s]+) (file|cache file):$\/",
         "slug": "given-an-file-cache-file",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-an-file-cache-file.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-download": {
         "title": "Given download:",
         "slug": "given-download",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-download.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-replaced-with-in-the-file": {
         "title": "Given \/^&quot;([^&quot;]+)&quot; replaced with &quot;([^&quot;]+)&quot; in the ([^\\s]+) file$\/",
         "slug": "given-replaced-with-in-the-file",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-replaced-with-in-the-file.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-save-stdout-stderr-as": {
         "title": "Given \/^save (STDOUT|STDERR) ([\\'].+[^\\'])?\\s?as \\{(\\w+)\\}$\/",
         "slug": "given-save-stdout-stderr-as",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-save-stdout-stderr-as.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-save-the-file-as": {
         "title": "Given \/^save the (.+) file ([\\'].+[^\\'])?as \\{(\\w+)\\}$\/",
         "slug": "given-save-the-file-as",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-save-the-file-as.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-that-http-requests-to-will-respond-with": {
         "title": "Given \/^that HTTP requests to (.*?) will respond with:$\/",
         "slug": "given-that-http-requests-to-will-respond-with",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-that-http-requests-to-will-respond-with.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-these-installed-and-active-plugins": {
         "title": "Given these installed and active plugins:",
         "slug": "given-these-installed-and-active-plugins",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-these-installed-and-active-plugins.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-wp-config-php": {
         "title": "Given wp-config.php",
         "slug": "given-wp-config-php",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-wp-config-php.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "given-wp-files": {
         "title": "Given WP files",
         "slug": "given-wp-files",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/given-wp-files.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-an-email-should-be-sent-not-be-sent": {
         "title": "Then \/^an email should (be sent|not be sent)$\/",
         "slug": "then-an-email-should-be-sent-not-be-sent",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-an-email-should-be-sent-not-be-sent.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-should-be-a-json-array-containing": {
         "title": "Then \/^STDOUT should be a JSON array containing:$\/",
         "slug": "then-stdout-should-be-a-json-array-containing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-should-be-a-json-array-containing.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-should-be-a-table-containing-rows": {
         "title": "Then \/^STDOUT should be a table containing rows:$\/",
         "slug": "then-stdout-should-be-a-table-containing-rows",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-should-be-a-table-containing-rows.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-should-be-csv-containing": {
         "title": "Then \/^STDOUT should be CSV containing:$\/",
         "slug": "then-stdout-should-be-csv-containing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-should-be-csv-containing.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-should-be-json-containing": {
         "title": "Then \/^STDOUT should be JSON containing:$\/",
         "slug": "then-stdout-should-be-json-containing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-should-be-json-containing.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-should-be-yaml-containing": {
         "title": "Then \/^STDOUT should be YAML containing:$\/",
         "slug": "then-stdout-should-be-yaml-containing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-should-be-yaml-containing.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-should-end-with-a-table-containing-rows": {
         "title": "Then \/^STDOUT should end with a table containing rows:$\/",
         "slug": "then-stdout-should-end-with-a-table-containing-rows",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-should-end-with-a-table-containing-rows.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-be-a-number": {
         "title": "Then \/^(STDOUT|STDERR) should be a number$\/",
         "slug": "then-stdout-stderr-should-be-a-number",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-be-a-number.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-be-a-version-string-w": {
         "title": "Then \/^(STDOUT|STDERR) should be a version string (&lt;|&lt;=|&gt;|&gt;=|==|=|!=|&lt;&gt;) ([+\\w.{}-]+)$\/",
         "slug": "then-stdout-stderr-should-be-a-version-string-w",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-be-a-version-string-w.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-be-empty": {
         "title": "Then \/^(STDOUT|STDERR) should be empty$\/",
         "slug": "then-stdout-stderr-should-be-empty",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-be-empty.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-not-be-a-number": {
         "title": "Then \/^(STDOUT|STDERR) should not be a number$\/",
         "slug": "then-stdout-stderr-should-not-be-a-number",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-not-be-a-number.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-not-be-empty": {
         "title": "Then \/^(STDOUT|STDERR) should not be empty$\/",
         "slug": "then-stdout-stderr-should-not-be-empty",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-not-be-empty.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-not-match": {
         "title": "Then \/^(STDOUT|STDERR) should( not)? match (((\\\/.+\\\/)|(#.+#))([a-z]+)?)$\/",
         "slug": "then-stdout-stderr-should-not-match",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-not-match.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-stdout-stderr-should-strictly-be-contain-not-contain": {
         "title": "Then \/^(STDOUT|STDERR) should( strictly)? (be|contain|not contain):$\/",
         "slug": "then-stdout-stderr-should-strictly-be-contain-not-contain",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-stdout-stderr-should-strictly-be-contain-not-contain.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-the-contents-of-the-file-should-not-match": {
         "title": "Then \/^the contents of the (.+) file should( not)? match (((\\\/.+\\\/)|(#.+#))([a-z]+)?)$\/",
         "slug": "then-the-contents-of-the-file-should-not-match",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-the-contents-of-the-file-should-not-match.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-the-file-directory-should-strictly-exist-not-exist-be-contain-not-contain": {
         "title": "Then \/^the (.+) (file|directory) should( strictly)? (exist|not exist|be:|contain:|not contain:)$\/",
         "slug": "then-the-file-directory-should-strictly-exist-not-exist-be-contain-not-contain",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-the-file-directory-should-strictly-exist-not-exist-be-contain-not-contain.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-the-http-status-code-should-be-code": {
         "title": "Then the HTTP status code should be :code",
         "slug": "then-the-http-status-code-should-be-code",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-the-http-status-code-should-be-code.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "then-the-return-code-should-not-be": {
         "title": "Then \/^the return code should( not)? be (\\d+)$\/",
         "slug": "then-the-return-code-should-not-be",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/then-the-return-code-should-not-be.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "when-i-launch-in-the-background": {
         "title": "When \/^I launch in the background `([^`]+)`$\/",
         "slug": "when-i-launch-in-the-background",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/when-i-launch-in-the-background.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "when-i-run-try-from": {
         "title": "When \/^I (run|try) `([^`]+)` from '([^\\s]+)'$\/",
         "slug": "when-i-run-try-from",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/when-i-run-try-from.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "when-i-run-try-the-previous-command-again": {
         "title": "When \/^I (run|try) the previous command again$\/",
         "slug": "when-i-run-try-the-previous-command-again",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/when-i-run-try-the-previous-command-again.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     },
     "when-i-run-try": {
         "title": "When \/^I (run|try) `([^`]+)`$\/",
         "slug": "when-i-run-try",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/behat-steps\/when-i-run-try.md",
-        "parent": "ibehat-stepsapi"
+        "parent": "behat-steps"
     }
 }
