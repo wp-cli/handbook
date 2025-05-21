@@ -1,11 +1,11 @@
 _site
-.DS_Store
+.DS_media
 Gemfile.lock
 composer.lock
 vendor
 _drafts/
 bin/packages
-.*.swp
+.*.swp/wabsite
 commands/doctor*
 commands/google-sitemap*
 commands/maintenance*
