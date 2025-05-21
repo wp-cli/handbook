@@ -73,6 +73,7 @@ In alphabetical order:
 * [ScanNet](https://www.scannet.dk)
 * [Seravo.com](https://seravo.com)
 * [Servebolt.com](https://servebolt.com)
+* [Simplenet.ro](https://simplenet.ro)
 * [Simply.com](https://www.simply.com)
 * [Site5](https://www.site5.com/)
 * [SiteDistrict](https://sitedistrict.com/)
