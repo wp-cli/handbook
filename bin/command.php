@@ -443,7 +443,7 @@ EOT;
 					'https://github.com/wp-cli/handbook/blob/main/behat-steps/%s.md',
 					$slug
 				),
-				'parent'          => 'ibehat-stepsapi',
+				'parent'          => 'behat-steps',
 			];
 		}
 
