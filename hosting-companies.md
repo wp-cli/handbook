@@ -6,6 +6,7 @@ In alphabetical order:
 
 * [2020Media](https://www.2020media.com/)
 * [20i](https://www.20i.com/)
+* [34SP.com](https://www.34sp.com)
 * [A2 Hosting](https://www.a2hosting.com/)
 * [Alldomains.Hosting](https://alldomains.hosting/webhosting-server.html)
 * [Altis Cloud Platform](https://www.altis-dxp.com/)
