@@ -15,7 +15,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Force output to a specific locale](https://make.wordpress.org/cli/handbook/guides/force-output-specific-locale/)** - Localisation issue
 * **[Identify a Plugin or Theme Conflict](https://make.wordpress.org/cli/handbook/guides/identify-plugin-theme-conflict/)** - Debugging advise
 * **[Sharing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/sharing-wp-cli-packages/)** - Some words about your environment
-* **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to troubleshoot 
+* **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to troubleshoot
 
 ## References
 
@@ -41,7 +41,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Roadmap](https://make.wordpress.org/cli/handbook/contributions/roadmap/)** - Where WP-CLI is going in the future.
 * **[Code Review](https://make.wordpress.org/cli/handbook/contributions/code-review/)** - Quality Assurance on WP-CLI
 * **[Committers credo](https://make.wordpress.org/cli/handbook/contributions/committers-credo/)** - Product quality, Stellar judgement, Consistent participation
-* **[Repository Management](https://make.wordpress.org/cli/handbook/contributions/repository-management/)** - Naming, Versions, Milestones, Labels 
+* **[Repository Management](https://make.wordpress.org/cli/handbook/contributions/repository-management/)** - Naming, Versions, Milestones, Labels
 
 ## Misc
 
