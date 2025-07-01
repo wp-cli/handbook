@@ -387,14 +387,57 @@ EOT;
 	 */
 	public function gen_hb_manifest() {
 		$manifest = [];
-		// Top-level pages
-		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/*.md' ) as $file ) {
-			$slug = basename( $file, '.md' );
-			if ( 'README' === $slug ) {
+
+		$ignored_dirs = [
+			'.git',
+			'.github',
+			'bin',
+			'commands',
+			'vendor',
+		];
+
+		$files = new \RecursiveIteratorIterator(
+			new \RecursiveCallbackFilterIterator(
+				new \RecursiveDirectoryIterator( WP_CLI_HANDBOOK_PATH, \RecursiveDirectoryIterator::SKIP_DOTS ),
+				static function ( $file ) use ( $ignored_dirs ) {
+					/** @var SplFileInfo $file */
+
+					if ( $file->isDir() && in_array( $file->getBasename(), $ignored_dirs, true ) ) {
+						return false;
+					}
+
+					if ( $file->isFile() && $file->getExtension() !== 'md' ) {
+						return false;
+					}
+
+					if ( 'README.md' === $file->getBasename() ) {
+						return false;
+					}
+
+					return true;
+				}
+			),
+			\RecursiveIteratorIterator::CHILD_FIRST
+		);
+
+		foreach ( $files as $file ) {
+			if ( $file->isDir() ) {
 				continue;
 			}
+
+			$rel_path = str_replace( WP_CLI_HANDBOOK_PATH . '/', '', $file->getPathname() );
+
+			$path = explode( '/', $rel_path );
+			array_pop( $path );
+
+			$parent = ! empty( $path ) ? end( $path ) : null;
+
+			$path = implode( '/', $path );
+
+			$slug = $file->getBasename( '.md' );
+
 			$title    = '';
-			$contents = file_get_contents( $file );
+			$contents = file_get_contents( $file->getPathname() );
 			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
 				$title = $matches[1];
 			}
@@ -402,50 +445,14 @@ EOT;
 				'title'           => $title,
 				'slug'            => 'index' === $slug ? 'handbook' : $slug,
 				'markdown_source' => sprintf(
-					'https://github.com/wp-cli/handbook/blob/main/%s.md',
-					$slug
+					'https://github.com/wp-cli/handbook/blob/main/%s',
+					$rel_path
 				),
-				'parent'          => null,
+				'parent'          => $parent,
 			];
 		}
 
-		// Internal API pages.
-		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
-			$slug     = basename( $file, '.md' );
-			$title    = '';
-			$contents = file_get_contents( $file );
-			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
-				$title = $matches[1];
-			}
-			$manifest[ $slug ] = [
-				'title'           => $title,
-				'slug'            => $slug,
-				'markdown_source' => sprintf(
-					'https://github.com/wp-cli/handbook/blob/main/internal-api/%s.md',
-					$slug
-				),
-				'parent'          => 'internal-api',
-			];
-		}
-
-		// Behat steps pages.
-		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/behat-steps/*.md' ) as $file ) {
-			$slug     = basename( $file, '.md' );
-			$title    = '';
-			$contents = file_get_contents( $file );
-			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
-				$title = $matches[1];
-			}
-			$manifest[ $slug ] = [
-				'title'           => $title,
-				'slug'            => $slug,
-				'markdown_source' => sprintf(
-					'https://github.com/wp-cli/handbook/blob/main/behat-steps/%s.md',
-					$slug
-				),
-				'parent'          => 'behat-steps',
-			];
-		}
+		ksort( $manifest );
 
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
