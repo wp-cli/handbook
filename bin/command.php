@@ -92,7 +92,7 @@ class Command {
 				$categories['Misc'][] = $api;
 			}
 		}
-		$out = <<<EOT
+		$out = <<<'EOT'
 # Internal API
 
 WP-CLI includes a number of utilities which are considered stable and meant to be used by commands.
@@ -169,7 +169,7 @@ EOT;
 				$categories['Then'][] = $api;
 			}
 		}
-		$out = <<<EOT
+		$out = <<<'EOT'
 # Behat Steps
 
 WP-CLI makes use of a Behat-based testing framework and provides a set of custom step definitions to write feature tests.
@@ -617,7 +617,7 @@ EOT;
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 			$docs = preg_replace( '/ &amp;&amp; /', ' && ', $docs );
 
-			$global_parameters = <<<EOT
+			$global_parameters = <<<'EOT'
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
 | **Argument**    | **Description**              |
