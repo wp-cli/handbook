@@ -53,6 +53,7 @@ In alphabetical order:
 * [LH.pl](https://www.lh.pl/hosting)
 * [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Liquid Web](https://liquidweb.com/wordpress)
+* [LucusHost](https://www.lucushost.com/hosting-wordpress)
 * [ManagedWPHosting](https://www.managedwphosting.nl/)
 * [MinHost](https://minhost.no)
 * [Mittwald](https://www.mittwald.de/)
