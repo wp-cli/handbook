@@ -280,7 +280,9 @@ EOT;
 		if ( $reflection->hasProperty( 'when_invoked' ) ) {
 			$filename     = '';
 			$when_invoked = $reflection->getProperty( 'when_invoked' );
-			$when_invoked->setAccessible( true );
+			if ( PHP_VERSION_ID < 80100 ) {
+				$when_invoked->setAccessible( true );
+			}
 			$closure            = $when_invoked->getValue( $command );
 			$closure_reflection = new \ReflectionFunction( $closure );
 			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
