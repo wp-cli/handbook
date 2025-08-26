@@ -38,10 +38,32 @@ class Command {
 		}
 
 		self::gen_api_docs();
+		self::gen_behat_docs();
 		self::gen_commands( $args, $assoc_args );
 		self::gen_commands_manifest();
 		self::gen_hb_manifest();
 		WP_CLI::success( 'Generated all doc pages.' );
+	}
+
+	private function prepare_api_slug( $full_name ) {
+		$replacements = [
+			'\\w+' => '',
+			'\\s'  => '',
+			'\\d'  => '',
+			'a-z'  => '',
+			's?'   => '',
+			'::'   => '-',
+			'_'    => '-',
+			'\\'   => '-',
+			' '    => '-',
+			'.'    => '-',
+			'|'    => '-',
+		];
+		$full_name    = strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
+		$full_name    = preg_replace( '/[^a-zA-Z0-9-]/', '', $full_name );
+		$full_name    = preg_replace( '/-+/', '-', $full_name );
+		$full_name    = trim( $full_name, '-' );
+		return $full_name;
 	}
 
 	/**
@@ -50,14 +72,8 @@ class Command {
 	 * @subcommand gen-api-docs
 	 */
 	public function gen_api_docs() {
-		$apis       = WP_CLI::runcommand(
-			'handbook api-dump',
-			[
-				'launch' => false,
-				'return' => 'stdout',
-				'parse'  => 'json',
-			]
-		);
+		$apis = $this->get_internal_apis();
+
 		$categories = [
 			'Registration' => [],
 			'Output'       => [],
@@ -67,19 +83,9 @@ class Command {
 			'Misc'         => [],
 		];
 
-		$prepare_api_slug = function ( $full_name ) {
-			$replacements = [
-				'()' => '',
-				'::' => '-',
-				'_'  => '-',
-				'\\' => '-',
-			];
-			return strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
-		};
-
 		foreach ( $apis as $api ) {
 
-			$api['api_slug'] = $prepare_api_slug( $api['full_name'] );
+			$api['api_slug'] = $this->prepare_api_slug( $api['full_name'] );
 
 			if ( ! empty( $api['phpdoc']['parameters']['category'][0][0] )
 				&& isset( $categories[ $api['phpdoc']['parameters']['category'][0][0] ] ) ) {
@@ -88,7 +94,7 @@ class Command {
 				$categories['Misc'][] = $api;
 			}
 		}
-		$out = <<<EOT
+		$out = <<<'EOT'
 # Internal API
 
 WP-CLI includes a number of utilities which are considered stable and meant to be used by commands.
@@ -124,8 +130,9 @@ EOT;
 				unset( $api['related'][ $i ] );
 				$api['related']     = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
-				$api_doc            = self::render( 'internal-api.mustache', $api );
-				$path               = WP_CLI_HANDBOOK_PATH . "/internal-api/{$api['api_slug']}.md";
+
+				$api_doc = self::render( 'internal-api.mustache', $api );
+				$path    = WP_CLI_HANDBOOK_PATH . "/internal-api/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
 					mkdir( dirname( $path ) );
 				}
@@ -136,6 +143,81 @@ EOT;
 
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/internal-api.md', $out );
 		WP_CLI::success( 'Generated internal-api/' );
+	}
+
+	/**
+	 * Generates Behat steps doc pages.
+	 *
+	 * @subcommand gen-behat-docs
+	 */
+	public function gen_behat_docs() {
+		$apis = $this->get_behat_steps();
+
+		$categories = [
+			'Given' => [],
+			'When'  => [],
+			'Then'  => [],
+		];
+
+		foreach ( $apis as $api ) {
+
+			$api['api_slug'] = $this->prepare_api_slug( $api['full_name'] );
+
+			if ( isset( $api['phpdoc']['parameters']['Given'] ) ) {
+				$categories['Given'][] = $api;
+			} elseif ( isset( $api['phpdoc']['parameters']['When'] ) ) {
+				$categories['When'][] = $api;
+			} elseif ( isset( $api['phpdoc']['parameters']['Then'] ) ) {
+				$categories['Then'][] = $api;
+			}
+		}
+		$out = <<<'EOT'
+# Behat Steps
+
+WP-CLI makes use of a Behat-based testing framework and provides a set of custom step definitions to write feature tests.
+
+*Behat steps documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
+
+***
+
+EOT;
+
+		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/behat-steps/' );
+
+		foreach ( $categories as $name => $apis ) {
+			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
+			$out .= self::render( 'behat-steps-list.mustache', [ 'apis' => $apis ] );
+			foreach ( $apis as $i => $api ) {
+				$api['category']             = $name;
+				$api['related']              = $apis;
+				$api['phpdoc']['parameters'] = array_map(
+					function ( $parameter ) {
+						foreach ( $parameter as $key => $values ) {
+							if ( isset( $values[2] ) ) {
+								$values[2]         = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
+								$parameter[ $key ] = $values;
+							}
+						}
+						return $parameter;
+					},
+					$api['phpdoc']['parameters']
+				);
+				unset( $api['related'][ $i ] );
+				$api['related']     = array_values( $api['related'] );
+				$api['has_related'] = ! empty( $api['related'] );
+
+				$api_doc = self::render( 'behat-steps.mustache', $api );
+				$path    = WP_CLI_HANDBOOK_PATH . "/behat-steps/{$api['api_slug']}.md";
+				if ( ! is_dir( dirname( $path ) ) ) {
+					mkdir( dirname( $path ) );
+				}
+				file_put_contents( $path, $api_doc );
+			}
+			$out .= PHP_EOL . PHP_EOL;
+		}
+
+		file_put_contents( WP_CLI_HANDBOOK_PATH . '/behat-steps.md', $out );
+		WP_CLI::success( 'Generated behat-steps/' );
 	}
 
 	/**
@@ -178,7 +260,7 @@ EOT;
 		$verbose = Utils\get_flag_value( $assoc_args, 'verbose', false );
 
 		foreach ( $wp['subcommands'] as $cmd ) {
-			if ( in_array( $cmd['name'], [ 'website', 'api-dump', 'handbook' ], true ) ) {
+			if ( in_array( $cmd['name'], [ 'website', 'handbook' ], true ) ) {
 				continue;
 			}
 			self::gen_cmd_pages( $cmd, [] /*parent*/, $verbose );
@@ -200,7 +282,9 @@ EOT;
 		if ( $reflection->hasProperty( 'when_invoked' ) ) {
 			$filename     = '';
 			$when_invoked = $reflection->getProperty( 'when_invoked' );
-			$when_invoked->setAccessible( true );
+			if ( PHP_VERSION_ID < 80100 ) {
+				$when_invoked->setAccessible( true );
+			}
 			$closure            = $when_invoked->getValue( $command );
 			$closure_reflection = new \ReflectionFunction( $closure );
 			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
@@ -307,14 +391,57 @@ EOT;
 	 */
 	public function gen_hb_manifest() {
 		$manifest = [];
-		// Top-level pages
-		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/*.md' ) as $file ) {
-			$slug = basename( $file, '.md' );
-			if ( 'README' === $slug ) {
+
+		$ignored_dirs = [
+			'.git',
+			'.github',
+			'bin',
+			'commands',
+			'vendor',
+		];
+
+		$files = new \RecursiveIteratorIterator(
+			new \RecursiveCallbackFilterIterator(
+				new \RecursiveDirectoryIterator( WP_CLI_HANDBOOK_PATH, \RecursiveDirectoryIterator::SKIP_DOTS ),
+				static function ( $file ) use ( $ignored_dirs ) {
+					/** @var SplFileInfo $file */
+
+					if ( $file->isDir() && in_array( $file->getBasename(), $ignored_dirs, true ) ) {
+						return false;
+					}
+
+					if ( $file->isFile() && $file->getExtension() !== 'md' ) {
+						return false;
+					}
+
+					if ( 'README.md' === $file->getBasename() ) {
+						return false;
+					}
+
+					return true;
+				}
+			),
+			\RecursiveIteratorIterator::CHILD_FIRST
+		);
+
+		foreach ( $files as $file ) {
+			if ( $file->isDir() ) {
 				continue;
 			}
+
+			$rel_path = str_replace( WP_CLI_HANDBOOK_PATH . '/', '', $file->getPathname() );
+
+			$path = explode( '/', $rel_path );
+			array_pop( $path );
+
+			$parent = ! empty( $path ) ? end( $path ) : null;
+
+			$path = implode( '/', $path );
+
+			$slug = $file->getBasename( '.md' );
+
 			$title    = '';
-			$contents = file_get_contents( $file );
+			$contents = file_get_contents( $file->getPathname() );
 			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
 				$title = $matches[1];
 			}
@@ -322,40 +449,20 @@ EOT;
 				'title'           => $title,
 				'slug'            => 'index' === $slug ? 'handbook' : $slug,
 				'markdown_source' => sprintf(
-					'https://github.com/wp-cli/handbook/blob/main/%s.md',
-					$slug
+					'https://github.com/wp-cli/handbook/blob/main/%s',
+					$rel_path
 				),
-				'parent'          => null,
+				'parent'          => $parent,
 			];
 		}
-		// Internal API pages.
-		foreach ( glob( WP_CLI_HANDBOOK_PATH . '/internal-api/*.md' ) as $file ) {
-			$slug     = basename( $file, '.md' );
-			$title    = '';
-			$contents = file_get_contents( $file );
-			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
-				$title = $matches[1];
-			}
-			$manifest[ $slug ] = [
-				'title'           => $title,
-				'slug'            => $slug,
-				'markdown_source' => sprintf(
-					'https://github.com/wp-cli/handbook/blob/main/internal-api/%s.md',
-					$slug
-				),
-				'parent'          => 'internal-api',
-			];
-		}
+
+		ksort( $manifest );
+
 		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
 	}
 
-	/**
-	 * Dumps internal API PHPDoc to JSON.
-	 *
-	 * @subcommand api-dump
-	 */
-	public function api_dump() {
+	private function get_internal_apis() {
 		$apis      = [];
 		$functions = get_defined_functions();
 		foreach ( $functions['user'] as $function ) {
@@ -366,11 +473,13 @@ EOT;
 			}
 			$apis[] = self::get_simple_representation( $reflection );
 		}
+
 		$classes = get_declared_classes();
 		foreach ( $classes as $class ) {
 			if ( false === stripos( $class, 'WP_CLI' ) ) {
 				continue;
 			}
+
 			$reflection = new \ReflectionClass( $class );
 			foreach ( $reflection->getMethods() as $method ) {
 				$method_reflection = new \ReflectionMethod( $method->class, $method->name );
@@ -381,7 +490,33 @@ EOT;
 				$apis[] = self::get_simple_representation( $method_reflection );
 			}
 		}
-		echo json_encode( $apis );
+
+		return $apis;
+	}
+
+	private function get_behat_steps() {
+		$apis    = [];
+		$classes = [
+			'\WP_CLI\Tests\Context\FeatureContext',
+		];
+
+		foreach ( $classes as $class ) {
+			if ( false === stripos( $class, 'WP_CLI' ) ) {
+				continue;
+			}
+
+			$reflection = new \ReflectionClass( $class );
+			foreach ( $reflection->getMethods() as $method ) {
+				$method_reflection = new \ReflectionMethod( $method->class, $method->name );
+				$phpdoc            = $method_reflection->getDocComment();
+				if ( false === stripos( $phpdoc, '@access public' ) ) {
+					continue;
+				}
+				$apis[] = self::get_simple_representation( $method_reflection );
+			}
+		}
+
+		return $apis;
 	}
 
 	/**
@@ -492,10 +627,11 @@ EOT;
 			$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
 			$docs = preg_replace( '/&quot;/', '"', $docs );
 			$docs = preg_replace( '/wp&gt; /', 'wp> ', $docs );
+			$docs = preg_replace( '/2&gt;\//', '2>/', $docs );
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 			$docs = preg_replace( '/ &amp;&amp; /', ' && ', $docs );
 
-			$global_parameters = <<<EOT
+			$global_parameters = <<<'EOT'
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 
 | **Argument**    | **Description**              |
@@ -580,7 +716,7 @@ EOT;
 		} else {
 			$signature = $signature . '()';
 		}
-		$phpdoc = $reflection->getDocComment();
+		$phpdoc = self::parse_docblock( $reflection->getDocComment() );
 		$type   = strtolower( str_replace( 'Reflection', '', get_class( $reflection ) ) );
 		$class  = '';
 		switch ( $type ) {
@@ -595,8 +731,13 @@ EOT;
 				$full_name = $reflection->getName();
 				break;
 		}
+
+		if ( isset( $phpdoc['behat_step'] ) ) {
+			$full_name = $phpdoc['behat_step'];
+		}
+
 		return [
-			'phpdoc'     => self::parse_docblock( $phpdoc ),
+			'phpdoc'     => $phpdoc,
 			'type'       => $type,
 			'signature'  => $signature,
 			'short_name' => $reflection->getShortName(),
@@ -634,6 +775,11 @@ EOT;
 					preg_match( '/@(\w+)/', $info, $matches );
 					$param_name = $matches[1];
 					$value      = str_replace( "@$param_name ", '', $info );
+
+					if ( in_array( $param_name, [ 'Given', 'Then', 'When' ], true ) ) {
+						$ret['behat_step'] = "$param_name $value";
+					}
+
 					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
 						$ret['parameters'][ $param_name ] = [];
 					}

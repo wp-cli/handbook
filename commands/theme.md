@@ -15,6 +15,7 @@ See the WordPress [Theme Handbook](https://developer.wordpress.org/themes/) deve
     Theme installed successfully.
     Activating 'twentysixteen'...
     Success: Switched to 'Twenty Sixteen' theme.
+    Success: Installed 1 of 1 themes.
 
     # Get details of an installed theme
     $ wp theme get twentysixteen --fields=name,title,version

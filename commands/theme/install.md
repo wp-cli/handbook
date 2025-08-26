@@ -13,6 +13,9 @@ Installs one or more themes.
 [\--force]
 : If set, the command will overwrite any installed version of the theme, without prompting for confirmation.
 
+[\--ignore-requirements]
+: If set, the command will install the theme while ignoring any WordPress or PHP version requirements specified by the theme authors.
+
 [\--activate]
 : If set, the theme will be activated immediately after install.
 
@@ -30,6 +33,7 @@ Installs one or more themes.
     Theme installed successfully.
     Activating 'twentysixteen'...
     Success: Switched to 'Twenty Sixteen' theme.
+    Success: Installed 1 of 1 themes.
 
     # Install from a local zip file
     $ wp theme install ../my-theme.zip

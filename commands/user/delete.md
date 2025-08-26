@@ -22,12 +22,12 @@ On multisite, `wp user delete` only removes the user from the current site. Incl
 
     # Delete user 123 and reassign posts to user 567
     $ wp user delete 123 --reassign=567
-    Success: Removed user 123 from http://example.com
+    Success: Removed user 123 from http://example.com.
 
     # Delete all contributors and reassign their posts to user 2
     $ wp user delete $(wp user list --role=contributor --field=ID) --reassign=2
-    Success: Removed user 813 from http://example.com
-    Success: Removed user 578 from http://example.com
+    Success: Removed user 813 from http://example.com.
+    Success: Removed user 578 from http://example.com.
 
     # Delete all contributors in batches of 100 (avoid error: argument list too long: wp)
     $ wp user delete $(wp user list --role=contributor --field=ID | head -n 100)

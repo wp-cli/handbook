@@ -4,6 +4,8 @@ Set object terms.
 
 Replaces existing terms on the object.
 
+### OPTIONS
+
 &lt;id&gt;
 : The ID of the object.
 

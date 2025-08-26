@@ -14,12 +14,13 @@ options:
   - csv
   - json
   - count
+  - ids
   - yaml
 \---
 
 ### EXAMPLES
 
-    # List user with super-admin capabilities
+    # List user with super-admin capabilities.
     $ wp super-admin list
     supervisor
     administrator

@@ -4,6 +4,8 @@ Add a term to an object.
 
 Append the term to the existing set of terms on the object.
 
+### OPTIONS
+
 &lt;id&gt;
 : The ID of the object.
 

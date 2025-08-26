@@ -2,6 +2,8 @@
 
 Updates WP-CLI to the latest release.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Default behavior is to check the releases API for the newest stable version, and prompt if one is available.
 
 Use `--stable` to install or reinstall the latest stable version.
@@ -37,7 +39,7 @@ Only works for the Phar installation mechanism.
 
     # Update CLI.
     $ wp cli update
-    You have version 0.24.0. Would you like to update to 0.24.1? [y/n] y
+    You are currently using WP-CLI version 0.24.0. Would you like to update to 0.24.1? [y/n] y
     Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.24.1/wp-cli-0.24.1.phar...
     New version works. Proceeding to replace.
     Success: Updated WP-CLI to 0.24.1.

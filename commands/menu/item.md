@@ -14,7 +14,7 @@ List, add, and delete items associated with a menu.
 
     # Delete menu item
     $ wp menu item delete 45
-    Success: 1 menu item deleted.
+    Success: Deleted 1 of 1 menu items.
 
 
 

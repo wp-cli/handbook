@@ -21,6 +21,6 @@ See references for [Roles and Capabilities](https://codex.wordpress.org/Roles_an
 
     # Delete user 123 and reassign posts to user 567
     $ wp user delete 123 --reassign=567
-    Success: Removed user 123 from http://example.com
+    Success: Removed user 123 from http://example.com.
 
 

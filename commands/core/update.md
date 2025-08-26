@@ -37,15 +37,10 @@ If you see "Error: Another update is currently in progress.", you may need to ru
     No files found that need cleaning up
     Success: WordPress updated successfully.
 
-    # Update WordPress to latest version of 3.8 release
-    $ wp core update --version=3.8 ../latest.zip
-    Updating to version 3.8 ()...
+    # Update WordPress using zip file.
+    $ wp core update ../latest.zip
+    Starting update...
     Unpacking the update...
-    Cleaning up files...
-    File removed: wp-admin/js/tags-box.js
-    ...
-    File removed: wp-admin/js/updates.min.
-    377 files cleaned up
     Success: WordPress updated successfully.
 
     # Update WordPress to 3.1 forcefully

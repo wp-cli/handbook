@@ -2,6 +2,8 @@
 
 Dumps the list of installed commands, as JSON.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### EXAMPLES
 
     # Dump the list of installed commands.

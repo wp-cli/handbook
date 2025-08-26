@@ -54,6 +54,8 @@ default: circle
 options:
   - circle
   - gitlab
+  - bitbucket
+  - github
 \---
 
 [\--activate]

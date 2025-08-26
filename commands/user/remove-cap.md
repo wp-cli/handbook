@@ -10,6 +10,9 @@ Removes a user's capability.
 &lt;cap&gt;
 : The capability to be removed.
 
+[\--force]
+: Forcefully remove a capability.
+
 ### EXAMPLES
 
     $ wp user remove-cap 11 publish_newsletters
@@ -20,6 +23,9 @@ Removes a user's capability.
 
     $ wp user remove-cap 11 nonexistent_cap
     Error: No such 'nonexistent_cap' cap for supervisor (11).
+
+    $ wp user remove-cap 11 publish_newsletters --force
+    Success: Removed 'publish_newsletters' cap for supervisor (11).
 
 ### GLOBAL PARAMETERS
 

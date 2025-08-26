@@ -1663,38 +1663,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/child-theme.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-command"
     },
-    "scaffold\/package-github": {
-        "title": "scaffold package-github",
-        "slug": "package-github",
-        "cmd_path": "scaffold\/package-github",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package-github.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
-    "scaffold\/package-readme": {
-        "title": "scaffold package-readme",
-        "slug": "package-readme",
-        "cmd_path": "scaffold\/package-readme",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package-readme.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
-    "scaffold\/package-tests": {
-        "title": "scaffold package-tests",
-        "slug": "package-tests",
-        "cmd_path": "scaffold\/package-tests",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package-tests.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
-    "scaffold\/package": {
-        "title": "scaffold package",
-        "slug": "package",
-        "cmd_path": "scaffold\/package",
-        "parent": "scaffold",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/scaffold\/package.md",
-        "repo_url": "https:\/\/github.com\/wp-cli\/scaffold-package-command"
-    },
     "scaffold\/plugin-tests": {
         "title": "scaffold plugin-tests",
         "slug": "plugin-tests",
@@ -1797,6 +1765,14 @@
         "cmd_path": "site\/empty",
         "parent": "site",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/site\/empty.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "site\/generate": {
+        "title": "site generate",
+        "slug": "generate",
+        "cmd_path": "site\/generate",
+        "parent": "site",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/site\/generate.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "site\/list": {
@@ -2143,6 +2119,22 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/transient\/list.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
     },
+    "transient\/patch": {
+        "title": "transient patch",
+        "slug": "patch",
+        "cmd_path": "transient\/patch",
+        "parent": "transient",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/transient\/patch.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
+    },
+    "transient\/pluck": {
+        "title": "transient pluck",
+        "slug": "pluck",
+        "cmd_path": "transient\/pluck",
+        "parent": "transient",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/transient\/pluck.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/cache-command"
+    },
     "transient\/set": {
         "title": "transient set",
         "slug": "set",
@@ -2205,6 +2197,14 @@
         "cmd_path": "user\/delete",
         "parent": "user",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/delete.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/exists": {
+        "title": "user exists",
+        "slug": "exists",
+        "cmd_path": "user\/exists",
+        "parent": "user",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/exists.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "user\/generate": {
@@ -2293,6 +2293,14 @@
         "cmd_path": "user\/set-role",
         "parent": "user",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/set-role.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/signup": {
+        "title": "user signup",
+        "slug": "signup",
+        "cmd_path": "user\/signup",
+        "parent": "user",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/signup.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "user\/spam": {
@@ -3325,6 +3333,38 @@
         "cmd_path": "user\/session\/list",
         "parent": "user\/session",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/session\/list.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/signup\/activate": {
+        "title": "user signup activate",
+        "slug": "activate",
+        "cmd_path": "user\/signup\/activate",
+        "parent": "user\/signup",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/signup\/activate.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/signup\/delete": {
+        "title": "user signup delete",
+        "slug": "delete",
+        "cmd_path": "user\/signup\/delete",
+        "parent": "user\/signup",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/signup\/delete.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/signup\/get": {
+        "title": "user signup get",
+        "slug": "get",
+        "cmd_path": "user\/signup\/get",
+        "parent": "user\/signup",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/signup\/get.md",
+        "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
+    },
+    "user\/signup\/list": {
+        "title": "user signup list",
+        "slug": "list",
+        "cmd_path": "user\/signup\/list",
+        "parent": "user\/signup",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/user\/signup\/list.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/entity-command"
     },
     "user\/term\/add": {

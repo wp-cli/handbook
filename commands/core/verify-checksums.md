@@ -2,6 +2,8 @@
 
 Verifies WordPress files against WordPress.org's checksums.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Downloads md5 checksums for the current version from WordPress.org, and compares those checksums against the currently installed files.
 
 For security, avoids loading WordPress when verifying checksums.
@@ -21,6 +23,9 @@ If you experience issues verifying from this command, ensure you are passing the
 
 [\--insecure]
 : Retry downloads without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
+
+[\--exclude=&lt;files&gt;]
+: Exclude specific files from the checksum verification. Provide a comma-separated list of file paths.
 
 ### EXAMPLES
 
@@ -42,6 +47,10 @@ If you experience issues verifying from this command, ensure you are passing the
     Warning: File doesn't verify against checksum: readme.html
     Warning: File doesn't verify against checksum: wp-config-sample.php
     Error: WordPress installation doesn't verify against checksums.
+
+    # Verify checksums and exclude files
+    $ wp core verify-checksums --exclude="readme.html"
+    Success: WordPress installation verifies against checksums.
 
 ### GLOBAL PARAMETERS
 

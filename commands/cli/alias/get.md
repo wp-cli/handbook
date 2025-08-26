@@ -2,6 +2,8 @@
 
 Gets the value for an alias.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 ### OPTIONS
 
 &lt;key&gt;

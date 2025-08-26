@@ -2,7 +2,9 @@
 
 Checks to see if there is a newer version of WP-CLI available.
 
-Queries the Github releases API. Returns available versions if there are updates available, or success message if using the latest release.
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
+Queries the GitHub releases API. Returns available versions if there are updates available, or success message if using the latest release.
 
 ### OPTIONS
 
@@ -19,7 +21,7 @@ Queries the Github releases API. Returns available versions if there are updates
 : Prints the value of a single field for each update.
 
 [\--fields=&lt;fields&gt;]
-: Limit the output to specific object fields. Defaults to version,update_type,package_url.
+: Limit the output to specific object fields. Defaults to version,update_type,package_url,status,requires_php.
 
 [\--format=&lt;format&gt;]
 : Render output in a particular format.

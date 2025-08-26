@@ -2,6 +2,8 @@
 
 Manages the internal WP-CLI cache,.
 
+Unless overridden, these commands run on the `before_wp_load` hook, just before the WP load process begins.
+
 ### EXAMPLES
 
     # Remove all cached files.

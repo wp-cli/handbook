@@ -2,6 +2,8 @@
 
 Create a POT file for a WordPress project.
 
+This command runs on the `before_wp_load` hook, just before the WP load process begins.
+
 Scans PHP, Blade-PHP and JavaScript files for translatable strings, as well as theme stylesheets and plugin files if the source directory is detected as either a plugin or theme.
 
 ### OPTIONS
@@ -81,12 +83,14 @@ Scans PHP, Blade-PHP and JavaScript files for translatable strings, as well as t
 
 ### EXAMPLES
 
-    # Create a POT file for the WordPress plugin/theme in the current directory
+    # Create a POT file for the WordPress plugin/theme in the current directory.
     $ wp i18n make-pot . languages/my-plugin.pot
 
     # Create a POT file for the continents and cities list in WordPress core.
-    $ wp i18n make-pot . continents-and-cities.pot --include="wp-admin/includes/continents-cities.php"
-    --ignore-domain
+    $ wp i18n make-pot . continents-and-cities.pot --include="wp-admin/includes/continents-cities.php" --ignore-domain
+
+    # Create a POT file for the WordPress theme in the current directory with custom headers.
+    $ wp i18n make-pot . languages/my-theme.pot --headers='{"Report-Msgid-Bugs-To":"https://github.com/theme-author/my-theme/","POT-Creation-Date":""}'
 
 ### GLOBAL PARAMETERS
 

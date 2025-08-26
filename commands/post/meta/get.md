@@ -10,6 +10,9 @@ Get meta field value.
 &lt;key&gt;
 : The name of the meta field to get.
 
+[\--single]
+: Whether to return a single value.
+
 [\--format=&lt;format&gt;]
 : Get value in a particular format.
 \---
