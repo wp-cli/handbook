@@ -24,6 +24,7 @@ are typically called before WordPress is loaded.
 
 WP-CLI hooks include:
 
+* `cli_init` - During the WP-CLI Runner startup process. Useful for registering custom commands.
 * `before_add_command:<command>` - Before the command is added.
 * `after_add_command:<command>` - After the command was added.
 * `before_invoke:<command>` (1) - Just before a command is invoked.
