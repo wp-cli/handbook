@@ -106,18 +106,14 @@ Or for a specific release:
 curl -LO https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar.sha512
 ```
 
-Verify the checksum on Linux/macOS:
-
-```bash
-sha512sum -c wp-cli.phar.sha512
-```
-
-Or manually compare:
+Verify the checksum by comparing the output:
 
 ```bash
 sha512sum wp-cli.phar
 cat wp-cli.phar.sha512
 ```
+
+The two hashes should match exactly.
 
 #### Using SHA-256
 
@@ -133,11 +129,14 @@ Or for a specific release:
 curl -LO https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar.sha256
 ```
 
-Verify the checksum:
+Verify the checksum by comparing the output:
 
 ```bash
-sha256sum -c wp-cli.phar.sha256
+sha256sum wp-cli.phar
+cat wp-cli.phar.sha256
 ```
+
+The two hashes should match exactly.
 
 **Note:** Checksum verification only confirms the file matches the published checksum. It does not verify that the file was created by the WP-CLI maintainers. For complete security, use GPG signature verification.
 
