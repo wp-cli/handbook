@@ -56,9 +56,9 @@ If you haven't submitted a pull request before, you'll want to install WP-CLI fo
 
 ### Working on a specific command/package
 
-1. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have them.
-2. Clone the git repository of the command/package you want to work on to your local machine. As an example for working on the `wp core` command: `hub clone wp-cli/core-command`
-3. Change into the cloned directory and fork WP-CLI: `cd core-command`.
+1. Install [Composer](https://getcomposer.org/) if you don't already have it.
+2. Clone the git repository of the command/package you want to work on to your local machine. As an example for working on the `wp core` command: `git clone https://github.com/wp-cli/core-command.git`
+3. Change into the cloned directory: `cd core-command`
 4. Install all Composer dependencies: `composer install`
 5. Verify WP-CLI was installed properly: `vendor/bin/wp --info`
 
@@ -66,9 +66,9 @@ Within this package, you should preferably use `vendor/bin/wp` to run the comman
 
 ### Working on the project as a whole
 
-1. Install [Composer](https://getcomposer.org/) and [hub](https://hub.github.com/) if you don't already have them.
+1. Install [Composer](https://getcomposer.org/) if you don't already have it.
 2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
-3. Change into the cloned directory and fork WP-CLI: `cd ~/wp-cli`. If you are going to work on the core framework itself, run `hub fork` here to create a pushable repository on GitHub.
+3. Change into the cloned directory: `cd ~/wp-cli`. If you are going to work on the core framework itself, fork the repository on GitHub through the web UI and add it as a remote: `git remote add fork git@github.com:yourusername/wp-cli.git`
 4. Install all Composer dependencies: `composer install --prefer-source`
 5. Alias the `wp` command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
 6. Verify WP-CLI was installed properly: `wp --info`
@@ -77,19 +77,22 @@ Commands bundled with WP-CLI (e.g. `wp scaffold plugin`) will be editable from t
 
 Commands available for standalone installation (e.g. `wp dist-archive`) can be installed from source (e.g. `wp package install git@github.com:wp-cli/dist-archive-command.git`). Run `wp package path <package-name>` to find the appropriate directory to edit.
 
-Importantly, you'll need to fork each repository in order to have an `origin` to push to. Run `hub fork` to fork a repository from the command-line:
+Importantly, you'll need to fork each repository in order to have a remote to push to. For each repository you want to contribute to:
+
+1. Fork the repository on GitHub through the web UI
+2. Add your fork as a remote:
 
     $ cd vendor/wp-cli/scaffold-command
-    $ hub fork
-    Updating danielbachhuber
-    From https://github.com/wp-cli/scaffold-command
-     * [new branch]      master     -> danielbachhuber/master
-    new remote: danielbachhuber
+    $ git remote add fork git@github.com:yourusername/scaffold-command.git
     $ git remote -v
-    danielbachhuber git@github.com:danielbachhuber/scaffold-command.git (fetch)
-    danielbachhuber git@github.com:danielbachhuber/scaffold-command.git (push)
+    origin  https://github.com/wp-cli/scaffold-command.git (fetch)
+    origin  https://github.com/wp-cli/scaffold-command.git (push)
+    fork    git@github.com:yourusername/scaffold-command.git (fetch)
+    fork    git@github.com:yourusername/scaffold-command.git (push)
 
-Once you've done so, you'll have a fork in your GitHub account and new remote you can push to. If you didn't install `hub`, you'll need to fork the target repo through the web UI and manually add your fork as a remote.
+Once you've done so, you'll have a fork in your GitHub account and a new remote you can push to. You can then push changes to your fork with `git push fork branch-name`.
+
+**Optional:** The [GitHub CLI (`gh`)](https://cli.github.com/) can help streamline some of these tasks, such as forking repositories and creating pull requests from the command line.
 
 ## Running and writing tests
 
