@@ -112,23 +112,25 @@ See the [Behat Steps reference](https://make.wordpress.org/cli/handbook/referenc
 
 #### Setting Up Your Test Environment
 
-Before running tests, you need a MySQL database for testing.
+Before running tests, you need to set up a test database. You have two options:
 
-**Create the test database:**
+**Option 1: SQLite (Recommended for simplicity)**
 
-Create a MySQL user `wp_cli_test` with password `password1` that has full privileges on the `wp_cli_test` database:
+The easiest way to run tests is with SQLite, which requires no database setup:
 
 ```bash
-mysql -u root -p -e "CREATE DATABASE wp_cli_test;"
-mysql -u root -p -e "CREATE USER 'wp_cli_test'@'localhost' IDENTIFIED BY 'password1';"
-mysql -u root -p -e "GRANT ALL PRIVILEGES ON wp_cli_test.* TO 'wp_cli_test'@'localhost';"
+WP_CLI_TEST_DBTYPE=sqlite composer behat
 ```
 
-Or use the helper script:
+**Option 2: MySQL/MariaDB**
+
+If you prefer to use MySQL or MariaDB, run the setup script to create the test database:
 
 ```bash
 composer prepare-tests
 ```
+
+This creates a MySQL user `wp_cli_test` with password `password1` that has full privileges on the `wp_cli_test` database.
 
 **Note:** MySQL 8.0 changed the default authentication plugin. If you have connection issues, see [this blog post](https://jonathandesrosiers.com/2019/02/trouble-connecting-to-database-when-using-mysql-8-x/) for solutions.
 
@@ -408,7 +410,7 @@ Keep in mind:
 
 ### Database Credentials
 
-By default, tests use:
+By default, MySQL/MariaDB tests use:
 - Database: `wp_cli_test`
 - Username: `wp_cli_test`
 - Password: `password1`
@@ -420,6 +422,8 @@ Override these with environment variables from [wp-cli/wp-cli-tests](https://git
 - `WP_CLI_TEST_DBUSER`
 - `WP_CLI_TEST_DBPASS`
 - `WP_CLI_TEST_DBHOST`
+
+Alternatively, use SQLite by setting `WP_CLI_TEST_DBTYPE=sqlite` to avoid database configuration entirely.
 
 ## Best Practices
 
@@ -466,9 +470,10 @@ See the [scaffold-package-command documentation](https://github.com/wp-cli/scaff
 
 If you see database connection errors:
 
-1. Verify MySQL is running: `mysql -u wp_cli_test -ppassword1 wp_cli_test`
-2. Check your MySQL version (MySQL 8.0 has authentication changes)
-3. Verify the database was created: `composer prepare-tests`
+1. Try using SQLite instead: `WP_CLI_TEST_DBTYPE=sqlite composer behat`
+2. If using MySQL, verify it's running: `mysql -u wp_cli_test -ppassword1 wp_cli_test`
+3. Check your MySQL version (MySQL 8.0 has authentication changes)
+4. Verify the database was created: `composer prepare-tests`
 
 ### Tests Pass Locally But Fail in CI
 
