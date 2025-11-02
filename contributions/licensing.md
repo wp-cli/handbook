@@ -21,7 +21,7 @@ The following licenses are compatible with MIT and are acceptable for contributi
 
 The following license types are **not** compatible with MIT and cannot be accepted:
 
-* **GPL-only licenses** (GPL v2-only, GPL v3-only) - These licenses require derivative works to also be under GPL, which conflicts with MIT's permissive nature
+* **Strict GPL licenses** (GPL v2-only, GPL v3-only without "or later" clause) - These licenses require derivative works to also be under GPL, which conflicts with MIT's permissive nature. Note that "GPL v2 or later" and "GPL v3 or later" may have different compatibility considerations.
 * **Copyleft licenses without permissive exceptions** - Licenses that require derivative works to use the same license
 * **Proprietary licenses** - Code that restricts modification or redistribution
 * **Non-commercial licenses** - Any license that restricts commercial use
@@ -52,7 +52,7 @@ Before adding a new dependency:
 
 1. Check the dependency's `LICENSE` file or `composer.json` for license information
 2. Verify that all of the dependency's own dependencies are also compatible
-3. Use tools like `composer licenses` to audit the full dependency tree
+3. Use `composer show -t` to view the dependency tree with license information, or install additional tools like `composer/satis` to run `composer licenses` for detailed license auditing
 
 ### Dependency license best practices
 
