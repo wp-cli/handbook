@@ -22,7 +22,14 @@ This method provides the strongest security as it verifies both the integrity an
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar.asc
 ```
 
-For a specific version release (e.g., v2.12.0), download from GitHub releases:
+For a specific version release, download from GitHub releases (replace `X.X.X` with the desired version):
+
+```bash
+curl -LO https://github.com/wp-cli/wp-cli/releases/download/vX.X.X/wp-cli-X.X.X.phar
+curl -LO https://github.com/wp-cli/wp-cli/releases/download/vX.X.X/wp-cli-X.X.X.phar.asc
+```
+
+For example, to download version 2.12.0:
 
 ```bash
 curl -LO https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar
@@ -72,10 +79,10 @@ For a specific version:
 gpg --verify wp-cli-2.12.0.phar.asc wp-cli-2.12.0.phar
 ```
 
-If the signature is valid, you'll see output like:
+If the signature is valid, you'll see output similar to:
 
 ```
-gpg: Signature made Wed May  7 02:26:41 2025 UTC
+gpg: Signature made {DATE}
 gpg:                using RSA key 63AF7AA15067C05616FDDD88A3A2E8F226F0BC06
 gpg: Good signature from "WP-CLI Releases <releases@wp-cli.org>" [unknown]
 ```
@@ -100,10 +107,10 @@ Download the SHA-512 checksum file:
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar.sha512
 ```
 
-Or for a specific release:
+Or for a specific release (replace `X.X.X` with your version):
 
 ```bash
-curl -LO https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar.sha512
+curl -LO https://github.com/wp-cli/wp-cli/releases/download/vX.X.X/wp-cli-X.X.X.phar.sha512
 ```
 
 Verify the checksum by comparing the output:
@@ -123,10 +130,10 @@ Download the SHA-256 checksum file:
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar.sha256
 ```
 
-Or for a specific release:
+Or for a specific release (replace `X.X.X` with your version):
 
 ```bash
-curl -LO https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar.sha256
+curl -LO https://github.com/wp-cli/wp-cli/releases/download/vX.X.X/wp-cli-X.X.X.phar.sha256
 ```
 
 Verify the checksum by comparing the output:
