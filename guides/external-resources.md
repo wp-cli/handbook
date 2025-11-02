@@ -8,7 +8,8 @@
 * [Treehouse Blog: Tame WordPress from the Command Line with wp-cli](https://blog.teamtreehouse.com/tame-wordpress-from-the-command-line-with-wp-cli)
 * [Matt Wiebe: Why You Should Develop Plugins With wp-cli](https://mattwiebe.wordpress.com/2014/01/15/why-you-should-develop-plugins-with-wp-cli/)
 * [Torque: Using WP CLI to Set Up a Test Version of Your Site](https://torquemag.io/using-wp-cli-to-set-up-a-test-version-of-your-site/)
-* [WP Bullet Guides: Useful Bash Scripts Utilizing WP-CLI](https://guides.wp-bullet.com/category/wp-cli/) 
+* [WP Bullet Guides: Useful Bash Scripts Utilizing WP-CLI](https://guides.wp-bullet.com/category/wp-cli/)
+* [Delicious Brains: Writing Functional Tests for WP-CLI Packages](https://deliciousbrains.com/writing-functional-tests-wp-cli-packages/) 
 
 ## Slides
 

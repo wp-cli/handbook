@@ -5,6 +5,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/behat-steps.md",
         "parent": "references"
     },
+    "behat-tests": {
+        "title": "Writing Behat Tests",
+        "slug": "behat-tests",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/behat-tests.md",
+        "parent": "guides"
+    },
     "bug-reports": {
         "title": "Bug Reports",
         "slug": "bug-reports",
