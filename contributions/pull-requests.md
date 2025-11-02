@@ -115,9 +115,11 @@ To fix the errors and warnings that can be automatically fixed:
 
 ### Functional tests
 
-WP-CLI uses [Behat](https://behat.org/) as its functional test suite. Stability between releases is an important contact WP-CLI makes with its users. Functional tests are different than unit tests in that they execute the entire WP-CLI command, and ensure they always work as expected.
+WP-CLI uses [Behat](https://behat.org/) for functional testing. Functional tests ensure commands work as expected by executing them end-to-end.
 
-Every repository has a `features/` directory with one or more [YAML](https://yaml.org/)-formatted `*.feature` files. Here's an example of what you might see:
+For a comprehensive guide on writing and running Behat tests, see **[Writing Behat Tests](https://make.wordpress.org/cli/handbook/guides/behat-tests/)**.
+
+Here's a quick example of what a Behat test looks like:
 
 ```yml
 Feature: Manage WordPress options
@@ -139,14 +141,6 @@ In this example:
 - `Given` provides the initial environment for the test.
 - `When` causes an event to occur.
 - `Then` asserts what's expected after the event is complete.
-
-In a slightly more human-friendly form:
-
-> I have a WordPress installation. When I run `wp option get home`, then the output from the command should be 'https://example.org'.
-
-Essentially, WP-CLI's functional test suite lets you _describe how a command should work_, and then run that description as a functional test.
-
-Notably, Behat is simply the framework for writing these tests. We've written our own custom `Given`, `When`, and `Then` step definitions ([example](https://github.com/wp-cli/wp-cli-tests/blob/560ed5ca2776b6b3b66c79a6e6dc62904ae20b3b/src/Context/GivenStepDefinitions.php#L105-L110), [example](https://github.com/wp-cli/wp-cli-tests/blob/560ed5ca2776b6b3b66c79a6e6dc62904ae20b3b/src/Context/WhenStepDefinitions.php#L34-L42)).
 
 #### Creating a test database
 
