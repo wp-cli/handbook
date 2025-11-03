@@ -10,6 +10,18 @@ First, download [wp-cli.phar](https://raw.githubusercontent.com/wp-cli/builds/gh
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 ```
 
+### Verifying the download (optional but recommended)
+
+Before using the downloaded file, you can verify its authenticity and integrity. See our [guide to verifying WP-CLI downloads](https://make.wordpress.org/cli/handbook/guides/verifying-downloads/) for detailed instructions on using GPG signatures or checksums to ensure the file hasn't been tampered with.
+
+Quick verification using GPG:
+
+```
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar.asc
+curl -L https://raw.githubusercontent.com/wp-cli/builds/gh-pages/wp-cli.pgp | gpg --import
+gpg --verify wp-cli.phar.asc wp-cli.phar
+```
+
 Then, check if it works:
 
 ```
@@ -113,6 +125,8 @@ Dash › Preferences › Integration › Alfred
 Open Alfred and try searching for a specific command. For example, this gives you an overview of the `plugin` command and its subcommands: `wp-cli plugin`
 
 ## Alternative installation methods
+
+**Note:** For all Phar-based installation methods below, you can verify the downloaded file's authenticity and integrity. See the [guide to verifying WP-CLI downloads](https://make.wordpress.org/cli/handbook/guides/verifying-downloads/) for instructions.
 
 ### Installing via Git
 
