@@ -57,10 +57,10 @@ gpg --list-keys --with-fingerprint releases@wp-cli.org
 
 The output should include:
 ```
-pub   rsa2048 2016-01-29 [SC]
+pub   rsa2048 2018-05-31 [SC]
       63AF 7AA1 5067 C056 16FD  DD88 A3A2 E8F2 26F0 BC06
 uid           [ unknown] WP-CLI Releases <releases@wp-cli.org>
-sub   rsa2048 2016-01-29 [E]
+sub   rsa2048 2018-05-31 [E]
 ```
 
 **Note:** Releases prior to v1.5.1 (July 2016) were signed with a different key (fingerprint: `3B91 91CD 3CF1 B5C5 10EE FAF6 AFAA E4A2 85E0 40A8`). If you need to verify older releases, import that key from the [builds repository README](https://github.com/wp-cli/builds/blob/gh-pages/README.md).
