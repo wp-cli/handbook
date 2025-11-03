@@ -68,7 +68,7 @@ Within this package, you should preferably use `vendor/bin/wp` to run the comman
 
 1. Install [Composer](https://getcomposer.org/) if you don't already have it.
 2. Clone the WP-CLI git repository to your local machine: `git clone git@github.com:wp-cli/wp-cli.git ~/wp-cli`
-3. Change into the cloned directory: `cd ~/wp-cli`. If you are going to work on the core framework itself, fork the repository on GitHub through the web UI and add it as a remote: `git remote add fork git@github.com:yourusername/wp-cli.git`
+3. Change into the cloned directory: `cd ~/wp-cli`. If you are going to work on the core framework itself, [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) on GitHub through the web UI and [add it as a remote](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#adding-a-remote-repository): `git remote add fork git@github.com:yourusername/wp-cli.git`
 4. Install all Composer dependencies: `composer install --prefer-source`
 5. Alias the `wp` command to your new WP-CLI install: `alias wp='~/wp-cli/bin/wp'`
 6. Verify WP-CLI was installed properly: `wp --info`
@@ -79,8 +79,8 @@ Commands available for standalone installation (e.g. `wp dist-archive`) can be i
 
 Importantly, you'll need to fork each repository in order to have a remote to push to. For each repository you want to contribute to:
 
-1. Fork the repository on GitHub through the web UI
-2. Add your fork as a remote:
+1. [Fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) on GitHub through the web UI
+2. [Add your fork as a remote](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#adding-a-remote-repository):
 
     $ cd vendor/wp-cli/scaffold-command
     $ git remote add fork git@github.com:yourusername/scaffold-command.git
