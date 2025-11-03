@@ -63,7 +63,7 @@ uid           [ unknown] WP-CLI Releases <releases@wp-cli.org>
 sub   rsa2048 2016-01-29 [E]
 ```
 
-**Note:** Releases prior to v1.5.1 (July 2016) were signed with a different key (fingerprint: `3B91 91CD 3CF1 B5C5 10EE  FAF6 AFAA E4A2 85E0 40A8`). If you need to verify older releases, import that key from the [builds repository README](https://github.com/wp-cli/builds/blob/gh-pages/README.md).
+**Note:** Releases prior to v1.5.1 (July 2016) were signed with a different key (fingerprint: `3B91 91CD 3CF1 B5C5 10EE FAF6 AFAA E4A2 85E0 40A8`). If you need to verify older releases, import that key from the [builds repository README](https://github.com/wp-cli/builds/blob/gh-pages/README.md).
 
 #### Step 3: Verify the signature
 
@@ -157,7 +157,7 @@ Verification files for the latest stable and nightly builds are available at:
 Available files:
 - `wp-cli.phar.asc` - GPG signature for latest stable
 - `wp-cli.phar.sha512` - SHA-512 checksum for latest stable
-- `wp-cli.phar.md5` - MD5 checksum (not recommended for security)
+- `wp-cli.phar.md5` - MD5 checksum (not recommended for security; MD5 is cryptographically broken and vulnerable to collision attacks)
 - `wp-cli-nightly.phar.asc` - GPG signature for nightly
 - `wp-cli-nightly.phar.sha512` - SHA-512 checksum for nightly
 
@@ -171,7 +171,7 @@ Each release includes:
 - `wp-cli-X.X.X.phar.gpg` - Inline GPG signature
 - `wp-cli-X.X.X.phar.sha512` - SHA-512 checksum
 - `wp-cli-X.X.X.phar.sha256` - SHA-256 checksum
-- `wp-cli-X.X.X.phar.md5` - MD5 checksum (not recommended for security)
+- `wp-cli-X.X.X.phar.md5` - MD5 checksum (not recommended for security; MD5 is cryptographically broken and vulnerable to collision attacks)
 
 ## Complete installation example with verification
 
