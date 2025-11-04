@@ -37,6 +37,24 @@ Learn how to create your own command from the
     ---
     Success: Package installed.
 
+    # Install a specific version of a package.
+    $ wp package install wp-cli/server-command:^2.0
+    Installing package wp-cli/server-command (^2.0)
+    Updating /home/person/.wp-cli/packages/composer.json to require the package...
+    Using Composer to install the package...
+    ---
+    Loading composer repositories with package information
+    Updating dependencies
+    Resolving dependencies through SAT
+    Dependency resolution completed in 0.005 seconds
+    Analyzed 732 packages to resolve dependencies
+    Analyzed 1034 rules to resolve dependencies
+     - Installing package
+    Writing lock file
+    Generating autoload files
+    ---
+    Success: Package installed.
+
     # Uninstall package.
     $ wp package uninstall wp-cli/server-command
     Removing require statement for package 'wp-cli/server-command' from /home/person/.wp-cli/packages/composer.json
