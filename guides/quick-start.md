@@ -141,4 +141,4 @@ When ready to replace the links, run:
 wp search-replace 'http://oldsite.com' 'http://newsite.com'
 ```
 
-Wondering what's next? Browse through [all of WP-CLI's commands](https://developer.wordpress.org/cli/commands/) to explore your new world. For more detailed information about creating custom commands, visit the [WP-CLI Commands Cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/). Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/shell-friends/) to learn about helpful command line utilities.
+Wondering what's next? Browse through [all of WP-CLI's commands](https://developer.wordpress.org/cli/commands/) to explore your new world. For more detailed information about creating custom commands, visit the [WP-CLI Commands Cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/). Or, catch up with [shell friends](https://make.wordpress.org/cli/handbook/references/shell-friends/) to learn about helpful command line utilities.
