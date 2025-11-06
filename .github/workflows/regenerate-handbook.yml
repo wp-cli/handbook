@@ -24,6 +24,7 @@ jobs:
 
       - name: Install Composer dependencies
         run: composer install --no-dev
+        # Needed to set up the autoloader for bin/command.php
 
       - name: Download WP-CLI nightly
         run: |
@@ -45,7 +46,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --exit-code --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code --quiet HEAD || echo "has_changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit changes
         if: steps.changes.outputs.has_changes == 'true'
