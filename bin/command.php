@@ -649,6 +649,10 @@ EOT;
 			}
 			$docs = preg_replace( '/(#?## GLOBAL PARAMETERS).+/s', $replace_global, $docs );
 
+			// Add link to argument syntax documentation after OPTIONS heading.
+			$options_note = 'See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.';
+			$docs         = preg_replace( '/(### OPTIONS)/', '$1' . PHP_EOL . PHP_EOL . $options_note, $docs );
+
 			$binding['docs'] = $docs;
 		}
 
