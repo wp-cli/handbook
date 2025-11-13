@@ -2,7 +2,7 @@
 
 Lists or flushes the site's rewrite rules, updates the permalink structure.
 
-See the WordPress [Rewrite API](https://codex.wordpress.org/Rewrite_API) and
+See the WordPress [Rewrite API](https://developer.wordpress.org/apis/rewrite) and
 [WP Rewrite](https://developer.wordpress.org/reference/classes/wp_rewrite) class reference.
 
 ### EXAMPLES
