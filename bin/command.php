@@ -16,6 +16,8 @@ define( 'WP_CLI_HANDBOOK_PATH', dirname( __DIR__ ) );
 
 /**
  * @when before_wp_load
+ *
+ * @phpstan-type Command_Array array{name:string, description:string, longdesc:string, subcommands?:array<Command_Array>, synopsis?:string, hook?:string}
  */
 class Command {
 
@@ -517,7 +519,17 @@ EOT;
 		return $apis;
 	}
 
-	private static function gen_cmd_pages( $cmd, $parent = [], $verbose = false ) { // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
+	/**
+	 * Generate and save markdown documentation for the provided command and its sub-commands.
+	 *
+	 * @param Command_Array $cmd        Command details as array.
+	 * @param string[]      $parent     The breadcrumb of parent commands.
+	 * @param bool          $verbose    Whether to output the command page as it is generated.
+	 * @param ?string       $output_dir The directory to output the generated command pages, null for default `../commands`.
+	 * @return void
+	 */
+	private static function gen_cmd_pages( $cmd, $parent = [], $verbose = false, ?string $output_dir = null ) { // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
+
 		$parent[] = $cmd['name'];
 
 		static $params;
@@ -656,7 +668,7 @@ EOT;
 			$binding['docs'] = $docs;
 		}
 
-		$path = dirname( __DIR__ ) . '/commands/' . $binding['path'];
+		$path = ( $output_dir ?? dirname( __DIR__ ) . '/commands' ) . '/' . $binding['path'];
 		if ( ! is_dir( dirname( $path ) ) ) {
 			mkdir( dirname( $path ) );
 		}
@@ -670,7 +682,7 @@ EOT;
 		}
 
 		foreach ( $cmd['subcommands'] as $subcmd ) {
-			self::gen_cmd_pages( $subcmd, $parent, $verbose );
+			self::gen_cmd_pages( $subcmd, $parent, $verbose, $output_dir );
 		}
 	}
 
@@ -823,6 +835,84 @@ EOT;
 			WP_CLI::error( sprintf( "Failed to create '%s' directory: %s", $dir, $error['message'] ) );
 		}
 		WP_CLI::log( sprintf( "Removed existing contents of '%s'", $dir ) );
+	}
+
+	/**
+	 * Generate the documentation page for a custom command using the same templates as the official WP-CLI commands.
+	 *
+	 * ## OPTIONS
+	 *
+	 * <command>
+	 * : The custom WP CLI command to generate the documentation for.
+	 *
+	 * [--output_dir=<output_dir>]
+	 * : Directory in which to save the documentation.
+	 * ---
+	 * default: ./docs/wp-cli
+	 * ---
+	 *
+	 * [--verbose]
+	 * : If set will list command pages as they are generated.
+	 *
+	 * @subcommand gen-custom
+	 *
+	 * @when after_wp_load
+	 *
+	 * @param string[]             $args
+	 * @param array<string,string> $assoc_args
+	 * @return void
+	 */
+	public function gen_custom_cmd_pages( $args, $assoc_args ) {
+
+		$command_name = $args[0];
+
+		$output_dir = Utils\is_path_absolute( $assoc_args['output_dir'] )
+			? $assoc_args['output_dir']
+			: getcwd() . '/' . $assoc_args['output_dir'];
+
+		if ( ! is_dir( $output_dir ) ) {
+			mkdir( $output_dir, 0777, true );
+		}
+
+		$verbose = Utils\get_flag_value( $assoc_args, 'verbose', false );
+
+		/**
+		 * Get all registered WP-CLI commands.
+		 *
+		 * @see \CLI_Command::cmd_dump()
+		 *
+		 * @var array{name:string,description:string,longdesc:string,subcommands:array<Command_Array>} $all_commands
+		 */
+		$all_commands = WP_CLI::runcommand(
+			'cli cmd-dump',
+			[
+				'launch' => false,
+				'return' => 'stdout',
+				'parse'  => 'json',
+			]
+		);
+
+		/**
+		 * Filter the list of WP-CLI commands to find one matching the name passed as an argument to this command.
+		 *
+		 * @var array<Command_Array> $my_commands
+		 */
+		$my_commands = array_values(
+			array_filter(
+				$all_commands['subcommands'],
+				function ( array $command ) use ( $command_name ): bool {
+					return $command['name'] === $command_name;
+				}
+			)
+		);
+
+		if ( empty( $my_commands ) ) {
+			WP_CLI::error( "Failed to find command '{$command_name}'." );
+		}
+
+		self::gen_cmd_pages( $my_commands[0], [], $verbose, $output_dir );
+
+		WP_CLI::success( "Generated command pages for '{$command_name}'." );
 	}
 }
 
