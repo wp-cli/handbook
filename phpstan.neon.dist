@@ -1,0 +1,9 @@
+parameters:
+  level: 6
+  paths:
+    - bin
+  scanDirectories:
+    - vendor/wp-cli/wp-cli
+  treatPhpDocTypesAsCertain: false
+  strictRules:
+    strictCalls: true
