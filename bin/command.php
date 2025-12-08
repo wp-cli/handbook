@@ -788,10 +788,10 @@ EOT;
 			if ( preg_match( '/^(?=\s+?\*[^\/])(.+)/', $line, $matches ) ) {
 				$info = trim( $matches[1] );
 				$info = preg_replace( '/^(\*\s+?)/', '', $info );
-				if ( $in_param && '@' !== $info[0] ) {
+				if ( $in_param && ! empty( $info ) && '@' !== $info[0] ) {
 					list( $param_name, $key )                     = $in_param;
 					$ret['parameters'][ $param_name ][ $key ][2] .= PHP_EOL . $info;
-				} elseif ( '@' !== $info[0] ) {
+				} elseif ( ! empty( $info ) && '@' !== $info[0] ) {
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
