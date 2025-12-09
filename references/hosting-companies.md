@@ -6,6 +6,7 @@ In alphabetical order:
 
 * [2020Media](https://www.2020media.com/)
 * [20i](https://www.20i.com/)
+* [34SP.com](https://www.34sp.com)
 * [A2 Hosting](https://www.a2hosting.com/)
 * [Alldomains.Hosting](https://alldomains.hosting/webhosting-server.html)
 * [Altis Cloud Platform](https://www.altis-dxp.com/)
@@ -52,6 +53,7 @@ In alphabetical order:
 * [LH.pl](https://www.lh.pl/hosting)
 * [lima-city](https://www.lima-city.de/webhosting/wordpress)
 * [Liquid Web](https://liquidweb.com/wordpress)
+* [LucusHost](https://www.lucushost.com/hosting-wordpress)
 * [ManagedWPHosting](https://www.managedwphosting.nl/)
 * [MinHost](https://minhost.no)
 * [Mittwald](https://www.mittwald.de/)
@@ -88,6 +90,7 @@ In alphabetical order:
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
+* [WebQuickster](https://www.webquickster.com/)
 * [WNPower Hosting](https://www.wnpower.com/)
 * [WordPress.com](https://wordpress.com/)
 * [WP Engine.com](https://wpengine.com)

@@ -1,4 +1,4 @@
-# How to create a custom plugin:
+# How to create a custom plugin
 
 If you want to create your plugins, WP-CLI has a powerful scaffold command that allows us to generate starter code. In this guide we will see how to generate starter code for a basic plugin.
 
