@@ -69,7 +69,7 @@ WP-CLI is at the latest version.
 
 Want to live life on the edge? Run `wp cli update --nightly` to use the latest nightly build of WP-CLI. The nightly build is more or less stable enough for you to use in your local environment, and always includes the latest and greatest.
 
-For more information about `wp cli update`, including flags and options that can be used, read the full [docs page on the update command](https://wp-cli.org/commands/cli/update/).
+For more information about `wp cli update`, including flags and options that can be used, read the full [docs page on the update command](https://developer.wordpress.org/cli/commands/cli/update/).
 
 ### Tab completions
 
