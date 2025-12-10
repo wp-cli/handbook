@@ -55,6 +55,7 @@ In alphabetical order:
 * [Liquid Web](https://liquidweb.com/wordpress)
 * [LucusHost](https://www.lucushost.com/hosting-wordpress)
 * [ManagedWPHosting](https://www.managedwphosting.nl/)
+* [MilesWeb](https://www.milesweb.in/)
 * [MinHost](https://minhost.no)
 * [Mittwald](https://www.mittwald.de/)
 * [Monarobase](https://monarobase.net/wordpress)
