@@ -56,6 +56,7 @@ In alphabetical order:
 * [LucusHost](https://www.lucushost.com/hosting-wordpress)
 * [ManagedWPHosting](https://www.managedwphosting.nl/)
 * [MinHost](https://minhost.no)
+* [MilesWeb](https://www.milesweb.com/)
 * [Mittwald](https://www.mittwald.de/)
 * [Monarobase](https://monarobase.net/wordpress)
 * [MonsterMegs](https://www.monstermegs.com)
