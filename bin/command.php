@@ -5,7 +5,7 @@
 
 namespace WP_CLI\Handbook;
 
-use Mustache_Engine;
+use Mustache\Engine as Mustache_Engine;
 use Reflection;
 use WP_CLI;
 use WP_CLI\Utils;
@@ -28,6 +28,10 @@ class Command {
 	 * : If set will list command pages as they are generated.
 	 *
 	 * @subcommand gen-all
+	 *
+	 * @param string[] $args                       Positional arguments. Unused.
+	 * @param array{verbose?: bool}    $assoc_args Associative arguments.
+	 * @return void
 	 */
 	public function gen_all( $args, $assoc_args ) {
 		// Warn if not invoked with null WP_CLI_CONFIG_PATH.
@@ -43,7 +47,7 @@ class Command {
 		WP_CLI::success( 'Generated all doc pages.' );
 	}
 
-	private function prepare_api_slug( $full_name ) {
+	private function prepare_api_slug( string $full_name ): string {
 		$replacements = [
 			'\\w+' => '',
 			'\\s'  => '',
@@ -68,6 +72,8 @@ class Command {
 	 * Generates internal API doc pages.
 	 *
 	 * @subcommand gen-api-docs
+	 *
+	 * @return void
 	 */
 	public function gen_api_docs() {
 		$apis = $this->get_internal_apis();
@@ -147,6 +153,8 @@ EOT;
 	 * Generates Behat steps doc pages.
 	 *
 	 * @subcommand gen-behat-docs
+	 *
+	 * @return void
 	 */
 	public function gen_behat_docs() {
 		$apis = $this->get_behat_steps();
@@ -227,6 +235,10 @@ EOT;
 	 * : If set will list command pages as they are generated.
 	 *
 	 * @subcommand gen-commands
+	 *
+	 * @param string[] $args Positional arguments. Unused.
+	 * @param array{verbose?: bool} $assoc_args Associative arguments.
+	 * @return void
 	 */
 	public function gen_commands( $args, $assoc_args ) {
 		// Check invoked with packages directory set to `bin/packages'.
@@ -269,6 +281,11 @@ EOT;
 
 	/**
 	 * Update the commands data array with new data
+	 *
+	 * @param WP_CLI\Dispatcher\CompositeCommand $command
+	 * @param array<string, array{repo_url: string}> $commands_data
+	 * @param string $full
+	 * @return void
 	 */
 	private static function update_commands_data( $command, &$commands_data, $full ) {
 		$reflection = new \ReflectionClass( $command );
@@ -324,6 +341,8 @@ EOT;
 	 * Generates a manifest document of all command pages.
 	 *
 	 * @subcommand gen-commands-manifest
+	 *
+	 * @return void
 	 */
 	public function gen_commands_manifest() {
 		$manifest      = [];
@@ -386,6 +405,8 @@ EOT;
 	 * Generates a manifest document of all handbook pages.
 	 *
 	 * @subcommand gen-hb-manifest
+	 *
+	 * @return void
 	 */
 	public function gen_hb_manifest() {
 		$manifest = [];
@@ -402,7 +423,7 @@ EOT;
 			new \RecursiveCallbackFilterIterator(
 				new \RecursiveDirectoryIterator( WP_CLI_HANDBOOK_PATH, \RecursiveDirectoryIterator::SKIP_DOTS ),
 				static function ( $file ) use ( $ignored_dirs ) {
-					/** @var SplFileInfo $file */
+					/** @var \SplFileInfo $file */
 
 					if ( $file->isDir() && in_array( $file->getBasename(), $ignored_dirs, true ) ) {
 						return false;
@@ -460,6 +481,9 @@ EOT;
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
 	}
 
+	/**
+	 * @return array<int,array{phpdoc: array<string, mixed>, type: string, signature: string, short_name: string, full_name: string, class: string, api_slug?: string}>
+	 */
 	private function get_internal_apis() {
 		$apis      = [];
 		$functions = get_defined_functions();
@@ -492,6 +516,9 @@ EOT;
 		return $apis;
 	}
 
+	/**
+	 * @return array<int, array{phpdoc: array<string, mixed>, type: string, signature: string, short_name: string, full_name: string, class: string, api_slug?: string}>
+	 */
 	private function get_behat_steps() {
 		$apis    = [];
 		$classes = [
@@ -517,6 +544,12 @@ EOT;
 		return $apis;
 	}
 
+	/**
+	 * @param array<string, mixed> $cmd
+	 * @param string[] $parent
+	 * @param bool $verbose
+	 * @return void
+	 */
 	private static function gen_cmd_pages( $cmd, $parent = [], $verbose = false ) { // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
 		$parent[] = $cmd['name'];
 
@@ -649,6 +682,10 @@ EOT;
 			}
 			$docs = preg_replace( '/(#?## GLOBAL PARAMETERS).+/s', $replace_global, $docs );
 
+			// Add link to argument syntax documentation after OPTIONS heading.
+			$options_note = 'See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.';
+			$docs         = preg_replace( '/(### OPTIONS)/', '$1' . PHP_EOL . PHP_EOL . $options_note, $docs );
+
 			$binding['docs'] = $docs;
 		}
 
@@ -673,8 +710,8 @@ EOT;
 	/**
 	 * Get a simple representation of a function or method
 	 *
-	 * @param Reflection
-	 * @return array
+	 * @param \ReflectionMethod|\ReflectionFunction $reflection
+	 * @return array{phpdoc: array<string, mixed>, type: string, signature: string, short_name: string, full_name: string, class: string, api_slug?: string}
 	 */
 	private static function get_simple_representation( $reflection ) {
 		$signature  = $reflection->getName();
@@ -738,7 +775,7 @@ EOT;
 	 * Parse PHPDoc into a structured representation.
 	 *
 	 * @param string $docblock
-	 * @return array
+	 * @return array{description: string, short_description?: string, long_description?:string, behat_step?: string, parameters: array<string, mixed>}
 	 */
 	private static function parse_docblock( $docblock ) {
 		$ret        = [
@@ -797,7 +834,11 @@ EOT;
 		return $ret;
 	}
 
-	private static function render( $path, $binding ) {
+	/**
+	 * @param string $path
+	 * @param array<string, array<int, array<string, array<string, mixed>|string>>> $binding
+	 */
+	private static function render( string $path, $binding ): string {
 		$m        = new Mustache_Engine();
 		$template = file_get_contents( WP_CLI_HANDBOOK_PATH . "/bin/templates/$path" );
 		return $m->render( $template, $binding );
@@ -807,6 +848,8 @@ EOT;
 	 * Removes existing contents of given directory.
 	 *
 	 * @param string $dir Name of directory to empty.
+	 *
+	 * @return void
 	 */
 	private static function empty_dir( $dir ) {
 		$cmd = Utils\esc_cmd( 'rm -rf %s', $dir );
