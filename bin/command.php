@@ -707,8 +707,9 @@ EOT;
 			$alias_binding['path']     = implode( '/', $alias_parent );
 			$alias_binding['description'] .= sprintf( "\n\nThis is an alias for `wp %s`.", $binding['synopsis'] );
 			$alias_path = dirname( __DIR__ ) . '/commands/' . $alias_binding['path'];
-			if ( ! is_dir( dirname( $alias_path ) ) ) {
-				mkdir( dirname( $alias_path ) );
+			$alias_dir  = dirname( $alias_path );
+			if ( ! is_dir( $alias_dir ) ) {
+				mkdir( $alias_dir, 0755, true );
 			}
 			file_put_contents( "$alias_path.md", self::render( 'subcmd-list.mustache', $alias_binding ) );
 			if ( $verbose ) {
