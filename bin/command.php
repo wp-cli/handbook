@@ -698,6 +698,24 @@ EOT;
 			WP_CLI::log( 'Generated commands/' . $binding['path'] . '/' );
 		}
 
+		// Generate alias page if command has an alias.
+		if ( ! empty( $cmd['alias'] ) ) {
+			$alias_parent   = $parent;
+			$alias_parent[ count( $alias_parent ) - 1 ] = $cmd['alias'];
+			$alias_binding  = $binding;
+			$alias_binding['synopsis'] = implode( ' ', $alias_parent );
+			$alias_binding['path']     = implode( '/', $alias_parent );
+			$alias_binding['description'] .= sprintf( "\n\nThis is an alias for `wp %s`.", $binding['synopsis'] );
+			$alias_path = dirname( __DIR__ ) . '/commands/' . $alias_binding['path'];
+			if ( ! is_dir( dirname( $alias_path ) ) ) {
+				mkdir( dirname( $alias_path ) );
+			}
+			file_put_contents( "$alias_path.md", self::render( 'subcmd-list.mustache', $alias_binding ) );
+			if ( $verbose ) {
+				WP_CLI::log( 'Generated commands/' . $alias_binding['path'] . '/ (alias)' );
+			}
+		}
+
 		if ( ! isset( $cmd['subcommands'] ) ) {
 			return;
 		}
