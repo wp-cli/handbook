@@ -16,14 +16,21 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v6
 
-      - name: Set up PHP
+      - name: Set up PHP environment
         uses: shivammathur/setup-php@v2
         with:
           php-version: 'latest'
-          coverage: none
+          coverage: 'none'
+        env:
+          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install Composer dependencies
-        run: composer install --no-dev
+      - name: Install Composer dependencies & cache dependencies
+        uses: "ramsey/composer-install@v3"
+        env:
+          COMPOSER_ROOT_VERSION: dev-${{ github.event.repository.default_branch }}
+        with:
+          # Bust the cache at least once a month - output format: YYYY-MM.
+          custom-cache-suffix: $(date -u "+%Y-%m")
 
       - name: Download WP-CLI nightly
         run: |
