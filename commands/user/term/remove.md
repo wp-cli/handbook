@@ -4,6 +4,8 @@ Remove a term from an object.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;id&gt;
 : The ID of the object.
 

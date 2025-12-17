@@ -4,6 +4,8 @@ Migrate a term of a taxonomy to another taxonomy.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;term&gt;
 : Slug or ID of the term to migrate.
 

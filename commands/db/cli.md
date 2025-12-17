@@ -6,6 +6,8 @@ This command runs on the `after_wp_config_load` hook, after wp-config.php has be
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--database=&lt;database&gt;]
 : Use a specific database. Defaults to DB_NAME.
 

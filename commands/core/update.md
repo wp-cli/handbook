@@ -8,6 +8,8 @@ If you see "Error: Another update is currently in progress.", you may need to ru
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;zip&gt;]
 : Path to zip file to use, instead of downloading from wordpress.org.
 

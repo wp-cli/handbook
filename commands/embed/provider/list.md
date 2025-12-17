@@ -4,6 +4,8 @@ Lists all available oEmbed providers.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--field=&lt;field&gt;]
 : Display the value of a single field
 

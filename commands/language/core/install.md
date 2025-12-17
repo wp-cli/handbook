@@ -6,6 +6,8 @@ Downloads the language pack from WordPress.org. Find your language code at: http
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;language&gt;...
 : Language code to install.
 

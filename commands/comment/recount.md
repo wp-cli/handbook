@@ -4,6 +4,8 @@ Recalculates the comment_count value for one or more posts.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;id&gt;...
 : IDs for one or more posts to update.
 

@@ -4,6 +4,8 @@ Gets a list of items associated with a menu.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;menu&gt;
 : The name, slug, or term ID for the menu.
 

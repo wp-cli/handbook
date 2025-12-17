@@ -4,6 +4,8 @@ Creates a new comment.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : Associative args for the new comment. See wp_insert_comment().
 

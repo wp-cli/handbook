@@ -4,6 +4,8 @@ Disables the auto-updates for a plugin.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;plugin&gt;...]
 : One or more plugins to disable auto-updates for.
 

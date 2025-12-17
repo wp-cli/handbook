@@ -4,6 +4,8 @@ Removes all cache items in a group, if the object cache implementation supports 
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;group&gt;
 : Cache group key.
 

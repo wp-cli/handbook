@@ -6,6 +6,8 @@ Defaults to all tables registered to the $wpdb database handler.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;table&gt;...]
 : List tables based on wildcard search, e.g. 'wp_*_options' or 'wp_post?'.
 
