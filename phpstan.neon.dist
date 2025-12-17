@@ -4,6 +4,8 @@ parameters:
     - bin
   scanDirectories:
     - vendor/wp-cli/wp-cli
+  excludePaths:
+    - bin/packages
   treatPhpDocTypesAsCertain: false
   strictRules:
     strictCalls: true

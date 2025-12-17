@@ -12,6 +12,8 @@ If you experience issues verifying from this command, ensure you are passing the
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--include-root]
 : Verify all files and folders in the root directory, and warn if any non-WordPress items are found.
 
@@ -26,6 +28,19 @@ If you experience issues verifying from this command, ensure you are passing the
 
 [\--exclude=&lt;files&gt;]
 : Exclude specific files from the checksum verification. Provide a comma-separated list of file paths.
+
+[\--format=&lt;format&gt;]
+: Render output in a specific format. When provided, messages are displayed in the chosen format.
+\---
+default: plain
+options:
+  - plain
+  - table
+  - json
+  - csv
+  - yaml
+  - count
+\---
 
 ### EXAMPLES
 
@@ -51,6 +66,11 @@ If you experience issues verifying from this command, ensure you are passing the
     # Verify checksums and exclude files
     $ wp core verify-checksums --exclude="readme.html"
     Success: WordPress installation verifies against checksums.
+
+    # Verify checksums with formatted output
+    $ wp core verify-checksums --format=json
+    [{"file":"readme.html","message":"File doesn't verify against checksum"}]
+    Error: WordPress installation doesn't verify against checksums.
 
 ### GLOBAL PARAMETERS
 

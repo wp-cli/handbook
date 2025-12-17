@@ -8,6 +8,8 @@ Use `--status=dropin` to list installed dropins (e.g. `object-cache.php`).
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : Filter results based on the value of a field.
 

@@ -6,6 +6,8 @@ Creates a new widget entry in the database, and associates it with the sidebar.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;name&gt;
 : Widget name.
 

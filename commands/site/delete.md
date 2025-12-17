@@ -4,6 +4,8 @@ Deletes a site in a multisite installation.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;site-id&gt;]
 : The id of the site to delete. If not provided, you must set the --slug parameter.
 

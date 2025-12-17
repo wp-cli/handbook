@@ -4,6 +4,8 @@ Runs the WordPress database update procedure.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--network]
 : Update databases for all sites on a network
 

@@ -4,6 +4,8 @@ Sets the value of a theme mod.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;mod&gt;
 : The name of the theme mod to set or update.
 

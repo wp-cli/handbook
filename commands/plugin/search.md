@@ -6,6 +6,8 @@ Displays plugins in the WordPress.org plugin directory matching a given search q
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;search&gt;
 : The string to search for.
 

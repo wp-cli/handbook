@@ -6,6 +6,8 @@ Errors if a value already exists for the key, which means the value can't be add
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;key&gt;
 : Cache key.
 

@@ -4,6 +4,8 @@ Unmarks a comment as spam.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;id&gt;...
 : The IDs of the comments to unmark as spam.
 

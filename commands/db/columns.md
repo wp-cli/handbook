@@ -4,6 +4,8 @@ Displays information about a given table.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;table&gt;
 : Name of the database table.
 
