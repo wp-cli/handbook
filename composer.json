@@ -10,11 +10,11 @@
     },
     "autoload": {
       "psr-4": {
-          "WP_CLI\\Handbook\\": "bin/"
-        },
-        "files": [
-            "bin/handbook-command.php"
-        ]
+        "WP_CLI\\Handbook\\": "bin/"
+      },
+      "files": [
+          "bin/handbook-command.php"
+      ]
     },
     "require-dev": {
         "wp-cli/wp-cli": "^2.13",
