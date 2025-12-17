@@ -9,7 +9,7 @@ First half of escaping for LIKE special characters % and _ before preparing for 
     WP_CLI\Utils\esc_like( $text )
 
 <div>
-<strong>$text</strong> (string) The raw text to be escaped. The input typed by the user should have no<br />
+<strong>$text</strong> (string) The raw text to be escaped. The input typed by the user should have no<br />                    extra or deleted slashes.<br />
 <strong>@return</strong> (string) in the form of a LIKE phrase. The output is not SQL safe. Call $wpdb::prepare()<br />
 </div>
 
@@ -21,7 +21,6 @@ First half of escaping for LIKE special characters % and _ before preparing for 
 Use this only before wpdb::prepare() or esc_sql().  Reversing the order is very bad for security.
 
 Copied from core "wp-includes/wp-db.php". Avoids dependency on WP 4.4 wpdb.
-                    extra or deleted slashes.
                or real_escape next.
 
 
