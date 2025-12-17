@@ -8,6 +8,8 @@ Lists packages available for installation from the [Package Index](http://wp-cli
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--fields=&lt;fields&gt;]
 : Limit the output to specific fields. Defaults to all fields.
 

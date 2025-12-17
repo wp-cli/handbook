@@ -10,6 +10,8 @@ Runs `mysqlcheck` utility with `--repair=true` using `DB_HOST`, `DB_NAME`, `DB_U
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--dbuser=&lt;value&gt;]
 : Username to pass to mysqlcheck. Defaults to DB_USER.
 

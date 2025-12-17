@@ -4,6 +4,8 @@ Marks one or more users as spam on multisite.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;user&gt;...
 : The user login, user email, or user ID of the user(s) to mark as spam.
 

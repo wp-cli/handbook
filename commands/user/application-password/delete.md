@@ -4,6 +4,8 @@ Delete an existing application password.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;user&gt;
 : The user login, user email, or user ID of the user to delete the application password for.
 

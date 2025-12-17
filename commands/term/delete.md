@@ -6,6 +6,8 @@ Errors if the term doesn't exist, or there was a problem in deleting it.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;taxonomy&gt;
 : Taxonomy of the term to delete.
 

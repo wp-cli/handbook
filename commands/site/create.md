@@ -4,6 +4,8 @@ Creates a site in a multisite installation.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 \--slug=&lt;slug&gt;
 : Path for the new site. Subdomain on subdomain installs, directory on subdirectory installs.
 

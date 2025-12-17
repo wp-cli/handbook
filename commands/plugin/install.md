@@ -4,6 +4,8 @@ Installs one or more plugins.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;plugin|zip|url&gt;...
 : One or more plugins to install. Accepts a plugin slug, the path to a local zip file, or a URL to a remote zip file.
 
@@ -14,7 +16,7 @@ Installs one or more plugins.
 : If set, the command will overwrite any installed version of the plugin, without prompting for confirmation.
 
 [\--ignore-requirements]
-:If set, the command will install the plugin while ignoring any WordPress or PHP version requirements specified by the plugin authors.
+: If set, the command will install the plugin while ignoring any WordPress or PHP version requirements specified by the plugin authors.
 
 [\--activate]
 : If set, the plugin will be activated immediately after install.

@@ -4,6 +4,8 @@ Deletes all scheduled cron events for the given hook.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;hook&gt;...]
 : One or more hooks to delete.
 

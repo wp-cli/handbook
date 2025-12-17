@@ -8,6 +8,8 @@ If you want to contribute to a package, this is a great way to jump to it.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;name&gt;]
 : Name of the package to get the directory for.
 

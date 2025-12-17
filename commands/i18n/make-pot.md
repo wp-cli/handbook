@@ -8,6 +8,8 @@ Scans PHP, Blade-PHP and JavaScript files for translatable strings, as well as t
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;source&gt;
 : Directory to scan for string extraction.
 

@@ -4,6 +4,8 @@ Adds a capability to a user.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;user&gt;
 : User ID, user email, or user login.
 

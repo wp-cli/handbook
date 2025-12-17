@@ -4,6 +4,8 @@ Creates a new post.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--post_author=&lt;post_author&gt;]
 : The ID of the user who added the post. Default is the current user ID.
 

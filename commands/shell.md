@@ -6,6 +6,8 @@ Opens an interactive PHP console for running and testing PHP code.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--basic]
 : Force the use of WP-CLI's built-in PHP REPL, even if the Boris or PsySH PHP REPLs are available.
 
