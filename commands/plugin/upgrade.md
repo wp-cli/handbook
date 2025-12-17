@@ -1,21 +1,21 @@
-# wp theme update
+# wp plugin upgrade
 
-Updates one or more themes.
+Updates one or more plugins.
 
-**Alias:** `upgrade`
+This is an alias for `wp plugin update`.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;theme&gt;...]
-: One or more themes to update.
+[&lt;plugin&gt;...]
+: One or more plugins to update.
 
 [\--all]
-: If set, all themes that have updates will be updated.
+: If set, all plugins that have updates will be updated.
 
-[\--exclude=&lt;theme-names&gt;]
-: Comma separated list of theme names that should be excluded from updating.
+[\--exclude=&lt;name&gt;]
+: Comma separated list of plugin names that should be excluded from updating.
 
 [\--minor]
 : Only perform updates for minor releases (e.g. from 1.3 to 1.4 instead of 2.0)
@@ -35,58 +35,59 @@ options:
 \---
 
 [\--version=&lt;version&gt;]
-: If set, the theme will be updated to the specified version.
+: If set, the plugin will be updated to the specified version.
 
 [\--dry-run]
-: Preview which themes would be updated.
+: Preview which plugins would be updated.
 
 [\--insecure]
 : Retry downloads without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
 
 ### EXAMPLES
 
-    # Update multiple themes
-    $ wp theme update twentyfifteen twentysixteen
-    Downloading update from https://downloads.wordpress.org/theme/twentyfifteen.1.5.zip...
-    Unpacking the update...
-    Installing the latest version...
-    Removing the old version of the theme...
-    Theme updated successfully.
-    Downloading update from https://downloads.wordpress.org/theme/twentysixteen.1.2.zip...
-    Unpacking the update...
-    Installing the latest version...
-    Removing the old version of the theme...
-    Theme updated successfully.
-    +---------------+-------------+-------------+---------+
-    | name          | old_version | new_version | status  |
-    +---------------+-------------+-------------+---------+
-    | twentyfifteen | 1.4         | 1.5         | Updated |
-    | twentysixteen | 1.1         | 1.2         | Updated |
-    +---------------+-------------+-------------+---------+
-    Success: Updated 2 of 2 themes.
+    $ wp plugin update bbpress --version=dev
+    Installing bbPress (Development Version)
+    Downloading install package from https://downloads.wordpress.org/plugin/bbpress.zip...
+    Unpacking the package...
+    Installing the plugin...
+    Removing the old version of the plugin...
+    Plugin updated successfully.
+    Success: Updated 1 of 2 plugins.
 
-    # Exclude themes updates when bulk updating the themes
-    $ wp theme update --all --exclude=twentyfifteen
-    Downloading update from https://downloads.wordpress.org/theme/astra.1.0.5.1.zip...
+    $ wp plugin update --all
+    Enabling Maintenance mode...
+    Downloading update from https://downloads.wordpress.org/plugin/akismet.3.1.11.zip...
     Unpacking the update...
     Installing the latest version...
-    Removing the old version of the theme...
-    Theme updated successfully.
-    Downloading update from https://downloads.wordpress.org/theme/twentyseventeen.1.2.zip...
+    Removing the old version of the plugin...
+    Plugin updated successfully.
+    Downloading update from https://downloads.wordpress.org/plugin/nginx-champuru.3.2.0.zip...
     Unpacking the update...
     Installing the latest version...
-    Removing the old version of the theme...
-    Theme updated successfully.
-    +-----------------+----------+---------+----------------+
-    | name            | status   | version | update_version |
-    +-----------------+----------+---------+----------------+
-    | astra           | inactive | 1.0.1   | 1.0.5.1        |
-    | twentyseventeen | inactive | 1.1     | 1.2            |
-    +-----------------+----------+---------+----------------+
-    Success: Updated 2 of 2 themes.
+    Removing the old version of the plugin...
+    Plugin updated successfully.
+    Disabling Maintenance mode...
+    +------------------------+-------------+-------------+---------+
+    | name                   | old_version | new_version | status  |
+    +------------------------+-------------+-------------+---------+
+    | akismet                | 3.1.3       | 3.1.11      | Updated |
+    | nginx-cache-controller | 3.1.1       | 3.2.0       | Updated |
+    +------------------------+-------------+-------------+---------+
+    Success: Updated 2 of 2 plugins.
 
-    # Update all themes
-    $ wp theme update --all
+    $ wp plugin update --all --exclude=akismet
+    Enabling Maintenance mode...
+    Downloading update from https://downloads.wordpress.org/plugin/nginx-champuru.3.2.0.zip...
+    Unpacking the update...
+    Installing the latest version...
+    Removing the old version of the plugin...
+    Plugin updated successfully.
+    Disabling Maintenance mode...
+    +------------------------+-------------+-------------+---------+
+    | name                   | old_version | new_version | status  |
+    +------------------------+-------------+-------------+---------+
+    | nginx-cache-controller | 3.1.1       | 3.2.0       | Updated |
+    +------------------------+-------------+-------------+---------+
 
 ### GLOBAL PARAMETERS
 

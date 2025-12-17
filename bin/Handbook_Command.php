@@ -711,6 +711,10 @@ EOT;
 			$alias_binding['description']              .= sprintf( "\n\nThis is an alias for `wp %s`.", $binding['synopsis'] );
 			$alias_path                                 = dirname( __DIR__ ) . '/commands/' . $alias_binding['path'];
 			$alias_dir                                  = dirname( $alias_path );
+
+			// Don't mention alias for the alias.
+			unset( $alias_binding['alias'] );
+
 			if ( ! is_dir( $alias_dir ) ) {
 				mkdir( $alias_dir, 0755, true );
 			}

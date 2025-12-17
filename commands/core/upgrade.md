@@ -1,29 +1,59 @@
-# wp theme delete
+# wp core upgrade
 
-Deletes one or more themes.
+Updates WordPress to a newer version.
 
-**Alias:** `uninstall`
+This is an alias for `wp core update`.
 
-Removes the theme or themes from the filesystem.
+Defaults to updating WordPress to the latest version.
+
+If you see "Error: Another update is currently in progress.", you may need to run `wp option delete core_updater.lock` after verifying another update isn't actually running.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;theme&gt;...]
-: One or more themes to delete.
+[&lt;zip&gt;]
+: Path to zip file to use, instead of downloading from wordpress.org.
 
-[\--all]
-: If set, all themes will be deleted except active theme.
+[\--minor]
+: Only perform updates for minor releases (e.g. update from WP 4.3 to 4.3.3 instead of 4.4.2).
+
+[\--version=&lt;version&gt;]
+: Update to a specific version, instead of to the latest version. Alternatively accepts 'nightly'.
 
 [\--force]
-: To delete active theme use this.
+: Update even when installed WP version is greater than the requested version.
+
+[\--locale=&lt;locale&gt;]
+: Select which language you want to download.
+
+[\--insecure]
+: Retry download without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
 
 ### EXAMPLES
 
-    $ wp theme delete twentytwelve
-    Deleted 'twentytwelve' theme.
-    Success: Deleted 1 of 1 themes.
+    # Update WordPress
+    $ wp core update
+    Updating to version 4.5.2 (en_US)...
+    Downloading update from https://downloads.wordpress.org/release/wordpress-4.5.2-no-content.zip...
+    Unpacking the update...
+    Cleaning up files...
+    No files found that need cleaning up
+    Success: WordPress updated successfully.
+
+    # Update WordPress using zip file.
+    $ wp core update ../latest.zip
+    Starting update...
+    Unpacking the update...
+    Success: WordPress updated successfully.
+
+    # Update WordPress to 3.1 forcefully
+    $ wp core update --version=3.1 --force
+    Updating to version 3.1 (en_US)...
+    Downloading update from https://wordpress.org/wordpress-3.1.zip...
+    Unpacking the update...
+    Warning: Checksums not available for WordPress 3.1/en_US. Please cleanup files manually.
+    Success: WordPress updated successfully.
 
 ### GLOBAL PARAMETERS
 

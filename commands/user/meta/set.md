@@ -1,41 +1,36 @@
-# wp scaffold taxonomy
+# wp user meta set
 
-Generates PHP code for registering a custom taxonomy.
+Updates a meta field.
 
-**Alias:** `tax`
+This is an alias for `wp user meta update`.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
-: The internal name of the taxonomy.
+&lt;user&gt;
+: The user login, user email, or user ID of the user to update metadata for.
 
-[\--post_types=&lt;post-types&gt;]
-: Post types to register for use with the taxonomy.
+&lt;key&gt;
+: The metadata key.
 
-[\--label=&lt;label&gt;]
-: The text used to translate the update messages.
+&lt;value&gt;
+: The new metadata value.
 
-[\--textdomain=&lt;textdomain&gt;]
-: The textdomain to use for the labels.
-
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
-
-[\--plugin=&lt;plugin&gt;]
-: Create a file in the given plugin's directory, instead of sending to STDOUT.
-
-[\--raw]
-: Just generate the `register_taxonomy()` call and nothing else.
-
-[\--force]
-: Overwrite files that already exist.
+[\--format=&lt;format&gt;]
+: The serialization format for the value.
+\---
+default: plaintext
+options:
+  - plaintext
+  - json
+\---
 
 ### EXAMPLES
 
-    # Generate PHP code for registering a custom taxonomy and save in a file
-    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
+    # Update user meta
+    $ wp user meta update 123 bio "Mary is an awesome WordPress developer."
+    Success: Updated custom field 'bio'.
 
 ### GLOBAL PARAMETERS
 
