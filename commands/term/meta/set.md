@@ -1,41 +1,30 @@
-# wp scaffold taxonomy
+# wp term meta set
 
-Generates PHP code for registering a custom taxonomy.
+Update a meta field.
 
-**Alias:** `tax`
+This is an alias for `wp term meta update`.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
-: The internal name of the taxonomy.
+&lt;id&gt;
+: The ID of the object.
 
-[\--post_types=&lt;post-types&gt;]
-: Post types to register for use with the taxonomy.
+&lt;key&gt;
+: The name of the meta field to update.
 
-[\--label=&lt;label&gt;]
-: The text used to translate the update messages.
+[&lt;value&gt;]
+: The new value. If omitted, the value is read from STDIN.
 
-[\--textdomain=&lt;textdomain&gt;]
-: The textdomain to use for the labels.
-
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
-
-[\--plugin=&lt;plugin&gt;]
-: Create a file in the given plugin's directory, instead of sending to STDOUT.
-
-[\--raw]
-: Just generate the `register_taxonomy()` call and nothing else.
-
-[\--force]
-: Overwrite files that already exist.
-
-### EXAMPLES
-
-    # Generate PHP code for registering a custom taxonomy and save in a file
-    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
+[\--format=&lt;format&gt;]
+: The serialization format for the value.
+\---
+default: plaintext
+options:
+  - plaintext
+  - json
+\---
 
 ### GLOBAL PARAMETERS
 

@@ -1,8 +1,8 @@
-# wp theme update
+# wp theme upgrade
 
 Updates one or more themes.
 
-**Alias:** `upgrade`
+This is an alias for `wp theme update`.
 
 ### OPTIONS
 

@@ -1,8 +1,8 @@
-# wp scaffold taxonomy
+# wp scaffold tax
 
 Generates PHP code for registering a custom taxonomy.
 
-**Alias:** `tax`
+This is an alias for `wp scaffold taxonomy`.
 
 ### OPTIONS
 

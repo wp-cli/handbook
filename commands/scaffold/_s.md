@@ -1,41 +1,47 @@
-# wp scaffold taxonomy
+# wp scaffold _s
 
-Generates PHP code for registering a custom taxonomy.
+Generates starter code for a theme based on _s.
 
-**Alias:** `tax`
+This is an alias for `wp scaffold underscores`.
+
+See the [Underscores website](https://underscores.me/) for more details.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 &lt;slug&gt;
-: The internal name of the taxonomy.
+: The slug for the new theme, used for prefixing functions.
 
-[\--post_types=&lt;post-types&gt;]
-: Post types to register for use with the taxonomy.
+[\--activate]
+: Activate the newly downloaded theme.
 
-[\--label=&lt;label&gt;]
-: The text used to translate the update messages.
+[\--enable-network]
+: Enable the newly downloaded theme for the entire network.
 
-[\--textdomain=&lt;textdomain&gt;]
-: The textdomain to use for the labels.
+[\--theme_name=&lt;title&gt;]
+: What to put in the 'Theme Name:' header in 'style.css'.
 
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+[\--author=&lt;full-name&gt;]
+: What to put in the 'Author:' header in 'style.css'.
 
-[\--plugin=&lt;plugin&gt;]
-: Create a file in the given plugin's directory, instead of sending to STDOUT.
+[\--author_uri=&lt;uri&gt;]
+: What to put in the 'Author URI:' header in 'style.css'.
 
-[\--raw]
-: Just generate the `register_taxonomy()` call and nothing else.
+[\--sassify]
+: Include stylesheets as SASS.
+
+[\--woocommerce]
+: Include WooCommerce boilerplate files.
 
 [\--force]
 : Overwrite files that already exist.
 
 ### EXAMPLES
 
-    # Generate PHP code for registering a custom taxonomy and save in a file
-    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
+    # Generate a theme with name "Sample Theme" and author "John Doe"
+    $ wp scaffold _s sample-theme --theme_name="Sample Theme" --author="John Doe"
+    Success: Created theme 'Sample Theme'.
 
 ### GLOBAL PARAMETERS
 

@@ -1,41 +1,29 @@
-# wp scaffold taxonomy
+# wp theme uninstall
 
-Generates PHP code for registering a custom taxonomy.
+Deletes one or more themes.
 
-**Alias:** `tax`
+This is an alias for `wp theme delete`.
+
+Removes the theme or themes from the filesystem.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
-: The internal name of the taxonomy.
+[&lt;theme&gt;...]
+: One or more themes to delete.
 
-[\--post_types=&lt;post-types&gt;]
-: Post types to register for use with the taxonomy.
-
-[\--label=&lt;label&gt;]
-: The text used to translate the update messages.
-
-[\--textdomain=&lt;textdomain&gt;]
-: The textdomain to use for the labels.
-
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
-
-[\--plugin=&lt;plugin&gt;]
-: Create a file in the given plugin's directory, instead of sending to STDOUT.
-
-[\--raw]
-: Just generate the `register_taxonomy()` call and nothing else.
+[\--all]
+: If set, all themes will be deleted except active theme.
 
 [\--force]
-: Overwrite files that already exist.
+: To delete active theme use this.
 
 ### EXAMPLES
 
-    # Generate PHP code for registering a custom taxonomy and save in a file
-    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
+    $ wp theme delete twentytwelve
+    Deleted 'twentytwelve' theme.
+    Success: Deleted 1 of 1 themes.
 
 ### GLOBAL PARAMETERS
 

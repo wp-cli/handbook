@@ -1,41 +1,38 @@
-# wp scaffold taxonomy
+# wp db connect
 
-Generates PHP code for registering a custom taxonomy.
+Opens a MySQL console using credentials from wp-config.php
 
-**Alias:** `tax`
+This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
+
+This is an alias for `wp db cli`.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
-: The internal name of the taxonomy.
+[\--database=&lt;database&gt;]
+: Use a specific database. Defaults to DB_NAME.
 
-[\--post_types=&lt;post-types&gt;]
-: Post types to register for use with the taxonomy.
+[\--default-character-set=&lt;character-set&gt;]
+: Use a specific character set. Defaults to DB_CHARSET when defined.
 
-[\--label=&lt;label&gt;]
-: The text used to translate the update messages.
+[\--dbuser=&lt;value&gt;]
+: Username to pass to mysql. Defaults to DB_USER.
 
-[\--textdomain=&lt;textdomain&gt;]
-: The textdomain to use for the labels.
+[\--dbpass=&lt;value&gt;]
+: Password to pass to mysql. Defaults to DB_PASSWORD.
 
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+[\--&lt;field&gt;=&lt;value&gt;]
+: Extra arguments to pass to mysql. [Refer to mysql docs](https://dev.mysql.com/doc/en/mysql-command-options.html).
 
-[\--plugin=&lt;plugin&gt;]
-: Create a file in the given plugin's directory, instead of sending to STDOUT.
-
-[\--raw]
-: Just generate the `register_taxonomy()` call and nothing else.
-
-[\--force]
-: Overwrite files that already exist.
+[\--defaults]
+: Loads the environment's MySQL option files. Default behavior is to skip loading them to avoid failures due to misconfiguration.
 
 ### EXAMPLES
 
-    # Generate PHP code for registering a custom taxonomy and save in a file
-    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
+    # Open MySQL console
+    $ wp db cli
+    mysql&gt;
 
 ### GLOBAL PARAMETERS
 

@@ -2,6 +2,8 @@
 
 Updates WordPress to a newer version.
 
+**Alias:** `upgrade`
+
 Defaults to updating WordPress to the latest version.
 
 If you see "Error: Another update is currently in progress.", you may need to run `wp option delete core_updater.lock` after verifying another update isn't actually running.

@@ -2,6 +2,8 @@
 
 Generates starter code for a theme based on _s.
 
+**Alias:** `_s`
+
 See the [Underscores website](https://underscores.me/) for more details.
 
 ### OPTIONS

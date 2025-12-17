@@ -1,41 +1,40 @@
-# wp scaffold taxonomy
+# wp core install-network
 
-Generates PHP code for registering a custom taxonomy.
+Transforms an existing single-site installation into a multisite installation.
 
-**Alias:** `tax`
+This is an alias for `wp core multisite-convert`.
+
+Creates the multisite database tables, and adds the multisite constants to wp-config.php.
+
+For those using WordPress with Apache, remember to update the `.htaccess` file with the appropriate multisite rewrite rules.
+
+[Review the multisite documentation](https://wordpress.org/support/article/create-a-network/) for more details about how multisite works.
 
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
-: The internal name of the taxonomy.
+[\--title=&lt;network-title&gt;]
+: The title of the new network.
 
-[\--post_types=&lt;post-types&gt;]
-: Post types to register for use with the taxonomy.
+[\--base=&lt;url-path&gt;]
+: Base path after the domain name that each site url will start with.
+\---
+default: /
+\---
 
-[\--label=&lt;label&gt;]
-: The text used to translate the update messages.
+[\--subdomains]
+: If passed, the network will use subdomains, instead of subdirectories. Doesn't work with 'localhost'.
 
-[\--textdomain=&lt;textdomain&gt;]
-: The textdomain to use for the labels.
-
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
-
-[\--plugin=&lt;plugin&gt;]
-: Create a file in the given plugin's directory, instead of sending to STDOUT.
-
-[\--raw]
-: Just generate the `register_taxonomy()` call and nothing else.
-
-[\--force]
-: Overwrite files that already exist.
+[\--skip-config]
+: Don't add multisite constants to wp-config.php.
 
 ### EXAMPLES
 
-    # Generate PHP code for registering a custom taxonomy and save in a file
-    $ wp scaffold taxonomy venue --post_types=event,presentation > taxonomy.php
+    $ wp core multisite-convert
+    Set up multisite database tables.
+    Added multisite constants to wp-config.php.
+    Success: Network installed. Don't forget to set up rewrite rules.
 
 ### GLOBAL PARAMETERS
 
