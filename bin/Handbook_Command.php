@@ -812,8 +812,8 @@ EOT;
 					end( $ret['parameters'][ $param_name ] );
 					$key = key( $ret['parameters'][ $param_name ] );
 					reset( $ret['parameters'][ $param_name ] );
-					// Always set $in_param for @param tags to capture multiline descriptions
-					if ( 'param' === $param_name && ! empty( $ret['parameters'][ $param_name ][ $key ][2] ) ) {
+					// Always set $in_param for tags that can have multiline descriptions
+					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] ) ) {
 						$in_param = [ $param_name, $key ];
 					} else {
 						$in_param = false;
