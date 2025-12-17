@@ -9,8 +9,11 @@
         "sort-packages": true
     },
     "autoload": {
+      "psr-4": {
+          "WP_CLI\\Handbook\\": "bin/"
+        },
         "files": [
-            "bin/command.php"
+            "bin/handbook-command.php"
         ]
     },
     "require-dev": {
