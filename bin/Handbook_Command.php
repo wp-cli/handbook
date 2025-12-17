@@ -791,13 +791,10 @@ EOT;
 			if ( preg_match( '/^(?=\s+?\*[^\/])(.+)/', $line, $matches ) ) {
 				$info = trim( $matches[1] );
 				$info = preg_replace( '/^(\*\s+?)/', '', $info );
-				if ( $in_param ) {
+				if ( $in_param && ! empty( $info ) && '@' !== $info[0] ) {
 					list( $param_name, $key )                     = $in_param;
 					$ret['parameters'][ $param_name ][ $key ][2] .= PHP_EOL . $info;
-					if ( '}' === substr( $info, -1 ) ) {
-						$in_param = false;
-					}
-				} elseif ( '@' !== $info[0] ) {
+				} elseif ( ! empty( $info ) && '@' !== $info[0] ) {
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
 					preg_match( '/@(\w+)/', $info, $matches );
@@ -815,9 +812,11 @@ EOT;
 					end( $ret['parameters'][ $param_name ] );
 					$key = key( $ret['parameters'][ $param_name ] );
 					reset( $ret['parameters'][ $param_name ] );
-					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] )
-						&& '{' === substr( $ret['parameters'][ $param_name ][ $key ][2], -1 ) ) {
+					// Always set $in_param for tags that can have multiline descriptions
+					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] ) ) {
 						$in_param = [ $param_name, $key ];
+					} else {
+						$in_param = false;
 					}
 				}
 				$extra_line = '';
