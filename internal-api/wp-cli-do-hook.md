@@ -10,8 +10,8 @@ Execute callbacks registered to a given hook.
 
 <div>
 <strong>$when</strong> (string) Identifier for the hook.<br />
-<strong>...$args</strong> (mixed) Optional. Arguments that will be passed onto the<br />
-<strong>@return</strong> (null|mixed) the first optional argument if optional<br />
+<strong>...$args</strong> (mixed) Optional. Arguments that will be passed onto the<br />                       callback provided by `WP_CLI::add_hook()`.<br />
+<strong>@return</strong> (null|mixed) the first optional argument if optional&lt;br /&gt;                   arguments were passed, otherwise returns null.<br />
 </div>
 
 
@@ -21,8 +21,6 @@ Execute callbacks registered to a given hook.
 
 See `WP_CLI::add_hook()` for details on WP-CLI's internal hook system.
 Commands can provide and call their own hooks.
-                       callback provided by `WP_CLI::add_hook()`.
-                   arguments were passed, otherwise returns null.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
