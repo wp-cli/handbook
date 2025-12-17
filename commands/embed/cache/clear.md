@@ -6,6 +6,8 @@ oEmbed caches for a post are stored in the post's metadata.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;post_id&gt;
 : ID of the post to clear the cache for.
 

@@ -8,6 +8,8 @@ This behaves similarly to the [msgmerge](https://www.gnu.org/software/gettext/ma
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;source&gt;
 : Path to an existing POT file to use for updating.
 

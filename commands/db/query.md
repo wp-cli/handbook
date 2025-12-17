@@ -11,6 +11,8 @@ Use the `--skip-column-names` MySQL argument to exclude the headers from a SELEC
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;sql&gt;]
 : A SQL query. If not passed, will try to read from STDIN.
 

@@ -7,6 +7,8 @@ Display WordPress users based on all arguments supported by
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--role=&lt;role&gt;]
 : Only display users with a certain role.
 

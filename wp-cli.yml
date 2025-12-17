@@ -1,2 +1,2 @@
 require:
-  - bin/command.php
+  - bin/handbook-command.php

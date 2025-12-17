@@ -4,6 +4,8 @@ Gets details about a registered post type.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;post-type&gt;
 : Post type slug
 

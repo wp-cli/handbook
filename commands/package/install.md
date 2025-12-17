@@ -22,6 +22,8 @@ composer config -g github-oauth.github.com &lt;GITHUB_TOKEN&gt; Once this has be
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;name|git|path|zip&gt;
 : Name, git URL, directory path, or .zip file for the package to install. Names can optionally include a version constraint (e.g. wp-cli/server-command:@stable).
 

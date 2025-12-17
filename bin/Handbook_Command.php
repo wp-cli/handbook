@@ -11,13 +11,16 @@ use WP_CLI;
 use WP_CLI\Utils;
 
 
-define( 'WP_CLI_HANDBOOK_PATH', dirname( __DIR__ ) );
-
-
 /**
  * @when before_wp_load
  */
-class Command {
+class Handbook_Command {
+	/**
+	 * @return string
+	 */
+	protected static function get_handbook_path() {
+		return dirname( __DIR__ );
+	}
 
 	/**
 	 * Regenerates all doc pages.
@@ -111,7 +114,7 @@ This also means functions and methods not listed here are considered part of the
 
 EOT;
 
-		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/internal-api/' );
+		self::empty_dir( self::get_handbook_path() . '/internal-api/' );
 
 		foreach ( $categories as $name => $apis ) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
@@ -136,7 +139,7 @@ EOT;
 				$api['has_related'] = ! empty( $api['related'] );
 
 				$api_doc = self::render( 'internal-api.mustache', $api );
-				$path    = WP_CLI_HANDBOOK_PATH . "/internal-api/{$api['api_slug']}.md";
+				$path    = self::get_handbook_path() . "/internal-api/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
 					mkdir( dirname( $path ) );
 				}
@@ -145,7 +148,7 @@ EOT;
 			$out .= PHP_EOL . PHP_EOL;
 		}
 
-		file_put_contents( WP_CLI_HANDBOOK_PATH . '/internal-api.md', $out );
+		file_put_contents( self::get_handbook_path() . '/internal-api.md', $out );
 		WP_CLI::success( 'Generated internal-api/' );
 	}
 
@@ -188,7 +191,7 @@ WP-CLI makes use of a Behat-based testing framework and provides a set of custom
 
 EOT;
 
-		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/behat-steps/' );
+		self::empty_dir( self::get_handbook_path() . '/behat-steps/' );
 
 		foreach ( $categories as $name => $apis ) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
@@ -213,7 +216,7 @@ EOT;
 				$api['has_related'] = ! empty( $api['related'] );
 
 				$api_doc = self::render( 'behat-steps.mustache', $api );
-				$path    = WP_CLI_HANDBOOK_PATH . "/behat-steps/{$api['api_slug']}.md";
+				$path    = self::get_handbook_path() . "/behat-steps/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
 					mkdir( dirname( $path ) );
 				}
@@ -222,7 +225,7 @@ EOT;
 			$out .= PHP_EOL . PHP_EOL;
 		}
 
-		file_put_contents( WP_CLI_HANDBOOK_PATH . '/behat-steps.md', $out );
+		file_put_contents( self::get_handbook_path() . '/behat-steps.md', $out );
 		WP_CLI::success( 'Generated behat-steps/' );
 	}
 
@@ -256,7 +259,7 @@ EOT;
 			WP_CLI::error( sprintf( "Install non-bundled packages by running '%s' first.", 'bin/install_packages.sh' ) );
 		}
 
-		self::empty_dir( WP_CLI_HANDBOOK_PATH . '/commands/' );
+		self::empty_dir( self::get_handbook_path() . '/commands/' );
 
 		$wp = WP_CLI::runcommand(
 			'cli cmd-dump',
@@ -347,9 +350,9 @@ EOT;
 	public function gen_commands_manifest() {
 		$manifest      = [];
 		$paths         = [
-			WP_CLI_HANDBOOK_PATH . '/commands/*.md',
-			WP_CLI_HANDBOOK_PATH . '/commands/*/*.md',
-			WP_CLI_HANDBOOK_PATH . '/commands/*/*/*.md',
+			self::get_handbook_path() . '/commands/*.md',
+			self::get_handbook_path() . '/commands/*/*.md',
+			self::get_handbook_path() . '/commands/*/*/*.md',
 		];
 		$commands_data = [];
 		foreach ( WP_CLI::get_root_command()->get_subcommands() as $command ) {
@@ -358,7 +361,7 @@ EOT;
 		foreach ( $paths as $path ) {
 			foreach ( glob( $path ) as $file ) {
 				$slug     = basename( $file, '.md' );
-				$cmd_path = str_replace( [ WP_CLI_HANDBOOK_PATH . '/commands/', '.md' ], '', $file );
+				$cmd_path = str_replace( [ self::get_handbook_path() . '/commands/', '.md' ], '', $file );
 				$title    = '';
 				$contents = file_get_contents( $file );
 				if ( preg_match( '/^#\swp\s(.+)/', $contents, $matches ) ) {
@@ -396,7 +399,7 @@ EOT;
 				}
 			}
 		}
-		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/commands-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
+		file_put_contents( self::get_handbook_path() . '/bin/commands-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		$count = count( $manifest );
 		WP_CLI::success( "Generated bin/commands-manifest.json of {$count} commands" );
 	}
@@ -421,7 +424,7 @@ EOT;
 
 		$files = new \RecursiveIteratorIterator(
 			new \RecursiveCallbackFilterIterator(
-				new \RecursiveDirectoryIterator( WP_CLI_HANDBOOK_PATH, \RecursiveDirectoryIterator::SKIP_DOTS ),
+				new \RecursiveDirectoryIterator( self::get_handbook_path(), \RecursiveDirectoryIterator::SKIP_DOTS ),
 				static function ( $file ) use ( $ignored_dirs ) {
 					/** @var \SplFileInfo $file */
 
@@ -448,7 +451,7 @@ EOT;
 				continue;
 			}
 
-			$rel_path = str_replace( WP_CLI_HANDBOOK_PATH . '/', '', $file->getPathname() );
+			$rel_path = str_replace( self::get_handbook_path() . '/', '', $file->getPathname() );
 
 			$path = explode( '/', $rel_path );
 			array_pop( $path );
@@ -477,7 +480,7 @@ EOT;
 
 		ksort( $manifest );
 
-		file_put_contents( WP_CLI_HANDBOOK_PATH . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
+		file_put_contents( self::get_handbook_path() . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
 		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
 	}
 
@@ -840,7 +843,7 @@ EOT;
 	 */
 	private static function render( string $path, $binding ): string {
 		$m        = new Mustache_Engine();
-		$template = file_get_contents( WP_CLI_HANDBOOK_PATH . "/bin/templates/$path" );
+		$template = file_get_contents( self::get_handbook_path() . "/bin/templates/$path" );
 		return $m->render( $template, $binding );
 	}
 
@@ -864,5 +867,3 @@ EOT;
 		WP_CLI::log( sprintf( "Removed existing contents of '%s'", $dir ) );
 	}
 }
-
-WP_CLI::add_command( 'handbook', '\WP_CLI\Handbook\Command' );

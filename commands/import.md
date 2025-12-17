@@ -8,6 +8,8 @@ Use `define( 'IMPORT_DEBUG', true );` for more verbosity during importing.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;file&gt;...
 : Path to one or more valid WXR files for importing. Directories are also accepted.
 
@@ -16,6 +18,9 @@ Use `define( 'IMPORT_DEBUG', true );` for more verbosity during importing.
 
 [\--skip=&lt;data-type&gt;]
 : Skip importing specific data. Supported options are: 'attachment' and 'image_resize' (skip time-consuming thumbnail generation).
+
+[\--rewrite_urls]
+: Change all imported URLs that currently link to the previous site so that they now link to this site Requires WordPress Importer version 0.9.1 or newer.
 
 ### EXAMPLES
 
