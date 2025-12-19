@@ -74,6 +74,7 @@ In alphabetical order:
 * [RoseHosting](https://www.rosehosting.com)
 * [Savvii](https://www.savvii.com/)
 * [ScanNet](https://www.scannet.dk)
+* [SeekaHost](https://www.seekahost.com)
 * [Seravo.com](https://seravo.com)
 * [Servebolt.com](https://servebolt.com)
 * [Simplenet.ro](https://simplenet.ro)
