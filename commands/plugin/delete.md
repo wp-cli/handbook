@@ -4,6 +4,8 @@ Deletes plugin files without deactivating or uninstalling.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;plugin&gt;...]
 : One or more plugins to delete.
 

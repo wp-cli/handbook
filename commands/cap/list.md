@@ -4,6 +4,8 @@ Lists capabilities for a given role.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;role&gt;
 : Key for the role.
 

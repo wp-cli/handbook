@@ -1,0 +1,67 @@
+name: Regenerate Handbook
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [regenerate-handbook]
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    name: Regenerate handbook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v6
+
+      - name: Set up PHP environment
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 'latest'
+          coverage: 'none'
+        env:
+          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Composer dependencies & cache dependencies
+        uses: "ramsey/composer-install@v3"
+        env:
+          COMPOSER_ROOT_VERSION: dev-${{ github.event.repository.default_branch }}
+        with:
+          # Bust the cache at least once a month - output format: YYYY-MM.
+          custom-cache-suffix: $(date -u "+%Y-%m")
+
+      - name: Download WP-CLI nightly
+        run: |
+          curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
+          chmod +x wp-cli-nightly.phar
+          sudo mv wp-cli-nightly.phar /usr/local/bin/wp
+
+      - name: Verify WP-CLI installation
+        run: wp --info
+
+      - name: Install non-bundled packages
+        run: |
+          chmod +x bin/install_packages.sh
+          bash bin/install_packages.sh
+
+      - name: Generate handbook
+        run: WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --exit-code --quiet HEAD || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Regenerate handbook"
+
+      - name: Push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: git push

@@ -4,6 +4,8 @@ Uninstalls a given language for a theme.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;theme&gt;]
 : Theme to uninstall language for.
 

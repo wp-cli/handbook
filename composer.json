@@ -3,18 +3,22 @@
     "description": "Source files for the handbook that is generated for make.wordpress.org.",
     "config": {
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
         },
         "sort-packages": true
     },
     "autoload": {
-        "files": [
-            "bin/command.php"
-        ]
+      "psr-4": {
+        "WP_CLI\\Handbook\\": "bin/"
+      },
+      "files": [
+          "bin/handbook-command.php"
+      ]
     },
     "require-dev": {
-        "wp-cli/wp-cli": "^2.11",
-        "wp-cli/wp-cli-tests": "^4.3.14"
+        "wp-cli/wp-cli": "^2.13",
+        "wp-cli/wp-cli-tests": "^5.0.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -24,11 +28,13 @@
         "lint": "run-linter-tests",
         "phpcs": "run-phpcs-tests",
         "phpcbf": "run-phpcbf-cleanup",
+        "phpstan": "run-phpstan-tests",
         "phpunit": "run-php-unit-tests",
         "prepare-tests": "install-package-tests",
         "test": [
             "@lint",
             "@phpcs",
+            "@phpstan",
             "@phpunit",
             "@behat"
         ]

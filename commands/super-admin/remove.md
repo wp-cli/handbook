@@ -4,6 +4,8 @@ Removes super admin privileges from one or more users.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;user&gt;...
 : One or more user IDs, user emails, or user logins.
 

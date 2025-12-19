@@ -2,9 +2,13 @@
 
 Generates starter code for a theme based on _s.
 
+**Alias:** `_s`
+
 See the [Underscores website](https://underscores.me/) for more details.
 
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 &lt;slug&gt;
 : The slug for the new theme, used for prefixing functions.

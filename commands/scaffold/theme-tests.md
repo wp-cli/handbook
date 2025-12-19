@@ -19,6 +19,8 @@ The `tests/bootstrap.php` file looks for the WP_TESTS_DIR environment variable.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;theme&gt;]
 : The name of the theme to generate test files for.
 

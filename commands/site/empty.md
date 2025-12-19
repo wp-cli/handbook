@@ -20,6 +20,8 @@ WP_CLI::add_hook( 'after_invoke:site empty', function(){
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--uploads]
 : Also delete *all* files in the site's uploads directory.
 

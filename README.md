@@ -19,6 +19,21 @@ bin/install_packages.sh
 WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
 ```
 
+## Automated Handbook Generation
+
+The handbook can be regenerated automatically using the "Regenerate Handbook" GitHub Actions workflow. This workflow can be triggered in two ways:
+
+1. **Manual trigger**: Navigate to the Actions tab in the GitHub repository and run the "Regenerate Handbook" workflow manually.
+2. **Automated trigger from wp-cli/wp-cli**: When a new version of WP-CLI is released, the main framework repository can trigger this workflow using a `repository_dispatch` event with type `regenerate-handbook`.
+
+The workflow will:
+- Install WP-CLI nightly build
+- Install non-bundled packages
+- Run `wp handbook gen-all`
+- Commit and push any changes to the repository
+
+## Documentation Import
+
 All documentation is imported automatically into WordPress.org in a two step process:
 
 1. WordPress reads `commands-manifest.json` or `handbook-manifest.json` to understand all pages that need to be created.

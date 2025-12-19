@@ -6,6 +6,8 @@ Determines whether WordPress is installed by checking if the standard database t
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--network]
 : Check if this is a multisite installation.
 

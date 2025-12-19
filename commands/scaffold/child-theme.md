@@ -6,6 +6,8 @@ Creates a child theme folder with `functions.php` and `style.css` files.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;slug&gt;
 : The slug for the new child theme.
 

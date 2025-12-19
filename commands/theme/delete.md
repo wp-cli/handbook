@@ -2,9 +2,13 @@
 
 Deletes one or more themes.
 
+**Alias:** `uninstall`
+
 Removes the theme or themes from the filesystem.
 
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 [&lt;theme&gt;...]
 : One or more themes to delete.

@@ -6,6 +6,8 @@ Creates a new wp-config.php with database constants, and verifies that the datab
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 \--dbname=&lt;dbname&gt;
 : Set the database name.
 
@@ -59,6 +61,9 @@ default:
 
 [\--insecure]
 : Retry API download without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
+
+[\--ssl]
+: Use SSL when checking the database connection.
 
 ### EXAMPLES
 
