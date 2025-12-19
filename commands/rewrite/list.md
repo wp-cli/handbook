@@ -4,6 +4,8 @@ Gets a list of the current rewrite rules.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--match=&lt;url&gt;]
 : Show rewrite rules matching a particular URL.
 

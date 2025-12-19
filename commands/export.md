@@ -6,6 +6,8 @@ Generates one or more WXR files containing authors, terms, posts, comments, and 
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--dir=&lt;dirname&gt;]
 : Full path to directory where WXR export files should be stored. Defaults to current working directory.
 

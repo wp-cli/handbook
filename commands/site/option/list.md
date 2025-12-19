@@ -4,6 +4,8 @@ Lists site options.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--search=&lt;pattern&gt;]
 : Use wildcards ( * and ? ) to match option name.
 

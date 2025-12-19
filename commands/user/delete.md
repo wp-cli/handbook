@@ -6,6 +6,8 @@ On multisite, `wp user delete` only removes the user from the current site. Incl
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;user&gt;...
 : The user login, user email, or user ID of the user(s) to delete.
 

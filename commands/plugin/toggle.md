@@ -6,6 +6,8 @@ If the plugin is active, then it will be deactivated. If the plugin is inactive,
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;plugin&gt;...
 : One or more plugins to toggle.
 

@@ -10,6 +10,8 @@ Search/replace intelligently handles PHP serialized data, and does not change pr
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;old&gt;
 : A string to search for within the database.
 

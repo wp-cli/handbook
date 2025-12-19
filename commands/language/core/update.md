@@ -4,6 +4,8 @@ Updates installed languages for core.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--dry-run]
 : Preview which translations would be updated.
 

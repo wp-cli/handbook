@@ -503,6 +503,21 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	require_once dirname( __FILE__ ) . '/inc/class-plugin-cli-command.php';
 }
 ```
+
+Alternatively, you can use the `cli_init` hook to register your commands. This hook is fired during the WP-CLI Runner startup process, providing a dedicated event for command registration without needing to check for the `WP_CLI` constant.
+
+```
+/**
+ * Register custom WP-CLI commands using the cli_init hook.
+ */
+function myplugin_register_cli_commands() {
+	require_once dirname( __FILE__ ) . '/inc/class-plugin-cli-command.php';
+	WP_CLI::add_command( 'myplugin', 'MyPlugin_CLI_Command' );
+}
+add_action( 'cli_init', 'myplugin_register_cli_commands' );
+```
+
+Both approaches are valid. Use the `WP_CLI` constant check when you need to conditionally load code based on whether WP-CLI is present. Use the `cli_init` hook when you want to hook into a specific point in the WP-CLI initialization process.
 	
 ### Distribute as a stand-alone command
 

@@ -8,6 +8,8 @@ In order to profile callbacks on a specific hook, the action or filter will need
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;hook&gt;]
 : Drill into key metrics of callbacks on a specific WordPress hook.
 

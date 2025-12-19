@@ -4,6 +4,8 @@ Lists users with super admin capabilities.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---

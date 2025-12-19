@@ -4,7 +4,11 @@ Opens a MySQL console using credentials from wp-config.php
 
 This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
 
+**Alias:** `connect`
+
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 [\--database=&lt;database&gt;]
 : Use a specific database. Defaults to DB_NAME.

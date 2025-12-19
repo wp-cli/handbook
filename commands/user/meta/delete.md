@@ -4,6 +4,8 @@ Deletes a meta field.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;user&gt;
 : The user login, user email, or user ID of the user to delete metadata from.
 

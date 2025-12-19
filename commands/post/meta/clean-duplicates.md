@@ -4,6 +4,8 @@ Cleans up duplicate post meta values on a post.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;id&gt;
 : ID of the post to clean.
 

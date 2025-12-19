@@ -6,6 +6,8 @@ Code execution happens after WordPress has loaded entirely, which means you can 
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;php-code&gt;
 : The code to execute, as a string.
 

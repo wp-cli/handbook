@@ -4,6 +4,8 @@ Sets one or more sites as mature.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;id&gt;...]
 : One or more IDs of sites to set as mature. If not provided, you must set the --slug parameter.
 

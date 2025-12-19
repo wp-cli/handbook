@@ -4,6 +4,8 @@ List all terms associated with an object.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;id&gt;
 : ID for the object.
 
