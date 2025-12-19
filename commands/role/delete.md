@@ -4,6 +4,8 @@ Deletes an existing role.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;role-key&gt;
 : The internal name of the role.
 

@@ -22,6 +22,8 @@ Available size formats include:
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--size_format=&lt;format&gt;]
 : Display the database size only, as a bare number.
 \---

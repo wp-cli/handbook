@@ -8,6 +8,8 @@ This determination is made by evaluating the retrieved value via boolval().
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;name&gt;
 : Name of the wp-config.php constant or variable.
 

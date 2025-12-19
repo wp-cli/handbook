@@ -6,6 +6,8 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;name&gt;
 : Name of the package to uninstall.
 

@@ -4,6 +4,8 @@ Gets details about a term.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;taxonomy&gt;
 : Taxonomy of the term to get
 

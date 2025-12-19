@@ -8,6 +8,8 @@ For those using WordPress with Apache, remember to update the `.htaccess` file w
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--url=&lt;url&gt;]
 : The address of the new site.
 

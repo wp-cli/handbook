@@ -8,6 +8,8 @@ Defaults to searching through all tables registered to $wpdb. On multisite, this
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;search&gt;
 : String to search for. The search is case-insensitive by default.
 

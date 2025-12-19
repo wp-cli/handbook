@@ -4,9 +4,13 @@ Exports the database to a file or to STDOUT.
 
 This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
 
+**Alias:** `dump`
+
 Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php. Accepts any valid `mysqldump` flags.
 
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 [&lt;file&gt;]
 : The name of the SQL file to export. If '-', then outputs to STDOUT. If omitted, it will be '{dbname}-{Y-m-d}-{random-hash}.sql'.

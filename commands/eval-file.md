@@ -8,6 +8,8 @@ Note: because code is executed within a method, global variables need to be expl
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;file&gt;
 : The path to the PHP file to execute.  Use '-' to run code from STDIN.
 

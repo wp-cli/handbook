@@ -7,6 +7,8 @@ Display comments based on all arguments supported by
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : One or more args to pass to WP_Comment_Query.
 

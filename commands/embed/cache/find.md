@@ -8,6 +8,8 @@ Not to be confused with oEmbed caches for a given post which are stored in the p
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;url&gt;
 : URL to retrieve oEmbed data for.
 

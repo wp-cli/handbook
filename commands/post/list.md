@@ -6,6 +6,8 @@ Display posts based on all arguments supported by [WP_Query()](https://developer
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : One or more args to pass to WP_Query.
 

@@ -6,6 +6,8 @@ Removes ability for a theme to be activated from the dashboard of a site on a Wo
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;theme&gt;
 : The theme to disable.
 

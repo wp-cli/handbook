@@ -4,6 +4,8 @@ Lists registered taxonomies.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : Filter by one or more fields (see get_taxonomies() first parameter for a list of available fields).
 

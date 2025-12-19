@@ -21,6 +21,8 @@ Use one distribution archive command for many projects, instead of a bash script
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;path&gt;
 : Path to the project that includes a .distignore file.
 
