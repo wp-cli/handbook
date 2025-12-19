@@ -11,6 +11,8 @@ Importantly, PHP's built-in web server doesn't support `.htaccess` files. If thi
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--host=&lt;host&gt;]
 : The hostname to bind the server to.
 \---

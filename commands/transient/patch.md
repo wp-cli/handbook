@@ -4,6 +4,8 @@ Update a nested value from a transient.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;action&gt;
 : Patch action to perform.
 \---
@@ -33,6 +35,9 @@ options:
 
 [\--expiration=&lt;expiration&gt;]
 : Time until expiration, in seconds.
+\---
+default: 0
+\---
 
 [\--network]
 : Get the value of a network|site transient. On single site, this is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).

@@ -6,6 +6,8 @@ Displays themes in the WordPress.org theme directory matching a given search que
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;search&gt;
 : The string to search for.
 

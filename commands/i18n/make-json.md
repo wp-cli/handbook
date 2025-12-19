@@ -10,6 +10,8 @@ See https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wo
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;source&gt;
 : Path to an existing PO file or a directory containing multiple PO files.
 

@@ -6,6 +6,8 @@ Creates a specified number of new comments with dummy data.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--count=&lt;number&gt;]
 : How many comments to generate?
 \---

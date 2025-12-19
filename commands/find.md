@@ -12,6 +12,8 @@ Indicates depth at which the WordPress installations was found, and its alias, i
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;path&gt;
 : Path to search the subdirectories of.
 

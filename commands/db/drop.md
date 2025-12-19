@@ -8,6 +8,8 @@ Runs `DROP_DATABASE` SQL statement using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--dbuser=&lt;value&gt;]
 : Username to pass to mysql. Defaults to DB_USER.
 

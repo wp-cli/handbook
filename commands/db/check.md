@@ -12,6 +12,8 @@ This command does not check whether WordPress is installed; to do that run `wp c
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--dbuser=&lt;value&gt;]
 : Username to pass to mysqlcheck. Defaults to DB_USER.
 

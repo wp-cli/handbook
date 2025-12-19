@@ -13,6 +13,8 @@ apache_modules:
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--hard]
 : Perform a hard flush - update `.htaccess` rules as well as rewrite rules in database. Works only on single site installs.
 

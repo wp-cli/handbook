@@ -4,6 +4,8 @@ Creates attachments from local files or URLs.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;file&gt;...
 : Path to file or files to be imported. Supports the glob(3) capabilities of the current shell.
     If file is recognized as a URL (for example, with a scheme of http or ftp), the file will be

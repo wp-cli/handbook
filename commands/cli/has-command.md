@@ -5,6 +5,8 @@ Detects if a command exists
 This commands checks if a command is registered with WP-CLI. If the command is found then it returns with exit status 0. If the command doesn't exist, then it will exit with status 1.
 
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 &lt;command_name&gt;...
 : The command
 

@@ -4,6 +4,8 @@ Gets the 'autoload' value for an option.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;key&gt;
 : The name of the option to get 'autoload' of.
 

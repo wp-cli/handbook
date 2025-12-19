@@ -10,6 +10,8 @@ See the [Create a Block tutorial](https://developer.wordpress.org/block-editor/g
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;slug&gt;
 : The internal name of the block.
 

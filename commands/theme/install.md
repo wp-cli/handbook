@@ -4,6 +4,8 @@ Installs one or more themes.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;theme|zip|url&gt;...
 : One or more themes to install. Accepts a theme slug, the path to a local zip file, or a URL to a remote zip file.
 

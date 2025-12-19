@@ -4,6 +4,8 @@ Disables the auto-updates for a theme.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;theme&gt;...]
 : One or more themes to disable auto-updates for.
 

@@ -4,6 +4,8 @@ Gets the matching provider for a given URL.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;url&gt;
 : URL to retrieve provider for.
 

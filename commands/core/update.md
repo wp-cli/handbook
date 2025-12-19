@@ -2,11 +2,15 @@
 
 Updates WordPress to a newer version.
 
+**Alias:** `upgrade`
+
 Defaults to updating WordPress to the latest version.
 
 If you see "Error: Another update is currently in progress.", you may need to run `wp option delete core_updater.lock` after verifying another update isn't actually running.
 
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 [&lt;zip&gt;]
 : Path to zip file to use, instead of downloading from wordpress.org.

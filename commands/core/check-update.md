@@ -6,6 +6,8 @@ Lists the most recent versions when there are updates available, or success mess
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--minor]
 : Compare only the first two parts of the version number.
 

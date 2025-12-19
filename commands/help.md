@@ -4,6 +4,8 @@ Gets help on WP-CLI, or on a specific command.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;command&gt;...]
 : Get help on a specific command.
 
