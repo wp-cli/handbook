@@ -919,6 +919,13 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/core\/download.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/core-command"
     },
+    "core\/install-network": {
+        "title": "core install-network",
+        "slug": "install-network",
+        "cmd_path": "core\/install-network",
+        "parent": "core",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/core\/install-network.md"
+    },
     "core\/install": {
         "title": "core install",
         "slug": "install",
@@ -966,6 +973,13 @@
         "parent": "core",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/core\/update.md",
         "repo_url": "https:\/\/github.com\/wp-cli\/core-command"
+    },
+    "core\/upgrade": {
+        "title": "core upgrade",
+        "slug": "upgrade",
+        "cmd_path": "core\/upgrade",
+        "parent": "core",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/commands\/core\/upgrade.md"
     },
     "core\/verify-checksums": {
         "title": "core verify-checksums",
