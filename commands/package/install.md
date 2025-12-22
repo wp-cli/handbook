@@ -20,6 +20,8 @@ When installing a .zip file, WP-CLI extracts the package to `~/.wp-cli/packages/
 If Github token authorization is required, a GitHub Personal Access Token (https://github.com/settings/tokens) can be used. The following command will add a GitHub Personal Access Token to Composer's global configuration:
 composer config -g github-oauth.github.com &lt;GITHUB_TOKEN&gt; Once this has been added, the value used for &lt;GITHUB_TOKEN&gt; will be used for future authorization requests.
 
+For more information about version constraints, see the [Package Version Constraints](https://make.wordpress.org/cli/handbook/guides/package-version-constraints/) guide.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
