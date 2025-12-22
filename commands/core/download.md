@@ -8,6 +8,8 @@ Downloads and extracts WordPress core files to the specified path. Uses current 
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;download-url&gt;]
 : Download directly from a provided URL instead of fetching the URL from the wordpress.org servers.
 

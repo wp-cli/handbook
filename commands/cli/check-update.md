@@ -8,6 +8,8 @@ Queries the GitHub releases API. Returns available versions if there are updates
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [\--patch]
 : Only list patch updates.
 

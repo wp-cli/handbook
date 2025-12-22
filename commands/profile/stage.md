@@ -12,6 +12,8 @@ When WordPress handles a request from a browser, it’s essentially executing as
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 [&lt;stage&gt;]
 : Drill down into a specific stage.
 

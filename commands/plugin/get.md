@@ -4,6 +4,8 @@ Gets details about an installed plugin.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;plugin&gt;
 : The plugin to get.
 

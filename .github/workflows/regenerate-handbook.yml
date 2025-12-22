@@ -1,0 +1,93 @@
+name: Regenerate Handbook
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [regenerate-handbook]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  regenerate:
+    name: Regenerate handbook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v6
+
+      - name: Check if remote branch exists
+        run: echo "REMOTE_BRANCH_EXISTS=$([[ -z $(git ls-remote --heads origin update-handbook) ]] && echo "0" || echo "1")" >> $GITHUB_ENV
+
+      - name: Create branch to base pull request on
+        if: env.REMOTE_BRANCH_EXISTS == 0
+        run: |
+          git checkout -b update-handbook
+
+      - name: Fetch existing branch to add commits to
+        if: env.REMOTE_BRANCH_EXISTS == 1
+        run: |
+          git fetch --all --prune
+          git checkout update-handbook
+          git pull --no-rebase
+
+      - name: Set up PHP environment
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 'latest'
+          coverage: 'none'
+        env:
+          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Composer dependencies & cache dependencies
+        uses: "ramsey/composer-install@v3"
+        env:
+          COMPOSER_ROOT_VERSION: dev-${{ github.event.repository.default_branch }}
+        with:
+          # Bust the cache at least once a month - output format: YYYY-MM.
+          custom-cache-suffix: $(date -u "+%Y-%m")
+
+      - name: Download WP-CLI nightly
+        run: |
+          curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
+          chmod +x wp-cli-nightly.phar
+          sudo mv wp-cli-nightly.phar /usr/local/bin/wp
+
+      - name: Verify WP-CLI installation
+        run: wp --info
+
+      - name: Install non-bundled packages
+        run: |
+          chmod +x bin/install_packages.sh
+          bash bin/install_packages.sh
+
+      - name: Generate handbook
+        run: WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
+
+
+      - name: Check if there are changes
+        run: echo "CHANGES_DETECTED=$([[ -z $(git status --porcelain) ]] && echo "0" || echo "1")" >> $GITHUB_ENV
+
+      - name: Commit changes
+        if: env.CHANGES_DETECTED == 1
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Regenerate handbook - $(date +'%Y-%m-%d')"
+          git push origin update-handbook
+
+      - name: Create pull request
+        if: |
+          env.CHANGES_DETECTED == 1 &&
+          env.REMOTE_BRANCH_EXISTS == 0
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: update-handbook
+          destination_branch: ${{ github.event.repository.default_branch }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: Update handbook
+          pr_body: "**This is an automated pull-request**\n\nUpdates the built Markdown pages with the latest changes."
+          pr_reviewer: swissspidy
+          pr_label: scope:distribution

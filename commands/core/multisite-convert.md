@@ -2,6 +2,8 @@
 
 Transforms an existing single-site installation into a multisite installation.
 
+**Alias:** `install-network`
+
 Creates the multisite database tables, and adds the multisite constants to wp-config.php.
 
 For those using WordPress with Apache, remember to update the `.htaccess` file with the appropriate multisite rewrite rules.
@@ -9,6 +11,8 @@ For those using WordPress with Apache, remember to update the `.htaccess` file w
 [Review the multisite documentation](https://wordpress.org/support/article/create-a-network/) for more details about how multisite works.
 
 ### OPTIONS
+
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 [\--title=&lt;network-title&gt;]
 : The title of the new network.

@@ -6,6 +6,8 @@ Changes the order of a widget in its existing sidebar, or moves it to a new side
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;widget-id&gt;
 : Unique ID for the widget
 

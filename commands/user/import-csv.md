@@ -6,6 +6,8 @@ If the user already exists (matching the email address or login), then the user 
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;file&gt;
 : The local or remote CSV file of users to import. If '-', then reads from STDIN.
 

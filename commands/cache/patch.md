@@ -4,6 +4,8 @@ Update a nested value from the cache.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;action&gt;
 : Patch action to perform.
 \---
@@ -29,10 +31,10 @@ default: default
 \---
 
 [\--expiration=&lt;expiration&gt;]
- : Define how long to keep the value, in seconds. `0` means as long as possible.
- ---
- default: 0
- ---
+: Define how long to keep the value, in seconds. `0` means as long as possible.
+\---
+default: 0
+\---
 
 [\--format=&lt;format&gt;]
 : The serialization format for the value.

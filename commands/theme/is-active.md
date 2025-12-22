@@ -6,6 +6,8 @@ Returns exit code 0 when active, 1 when not active.
 
 ### OPTIONS
 
+See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
+
 &lt;theme&gt;
 : The plugin to check.
 

@@ -28,4 +28,8 @@ When a persistent object cache drop-in is installed (e.g. Redis or Memcached), t
     $ wp transient delete --all
     Success: 14 transients deleted from the database.
 
+    # Delete all site transients.
+    $ wp transient delete --all --network
+    Success: 2 transients deleted from the database.
+
 
