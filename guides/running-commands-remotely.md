@@ -128,6 +128,16 @@ wp_users:user_email
 9:test_email@example.com
 ```
 
+### Running from Windows Powershell
+
+Windows Powershell has a special meaning for the `@` symbol, meaning it cannot be used without quoting or escaping.
+To run commands remotly, you need to use one of the following notation.
+
+```sh
+$ wp `@dev core version
+$ wp "@dev" core version
+```
+
 ## Making WP-CLI accessible on a remote server
 
 Running a command remotely through SSH requires having `wp` accessible on the `$PATH` on the remote server. Because SSH connections don’t load `~/.bashrc` or `~/.zshrc`, you may need to specify a custom `$PATH` when using `wp --ssh=<host>`.  A few ways to make `wp` available on the remote server are:
