@@ -16,6 +16,21 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v6
 
+      - name: Check if remote branch exists
+        run: echo "REMOTE_BRANCH_EXISTS=$([[ -z $(git ls-remote --heads origin update-handbook) ]] && echo "0" || echo "1")" >> $GITHUB_ENV
+
+      - name: Create branch to base pull request on
+        if: env.REMOTE_BRANCH_EXISTS == 0
+        run: |
+          git checkout -b update-handbook
+
+      - name: Fetch existing branch to add commits to
+        if: env.REMOTE_BRANCH_EXISTS == 1
+        run: |
+          git fetch --all --prune
+          git checkout update-handbook
+          git pull --no-rebase
+
       - name: Set up PHP environment
         uses: shivammathur/setup-php@v2
         with:
@@ -49,19 +64,29 @@ jobs:
       - name: Generate handbook
         run: WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
 
-      - name: Check for changes
-        id: changes
-        run: |
-          git diff --exit-code --quiet HEAD || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      - name: Check if there are changes
+        run: echo "CHANGES_DETECTED=$([[ -z $(git status --porcelain) ]] && echo "0" || echo "1")" >> $GITHUB_ENV
 
       - name: Commit changes
-        if: steps.changes.outputs.has_changes == 'true'
+        if: env.CHANGES_DETECTED == 1
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Regenerate handbook"
+          git commit -m "Regenerate handbook - $(date +'%Y-%m-%d')"
+          git push origin update-handbook
 
-      - name: Push changes
-        if: steps.changes.outputs.has_changes == 'true'
-        run: git push
+      - name: Create pull request
+        if: |
+          env.CHANGES_DETECTED == 1 &&
+          env.REMOTE_BRANCH_EXISTS == 0
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: update-handbook
+          destination_branch: ${{ github.event.repository.default_branch }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: Update handbook
+          pr_body: "**This is an automated pull-request**\n\nUpdates the built Markdown pages with the latest changes."
+          pr_reviewer: swissspidy
+          pr_label: scope:distribution
