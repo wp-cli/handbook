@@ -557,6 +557,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/troubleshooting.md",
         "parent": "guides"
     },
+    "verifying-downloads": {
+        "title": "Verifying WP-CLI Downloads",
+        "slug": "verifying-downloads",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/verifying-downloads.md",
+        "parent": "guides"
+    },
     "when-i-launch-in-the-background": {
         "title": "When \/^I launch in the background `([^`]+)`$\/",
         "slug": "when-i-launch-in-the-background",
