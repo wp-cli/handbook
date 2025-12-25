@@ -9,7 +9,7 @@ Long-form documentation (e.g. "Commands cookbook") can be edited directly.
 
 Internal API docs and command pages are generated dynamically from the WP-CLI codebase using the `wp handbook` series of commands.
 
-Before running these commands the bash script `bin/install-packages.sh` should be run to install the latest versions of the non-bundled commands in `bin/packages`. Note `wp` must point to the target WP-CLI instance, i.e. the phar/git that contains the docblocks to be generated against, and should be run with `WP_CLI_PACKAGES_DIR=bin/packages` and `WP_CLI_CONFIG_PATH=/dev/null`.
+Before running these commands, the bash script `bin/install-packages.sh` should be run to install the latest versions of the non-bundled commands in `bin/packages`. Note that `wp` must point to the target WP-CLI instance (i.e., the phar or git version that contains the docblocks to be generated against) and should be run with `WP_CLI_PACKAGES_DIR=bin/packages` and `WP_CLI_CONFIG_PATH=/dev/null`.
 
 So for instance to generate all dynamically created documentation against the nightly phar run:
 
