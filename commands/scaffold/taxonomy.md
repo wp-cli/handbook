@@ -20,7 +20,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--textdomain=<textdomain>]
 : The textdomain to use for the labels.
 
-[\--theme[=<theme>]]
+[\--theme]
 : Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=<theme>` to have the file placed in that theme.
 
 [\--plugin=<plugin>]
