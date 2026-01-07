@@ -645,6 +645,10 @@ EOT;
 			}
 			$docs = implode( "\n", $bits );
 
+			// Prevent double escaping of HTML entities.
+			$docs = preg_replace( '/&amp;lt;/', '&lt;', $docs );
+			$docs = preg_replace( '/&amp;gt;/', '&gt;', $docs );
+
 			// Hack to prevent double encoding in code blocks.
 			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 			$docs = preg_replace( '/ &gt; /', ' > ', $docs );
@@ -654,9 +658,6 @@ EOT;
 			$docs = preg_replace( '/2&gt;\//', '2>/', $docs );
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 			$docs = preg_replace( '/ &amp;&amp; /', ' && ', $docs );
-
-			// Decode HTML entities in parameter placeholders like <slug>, <name>, etc.
-			$docs = preg_replace( '/&lt;([a-zA-Z0-9_\-|]+)&gt;/', '<$1>', $docs );
 
 			$global_parameters = <<<'EOT'
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
