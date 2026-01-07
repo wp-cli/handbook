@@ -6,13 +6,13 @@ Creates a new role.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<role-key>
+&lt;role-key&gt;
 : The internal name of the role.
 
-<role-name>
+&lt;role-name&gt;
 : The publicly visible name of the role.
 
-[\--clone=<role>]
+[\--clone=&lt;role&gt;]
 : Clone capabilities from an existing role.
 
 ### EXAMPLES

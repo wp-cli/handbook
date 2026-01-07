@@ -6,7 +6,7 @@ Deletes one or more synced patterns.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>...
+&lt;id&gt;...
 : One or more synced pattern IDs.
 
 [\--force]

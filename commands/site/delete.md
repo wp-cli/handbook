@@ -6,10 +6,10 @@ Deletes a site in a multisite installation.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<site-id>]
+[&lt;site-id&gt;]
 : The id of the site to delete. If not provided, you must set the --slug parameter.
 
-[\--slug=<slug>]
+[\--slug=&lt;slug&gt;]
 : Path of the site to be deleted. Subdomain on subdomain installs, directory on subdirectory installs.
 
 [\--yes]

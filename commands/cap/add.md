@@ -6,10 +6,10 @@ Adds capabilities to a given role.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<role>
+&lt;role&gt;
 : Key for the role.
 
-<cap>...
+&lt;cap&gt;...
 : One or more capabilities to add.
 
 [\--grant]

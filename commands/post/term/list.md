@@ -6,19 +6,19 @@ List all terms associated with an object.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : ID for the object.
 
-<taxonomy>...
+&lt;taxonomy&gt;...
 : One or more taxonomies to list.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each term.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific row fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

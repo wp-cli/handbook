@@ -8,13 +8,13 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<filter>...]
+[&lt;filter&gt;...]
 : Name or partial name to filter the list by.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format. Dotenv is limited to non-object values.
 \---
 default: table
@@ -29,7 +29,7 @@ options:
 [\--strict]
 : Enforce strict matching when a filter is provided.
 
-[\--config-file=<path>]
+[\--config-file=&lt;path&gt;]
 : Specify the file path to the config file to be read. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 ### EXAMPLES

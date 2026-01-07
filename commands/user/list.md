@@ -9,22 +9,22 @@ Display WordPress users based on all arguments supported by
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--role=<role>]
+[\--role=&lt;role&gt;]
 : Only display users with a certain role.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Control output by one or more arguments of WP_User_Query().
 
 [\--network]
 : List all users in the network for multisite.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each user.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

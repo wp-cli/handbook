@@ -8,10 +8,10 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<name>
+&lt;name&gt;
 : Name of the wp-config.php constant or variable.
 
-[\--type=<type>]
+[\--type=&lt;type&gt;]
 : Type of config value to retrieve. Defaults to 'all'.
 \---
 default: all
@@ -21,7 +21,7 @@ options:
   - all
 \---
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Get value in a particular format. Dotenv is limited to non-object values.
 \---
 default: var_export
@@ -32,7 +32,7 @@ options:
   - dotenv
 \---
 
-[\--config-file=<path>]
+[\--config-file=&lt;path&gt;]
 : Specify the file path to the config file to be read. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 ### EXAMPLES

@@ -10,7 +10,7 @@ In order to profile callbacks on a specific hook, the action or filter will need
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<hook>]
+[&lt;hook&gt;]
 : Drill into key metrics of callbacks on a specific WordPress hook.
 
 [\--all]
@@ -19,13 +19,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--spotlight]
 : Filter out logs with zero-ish values from the set.
 
-[\--url=<url>]
+[\--url=&lt;url&gt;]
 : Execute a request against a specified URL. Defaults to the home URL.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Display one or more fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -36,7 +36,7 @@ options:
   - csv
 \---
 
-[\--order=<order>]
+[\--order=&lt;order&gt;]
 : Ascending or Descending order.
 \---
 default: ASC
@@ -45,7 +45,7 @@ options:
   - DESC
 \---
 
-[\--orderby=<fields>]
+[\--orderby=&lt;fields&gt;]
 : Set orderby which field.
 
 ### EXAMPLES

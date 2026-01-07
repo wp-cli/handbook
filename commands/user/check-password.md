@@ -6,10 +6,10 @@ Checks if a user's password is valid or not.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : The user login, user email or user ID of the user to check credentials for.
 
-<user_pass>
+&lt;user_pass&gt;
 : A string that contains the plain text password for the user.
 
 [\--escape-chars]

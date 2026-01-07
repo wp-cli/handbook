@@ -10,37 +10,37 @@ Scans PHP, Blade-PHP and JavaScript files for translatable strings, as well as t
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<source>
+&lt;source&gt;
 : Directory to scan for string extraction.
 
-[<destination>]
+[&lt;destination&gt;]
 : Name of the resulting POT file.
 
-[\--slug=<slug>]
+[\--slug=&lt;slug&gt;]
 : Plugin or theme slug. Defaults to the source directory's basename.
 
-[\--domain=<domain>]
+[\--domain=&lt;domain&gt;]
 : Text domain to look for in the source code, unless the `--ignore-domain` option is used. By default, the "Text Domain" header of the plugin or theme is used. If none is provided, it falls back to the project slug.
 
 [\--ignore-domain]
 : Ignore the text domain completely and extract strings with any text domain.
 
-[\--merge[=<paths>]]
+[\--merge[=&lt;paths&gt;]]
 : Comma-separated list of POT files whose contents should be merged with the extracted strings. If left empty, defaults to the destination POT file. POT file headers will be ignored.
 
-[\--subtract=<paths>]
+[\--subtract=&lt;paths&gt;]
 : Comma-separated list of POT files whose contents should act as some sort of denylist for string extraction. Any string which is found on that denylist will not be extracted. This can be useful when you want to create multiple POT files from the same source directory with slightly different content and no duplicate strings between them.
 
 [\--subtract-and-merge]
 : Whether source code references and comments from the generated POT file should be instead added to the POT file used for subtraction. Warning: this modifies the files passed to `--subtract`!
 
-[\--include=<paths>]
+[\--include=&lt;paths&gt;]
 : Comma-separated list of files and paths that should be used for string extraction. If provided, only these files and folders will be taken into account for string extraction. For example, `--include="src,my-file.php` will ignore anything besides `my-file.php` and files in the `src` directory. Simple glob patterns can be used, i.e. `--include=foo-*.php` includes any PHP file with the `foo-` prefix. Leading and trailing slashes are ignored, i.e. `/my/directory/` is the same as `my/directory`.
 
-[\--exclude=<paths>]
+[\--exclude=&lt;paths&gt;]
 : Comma-separated list of files and paths that should be skipped for string extraction. For example, `--exclude=.github,myfile.php` would ignore any strings found within `myfile.php` or the `.github` folder. Simple glob patterns can be used, i.e. `--exclude=foo-*.php` excludes any PHP file with the `foo-` prefix. Leading and trailing slashes are ignored, i.e. `/my/directory/` is the same as `my/directory`. The following files and folders are always excluded: node_modules, .git, .svn, .CVS, .hg, vendor, *.min.js.
 
-[\--headers=<headers>]
+[\--headers=&lt;headers&gt;]
 : Array in JSON format of custom headers which will be added to the POT file. Defaults to empty array.
 
 [\--location]
@@ -64,7 +64,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--skip-audit]
 : Skips string audit where it tries to find possible mistakes in translatable strings. Useful when running in an automated environment.
 
-[\--file-comment=<file-comment>]
+[\--file-comment=&lt;file-comment&gt;]
 : String that should be added as a comment to the top of the resulting POT file. By default, a copyright comment is added for WordPress plugins and themes in the following manner:
 
      ```
@@ -80,7 +80,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
      This file is distributed under the GPLv2.
      ```
 
-[\--package-name=<name>]
+[\--package-name=&lt;name&gt;]
 : Name to use for package name in the resulting POT file's `Project-Id-Version` header. Overrides plugin or theme name, if applicable.
 
 ### EXAMPLES

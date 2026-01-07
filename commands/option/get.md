@@ -6,10 +6,10 @@ Gets the value for an option.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : Key for the option.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Get value in a particular format.
 \---
 default: var_export

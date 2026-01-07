@@ -10,10 +10,10 @@ Defaults to searching through all tables registered to $wpdb. On multisite, this
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<search>
+&lt;search&gt;
 : String to search for. The search is case-insensitive by default.
 
-[<tables>...]
+[&lt;tables&gt;...]
 : One or more tables to search through for the string.
 
 [\--network]
@@ -25,13 +25,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--all-tables]
 : Search through ALL tables in the database, regardless of the prefix, and even if not registered on $wpdb. Overrides --network and --all-tables-with-prefix.
 
-[\--before_context=<num>]
+[\--before_context=&lt;num&gt;]
 : Number of characters to display before the match.
 \---
 default: 40
 \---
 
-[\--after_context=<num>]
+[\--after_context=&lt;num&gt;]
 : Number of characters to display after the match.
 \---
 default: 40
@@ -40,10 +40,10 @@ default: 40
 [\--regex]
 : Runs the search as a regular expression (without delimiters). The search becomes case-sensitive (i.e. no PCRE flags are added). Delimiters must be escaped if they occur in the expression. Because the search is run on individual columns, you can use the `^` and `$` tokens to mark the start and end of a match, respectively.
 
-[\--regex-flags=<regex-flags>]
+[\--regex-flags=&lt;regex-flags&gt;]
 : Pass PCRE modifiers to the regex search (e.g. 'i' for case-insensitivity).
 
-[\--regex-delimiter=<regex-delimiter>]
+[\--regex-delimiter=&lt;regex-delimiter&gt;]
 : The delimiter to use for the regex. It must be escaped if it appears in the search string. The default value is the result of `chr(1)`.
 
 [\--table_column_once]
@@ -58,19 +58,19 @@ default: 40
 [\--stats]
 : Output stats on the number of matches found, time taken, tables/columns/rows searched, tables skipped.
 
-[\--table_column_color=<color_code>]
+[\--table_column_color=&lt;color_code&gt;]
 : Percent color code to use for the 'table:column' output. For a list of available percent color codes, see below. Default '%G' (bright green).
 
-[\--id_color=<color_code>]
+[\--id_color=&lt;color_code&gt;]
 : Percent color code to use for the row id output. For a list of available percent color codes, see below. Default '%Y' (bright yellow).
 
-[\--match_color=<color_code>]
+[\--match_color=&lt;color_code&gt;]
 : Percent color code to use for the match (unless both before and after context are 0, when no color code is used). For a list of available percent color codes, see below. Default '%3%k' (black on a mustard background).
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Get a specific subset of the fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 options:

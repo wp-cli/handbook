@@ -6,16 +6,16 @@ Get a nested value from a meta field.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : The ID of the object.
 
-<key>
+&lt;key&gt;
 : The name of the meta field to get.
 
-<key-path>...
+&lt;key-path&gt;...
 : The name(s) of the keys within the value to locate the value to pluck.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The output format of the value.
 \---
 default: plaintext

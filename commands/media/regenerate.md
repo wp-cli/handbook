@@ -6,10 +6,10 @@ Regenerates thumbnails for one or more attachments.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<attachment-id>...]
+[&lt;attachment-id&gt;...]
 : One or more IDs of the attachments to regenerate.
 
-[\--image_size=<image_size>]
+[\--image_size=&lt;image_size&gt;]
 : Name of the image size to regenerate. Only thumbnails of this image size will be regenerated, thumbnails of other image sizes will not.
 
 [\--skip-delete]

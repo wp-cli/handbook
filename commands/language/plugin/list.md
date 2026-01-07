@@ -6,22 +6,22 @@ Lists all available languages for one or more plugins.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<plugin>...]
+[&lt;plugin&gt;...]
 : One or more plugins to list languages for.
 
 [\--all]
 : If set, available languages for all plugins will be listed.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Display the value of a single field.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Filter results by key=value pairs.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

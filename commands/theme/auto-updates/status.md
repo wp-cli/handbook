@@ -6,7 +6,7 @@ Shows the status of auto-updates for a theme.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<theme>...]
+[&lt;theme&gt;...]
 : One or more themes to show the status of the auto-updates of.
 
 [\--all]
@@ -18,10 +18,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--disabled-only]
 : If set, filters list of themes to only include the ones that have auto-updates disabled.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Only show the provided field.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

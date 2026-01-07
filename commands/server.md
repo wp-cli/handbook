@@ -13,22 +13,22 @@ Importantly, PHP's built-in web server doesn't support `.htaccess` files. If thi
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--host=<host>]
+[\--host=&lt;host&gt;]
 : The hostname to bind the server to.
 \---
 default: localhost
 \---
 
-[\--port=<port>]
+[\--port=&lt;port&gt;]
 : The port number to bind the server to.
 \---
 default: 8080
 \---
 
-[\--docroot=<path>]
+[\--docroot=&lt;path&gt;]
 : The path to use as the document root. If the path global parameter is set, the default value is it.
 
-[\--config=<file>]
+[\--config=&lt;file&gt;]
 : Configure the server with a specific .ini file.
 
 ### EXAMPLES

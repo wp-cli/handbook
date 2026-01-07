@@ -8,13 +8,13 @@ This is an alias for `wp theme update`.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<theme>...]
+[&lt;theme&gt;...]
 : One or more themes to update.
 
 [\--all]
 : If set, all themes that have updates will be updated.
 
-[\--exclude=<theme-names>]
+[\--exclude=&lt;theme-names&gt;]
 : Comma separated list of theme names that should be excluded from updating.
 
 [\--minor]
@@ -23,7 +23,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--patch]
 : Only perform updates for patch releases (e.g. from 1.3 to 1.3.3 instead of 1.4)
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -34,7 +34,7 @@ options:
   - summary
 \---
 
-[\--version=<version>]
+[\--version=&lt;version&gt;]
 : If set, the theme will be updated to the specified version.
 
 [\--dry-run]

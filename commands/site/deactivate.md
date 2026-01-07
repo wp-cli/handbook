@@ -6,10 +6,10 @@ Deactivates one or more sites.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<id>...]
+[&lt;id&gt;...]
 : One or more IDs of sites to deactivate. If not provided, you must set the --slug parameter.
 
-[\--slug=<slug>]
+[\--slug=&lt;slug&gt;]
 : Path of the site to be deactivated. Subdomain on subdomain installs, directory on subdirectory installs.
 
 ### EXAMPLES

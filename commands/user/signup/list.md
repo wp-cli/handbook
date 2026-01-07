@@ -6,16 +6,16 @@ Lists signups.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Filter the list by a specific field.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each signup.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -28,7 +28,7 @@ options:
   - yaml
 \---
 
-[\--per_page=<per_page>]
+[\--per_page=&lt;per_page&gt;]
 : Limits the signups to the given number. Defaults to none.
 
 ### AVAILABLE FIELDS

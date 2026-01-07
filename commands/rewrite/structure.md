@@ -15,13 +15,13 @@ apache_modules:
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<permastruct>
+&lt;permastruct&gt;
 : The new permalink structure to apply.
 
-[\--category-base=<base>]
+[\--category-base=&lt;base&gt;]
 : Set the base for category permalinks, i.e. '/category/'.
 
-[\--tag-base=<base>]
+[\--tag-base=&lt;base&gt;]
 : Set the base for tag permalinks, i.e. '/tag/'.
 
 [\--hard]

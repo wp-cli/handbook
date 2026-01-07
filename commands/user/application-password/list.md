@@ -6,19 +6,19 @@ Lists all application passwords associated with a user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : The user login, user email, or user ID of the user to get application passwords for.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Filter the list by a specific field.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each application password.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -31,7 +31,7 @@ options:
   - ids
 \---
 
-[\--orderby=<fields>]
+[\--orderby=&lt;fields&gt;]
 : Set orderby which field.
 \---
 default: created
@@ -45,7 +45,7 @@ options:
  - last_ip
 \---
 
-[\--order=<order>]
+[\--order=&lt;order&gt;]
 : Set ascending or descending order.
 \---
 default: desc

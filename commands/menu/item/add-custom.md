@@ -6,31 +6,31 @@ Adds a custom menu item.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<menu>
+&lt;menu&gt;
 : The name, slug, or term ID for the menu.
 
-<title>
+&lt;title&gt;
 : Title for the link.
 
-<link>
+&lt;link&gt;
 : Target URL for the link.
 
-[\--description=<description>]
+[\--description=&lt;description&gt;]
 : Set a custom description for the menu item.
 
-[\--attr-title=<attr-title>]
+[\--attr-title=&lt;attr-title&gt;]
 : Set a custom title attribute for the menu item.
 
-[\--target=<target>]
+[\--target=&lt;target&gt;]
 : Set a custom link target for the menu item.
 
-[\--classes=<classes>]
+[\--classes=&lt;classes&gt;]
 : Set a custom link classes for the menu item.
 
-[\--position=<position>]
+[\--position=&lt;position&gt;]
 : Specify the position of this menu item.
 
-[\--parent-id=<parent-id>]
+[\--parent-id=&lt;parent-id&gt;]
 : Make this menu item a child of another menu item.
 
 [\--porcelain]

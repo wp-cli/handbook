@@ -10,10 +10,10 @@ This behaves similarly to the [msgmerge](https://www.gnu.org/software/gettext/ma
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<source>
+&lt;source&gt;
 : Path to an existing POT file to use for updating.
 
-[<destination>]
+[&lt;destination&gt;]
 : PO file to update or a directory containing multiple PO files.
   Defaults to all PO files in the source directory.
 

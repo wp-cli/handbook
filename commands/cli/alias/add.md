@@ -8,28 +8,28 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : Key for the alias.
 
-[\--set-user=<user>]
+[\--set-user=&lt;user&gt;]
 : Set user for alias.
 
-[\--set-url=<url>]
+[\--set-url=&lt;url&gt;]
 : Set url for alias.
 
-[\--set-path=<path>]
+[\--set-path=&lt;path&gt;]
 : Set path for alias.
 
-[\--set-ssh=<ssh>]
+[\--set-ssh=&lt;ssh&gt;]
 : Set ssh for alias.
 
-[\--set-http=<http>]
+[\--set-http=&lt;http&gt;]
 : Set http for alias.
 
-[\--grouping=<grouping>]
+[\--grouping=&lt;grouping&gt;]
 : For grouping multiple aliases.
 
-[\--config=<config>]
+[\--config=&lt;config&gt;]
 : Config file to be considered for operations.
 \---
 default: global

@@ -6,10 +6,10 @@ Exports a block template to a file.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : Template ID to export.
 
-[\--type=<type>]
+[\--type=&lt;type&gt;]
 : Template type.
 \---
 default: wp_template
@@ -18,10 +18,10 @@ options:
   - wp_template_part
 \---
 
-[\--file=<file>]
+[\--file=&lt;file&gt;]
 : File path to export to. Parent directories will be created if needed.
 
-[\--dir=<directory>]
+[\--dir=&lt;directory&gt;]
 : Directory to export to. Defaults to current directory. Creates directory if needed.
 
 [\--stdout]

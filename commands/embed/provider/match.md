@@ -6,16 +6,16 @@ Gets the matching provider for a given URL.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<url>
+&lt;url&gt;
 : URL to retrieve provider for.
 
 [\--discover]
 : Whether to use oEmbed discovery or not. Defaults to true.
 
-[\--limit-response-size=<size>]
+[\--limit-response-size=&lt;size&gt;]
 : Limit the size of the resulting HTML when using discovery. Default 150 KB (the standard WordPress limit). Not compatible with 'no-discover'.
 
-[\--link-type=<json|xml>]
+[\--link-type=&lt;json|xml&gt;]
 : Whether to accept only a certain link type when using discovery. Defaults to any (json or xml), preferring json. Not compatible with 'no-discover'.
 \---
 options:

@@ -10,16 +10,16 @@ Downloads and extracts WordPress core files to the specified path. Uses current 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<download-url>]
+[&lt;download-url&gt;]
 : Download directly from a provided URL instead of fetching the URL from the wordpress.org servers.
 
-[\--path=<path>]
+[\--path=&lt;path&gt;]
 : Specify the path in which to install WordPress. Defaults to current directory.
 
-[\--locale=<locale>]
+[\--locale=&lt;locale&gt;]
 : Select which language you want to download.
 
-[\--version=<version>]
+[\--version=&lt;version&gt;]
 : Select which version you want to download. Accepts a version number, 'latest' or 'nightly'.
 
 [\--skip-content]

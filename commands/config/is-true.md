@@ -10,10 +10,10 @@ This determination is made by evaluating the retrieved value via boolval().
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<name>
+&lt;name&gt;
 : Name of the wp-config.php constant or variable.
 
-[\--type=<type>]
+[\--type=&lt;type&gt;]
 : Type of config value to retrieve. Defaults to 'all'.
 \---
 default: all
@@ -23,7 +23,7 @@ options:
   - all
 \---
 
-[\--config-file=<path>]
+[\--config-file=&lt;path&gt;]
 : Specify the file path to the config file to be read. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 ### EXAMPLES

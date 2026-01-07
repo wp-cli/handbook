@@ -10,7 +10,7 @@ See the [Underscores website](https://underscores.me/) for more details.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<slug>
+&lt;slug&gt;
 : The slug for the new theme, used for prefixing functions.
 
 [\--activate]
@@ -19,13 +19,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--enable-network]
 : Enable the newly downloaded theme for the entire network.
 
-[\--theme_name=<title>]
+[\--theme_name=&lt;title&gt;]
 : What to put in the 'Theme Name:' header in 'style.css'.
 
-[\--author=<full-name>]
+[\--author=&lt;full-name&gt;]
 : What to put in the 'Author:' header in 'style.css'.
 
-[\--author_uri=<uri>]
+[\--author_uri=&lt;uri&gt;]
 : What to put in the 'Author URI:' header in 'style.css'.
 
 [\--sassify]

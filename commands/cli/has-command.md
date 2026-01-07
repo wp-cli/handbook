@@ -7,7 +7,7 @@ This commands checks if a command is registered with WP-CLI. If the command is f
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
-<command_name>...
+&lt;command_name&gt;...
 : The command
 
 ### EXAMPLES

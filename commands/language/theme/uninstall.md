@@ -6,16 +6,16 @@ Uninstalls a given language for a theme.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<theme>]
+[&lt;theme&gt;]
 : Theme to uninstall language for.
 
 [\--all]
 : If set, languages for all themes will be uninstalled.
 
-<language>...
+&lt;language&gt;...
 : Language code to uninstall.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format. Used when installing languages for all themes.
 \---
 default: table

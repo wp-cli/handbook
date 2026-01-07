@@ -8,16 +8,16 @@ Downloads the language pack from WordPress.org.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<plugin>]
+[&lt;plugin&gt;]
 : Plugin to install language for.
 
 [\--all]
 : If set, languages for all plugins will be installed.
 
-<language>...
+&lt;language&gt;...
 : Language code to install.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format. Used when installing languages for all plugins.
 \---
 default: table

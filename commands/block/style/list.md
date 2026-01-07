@@ -6,16 +6,16 @@ Lists registered block styles.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--block=<block>]
+[\--block=&lt;block&gt;]
 : Filter by block type name (e.g., 'core/button').
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each style.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific style fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

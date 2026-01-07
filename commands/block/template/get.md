@@ -6,10 +6,10 @@ Gets details about a block template.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : Template ID in format 'theme//slug' (e.g., 'twentytwentyfour//single').
 
-[\--type=<type>]
+[\--type=&lt;type&gt;]
 : Template type.
 \---
 default: wp_template
@@ -18,13 +18,13 @@ options:
   - wp_template_part
 \---
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Instead of returning the whole template, returns the value of a single field.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

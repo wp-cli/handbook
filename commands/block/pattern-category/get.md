@@ -6,16 +6,16 @@ Gets details about a registered block pattern category.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<name>
+&lt;name&gt;
 : Category name (e.g., 'buttons', 'columns').
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Instead of returning the whole category, returns the value of a single field.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

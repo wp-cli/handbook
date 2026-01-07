@@ -17,6 +17,6 @@ Manages WordPress block editor blocks and related entities.
     $ wp block template export twentytwentyfour//single --stdout
 
     # Create a synced pattern
-    $ wp block synced-pattern create --title="My Pattern" --content='&lt;!-- wp:paragraph --&gt;<p>Hello&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;'
+    $ wp block synced-pattern create --title="My Pattern" --content='&lt;!-- wp:paragraph --&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;'
 
 

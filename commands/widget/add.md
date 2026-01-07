@@ -8,16 +8,16 @@ Creates a new widget entry in the database, and associates it with the sidebar.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<name>
+&lt;name&gt;
 : Widget name.
 
-<sidebar-id>
+&lt;sidebar-id&gt;
 : ID for the corresponding sidebar.
 
-[<position>]
+[&lt;position&gt;]
 : Widget's current position within the sidebar. Defaults to last
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Widget option to add, with its new value
 
 ### EXAMPLES

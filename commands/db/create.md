@@ -10,10 +10,10 @@ Runs `CREATE_DATABASE` SQL statement using `DB_HOST`, `DB_NAME`, `DB_USER` and `
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--dbuser=<value>]
+[\--dbuser=&lt;value&gt;]
 : Username to pass to mysql. Defaults to DB_USER.
 
-[\--dbpass=<value>]
+[\--dbpass=&lt;value&gt;]
 : Password to pass to mysql. Defaults to DB_PASSWORD.
 
 [\--defaults]

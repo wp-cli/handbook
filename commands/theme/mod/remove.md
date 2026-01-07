@@ -6,7 +6,7 @@ Removes one or more theme mods.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<mod>...]
+[&lt;mod&gt;...]
 : One or more mods to remove.
 
 [\--all]

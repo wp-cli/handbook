@@ -8,16 +8,16 @@ Creates a specified number of new comments with dummy data.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--count=<number>]
+[\--count=&lt;number&gt;]
 : How many comments to generate?
 \---
 default: 100
 \---
 
-[\--post_id=<post-id>]
+[\--post_id=&lt;post-id&gt;]
 : Assign comments to a specific post.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: progress

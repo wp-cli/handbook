@@ -6,7 +6,7 @@ Reveals the status of one or all plugins.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<plugin>]
+[&lt;plugin&gt;]
 : A particular plugin to show the status for.
 
 ### EXAMPLES

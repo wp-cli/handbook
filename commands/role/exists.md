@@ -8,7 +8,7 @@ Exits with return code 0 if the role exists, 1 if it does not.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<role-key>
+&lt;role-key&gt;
 : The internal name of the role.
 
 ### EXAMPLES

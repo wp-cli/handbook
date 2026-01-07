@@ -6,14 +6,14 @@ Updates an existing application password.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : The user login, user email, or user ID of the user to update the application password for.
 
-<uuid>
+&lt;uuid&gt;
 : The universally unique ID of the application password.
 
-[\--<field>=<value>]
-: Update the <field> with a new <value>. Currently supported fields: name.
+[\--&lt;field&gt;=&lt;value&gt;]
+: Update the &lt;field&gt; with a new &lt;value&gt;. Currently supported fields: name.
 
 ### EXAMPLES
 

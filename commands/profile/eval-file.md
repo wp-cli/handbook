@@ -8,16 +8,16 @@ File execution happens after WordPress has loaded entirely, which means you can 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<file>
+&lt;file&gt;
 : The path to the PHP file to execute and profile.
 
-[\--hook[=<hook>]]
+[\--hook[=&lt;hook&gt;]]
 : Focus on key metrics for all hooks, or callbacks on a specific hook.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Display one or more fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -28,7 +28,7 @@ options:
   - csv
 \---
 
-[\--order=<order>]
+[\--order=&lt;order&gt;]
 : Ascending or Descending order.
 \---
 default: ASC
@@ -37,7 +37,7 @@ options:
   - DESC
 \---
 
-[\--orderby=<fields>]
+[\--orderby=&lt;fields&gt;]
 : Set orderby which field.
 
 ### EXAMPLES

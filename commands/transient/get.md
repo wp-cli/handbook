@@ -8,10 +8,10 @@ For a more complete explanation of the transient cache, including the network|si
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : Key for the transient.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

@@ -8,13 +8,13 @@ Updates an option value.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : The name of the option to update.
 
-[<value>]
+[&lt;value&gt;]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--autoload=<autoload>]
+[\--autoload=&lt;autoload&gt;]
 : Requires WP 4.2. Should this option be automatically loaded.
 \---
 options:
@@ -24,7 +24,7 @@ options:
   - 'no'
 \---
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The serialization format for the value.
 \---
 default: plaintext

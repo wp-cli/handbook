@@ -6,10 +6,10 @@ Delete an existing application password.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : The user login, user email, or user ID of the user to delete the application password for.
 
-[<uuid>...]
+[&lt;uuid&gt;...]
 : Comma-separated list of UUIDs of the application passwords to delete.
 
 [\--all]

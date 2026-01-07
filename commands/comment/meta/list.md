@@ -6,16 +6,16 @@ List all metadata associated with an object.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : ID for the object.
 
-[\--keys=<keys>]
+[\--keys=&lt;keys&gt;]
 : Limit output to metadata of specific keys.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific row fields. Defaults to id,meta_key,meta_value.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -27,7 +27,7 @@ options:
   - count
 \---
 
-[\--orderby=<fields>]
+[\--orderby=&lt;fields&gt;]
 : Set orderby which field.
 \---
 default: id
@@ -37,7 +37,7 @@ options:
  - meta_value
 \---
 
-[\--order=<order>]
+[\--order=&lt;order&gt;]
 : Set ascending or descending order.
 \---
 default: asc

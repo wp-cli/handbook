@@ -6,7 +6,7 @@ Removes one or more users from spam on multisite.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>...
+&lt;user&gt;...
 : The user login, user email, or user ID of the user(s) to remove from spam.
 
 ### EXAMPLES

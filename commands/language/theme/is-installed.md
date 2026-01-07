@@ -8,10 +8,10 @@ Returns exit code 0 when installed, 1 when uninstalled.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<theme>
+&lt;theme&gt;
 : Theme to check for.
 
-<language>...
+&lt;language&gt;...
 : The language code to check.
 
 ### EXAMPLES

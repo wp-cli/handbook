@@ -6,7 +6,7 @@ Lists synced patterns.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--sync-status=<status>]
+[\--sync-status=&lt;status&gt;]
 : Filter by sync status.
 \---
 default: all
@@ -16,16 +16,16 @@ options:
   - all
 \---
 
-[\--search=<search>]
+[\--search=&lt;search&gt;]
 : Search by title.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each pattern.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

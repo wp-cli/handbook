@@ -6,7 +6,7 @@ Deletes one or more items from a menu.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<db-id>...
+&lt;db-id&gt;...
 : Database ID for the menu item(s).
 
 ### EXAMPLES

@@ -8,10 +8,10 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<source>
+&lt;source&gt;
 : Path to an existing PO file or a directory containing multiple PO files.
 
-[<destination>]
+[&lt;destination&gt;]
 : Path to the destination file or directory for the resulting MO files. Defaults to the source directory.
 
 ### EXAMPLES

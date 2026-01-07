@@ -12,16 +12,16 @@ See the [Create a Block tutorial](https://developer.wordpress.org/block-editor/g
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<slug>
+&lt;slug&gt;
 : The internal name of the block.
 
-[\--title=<title>]
+[\--title=&lt;title&gt;]
 : The display title for your block.
 
-[\--dashicon=<dashicon>]
+[\--dashicon=&lt;dashicon&gt;]
 : The dashicon to make it easier to identify your block.
 
-[\--category=<category>]
+[\--category=&lt;category&gt;]
 : The category name to help users browse and discover your block.
 \---
 default: widgets
@@ -34,9 +34,9 @@ options:
 \---
 
 [\--theme]
-: Create files in the active theme directory. Specify a theme with `--theme=<theme>` to have the file placed in that theme.
+: Create files in the active theme directory. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
 
-[\--plugin=<plugin>]
+[\--plugin=&lt;plugin&gt;]
 : Create files in the given plugin's directory.
 
 [\--force]

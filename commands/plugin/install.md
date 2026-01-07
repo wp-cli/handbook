@@ -6,10 +6,10 @@ Installs one or more plugins.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<plugin|zip|url>...
+&lt;plugin|zip|url&gt;...
 : One or more plugins to install. Accepts a plugin slug, the path to a local zip file, or a URL to a remote zip file.
 
-[\--version=<version>]
+[\--version=&lt;version&gt;]
 : If set, get that particular version from wordpress.org, instead of the stable version.
 
 [\--force]

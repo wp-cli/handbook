@@ -4,7 +4,7 @@ Find WordPress installations on the filesystem.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
-Recursively iterates subdirectories of provided <path> to find and report WordPress installations. A WordPress installation is a wp-includes directory with a version.php file.
+Recursively iterates subdirectories of provided &lt;path&gt; to find and report WordPress installations. A WordPress installation is a wp-includes directory with a version.php file.
 
 Avoids recursing some known paths (e.g. /node_modules/, hidden sys dirs) to significantly improve performance.
 
@@ -14,25 +14,25 @@ Indicates depth at which the WordPress installations was found, and its alias, i
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<path>
+&lt;path&gt;
 : Path to search the subdirectories of.
 
 [\--skip-ignored-paths]
 : Skip the paths that are ignored by default.
 
-[\--include_ignored_paths=<paths>]
+[\--include_ignored_paths=&lt;paths&gt;]
 : Include additional ignored paths as CSV (e.g. '/sys-backup/,/temp/').
 
-[\--max_depth=<max-depth>]
+[\--max_depth=&lt;max-depth&gt;]
 : Only recurse to a specified depth, inclusive.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific row fields.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Output a specific field for each row.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a specific format.
 \---
 default: table
@@ -58,7 +58,7 @@ These fields will be displayed by default for each installation:
 
 These fields are optionally available:
 
-* wp_path - Path that can be passed to `--path=<path>` global parameter.
+* wp_path - Path that can be passed to `--path=&lt;path&gt;` global parameter.
 * db_host - Host name for the database.
 * db_user - User name for the database.
 * db_name - Database name for the database.

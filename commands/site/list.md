@@ -6,26 +6,26 @@ Lists all sites in a multisite installation.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--network=<id>]
+[\--network=&lt;id&gt;]
 : The network to which the sites belong.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Filter by one or more fields (see "Available Fields" section). However,
 'url' isn't an available filter, as it comes from 'home' in wp_options.
 
-[\--site__in=<value>]
+[\--site__in=&lt;value&gt;]
 : Only list the sites with these blog_id values (comma-separated).
 
-[\--site_user=<value>]
+[\--site_user=&lt;value&gt;]
 : Only list the sites with this user.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each site.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Comma-separated list of fields to show.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

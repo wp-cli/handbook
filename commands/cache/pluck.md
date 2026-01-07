@@ -6,19 +6,19 @@ Get a nested value from the cache.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : Cache key.
 
-<key-path>...
+&lt;key-path&gt;...
 : The name(s) of the keys within the value to locate the value to pluck.
 
-[\--group=<group>]
+[\--group=&lt;group&gt;]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 \---
 default: default
 \---
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The output format of the value.
 \---
 default: plaintext

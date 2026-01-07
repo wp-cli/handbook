@@ -6,10 +6,10 @@ Assigns a location to a menu.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<menu>
+&lt;menu&gt;
 : The name, slug, or term ID for the menu.
 
-<location>
+&lt;location&gt;
 : Location's slug.
 
 ### EXAMPLES

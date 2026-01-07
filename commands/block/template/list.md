@@ -6,7 +6,7 @@ Lists block templates or template parts.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--type=<type>]
+[\--type=&lt;type&gt;]
 : Template type.
 \---
 default: wp_template
@@ -15,25 +15,25 @@ options:
   - wp_template_part
 \---
 
-[\--slug=<slug>]
+[\--slug=&lt;slug&gt;]
 : Filter by template slug(s). Accepts a single slug or comma-separated list.
 
-[\--area=<area>]
+[\--area=&lt;area&gt;]
 : For template parts, filter by area (header, footer, sidebar, uncategorized).
 
-[\--post-type=<post-type>]
+[\--post-type=&lt;post-type&gt;]
 : Filter templates by post type they apply to.
 
-[\--source=<source>]
+[\--source=&lt;source&gt;]
 : Filter by source (theme, plugin, custom).
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each template.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific template fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

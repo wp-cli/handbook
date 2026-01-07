@@ -6,13 +6,13 @@ Deletes plugin files without deactivating or uninstalling.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<plugin>...]
+[&lt;plugin&gt;...]
 : One or more plugins to delete.
 
 [\--all]
 : If set, all plugins will be deleted.
 
-[\--exclude=<name>]
+[\--exclude=&lt;name&gt;]
 : Comma separated list of plugin slugs to be excluded from deletion.
 
 ### EXAMPLES

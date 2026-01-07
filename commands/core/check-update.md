@@ -17,13 +17,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--force-check]
 : Bypass the transient cache and force a fresh update check.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each update.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields. Defaults to version,update_type,package_url.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

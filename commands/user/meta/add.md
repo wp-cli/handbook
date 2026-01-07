@@ -6,16 +6,16 @@ Adds a meta field.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : The user login, user email, or user ID of the user to add metadata for.
 
-<key>
+&lt;key&gt;
 : The metadata key.
 
-<value>
+&lt;value&gt;
 : The new metadata value.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The serialization format for the value.
 \---
 default: plaintext

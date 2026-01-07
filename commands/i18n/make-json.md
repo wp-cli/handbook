@@ -12,16 +12,16 @@ See https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wo
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<source>
+&lt;source&gt;
 : Path to an existing PO file or a directory containing multiple PO files.
 
-[<destination>]
+[&lt;destination&gt;]
 : Path to the destination directory for the resulting JSON files. Defaults to the source directory.
 
-[\--domain=<domain>]
+[\--domain=&lt;domain&gt;]
 : Text domain to use for the JSON file name. Overrides the default one extracted from the PO file.
 
-[\--extensions=<extensions>]
+[\--extensions=&lt;extensions&gt;]
 : Additional custom JS extensions, comma separated list. By default searches for .min.js and .js extensions.
 
 [\--purge]
@@ -33,7 +33,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--pretty-print]
 : Pretty-print resulting JSON files.
 
-[\--use-map=<paths_or_maps>]
+[\--use-map=&lt;paths_or_maps&gt;]
 : Whether to use a mapping file for the strings, as a JSON value, array to specify multiple. Each element can either be a string (file path) or object (map).
 
 ### EXAMPLES

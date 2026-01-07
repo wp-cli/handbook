@@ -8,16 +8,16 @@ Errors if the value can't be decremented.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : Cache key.
 
-[<offset>]
+[&lt;offset&gt;]
 : The amount by which to decrement the item's value.
 \---
 default: 1
 \---
 
-[<group>]
+[&lt;group&gt;]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 \---
 default: default

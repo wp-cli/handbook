@@ -8,16 +8,16 @@ Creates a specified number of new users with dummy data.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--count=<number>]
+[\--count=&lt;number&gt;]
 : How many users to generate?
 \---
 default: 100
 \---
 
-[\--role=<role>]
+[\--role=&lt;role&gt;]
 : The role of the generated users. Default: default role from WP
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: progress

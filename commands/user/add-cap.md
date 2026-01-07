@@ -6,10 +6,10 @@ Adds a capability to a user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : User ID, user email, or user login.
 
-<cap>
+&lt;cap&gt;
 : The capability to add.
 
 ### EXAMPLES

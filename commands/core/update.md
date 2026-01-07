@@ -12,19 +12,19 @@ If you see "Error: Another update is currently in progress.", you may need to ru
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<zip>]
+[&lt;zip&gt;]
 : Path to zip file to use, instead of downloading from wordpress.org.
 
 [\--minor]
 : Only perform updates for minor releases (e.g. update from WP 4.3 to 4.3.3 instead of 4.4.2).
 
-[\--version=<version>]
+[\--version=&lt;version&gt;]
 : Update to a specific version, instead of to the latest version. Alternatively accepts 'nightly'.
 
 [\--force]
 : Update even when installed WP version is greater than the requested version.
 
-[\--locale=<locale>]
+[\--locale=&lt;locale&gt;]
 : Select which language you want to download.
 
 [\--insecure]

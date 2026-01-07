@@ -6,16 +6,16 @@ Remove a term from an object.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : The ID of the object.
 
-<taxonomy>
+&lt;taxonomy&gt;
 : The name of the term's taxonomy.
 
-[<term>...]
+[&lt;term&gt;...]
 : The slug of the term or terms to be removed from the object.
 
-[\--by=<field>]
+[\--by=&lt;field&gt;]
 : Explicitly handle the term value as a slug or id.
 \---
 default: slug

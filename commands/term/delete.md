@@ -8,13 +8,13 @@ Errors if the term doesn't exist, or there was a problem in deleting it.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<taxonomy>
+&lt;taxonomy&gt;
 : Taxonomy of the term to delete.
 
-<term>...
+&lt;term&gt;...
 : One or more IDs or slugs of terms to delete.
 
-[\--by=<field>]
+[\--by=&lt;field&gt;]
 : Explicitly handle the term value as a slug or id.
 \---
 default: id

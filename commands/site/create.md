@@ -6,16 +6,16 @@ Creates a site in a multisite installation.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-\--slug=<slug>
+\--slug=&lt;slug&gt;
 : Path for the new site. Subdomain on subdomain installs, directory on subdirectory installs.
 
-[\--title=<title>]
+[\--title=&lt;title&gt;]
 : Title of the new site. Default: prettified slug.
 
-[\--email=<email>]
+[\--email=&lt;email&gt;]
 : Email for admin user. User will be created if none exists. Assignment to super admin if not included.
 
-[\--network_id=<network-id>]
+[\--network_id=&lt;network-id&gt;]
 : Network to associate new site with. Defaults to current network (typically 1).
 
 [\--private]

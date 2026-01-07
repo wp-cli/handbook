@@ -6,30 +6,30 @@ Creates attachments from local files or URLs.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<file>...
+&lt;file&gt;...
 : Path to file or files to be imported. Supports the glob(3) capabilities of the current shell.
     If file is recognized as a URL (for example, with a scheme of http or ftp), the file will be
     downloaded to a temp file before being sideloaded.
 
-[\--post_id=<post_id>]
+[\--post_id=&lt;post_id&gt;]
 : ID of the post to attach the imported files to.
 
-[\--post_name=<post_name>]
+[\--post_name=&lt;post_name&gt;]
 : Name of the post to attach the imported files to.
 
-[\--file_name=<name>]
+[\--file_name=&lt;name&gt;]
 : Attachment name (post_name field).
 
-[\--title=<title>]
+[\--title=&lt;title&gt;]
 : Attachment title (post title field).
 
-[\--caption=<caption>]
+[\--caption=&lt;caption&gt;]
 : Caption for attachment (post excerpt field).
 
-[\--alt=<alt_text>]
+[\--alt=&lt;alt_text&gt;]
 : Alt text for image (saved as post meta).
 
-[\--desc=<description>]
+[\--desc=&lt;description&gt;]
 : "Description" field (post content) of attachment post.
 
 [\--skip-copy]
@@ -41,7 +41,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--featured_image]
 : If set, set the imported image as the Featured Image of the post it is attached to.
 
-[\--porcelain[=<field>]]
+[\--porcelain[=&lt;field&gt;]]
 : Output a single field for each imported image. Defaults to attachment ID when used as flag.
 \---
 options:

@@ -8,13 +8,13 @@ On multisite, `wp user delete` only removes the user from the current site. Incl
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>...
+&lt;user&gt;...
 : The user login, user email, or user ID of the user(s) to delete.
 
 [\--network]
 : On multisite, delete the user from the entire network.
 
-[\--reassign=<user-id>]
+[\--reassign=&lt;user-id&gt;]
 : User ID to reassign the posts to.
 
 [\--yes]

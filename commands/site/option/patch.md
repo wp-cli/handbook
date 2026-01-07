@@ -6,7 +6,7 @@ Updates a nested value in an option.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<action>
+&lt;action&gt;
 : Patch action to perform.
 \---
 options:
@@ -15,16 +15,16 @@ options:
   - delete
 \---
 
-<key>
+&lt;key&gt;
 : The option name.
 
-<key-path>...
+&lt;key-path&gt;...
 : The name(s) of the keys within the value to locate the value to patch.
 
-[<value>]
+[&lt;value&gt;]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The serialization format for the value.
 \---
 default: plaintext

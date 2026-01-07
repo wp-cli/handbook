@@ -8,7 +8,7 @@ Displays a success message if the comment does exist.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : The ID of the comment to check.
 
 ### EXAMPLES

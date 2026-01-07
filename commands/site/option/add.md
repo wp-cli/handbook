@@ -6,13 +6,13 @@ Adds a site option.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : The name of the site option to add.
 
-[<value>]
+[&lt;value&gt;]
 : The value of the site option to add. If omitted, the value is read from STDIN.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The serialization format for the value.
 \---
 default: plaintext

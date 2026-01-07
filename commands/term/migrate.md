@@ -6,10 +6,10 @@ Migrate a term of a taxonomy to another taxonomy.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<term>
+&lt;term&gt;
 : Slug or ID of the term to migrate.
 
-[\--by=<field>]
+[\--by=&lt;field&gt;]
 : Explicitly handle the term value as a slug or id.
 \---
 default: id
@@ -18,10 +18,10 @@ options:
   - id
 \---
 
-[\--from=<taxonomy>]
+[\--from=&lt;taxonomy&gt;]
 : Taxonomy slug of the term to migrate.
 
-[\--to=<taxonomy>]
+[\--to=&lt;taxonomy&gt;]
 : Taxonomy slug to migrate to.
 
 ### EXAMPLES

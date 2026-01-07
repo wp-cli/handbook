@@ -14,7 +14,7 @@ When WordPress handles a request from a browser, it’s essentially executing as
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<stage>]
+[&lt;stage&gt;]
 : Drill down into a specific stage.
 
 [\--all]
@@ -23,13 +23,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--spotlight]
 : Filter out logs with zero-ish values from the set.
 
-[\--url=<url>]
+[\--url=&lt;url&gt;]
 : Execute a request against a specified URL. Defaults to the home URL.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields. Default is all fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table
@@ -40,7 +40,7 @@ options:
   - csv
 \---
 
-[\--order=<order>]
+[\--order=&lt;order&gt;]
 : Ascending or Descending order.
 \---
 default: ASC
@@ -49,7 +49,7 @@ options:
   - DESC
 \---
 
-[\--orderby=<fields>]
+[\--orderby=&lt;fields&gt;]
 : Set orderby which field.
 
 ### EXAMPLES

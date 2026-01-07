@@ -14,10 +14,10 @@ For those using WordPress with Apache, remember to update the `.htaccess` file w
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--title=<network-title>]
+[\--title=&lt;network-title&gt;]
 : The title of the new network.
 
-[\--base=<url-path>]
+[\--base=&lt;url-path&gt;]
 : Base path after the domain name that each site url will start with.
 \---
 default: /

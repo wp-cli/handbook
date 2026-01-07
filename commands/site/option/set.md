@@ -8,13 +8,13 @@ This is an alias for `wp site option update`.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<key>
+&lt;key&gt;
 : The name of the site option to update.
 
-[<value>]
+[&lt;value&gt;]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The serialization format for the value.
 \---
 default: plaintext

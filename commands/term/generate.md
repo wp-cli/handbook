@@ -8,22 +8,22 @@ Creates a specified number of new terms with dummy data.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<taxonomy>
+&lt;taxonomy&gt;
 : The taxonomy for the generated terms.
 
-[\--count=<number>]
+[\--count=&lt;number&gt;]
 : How many terms to generate?
 \---
 default: 100
 \---
 
-[\--max_depth=<number>]
+[\--max_depth=&lt;number&gt;]
 : Generate child terms down to a certain depth.
 \---
 default: 1
 \---
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: progress

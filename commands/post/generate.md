@@ -8,52 +8,52 @@ Creates a specified number of new posts with dummy data.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--count=<number>]
+[\--count=&lt;number&gt;]
 : How many posts to generate?
 \---
 default: 100
 \---
 
-[\--post_type=<type>]
+[\--post_type=&lt;type&gt;]
 : The type of the generated posts.
 \---
 default: post
 \---
 
-[\--post_status=<status>]
+[\--post_status=&lt;status&gt;]
 : The status of the generated posts.
 \---
 default: publish
 \---
 
-[\--post_title=<post_title>]
+[\--post_title=&lt;post_title&gt;]
 : The post title.
 \---
 default:
 \---
 
-[\--post_author=<login>]
+[\--post_author=&lt;login&gt;]
 : The author of the generated posts.
 \---
 default:
 \---
 
-[\--post_date=<yyyy-mm-dd-hh-ii-ss>]
+[\--post_date=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
 : The date of the post. Default is the current time.
 
-[\--post_date_gmt=<yyyy-mm-dd-hh-ii-ss>]
+[\--post_date_gmt=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
 : The date of the post in the GMT timezone. Default is the value of --post_date.
 
 [\--post_content]
 : If set, the command reads the post_content from STDIN.
 
-[\--max_depth=<number>]
+[\--max_depth=&lt;number&gt;]
 : For hierarchical post types, generate child posts down to a certain depth.
 \---
 default: 1
 \---
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: progress

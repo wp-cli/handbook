@@ -6,16 +6,16 @@ Gets details about a registered taxonomy.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<taxonomy>
+&lt;taxonomy&gt;
 : Taxonomy slug.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Instead of returning the whole taxonomy, returns the value of a single field.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

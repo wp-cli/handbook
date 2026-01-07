@@ -6,92 +6,92 @@ Creates a new post.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--post_author=<post_author>]
+[\--post_author=&lt;post_author&gt;]
 : The ID of the user who added the post. Default is the current user ID.
 
-[\--post_date=<post_date>]
+[\--post_date=&lt;post_date&gt;]
 : The date of the post. Default is the current time.
 
-[\--post_date_gmt=<post_date_gmt>]
+[\--post_date_gmt=&lt;post_date_gmt&gt;]
 : The date of the post in the GMT timezone. Default is the value of $post_date.
 
-[\--post_content=<post_content>]
+[\--post_content=&lt;post_content&gt;]
 : The post content. Default empty.
 
-[\--post_content_filtered=<post_content_filtered>]
+[\--post_content_filtered=&lt;post_content_filtered&gt;]
 : The filtered post content. Default empty.
 
-[\--post_title=<post_title>]
+[\--post_title=&lt;post_title&gt;]
 : The post title. Default empty.
 
-[\--post_excerpt=<post_excerpt>]
+[\--post_excerpt=&lt;post_excerpt&gt;]
 : The post excerpt. Default empty.
 
-[\--post_status=<post_status>]
+[\--post_status=&lt;post_status&gt;]
 : The post status. Default 'draft'.
 
-[\--post_type=<post_type>]
+[\--post_type=&lt;post_type&gt;]
 : The post type. Default 'post'.
 
-[\--comment_status=<comment_status>]
+[\--comment_status=&lt;comment_status&gt;]
 : Whether the post can accept comments. Accepts 'open' or 'closed'. Default is the value of 'default_comment_status' option.
 
-[\--ping_status=<ping_status>]
+[\--ping_status=&lt;ping_status&gt;]
 : Whether the post can accept pings. Accepts 'open' or 'closed'. Default is the value of 'default_ping_status' option.
 
-[\--post_password=<post_password>]
+[\--post_password=&lt;post_password&gt;]
 : The password to access the post. Default empty.
 
-[\--post_name=<post_name>]
+[\--post_name=&lt;post_name&gt;]
 : The post name. Default is the sanitized post title when creating a new post.
 
-[\--from-post=<post_id>]
+[\--from-post=&lt;post_id&gt;]
 : Post id of a post to be duplicated.
 
-[\--to_ping=<to_ping>]
+[\--to_ping=&lt;to_ping&gt;]
 : Space or carriage return-separated list of URLs to ping. Default empty.
 
-[\--pinged=<pinged>]
+[\--pinged=&lt;pinged&gt;]
 : Space or carriage return-separated list of URLs that have been pinged. Default empty.
 
-[\--post_modified=<post_modified>]
+[\--post_modified=&lt;post_modified&gt;]
 : The date when the post was last modified. Default is the current time.
 
-[\--post_modified_gmt=<post_modified_gmt>]
+[\--post_modified_gmt=&lt;post_modified_gmt&gt;]
 : The date when the post was last modified in the GMT timezone. Default is the current time.
 
-[\--post_parent=<post_parent>]
+[\--post_parent=&lt;post_parent&gt;]
 : Set this for the post it belongs to, if any. Default 0.
 
-[\--menu_order=<menu_order>]
+[\--menu_order=&lt;menu_order&gt;]
 : The order the post should be displayed in. Default 0.
 
-[\--post_mime_type=<post_mime_type>]
+[\--post_mime_type=&lt;post_mime_type&gt;]
 : The mime type of the post. Default empty.
 
-[\--guid=<guid>]
+[\--guid=&lt;guid&gt;]
 : Global Unique ID for referencing the post. Default empty.
 
-[\--post_category=<post_category>]
+[\--post_category=&lt;post_category&gt;]
 : Array of category names, slugs, or IDs. Defaults to value of the 'default_category' option.
 
-[\--tags_input=<tags_input>]
+[\--tags_input=&lt;tags_input&gt;]
 : Array of tag names, slugs, or IDs. Default empty.
 
-[\--tax_input=<tax_input>]
+[\--tax_input=&lt;tax_input&gt;]
 : Array of taxonomy terms keyed by their taxonomy name. Default empty.
 
-[\--meta_input=<meta_input>]
+[\--meta_input=&lt;meta_input&gt;]
 : Array in JSON format of post meta values keyed by their post meta key. Default empty.
 
-[<file>]
-: Read post content from <file>. If this value is present, the
+[&lt;file&gt;]
+: Read post content from &lt;file&gt;. If this value is present, the
     `--post_content` argument will be ignored.
 
   Passing `-` as the filename will cause post content to
   be read from STDIN.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Associative args for the new post. See wp_insert_post().
 
 [\--edit]

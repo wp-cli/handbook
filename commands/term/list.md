@@ -6,19 +6,19 @@ Lists terms in a taxonomy.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<taxonomy>...
+&lt;taxonomy&gt;...
 : List terms of one or more taxonomies
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Filter by one or more fields (see get_terms() $args parameter for a list of fields).
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each term.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

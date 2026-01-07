@@ -8,16 +8,16 @@ This is an alias for `wp network meta update`.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<id>
+&lt;id&gt;
 : The ID of the object.
 
-<key>
+&lt;key&gt;
 : The name of the meta field to update.
 
-[<value>]
+[&lt;value&gt;]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : The serialization format for the value.
 \---
 default: plaintext

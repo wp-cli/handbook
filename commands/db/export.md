@@ -12,22 +12,22 @@ Runs `mysqldump` utility using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD`
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<file>]
+[&lt;file&gt;]
 : The name of the SQL file to export. If '-', then outputs to STDOUT. If omitted, it will be '{dbname}-{Y-m-d}-{random-hash}.sql'.
 
-[\--dbuser=<value>]
+[\--dbuser=&lt;value&gt;]
 : Username to pass to mysqldump. Defaults to DB_USER.
 
-[\--dbpass=<value>]
+[\--dbpass=&lt;value&gt;]
 : Password to pass to mysqldump. Defaults to DB_PASSWORD.
 
-[\--<field>=<value>]
+[\--&lt;field&gt;=&lt;value&gt;]
 : Extra arguments to pass to mysqldump. [Refer to mysqldump docs](https://dev.mysql.com/doc/en/mysqldump.html#mysqldump-option-summary).
 
-[\--tables=<tables>]
+[\--tables=&lt;tables&gt;]
 : The comma separated list of specific tables to export. Excluding this parameter will export all tables in the database.
 
-[\--exclude_tables=<tables>]
+[\--exclude_tables=&lt;tables&gt;]
 : The comma separated list of specific tables that should be skipped from exporting. Excluding this parameter will export all tables in the database.
 
 [\--include-tablespaces]

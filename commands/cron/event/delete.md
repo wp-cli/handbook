@@ -6,13 +6,13 @@ Deletes all scheduled cron events for the given hook.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<hook>...]
+[&lt;hook&gt;...]
 : One or more hooks to delete.
 
 [\--due-now]
 : Delete all hooks due right now.
 
-[\--exclude=<hooks>]
+[\--exclude=&lt;hooks&gt;]
 : Comma-separated list of hooks to exclude.
 
 [\--all]

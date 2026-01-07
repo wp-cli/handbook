@@ -6,7 +6,7 @@ Reveals the status of one or all themes.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<theme>]
+[&lt;theme&gt;]
 : A particular theme to show the status for.
 
 ### EXAMPLES

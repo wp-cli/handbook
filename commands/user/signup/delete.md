@@ -6,7 +6,7 @@ Deletes one or more signups.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[<signup>...]
+[&lt;signup&gt;...]
 : The signup ID, user login, user email, or activation key of the signup(s) to delete.
 
 [\--all]

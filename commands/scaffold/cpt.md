@@ -8,22 +8,22 @@ This is an alias for `wp scaffold post-type`.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<slug>
+&lt;slug&gt;
 : The internal name of the post type.
 
-[\--label=<label>]
+[\--label=&lt;label&gt;]
 : The text used to translate the update messages.
 
-[\--textdomain=<textdomain>]
+[\--textdomain=&lt;textdomain&gt;]
 : The textdomain to use for the labels.
 
-[\--dashicon=<dashicon>]
+[\--dashicon=&lt;dashicon&gt;]
 : The dashicon to use in the menu.
 
 [\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=<theme>` to have the file placed in that theme.
+: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
 
-[\--plugin=<plugin>]
+[\--plugin=&lt;plugin&gt;]
 : Create a file in the given plugin's directory, instead of sending to STDOUT.
 
 [\--raw]

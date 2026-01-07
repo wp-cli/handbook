@@ -19,13 +19,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--major]
 : Only list major updates.
 
-[\--field=<field>]
+[\--field=&lt;field&gt;]
 : Prints the value of a single field for each update.
 
-[\--fields=<fields>]
+[\--fields=&lt;fields&gt;]
 : Limit the output to specific object fields. Defaults to version,update_type,package_url,status,requires_php.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: table

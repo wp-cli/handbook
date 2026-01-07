@@ -6,10 +6,10 @@ Lists all capabilities for a user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-<user>
+&lt;user&gt;
 : User ID, user email, or login.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: list
@@ -22,7 +22,7 @@ options:
   - yaml
 \---
 
-[\--origin=<origin>]
+[\--origin=&lt;origin&gt;]
 : Render output in a particular format.
 \---
 default: all

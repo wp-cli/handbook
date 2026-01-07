@@ -11,7 +11,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--with-values]
 : Display current values also.
 
-[\--format=<format>]
+[\--format=&lt;format&gt;]
 : Render output in a particular format.
 \---
 default: json
@@ -27,8 +27,8 @@ options:
     array (
       'path' =>
       array (
-        'runtime' => '=<path>',
-        'file' => '<path>',
+        'runtime' => '=&lt;path&gt;',
+        'file' => '&lt;path&gt;',
         'synopsis' => '',
         'default' => NULL,
         'multiple' => false,
