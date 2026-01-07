@@ -8,16 +8,16 @@ Append the term to the existing set of terms on the object.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;
+<id>
 : The ID of the object.
 
-&lt;taxonomy&gt;
+<taxonomy>
 : The name of the taxonomy type to be added.
 
-&lt;term&gt;...
+<term>...
 : The slug of the term or terms to be added.
 
-[\--by=&lt;field&gt;]
+[\--by=<field>]
 : Explicitly handle the term value as a slug or id.
 \---
 default: slug

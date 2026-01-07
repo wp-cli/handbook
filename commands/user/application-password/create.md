@@ -6,13 +6,13 @@ Creates a new application password.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : The user login, user email, or user ID of the user to create a new application password for.
 
-&lt;app-name&gt;
+<app-name>
 : Unique name of the application to create an application password for.
 
-[\--app-id=&lt;app-id&gt;]
+[\--app-id=<app-id>]
 : Application ID to attribute to the application password.
 
 [\--porcelain]

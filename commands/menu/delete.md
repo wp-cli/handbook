@@ -6,7 +6,7 @@ Deletes one or more menus.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;menu&gt;...
+<menu>...
 : The name, slug, or term ID for the menu(s).
 
 ### EXAMPLES

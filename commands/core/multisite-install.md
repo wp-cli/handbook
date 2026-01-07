@@ -10,10 +10,10 @@ For those using WordPress with Apache, remember to update the `.htaccess` file w
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--url=&lt;url&gt;]
+[\--url=<url>]
 : The address of the new site.
 
-[\--base=&lt;url-path&gt;]
+[\--base=<url-path>]
 : Base path after the domain name that each site url in the network will start with.
 \---
 default: /
@@ -22,19 +22,19 @@ default: /
 [\--subdomains]
 : If passed, the network will use subdomains, instead of subdirectories. Doesn't work with 'localhost'.
 
-\--title=&lt;site-title&gt;
+\--title=<site-title>
 : The title of the new site.
 
-\--admin_user=&lt;username&gt;
+\--admin_user=<username>
 : The name of the admin user.
 \---
 default: admin
 \---
 
-[\--admin_password=&lt;password&gt;]
+[\--admin_password=<password>]
 : The password for the admin user. Defaults to randomly generated string.
 
-\--admin_email=&lt;email&gt;
+\--admin_email=<email>
 : The email address for the admin user.
 
 [\--skip-email]

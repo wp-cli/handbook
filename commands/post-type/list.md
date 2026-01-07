@@ -6,16 +6,16 @@ Lists registered post types.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Filter by one or more fields (see get_post_types() first parameter for a list of available fields).
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each post type.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific post type fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

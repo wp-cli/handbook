@@ -8,7 +8,7 @@ Permits theme to be activated from the dashboard of a site on a WordPress multis
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;theme&gt;
+<theme>
 : The theme to enable.
 
 [\--network]

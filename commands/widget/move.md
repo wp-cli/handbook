@@ -8,13 +8,13 @@ Changes the order of a widget in its existing sidebar, or moves it to a new side
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;widget-id&gt;
+<widget-id>
 : Unique ID for the widget
 
-[\--position=&lt;position&gt;]
+[\--position=<position>]
 : Assign the widget to a new position.
 
-[\--sidebar-id=&lt;sidebar-id&gt;]
+[\--sidebar-id=<sidebar-id>]
 : Assign the widget to a new sidebar
 
 ### EXAMPLES

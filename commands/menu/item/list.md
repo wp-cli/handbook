@@ -6,13 +6,13 @@ Gets a list of items associated with a menu.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;menu&gt;
+<menu>
 : The name, slug, or term ID for the menu.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific object fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

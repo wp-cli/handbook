@@ -6,16 +6,16 @@ Gets a list of the current rewrite rules.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--match=&lt;url&gt;]
+[\--match=<url>]
 : Show rewrite rules matching a particular URL.
 
-[\--source=&lt;source&gt;]
+[\--source=<source>]
 : Show rewrite rules from a particular source.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields. Defaults to match,query,source.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

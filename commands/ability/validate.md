@@ -8,13 +8,13 @@ Validates the input data without executing the ability. Useful for testing input
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;name&gt;
+<name>
 : The ability name (namespace/ability-name format).
 
-[\--input=&lt;json&gt;]
+[\--input=<json>]
 : JSON string containing input data to validate.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Individual input fields to validate.
 
 ### EXAMPLES

@@ -6,19 +6,19 @@ Gets a specific application password.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : The user login, user email, or user ID of the user to get the application password for.
 
-&lt;uuid&gt;
+<uuid>
 : The universally unique ID of the application password.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for the application password.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

@@ -6,7 +6,7 @@ Verifies plugin files against WordPress.org's checksums.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;plugin&gt;...]
+[<plugin>...]
 : One or more plugins to verify.
 
 [\--all]
@@ -15,10 +15,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--strict]
 : If set, even "soft changes" like readme.txt changes will trigger checksum errors.
 
-[\--version=&lt;version&gt;]
+[\--version=<version>]
 : Verify checksums against a specific plugin version.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a specific format.
 \---
 default: table
@@ -33,7 +33,7 @@ options:
 [\--insecure]
 : Retry downloads without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
 
-[\--exclude=&lt;name&gt;]
+[\--exclude=<name>]
 : Comma separated list of plugin names that should be excluded from verifying.
 
 ### EXAMPLES

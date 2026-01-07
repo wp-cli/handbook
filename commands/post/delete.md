@@ -6,7 +6,7 @@ Deletes an existing post.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;...
+<id>...
 : One or more IDs of posts to delete.
 
 [\--force]

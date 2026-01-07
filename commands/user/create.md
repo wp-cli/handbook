@@ -6,43 +6,43 @@ Creates a new user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user-login&gt;
+<user-login>
 : The login of the user to create.
 
-&lt;user-email&gt;
+<user-email>
 : The email address of the user to create.
 
-[\--role=&lt;role&gt;]
+[\--role=<role>]
 : The role of the user to create. Default: default role. Possible values include 'administrator', 'editor', 'author', 'contributor', 'subscriber'.
 
-[\--user_pass=&lt;password&gt;]
+[\--user_pass=<password>]
 : The user password. Default: randomly generated.
 
-[\--user_registered=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
+[\--user_registered=<yyyy-mm-dd-hh-ii-ss>]
 : The date the user registered. Default: current date.
 
-[\--display_name=&lt;name&gt;]
+[\--display_name=<name>]
 : The display name.
 
-[\--user_nicename=&lt;nice_name&gt;]
+[\--user_nicename=<nice_name>]
 : A string that contains a URL-friendly name for the user. The default is the user's username.
 
-[\--user_url=&lt;url&gt;]
+[\--user_url=<url>]
 : A string containing the user's URL for the user's web site.
 
-[\--nickname=&lt;nickname&gt;]
+[\--nickname=<nickname>]
 : The user's nickname, defaults to the user's username.
 
-[\--first_name=&lt;first_name&gt;]
+[\--first_name=<first_name>]
 : The user's first name.
 
-[\--last_name=&lt;last_name&gt;]
+[\--last_name=<last_name>]
 : The user's last name.
 
-[\--description=&lt;description&gt;]
+[\--description=<description>]
 : A string containing content about the user.
 
-[\--rich_editing=&lt;rich_editing&gt;]
+[\--rich_editing=<rich_editing>]
 : A string for whether to enable the rich editor or not. False if not empty.
 
 [\--send-email]

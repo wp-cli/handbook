@@ -6,13 +6,13 @@ Lists options and their values.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--search=&lt;pattern&gt;]
+[\--search=<pattern>]
 : Use wildcards ( * and ? ) to match option name.
 
-[\--exclude=&lt;pattern&gt;]
+[\--exclude=<pattern>]
 : Pattern to exclude. Use wildcards ( * and ? ) to match option name.
 
-[\--autoload=&lt;value&gt;]
+[\--autoload=<value>]
 : Match only autoload options when value is on, and only not-autoload option when off.
 
 [\--transients]
@@ -21,13 +21,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--unserialize]
 : Unserialize option values in output.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific object fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value. total_bytes displays the total size of matching options in bytes.
 \---
 default: table
@@ -40,7 +40,7 @@ options:
   - total_bytes
 \---
 
-[\--orderby=&lt;fields&gt;]
+[\--orderby=<fields>]
 : Set orderby which field.
 \---
 default: option_id
@@ -50,7 +50,7 @@ options:
  - option_value
 \---
 
-[\--order=&lt;order&gt;]
+[\--order=<order>]
 : Set ascending or descending order.
 \---
 default: asc

@@ -8,7 +8,7 @@ oEmbed caches for a post are stored in the post's metadata.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;post_id&gt;
+<post_id>
 : ID of the post to do the caching for.
 
 ### EXAMPLES

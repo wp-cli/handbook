@@ -24,7 +24,7 @@ Available size formats include:
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--size_format=&lt;format&gt;]
+[\--size_format=<format>]
 : Display the database size only, as a bare number.
 \---
 options:
@@ -50,7 +50,7 @@ options:
 [\--human-readable]
 : Display database sizes in human readable formats.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 options:
@@ -60,13 +60,13 @@ options:
   - yaml
 \---
 
-[\--scope=&lt;scope&gt;]
+[\--scope=<scope>]
 : Can be all, global, ms_global, blog, or old tables. Defaults to all.
 
 [\--network]
 : List all the tables in a multisite install.
 
-[\--decimals=&lt;decimals&gt;]
+[\--decimals=<decimals>]
 : Number of digits after decimal point. Defaults to 0.
 
 [\--all-tables-with-prefix]
@@ -75,7 +75,7 @@ options:
 [\--all-tables]
 : List all tables in the database, regardless of the prefix, and even if not registered on $wpdb. Overrides --all-tables-with-prefix.
 
-[\--order=&lt;order&gt;]
+[\--order=<order>]
 : Ascending or Descending order.
 \---
 default: asc
@@ -84,7 +84,7 @@ options:
   - desc
 \---
 
-[\--orderby=&lt;orderby&gt;]
+[\--orderby=<orderby>]
 : Order by fields.
 \---
 default: name

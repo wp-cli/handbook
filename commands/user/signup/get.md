@@ -6,16 +6,16 @@ Gets details about a signup.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;signup&gt;
+<signup>
 : The signup ID, user login, user email, or activation key.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Instead of returning the whole signup, returns the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

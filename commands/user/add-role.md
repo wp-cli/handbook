@@ -6,10 +6,10 @@ Adds a role for a user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : User ID, user email, or user login.
 
-[&lt;role&gt;...]
+[<role>...]
 : Add the specified role(s) to the user.
 
 ### EXAMPLES

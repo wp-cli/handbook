@@ -6,13 +6,13 @@ Gets details about a term.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;taxonomy&gt;
+<taxonomy>
 : Taxonomy of the term to get
 
-&lt;term&gt;
+<term>
 : ID or slug of the term to get
 
-[\--by=&lt;field&gt;]
+[\--by=<field>]
 : Explicitly handle the term value as a slug or id.
 \---
 default: id
@@ -21,13 +21,13 @@ options:
   - id
 \---
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Instead of returning the whole term, returns the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

@@ -6,17 +6,17 @@ Schedules a new cron event.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;hook&gt;
+<hook>
 : The hook name.
 
-[&lt;next-run&gt;]
+[<next-run>]
 : A Unix timestamp or an English textual datetime description compatible with `strtotime()`. Defaults to now.
 
-[&lt;recurrence&gt;]
+[<recurrence>]
 : How often the event should recur. See `wp cron schedule list` for available schedule names. Defaults to no recurrence.
 
-[\--&lt;field&gt;=&lt;value&gt;]
-: Arguments to pass to the hook for the event. &lt;field&gt; should be a numeric key, not a string.
+[\--<field>=<value>]
+: Arguments to pass to the hook for the event. <field> should be a numeric key, not a string.
 
 ### EXAMPLES
 

@@ -6,10 +6,10 @@ Sets the value of a theme mod.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;mod&gt;
+<mod>
 : The name of the theme mod to set or update.
 
-&lt;value&gt;
+<value>
 : The new value.
 
 ### EXAMPLES

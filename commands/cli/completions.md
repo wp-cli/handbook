@@ -8,10 +8,10 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-\--line=&lt;line&gt;
+\--line=<line>
 : The current command line to be executed.
 
-\--point=&lt;point&gt;
+\--point=<point>
 : The index to the current cursor position relative to the beginning of the command.
 
 ### EXAMPLES

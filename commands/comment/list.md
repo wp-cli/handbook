@@ -9,16 +9,16 @@ Display comments based on all arguments supported by
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : One or more args to pass to WP_Comment_Query.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each comment.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific object fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

@@ -6,7 +6,7 @@ Update a nested value for a meta field.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;action&gt;
+<action>
 : Patch action to perform.
 \---
 options:
@@ -15,19 +15,19 @@ options:
   - delete
 \---
 
-&lt;id&gt;
+<id>
 : The ID of the object.
 
-&lt;key&gt;
+<key>
 : The name of the meta field to update.
 
-&lt;key-path&gt;...
+<key-path>...
 : The name(s) of the keys within the value to locate the value to patch.
 
-[&lt;value&gt;]
+[<value>]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value.
 \---
 default: plaintext

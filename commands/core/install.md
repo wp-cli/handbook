@@ -12,22 +12,22 @@ Note: When using custom user tables (e.g. `CUSTOM_USER_TABLE`), the admin email 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-\--url=&lt;url&gt;
+\--url=<url>
 : The address of the new site.
 
-\--title=&lt;site-title&gt;
+\--title=<site-title>
 : The title of the new site.
 
-\--admin_user=&lt;username&gt;
+\--admin_user=<username>
 : The name of the admin user.
 
-[\--admin_password=&lt;password&gt;]
+[\--admin_password=<password>]
 : The password for the admin user. Defaults to randomly generated string.
 
-\--admin_email=&lt;email&gt;
+\--admin_email=<email>
 : The email address for the admin user.
 
-[\--locale=&lt;locale&gt;]
+[\--locale=<locale>]
 : The locale/language for the installation (e.g. `de_DE`). Default is `en_US`.
 
 [\--skip-email]

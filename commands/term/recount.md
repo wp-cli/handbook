@@ -10,7 +10,7 @@ This command runs wp_update_term_count() on the taxonomy's terms to bring the co
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;taxonomy&gt;...
+<taxonomy>...
 : One or more taxonomies to recalculate.
 
 ### EXAMPLES

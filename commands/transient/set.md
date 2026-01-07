@@ -2,7 +2,7 @@
 
 Sets a transient value.
 
-`&lt;expiration&gt;` is the time until expiration, in seconds.
+`<expiration>` is the time until expiration, in seconds.
 
 For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
 
@@ -10,13 +10,13 @@ For a more complete explanation of the transient cache, including the network|si
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : Key for the transient.
 
-&lt;value&gt;
+<value>
 : Value to be set for the transient.
 
-[&lt;expiration&gt;]
+[<expiration>]
 : Time until expiration, in seconds.
 
 [\--network]

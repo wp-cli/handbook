@@ -8,10 +8,10 @@ Defaults to all tables registered to the $wpdb database handler.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;table&gt;...]
+[<table>...]
 : List tables based on wildcard search, e.g. 'wp_*_options' or 'wp_post?'.
 
-[\--scope=&lt;scope&gt;]
+[\--scope=<scope>]
 : Can be all, global, ms_global, blog, or old tables. Defaults to all.
 
 [\--network]
@@ -23,7 +23,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--all-tables]
 : List all tables in the database, regardless of the prefix, and even if not registered on $wpdb. Overrides --all-tables-with-prefix.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: list

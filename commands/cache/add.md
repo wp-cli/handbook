@@ -8,19 +8,19 @@ Errors if a value already exists for the key, which means the value can't be add
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : Cache key.
 
-&lt;value&gt;
+<value>
 : Value to add to the key.
 
-[&lt;group&gt;]
+[<group>]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 \---
 default: default
 \---
 
-[&lt;expiration&gt;]
+[<expiration>]
 : Define how long to keep the value, in seconds. `0` means as long as possible.
 \---
 default: 0

@@ -10,19 +10,19 @@ This is an alias for `wp db cli`.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--database=&lt;database&gt;]
+[\--database=<database>]
 : Use a specific database. Defaults to DB_NAME.
 
-[\--default-character-set=&lt;character-set&gt;]
+[\--default-character-set=<character-set>]
 : Use a specific character set. Defaults to DB_CHARSET when defined.
 
-[\--dbuser=&lt;value&gt;]
+[\--dbuser=<value>]
 : Username to pass to mysql. Defaults to DB_USER.
 
-[\--dbpass=&lt;value&gt;]
+[\--dbpass=<value>]
 : Password to pass to mysql. Defaults to DB_PASSWORD.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Extra arguments to pass to mysql. [Refer to mysql docs](https://dev.mysql.com/doc/en/mysql-command-options.html).
 
 [\--defaults]

@@ -8,7 +8,7 @@ Removes all widgets from the sidebar and places them in Inactive Widgets.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;sidebar-id&gt;...]
+[<sidebar-id>...]
 : One or more sidebars to reset.
 
 [\--all]

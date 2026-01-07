@@ -6,10 +6,10 @@ Lists transients and their values.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--search=&lt;pattern&gt;]
+[\--search=<pattern>]
 : Use wildcards ( * and ? ) to match transient name.
 
-[\--exclude=&lt;pattern&gt;]
+[\--exclude=<pattern>]
 : Pattern to exclude. Use wildcards ( * and ? ) to match transient name.
 
 [\--network]
@@ -21,10 +21,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--human-readable]
 : Human-readable output for expirations.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific object fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value.
 \---
 default: table

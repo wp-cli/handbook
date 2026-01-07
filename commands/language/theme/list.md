@@ -6,22 +6,22 @@ Lists all available languages for one or more themes.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;theme&gt;...]
+[<theme>...]
 : One or more themes to list languages for.
 
 [\--all]
 : If set, available languages for all themes will be listed.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Display the value of a single field.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Filter results by key=value pairs.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

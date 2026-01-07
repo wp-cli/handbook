@@ -6,10 +6,10 @@ Installs one or more themes.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;theme|zip|url&gt;...
+<theme|zip|url>...
 : One or more themes to install. Accepts a theme slug, the path to a local zip file, or a URL to a remote zip file.
 
-[\--version=&lt;version&gt;]
+[\--version=<version>]
 : If set, get that particular version from wordpress.org, instead of the stable version.
 
 [\--force]

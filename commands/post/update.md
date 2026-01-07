@@ -6,92 +6,92 @@ Updates one or more existing posts.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;...
+<id>...
 : One or more IDs of posts to update.
 
-[\--post_author=&lt;post_author&gt;]
+[\--post_author=<post_author>]
 : The ID of the user who added the post. Default is the current user ID.
 
-[\--post_date=&lt;post_date&gt;]
+[\--post_date=<post_date>]
 : The date of the post. Default is the current time.
 
-[\--post_date_gmt=&lt;post_date_gmt&gt;]
+[\--post_date_gmt=<post_date_gmt>]
 : The date of the post in the GMT timezone. Default is the value of $post_date.
 
-[\--post_content=&lt;post_content&gt;]
+[\--post_content=<post_content>]
 : The post content. Default empty.
 
-[\--post_content_filtered=&lt;post_content_filtered&gt;]
+[\--post_content_filtered=<post_content_filtered>]
 : The filtered post content. Default empty.
 
-[\--post_title=&lt;post_title&gt;]
+[\--post_title=<post_title>]
 : The post title. Default empty.
 
-[\--post_excerpt=&lt;post_excerpt&gt;]
+[\--post_excerpt=<post_excerpt>]
 : The post excerpt. Default empty.
 
-[\--post_status=&lt;post_status&gt;]
+[\--post_status=<post_status>]
 : The post status. Default 'draft'.
 
-[\--post_type=&lt;post_type&gt;]
+[\--post_type=<post_type>]
 : The post type. Default 'post'.
 
-[\--comment_status=&lt;comment_status&gt;]
+[\--comment_status=<comment_status>]
 : Whether the post can accept comments. Accepts 'open' or 'closed'. Default is the value of 'default_comment_status' option.
 
-[\--ping_status=&lt;ping_status&gt;]
+[\--ping_status=<ping_status>]
 : Whether the post can accept pings. Accepts 'open' or 'closed'. Default is the value of 'default_ping_status' option.
 
-[\--post_password=&lt;post_password&gt;]
+[\--post_password=<post_password>]
 : The password to access the post. Default empty.
 
-[\--post_name=&lt;post_name&gt;]
+[\--post_name=<post_name>]
 : The post name. Default is the sanitized post title when creating a new post.
 
-[\--to_ping=&lt;to_ping&gt;]
+[\--to_ping=<to_ping>]
 : Space or carriage return-separated list of URLs to ping. Default empty.
 
-[\--pinged=&lt;pinged&gt;]
+[\--pinged=<pinged>]
 : Space or carriage return-separated list of URLs that have been pinged. Default empty.
 
-[\--post_modified=&lt;post_modified&gt;]
+[\--post_modified=<post_modified>]
 : The date when the post was last modified. Default is the current time.
 
-[\--post_modified_gmt=&lt;post_modified_gmt&gt;]
+[\--post_modified_gmt=<post_modified_gmt>]
 : The date when the post was last modified in the GMT timezone. Default is the current time.
 
-[\--post_parent=&lt;post_parent&gt;]
+[\--post_parent=<post_parent>]
 : Set this for the post it belongs to, if any. Default 0.
 
-[\--menu_order=&lt;menu_order&gt;]
+[\--menu_order=<menu_order>]
 : The order the post should be displayed in. Default 0.
 
-[\--post_mime_type=&lt;post_mime_type&gt;]
+[\--post_mime_type=<post_mime_type>]
 : The mime type of the post. Default empty.
 
-[\--guid=&lt;guid&gt;]
+[\--guid=<guid>]
 : Global Unique ID for referencing the post. Default empty.
 
-[\--post_category=&lt;post_category&gt;]
+[\--post_category=<post_category>]
 : Array of category names, slugs, or IDs. Defaults to value of the 'default_category' option.
 
-[\--tags_input=&lt;tags_input&gt;]
+[\--tags_input=<tags_input>]
 : Array of tag names, slugs, or IDs. Default empty.
 
-[\--tax_input=&lt;tax_input&gt;]
+[\--tax_input=<tax_input>]
 : Array of taxonomy terms keyed by their taxonomy name. Default empty.
 
-[\--meta_input=&lt;meta_input&gt;]
+[\--meta_input=<meta_input>]
 : Array in JSON format of post meta values keyed by their post meta key. Default empty.
 
-[&lt;file&gt;]
-: Read post content from &lt;file&gt;. If this value is present, the
+[<file>]
+: Read post content from <file>. If this value is present, the
     `--post_content` argument will be ignored.
 
   Passing `-` as the filename will cause post content to
   be read from STDIN.
 
-\--&lt;field&gt;=&lt;value&gt;
+\--<field>=<value>
 : One or more fields to update. See wp_insert_post().
 
 [\--defer-term-counting]

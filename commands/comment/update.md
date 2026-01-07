@@ -6,10 +6,10 @@ Updates one or more comments.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;...
+<id>...
 : One or more IDs of comments to update.
 
-\--&lt;field&gt;=&lt;value&gt;
+\--<field>=<value>
 : One or more fields to update. See wp_update_comment().
 
 ### EXAMPLES

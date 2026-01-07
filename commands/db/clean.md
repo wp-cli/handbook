@@ -8,10 +8,10 @@ Runs `DROP_TABLE` for each table that has a `$table_prefix` as specified in wp-c
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--dbuser=&lt;value&gt;]
+[\--dbuser=<value>]
 : Username to pass to mysql. Defaults to DB_USER.
 
-[\--dbpass=&lt;value&gt;]
+[\--dbpass=<value>]
 : Password to pass to mysql. Defaults to DB_PASSWORD.
 
 [\--yes]

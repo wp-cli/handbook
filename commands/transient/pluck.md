@@ -6,13 +6,13 @@ Get a nested value from a transient.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : Key for the transient.
 
-&lt;key-path&gt;...
+<key-path>...
 : The name(s) of the keys within the value to locate the value to pluck.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The output format of the value.
 \---
 default: plaintext

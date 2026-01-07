@@ -6,13 +6,13 @@ Updates an existing term.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;taxonomy&gt;
+<taxonomy>
 : Taxonomy of the term to update.
 
-&lt;term&gt;
+<term>
 : ID or slug for the term to update.
 
-[\--by=&lt;field&gt;]
+[\--by=<field>]
 : Explicitly handle the term value as a slug or id.
 \---
 default: id
@@ -21,16 +21,16 @@ options:
   - id
 \---
 
-[\--name=&lt;name&gt;]
+[\--name=<name>]
 : A new name for the term.
 
-[\--slug=&lt;slug&gt;]
+[\--slug=<slug>]
 : A new slug for the term.
 
-[\--description=&lt;description&gt;]
+[\--description=<description>]
 : A new description for the term.
 
-[\--parent=&lt;term-id&gt;]
+[\--parent=<term-id>]
 : A new parent for the term.
 
 ### EXAMPLES

@@ -6,10 +6,10 @@ Removes capabilities from a given role.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;role&gt;
+<role>
 : Key for the role.
 
-&lt;cap&gt;...
+<cap>...
 : One or more capabilities to remove.
 
 ### EXAMPLES

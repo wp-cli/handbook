@@ -6,16 +6,16 @@ Gets one or more theme mods.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;mod&gt;...]
+[<mod>...]
 : One or more mods to get.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Returns the value of a single field.
 
 [\--all]
 : List all theme mods
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

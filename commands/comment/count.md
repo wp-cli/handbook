@@ -6,7 +6,7 @@ Counts comments, on whole blog or on a given post.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;post-id&gt;]
+[<post-id>]
 : The ID of the post to count comments in.
 
 ### EXAMPLES

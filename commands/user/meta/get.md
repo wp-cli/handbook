@@ -6,13 +6,13 @@ Gets meta field value.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : The user login, user email, or user ID of the user to get metadata for.
 
-&lt;key&gt;
+<key>
 : The metadata key.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

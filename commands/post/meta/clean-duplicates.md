@@ -6,10 +6,10 @@ Cleans up duplicate post meta values on a post.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;
+<id>
 : ID of the post to clean.
 
-&lt;key&gt;
+<key>
 : Meta key to clean up.
 
 ### EXAMPLES

@@ -12,13 +12,13 @@ Search/replace intelligently handles PHP serialized data, and does not change pr
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;old&gt;
+<old>
 : A string to search for within the database.
 
-&lt;new&gt;
+<new>
 : Replace instances of the first string with this new string.
 
-[&lt;table&gt;...]
+[<table>...]
 : List of database tables to restrict the replacement to. Wildcards are supported, e.g. `'wp_*options'` or `'wp_post*'`.
 
 [\--dry-run]
@@ -33,19 +33,19 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--all-tables]
 : Enable replacement on ALL tables in the database, regardless of the prefix, and even if not registered on $wpdb. Overrides --network and --all-tables-with-prefix.
 
-[\--export[=&lt;file&gt;]]
-: Write transformed data as SQL file instead of saving replacements to the database. If &lt;file&gt; is not supplied, will output to STDOUT.
+[\--export[=<file>]]
+: Write transformed data as SQL file instead of saving replacements to the database. If <file> is not supplied, will output to STDOUT.
 
-[\--export_insert_size=&lt;rows&gt;]
+[\--export_insert_size=<rows>]
 : Define number of rows in single INSERT statement when doing SQL export. You might want to change this depending on your database configuration (e.g. if you need to do fewer queries). Default: 50
 
-[\--skip-tables=&lt;tables&gt;]
+[\--skip-tables=<tables>]
 : Do not perform the replacement on specific tables. Use commas to specify multiple tables. Wildcards are supported, e.g. `'wp_*options'` or `'wp_post*'`.
 
-[\--skip-columns=&lt;columns&gt;]
+[\--skip-columns=<columns>]
 : Do not perform the replacement on specific columns. Use commas to specify multiple columns.
 
-[\--include-columns=&lt;columns&gt;]
+[\--include-columns=<columns>]
 : Perform the replacement on specific columns. Use commas to specify multiple columns.
 
 [\--precise]
@@ -60,16 +60,16 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--regex]
 : Runs the search using a regular expression (without delimiters). Warning: search-replace will take about 15-20x longer when using --regex.
 
-[\--regex-flags=&lt;regex-flags&gt;]
+[\--regex-flags=<regex-flags>]
 : Pass PCRE modifiers to regex search-replace (e.g. 'i' for case-insensitivity).
 
-[\--regex-delimiter=&lt;regex-delimiter&gt;]
+[\--regex-delimiter=<regex-delimiter>]
 : The delimiter to use for the regex. It must be escaped if it appears in the search string. The default value is the result of `chr(1)`.
 
-[\--regex-limit=&lt;regex-limit&gt;]
+[\--regex-limit=<regex-limit>]
 : The maximum possible replacements for the regex per row (or per unserialized data bit per row). Defaults to -1 (no limit).
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table
@@ -84,13 +84,13 @@ options:
 [\--report-changed-only]
 : Report changed fields only. Defaults to false, unless logging, when it defaults to true.
 
-[\--log[=&lt;file&gt;]]
-: Log the items changed. If &lt;file&gt; is not supplied or is "-", will output to STDOUT. Warning: causes a significant slow down, similar or worse to enabling --precise or --regex.
+[\--log[=<file>]]
+: Log the items changed. If <file> is not supplied or is "-", will output to STDOUT. Warning: causes a significant slow down, similar or worse to enabling --precise or --regex.
 
-[\--before_context=&lt;num&gt;]
+[\--before_context=<num>]
 : For logging, number of characters to display before the old match and the new replacement. Default 40. Ignored if not logging.
 
-[\--after_context=&lt;num&gt;]
+[\--after_context=<num>]
 : For logging, number of characters to display after the old match and the new replacement. Default 40. Ignored if not logging.
 
 ### EXAMPLES

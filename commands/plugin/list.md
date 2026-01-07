@@ -10,16 +10,16 @@ Use `--status=dropin` to list installed dropins (e.g. `object-cache.php`).
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Filter results based on the value of a field.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each plugin.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific object fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table
@@ -31,7 +31,7 @@ options:
   - yaml
 \---
 
-[\--status=&lt;status&gt;]
+[\--status=<status>]
 : Filter the output by plugin status.
 \---
 options:

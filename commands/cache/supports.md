@@ -6,7 +6,7 @@ Determines whether the object cache implementation supports a particular feature
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;feature&gt;
+<feature>
 : Name of the feature to check for.
 
 ### EXAMPLES

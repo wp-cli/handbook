@@ -6,10 +6,10 @@ Checks whether an application password for a given application exists.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : The user login, user email, or user ID of the user to check the existence of an application password for.
 
-&lt;app-name&gt;
+<app-name>
 : Name of the application to check the existence of an application password for.
 
 ### EXAMPLES

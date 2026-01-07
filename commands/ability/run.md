@@ -6,16 +6,16 @@ Executes a registered ability.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;name&gt;
+<name>
 : The ability name (namespace/ability-name format).
 
-[\--input=&lt;json&gt;]
+[\--input=<json>]
 : JSON string containing input data for the ability. Use '-' to read from stdin.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Individual input fields. Alternative to --input for simple inputs.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: json

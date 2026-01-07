@@ -8,13 +8,13 @@ This is an alias for `wp plugin update`.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;plugin&gt;...]
+[<plugin>...]
 : One or more plugins to update.
 
 [\--all]
 : If set, all plugins that have updates will be updated.
 
-[\--exclude=&lt;name&gt;]
+[\--exclude=<name>]
 : Comma separated list of plugin names that should be excluded from updating.
 
 [\--minor]
@@ -23,7 +23,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--patch]
 : Only perform updates for patch releases (e.g. from 1.3 to 1.3.3 instead of 1.4)
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table
@@ -34,7 +34,7 @@ options:
   - summary
 \---
 
-[\--version=&lt;version&gt;]
+[\--version=<version>]
 : If set, the plugin will be updated to the specified version.
 
 [\--dry-run]

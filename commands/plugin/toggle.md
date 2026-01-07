@@ -8,7 +8,7 @@ If the plugin is active, then it will be deactivated. If the plugin is inactive,
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;plugin&gt;...
+<plugin>...
 : One or more plugins to toggle.
 
 [\--network]

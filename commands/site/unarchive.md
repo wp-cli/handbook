@@ -6,10 +6,10 @@ Unarchives one or more sites.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;id&gt;...]
+[<id>...]
 : One or more IDs of sites to unarchive. If not provided, you must set the --slug parameter.
 
-[\--slug=&lt;slug&gt;]
+[\--slug=<slug>]
 : Path of the site to unarchive. Subdomain on subdomain installs, directory on subdirectory installs.
 
 ### EXAMPLES

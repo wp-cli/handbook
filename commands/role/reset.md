@@ -8,7 +8,7 @@ Uses WordPress' `populate_roles()` function to put one or more roles back into t
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;role-key&gt;...]
+[<role-key>...]
 : The internal name of one or more roles to reset.
 
 [\--all]

@@ -6,22 +6,22 @@ Lists registered block patterns.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--category=&lt;category&gt;]
+[\--category=<category>]
 : Filter by pattern category.
 
-[\--search=&lt;search&gt;]
+[\--search=<search>]
 : Search patterns by title or keywords.
 
 [\--inserter]
 : Only show patterns visible in the inserter.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each pattern.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific pattern fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

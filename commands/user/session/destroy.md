@@ -6,10 +6,10 @@ Destroy a session for the given user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : User ID, user email, or user login.
 
-[&lt;token&gt;]
+[<token>]
 : The token of the session to destroy. Defaults to the most recently created session.
 
 [\--all]

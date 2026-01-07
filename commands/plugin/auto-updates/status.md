@@ -6,7 +6,7 @@ Shows the status of auto-updates for a plugin.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;plugin&gt;...]
+[<plugin>...]
 : One or more plugins to show the status of the auto-updates of.
 
 [\--all]
@@ -18,10 +18,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--disabled-only]
 : If set, filters list of plugins to only include the ones that have auto-updates disabled.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Only show the provided field.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

@@ -6,19 +6,19 @@ Creates a new term.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;taxonomy&gt;
+<taxonomy>
 : Taxonomy for the new term.
 
-&lt;term&gt;
+<term>
 : A name for the new term.
 
-[\--slug=&lt;slug&gt;]
+[\--slug=<slug>]
 : A unique slug for the new term. Defaults to sanitized version of name.
 
-[\--description=&lt;description&gt;]
+[\--description=<description>]
 : A description for the new term.
 
-[\--parent=&lt;term-id&gt;]
+[\--parent=<term-id>]
 : A parent for the new term.
 
 [\--porcelain]

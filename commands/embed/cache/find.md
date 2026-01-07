@@ -10,13 +10,13 @@ Not to be confused with oEmbed caches for a given post which are stored in the p
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;url&gt;
+<url>
 : URL to retrieve oEmbed data for.
 
-[\--width=&lt;width&gt;]
+[\--width=<width>]
 : Width of the embed in pixels. Part of cache key so must match. Defaults to `content_width` if set else 500px, so is theme and context dependent.
 
-[\--height=&lt;height&gt;]
+[\--height=<height>]
 : Height of the embed in pixels. Part of cache key so must match. Defaults to 1.5 * default width (`content_width` or 500px), to a maximum of 1000px.
 
 [\--discover]

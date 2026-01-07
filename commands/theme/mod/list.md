@@ -6,10 +6,10 @@ Gets a list of theme mods.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Returns the value of a single field.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

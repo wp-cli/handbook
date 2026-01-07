@@ -6,7 +6,7 @@ Fix image orientation for one or more attachments.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;attachment-id&gt;...]
+[<attachment-id>...]
 : One or more IDs of the attachments to regenerate.
 
 [\--dry-run]

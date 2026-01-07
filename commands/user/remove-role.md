@@ -6,10 +6,10 @@ Removes a user's role.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : User ID, user email, or user login.
 
-[&lt;role&gt;...]
+[<role>...]
 : Remove the specified role(s) from the user.
 
 ### EXAMPLES

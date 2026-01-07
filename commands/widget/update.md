@@ -6,10 +6,10 @@ Updates options for an existing widget.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;widget-id&gt;
+<widget-id>
 : Unique ID for the widget
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Field to update, with its new value
 
 ### EXAMPLES

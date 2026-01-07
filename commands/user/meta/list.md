@@ -6,16 +6,16 @@ Lists all metadata associated with a user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : The user login, user email, or user ID of the user to get metadata for.
 
-[\--keys=&lt;keys&gt;]
+[\--keys=<keys>]
 : Limit output to metadata of specific keys.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific row fields. Defaults to id,meta_key,meta_value.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table
@@ -27,7 +27,7 @@ options:
   - yaml
 \---
 
-[\--orderby=&lt;fields&gt;]
+[\--orderby=<fields>]
 : Set orderby which field.
 \---
 default: id
@@ -37,7 +37,7 @@ options:
  - meta_value
 \---
 
-[\--order=&lt;order&gt;]
+[\--order=<order>]
 : Set ascending or descending order.
 \---
 default: asc

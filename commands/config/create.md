@@ -8,40 +8,40 @@ Creates a new wp-config.php with database constants, and verifies that the datab
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-\--dbname=&lt;dbname&gt;
+\--dbname=<dbname>
 : Set the database name.
 
-\--dbuser=&lt;dbuser&gt;
+\--dbuser=<dbuser>
 : Set the database user.
 
-[\--dbpass=&lt;dbpass&gt;]
+[\--dbpass=<dbpass>]
 : Set the database user password.
 
-[\--dbhost=&lt;dbhost&gt;]
+[\--dbhost=<dbhost>]
 : Set the database host.
 \---
 default: localhost
 \---
 
-[\--dbprefix=&lt;dbprefix&gt;]
+[\--dbprefix=<dbprefix>]
 : Set the database table prefix.
 \---
 default: wp_
 \---
 
-[\--dbcharset=&lt;dbcharset&gt;]
+[\--dbcharset=<dbcharset>]
 : Set the database charset.
 \---
 default: utf8
 \---
 
-[\--dbcollate=&lt;dbcollate&gt;]
+[\--dbcollate=<dbcollate>]
 : Set the database collation.
 \---
 default:
 \---
 
-[\--locale=&lt;locale&gt;]
+[\--locale=<locale>]
 : Set the WPLANG constant. Defaults to $wp_local_package variable.
 
 [\--extra-php]
@@ -56,7 +56,7 @@ default:
 [\--force]
 : Overwrites existing files, if present.
 
-[\--config-file=&lt;path&gt;]
+[\--config-file=<path>]
 : Specify the file path to the config file to be created. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 [\--insecure]

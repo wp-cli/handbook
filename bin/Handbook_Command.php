@@ -655,6 +655,9 @@ EOT;
 			$docs = preg_replace( '/=&gt;/', '=>', $docs );
 			$docs = preg_replace( '/ &amp;&amp; /', ' && ', $docs );
 
+			// Decode HTML entities in parameter placeholders like <slug>, <name>, etc.
+			$docs = preg_replace( '/&lt;([a-zA-Z0-9_\-|]+)&gt;/', '<$1>', $docs );
+
 			$global_parameters = <<<'EOT'
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
 

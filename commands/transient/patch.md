@@ -6,7 +6,7 @@ Update a nested value from a transient.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;action&gt;
+<action>
 : Patch action to perform.
 \---
 options:
@@ -15,16 +15,16 @@ options:
   - delete
 \---
 
-&lt;key&gt;
+<key>
 : Key for the transient.
 
-&lt;key-path&gt;...
+<key-path>...
 : The name(s) of the keys within the value to locate the value to patch.
 
-[&lt;value&gt;]
+[<value>]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value.
 \---
 default: plaintext
@@ -33,7 +33,7 @@ options:
   - json
 \---
 
-[\--expiration=&lt;expiration&gt;]
+[\--expiration=<expiration>]
 : Time until expiration, in seconds.
 \---
 default: 0

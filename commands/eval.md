@@ -10,7 +10,7 @@ Note: because code is executed within a method, global variables need to be expl
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;php-code&gt;
+<php-code>
 : The code to execute, as a string.
 
 [\--skip-wordpress]

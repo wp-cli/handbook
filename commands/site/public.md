@@ -6,10 +6,10 @@ Sets one or more sites as public.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;id&gt;...]
+[<id>...]
 : One or more IDs of sites to set as public. If not provided, you must set the --slug parameter.
 
-[\--slug=&lt;slug&gt;]
+[\--slug=<slug>]
 : Path of the site to be set as public. Subdomain on subdomain installs, directory on subdirectory installs.
 
 ### EXAMPLES

@@ -10,16 +10,16 @@ Runs SQL queries using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` databas
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;file&gt;]
+[<file>]
 : The name of the SQL file to import. If '-', then reads from STDIN. If omitted, it will look for '{dbname}.sql'.
 
-[\--dbuser=&lt;value&gt;]
+[\--dbuser=<value>]
 : Username to pass to mysql. Defaults to DB_USER.
 
-[\--dbpass=&lt;value&gt;]
+[\--dbpass=<value>]
 : Password to pass to mysql. Defaults to DB_PASSWORD.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Extra arguments to pass to mysql. [Refer to mysql binary docs](https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html).
 
 [\--skip-optimization]

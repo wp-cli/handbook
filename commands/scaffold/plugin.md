@@ -15,7 +15,7 @@ The following files are always generated:
 The following files are also included unless the `--skip-tests` is used:
 
 * `phpunit.xml.dist` is the configuration file for PHPUnit.
-* `.circleci/config.yml` is the configuration file for CircleCI. Use `--ci=&lt;provider&gt;` to select a different service.
+* `.circleci/config.yml` is the configuration file for CircleCI. Use `--ci=<provider>` to select a different service.
 * `bin/install-wp-tests.sh` configures the WordPress test suite and a test database.
 * `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite.
 * `tests/test-sample.php` is a sample file containing test cases.
@@ -25,31 +25,31 @@ The following files are also included unless the `--skip-tests` is used:
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
+<slug>
 : The internal name of the plugin.
 
-[\--dir=&lt;dirname&gt;]
+[\--dir=<dirname>]
 : Put the new plugin in some arbitrary directory path. Plugin directory will be path plus supplied slug.
 
-[\--plugin_name=&lt;title&gt;]
+[\--plugin_name=<title>]
 : What to put in the 'Plugin Name:' header.
 
-[\--plugin_description=&lt;description&gt;]
+[\--plugin_description=<description>]
 : What to put in the 'Description:' header.
 
-[\--plugin_author=&lt;author&gt;]
+[\--plugin_author=<author>]
 : What to put in the 'Author:' header.
 
-[\--plugin_author_uri=&lt;url&gt;]
+[\--plugin_author_uri=<url>]
 : What to put in the 'Author URI:' header.
 
-[\--plugin_uri=&lt;url&gt;]
+[\--plugin_uri=<url>]
 : What to put in the 'Plugin URI:' header.
 
 [\--skip-tests]
 : Don't generate files for unit testing.
 
-[\--ci=&lt;provider&gt;]
+[\--ci=<provider>]
 : Choose a configuration file for a continuous integration provider.
 \---
 default: circle

@@ -6,19 +6,19 @@ Gets details about a registered block style.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;block&gt;
+<block>
 : Block type name (e.g., 'core/button').
 
-&lt;style&gt;
+<style>
 : Style name (e.g., 'outline').
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Instead of returning the whole style, returns the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

@@ -8,25 +8,25 @@ Creates a specified number of new sites.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--count=&lt;number&gt;]
+[\--count=<number>]
 : How many sites to generates?
 \---
 default: 100
 \---
 
-[\--slug=&lt;slug&gt;]
+[\--slug=<slug>]
 : Path for the new site. Subdomain on subdomain installs, directory on subdirectory installs.
 
-[\--email=&lt;email&gt;]
+[\--email=<email>]
 : Email for admin user. User will be created if none exists. Assignment to super admin if not included.
 
-[\--network_id=&lt;network-id&gt;]
+[\--network_id=<network-id>]
 : Network to associate new site with. Defaults to current network (typically 1).
 
 [\--private]
 : If set, the new site will be non-public (not indexed)
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: progress

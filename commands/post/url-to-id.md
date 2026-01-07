@@ -6,7 +6,7 @@ Gets the post ID for a given URL.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;url&gt;
+<url>
 : The URL of the post to get.
 
 ### EXAMPLES

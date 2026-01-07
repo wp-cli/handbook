@@ -8,22 +8,22 @@ Displays themes in the WordPress.org theme directory matching a given search que
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;search&gt;
+<search>
 : The string to search for.
 
-[\--page=&lt;page&gt;]
+[\--page=<page>]
 : Optional page to display.
 \---
 default: 1
 \---
 
-[\--per-page=&lt;per-page&gt;]
+[\--per-page=<per-page>]
 : Optional number of results to display. Defaults to 10.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each theme.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Ask for specific fields from the API. Defaults to name,slug,author,rating. Acceptable values:
 
     **name**: Theme Name
@@ -38,7 +38,7 @@ default: 1
     **description**: Theme Description
     **url**: Theme's URL on wordpress.org
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

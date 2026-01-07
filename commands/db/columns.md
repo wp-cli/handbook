@@ -6,7 +6,7 @@ Displays information about a given table.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;table&gt;
+<table>
 : Name of the database table.
 
 [\--format]

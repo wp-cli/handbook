@@ -8,22 +8,22 @@ Generates PHP code for registering a custom taxonomy.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
+<slug>
 : The internal name of the taxonomy.
 
-[\--post_types=&lt;post-types&gt;]
+[\--post_types=<post-types>]
 : Post types to register for use with the taxonomy.
 
-[\--label=&lt;label&gt;]
+[\--label=<label>]
 : The text used to translate the update messages.
 
-[\--textdomain=&lt;textdomain&gt;]
+[\--textdomain=<textdomain>]
 : The textdomain to use for the labels.
 
-[\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+[\--theme[=<theme>]]
+: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=<theme>` to have the file placed in that theme.
 
-[\--plugin=&lt;plugin&gt;]
+[\--plugin=<plugin>]
 : Create a file in the given plugin's directory, instead of sending to STDOUT.
 
 [\--raw]

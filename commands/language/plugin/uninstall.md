@@ -6,16 +6,16 @@ Uninstalls a given language for a plugin.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;plugin&gt;]
+[<plugin>]
 : Plugin to uninstall language for.
 
 [\--all]
 : If set, languages for all plugins will be uninstalled.
 
-&lt;language&gt;...
+<language>...
 : Language code to uninstall.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format. Used when installing languages for all plugins.
 \---
 default: table

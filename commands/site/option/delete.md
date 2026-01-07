@@ -6,7 +6,7 @@ Deletes a site option.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : Key for the site option.
 
 ### EXAMPLES

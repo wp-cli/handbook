@@ -8,7 +8,7 @@ Generates one or more WXR files containing authors, terms, posts, comments, and 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--dir=&lt;dirname&gt;]
+[\--dir=<dirname>]
 : Full path to directory where WXR export files should be stored. Defaults to current working directory.
 
 [\--stdout]
@@ -17,16 +17,16 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--skip_comments]
 : Don't include comments in the WXR export file.
 
-[\--max_file_size=&lt;MB&gt;]
+[\--max_file_size=<MB>]
 : A single export file should have this many megabytes. -1 for unlimited.
 \---
 default: 15
 \---
 
-[\--filename_format=&lt;format&gt;]
+[\--filename_format=<format>]
 : Use a custom format for export filenames. Defaults to '{site}.wordpress.{date}.{n}.xml'.
 
-[\--include_once=&lt;before_posts&gt;]
+[\--include_once=<before_posts>]
 : Include specified export section only in the first export file. Valid options are categories, tags, nav_menu_items, custom_taxonomies_terms. Separate multiple sections with a comma. Defaults to none.
 
 [\--allow_orphan_terms]
@@ -34,40 +34,40 @@ default: 15
 
 ### FILTERS
 
-[\--start_date=&lt;date&gt;]
+[\--start_date=<date>]
 : Export only posts published after this date, in format YYYY-MM-DD.
 
-[\--end_date=&lt;date&gt;]
+[\--end_date=<date>]
 : Export only posts published before this date, in format YYYY-MM-DD.
 
-[\--post_type=&lt;post-type&gt;]
+[\--post_type=<post-type>]
 : Export only posts with this post_type. Separate multiple post types with a comma.
 \---
 default: any
 \---
 
-[\--post_type__not_in=&lt;post-type&gt;]
+[\--post_type__not_in=<post-type>]
 : Export all post types except those identified. Separate multiple post types with a comma. Defaults to none.
 
-[\--post__in=&lt;pid&gt;]
+[\--post__in=<pid>]
 : Export all posts specified as a comma-separated or space-separated list of IDs. Post's attachments won't be exported unless --with_attachments is specified.
 
 [\--with_attachments]
 : Force including attachments in case --post__in has been specified.
 
-[\--start_id=&lt;pid&gt;]
+[\--start_id=<pid>]
 : Export only posts with IDs greater than or equal to this post ID.
 
-[\--max_num_posts=&lt;num&gt;]
-: Export no more than &lt;num&gt; posts (excluding attachments).
+[\--max_num_posts=<num>]
+: Export no more than <num> posts (excluding attachments).
 
-[\--author=&lt;author&gt;]
+[\--author=<author>]
 : Export only posts by this author. Can be either user login or user ID.
 
-[\--category=&lt;name|id&gt;]
+[\--category=<name|id>]
 : Export only posts in this category.
 
-[\--post_status=&lt;status&gt;]
+[\--post_status=<status>]
 : Export only posts with this status.
 
 ### EXAMPLES

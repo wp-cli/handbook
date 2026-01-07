@@ -6,10 +6,10 @@ Sets the 'autoload' value for an option.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : The name of the option to set 'autoload' for.
 
-&lt;autoload&gt;
+<autoload>
 : Should this option be automatically loaded.
 \---
 options:

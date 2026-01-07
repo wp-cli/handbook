@@ -6,16 +6,16 @@ Gets details about an installed plugin.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;plugin&gt;
+<plugin>
 : The plugin to get.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Instead of returning the whole plugin, returns the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

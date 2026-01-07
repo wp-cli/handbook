@@ -23,10 +23,10 @@ Use one distribution archive command for many projects, instead of a bash script
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;path&gt;
+<path>
 : Path to the project that includes a .distignore file.
 
-[&lt;target&gt;]
+[<target>]
 : Path and optional file name for the distribution archive. If only a path is provided, the file name defaults to the project directory name plus the version, if discoverable. Also, if only a path is given, the directory that it points to has to already exist for the command to function correctly.
 
 [\--create-target-dir]
@@ -35,10 +35,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--force]
 : Forces overwriting of the archive file if it already exists.
 
-[\--plugin-dirname=&lt;plugin-slug&gt;]
+[\--plugin-dirname=<plugin-slug>]
 : Set the archive extract directory name. Defaults to project directory name.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Choose the format for the archive.
 \---
 default: zip
@@ -47,8 +47,8 @@ options:
   - targz
 \---
 
-[\--filename-format=&lt;filename-format&gt;]
-: Use a custom format for archive filename. Available substitutions: {name}, {version}. This is ignored if the &lt;target&gt; parameter is provided or the version cannot be determined.
+[\--filename-format=<filename-format>]
+: Use a custom format for archive filename. Available substitutions: {name}, {version}. This is ignored if the <target> parameter is provided or the version cannot be determined.
 \---
 default: "{name}.{version}"
 \---

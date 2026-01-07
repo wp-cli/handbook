@@ -6,16 +6,16 @@ Gets details about a user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : User ID, user email, or user login.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Instead of returning the whole user, returns the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Get a specific subset of the user's fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

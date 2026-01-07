@@ -6,16 +6,16 @@ Get meta field value.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;
+<id>
 : The ID of the object.
 
-&lt;key&gt;
+<key>
 : The name of the meta field to get.
 
 [\--single]
 : Whether to return a single value.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Get value in a particular format.
 \---
 default: var_export

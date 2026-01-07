@@ -6,13 +6,13 @@ Deletes a meta field.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;
+<user>
 : The user login, user email, or user ID of the user to delete metadata from.
 
-&lt;key&gt;
+<key>
 : The metadata key.
 
-[&lt;value&gt;]
+[<value>]
 : The value to delete. If omitted, all rows with key will deleted.
 
 ### EXAMPLES

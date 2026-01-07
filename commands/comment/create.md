@@ -6,7 +6,7 @@ Creates a new comment.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Associative args for the new comment. See wp_insert_comment().
 
 [\--porcelain]

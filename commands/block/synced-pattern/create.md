@@ -6,16 +6,16 @@ Creates a synced pattern.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--title=&lt;title&gt;]
+[\--title=<title>]
 : The pattern title.
 
-[\--slug=&lt;slug&gt;]
+[\--slug=<slug>]
 : The pattern slug. Default: sanitized title.
 
-[\--content=&lt;content&gt;]
+[\--content=<content>]
 : The block content.
 
-[\--sync-status=&lt;status&gt;]
+[\--sync-status=<status>]
 : Sync status.
 \---
 default: synced
@@ -24,13 +24,13 @@ options:
   - unsynced
 \---
 
-[\--status=&lt;status&gt;]
+[\--status=<status>]
 : Post status.
 \---
 default: publish
 \---
 
-[&lt;file&gt;]
+[<file>]
 : Read content from file. Pass '-' for STDIN.
 
 [\--porcelain]
@@ -39,7 +39,7 @@ default: publish
 ### EXAMPLES
 
     # Create a synced pattern from content
-    $ wp block synced-pattern create --title="My Hero" --content='&lt;!-- wp:paragraph --&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;'
+    $ wp block synced-pattern create --title="My Hero" --content='&lt;!-- wp:paragraph --&gt;<p>Hello&lt;/p&gt;&lt;!-- /wp:paragraph --&gt;'
 
     # Create from file
     $ wp block synced-pattern create --title="Header" header.html

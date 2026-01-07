@@ -8,10 +8,10 @@ Errors if the value doesn't exist.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : Cache key.
 
-[&lt;group&gt;]
+[<group>]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 \---
 default: default

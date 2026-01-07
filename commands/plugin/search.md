@@ -8,25 +8,25 @@ Displays plugins in the WordPress.org plugin directory matching a given search q
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;search&gt;
+<search>
 : The string to search for.
 
-[\--page=&lt;page&gt;]
+[\--page=<page>]
 : Optional page to display.
 \---
 default: 1
 \---
 
-[\--per-page=&lt;per-page&gt;]
+[\--per-page=<per-page>]
 : Optional number of results to display.
 \---
 default: 10
 \---
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each plugin.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Ask for specific fields from the API. Defaults to name,slug,author_profile,rating. Acceptable values:
 
     **name**: Plugin Name
@@ -57,7 +57,7 @@ default: 10
     **contributors**: Plugin's List of Contributors
     **url**: Plugin's URL on wordpress.org
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

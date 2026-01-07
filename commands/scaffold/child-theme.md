@@ -8,22 +8,22 @@ Creates a child theme folder with `functions.php` and `style.css` files.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;slug&gt;
+<slug>
 : The slug for the new child theme.
 
-\--parent_theme=&lt;slug&gt;
+\--parent_theme=<slug>
 : What to put in the 'Template:' header in 'style.css'.
 
-[\--theme_name=&lt;title&gt;]
+[\--theme_name=<title>]
 : What to put in the 'Theme Name:' header in 'style.css'.
 
-[\--author=&lt;full-name&gt;]
+[\--author=<full-name>]
 : What to put in the 'Author:' header in 'style.css'.
 
-[\--author_uri=&lt;uri&gt;]
+[\--author_uri=<uri>]
 : What to put in the 'Author URI:' header in 'style.css'.
 
-[\--theme_uri=&lt;uri&gt;]
+[\--theme_uri=<uri>]
 : What to put in the 'Theme URI:' header in 'style.css'.
 
 [\--activate]

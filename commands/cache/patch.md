@@ -6,7 +6,7 @@ Update a nested value from the cache.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;action&gt;
+<action>
 : Patch action to perform.
 \---
 options:
@@ -15,28 +15,28 @@ options:
   - delete
 \---
 
-&lt;key&gt;
+<key>
 : Cache key.
 
-&lt;key-path&gt;...
+<key-path>...
 : The name(s) of the keys within the value to locate the value to patch.
 
-[&lt;value&gt;]
+[<value>]
 : The new value. If omitted, the value is read from STDIN.
 
-[\--group=&lt;group&gt;]
+[\--group=<group>]
 : Method for grouping data within the cache which allows the same key to be used across groups.
 \---
 default: default
 \---
 
-[\--expiration=&lt;expiration&gt;]
+[\--expiration=<expiration>]
 : Define how long to keep the value, in seconds. `0` means as long as possible.
 \---
 default: 0
 \---
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value.
 \---
 default: plaintext

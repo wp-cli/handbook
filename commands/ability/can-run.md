@@ -8,13 +8,13 @@ Validates permissions without actually executing the ability. Exits with return 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;name&gt;
+<name>
 : The ability name (namespace/ability-name format).
 
-[\--input=&lt;json&gt;]
+[\--input=<json>]
 : JSON string containing input data for permission checking.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Individual input fields for permission checking.
 
 ### EXAMPLES

@@ -10,16 +10,16 @@ In raw mode, checks the providers directly and returns the data.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;url&gt;
+<url>
 : URL to retrieve oEmbed data for.
 
-[\--width=&lt;width&gt;]
+[\--width=<width>]
 : Width of the embed in pixels.
 
-[\--height=&lt;height&gt;]
+[\--height=<height>]
 : Height of the embed in pixels.
 
-[\--post-id=&lt;id&gt;]
+[\--post-id=<id>]
 : Cache oEmbed response for a given post.
 
 [\--discover]
@@ -34,13 +34,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--do-shortcode]
 : If the URL is handled by a registered embed handler and returns a shortcode, do shortcode and return result. Has no effect if using the 'raw' option, which by-passes handlers.
 
-[\--limit-response-size=&lt;size&gt;]
+[\--limit-response-size=<size>]
 : Limit the size of the resulting HTML when using discovery. Default 150 KB (the standard WordPress limit). Not compatible with 'no-discover'.
 
 [\--raw]
 : Return the raw oEmbed response instead of the resulting HTML. Ignores the cache and does not sanitize responses or use registered embed handlers.
 
-[\--raw-format=&lt;json|xml&gt;]
+[\--raw-format=<json|xml>]
 : Render raw oEmbed data in a particular format. Defaults to json. Can only be specified in conjunction with the 'raw' option.
 \---
 options:

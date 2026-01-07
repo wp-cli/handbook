@@ -8,10 +8,10 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;name&gt;
+<name>
 : Name of the wp-config.php constant or variable.
 
-&lt;value&gt;
+<value>
 : Value to set the wp-config.php constant or variable to.
 
 [\--add]
@@ -20,10 +20,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--raw]
 : Place the value into the wp-config.php file as is, instead of as a quoted string.
 
-[\--anchor=&lt;anchor&gt;]
+[\--anchor=<anchor>]
 : Anchor string where additions of new values are anchored around. Defaults to "/* That's all, stop editing!". The special case "EOF" string uses the end of the file as the anchor.
 
-[\--placement=&lt;placement&gt;]
+[\--placement=<placement>]
 : Where to place the new values in relation to the anchor string.
 \---
 default: 'before'
@@ -32,10 +32,10 @@ options:
   - after
 \---
 
-[\--separator=&lt;separator&gt;]
+[\--separator=<separator>]
 : Separator string to put between an added value and its anchor string. The following escape sequences will be recognized and properly interpreted: '\n' => newline, '\r' => carriage return, '\t' => tab. Defaults to a single EOL ("\n" on *nix and "\r\n" on Windows).
 
-[\--type=&lt;type&gt;]
+[\--type=<type>]
 : Type of the config value to set. Defaults to 'all'.
 \---
 default: all
@@ -45,7 +45,7 @@ options:
   - all
 \---
 
-[\--config-file=&lt;path&gt;]
+[\--config-file=<path>]
 : Specify the file path to the config file to be modified. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 ### EXAMPLES

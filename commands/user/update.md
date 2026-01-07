@@ -6,46 +6,46 @@ Updates an existing user.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;user&gt;...
+<user>...
 : The user login, user email or user ID of the user(s) to update.
 
-[\--user_pass=&lt;password&gt;]
+[\--user_pass=<password>]
 : A string that contains the plain text password for the user.
 
-[\--user_nicename=&lt;nice_name&gt;]
+[\--user_nicename=<nice_name>]
 : A string that contains a URL-friendly name for the user. The default is the user's username.
 
-[\--user_url=&lt;url&gt;]
+[\--user_url=<url>]
 : A string containing the user's URL for the user's web site.
 
-[\--user_email=&lt;email&gt;]
+[\--user_email=<email>]
 : A string containing the user's email address.
 
-[\--display_name=&lt;display_name&gt;]
+[\--display_name=<display_name>]
 : A string that will be shown on the site. Defaults to user's username.
 
-[\--nickname=&lt;nickname&gt;]
+[\--nickname=<nickname>]
 : The user's nickname, defaults to the user's username.
 
-[\--first_name=&lt;first_name&gt;]
+[\--first_name=<first_name>]
 : The user's first name.
 
-[\--last_name=&lt;last_name&gt;]
+[\--last_name=<last_name>]
 : The user's last name.
 
-[\--description=&lt;description&gt;]
+[\--description=<description>]
 : A string containing content about the user.
 
-[\--rich_editing=&lt;rich_editing&gt;]
+[\--rich_editing=<rich_editing>]
 : A string for whether to enable the rich editor or not. False if not empty.
 
-[\--user_registered=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
+[\--user_registered=<yyyy-mm-dd-hh-ii-ss>]
 : The date the user registered.
 
-[\--role=&lt;role&gt;]
+[\--role=<role>]
 : A string used to set the user's role.
 
-\--&lt;field&gt;=&lt;value&gt;
+\--<field>=<value>
 : One or more fields to update. For accepted fields, see wp_update_user().
 
 [\--skip-email]

@@ -8,13 +8,13 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;keys&gt;...]
+[<keys>...]
 : One ore more keys to shuffle. If none are provided, this falls back to the default WordPress Core salt keys.
 
 [\--force]
 : If an unknown key is requested to be shuffled, add it instead of throwing a warning.
 
-[\--config-file=&lt;path&gt;]
+[\--config-file=<path>]
 : Specify the file path to the config file to be modified. Defaults to the root of the WordPress installation and the filename "wp-config.php".
 
 [\--insecure]

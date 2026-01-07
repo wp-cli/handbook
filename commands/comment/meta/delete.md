@@ -6,13 +6,13 @@ Delete a meta field.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;
+<id>
 : The ID of the object.
 
-[&lt;key&gt;]
+[<key>]
 : The name of the meta field to delete.
 
-[&lt;value&gt;]
+[<value>]
 : The value to delete. If omitted, all rows with key will deleted.
 
 [\--all]

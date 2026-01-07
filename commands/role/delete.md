@@ -6,7 +6,7 @@ Deletes an existing role.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;role-key&gt;
+<role-key>
 : The internal name of the role.
 
 ### EXAMPLES

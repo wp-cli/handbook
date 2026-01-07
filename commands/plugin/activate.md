@@ -6,13 +6,13 @@ Activates one or more plugins.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;plugin&gt;...]
+[<plugin>...]
 : One or more plugins to activate.
 
 [\--all]
 : If set, all plugins will be activated.
 
-[\--exclude=&lt;name&gt;]
+[\--exclude=<name>]
 : Comma separated list of plugin slugs to be excluded from activation.
 
 [\--network]

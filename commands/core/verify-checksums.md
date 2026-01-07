@@ -17,19 +17,19 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--include-root]
 : Verify all files and folders in the root directory, and warn if any non-WordPress items are found.
 
-[\--version=&lt;version&gt;]
+[\--version=<version>]
 : Verify checksums against a specific version of WordPress.
 
-[\--locale=&lt;locale&gt;]
+[\--locale=<locale>]
 : Verify checksums against a specific locale of WordPress.
 
 [\--insecure]
 : Retry downloads without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
 
-[\--exclude=&lt;files&gt;]
+[\--exclude=<files>]
 : Exclude specific files from the checksum verification. Provide a comma-separated list of file paths.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a specific format. When provided, messages are displayed in the chosen format.
 \---
 default: plain

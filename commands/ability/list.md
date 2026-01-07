@@ -6,22 +6,22 @@ Lists all registered abilities.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--category=&lt;slug&gt;]
+[\--category=<slug>]
 : Filter abilities by category slug.
 
-[\--namespace=&lt;prefix&gt;]
+[\--namespace=<prefix>]
 : Filter abilities by namespace prefix (e.g., 'core' for 'core/*' abilities).
 
-[\--show-in-rest=&lt;bool&gt;]
+[\--show-in-rest=<bool>]
 : Filter abilities by REST API exposure.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each ability.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific ability fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

@@ -6,7 +6,7 @@ Unschedules all cron events for a given hook.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;hook&gt;
+<hook>
 : Name of the hook for which all events should be unscheduled.
 
 ### EXAMPLES

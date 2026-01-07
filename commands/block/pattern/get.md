@@ -6,16 +6,16 @@ Gets details about a registered block pattern.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;name&gt;
+<name>
 : Pattern name including namespace (e.g., 'core/query-standard-posts').
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Instead of returning the whole pattern, returns the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific fields. Defaults to all fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table

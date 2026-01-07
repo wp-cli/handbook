@@ -8,13 +8,13 @@ Errors if the option already exists.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;key&gt;
+<key>
 : The name of the option to add.
 
-[&lt;value&gt;]
+[<value>]
 : The value of the option to add. If omitted, the value is read from STDIN.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value.
 \---
 default: plaintext
@@ -23,7 +23,7 @@ options:
   - json
 \---
 
-[\--autoload=&lt;autoload&gt;]
+[\--autoload=<autoload>]
 : Should this option be automatically loaded.
 \---
 options:

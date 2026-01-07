@@ -13,16 +13,16 @@ Use the `--skip-column-names` MySQL argument to exclude the headers from a SELEC
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[&lt;sql&gt;]
+[<sql>]
 : A SQL query. If not passed, will try to read from STDIN.
 
-[\--dbuser=&lt;value&gt;]
+[\--dbuser=<value>]
 : Username to pass to mysql. Defaults to DB_USER.
 
-[\--dbpass=&lt;value&gt;]
+[\--dbpass=<value>]
 : Password to pass to mysql. Defaults to DB_PASSWORD.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Extra arguments to pass to mysql. [Refer to mysql docs](https://dev.mysql.com/doc/en/mysql-command-options.html).
 
 [\--defaults]

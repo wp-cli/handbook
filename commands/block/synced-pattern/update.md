@@ -6,16 +6,16 @@ Updates a synced pattern.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;id&gt;
+<id>
 : The synced pattern ID.
 
-[\--title=&lt;title&gt;]
+[\--title=<title>]
 : The pattern title.
 
-[\--content=&lt;content&gt;]
+[\--content=<content>]
 : The block content.
 
-[\--sync-status=&lt;status&gt;]
+[\--sync-status=<status>]
 : Sync status.
 \---
 options:
@@ -23,7 +23,7 @@ options:
   - unsynced
 \---
 
-[&lt;file&gt;]
+[<file>]
 : Read content from file. Pass '-' for STDIN.
 
 ### EXAMPLES

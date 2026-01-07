@@ -14,13 +14,13 @@ This command does not check whether WordPress is installed; to do that run `wp c
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--dbuser=&lt;value&gt;]
+[\--dbuser=<value>]
 : Username to pass to mysqlcheck. Defaults to DB_USER.
 
-[\--dbpass=&lt;value&gt;]
+[\--dbpass=<value>]
 : Password to pass to mysqlcheck. Defaults to DB_PASSWORD.
 
-[\--&lt;field&gt;=&lt;value&gt;]
+[\--<field>=<value>]
 : Extra arguments to pass to mysqlcheck. [Refer to mysqlcheck docs](https://dev.mysql.com/doc/en/mysqlcheck.html).
 
 [\--defaults]

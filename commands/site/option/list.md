@@ -6,19 +6,19 @@ Lists site options.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--search=&lt;pattern&gt;]
+[\--search=<pattern>]
 : Use wildcards ( * and ? ) to match option name.
 
-[\--site_id=&lt;id&gt;]
+[\--site_id=<id>]
 : Limit options to those of a particular site id.
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific object fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : The serialization format for the value. total_bytes displays the total size of matching options in bytes.
 \---
 default: table

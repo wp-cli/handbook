@@ -6,7 +6,7 @@ Lists registered block types.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-[\--namespace=&lt;namespace&gt;]
+[\--namespace=<namespace>]
 : Filter by block namespace (e.g., 'core', 'my-plugin').
 
 [\--dynamic]
@@ -15,13 +15,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--static]
 : Only show static blocks (blocks without render_callback).
 
-[\--field=&lt;field&gt;]
+[\--field=<field>]
 : Prints the value of a single field for each block type.
 
-[\--fields=&lt;fields&gt;]
+[\--fields=<fields>]
 : Limit the output to specific block type fields.
 
-[\--format=&lt;format&gt;]
+[\--format=<format>]
 : Render output in a particular format.
 \---
 default: table
