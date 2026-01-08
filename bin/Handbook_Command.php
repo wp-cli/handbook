@@ -645,10 +645,6 @@ EOT;
 			}
 			$docs = implode( "\n", $bits );
 
-			// Prevent double escaping of HTML entities.
-			$docs = preg_replace( '/&amp;lt;/', '&lt;', $docs );
-			$docs = preg_replace( '/&amp;gt;/', '&gt;', $docs );
-
 			// Decode HTML entities inside backticks.
 			$docs = preg_replace_callback(
 				'/`([^`]*)`/',
