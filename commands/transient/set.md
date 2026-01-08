@@ -2,7 +2,7 @@
 
 Sets a transient value.
 
-`&lt;expiration&gt;` is the time until expiration, in seconds.
+`<expiration>` is the time until expiration, in seconds.
 
 For a more complete explanation of the transient cache, including the network|site cache, please see docs for `wp transient`.
 

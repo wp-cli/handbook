@@ -58,7 +58,7 @@ These fields will be displayed by default for each installation:
 
 These fields are optionally available:
 
-* wp_path - Path that can be passed to `--path=&lt;path&gt;` global parameter.
+* wp_path - Path that can be passed to `--path=<path>` global parameter.
 * db_host - Host name for the database.
 * db_user - User name for the database.
 * db_name - Database name for the database.

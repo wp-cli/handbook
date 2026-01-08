@@ -42,7 +42,7 @@ options:
 
 ### EXAMPLES
 
-    # Profile from a file `request.php` containing `&lt;?php wp_remote_get( "https://www.apple.com/" );`.
+    # Profile from a file `request.php` containing `<?php wp_remote_get( "https://www.apple.com/" );`.
     $ wp profile eval-file request.php --fields=time,cache_ratio,request_count
     +---------+-------------+---------------+
     | time    | cache_ratio | request_count |

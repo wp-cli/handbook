@@ -61,8 +61,8 @@ options:
     +------------------+------------------------------------------------------------------+----------+
     | key              | value                                                            | type     |
     +------------------+------------------------------------------------------------------+----------+
-    | AUTH_SALT        | n:]Xditk+_7&gt;Qi=>BmtZHiH-6/Ecrvl(V5ceeGP:{&gt;?;BT^=[B3-0&gt;,~F5z$(+Q$ | constant |
-    | SECURE_AUTH_SALT | ?Z/p|XhDw3w}?c.z%|+BAr|(Iv*H%%U+Du&amp;kKR y?cJOYyRVRBeB[2zF-`(&gt;+LCC | constant |
+    | AUTH_SALT        | n:]Xditk+_7>Qi=>BmtZHiH-6/Ecrvl(V5ceeGP:{>?;BT^=[B3-0>,~F5z$(+Q$ | constant |
+    | SECURE_AUTH_SALT | ?Z/p|XhDw3w}?c.z%|+BAr|(Iv*H%%U+Du&kKR y?cJOYyRVRBeB[2zF-`(&gt;+LCC | constant |
     | LOGGED_IN_SALT   | +$@(1{b~Z~s}Cs&gt;8Y]6[m6~TnoCDpE&gt;O%e75u}&amp;6kUH!&gt;q:7uM4lxbB6[1pa_X,q | constant |
     | NONCE_SALT       | _x+F li|QL?0OSQns1_JZ{|Ix3Jleox-71km/gifnyz8kmo=w-;@AE8W,(fP&lt;N}2 | constant |
     +------------------+------------------------------------------------------------------+----------+
