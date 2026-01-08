@@ -649,6 +649,15 @@ EOT;
 			$docs = preg_replace( '/&amp;lt;/', '&lt;', $docs );
 			$docs = preg_replace( '/&amp;gt;/', '&gt;', $docs );
 
+			// Decode HTML entities inside backticks.
+			$docs = preg_replace_callback(
+				'/`([^`]*)`/',
+				function ( $matches ) {
+					return '`' . html_entity_decode( $matches[1], ENT_QUOTES | ENT_HTML401 ) . '`';
+				},
+				$docs
+			);
+
 			// Hack to prevent double encoding in code blocks.
 			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
 			$docs = preg_replace( '/ &gt; /', ' > ', $docs );
