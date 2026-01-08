@@ -34,7 +34,7 @@ options:
 \---
 
 [\--theme]
-: Create files in the active theme directory. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+: Create files in the active theme directory. Specify a theme with `--theme=<theme>` to have the file placed in that theme.
 
 [\--plugin=&lt;plugin&gt;]
 : Create files in the given plugin's directory.

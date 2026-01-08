@@ -21,7 +21,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : The dashicon to use in the menu.
 
 [\--theme]
-: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=&lt;theme&gt;` to have the file placed in that theme.
+: Create a file in the active theme directory, instead of sending to STDOUT. Specify a theme with `--theme=<theme>` to have the file placed in that theme.
 
 [\--plugin=&lt;plugin&gt;]
 : Create a file in the given plugin's directory, instead of sending to STDOUT.

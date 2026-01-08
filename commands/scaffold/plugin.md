@@ -15,7 +15,7 @@ The following files are always generated:
 The following files are also included unless the `--skip-tests` is used:
 
 * `phpunit.xml.dist` is the configuration file for PHPUnit.
-* `.circleci/config.yml` is the configuration file for CircleCI. Use `--ci=&lt;provider&gt;` to select a different service.
+* `.circleci/config.yml` is the configuration file for CircleCI. Use `--ci=<provider>` to select a different service.
 * `bin/install-wp-tests.sh` configures the WordPress test suite and a test database.
 * `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite.
 * `tests/test-sample.php` is a sample file containing test cases.

@@ -12,8 +12,8 @@ To also empty custom database tables, you'll need to hook into command execution
 WP_CLI::add_hook( 'after_invoke:site empty', function(){
     global $wpdb;
     foreach( array( 'p2p', 'p2pmeta' ) as $table ) {
-        $table = $wpdb-&gt;$table;
-        $wpdb-&gt;query( "TRUNCATE $table" );
+        $table = $wpdb->$table;
+        $wpdb->query( "TRUNCATE $table" );
     }
 });
 ```
