@@ -2,7 +2,7 @@
 
 Manages taxonomy terms and term meta, with create, delete, and list commands.
 
-See reference for [taxonomies and their terms](https://codex.wordpress.org/Taxonomies).
+See reference for [taxonomies and their terms](https://wordpress.org/documentation/article/taxonomies).
 
 ### EXAMPLES
 
