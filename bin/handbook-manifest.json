@@ -832,5 +832,11 @@
         "slug": "wp-cli-warning",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/internal-api\/wp-cli-warning.md",
         "parent": "internal-api"
+    },
+    "cli-contributor-badge": {
+        "title": "WP-CLI Contributor Badge",
+        "slug": "cli-contributor-badge",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/contributions\/cli-contributor-badge.md",
+        "parent": "contributions"
     }
 }
