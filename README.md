@@ -21,7 +21,7 @@ WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-al
 
 ## Automated Handbook Generation
 
-The handbook can be regenerated automatically using the "Regenerate Handbook" GitHub Actions workflow. This workflow can be triggered in two ways:
+The handbook can be automatically regenerated using the “Regenerate Handbook” GitHub Actions workflow, which can be triggered in two ways:
 
 1. **Manual trigger**: Navigate to the Actions tab in the GitHub repository and run the "Regenerate Handbook" workflow manually.
 2. **Automated trigger from wp-cli/wp-cli**: When a new version of WP-CLI is released, the main framework repository can trigger this workflow using a `repository_dispatch` event with type `regenerate-handbook`.
