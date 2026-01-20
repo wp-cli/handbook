@@ -1,6 +1,7 @@
 # WP-CLI Contributor Badge
 
-The **WP-CLI Contributor Badge** recognizes individuals who have made meaningful contributions to the WP-CLI project.  
+The **WP-CLI Contributor Badge** recognizes individuals who have made meaningful contributions to the WP-CLI project.
+
 This badge is displayed on a contributor’s WordPress.org profile and highlights their involvement in maintaining and improving WP-CLI.
 
 ---
