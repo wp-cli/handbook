@@ -61,6 +61,6 @@ If you are new to WP-CLI contributions:
 
 - Read the [Contributing](https://make.wordpress.org/cli/handbook/contributions/contributing/) guide
 - Look for open issues in WP-CLI repositories
-- Join a WP-CLI Hack Day or WordCamp Contributor Day
+- Join a [WP-CLI Hack Day](https://make.wordpress.org/cli/handbook/contributions/hack-day/) or [WordCamp Contributor Day](https://make.wordpress.org/cli/handbook/contributions/contributor-day/)
 
 Your contributions help strengthen the WP-CLI ecosystem and the wider WordPress community 💙
