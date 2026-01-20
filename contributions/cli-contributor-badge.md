@@ -39,7 +39,8 @@ The WP-CLI Contributor Badge is assigned through the WordPress.org **profile ass
 2. Eligible contributors are added to the **WP-CLI Contributors association**.
 3. Once associated, the **WP-CLI Contributor Badge** automatically appears on the contributor’s WordPress.org profile.
 
-The official association page can be found here:  
+The official association page can be found here:
+
 👉 https://profiles.wordpress.org/associations/cli-contributor
 
 ---
