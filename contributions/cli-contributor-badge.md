@@ -59,7 +59,7 @@ If you believe you qualify for the WP-CLI Contributor Badge but do not see it on
 
 If you are new to WP-CLI contributions:
 
-- Read the [Contributing](https://make.wordpress.org/cli/handbook/contributions/) guide
+- Read the [Contributing](https://make.wordpress.org/cli/handbook/contributions/contributing/) guide
 - Look for open issues in WP-CLI repositories
 - Join a WP-CLI Hack Day or WordCamp Contributor Day
 
