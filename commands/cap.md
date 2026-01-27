@@ -2,7 +2,7 @@
 
 Adds, removes, and lists capabilities of a user role.
 
-See references for [Roles and Capabilities](https://codex.wordpress.org/Roles_and_Capabilities) and [WP User class](https://codex.wordpress.org/Class_Reference/WP_User).
+See references for [Roles and Capabilities](https://wordpress.org/documentation/article/roles-and-capabilities) and [WP User class](https://developer.wordpress.org/reference/classes/wp_user).
 
 ### EXAMPLES
 

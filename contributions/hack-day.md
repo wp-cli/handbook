@@ -25,7 +25,7 @@ If you normally use WP-CLI on your web host or via Brew, you're most likely usin
 
 In order to make code changes to WP-CLI, you'll need to set up the `wp-cli-dev` development environment on your local machine. Before you can proceed, though, you'll need to make sure you have [Composer](https://getcomposer.org/), PHP, and a functioning MySQL or MariaDB server on your local machine.
 
-Once the prequisites are met, clone the GitHub repository and run the installation process:
+Once the prerequisites are met, clone the GitHub repository and run the installation process:
 
 ```bash
 git clone https://github.com/wp-cli/wp-cli-dev wp-cli-dev
