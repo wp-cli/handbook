@@ -334,6 +334,29 @@ Supported types are:
 
 All connection types support an optional `path` suffix to specify a directory to `cd` to before running WP-CLI; `path` is a full system path starting with either `/` or `~`. (If `WP_CLI_SSH_PRE_CMD` is specified, `cd` is run after this pre-command.)
 
+### Using path with SSH
+
+When using SSH connections, you can specify the remote WordPress path in two ways:
+
+1. **As a suffix in the SSH connection string** (recommended):
+   ```
+   # Using the path suffix directly in the ssh parameter
+   ssh: user@host~/path/to/wordpress
+   ```
+
+2. **As a separate option in an alias**:
+   ```yaml
+   @staging:
+     ssh: user@host
+     path: /path/to/wordpress
+   ```
+
+**Important:** When using `ssh` and `path` as separate top-level options in `wp-cli.yml` (not within an alias), the `path` option may not be applied correctly. In such cases, use one of the following workarounds:
+
+* Include the path as a suffix in the SSH connection string (e.g., `ssh: user@host~/path/to/wordpress`)
+* Define an alias with both `ssh` and `path` options, then use the alias (e.g., `wp @staging command`)
+* Specify the path explicitly on the command line (e.g., `wp --path=/path/to/wordpress command`)
+
 The SSH connection type also supports two advanced connection configuration options, which must be specified via an alias in the YAML configuration:
 
 * `proxyjump` - Specifies a jumpbox connection string, which is passed to `ssh -J`
