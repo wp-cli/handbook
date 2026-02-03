@@ -507,7 +507,7 @@ if ( class_exists( 'WP_CLI' ) ) {
 	 * Add proxy configuration to WP-CLI HTTP requests.
 	 *
 	 * @param array $r Request arguments
-	 * @param string $url Request URL
+	 * @param string $url Request URL (unused but required by hook signature)
 	 * @return array Modified request arguments
 	 */
 	$add_proxy_to_request = function( $r, $url ) use ( $proxy_env ) {
