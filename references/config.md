@@ -392,11 +392,11 @@ To set the same environment variable value for every shell session, you’ll nee
 
 ## HTTP proxy configuration
 
-If you're working in an environment that requires HTTP requests to be made through a proxy server, you can configure WP-CLI to use a proxy for WordPress core HTTP requests.
+If you're working in an environment that requires HTTP requests to be made through a proxy server, you can configure proxy support for both WordPress core HTTP requests and WP-CLI's own HTTP requests.
 
-While php-curl honors the `HTTP_PROXY` environment variable automatically, WordPress's HTTP API (used by WordPress core) requires proxy settings to be explicitly configured via constants. WP-CLI doesn't automatically trust the `HTTP_PROXY` environment variable for security reasons, but you can manually configure proxy support using the `require` configuration option in `wp-cli.yml`.
+While php-curl honors the `HTTP_PROXY` environment variable automatically, neither WordPress's HTTP API nor WP-CLI's HTTP request functionality automatically trust the `HTTP_PROXY` environment variable for security reasons. However, you can manually configure proxy support using the `require` configuration option in `wp-cli.yml`.
 
-### Example configuration
+### Configuring proxy for WordPress core HTTP requests
 
 Create a proxy configuration PHP file that reads the proxy settings from environment variables and defines the appropriate WordPress constants:
 
@@ -457,4 +457,86 @@ $ HTTP_PROXY=http://username:password@proxy.example.com:8080 wp plugin update --
 
 This approach configures the proxy for HTTP requests made by WordPress core when using WP-CLI. The proxy configuration works similarly to defining these constants in `wp-config.php`, but is specific to WP-CLI execution.
 
-**Note:** This configuration affects HTTP requests made through WordPress's HTTP API (used by core, plugins, and themes). HTTP requests made directly by WP-CLI commands may require additional configuration. For more information about WordPress's built-in proxy support, see the [`WP_Http_Proxy`](https://developer.wordpress.org/reference/classes/wp_http_proxy/) class documentation.
+### Configuring proxy for WP-CLI's own HTTP requests
+
+WP-CLI makes HTTP requests using the Requests library (via `WP_CLI\Utils\http_request()`). To configure proxy support for these requests, you need to hook into WP-CLI's HTTP request process and add proxy options.
+
+**wp-cli.yml:**
+```yaml
+require:
+  - proxy.php
+```
+
+**proxy.php (extended):**
+```php
+<?php
+/**
+ * Configure HTTP proxy for both WordPress core and WP-CLI HTTP requests.
+ */
+
+$proxy_env = getenv( 'HTTP_PROXY' );
+
+if ( ! $proxy_env ) {
+	return;
+}
+
+$proxy_url = parse_url( $proxy_env );
+
+if ( ! is_array( $proxy_url ) || ! isset( $proxy_url['host'] ) ) {
+	return;
+}
+
+// Configure proxy for WordPress core HTTP requests
+define( 'WP_PROXY_HOST', $proxy_url['host'] );
+
+if ( isset( $proxy_url['port'] ) ) {
+	define( 'WP_PROXY_PORT', $proxy_url['port'] );
+}
+
+if ( isset( $proxy_url['user'] ) ) {
+	define( 'WP_PROXY_USERNAME', $proxy_url['user'] );
+}
+
+if ( isset( $proxy_url['pass'] ) ) {
+	define( 'WP_PROXY_PASSWORD', $proxy_url['pass'] );
+}
+
+// Configure proxy for WP-CLI's own HTTP requests
+if ( class_exists( 'WP_CLI' ) ) {
+	/**
+	 * Add proxy configuration to WP-CLI HTTP requests.
+	 *
+	 * @param array $r Request arguments
+	 * @param string $url Request URL
+	 * @return array Modified request arguments
+	 */
+	$add_proxy_to_request = function( $r, $url ) use ( $proxy_env ) {
+		// Set proxy for the Requests library
+		$r['proxy'] = $proxy_env;
+		return $r;
+	};
+	
+	// Hook into http_request_args to modify all HTTP requests made by WP-CLI
+	WP_CLI::add_hook( 'http_request_args', $add_proxy_to_request );
+}
+```
+
+With this extended configuration, both WordPress core and WP-CLI will use the proxy when making HTTP requests:
+
+```bash
+# Example: Update plugins through proxy
+$ HTTP_PROXY=http://proxy.example.com:8080 wp plugin update --all
+
+# Example: Install WP-CLI package through proxy
+$ HTTP_PROXY=http://proxy.example.com:8080 wp package install wp-cli/doctor-command
+```
+
+### Summary
+
+The configuration above handles two types of HTTP requests:
+
+1. **WordPress core HTTP requests** - Configured via `WP_PROXY_HOST`, `WP_PROXY_PORT`, `WP_PROXY_USERNAME`, and `WP_PROXY_PASSWORD` constants. This affects HTTP requests made by WordPress core, plugins, and themes through the WordPress HTTP API.
+
+2. **WP-CLI's own HTTP requests** - Configured by hooking into `http_request_args` to add proxy settings to the Requests library options. This affects HTTP requests made directly by WP-CLI commands (e.g., package installation, core downloads).
+
+**Note:** For more information about WordPress's built-in proxy support, see the [`WP_Http_Proxy`](https://developer.wordpress.org/reference/classes/wp_http_proxy/) class documentation.
