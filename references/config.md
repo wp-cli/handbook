@@ -515,7 +515,7 @@ if ( class_exists( 'WP_CLI' ) ) {
 		$r['proxy'] = $proxy_env;
 		return $r;
 	};
-	
+
 	// Hook into http_request_args to modify all HTTP requests made by WP-CLI
 	WP_CLI::add_hook( 'http_request_args', $add_proxy_to_request );
 }
