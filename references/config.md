@@ -417,17 +417,19 @@ require:
  * uses for HTTP requests.
  */
 
-$proxy_host = getenv( 'HTTP_PROXY' );
+$proxy_env = getenv( 'HTTP_PROXY' );
 
-if ( ! $proxy_host ) {
+if ( ! $proxy_env ) {
 	return;
 }
 
-$proxy_url = parse_url( $proxy_host );
+$proxy_url = parse_url( $proxy_env );
 
-if ( isset( $proxy_url['host'] ) ) {
-	define( 'WP_PROXY_HOST', $proxy_url['host'] );
+if ( ! is_array( $proxy_url ) || ! isset( $proxy_url['host'] ) ) {
+	return;
 }
+
+define( 'WP_PROXY_HOST', $proxy_url['host'] );
 
 if ( isset( $proxy_url['port'] ) ) {
 	define( 'WP_PROXY_PORT', $proxy_url['port'] );
