@@ -506,12 +506,18 @@ if ( class_exists( 'WP_CLI' ) ) {
 	/**
 	 * Add proxy configuration to WP-CLI HTTP requests.
 	 *
+	 * The http_request_args hook passes both $r (request args) and $url parameters.
+	 * While $url is not used in this simple proxy configuration, it's required
+	 * by the hook signature and could be used for URL-specific proxy rules.
+	 *
 	 * @param array $r Request arguments
-	 * @param string $url Request URL (unused but required by hook signature)
+	 * @param string $url Request URL
 	 * @return array Modified request arguments
 	 */
 	$add_proxy_to_request = function( $r, $url ) use ( $proxy_env ) {
 		// Set proxy for the Requests library
+		// The Requests library accepts proxy URLs in the same format as HTTP_PROXY
+		// and handles parsing internally, so we can pass the raw environment variable
 		$r['proxy'] = $proxy_env;
 		return $r;
 	};
