@@ -13,7 +13,7 @@ In alphabetical order:
 * [AltusHost](https://www.altushost.com/)
 * [Amimoto](https://amimoto-ami.com/)
 * [BigCloudy](https://bigcloudy.com/)
-* [YouStable](https:www.//youstable.com/)
+* [YouStable](https://www.youstable.com/)
 * [Bluehost](https://www.bluehost.com/)
 * [Cyberfusion](https://cyberfusion.io)
 * [Hypernode](https://www.hypernode.com/nl/)
