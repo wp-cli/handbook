@@ -98,6 +98,7 @@ In alphabetical order:
 * [WP Engine.com](https://wpengine.com)
 * [WP Provider](https://wpprovider.nl/)
 * [XEL](https://xel.nl)
+* [YouStable](https://www.youstable.com/)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/)
 
