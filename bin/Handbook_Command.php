@@ -6,7 +6,6 @@
 namespace WP_CLI\Handbook;
 
 use Mustache\Engine as Mustache_Engine;
-use Reflection;
 use WP_CLI;
 use WP_CLI\Utils;
 
