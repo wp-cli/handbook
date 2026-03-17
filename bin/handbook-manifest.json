@@ -5,6 +5,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/argument-syntax.md",
         "parent": "references"
     },
+    "beginners-guide": {
+        "title": "Beginner's Guide",
+        "slug": "beginners-guide",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/beginners-guide.md",
+        "parent": "guides"
+    },
     "behat-steps": {
         "title": "Behat Steps",
         "slug": "behat-steps",
@@ -21,6 +27,12 @@
         "title": "Bug Reports",
         "slug": "bug-reports",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/contributions\/bug-reports.md",
+        "parent": "contributions"
+    },
+    "cli-contributor-badge": {
+        "title": "WP-CLI Contributor Badge",
+        "slug": "cli-contributor-badge",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/contributions\/cli-contributor-badge.md",
         "parent": "contributions"
     },
     "code-review": {
@@ -45,6 +57,12 @@
         "title": "Common Issues",
         "slug": "common-issues",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/common-issues.md",
+        "parent": "guides"
+    },
+    "common-tasks": {
+        "title": "Common Tasks with WP-CLI",
+        "slug": "common-tasks",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/common-tasks.md",
         "parent": "guides"
     },
     "config": {
@@ -130,6 +148,12 @@
         "slug": "external-resources",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/external-resources.md",
         "parent": "guides"
+    },
+    "figure-out-why-wordpress-is-slow": {
+        "title": "Figure out why WordPress is slow",
+        "slug": "figure-out-why-wordpress-is-slow",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to\/figure-out-why-wordpress-is-slow.md",
+        "parent": "how-to"
     },
     "force-output-specific-locale": {
         "title": "Force output to a specific locale",
@@ -347,12 +371,6 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to\/how-to-start-webserver.md",
         "parent": "how-to"
     },
-    "figure-out-why-wordpress-is-slow": {
-        "title": "Figure out why WordPress is slow",
-        "slug": "figure-out-why-wordpress-is-slow",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to\/figure-out-why-wordpress-is-slow.md",
-        "parent": "how-to"
-    },
     "identify-plugin-theme-conflict": {
         "title": "Identify a Plugin or Theme Conflict",
         "slug": "identify-plugin-theme-conflict",
@@ -375,6 +393,12 @@
         "title": "Installing",
         "slug": "installing",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/installing.md",
+        "parent": "guides"
+    },
+    "installing-packages": {
+        "title": "Installing WP-CLI Packages",
+        "slug": "installing-packages",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/guides\/installing-packages.md",
         "parent": "guides"
     },
     "internal-api": {
@@ -850,11 +874,5 @@
         "slug": "wp-cli-warning",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/internal-api\/wp-cli-warning.md",
         "parent": "internal-api"
-    },
-    "cli-contributor-badge": {
-        "title": "WP-CLI Contributor Badge",
-        "slug": "cli-contributor-badge",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/contributions\/cli-contributor-badge.md",
-        "parent": "contributions"
     }
 }
