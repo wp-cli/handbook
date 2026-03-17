@@ -15,7 +15,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Running commands remotely](https://make.wordpress.org/cli/handbook/guides/running-commands-remotely/)** - Learn how to remotely control multiple servers at once.
 * **[Common issues and their fixes](https://make.wordpress.org/cli/handbook/guides/common-issues/)** - In case of fire, break glass.
 * **[External resources](https://make.wordpress.org/cli/handbook/guides/external-resources/)** - Blog posts, slides and videos from users.
-* **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to troubleshoot
+* **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Get help troubleshooting common WP-CLI issues.
 
 ### For developers
 
