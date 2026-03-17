@@ -58,6 +58,24 @@ Here are a few reasons why even non-technical WordPress users find WP-CLI useful
 - **Remote management:** Manage a website on a remote server without opening a browser.
 - **Reliability:** Less clicking means fewer mistakes.
 
+## System Requirements
+
+WP-CLI requires **PHP 5.6 or later**. Most modern hosting environments meet this requirement, but it's worth checking.
+
+To see what version of PHP you have, open your terminal and run:
+
+```
+php --version
+```
+
+You should see output like:
+
+```
+PHP 8.2.0 (cli) ...
+```
+
+If you get a "command not found" error, PHP is not installed or not on your system's PATH. See the [full installation guide](https://make.wordpress.org/cli/handbook/guides/installing/) for tips on setting up PHP.
+
 ## Installing WP-CLI
 
 Before you can use WP-CLI, you need to install it. Here's the simplest way:
@@ -100,9 +118,32 @@ See the [full installation guide](https://make.wordpress.org/cli/handbook/guides
 
 See the [Common Issues guide](https://make.wordpress.org/cli/handbook/guides/common-issues/) or the [Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/) for help with installation problems.
 
+## Running WP-CLI: Inside vs. Outside the WordPress Folder
+
+WP-CLI needs to know which WordPress installation to work with. By default, it looks for WordPress in your **current directory** (the folder your terminal is currently in).
+
+This means you generally need to `cd` into your WordPress site's folder before running WP-CLI commands. For example:
+
+```
+cd /var/www/mysite
+wp plugin list
+```
+
+If you run `wp plugin list` from a folder that doesn't contain a WordPress installation, you'll get an error like:
+
+```
+Error: This does not seem to be a WordPress installation.
+```
+
+**Where is my WordPress folder?**
+
+- On a typical shared host, it's often something like `/home/username/public_html` or `/var/www/html`.
+- If you use a local development tool like Local, MAMP, or XAMPP, each tool has its own folder structure — check its documentation.
+- On managed WordPress hosts, WP-CLI may be pre-configured to work without needing to `cd` first.
+
 ## Running Your First WP-CLI Command
 
-Once WP-CLI is installed, you need to navigate in your terminal to the folder where WordPress is installed. For example, if your WordPress site is in `/var/www/mysite`, run:
+Navigate in your terminal to your WordPress folder (see [above](#running-wp-cli-inside-vs-outside-the-wordpress-folder)). For example:
 
 ```
 cd /var/www/mysite
@@ -136,12 +177,52 @@ When you run a WP-CLI command, it prints a response in the terminal. Here's what
 - **`Warning:`** — The command ran, but there's something you should know about.
 - **`Error:`** — Something went wrong. Read the message to find out what.
 
+## Getting Help
+
+### Built-in help
+
+WP-CLI has built-in documentation for every command. If you get stuck, run `wp help` to see a list of all available commands:
+
+```
+wp help
+```
+
+To get help on a specific command, add the command name after `help`. For example:
+
+```
+wp help plugin
+wp help plugin install
+```
+
+### Community support
+
+If the built-in help isn't enough, these resources can help:
+
+- **[WP-CLI Handbook](https://make.wordpress.org/cli/handbook/)** — The full reference documentation.
+- **[GitHub Issues](https://github.com/wp-cli/wp-cli/issues)** — Report bugs or search for known problems.
+- **[WordPress.org Support Forums](https://wordpress.org/support/)** — General WordPress help from the community.
+
+## Using WP-CLI on a Remote Server (SSH)
+
+If your WordPress site is hosted on a remote server (most live websites are), you can still use WP-CLI. There are two common approaches:
+
+1. **SSH into the server and run WP-CLI there.** Most hosts provide SSH access. Connect with a command like:
+
+    ```
+    ssh username@yoursite.com
+    ```
+
+    Then navigate to your WordPress folder and use WP-CLI normally.
+
+2. **Use WP-CLI's built-in SSH support.** WP-CLI can run commands on a remote server directly from your local machine. See the [Running Commands Remotely](https://make.wordpress.org/cli/handbook/guides/running-commands-remotely/) guide for details.
+
 ## Learning More
 
 Now that you've got the basics, here are some great next steps:
 
 - **[Common Tasks with WP-CLI](https://make.wordpress.org/cli/handbook/guides/common-tasks/)** — Practical examples for everyday WordPress management.
 - **[Quick Start Guide](https://make.wordpress.org/cli/handbook/guides/quick-start/)** — A short walkthrough of WP-CLI with more examples.
+- **[Running Commands Remotely](https://make.wordpress.org/cli/handbook/guides/running-commands-remotely/)** — Manage your live site's server over SSH.
 - **[All WP-CLI Commands](https://developer.wordpress.org/cli/commands/)** — The full list of commands available.
 - **[External Resources](https://make.wordpress.org/cli/handbook/guides/external-resources/)** — Blog posts, slides, and videos from WP-CLI users.
 
