@@ -490,9 +490,34 @@ Functional tests typically follow this pattern:
 
 Convinced? Head on over to [wp-cli/scaffold-package-command](https://github.com/wp-cli/scaffold-package-command) to get started.
 
+## Adding commands globally
+
+If you want to have custom commands available globally, without needing to create a full plugin or package, you can use WP-CLI's `require` configuration option.
+
+Edit your [global config file](https://make.wordpress.org/cli/handbook/references/config/) (usually found at `~/.wp-cli/config.yml`) to require a PHP file:
+
+```yaml
+require:
+  - ~/.wp-cli/commands.php
+```
+
+Then create the file and add your custom commands:
+
+```php
+<?php
+
+WP_CLI::add_command( 'hello-world', function () {
+    WP_CLI::success( "Hello World!" );
+} );
+```
+
+Any commands registered in that file will be globally available whenever you run WP-CLI. This is great for personal helper commands that you want available across all your WordPress projects.
+
+You can also pass the `--require=<path>` flag on the command line, or set the `WP_CLI_REQUIRE` environment variable, to load a custom PHP file for a single invocation.
+
 ## Distribution
 
-Now that you've produce a command you're proud of, it's time to share it with the world. There are two common ways of doing so.
+Now that you've produced a command you're proud of, it's time to share it with the world. There are two common ways of doing so.
 
 ### Include in a plugin or theme
 
