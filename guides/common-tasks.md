@@ -214,7 +214,7 @@ wp option get blogname
 wp option update blogname "My New Site Title"
 ```
 
-### Put the site into maintenance mode (discourage search engines)
+### Discourage search engines from indexing the site
 
 ```
 wp option update blog_public 0
