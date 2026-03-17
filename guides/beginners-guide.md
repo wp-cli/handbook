@@ -1,4 +1,4 @@
-# Introduction to WP-CLI for Non-Techies
+# Beginner's Guide
 
 So you've heard about WP-CLI and want to try it out, but you're not sure where to start? This guide is for you. No programming experience required!
 
@@ -35,7 +35,7 @@ Once the terminal is open, here are a few essential commands to know:
 | Command | What it does |
 |---------|-------------|
 | `pwd` | Shows the folder you are currently in |
-| `ls` (macOS/Linux) or `dir` (Windows) | Lists files and folders in the current directory |
+| `ls` (macOS/Linux) or `dir` (Windows) | Lists files and folders in the current folder |
 | `cd folder-name` | Moves into a folder named `folder-name` |
 | `cd ..` | Goes up one folder level |
 | `clear` | Clears the terminal screen |
@@ -58,65 +58,9 @@ Here are a few reasons why even non-technical WordPress users find WP-CLI useful
 - **Remote management:** Manage a website on a remote server without opening a browser.
 - **Reliability:** Less clicking means fewer mistakes.
 
-## System Requirements
-
-WP-CLI requires **PHP 5.6 or later**. Most modern hosting environments meet this requirement, but it's worth checking.
-
-To see what version of PHP you have, open your terminal and run:
-
-```
-php --version
-```
-
-You should see output like:
-
-```
-PHP 8.2.0 (cli) ...
-```
-
-If you get a "command not found" error, PHP is not installed or not on your system's PATH. See the [full installation guide](https://make.wordpress.org/cli/handbook/guides/installing/) for tips on setting up PHP.
-
 ## Installing WP-CLI
 
-Before you can use WP-CLI, you need to install it. Here's the simplest way:
-
-### On macOS or Linux
-
-1. Open the terminal (see above).
-2. Run this command to download WP-CLI:
-
-```
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-```
-
-3. Check that it downloaded correctly:
-
-```
-php wp-cli.phar --info
-```
-
-If you see a list of information about your system, it worked!
-
-4. Make it easier to use by moving it to a system-wide location:
-
-```
-chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/local/bin/wp
-```
-
-5. Confirm WP-CLI is installed:
-
-```
-wp --info
-```
-
-### On Windows
-
-See the [full installation guide](https://make.wordpress.org/cli/handbook/guides/installing/) for detailed Windows instructions, including how to install via Composer or using a `.bat` file.
-
-### If Something Goes Wrong
-
-See the [Common Issues guide](https://make.wordpress.org/cli/handbook/guides/common-issues/) or the [Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/) for help with installation problems.
+For step-by-step installation instructions on macOS, Linux, and Windows, see the [Installing](https://make.wordpress.org/cli/handbook/guides/installing/) guide. It covers system requirements, the recommended Phar download method, and alternative installation options such as Composer and Homebrew.
 
 ## Running WP-CLI: Inside vs. Outside the WordPress Folder
 

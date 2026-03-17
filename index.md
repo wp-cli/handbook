@@ -6,7 +6,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 
 ## Guides
 
-* **[Introduction for non-techies](https://make.wordpress.org/cli/handbook/guides/introduction-for-non-techies/)** - New to the command line? Start here for a beginner-friendly introduction to WP-CLI.
+* **[Beginner's guide](https://make.wordpress.org/cli/handbook/guides/beginners-guide/)** - New to the command line? Start here for a beginner-friendly introduction to WP-CLI.
 * **[Common tasks](https://make.wordpress.org/cli/handbook/guides/common-tasks/)** - A practical showcase of everyday WordPress management tasks you can do with WP-CLI.
 * **[Installing](https://make.wordpress.org/cli/handbook/guides/installing/)** - Recommended and alternative installation mechanisms.
 * **[Quick start](https://make.wordpress.org/cli/handbook/guides/quick-start/)** - Where to begin after you've installed WP-CLI for the first time.

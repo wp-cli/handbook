@@ -2,7 +2,7 @@
 
 Not sure what you can do with WP-CLI? This page showcases practical, everyday WordPress management tasks you can accomplish from the command line — with examples you can use right away.
 
-> **New to the command line?** Start with the [Introduction to WP-CLI for Non-Techies](https://make.wordpress.org/cli/handbook/guides/introduction-for-non-techies/) guide first.
+> **New to the command line?** Start with the [Beginner's Guide](https://make.wordpress.org/cli/handbook/guides/beginners-guide/) guide first.
 
 ## Plugins
 
