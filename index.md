@@ -22,7 +22,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Commands cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/)** - The full 101 how commands work, writing your own, and sharing them with the world.
 * **[Writing Behat Tests](https://make.wordpress.org/cli/handbook/guides/behat-tests/)** - How to write and run Behat tests for WP-CLI commands and packages.
 * **[Force output to a specific locale](https://make.wordpress.org/cli/handbook/guides/force-output-specific-locale/)** - Localisation issue
-* **[Identify a Plugin or Theme Conflict](https://make.wordpress.org/cli/handbook/guides/identify-plugin-theme-conflict/)** - Debugging advise
+* **[Identify a Plugin or Theme Conflict](https://make.wordpress.org/cli/handbook/guides/identify-plugin-theme-conflict/)** - Debugging advice
 * **[Sharing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/sharing-wp-cli-packages/)** - Some words about your environment
 
 ## References
