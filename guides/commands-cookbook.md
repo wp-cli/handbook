@@ -207,7 +207,11 @@ Options defined in the longdesc are interpreted as the command's **synopsis**:
 
 * `<name>` is a required positional argument. Changing it to `<name>...` would mean the command can accept one or more positional arguments. Changing it to `[<name>]` would mean that the positional argument is optional and finally, changing it to `[<name>...]` would mean that the command can accept multiple optional positional arguments.
 * `[--type=<type>]` is an optional associative argument which defaults to 'success' and accepts either 'success' or 'error'. Changing it to `[--error]` would change the argument to behave as an optional boolean flag.
-* `[--field[=<value>]]` allows an optional argument to be used with or without a value. An example of this would be using a global parameter like `--skip-plugins[=<plugins>]` which can either skip loading all plugins, or skip a comma-separated list of plugins. 
+* `[--field[=<value>]]` allows an optional argument to be used with or without a value. An example of this would be using a global parameter like `--skip-plugins[=<plugins>]` which can either skip loading all plugins, or skip a comma-separated list of plugins.
+* `[--status=<status>...]` (note the trailing `...`) declares a **repeating** associative argument.
+  * When the same flag is passed more than once (e.g. `--status=active --status=inactive`), WP-CLI collects the values into an array and `$assoc_args['status']` will be `[ 'active', 'inactive' ]`.
+  * Without the `...` ellipsis, passing the same flag multiple times uses **last-wins** behaviour—only the final value is kept.
+  * Boolean flags (e.g. `[--verbose]`) always use last-wins and are never collected into arrays, regardless of ellipsis.
 
 *Note*: To accept arbitrary/unlimited number of optional associative arguments you would use the annotation `[--<field>=<value>]`.  So for example:
 
@@ -216,6 +220,66 @@ Options defined in the longdesc are interpreted as the command's **synopsis**:
 	 * : Allow unlimited number of associative parameters.
 ```
 A command's synopsis is used for validating the arguments, before passing them to the implementation.
+
+#### Argument aliases
+
+You can define one or more **aliases** for a parameter by appending them after a `|` separator inside the synopsis token. This lets users pass a short form (or any alternative name) and have WP-CLI automatically map it to the canonical argument name in `$assoc_args`.
+
+```
+ * [--with-dependencies|w]
+ * : Include dependencies in the operation.
+```
+
+With this definition, both `--with-dependencies` and `-w` are accepted, and `$assoc_args['with-dependencies']` is populated in either case.
+
+Multiple aliases are separated by additional `|` characters:
+
+```
+ * [--verbose|v|wordy]
+ * : Enable verbose output.
+```
+
+Aliases work for value-carrying associative arguments too:
+
+```
+ * [--format=<format>|f]
+ * : Output format.
+```
+
+Running `wp example hello -f=json` is then equivalent to `wp example hello --format=json`. Note that WP-CLI accepts both `-<alias>=value` (single-dash) and `--<name>=value` (double-dash) forms for short-form aliases.
+
+#### YAML parameter options
+
+The `---` block after a parameter description allows you to set extra metadata for that parameter using YAML.
+
+**`default`** sets the value used when the argument is omitted:
+
+```
+ * [--type=<type>]
+ * : Whether or not to greet the person with success or error.
+ * ---
+ * default: success
+ * options:
+ *   - success
+ *   - error
+ * ---
+```
+
+**`options`** restricts the accepted values. WP-CLI validates user input against this list and returns an error for any value not in it.
+
+**`sensitive`** marks an argument as containing sensitive data (e.g. passwords, API keys):
+
+* When the `--prompt` global flag is used, WP-CLI logs the full command it is about to run to STDOUT.
+* Any argument flagged with `sensitive: true` will have its value replaced with `[REDACTED]` in that log line.
+* This prevents secrets from leaking into logs or terminal history.
+
+```
+ * [--password=<password>]
+ * : Database password.
+ * ---
+ * sensitive: true
+ * ---
+```
 
 The longdesc is also displayed when calling the `help` command, for example, `wp help example hello`. Its syntax is [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and here are a few more notes on how it's handled by WP-CLI:
 
@@ -298,6 +362,22 @@ To have a WP-CLI command run before WordPress loads, use:
 Do keep in mind most WP-CLI hooks fire before WordPress is loaded. If your command is loaded from a plugin or theme, `@when` will be essentially ignored.
 
 It has no effect if the command using it is loaded from a plugin or a theme, because by that time WordPress itself will have already been loaded.
+
+**@skipglobalargcheck**
+
+WP-CLI emits a warning at command-registration time if a command defines an argument whose name collides with an existing [global argument](https://make.wordpress.org/cli/handbook/config/) (e.g. `--debug`, `--user`, `--quiet`). This helps command authors avoid confusing behaviour where the global argument takes precedence over the command-specific one.
+
+If you intentionally want to reuse a global argument name (for example, when wrapping another tool that uses the same flag), you can silence the warning with `@skipglobalargcheck`:
+
+```
+	/**
+	 * @skipglobalargcheck
+	 * @when before_wp_load
+	 */
+	function my_command( $args, $assoc_args ) {
+		...
+	}
+```
 
 #### WP_CLI::add_command()'s third $args parameter
 
