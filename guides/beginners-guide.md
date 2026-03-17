@@ -2,6 +2,8 @@
 
 So you've heard about WP-CLI and want to try it out, but you're not sure where to start? This guide is for you. No programming experience required!
 
+This guide is designed to be read from start to finish. Each section builds on the previous one, taking you from opening a terminal for the first time all the way to running your first WP-CLI commands and getting help when you need it.
+
 ## What Is the Command Line?
 
 When you use your computer, you normally interact with it by clicking on things — icons, buttons, menus. This is called a **graphical user interface (GUI)**.
