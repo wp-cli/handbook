@@ -290,6 +290,8 @@ The longdesc is also displayed when calling the `help` command, for example, `wp
  * Hard-wrap option descriptions at **75 chars** after the colon and a space.
  * Hard-wrap everything else at **90 chars**.
 
+If your command exits with non-default exit codes, document them in an `## EXIT STATUS` section placed between `## OPTIONS` and `## EXAMPLES`. See the [exit codes](https://make.wordpress.org/cli/handbook/references/exit-codes/) reference for guidelines and examples.
+
 For more details on how you should format your command docs, please see WP-CLI's [documentation standards](https://make.wordpress.org/cli/handbook/documentation-standards/).
 
 #### Docblock tags
