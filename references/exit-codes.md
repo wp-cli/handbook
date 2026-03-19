@@ -1,6 +1,6 @@
 # Exit Codes
 
-WP-CLI follows widely-adopted Unix conventions for exit codes, where `0` signals success and any non-zero value signals failure. Scripts that call WP-CLI commands can inspect the exit code to determine whether to continue, retry, or abort.
+WP-CLI follows widely-adopted Unix conventions for exit codes: `0` signals success (the command’s primary condition was satisfied), while non-zero values signal that the primary condition was not satisfied. This can represent either an operational error (the command could not perform the requested operation) or an expected negative result that calling scripts are intended to test for (for example, “not installed”). Scripts that call WP-CLI commands can inspect the exit code to determine whether to continue, retry, or abort.
 
 ## Standard exit codes
 
