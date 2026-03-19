@@ -13,20 +13,20 @@ WP-CLI follows widely-adopted Unix conventions for exit codes: `0` signals succe
 
 `WP_CLI::halt()` ([doc](https://make.wordpress.org/cli/handbook/internal-api/wp-cli-halt/)) can be used to exit with a specific non-zero code when the command needs to communicate a particular outcome to the calling script.
 
-## Using non-standard exit codes
+## Exit codes for boolean-result commands
 
-Some commands produce a meaningful binary result and communicate it through the exit code rather than output. For example:
+Some commands are designed to communicate a binary result directly through the exit code rather than through output. These commands still use the standard `0`/`1` codes, but `1` means "condition not met" rather than "operational error". For example:
 
 * `wp plugin is-installed <plugin>` exits with `0` if the plugin is installed, `1` if it is not.
 * `wp theme is-installed <theme>` follows the same pattern.
 * `wp core is-installed` exits with `0` when WordPress is installed, `1` when it is not.
 
-Use a non-standard exit code when:
+Use exit code `1` to signal "condition not met" (rather than an error) when:
 
 1. The command result is binary (pass/fail, found/not-found) and is intended to be tested directly in a shell conditional.
-2. The behavior deviates from the default `0`/`1` convention and the deviation is intentional and documented.
+2. The intent is explicitly documented so script authors know the exit code carries a result meaning, not an error meaning.
 
-Do **not** return non-zero exit codes for conditions that are informational rather than erroneous (e.g. a list command that finds no items is still a successful operation).
+Do **not** return a non-zero exit code for conditions that are informational rather than a definitive result (e.g. a list command that finds no items is still a successful operation — it returned an empty list).
 
 ## Using exit codes in scripts
 
