@@ -110,41 +110,6 @@ Success: Switched to 'Twenty Sixteen' theme.
 * Roles, sidebar ID, post type key, taxonomy key must be wrapped with quotes.
 * Message in the context of ongoing action could end with `...`. Eg - `Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.23.1/wp-cli-0.23.1.phar...`
 
-### Exit status annotation
-
-Commands that return non-default exit codes should document them in an `## EXIT STATUS` section. This makes scripting against your command predictable and allows the documentation to be generated automatically.
-
-```
-/**
- * Checks if a given plugin is installed.
- *
- * ## OPTIONS
- *
- * <plugin>
- * : The plugin to check.
- *
- * ## EXIT STATUS
- *
- * Returns exit codes for the following conditions:
- *
- *   * 0 - Plugin is installed.
- *   * 1 - Plugin is not installed.
- *
- * ## EXAMPLES
- *
- *     # Check whether plugin is installed; exit status 0 if installed, otherwise 1
- *     $ wp plugin is-installed hello
- *     $ echo $?
- *     1
- */
-```
-
-* The `## EXIT STATUS` section should appear after `## OPTIONS` and before `## EXAMPLES`.
-* List each exit code as `* <code> - <description>.`
-* Exit codes of `0` (success) and `1` (generic failure from `WP_CLI::error()`) are the default for all commands and do not need to be documented unless you want to make them explicit.
-
-For a complete reference of how exit codes work and when to use them, see the [exit codes](https://make.wordpress.org/cli/handbook/references/exit-codes/) reference.
-
 ### Command parameter description
 
 If there is a set of allowed values for a command parameter, we have set special format (mostly similar to YAML) for default value and available options.
