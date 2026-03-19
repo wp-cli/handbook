@@ -9,9 +9,9 @@ WP-CLI follows widely-adopted Unix conventions for exit codes, where `0` signals
 | `0` | Command completed successfully. The requested operation was performed as expected. |
 | `1` | Command failed. WP-CLI could not perform the operation as expected (e.g. invalid arguments, WordPress not found, a fatal error was encountered). |
 
-`WP_CLI::error()` ([doc](https://make.wordpress.org/cli/handbook/references/internal-api/wp-cli-error/)) is the conventional way to report a failure and exit with code `1`.
+`WP_CLI::error()` ([doc](https://make.wordpress.org/cli/handbook/internal-api/wp-cli-error/)) is the conventional way to report a failure and exit with code `1`.
 
-`WP_CLI::halt()` ([doc](https://make.wordpress.org/cli/handbook/references/internal-api/wp-cli-halt/)) can be used to exit with a specific non-zero code when the command needs to communicate a particular outcome to the calling script.
+`WP_CLI::halt()` ([doc](https://make.wordpress.org/cli/handbook/internal-api/wp-cli-halt/)) can be used to exit with a specific non-zero code when the command needs to communicate a particular outcome to the calling script.
 
 ## Using non-standard exit codes
 
