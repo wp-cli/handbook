@@ -6,7 +6,6 @@
 namespace WP_CLI\Handbook;
 
 use Mustache\Engine as Mustache_Engine;
-use Reflection;
 use WP_CLI;
 use WP_CLI\Utils;
 
@@ -138,6 +137,7 @@ EOT;
 				$api['related']     = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
 
+				// @phpstan-ignore argument.type
 				$api_doc = self::render( 'internal-api.mustache', $api );
 				$path    = self::get_handbook_path() . "/internal-api/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
@@ -215,6 +215,7 @@ EOT;
 				$api['related']     = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
 
+				// @phpstan-ignore argument.type
 				$api_doc = self::render( 'behat-steps.mustache', $api );
 				$path    = self::get_handbook_path() . "/behat-steps/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
@@ -301,6 +302,7 @@ EOT;
 			$filename     = '';
 			$when_invoked = $reflection->getProperty( 'when_invoked' );
 			if ( PHP_VERSION_ID < 80100 ) {
+				// @phpstan-ignore method.deprecated
 				$when_invoked->setAccessible( true );
 			}
 			$closure            = $when_invoked->getValue( $command );

@@ -51,6 +51,8 @@ WP_CLI::add_command( 'foo', $foo );
 ```
 
 
+For guidance on where to place your custom commands (e.g. globally via `~/.wp-cli/config.yml`, in a plugin or theme, or as a standalone package), see the [Commands Cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/).
+
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 
 

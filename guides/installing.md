@@ -1,5 +1,15 @@
 # Installing
 
+## Requirements
+
+WP-CLI requires **PHP 7.2.24 or later**. To check the version of PHP available on your system, run:
+
+```
+php --version
+```
+
+WP-CLI has no additional requirements beyond those of WordPress itself.
+
 ## Recommended installation
 
 The recommended way to install WP-CLI is by downloading the Phar build (archives similar to Java JAR files, [see this article for more detail](http://php.net/manual/en/phar.using.intro.php)), marking it executable, and placing it on your PATH.
