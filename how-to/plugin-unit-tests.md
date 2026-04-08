@@ -73,4 +73,4 @@ Second, the `bin/install-wp-tests.sh` script doesn't work directly in Windows. W
 
 Third, the bash installation script uses `which`, a Linux command not available by default in Windows. `cURL`, `svn` and `wget` all can be installed in Windows as separate packages.
 
-Lastly, sometimes the bash script fails to build WordPress because of how it uses tmp folders. If it fails, then you can manually install WordPress to a writeable directory, and then manually create `wp-tests-config.php`.
+Lastly, sometimes the bash script fails to build WordPress because of how it uses tmp folders. If it fails, then you can manually install WordPress to a writable directory, and then manually create `wp-tests-config.php`.
