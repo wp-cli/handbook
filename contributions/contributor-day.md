@@ -6,7 +6,7 @@ We'd love to help you submit at least one pull request, so we put together this 
 
 When you submit your pull request, add `Related https://github.com/wp-cli/wp-cli/issues/6295` so we can see all pull requests created during the day. We'll give these some special promotion in the next release notes.
 
-Your table leads for the day are: [thelovekesh](https://github.com/thelovekesh)
+Your table lead for the day is: [thelovekesh](https://github.com/thelovekesh)
 
 A few seasoned WP-CLI contributors are also helping out: [Abhishek Sharma](https://github.com/abhi3315), [Deepak Kumar](https://github.com/i-am-chitti)
 
