@@ -9,8 +9,8 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [&lt;attachment-id&gt;...]
 : One or more IDs of the attachments to regenerate.
 
-[\--image_size=&lt;image_size&gt;]
-: Name of the image size to regenerate. Only thumbnails of this image size will be regenerated, thumbnails of other image sizes will not.
+[\--image_size=&lt;image_size&gt;...]
+: Name of the image size to regenerate. Repeat the flag to specify multiple. Only thumbnails of specified image size(s) will be regenerated, thumbnails of other image sizes will not.
 
 [\--skip-delete]
 : Skip deletion of the original thumbnails. If your thumbnails are linked from sources outside your control, it's likely best to leave them around. Defaults to false.
@@ -60,6 +60,15 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     3/3 Regenerated "large" thumbnail for "Sunburst Over River" (ID 756).
     Success: Regenerated 3 of 3 images.
 
+    # Re-generate only the thumbnails of "large" and "medium" image sizes for all images.
+    $ wp media regenerate --image_size=large --image_size=medium
+    Do you really want to regenerate the "large", "medium" image sizes for all images? [y/n] y
+    Found 3 images to regenerate.
+    1/3 Regenerated "large", "medium" thumbnails for "Sydney Harbor Bridge" (ID 760).
+    2/3 No "large", "medium" thumbnail regeneration needed for "Boardwalk" (ID 757).
+    3/3 Regenerated "large", "medium" thumbnails for "Sunburst Over River" (ID 756).
+    Success: Regenerated 3 of 3 images.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -69,6 +78,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -81,3 +91,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

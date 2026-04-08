@@ -14,7 +14,7 @@ Windows compatible `proc_open()`. Works around bug in PHP, and also deals with *
 <strong>resource&gt;</strong> (array&lt;int,) &$pipes         Indexed array of file pointers that correspond to PHP's end of any pipes that are created.<br />
 <strong>$cwd</strong> (string) Initial working directory for the command.<br />
 <strong>string&gt;</strong> (array&lt;string,) $env            Array of environment variables.<br />
-<strong>$other_options</strong> (array&lt;string&gt;) Array of additional options (Windows only).<br />
+<strong>bool&gt;|null</strong> (array&lt;string,) $other_options  Array of additional options (Windows only).<br />
 <strong>array&lt;int,</strong> (@param-out) resource> $pipes<br />
 <strong>@return</strong> (resource|false) stripped of any environment variable settings, or false on failure.<br />
 </div>

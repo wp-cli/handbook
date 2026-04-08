@@ -12,14 +12,20 @@ Search/replace intelligently handles PHP serialized data, and does not change pr
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
-&lt;old&gt;
+[&lt;old&gt;]
 : A string to search for within the database.
 
-&lt;new&gt;
+[&lt;new&gt;]
 : Replace instances of the first string with this new string.
 
 [&lt;table&gt;...]
 : List of database tables to restrict the replacement to. Wildcards are supported, e.g. `'wp_*options'` or `'wp_post*'`.
+
+[\--old=&lt;value&gt;]
+: An alternative way to specify the search string. Use this when the search string starts with '--' (e.g., --old='--some-text').
+
+[\--new=&lt;value&gt;]
+: An alternative way to specify the replacement string. Use this when the replacement string starts with '--' (e.g., --new='--other-text').
 
 [\--dry-run]
 : Run the entire search/replace operation and show report, but don't save changes to the database.
@@ -43,13 +49,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : Do not perform the replacement on specific tables. Use commas to specify multiple tables. Wildcards are supported, e.g. `'wp_*options'` or `'wp_post*'`.
 
 [\--skip-columns=&lt;columns&gt;]
-: Do not perform the replacement on specific columns. Use commas to specify multiple columns.
+: Do not perform the replacement on specific columns. Use commas to specify multiple columns. Table-qualified column names ("table.column") are supported to apply the skip to a specific table only.
 
 [\--include-columns=&lt;columns&gt;]
-: Perform the replacement on specific columns. Use commas to specify multiple columns.
+: Perform the replacement on specific columns. Use commas to specify multiple columns. Table-qualified column names ("table.column") are supported to apply the inclusion to a specific table only.
 
 [\--precise]
-: Force the use of PHP (instead of SQL) which is more thorough, but slower.
+: Force the use of PHP (instead of SQL) for all columns. By default, the command uses fast SQL queries, but automatically switches to PHP for columns containing serialized data. Use this flag to ensure PHP processes all columns, which is slower but handles complex serialized data structures more reliably.
 
 [\--recurse-objects]
 : Enable recursing into objects to replace strings. Defaults to true; pass --no-recurse-objects to disable.
@@ -110,6 +116,12 @@ options:
     # Search/replace to a SQL file without transforming the database
     $ wp search-replace foo bar --export=database.sql
 
+    # Search/replace string containing hyphens
+    $ wp search-replace --old='--old-string' --new='new-string'
+
+    # Use precise mode for complex serialized data
+    $ wp search-replace 'oldurl.com' 'newurl.com' --precise
+
     # Bash script: Search/replace production to development url (multisite compatible)
     #!/bin/bash
     if $(wp --url=http://example.com core is-installed --network); then
@@ -127,6 +139,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -139,3 +152,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

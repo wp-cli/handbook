@@ -7,7 +7,7 @@ Installs one or more themes.
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 &lt;theme|zip|url&gt;...
-: One or more themes to install. Accepts a theme slug, the path to a local zip file, or a URL to a remote zip file.
+: One or more themes to install. Accepts a theme slug, the path to a local zip file, a URL to a remote zip file, or a URL to a WordPress.org theme directory.
 
 [\--version=&lt;version&gt;]
 : If set, get that particular version from wordpress.org, instead of the stable version.
@@ -23,6 +23,9 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 
 [\--insecure]
 : Retry downloads without certificate validation if TLS handshake fails. Note: This makes the request vulnerable to a MITM attack.
+
+[\--slug=&lt;slug&gt;]
+: Use this as the target directory name when installing from a zip file. Cannot be used when installing multiple themes.
 
 ### EXAMPLES
 
@@ -43,6 +46,16 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     # Install from a remote zip file
     $ wp theme install http://s3.amazonaws.com/bucketname/my-theme.zip?AWSAccessKeyId=123&amp;Expires=456&amp;Signature=abcdef
 
+    # Install from a WordPress.org theme directory URL
+    $ wp theme install https://wordpress.org/themes/twentysixteen/
+    Detected WordPress.org themes directory URL, using slug: twentysixteen
+    Installing Twenty Sixteen (1.2)
+    Downloading install package from http://downloads.wordpress.org/theme/twentysixteen.1.2.zip...
+    Unpacking the package...
+    Installing the theme...
+    Theme installed successfully.
+    Success: Installed 1 of 1 themes.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -52,6 +65,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -64,3 +78,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

@@ -9,7 +9,7 @@ Display a multi-line error message in a red box. Doesn't exit script.
     WP_CLI::error_multi_line( $message_lines )
 
 <div>
-<strong>$message_lines</strong> (array) Multi-line error message to be displayed.<br />
+<strong>$message_lines</strong> (array&lt;string|\WP_Error|\Exception|\Throwable&gt;) Multi-line error message to be displayed.<br />
 </div>
 
 

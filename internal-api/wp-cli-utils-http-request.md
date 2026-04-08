@@ -13,7 +13,7 @@ Make a HTTP request to a remote URL.
 <strong>$url</strong> (string) URL to make the HTTP request to.<br />
 <strong>$data</strong> (array|null) Data to send either as a query string for GET/HEAD requests,<br />                           or in the body for POST requests.<br />
 <strong>$headers</strong> (array) Add specific headers to the request.<br />
-<strong>$options</strong> (array) {<br />    Optional. An associative array of additional request options.<br />    @type bool $halt_on_error Whether or not command execution should be halted on error. Default: true<br />    @type bool|string $verify A boolean to use enable/disable SSL verification<br />                              or string absolute path to CA cert to use.<br />                              Defaults to detected CA cert bundled with the Requests library.<br />    @type bool $insecure      Whether to retry automatically without certificate validation.<br />}<br />
+<strong>$options</strong> (array) {<br />    Optional. An associative array of additional request options.<br />    @type bool $halt_on_error Whether or not command execution should be halted on error. Default: true<br />    @type bool|string $verify A boolean to use enable/disable SSL verification<br />                              or string absolute path to CA cert to use.<br />                              Defaults to detected CA cert bundled with the Requests library.<br />    @type bool $insecure      Whether to retry automatically without certificate validation.<br />    @type int  $max_retries   Maximum number of retries of failed requests. Default 3.<br />}<br />
 <strong>@return</strong> (\Requests_Response|Response) <br />
 </div>
 

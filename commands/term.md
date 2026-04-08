@@ -2,7 +2,7 @@
 
 Manages taxonomy terms and term meta, with create, delete, and list commands.
 
-See reference for [taxonomies and their terms](https://codex.wordpress.org/Taxonomies).
+See reference for [taxonomies and their terms](https://wordpress.org/documentation/article/taxonomies).
 
 ### EXAMPLES
 
@@ -30,5 +30,10 @@ See reference for [taxonomies and their terms](https://codex.wordpress.org/Taxon
     $ wp term recount category post_tag
     Success: Updated category term count
     Success: Updated post_tag term count
+
+    # Prune terms with 0 or 1 published posts
+    $ wp term prune post_tag
+    Deleted post_tag 15.
+    Success: Pruned 1 of 5 terms.
 
 

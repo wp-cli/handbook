@@ -11,7 +11,7 @@ Use `define( 'IMPORT_DEBUG', true );` for more verbosity during importing.
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
 &lt;file&gt;...
-: Path to one or more valid WXR files for importing. Directories are also accepted.
+: Path to one or more valid WXR files for importing. Directories are also accepted. A URL to a WXR file is also accepted. Use '-' to import from STDIN.
 
 \--authors=&lt;authors&gt;
 : How the author mapping should be handled. Options are 'create', 'mapping.csv', or 'skip'. The first will create any non-existent users from the WXR file. The second will read author mapping associations from a CSV, or create a CSV for editing if the file path doesn't exist. The CSV requires two columns, and a header row like "old_user_login,new_user_login". The last option will skip any author mapping.
@@ -21,6 +21,9 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 
 [\--rewrite_urls]
 : Change all imported URLs that currently link to the previous site so that they now link to this site Requires WordPress Importer version 0.9.1 or newer.
+
+[\--importer=&lt;importer&gt;]
+: Use a custom importer class instead of the default WP_Import. The class must exist and be a subclass of WP_Import.
 
 ### EXAMPLES
 
@@ -33,6 +36,17 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     -- Imported post as post_id #1
     Success: Finished importing from 'example.wordpress.2016-06-21.xml' file.
 
+    # Import content from a WXR file via HTTP
+    $ wp import https://raw.githubusercontent.com/WordPress/theme-test-data/refs/heads/master/theme-preview.xml --authors=skip
+    Starting the import process...
+    Downloading 'https://raw.githubusercontent.com/WordPress/theme-test-data/refs/heads/master/theme-preview.xml'...
+    Success: Finished importing from 'https://raw.githubusercontent.com/WordPress/theme-test-data/refs/heads/master/theme-preview.xml' file.
+
+    # Import content from STDIN
+    $ wp export --stdout | wp import - --authors=skip
+    Starting the import process...
+    Success: Finished importing from 'STDIN' file.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -42,6 +56,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -54,3 +69,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

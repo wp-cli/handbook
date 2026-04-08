@@ -24,12 +24,6 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--extensions=&lt;extensions&gt;]
 : Additional custom JS extensions, comma separated list. By default searches for .min.js and .js extensions.
 
-[\--purge]
-: Whether to purge the strings that were extracted from the original source file. Defaults to true, use `--no-purge` to skip the removal.
-
-[\--update-mo-files]
-: Whether MO files should be updated as well after updating PO files. Only has an effect when used in combination with `--purge`.
-
 [\--pretty-print]
 : Pretty-print resulting JSON files.
 
@@ -41,8 +35,8 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     # Create JSON files for all PO files in the languages directory
     $ wp i18n make-json languages
 
-    # Create JSON files for my-plugin-de_DE.po and leave the PO file untouched.
-    $ wp i18n make-json my-plugin-de_DE.po /tmp --no-purge
+    # Create JSON files for my-plugin-de_DE.po
+    $ wp i18n make-json my-plugin-de_DE.po /tmp
 
     # Create JSON files with mapping
     $ wp i18n make-json languages --use-map=build/map.json
@@ -62,6 +56,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -74,3 +69,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |
