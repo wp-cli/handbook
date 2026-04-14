@@ -279,7 +279,10 @@ If you use [Git Bash](https://gitforwindows.org/) as your shell on Windows, the 
 ```
 #!/usr/bin/env bash
 
-dir=$(d=${0%[/\\]*}; cd "$d"; pwd)
+script_path=$(command -v "$0" 2>/dev/null || printf '%s\n' "$0")
+d=${script_path%[/\\]*}
+[ "$d" = "$script_path" ] && d=.
+dir=$(cd "$d" && pwd)
 
 # See if we are running in Cygwin by checking for cygpath program
 if command -v 'cygpath' >/dev/null 2>&1; then
