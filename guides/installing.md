@@ -292,8 +292,7 @@ if command -v 'cygpath' >/dev/null 2>&1; then
 	fi
 fi
 
-dir=$(echo $dir | sed 's/ /\ /g')
-"${dir}/wp-cli.phar" "$@"
+php "${dir}/wp-cli.phar" "$@"
 ```
 
 You can now use `wp` from Git Bash.
