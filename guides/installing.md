@@ -298,6 +298,12 @@ fi
 php "${dir}/wp-cli.phar" "$@"
 ```
 
+Then make the file executable:
+
+```
+chmod +x /c/wp-cli/wp
+```
+
 You can now use `wp` from Git Bash.
 
 ### Installing via .deb package
