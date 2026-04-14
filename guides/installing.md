@@ -272,6 +272,40 @@ Add `c:\wp-cli` to your path:
 
 You can now use WP-CLI from anywhere in Windows command line.
 
+#### Using WP-CLI with Git Bash on Windows
+
+If you use [Git Bash](https://gitforwindows.org/) as your shell on Windows, the `wp.bat` wrapper will not work. Instead, create a file named `wp` (no extension) in `c:\wp-cli` with the following contents:
+
+```
+#!/usr/bin/env bash
+
+script_path=$(command -v "$0" 2>/dev/null || printf '%s\n' "$0")
+d=${script_path%[/\\]*}
+[ "$d" = "$script_path" ] && d=.
+dir=$(cd "$d" && pwd)
+
+# See if we are running in Cygwin by checking for cygpath program
+if command -v 'cygpath' >/dev/null 2>&1; then
+	# Cygwin paths start with /cygdrive/ which will break windows PHP,
+	# so we need to translate the dir path to windows format. However
+	# we could be using cygwin PHP which does not require this, so we
+	# test if the path to PHP starts with /cygdrive/ rather than /usr/bin
+	if [[ $(which php) == /cygdrive/* ]]; then
+		dir=$(cygpath -m "$dir")
+	fi
+fi
+
+php "${dir}/wp-cli.phar" "$@"
+```
+
+Then make the file executable:
+
+```
+chmod +x /c/wp-cli/wp
+```
+
+You can now use `wp` from Git Bash.
+
 ### Installing via .deb package
 
 On Debian or Ubuntu, just download and open one of the .deb packages: <https://github.com/wp-cli/builds/tree/gh-pages/deb>
