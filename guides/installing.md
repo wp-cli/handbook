@@ -277,7 +277,7 @@ You can now use WP-CLI from anywhere in Windows command line.
 If you use [Git Bash](https://gitforwindows.org/) as your shell on Windows, the `wp.bat` wrapper will not work. Instead, create a file named `wp` (no extension) in `c:\wp-cli` with the following contents:
 
 ```
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 dir=$(d=${0%[/\\]*}; cd "$d"; pwd)
 
