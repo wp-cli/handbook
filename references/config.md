@@ -318,6 +318,52 @@ Here's an annotated example `wp-cli.yml` file:
 		# Inherit configuration from an arbitrary YAML file
 		inherit: prod.yml
 
+### HTTP proxy configuration
+
+WordPress does not automatically use proxy environment variables such as
+`http_proxy` for its HTTP API. For WordPress HTTP API requests during a WP-CLI
+run, you can load a small PHP file that defines the same proxy constants
+WordPress supports in `wp-config.php`:
+
+```yaml
+# wp-cli.yml
+require:
+  - proxy.php
+```
+
+```php
+<?php
+// proxy.php
+
+$proxy = getenv( 'HTTP_PROXY' ) ?: getenv( 'http_proxy' );
+
+if ( ! $proxy ) {
+	return;
+}
+
+$proxy_url = parse_url( $proxy );
+
+if ( is_array( $proxy_url ) ) {
+	if ( ! empty( $proxy_url['host'] ) ) {
+		define( 'WP_PROXY_HOST', $proxy_url['host'] );
+	}
+
+	if ( ! empty( $proxy_url['port'] ) ) {
+		define( 'WP_PROXY_PORT', $proxy_url['port'] );
+	}
+}
+
+$no_proxy = getenv( 'NO_PROXY' ) ?: getenv( 'no_proxy' );
+
+if ( $no_proxy ) {
+	define( 'WP_PROXY_BYPASS_HOSTS', $no_proxy );
+}
+```
+
+This configures the proxy for HTTP requests made through WordPress core during a
+WP-CLI run. HTTP requests made before WordPress has loaded may need separate
+handling.
+
 ## Remote (SSH) configuration
 
 Using the `ssh` option, WP-CLI can be configured to run on a remote system rather than the current system. Along with the SSH protocol, WP-CLI also supports connecting to Docker containers (including docker-compose) and Vagrant VMs.
