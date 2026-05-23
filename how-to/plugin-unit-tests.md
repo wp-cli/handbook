@@ -1,21 +1,25 @@
 # Plugin Integration Tests
 
-This guide demonstrates how to run integration tests on both Travis CI and locally. The scaffolding uses the WordPress Core "unit tests" that serve to unit-test WordPress Core. Unit tests are useful for testing plugins and themes as well, but if they are used in that way, it turns those tests into "integration tests" - they test the integration between a plugin/theme and WordPress Core. Proper unit tests for a plugin or theme would not load WordPress.
+This guide demonstrates how to run integration tests both in continuous integration and locally. The scaffolding uses the WordPress Core "unit tests" that serve to unit-test WordPress Core. Unit tests are useful for testing plugins and themes as well, but if they are used in that way, it turns those tests into "integration tests" - they test the integration between a plugin/theme and WordPress Core. Proper unit tests for a plugin or theme would not load WordPress.
 
-## Running tests on Travis CI
+## Running tests in continuous integration
 
-If you host your plugin on GitHub and enable [Travis CI](https://docs.travis-ci.com/), the tests will be run automatically after every commit you make to the plugin.
+The `wp scaffold plugin-tests` command generates a CircleCI configuration by default. Use `--ci=<provider>` to generate a configuration for a different supported provider, such as GitHub Actions:
+
+```bash
+wp scaffold plugin-tests my-plugin --ci=github
+```
 
 All you need to do to enable this is copy and then edit the following files from the [WP-CLI sample plugin](https://github.com/wp-cli/sample-plugin):
 
-* `.travis.yml`, `phpunit.xml.dist` and `phpcs.ruleset.xml` files
+* `.circleci/config.yml`, `phpunit.xml.dist` and `.phpcs.xml.dist` files
 * `tests` folder
 
 See the docs for an [explanation of what each file does](https://developer.wordpress.org/cli/commands/scaffold/plugin-tests/). You will then need to specify your unit tests in the `tests/` folder.
 
 ## Running tests locally
 
-Running tests locally can be beneficial during development as it is quicker than committing changes and waiting for Travis CI to run the tests.
+Running tests locally can be beneficial during development as it is quicker than committing changes and waiting for CI to run the tests.
 
 We're going to assume that:
 
@@ -35,7 +39,7 @@ See: [PHPUnit Compatibility and WordPress Versions – Make WordPress Core](http
   wp scaffold plugin-tests my-plugin
   ```
 
-This command will generate all the files needed for running tests, including a `.travis.yml` file.
+This command will generate all the files needed for running tests, including a `.circleci/config.yml` file by default. Use `--ci=<provider>` to generate a configuration for a different supported CI provider.
 
 ### 3. Initialize the testing environment locally
 
