@@ -18,7 +18,7 @@ The above command generates a new folder called `wpcli-demo-plugin` in the plugi
     | - .gitignore
     | - .editorconfig
     | - .phpcs.xml.dist
-    | - .travis.yml
+    | - .circleci/config.yml
     | - Gruntfile.js
     | - package.json
     | - phpunit.xml.dist
@@ -28,7 +28,7 @@ The above command generates a new folder called `wpcli-demo-plugin` in the plugi
 Unless you use the --skip-tests flag the following files are always generated:
 
 - `phpunit.xml.dist` is the configuration file for PHPUnit.
-- `.travis.yml` is the configuration file for Travis CI. Use `--ci=<provider>` to select a different service.
+- `.circleci/config.yml` is the configuration file for CircleCI. Use `--ci=<provider>` to select a different service.
 - `bin/install-wp-tests.sh` configures the WordPress test suite and a test database.
 - `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite.
 - `tests/test-sample.php` is a sample file containing test cases.
