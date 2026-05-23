@@ -45,7 +45,7 @@ The [WP-CLI GitHub organization](https://github.com/wp-cli) contains all project
 
 [wp-cli/wp-cli](https://github.com/wp-cli/wp-cli) is the main project repository, which pulls in command packages and other dependencies through Composer. Composer defines which version of which dependencies is included in the build. Changes to command packages are included in WP-CLI proper when a stable release is tagged for the package.
 
-Nightly Phar builds are created by a Travis job that calls [deploy.sh](https://github.com/wp-cli/wp-cli/blob/master/ci/deploy.sh) and pushes the build artifact to the [builds repository](http://github.com/wp-cli/builds). Releases are prepared manually [in accordance to the release checklist](https://make.wordpress.org/cli/handbook/release-checklist/).
+Build artifacts are published to the [builds repository](https://github.com/wp-cli/builds). Releases are prepared manually [in accordance with the release checklist](https://make.wordpress.org/cli/handbook/release-checklist/).
 
 The `wp-cli.org` domain is currently owned by [andreascreten](https://github.com/andreascreten). DNS is managed through a [Cloudflare](https://www.cloudflare.com/) account that [danielbachhuber](https://github.com/danielbachhuber) holds credentials to.
 
