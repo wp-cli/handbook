@@ -65,7 +65,7 @@ NOTE: This script can be run multiple times without errors, but it will *not* ov
 phpunit
 ```
 
-If you have trouble running the install script or PHPUnit, check [Support section](http://wp-cli.org/#support) for help and answers to common issues.
+If you have trouble running the install script or PHPUnit, check the [common issues guide](https://make.wordpress.org/cli/handbook/guides/common-issues/) for help and answers to common issues.
 
 ## Integrating WP Unit Testing in Windows
 
