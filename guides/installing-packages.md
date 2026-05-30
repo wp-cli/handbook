@@ -8,7 +8,7 @@ To find existing packages to install, take a look at [Packagist](https://packagi
 
 Use the `wp package install` command to install a package. Packages can be specified as:
 
-* Package name from WP-CLI's package index
+* Composer package name
 * Git URL accessible by the current shell user
 * Path to a directory on the local machine
 * Local or remote .zip file
