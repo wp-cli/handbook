@@ -64,7 +64,7 @@ The labels that defined what state a given issue/pull request is in are prefixed
 Used states:
 
 * `state:unconfirmed` - The bug/problem in the issue could not be replicated yet or might be related to the reporter's environment.
-* `state:unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](http://wp-cli.org/#support).
+* `state:unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](https://make.wordpress.org/cli/handbook/support/).
 
 #### Command
 

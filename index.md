@@ -4,6 +4,10 @@ Here are some helpful guides and resources for using WP-CLI.
 
 Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cli/handbook/issues) to request improvements.
 
+## Support
+
+* **[Support](https://make.wordpress.org/cli/handbook/support/)** - Search existing resources, ask a question, or report a reproducible bug.
+
 ## Guides
 
 ### For users

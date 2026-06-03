@@ -479,6 +479,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/shell-friends.md",
         "parent": "references"
     },
+    "support": {
+        "title": "Support",
+        "slug": "support",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/support.md",
+        "parent": null
+    },
     "then-an-email-should-be-sent-not-be-sent": {
         "title": "Then \/^an email should (be sent|not be sent)$\/",
         "slug": "then-an-email-should-be-sent-not-be-sent",
