@@ -48,6 +48,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Pull requests](https://make.wordpress.org/cli/handbook/contributions/pull-requests/)** - Submit your first bug fix or new feature.
 * **[Release checklist](https://make.wordpress.org/cli/handbook/contributions/release-checklist/)** - Tasks performed during the process of tagging a release.
 * **[Roadmap](https://make.wordpress.org/cli/handbook/contributions/roadmap/)** - Where WP-CLI is going in the future.
+* **[Security Vulnerability Reporting](https://make.wordpress.org/cli/handbook/contributions/security-vulnerability-reporting/)** - How we accept and evaluate vulnerability reports.
 * **[Code Review](https://make.wordpress.org/cli/handbook/contributions/code-review/)** - Quality Assurance on WP-CLI
 * **[Committers credo](https://make.wordpress.org/cli/handbook/contributions/committers-credo/)** - Product quality, Stellar judgement, Consistent participation
 * **[Repository Management](https://make.wordpress.org/cli/handbook/contributions/repository-management/)** - Naming, Versions, Milestones, Labels
