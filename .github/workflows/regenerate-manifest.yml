@@ -57,7 +57,7 @@ jobs:
             git checkout -b update-handbook-manifest
             git add bin/handbook-manifest.json
             git commit -m "Regenerate handbook manifest"
-            git push -f origin update-handbook-manifest
+            git push --force-with-lease origin update-handbook-manifest
             
             PR_NUMBER=$(gh pr list --head update-handbook-manifest --json number --jq '.[0].number // empty')
             if [ -z "$PR_NUMBER" ]; then
