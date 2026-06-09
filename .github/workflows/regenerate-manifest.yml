@@ -49,7 +49,7 @@ jobs:
           PR_BODY: |
             **This is an automated pull-request**
 
-            Updates the `handbook-manifest.json` file with the latest changes.
+            Updates the `bin/handbook-manifest.json` file with the latest changes.
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
