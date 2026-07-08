@@ -1,0 +1,37 @@
+{
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.autoLockGroups": {
+        "workbench.input.interactive": true,
+        "vscode.markdown.editor": true,
+        "imagePreview.previewEditor": true,
+        "vscode.videoPreview": true,
+        "vscode.audioPreview": true,
+        "workbench.editors.gettingStartedInput": true,
+        "repl": true,
+        "jupyter-notebook": true,
+        "notebookOutputEditor": true,
+        "mainThreadWebview-markdown.preview": true,
+        "default": true,
+        "workbench.editor.chatDebug": true,
+        "workbench.editorinputs.searchEditorInput": true,
+        "workbench.editor.chatSession": true,
+        "agentSessionsWelcomePage": true
+    },
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "workbench.editor.defaultBinaryEditor": "workbench.editors.gettingStartedInput",
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showTabIndex": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.markdownDefaultEditorInAgentsWindow": true,
+    "workbench.diffEditorAssociations": {
+        "ciaramgsdsden": "default"
+    }
+}
