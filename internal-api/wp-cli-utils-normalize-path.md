@@ -23,6 +23,7 @@ and forces upper-case drive letters.
 Allows for two leading slashes for Windows network shares, but
 ensures that all other duplicate slashes are reduced to a single one.
 Ensures upper-case drive letters on Windows systems.
+Allows for PHP file wrappers.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
@@ -40,6 +41,9 @@ Ensures upper-case drive letters on Windows systems.
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-trailingslashit/">WP_CLI\Utils\trailingslashit()</a></strong> - Appends a trailing slash.</li>
+
+
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-is-stream/">WP_CLI\Utils\is_stream()</a></strong> - Check if a path is a PHP stream URL.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-get-temp-dir/">WP_CLI\Utils\get_temp_dir()</a></strong> - Get the system's temp directory. Warns user if it isn't writable.</li>

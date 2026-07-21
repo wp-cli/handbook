@@ -37,6 +37,9 @@ Environment values permit specific binaries to be indicated.
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-trailingslashit/">WP_CLI\Utils\trailingslashit()</a></strong> - Appends a trailing slash.</li>
 
 
+<li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-is-stream/">WP_CLI\Utils\is_stream()</a></strong> - Check if a path is a PHP stream URL.</li>
+
+
 <li><strong><a href="https://make.wordpress.org/cli/handbook/internal-api/wp-cli-utils-normalize-path/">WP_CLI\Utils\normalize_path()</a></strong> - Normalize a filesystem path.</li>
 
 

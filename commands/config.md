@@ -29,6 +29,14 @@ Generates and reads the wp-config.php file.
     $ wp config get table_prefix
     wp_
 
+    # Add a new constant to the wp-config.php file.
+    $ wp config add WP_DEBUG true --raw
+    Success: Added the constant 'WP_DEBUG' to the 'wp-config.php' file with the raw value 'true'.
+
+    # Update or add a constant to the wp-config.php file.
+    $ wp config update WP_DEBUG false --raw
+    Success: Updated the constant 'WP_DEBUG' in the 'wp-config.php' file with the raw value 'false'.
+
     # Set the WP_DEBUG constant to true.
     $ wp config set WP_DEBUG true --raw
     Success: Updated the constant 'WP_DEBUG' in the 'wp-config.php' file with the raw value 'true'.

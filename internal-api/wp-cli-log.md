@@ -6,10 +6,11 @@ Display informational message without prefix.
 
 ## Usage
 
-    WP_CLI::log( $message )
+    WP_CLI::log( $message, $newline = true )
 
 <div>
 <strong>$message</strong> (string) Message to write to STDOUT.<br />
+<strong>$newline</strong> (bool) Optional. Whether to append a newline to the end of the message. Default true.<br />
 </div>
 
 

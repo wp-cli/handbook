@@ -10,6 +10,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : Path to file or files to be imported. Supports the glob(3) capabilities of the current shell.
     If file is recognized as a URL (for example, with a scheme of http or ftp), the file will be
     downloaded to a temp file before being sideloaded.
+    Use '-' to read file data from STDIN.
 
 [\--post_id=&lt;post_id&gt;]
 : ID of the post to attach the imported files to.
@@ -33,13 +34,19 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : "Description" field (post content) of attachment post.
 
 [\--skip-copy]
-: If set, media files (local only) are imported to the library but not moved on disk. File names will not be run through wp_unique_filename() with this set.
+: If set, media files (local only) are imported to the library but not moved on disk. File names will not be run through wp_unique_filename() with this set. When used, files will remain at their current location and will not be copied into any destination directory.
+
+[\--destination-dir=&lt;destination-dir&gt;]
+: Path to the destination directory for uploaded imported files. Can be absolute or relative to ABSPATH. Ignored when used together with --skip-copy, as files are not moved on disk in that case.
 
 [\--preserve-filetime]
 : Use the file modified time as the post published &amp; modified dates. Remote files will always use the current time.
 
 [\--featured_image]
 : If set, set the imported image as the Featured Image of the post it is attached to.
+
+[\--skip-duplicates]
+: If set, media files that have already been imported will be skipped.
 
 [\--porcelain[=&lt;field&gt;]]
 : Output a single field for each imported image. Defaults to attachment ID when used as flag.
@@ -78,6 +85,11 @@ options:
     $ wp media import http://s.wordpress.org/style/images/wp-header-logo.png --porcelain | xargs -I {} wp post list --post__in={} --field=url --post_type=attachment
     http://wordpress-develop.dev/wp-header-logo/
 
+    # Import an image from STDIN.
+    $ curl http://example.com/image.jpg | wp media import - --title="From STDIN"
+    Imported file 'STDIN' as attachment ID 1756.
+    Success: Imported 1 of 1 items.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -87,6 +99,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -99,3 +112,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

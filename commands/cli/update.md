@@ -12,6 +12,8 @@ Use `--nightly` to install the latest built version of the master branch. While 
 
 Only works for the Phar installation mechanism.
 
+Unauthenticated requests to the GitHub API are rate limited to 60 per hour per IP address. If you are experiencing rate limit issues, you can generate a GitHub personal access token and set the GITHUB_TOKEN environment variable before running this command. Authenticated requests have a higher rate limit of 5,000 per hour. The token only needs public repository read access (no specific scopes required for public data).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -46,6 +48,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     New version works. Proceeding to replace.
     Success: Updated WP-CLI to 0.24.1.
 
+    # Update CLI using a GitHub token to increase rate limit.
+    $ GITHUB_TOKEN=ghp_... wp cli update
+    You are currently using WP-CLI version 0.24.0. Would you like to update to 0.24.1? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.24.1/wp-cli-0.24.1.phar...
+    New version works. Proceeding to replace.
+    Success: Updated WP-CLI to 0.24.1.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -55,6 +64,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -67,3 +77,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |
