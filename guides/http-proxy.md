@@ -60,6 +60,8 @@ http-proxy:
     - "*.example.com"
 ```
 
+> Warning: Do not commit proxy credentials to source control. Use an untracked configuration file (for example `wp-cli.local.yml`), restrict file permissions, or inject credentials through your deployment environment.
+
 ### Using Environment Variables
 
 By default, proxy environment variables are not read automatically. To opt into reading proxy settings from your environment variables, set `env: true`:
@@ -69,12 +71,14 @@ http-proxy:
   env: true
 ```
 
-When `env: true` is set, the package checks the following environment variables in order:
+When `env: true` is set, the package selects the **first non-empty** environment variable from this list and applies **one global proxy** for all requests:
 
 1. `HTTPS_PROXY`
 2. `https_proxy`
 3. `HTTP_PROXY`
 4. `http_proxy`
+
+This differs from libcurl, which can use separate proxies per scheme (for example `http_proxy` for HTTP and `https_proxy` for HTTPS) and honors `NO_PROXY` / `no_proxy` for bypass rules. This package does **not** read `NO_PROXY` or `no_proxy`. If you rely on bypass rules from your environment, map those entries to `bypass-hosts` in your configuration instead.
 
 ### Diagnostic Commands
 
@@ -138,18 +142,22 @@ if ( ! is_array( $proxy_url ) || empty( $proxy_url['host'] ) ) {
 	return;
 }
 
-define( 'WP_PROXY_HOST', $proxy_url['host'] );
+$proxy_port = ! empty( $proxy_url['port'] ) ? (int) $proxy_url['port'] : null;
 
-if ( ! empty( $proxy_url['port'] ) ) {
-	define( 'WP_PROXY_PORT', $proxy_url['port'] );
+if ( null === $proxy_port ) {
+	$scheme = ! empty( $proxy_url['scheme'] ) ? $proxy_url['scheme'] : 'http';
+	$proxy_port = ( 'https' === $scheme ) ? 443 : 80;
 }
 
+define( 'WP_PROXY_HOST', $proxy_url['host'] );
+define( 'WP_PROXY_PORT', $proxy_port );
+
 if ( ! empty( $proxy_url['user'] ) ) {
-	define( 'WP_PROXY_USERNAME', $proxy_url['user'] );
+	define( 'WP_PROXY_USERNAME', rawurldecode( $proxy_url['user'] ) );
 }
 
 if ( ! empty( $proxy_url['pass'] ) ) {
-	define( 'WP_PROXY_PASSWORD', $proxy_url['pass'] );
+	define( 'WP_PROXY_PASSWORD', rawurldecode( $proxy_url['pass'] ) );
 }
 
 if ( ! defined( 'WP_PROXY_BYPASS_HOSTS' ) ) {
@@ -163,6 +171,17 @@ if ( ! defined( 'WP_PROXY_BYPASS_HOSTS' ) ) {
 require:
   - proxy.php
 ```
+
+Alternatively, when creating a new WordPress install, you can embed proxy constants in `wp-config.php` using `wp config create --extra-php`:
+
+```bash
+wp config create --dbname=example --dbuser=root --dbpass=secret --extra-php <<'PHP'
+define( 'WP_PROXY_HOST', 'proxy.example.com' );
+define( 'WP_PROXY_PORT', 8080 );
+PHP
+```
+
+This `extra-php` approach only applies to the generated `wp-config.php` at install time. It does not configure WP-CLI's own HTTP requests and is not suitable for existing installs unless you add the constants manually.
 
 > Note: This manual approach sets the constants used by WordPress core HTTP requests after WordPress loads, but does not automatically route WP-CLI's pre-bootstrap or standalone HTTP requests (such as `wp package` commands). For complete proxy coverage across all WP-CLI operations, use the [`ekamran/wp-cli-http-proxy-command`](https://github.com/ekamran/wp-cli-http-proxy-command) package.
 
