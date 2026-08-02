@@ -358,6 +358,10 @@ By default, the `--context` flag was set to `cli` in the initial release (v2.6.0
 
 If you are still using WP-CLI v2.6.0 but you want to use the default of `--context=auto`, you can do so by adding the necessary `context: auto` line to your global `wp-cli.yml` configuration file. Feel free to check the documentation on [WP-CLI configuration files](#config-files) if this is new to you.
 
+## HTTP proxy configuration
+
+WP-CLI does not automatically read or trust proxy environment variables such as `HTTP_PROXY` or `HTTPS_PROXY`. To route outbound HTTP/HTTPS requests through a proxy, see the [HTTP Proxy Configuration](https://make.wordpress.org/cli/handbook/guides/http-proxy/) guide.
+
 ## Environment variables
 
 WP-CLI's behavior can be changed at runtime through the use of environment variables:
