@@ -17,8 +17,8 @@
       ]
     },
     "require-dev": {
-        "wp-cli/wp-cli": "^2.13",
-        "wp-cli/wp-cli-tests": "^5.0.3"
+        "wp-cli/wp-cli": "^3.0",
+        "wp-cli/wp-cli-tests": "^5.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
