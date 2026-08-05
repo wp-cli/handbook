@@ -194,7 +194,7 @@ See also: [#4714](https://github.com/wp-cli/wp-cli/issues/4714)
 
 On Windows, `wp` is a `.bat` wrapper around `php wp-cli.phar`. Batch files terminate a command at a newline, including a newline inside a quoted argument, because `cmd.exe` splits the line before quoting is evaluated.
 
-Any flags positioned after the multi-line value never reach WP-CLI. The command still succeeds with the arguments it did receive, so there is no error — WordPress silently applies its defaults for the missing values. In the example below the post is created, but as a draft under Uncategorized and authored by the default user, because `--post_category`, `--post_author` and `--post_status` were all dropped:
+Any flags positioned after the multi-line value never reach WP-CLI. The command still succeeds with the arguments it did receive, so there is no error — WordPress silently applies its defaults for the missing values. In the example below the post is created, but as a draft under the site's default category and attributed to the current user, because `--post_category`, `--post_author` and `--post_status` were all dropped:
 
     wp post create --post_status=publish --post_content="<multi-line content>" --post_category=3 --post_author=2
 
