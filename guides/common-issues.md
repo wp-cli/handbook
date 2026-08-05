@@ -200,7 +200,7 @@ Any flags positioned after the multi-line value never reach WP-CLI. The command 
 
 Pass the content over `STDIN` instead, using `-` as the positional argument. The newline then lives in the piped stream rather than in the command line, so nothing is truncated:
 
-    cat content.html | wp post create - --post_status=publish --post_category=3 --post_author=2
+    type content.html | wp post create - --post_status=publish --post_category=3 --post_author=2
 
 The same applies in PowerShell:
 
