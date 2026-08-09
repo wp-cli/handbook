@@ -190,6 +190,25 @@ Using UTF-8 in PHP arguments doesn't work on Windows for PHP <= 7.0, however it 
 
 See also: [#4714](https://github.com/wp-cli/wp-cli/issues/4714)
 
+### Arguments containing newlines are truncated on Windows
+
+On Windows, `wp` is a `.bat` wrapper around `php wp-cli.phar`. Batch files terminate a command at a newline, including a newline inside a quoted argument, because `cmd.exe` splits the line before quoting is evaluated.
+
+Any flags positioned after the multi-line value never reach WP-CLI. The command still succeeds with the arguments it did receive, so there is no error — WordPress silently applies its defaults for the missing values. In the example below the post is created, but as a draft under the site's default category and attributed to the current user, because everything after `--post_content` (`--post_category`, `--post_author` and `--post_status`) was dropped:
+
+    wp post create --post_content="<multi-line content>" --post_category=3 --post_author=2 --post_status=publish
+Pass the content over `STDIN` instead, using `-` as the positional argument. The newline then lives in the piped stream rather than in the command line, so nothing is truncated:
+
+    type content.html | wp post create - --post_status=publish --post_category=3 --post_author=2
+
+The same applies in PowerShell:
+
+    $content | wp post create - --post_status=publish --post_category=3 --post_author=2
+
+`wp post create` and `wp post update` also accept a file path in place of `-`.
+
+See also: [#2712](https://github.com/wp-cli/wp-cli/issues/2712)
+
 ### The installation hangs
 
 If the installation seems to hang forever while trying to clone the resources from GitHub, please ensure that you are allowed to connect to Github using SSL (port 443) and Git (port 9418) for outbound connections.
