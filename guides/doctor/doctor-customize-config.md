@@ -1,6 +1,6 @@
 # Customize doctor diagnostic checks
 
-Even though `wp doctor` comes with a [number of default diagnostic checks](https://make.wordpress.org/cli/handbook/doctor-default-checks/), it's designed with extensibility at its core. Checks are defined at runtime, read from a `doctor.yml` configuration file naming each check with its options.
+Even though `wp doctor` comes with a [number of default diagnostic checks](https://make.wordpress.org/cli/handbook/guides/doctor/doctor-default-checks/), it's designed with extensibility at its core. Checks are defined at runtime, read from a `doctor.yml` configuration file naming each check with its options.
 
 ## doctor.yml format
 
@@ -21,7 +21,7 @@ In this example:
 *   `Autoload_Options_Size` and `Constant_Definition` are reusable check classes in the `runcommand\Doctor\Checks` namespace. You can use them too, or you can write your own class extending `runcommand\Doctor\Checks\Check` and supply it as 'class: yourNamespace\\yourClassName'.
 *   'constant' and 'falsy' are configuration options accepted by the `Constant_Definition` class. In this case, we're telling doctor to ensure `SAVEQUERIES` is either false or undefined.
 
-For the sake of completeness, it's also worth noting `Autoload_Options_Size` accepts 'threshold\_kb' as an optional configuration option. The default value for 'threshold\_kb' is 900, so it doesn't needed be included in the `doctor.yml`.
+For the sake of completeness, it's also worth noting `Autoload_Options_Size` accepts 'threshold\_kb' as an optional configuration option. The default value for 'threshold\_kb' is 900, so it doesn't need to be included in the `doctor.yml`.
 
 ## Custom doctor.yml configuration files
 
@@ -40,7 +40,7 @@ Take a look at this example:
       options:
         constant: DISALLOW_FILE_MODS
         falsy: true
-    plugin-akismet-active
+    plugin-akismet-active:
       check: Plugin_Status
       options:
         plugin: akismet

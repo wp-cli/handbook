@@ -113,7 +113,7 @@ This also means functions and methods not listed here are considered part of the
 
 EOT;
 
-		self::empty_dir( self::get_handbook_path() . '/internal-api/' );
+		self::empty_dir( self::get_handbook_path() . '/references/internal-api/' );
 
 		foreach ( $categories as $name => $apis ) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
@@ -137,9 +137,8 @@ EOT;
 				$api['related']     = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
 
-				// @phpstan-ignore argument.type
 				$api_doc = self::render( 'internal-api.mustache', $api );
-				$path    = self::get_handbook_path() . "/internal-api/{$api['api_slug']}.md";
+				$path    = self::get_handbook_path() . "/references/internal-api/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
 					mkdir( dirname( $path ) );
 				}
@@ -148,7 +147,7 @@ EOT;
 			$out .= PHP_EOL . PHP_EOL;
 		}
 
-		file_put_contents( self::get_handbook_path() . '/internal-api.md', $out );
+		file_put_contents( self::get_handbook_path() . '/references/internal-api.md', $out );
 		WP_CLI::success( 'Generated internal-api/' );
 	}
 
@@ -191,7 +190,7 @@ WP-CLI makes use of a Behat-based testing framework and provides a set of custom
 
 EOT;
 
-		self::empty_dir( self::get_handbook_path() . '/behat-steps/' );
+		self::empty_dir( self::get_handbook_path() . '/references/behat-steps/' );
 
 		foreach ( $categories as $name => $apis ) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
@@ -215,9 +214,8 @@ EOT;
 				$api['related']     = array_values( $api['related'] );
 				$api['has_related'] = ! empty( $api['related'] );
 
-				// @phpstan-ignore argument.type
 				$api_doc = self::render( 'behat-steps.mustache', $api );
-				$path    = self::get_handbook_path() . "/behat-steps/{$api['api_slug']}.md";
+				$path    = self::get_handbook_path() . "/references/behat-steps/{$api['api_slug']}.md";
 				if ( ! is_dir( dirname( $path ) ) ) {
 					mkdir( dirname( $path ) );
 				}
@@ -226,7 +224,7 @@ EOT;
 			$out .= PHP_EOL . PHP_EOL;
 		}
 
-		file_put_contents( self::get_handbook_path() . '/behat-steps.md', $out );
+		file_put_contents( self::get_handbook_path() . '/references/behat-steps.md', $out );
 		WP_CLI::success( 'Generated behat-steps/' );
 	}
 
@@ -872,7 +870,7 @@ EOT;
 
 	/**
 	 * @param string $path
-	 * @param array<string, array<int, array<string, array<string, mixed>|string>>> $binding
+	 * @param array<string, mixed> $binding
 	 */
 	private static function render( string $path, $binding ): string {
 		$m        = new Mustache_Engine();

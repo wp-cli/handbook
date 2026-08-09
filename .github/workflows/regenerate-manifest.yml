@@ -1,17 +1,22 @@
-name: Regenerate Handbook
+name: Regenerate Manifest
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [regenerate-handbook]
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  regenerate:
-    name: Regenerate handbook
+  regenerate-manifest:
+    name: Regenerate manifest
     runs-on: ubuntu-latest
     steps:
       - name: Check out source code
@@ -33,13 +38,9 @@ jobs:
           sudo mv wp-cli-nightly.phar /usr/local/bin/wp
           sudo chmod +x /usr/local/bin/wp
 
-      - name: Install non-bundled packages
-        run: bash bin/install_packages.sh
-
-      - name: Generate handbook
-        run: wp handbook gen-all
+      - name: Generate handbook manifest
+        run: wp handbook gen-hb-manifest
         env:
-          WP_CLI_PACKAGES_DIR: bin/packages
           WP_CLI_CONFIG_PATH: /dev/null
 
       - name: Commit and Create Pull Request
@@ -48,34 +49,30 @@ jobs:
           PR_BODY: |
             **This is an automated pull-request**
 
-            Updates the built Markdown pages with the latest changes.
+            Updates the `bin/handbook-manifest.json` file with the latest changes.
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git checkout -b update-handbook
-            git add .
-            git commit -m "Regenerate handbook"
-            git push -f origin update-handbook
+            git checkout -b update-handbook-manifest
+            git add bin/handbook-manifest.json
+            git commit -m "Regenerate handbook manifest"
+            git push --force-with-lease origin update-handbook-manifest
             
-            PR_NUMBER=$(gh pr list --head update-handbook --json number --jq '.[0].number // empty')
+            PR_NUMBER=$(gh pr list --head update-handbook-manifest --json number --jq '.[0].number // empty')
             if [ -z "$PR_NUMBER" ]; then
               gh pr create \
-                --title "Update handbook" \
+                --title "Update handbook manifest" \
                 --body "$PR_BODY" \
                 --label "scope:distribution" \
                 --base "${{ github.event.repository.default_branch }}" \
-                --head "update-handbook" \
+                --head "update-handbook-manifest" \
                 --reviewer "swissspidy"
             else
               gh pr edit "$PR_NUMBER" \
-                --title "Update handbook" \
+                --title "Update handbook manifest" \
                 --body "$PR_BODY" \
                 --add-label "scope:distribution" \
                 --base "${{ github.event.repository.default_branch }}"
             fi
-
           fi
-
-
-

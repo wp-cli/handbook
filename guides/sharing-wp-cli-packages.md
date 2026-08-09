@@ -23,16 +23,7 @@ First, create your Composer project.
 
     $ mkdir /usr/local/lib/wp-cli-packages
     $ cd /usr/local/lib/wp-cli-packages
-    $ composer init -n --name=runcommand/wp-cli-packages -s=dev --repository=https://wp-cli.org/package-index/
-    $ composer require runcommand/hook
-    Using version dev-master for runcommand/hook
-    ./composer.json has been updated
-    Loading composer repositories with package information
-    Updating dependencies (including require-dev)
-      - Installing runcommand/hook (dev-master 7a7beae)
-        Cloning 7a7beae2013eeea243cc44524a7c5c21da11979e
-
-    Writing lock file
-    Generating autoload files
+    $ composer init -n --name=runcommand/wp-cli-packages -s=dev
+    $ composer require wp-cli/server-command
 
 Now, once your Composer project has a dependency or two, you can use `wp --require=<path/to/autoload>` (or the equivalent `config.yml` statement) to load the packages into WP-CLI.

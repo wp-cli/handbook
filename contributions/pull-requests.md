@@ -98,7 +98,7 @@ Once you've done so, you'll have a fork in your GitHub account and a new remote 
 
 There are three types of automated tests:
 
-* code style sniffers, implemented using [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer)
+* code style sniffers, implemented using [PHPCS](https://github.com/PHPCSStandards/PHP_CodeSniffer)
 * functional tests, implemented using [Behat](http://behat.org)
 * unit tests, implemented using [PHPUnit](http://phpunit.de/)
 

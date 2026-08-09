@@ -144,6 +144,7 @@ wp help plugin install
 
 If the built-in help isn't enough, these resources can help:
 
+- **[WP-CLI Support](https://make.wordpress.org/cli/handbook/support/)** — Search existing resources, ask a question, or report a reproducible bug.
 - **[WP-CLI Handbook](https://make.wordpress.org/cli/handbook/)** — The full reference documentation.
 - **[GitHub Issues](https://github.com/wp-cli/wp-cli/issues)** — Report bugs or search for known problems.
 - **[WordPress.org Support Forums](https://wordpress.org/support/)** — General WordPress help from the community.

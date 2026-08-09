@@ -8,7 +8,7 @@ WP-CLI's goal is to offer a complete alternative to the WordPress admin; for any
 
 _But_, the WordPress admin is a Swiss Army knife of infinite complexity. There's no way just this project could handle every use case. This is why WP-CLI includes a set of [common internal commands](https://developer.wordpress.org/cli/commands/), while also offering a [rich internal API](https://make.wordpress.org/cli/handbook/internal-api/) for third-parties to write and register their own commands.
 
-WP-CLI commands can be [distributed as standalone packages](https://wp-cli.org/package-index/), or bundled with WordPress plugins or themes. For the former, you can use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) to dynamically generate everything but the command itself.
+WP-CLI commands can be distributed as standalone packages, or bundled with WordPress plugins or themes. Standalone packages can be published as Composer packages and discovered through [Packagist](https://packagist.org/?type=wp-cli-package). You can use `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)) to dynamically generate everything but the command itself.
 
 Packages are to WP-CLI as plugins are to WordPress. There are distinct differences in the approach you should take to creating a WP-CLI package.  While WP-CLI is an ever-growing alternative to /wp-admin it is important to note that you must first write your package to work with the WP-CLI internal API before considering how you work with WordPress APIs.
 
@@ -24,7 +24,7 @@ Third-party commands:
 
 * Can be defined in plugins or themes.
 * Can be easily scaffolded as standalone projects with `wp scaffold package` ([repo](https://github.com/wp-cli/scaffold-package-command)).
-* Can be distributed independent of a plugin or theme in the [Package Index](https://wp-cli.org/package-index/).
+* Can be distributed independent of a plugin or theme as Composer packages, Git repositories, local paths, or ZIP files.
 
 All commands:
 

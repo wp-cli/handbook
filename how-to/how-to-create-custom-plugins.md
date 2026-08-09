@@ -11,24 +11,18 @@ The following command uses several options to lets us specify the plugin slug, i
     Success: Created test files.
 ```
 
-The above command generates a new folder called `wpcli-demo-plugin` in the plugins directory, with the following files structure.
+The above command generates a new folder called `wpcli-demo-plugin` in the plugins directory, with files such as:
 
-    | - bin/
-    | - tests/
-    | - .gitignore
-    | - .editorconfig
-    | - .phpcs.xml.dist
-    | - .travis.yml
-    | - Gruntfile.js
-    | - package.json
-    | - phpunit.xml.dist
-    | - readme.txt
-    | - wpcli-demo-plugin.php
+- `wpcli-demo-plugin.php`
+- `readme.txt`
+- `package.json`
+- `.gitignore`
+- `.editorconfig`
 
-Unless you use the --skip-tests flag the following files are always generated:
+Unless you use the --skip-tests flag, test-related files are generated too. These include:
 
 - `phpunit.xml.dist` is the configuration file for PHPUnit.
-- `.travis.yml` is the configuration file for Travis CI. Use `--ci=<provider>` to select a different service.
+- A CI configuration file. Use `--ci=<provider>` to select a supported CI provider.
 - `bin/install-wp-tests.sh` configures the WordPress test suite and a test database.
 - `tests/bootstrap.php` is the file that makes the current plugin active when running the test suite.
 - `tests/test-sample.php` is a sample file containing test cases.
