@@ -101,6 +101,7 @@ In alphabetical order:
 * [YouStable](https://www.youstable.com/)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/)
+* [ZEROLAG](https://zerolag.ro/)
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 
