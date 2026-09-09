@@ -19,6 +19,8 @@ WP-CLI offers the command `wp --info`, which provides you with a lot of informat
 
 Before you start to debug issues, make sure you are using the latest version of WP-CLI. The latest version may already have solved an issue you experience. The command `wp cli update` will upgrade your WP-CLI version or confirm you already use the latest version. If the installation hangs, please ensure that you are allowed to connect to GitHub using SSL (port 443) and git (port 9418) for outbound connections.
 
+If you are behind a corporate firewall or HTTP proxy, WP-CLI does not automatically use `HTTP_PROXY` or `HTTPS_PROXY` environment variables. See the [HTTP Proxy Configuration](https://make.wordpress.org/cli/handbook/guides/http-proxy/) guide for setup instructions.
+
 ### What should I do if the WP-CLI output is different than expected?
 
 Before starting to investigate a bug, you should be aware of the factors that can change the default behavior of WP-CLI and how you can check whether they might be at the root of the issue. There are five main subsystems for modifying this default behavior: environment variables, configuration files, WP-CLI packages, `wp-config.php` file and WordPress extensions (plugins, themes, must-use plugins, drop-ins).
