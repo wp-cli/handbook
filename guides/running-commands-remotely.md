@@ -193,7 +193,7 @@ The solution: On the remote configure `~/.bashrc` like this:
   - `alias wp="php ~/bin/wp"`
   - or
   - `alias wp="php ~/bin/wp-cli.phar"`
-- In other words: You have an alias "wp" which is a one liner where php runs the WP-CLI binary by stating the path to the `wpi-cli.phar` file, wherever it may be, under whatever name it may have.
+- In other words: You have an alias "wp" which is a one liner where php runs the WP-CLI binary by stating the path to the `wp-cli.phar` file, wherever it may be, under whatever name it may have.
   - `php` is allowed on basically any webhost.
   - And the `wp-cli.phar` file itself must not even have the execute flag set (="can be entirely passive"), as formally the file gets run (=interpreted) by `php`. **Note:** An executable `~/bin/wp` file (the renamed `wp-cli.phar` with an execute flag) of course also gets run by the `php` interpreter eventually. But the invocation in the shell is formally different. And that is what makes the crucial difference here.
 
