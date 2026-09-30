@@ -13,12 +13,14 @@ use WP_CLI\Utils;
 /**
  * @when before_wp_load
  */
-class Handbook_Command {
+class Handbook_Command
+{
 	/**
 	 * @return string
 	 */
-	protected static function get_handbook_path() {
-		return dirname( __DIR__ );
+	protected static function get_handbook_path()
+	{
+		return dirname(__DIR__);
 	}
 
 	/**
@@ -35,38 +37,40 @@ class Handbook_Command {
 	 * @param array{verbose?: bool}    $assoc_args Associative arguments.
 	 * @return void
 	 */
-	public function gen_all( $args, $assoc_args ) {
+	public function gen_all($args, $assoc_args)
+	{
 		// Warn if not invoked with null WP_CLI_CONFIG_PATH.
-		if ( '/dev/null' !== getenv( 'WP_CLI_CONFIG_PATH' ) ) {
-			WP_CLI::warning( "Should be invoked on the target WP-CLI with 'WP_CLI_CONFIG_PATH=/dev/null'." );
+		if ('/dev/null' !== getenv('WP_CLI_CONFIG_PATH')) {
+			WP_CLI::warning("Should be invoked on the target WP-CLI with 'WP_CLI_CONFIG_PATH=/dev/null'.");
 		}
 
 		self::gen_api_docs();
 		self::gen_behat_docs();
-		self::gen_commands( $args, $assoc_args );
+		self::gen_commands($args, $assoc_args);
 		self::gen_commands_manifest();
 		self::gen_hb_manifest();
-		WP_CLI::success( 'Generated all doc pages.' );
+		WP_CLI::success('Generated all doc pages.');
 	}
 
-	private function prepare_api_slug( string $full_name ): string {
+	private function prepare_api_slug(string $full_name): string
+	{
 		$replacements = [
 			'\\w+' => '',
-			'\\s'  => '',
-			'\\d'  => '',
-			'a-z'  => '',
-			's?'   => '',
-			'::'   => '-',
-			'_'    => '-',
-			'\\'   => '-',
-			' '    => '-',
-			'.'    => '-',
-			'|'    => '-',
+			'\\s' => '',
+			'\\d' => '',
+			'a-z' => '',
+			's?' => '',
+			'::' => '-',
+			'_' => '-',
+			'\\' => '-',
+			' ' => '-',
+			'.' => '-',
+			'|' => '-',
 		];
-		$full_name    = strtolower( str_replace( array_keys( $replacements ), array_values( $replacements ), $full_name ) );
-		$full_name    = preg_replace( '/[^a-zA-Z0-9-]/', '', $full_name );
-		$full_name    = preg_replace( '/-+/', '-', $full_name );
-		$full_name    = trim( $full_name, '-' );
+		$full_name = strtolower(str_replace(array_keys($replacements), array_values($replacements), $full_name));
+		$full_name = preg_replace('/[^a-zA-Z0-9-]/', '', $full_name);
+		$full_name = preg_replace('/-+/', '-', $full_name);
+		$full_name = trim($full_name, '-');
 		return $full_name;
 	}
 
@@ -77,25 +81,28 @@ class Handbook_Command {
 	 *
 	 * @return void
 	 */
-	public function gen_api_docs() {
+	public function gen_api_docs()
+	{
 		$apis = $this->get_internal_apis();
 
 		$categories = [
 			'Registration' => [],
-			'Output'       => [],
-			'Input'        => [],
-			'Execution'    => [],
-			'System'       => [],
-			'Misc'         => [],
+			'Output' => [],
+			'Input' => [],
+			'Execution' => [],
+			'System' => [],
+			'Misc' => [],
 		];
 
-		foreach ( $apis as $api ) {
+		foreach ($apis as $api) {
 
-			$api['api_slug'] = $this->prepare_api_slug( $api['full_name'] );
+			$api['api_slug'] = $this->prepare_api_slug($api['full_name']);
 
-			if ( ! empty( $api['phpdoc']['parameters']['category'][0][0] )
-				&& isset( $categories[ $api['phpdoc']['parameters']['category'][0][0] ] ) ) {
-				$categories[ $api['phpdoc']['parameters']['category'][0][0] ][] = $api;
+			if (
+				!empty($api['phpdoc']['parameters']['category'][0][0])
+				&& isset($categories[$api['phpdoc']['parameters']['category'][0][0]])
+			) {
+				$categories[$api['phpdoc']['parameters']['category'][0][0]][] = $api;
 			} else {
 				$categories['Misc'][] = $api;
 			}
@@ -110,45 +117,44 @@ This also means functions and methods not listed here are considered part of the
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 
 ***
-
 EOT;
 
-		self::empty_dir( self::get_handbook_path() . '/references/internal-api/' );
+		self::empty_dir(self::get_handbook_path() . '/references/internal-api/');
 
-		foreach ( $categories as $name => $apis ) {
+		foreach ($categories as $name => $apis) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-			$out .= self::render( 'internal-api-list.mustache', [ 'apis' => $apis ] );
-			foreach ( $apis as $i => $api ) {
-				$api['category']             = $name;
-				$api['related']              = $apis;
+			$out .= self::render('internal-api-list.mustache', ['apis' => $apis]);
+			foreach ($apis as $i => $api) {
+				$api['category'] = $name;
+				$api['related'] = $apis;
 				$api['phpdoc']['parameters'] = array_map(
-					function ( $parameter ) {
-						foreach ( $parameter as $key => $values ) {
-							if ( isset( $values[2] ) ) {
-								$values[2]         = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
-								$parameter[ $key ] = $values;
+					function ($parameter) {
+						foreach ($parameter as $key => $values) {
+							if (isset($values[2])) {
+								$values[2] = str_replace(array(PHP_EOL), array('<br />'), $values[2]);
+								$parameter[$key] = $values;
 							}
 						}
 						return $parameter;
 					},
 					$api['phpdoc']['parameters']
 				);
-				unset( $api['related'][ $i ] );
-				$api['related']     = array_values( $api['related'] );
-				$api['has_related'] = ! empty( $api['related'] );
+				unset($api['related'][$i]);
+				$api['related'] = array_values($api['related']);
+				$api['has_related'] = !empty($api['related']);
 
-				$api_doc = self::render( 'internal-api.mustache', $api );
-				$path    = self::get_handbook_path() . "/references/internal-api/{$api['api_slug']}.md";
-				if ( ! is_dir( dirname( $path ) ) ) {
-					mkdir( dirname( $path ) );
+				$api_doc = self::render('internal-api.mustache', $api);
+				$path = self::get_handbook_path() . "/references/internal-api/{$api['api_slug']}.md";
+				if (!is_dir(dirname($path))) {
+					mkdir(dirname($path));
 				}
-				file_put_contents( $path, $api_doc );
+				file_put_contents($path, $api_doc);
 			}
 			$out .= PHP_EOL . PHP_EOL;
 		}
 
-		file_put_contents( self::get_handbook_path() . '/references/internal-api.md', $out );
-		WP_CLI::success( 'Generated internal-api/' );
+		file_put_contents(self::get_handbook_path() . '/references/internal-api.md', $out);
+		WP_CLI::success('Generated internal-api/');
 	}
 
 	/**
@@ -158,24 +164,25 @@ EOT;
 	 *
 	 * @return void
 	 */
-	public function gen_behat_docs() {
+	public function gen_behat_docs()
+	{
 		$apis = $this->get_behat_steps();
 
 		$categories = [
 			'Given' => [],
-			'When'  => [],
-			'Then'  => [],
+			'When' => [],
+			'Then' => [],
 		];
 
-		foreach ( $apis as $api ) {
+		foreach ($apis as $api) {
 
-			$api['api_slug'] = $this->prepare_api_slug( $api['full_name'] );
+			$api['api_slug'] = $this->prepare_api_slug($api['full_name']);
 
-			if ( isset( $api['phpdoc']['parameters']['Given'] ) ) {
+			if (isset($api['phpdoc']['parameters']['Given'])) {
 				$categories['Given'][] = $api;
-			} elseif ( isset( $api['phpdoc']['parameters']['When'] ) ) {
+			} elseif (isset($api['phpdoc']['parameters']['When'])) {
 				$categories['When'][] = $api;
-			} elseif ( isset( $api['phpdoc']['parameters']['Then'] ) ) {
+			} elseif (isset($api['phpdoc']['parameters']['Then'])) {
 				$categories['Then'][] = $api;
 			}
 		}
@@ -187,45 +194,44 @@ WP-CLI makes use of a Behat-based testing framework and provides a set of custom
 *Behat steps documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 
 ***
-
 EOT;
 
-		self::empty_dir( self::get_handbook_path() . '/references/behat-steps/' );
+		self::empty_dir(self::get_handbook_path() . '/references/behat-steps/');
 
-		foreach ( $categories as $name => $apis ) {
+		foreach ($categories as $name => $apis) {
 			$out .= '## ' . $name . PHP_EOL . PHP_EOL;
-			$out .= self::render( 'behat-steps-list.mustache', [ 'apis' => $apis ] );
-			foreach ( $apis as $i => $api ) {
-				$api['category']             = $name;
-				$api['related']              = $apis;
+			$out .= self::render('behat-steps-list.mustache', ['apis' => $apis]);
+			foreach ($apis as $i => $api) {
+				$api['category'] = $name;
+				$api['related'] = $apis;
 				$api['phpdoc']['parameters'] = array_map(
-					function ( $parameter ) {
-						foreach ( $parameter as $key => $values ) {
-							if ( isset( $values[2] ) ) {
-								$values[2]         = str_replace( array( PHP_EOL ), array( '<br />' ), $values[2] );
-								$parameter[ $key ] = $values;
+					function ($parameter) {
+						foreach ($parameter as $key => $values) {
+							if (isset($values[2])) {
+								$values[2] = str_replace(array(PHP_EOL), array('<br />'), $values[2]);
+								$parameter[$key] = $values;
 							}
 						}
 						return $parameter;
 					},
 					$api['phpdoc']['parameters']
 				);
-				unset( $api['related'][ $i ] );
-				$api['related']     = array_values( $api['related'] );
-				$api['has_related'] = ! empty( $api['related'] );
+				unset($api['related'][$i]);
+				$api['related'] = array_values($api['related']);
+				$api['has_related'] = !empty($api['related']);
 
-				$api_doc = self::render( 'behat-steps.mustache', $api );
-				$path    = self::get_handbook_path() . "/references/behat-steps/{$api['api_slug']}.md";
-				if ( ! is_dir( dirname( $path ) ) ) {
-					mkdir( dirname( $path ) );
+				$api_doc = self::render('behat-steps.mustache', $api);
+				$path = self::get_handbook_path() . "/references/behat-steps/{$api['api_slug']}.md";
+				if (!is_dir(dirname($path))) {
+					mkdir(dirname($path));
 				}
-				file_put_contents( $path, $api_doc );
+				file_put_contents($path, $api_doc);
 			}
 			$out .= PHP_EOL . PHP_EOL;
 		}
 
-		file_put_contents( self::get_handbook_path() . '/references/behat-steps.md', $out );
-		WP_CLI::success( 'Generated behat-steps/' );
+		file_put_contents(self::get_handbook_path() . '/references/behat-steps.md', $out);
+		WP_CLI::success('Generated behat-steps/');
 	}
 
 	/**
@@ -242,43 +248,44 @@ EOT;
 	 * @param array{verbose?: bool} $assoc_args Associative arguments.
 	 * @return void
 	 */
-	public function gen_commands( $args, $assoc_args ) {
+	public function gen_commands($args, $assoc_args)
+	{
 		// Check invoked with packages directory set to `bin/packages'.
-		if ( ! preg_match( '/bin\/packages\/?$/', getenv( 'WP_CLI_PACKAGES_DIR' ) ) ) {
-			WP_CLI::error( "Needs to be invoked on the target WP-CLI with 'WP_CLI_PACKAGES_DIR=bin/packages'." );
+		if (!preg_match('/bin\/packages\/?$/', getenv('WP_CLI_PACKAGES_DIR'))) {
+			WP_CLI::error("Needs to be invoked on the target WP-CLI with 'WP_CLI_PACKAGES_DIR=bin/packages'.");
 		}
 
 		// Check non-bundled commands installed.
-		$runner                    = WP_CLI::get_runner();
+		$runner = WP_CLI::get_runner();
 		$have_nonbundled_installed = true;
-		foreach ( [ 'admin', 'find', 'profile', 'dist-archive' ] as $cmd ) {
-			$have_nonbundled_installed = $have_nonbundled_installed && is_array( $runner->find_command_to_run( [ $cmd ] ) );
+		foreach (['admin', 'find', 'profile', 'dist-archive'] as $cmd) {
+			$have_nonbundled_installed = $have_nonbundled_installed && is_array($runner->find_command_to_run([$cmd]));
 		}
-		if ( ! $have_nonbundled_installed ) {
-			WP_CLI::error( sprintf( "Install non-bundled packages by running '%s' first.", 'bin/install_packages.sh' ) );
+		if (!$have_nonbundled_installed) {
+			WP_CLI::error(sprintf("Install non-bundled packages by running '%s' first.", 'bin/install_packages.sh'));
 		}
 
-		self::empty_dir( self::get_handbook_path() . '/commands/' );
+		self::empty_dir(self::get_handbook_path() . '/commands/');
 
 		$wp = WP_CLI::runcommand(
 			'cli cmd-dump',
 			[
 				'launch' => false,
 				'return' => 'stdout',
-				'parse'  => 'json',
+				'parse' => 'json',
 			]
 		);
 
-		$verbose = Utils\get_flag_value( $assoc_args, 'verbose', false );
+		$verbose = Utils\get_flag_value($assoc_args, 'verbose', false);
 
-		foreach ( $wp['subcommands'] as $cmd ) {
-			if ( in_array( $cmd['name'], [ 'website', 'handbook' ], true ) ) {
+		foreach ($wp['subcommands'] as $cmd) {
+			if (in_array($cmd['name'], ['website', 'handbook'], true)) {
 				continue;
 			}
-			self::gen_cmd_pages( $cmd, [] /*parent*/, $verbose );
+			self::gen_cmd_pages($cmd, [] /*parent*/ , $verbose);
 		}
 
-		WP_CLI::success( 'Generated all command pages.' );
+		WP_CLI::success('Generated all command pages.');
 	}
 
 	/**
@@ -289,52 +296,55 @@ EOT;
 	 * @param string $full
 	 * @return void
 	 */
-	private static function update_commands_data( $command, &$commands_data, $full ) {
-		$reflection = new \ReflectionClass( $command );
-		$repo_url   = '';
-		if ( 'help' === substr( $full, 0, 4 )
-			|| 'cli' === substr( $full, 0, 3 ) ) {
+	private static function update_commands_data($command, &$commands_data, $full)
+	{
+		$reflection = new \ReflectionClass($command);
+		$repo_url = '';
+		if (
+			'help' === substr($full, 0, 4)
+			|| 'cli' === substr($full, 0, 3)
+		) {
 			$repo_url = 'https://github.com/wp-cli/wp-cli';
 		}
-		if ( $reflection->hasProperty( 'when_invoked' ) ) {
-			$filename     = '';
-			$when_invoked = $reflection->getProperty( 'when_invoked' );
-			if ( PHP_VERSION_ID < 80100 ) {
+		if ($reflection->hasProperty('when_invoked')) {
+			$filename = '';
+			$when_invoked = $reflection->getProperty('when_invoked');
+			if (PHP_VERSION_ID < 80100) {
 				// @phpstan-ignore method.deprecated
-				$when_invoked->setAccessible( true );
+				$when_invoked->setAccessible(true);
 			}
-			$closure            = $when_invoked->getValue( $command );
-			$closure_reflection = new \ReflectionFunction( $closure );
+			$closure = $when_invoked->getValue($command);
+			$closure_reflection = new \ReflectionFunction($closure);
 			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
 			$static = $closure_reflection->getStaticVariables();
-			if ( is_array( $static ) && isset( $static['callable'] ) ) {
+			if (is_array($static) && isset($static['callable'])) {
 				// See `CommandFactory::create_subcommand()`.
-				if ( is_array( $static['callable'] ) && isset( $static['callable'][0] ) ) {
-					$reflection_class = new \ReflectionClass( $static['callable'][0] );
-					$filename         = $reflection_class->getFileName();
-				} elseif ( is_callable( $static['callable'] ) ) {
-					$reflection_func = new \ReflectionFunction( $static['callable'] );
-					$filename        = $reflection_func->getFileName();
+				if (is_array($static['callable']) && isset($static['callable'][0])) {
+					$reflection_class = new \ReflectionClass($static['callable'][0]);
+					$filename = $reflection_class->getFileName();
+				} elseif (is_callable($static['callable'])) {
+					$reflection_func = new \ReflectionFunction($static['callable']);
+					$filename = $reflection_func->getFileName();
 				}
 			}
-			if ( $filename ) {
-				preg_match( '#(?:vendor/wp-cli/|wp-cli-dev/)([^/]+)#', $filename, $matches );
-				if ( ! empty( $matches[1] ) ) {
+			if ($filename) {
+				preg_match('#(?:vendor/wp-cli/|wp-cli-dev/)([^/]+)#', $filename, $matches);
+				if (!empty($matches[1])) {
 					$repo_url = 'https://github.com/wp-cli/' . $matches[1];
 				}
 			} else {
-				WP_CLI::error( 'No callable for: ' . var_export( $static, true ) );
+				WP_CLI::error('No callable for: ' . var_export($static, true));
 			}
 		}
-		foreach ( $command->get_subcommands() as $subcommand ) {
-			$sub_full = trim( $full . ' ' . $subcommand->get_name() );
-			self::update_commands_data( $subcommand, $commands_data, $sub_full );
-			if ( '' === $repo_url && isset( $commands_data[ $sub_full ]['repo_url'] ) ) {
-				$repo_url = $commands_data[ $sub_full ]['repo_url'];
+		foreach ($command->get_subcommands() as $subcommand) {
+			$sub_full = trim($full . ' ' . $subcommand->get_name());
+			self::update_commands_data($subcommand, $commands_data, $sub_full);
+			if ('' === $repo_url && isset($commands_data[$sub_full]['repo_url'])) {
+				$repo_url = $commands_data[$sub_full]['repo_url'];
 			}
 		}
-		if ( $repo_url ) {
-			$commands_data[ $full ] = [
+		if ($repo_url) {
+			$commands_data[$full] = [
 				'repo_url' => $repo_url,
 			];
 		}
@@ -347,31 +357,32 @@ EOT;
 	 *
 	 * @return void
 	 */
-	public function gen_commands_manifest() {
-		$manifest      = [];
-		$paths         = [
+	public function gen_commands_manifest()
+	{
+		$manifest = [];
+		$paths = [
 			self::get_handbook_path() . '/commands/*.md',
 			self::get_handbook_path() . '/commands/*/*.md',
 			self::get_handbook_path() . '/commands/*/*/*.md',
 		];
 		$commands_data = [];
-		foreach ( WP_CLI::get_root_command()->get_subcommands() as $command ) {
-			self::update_commands_data( $command, $commands_data, $command->get_name() );
+		foreach (WP_CLI::get_root_command()->get_subcommands() as $command) {
+			self::update_commands_data($command, $commands_data, $command->get_name());
 		}
-		foreach ( $paths as $path ) {
-			foreach ( glob( $path ) as $file ) {
-				$slug     = basename( $file, '.md' );
-				$cmd_path = str_replace( [ self::get_handbook_path() . '/commands/', '.md' ], '', $file );
-				$title    = '';
-				$contents = file_get_contents( $file );
-				if ( preg_match( '/^#\swp\s(.+)/', $contents, $matches ) ) {
+		foreach ($paths as $path) {
+			foreach (glob($path) as $file) {
+				$slug = basename($file, '.md');
+				$cmd_path = str_replace([self::get_handbook_path() . '/commands/', '.md'], '', $file);
+				$title = '';
+				$contents = file_get_contents($file);
+				if (preg_match('/^#\swp\s(.+)/', $contents, $matches)) {
 					$title = $matches[1];
 				}
 				$parent = null;
-				if ( stripos( $cmd_path, '/' ) ) {
-					$bits = explode( '/', $cmd_path );
-					array_pop( $bits );
-					$parent = implode( '/', $bits );
+				if (stripos($cmd_path, '/')) {
+					$bits = explode('/', $cmd_path);
+					array_pop($bits);
+					$parent = implode('/', $bits);
 				}
 				$ignored = [
 					'doctor',
@@ -380,28 +391,28 @@ EOT;
 					'maintenance/release',
 					'super-cache',
 				];
-				if ( in_array( $slug, $ignored, true ) || in_array( $parent, $ignored, true ) ) {
+				if (in_array($slug, $ignored, true) || in_array($parent, $ignored, true)) {
 					continue;
 				}
 
-				$manifest[ $cmd_path ] = [
-					'title'           => $title,
-					'slug'            => $slug,
-					'cmd_path'        => $cmd_path,
-					'parent'          => $parent,
+				$manifest[$cmd_path] = [
+					'title' => $title,
+					'slug' => $slug,
+					'cmd_path' => $cmd_path,
+					'parent' => $parent,
 					'markdown_source' => sprintf(
 						'https://github.com/wp-cli/handbook/blob/main/commands/%s.md',
 						$cmd_path
 					),
 				];
-				if ( ! empty( $commands_data[ $title ] ) ) {
-					$manifest[ $cmd_path ] = array_merge( $manifest[ $cmd_path ], $commands_data[ $title ] );
+				if (!empty($commands_data[$title])) {
+					$manifest[$cmd_path] = array_merge($manifest[$cmd_path], $commands_data[$title]);
 				}
 			}
 		}
-		file_put_contents( self::get_handbook_path() . '/bin/commands-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
-		$count = count( $manifest );
-		WP_CLI::success( "Generated bin/commands-manifest.json of {$count} commands" );
+		file_put_contents(self::get_handbook_path() . '/bin/commands-manifest.json', json_encode($manifest, JSON_PRETTY_PRINT));
+		$count = count($manifest);
+		WP_CLI::success("Generated bin/commands-manifest.json of {$count} commands");
 	}
 
 	/**
@@ -411,7 +422,8 @@ EOT;
 	 *
 	 * @return void
 	 */
-	public function gen_hb_manifest() {
+	public function gen_hb_manifest()
+	{
 		$manifest = [];
 
 		$ignored_dirs = [
@@ -424,19 +436,19 @@ EOT;
 
 		$files = new \RecursiveIteratorIterator(
 			new \RecursiveCallbackFilterIterator(
-				new \RecursiveDirectoryIterator( self::get_handbook_path(), \RecursiveDirectoryIterator::SKIP_DOTS ),
-				static function ( $file ) use ( $ignored_dirs ) {
+				new \RecursiveDirectoryIterator(self::get_handbook_path(), \RecursiveDirectoryIterator::SKIP_DOTS),
+				static function ($file) use ($ignored_dirs) {
 					/** @var \SplFileInfo $file */
 
-					if ( $file->isDir() && in_array( $file->getBasename(), $ignored_dirs, true ) ) {
+					if ($file->isDir() && in_array($file->getBasename(), $ignored_dirs, true)) {
 						return false;
 					}
 
-					if ( $file->isFile() && $file->getExtension() !== 'md' ) {
+					if ($file->isFile() && $file->getExtension() !== 'md') {
 						return false;
 					}
 
-					if ( 'README.md' === $file->getBasename() ) {
+					if ('README.md' === $file->getBasename()) {
 						return false;
 					}
 
@@ -446,73 +458,74 @@ EOT;
 			\RecursiveIteratorIterator::CHILD_FIRST
 		);
 
-		foreach ( $files as $file ) {
-			if ( $file->isDir() ) {
+		foreach ($files as $file) {
+			if ($file->isDir()) {
 				continue;
 			}
 
-			$rel_path = str_replace( self::get_handbook_path() . '/', '', $file->getPathname() );
+			$rel_path = str_replace(self::get_handbook_path() . '/', '', $file->getPathname());
 
-			$path = explode( '/', $rel_path );
-			array_pop( $path );
+			$path = explode('/', $rel_path);
+			array_pop($path);
 
-			$parent = ! empty( $path ) ? end( $path ) : null;
+			$parent = !empty($path) ? end($path) : null;
 
-			$path = implode( '/', $path );
+			$path = implode('/', $path);
 
-			$slug = $file->getBasename( '.md' );
+			$slug = $file->getBasename('.md');
 
-			$title    = '';
-			$contents = file_get_contents( $file->getPathname() );
-			if ( preg_match( '/^#\s(.+)/', $contents, $matches ) ) {
+			$title = '';
+			$contents = file_get_contents($file->getPathname());
+			if (preg_match('/^#\s(.+)/', $contents, $matches)) {
 				$title = $matches[1];
 			}
-			$manifest[ $slug ] = [
-				'title'           => $title,
-				'slug'            => 'index' === $slug ? 'handbook' : $slug,
+			$manifest[$slug] = [
+				'title' => $title,
+				'slug' => 'index' === $slug ? 'handbook' : $slug,
 				'markdown_source' => sprintf(
 					'https://github.com/wp-cli/handbook/blob/main/%s',
 					$rel_path
 				),
-				'parent'          => $parent,
+				'parent' => $parent,
 			];
 		}
 
-		ksort( $manifest );
+		ksort($manifest);
 
-		file_put_contents( self::get_handbook_path() . '/bin/handbook-manifest.json', json_encode( $manifest, JSON_PRETTY_PRINT ) );
-		WP_CLI::success( 'Generated bin/handbook-manifest.json' );
+		file_put_contents(self::get_handbook_path() . '/bin/handbook-manifest.json', json_encode($manifest, JSON_PRETTY_PRINT));
+		WP_CLI::success('Generated bin/handbook-manifest.json');
 	}
 
 	/**
 	 * @return array<int,array{phpdoc: array<string, mixed>, type: string, signature: string, short_name: string, full_name: string, class: string, api_slug?: string}>
 	 */
-	private function get_internal_apis() {
-		$apis      = [];
+	private function get_internal_apis()
+	{
+		$apis = [];
 		$functions = get_defined_functions();
-		foreach ( $functions['user'] as $function ) {
-			$reflection = new \ReflectionFunction( $function );
-			$phpdoc     = $reflection->getDocComment();
-			if ( false === stripos( $phpdoc, '@access public' ) ) {
+		foreach ($functions['user'] as $function) {
+			$reflection = new \ReflectionFunction($function);
+			$phpdoc = $reflection->getDocComment();
+			if (false === stripos($phpdoc, '@access public')) {
 				continue;
 			}
-			$apis[] = self::get_simple_representation( $reflection );
+			$apis[] = self::get_simple_representation($reflection);
 		}
 
 		$classes = get_declared_classes();
-		foreach ( $classes as $class ) {
-			if ( false === stripos( $class, 'WP_CLI' ) ) {
+		foreach ($classes as $class) {
+			if (false === stripos($class, 'WP_CLI')) {
 				continue;
 			}
 
-			$reflection = new \ReflectionClass( $class );
-			foreach ( $reflection->getMethods() as $method ) {
-				$method_reflection = new \ReflectionMethod( $method->class, $method->name );
-				$phpdoc            = $method_reflection->getDocComment();
-				if ( false === stripos( $phpdoc, '@access public' ) ) {
+			$reflection = new \ReflectionClass($class);
+			foreach ($reflection->getMethods() as $method) {
+				$method_reflection = new \ReflectionMethod($method->class, $method->name);
+				$phpdoc = $method_reflection->getDocComment();
+				if (false === stripos($phpdoc, '@access public')) {
 					continue;
 				}
-				$apis[] = self::get_simple_representation( $method_reflection );
+				$apis[] = self::get_simple_representation($method_reflection);
 			}
 		}
 
@@ -522,25 +535,26 @@ EOT;
 	/**
 	 * @return array<int, array{phpdoc: array<string, mixed>, type: string, signature: string, short_name: string, full_name: string, class: string, api_slug?: string}>
 	 */
-	private function get_behat_steps() {
-		$apis    = [];
+	private function get_behat_steps()
+	{
+		$apis = [];
 		$classes = [
 			'\WP_CLI\Tests\Context\FeatureContext',
 		];
 
-		foreach ( $classes as $class ) {
-			if ( false === stripos( $class, 'WP_CLI' ) ) {
+		foreach ($classes as $class) {
+			if (false === stripos($class, 'WP_CLI')) {
 				continue;
 			}
 
-			$reflection = new \ReflectionClass( $class );
-			foreach ( $reflection->getMethods() as $method ) {
-				$method_reflection = new \ReflectionMethod( $method->class, $method->name );
-				$phpdoc            = $method_reflection->getDocComment();
-				if ( false === stripos( $phpdoc, '@access public' ) ) {
+			$reflection = new \ReflectionClass($class);
+			foreach ($reflection->getMethods() as $method) {
+				$method_reflection = new \ReflectionMethod($method->class, $method->name);
+				$phpdoc = $method_reflection->getDocComment();
+				if (false === stripos($phpdoc, '@access public')) {
 					continue;
 				}
-				$apis[] = self::get_simple_representation( $method_reflection );
+				$apis[] = self::get_simple_representation($method_reflection);
 			}
 		}
 
@@ -553,116 +567,119 @@ EOT;
 	 * @param bool $verbose
 	 * @return void
 	 */
-	private static function gen_cmd_pages( $cmd, $parent = [], $verbose = false ) { // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
+	private static function gen_cmd_pages($cmd, $parent = [], $verbose = false)
+	{ // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
 		$parent[] = $cmd['name'];
 
 		static $params;
-		if ( ! isset( $params ) ) {
+		if (!isset($params)) {
 			$params = WP_CLI::runcommand(
 				'cli param-dump',
 				[
 					'launch' => false,
 					'return' => 'stdout',
-					'parse'  => 'json',
+					'parse' => 'json',
 				]
 			);
 			// Preserve positioning of 'url' param.
 			$url_param = $params['url'];
-			unset( $params['url'] );
+			unset($params['url']);
 			$new_params = [];
-			foreach ( $params as $param => $meta ) {
-				$new_params[ $param ] = $meta;
-				if ( 'path' === $param ) {
+			foreach ($params as $param => $meta) {
+				$new_params[$param] = $meta;
+				if ('path' === $param) {
 					$new_params['url'] = $url_param;
 				}
 			}
 			$params = $new_params;
 		}
 
-		$binding                = $cmd;
-		$binding['synopsis']    = implode( ' ', $parent );
-		$binding['path']        = implode( '/', $parent );
-		$path                   = '/commands/';
+		$binding = $cmd;
+		$binding['synopsis'] = implode(' ', $parent);
+		$binding['path'] = implode('/', $parent);
+		$path = '/commands/';
 		$binding['breadcrumbs'] = '[Commands](' . $path . ')';
-		foreach ( $parent as $i => $p ) {
+		foreach ($parent as $i => $p) {
 			$path .= $p . '/';
-			if ( $i < ( count( $parent ) - 1 ) ) {
+			if ($i < (count($parent) - 1)) {
 				$binding['breadcrumbs'] .= " &raquo; [{$p}]({$path})";
 			} else {
 				$binding['breadcrumbs'] .= " &raquo; {$p}";
 			}
 		}
-		$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? [ true ] : false;
+		$binding['has-subcommands'] = isset($cmd['subcommands']) ? [true] : false;
 
-		$hook_name        = $cmd['hook'];
-		$hook_description = $hook_name ? Utils\get_hook_description( $hook_name ) : null;
-		if ( $hook_description && 'after_wp_load' !== $hook_name ) {
-			if ( $binding['has-subcommands'] ) {
+		$hook_name = $cmd['hook'];
+		$hook_description = $hook_name ? Utils\get_hook_description($hook_name) : null;
+		if ($hook_description && 'after_wp_load' !== $hook_name) {
+			if ($binding['has-subcommands']) {
 				$binding['description'] .= "\n\nUnless overridden, these commands run on the `$hook_name` hook, $hook_description";
 			} else {
 				$binding['description'] .= "\n\nThis command runs on the `$hook_name` hook, $hook_description";
 			}
 		}
 
-		if ( $cmd['longdesc'] ) {
+		if ($cmd['longdesc']) {
 			$docs = $cmd['longdesc'];
-			$docs = htmlspecialchars( $docs, ENT_COMPAT, 'UTF-8' );
+			$docs = htmlspecialchars($docs, ENT_COMPAT, 'UTF-8');
 
 			// Decrease header level.
-			$docs = preg_replace( '/^## /m', '### ', $docs );
+			$docs = preg_replace('/^## /m', '### ', $docs);
 
 			// Escape `--` so that it doesn't get converted into `&mdash;`.
-			$docs = preg_replace( '/^(\[?)--/m', '\1\--', $docs );
-			$docs = preg_replace( '/^\s\s--/m', '  \1\--', $docs );
+			$docs = preg_replace('/^(\[?)--/m', '\1\--', $docs);
+			$docs = preg_replace('/^\s\s--/m', '  \1\--', $docs);
 
 			// Remove word wrapping from docs
 			// Match words, '().,;', and --arg before/after the newline.
-			$bits          = explode( "\n", $docs );
-			$in_yaml_doc   = false;
+			$bits = explode("\n", $docs);
+			$in_yaml_doc = false;
 			$in_code_block = false;
-			$total_bits    = count( $bits );
-			for ( $i = 0; $i < $total_bits; $i++ ) {
-				if ( ! isset( $bits[ $i ] ) || ! isset( $bits[ $i + 1 ] ) ) {
+			$total_bits = count($bits);
+			for ($i = 0; $i < $total_bits; $i++) {
+				if (!isset($bits[$i]) || !isset($bits[$i + 1])) {
 					continue;
 				}
-				if ( '---' === $bits[ $i ] || '\---' === $bits[ $i ] ) {
-					$in_yaml_doc = ! $in_yaml_doc;
+				if ('---' === $bits[$i] || '\---' === $bits[$i]) {
+					$in_yaml_doc = !$in_yaml_doc;
 				}
-				if ( '```' === $bits[ $i ] ) {
-					$in_code_block = ! $in_code_block;
+				if ('```' === $bits[$i]) {
+					$in_code_block = !$in_code_block;
 				}
-				if ( $in_yaml_doc || $in_code_block ) {
+				if ($in_yaml_doc || $in_code_block) {
 					continue;
 				}
 
-				if ( preg_match( '#([\w\(\)\.\,\;]|[`]{1})$#', $bits[ $i ] )
-					&& preg_match( '#^([\w\(\)\.\,\;`]|\\\--[\w]|[`]{1})#', $bits[ $i + 1 ] ) ) {
-					$bits[ $i ] .= ' ' . $bits[ $i + 1 ];
-					unset( $bits[ $i + 1 ] );
+				if (
+					preg_match('#([\w\(\)\.\,\;]|[`]{1})$#', $bits[$i])
+					&& preg_match('#^([\w\(\)\.\,\;`]|\\\--[\w]|[`]{1})#', $bits[$i + 1])
+				) {
+					$bits[$i] .= ' ' . $bits[$i + 1];
+					unset($bits[$i + 1]);
 					--$i;
-					$bits = array_values( $bits );
+					$bits = array_values($bits);
 				}
 			}
-			$docs = implode( "\n", $bits );
+			$docs = implode("\n", $bits);
 
 			// Decode HTML entities inside backticks.
 			$docs = preg_replace_callback(
 				'/`([^`]*)`/',
-				function ( $matches ) {
-					return '`' . html_entity_decode( $matches[1], ENT_QUOTES | ENT_HTML401 ) . '`';
+				function ($matches) {
+					return '`' . html_entity_decode($matches[1], ENT_QUOTES | ENT_HTML401) . '`';
 				},
 				$docs
 			);
 
 			// Hack to prevent double encoding in code blocks.
-			$docs = preg_replace( '/ &lt; /', ' < ', $docs );
-			$docs = preg_replace( '/ &gt; /', ' > ', $docs );
-			$docs = preg_replace( '/ &lt;&lt;/', ' <<', $docs );
-			$docs = preg_replace( '/&quot;/', '"', $docs );
-			$docs = preg_replace( '/wp&gt; /', 'wp> ', $docs );
-			$docs = preg_replace( '/2&gt;\//', '2>/', $docs );
-			$docs = preg_replace( '/=&gt;/', '=>', $docs );
-			$docs = preg_replace( '/ &amp;&amp; /', ' && ', $docs );
+			$docs = preg_replace('/ &lt; /', ' < ', $docs);
+			$docs = preg_replace('/ &gt; /', ' > ', $docs);
+			$docs = preg_replace('/ &lt;&lt;/', ' <<', $docs);
+			$docs = preg_replace('/&quot;/', '"', $docs);
+			$docs = preg_replace('/wp&gt; /', 'wp> ', $docs);
+			$docs = preg_replace('/2&gt;\//', '2>/', $docs);
+			$docs = preg_replace('/=&gt;/', '=>', $docs);
+			$docs = preg_replace('/ &amp;&amp; /', ' && ', $docs);
 
 			$global_parameters = <<<'EOT'
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -670,75 +687,77 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | **Argument**    | **Description**              |
 |:----------------|:-----------------------------|
 EOT;
-			foreach ( $params as $param => $meta ) {
-				if ( false === $meta['runtime']
-					|| empty( $meta['desc'] )
-					|| ! empty( $meta['deprecated'] ) ) {
+			foreach ($params as $param => $meta) {
+				if (
+					false === $meta['runtime']
+					|| empty($meta['desc'])
+					|| !empty($meta['deprecated'])
+				) {
 					continue;
 				}
 				$param_arg = '--' . $param;
-				if ( ! empty( $meta['runtime'] ) && true !== $meta['runtime'] ) {
+				if (!empty($meta['runtime']) && true !== $meta['runtime']) {
 					$param_arg .= $meta['runtime'];
 				}
-				if ( 'color' === $param ) {
+				if ('color' === $param) {
 					$param_arg = '--[no-]color';
 				}
-				$global_parameters .= PHP_EOL . '| `' . str_replace( '|', '\\|', $param_arg ) . '` | ' . str_replace( '|', '\\|', $meta['desc'] ) . ' |';
+				$global_parameters .= PHP_EOL . '| `' . str_replace('|', '\\|', $param_arg) . '` | ' . str_replace('|', '\\|', $meta['desc']) . ' |';
 			}
 
 			// Replace Global parameters with a nice table.
-			if ( $binding['has-subcommands'] ) {
+			if ($binding['has-subcommands']) {
 				$replace_global = '';
 			} else {
 				$replace_global = '$1' . PHP_EOL . PHP_EOL . $global_parameters;
 			}
-			$docs = preg_replace( '/(#?## GLOBAL PARAMETERS).+/s', $replace_global, $docs );
+			$docs = preg_replace('/(#?## GLOBAL PARAMETERS).+/s', $replace_global, $docs);
 
 			// Add link to argument syntax documentation after OPTIONS heading.
 			$options_note = 'See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.';
-			$docs         = preg_replace( '/(### OPTIONS)/', '$1' . PHP_EOL . PHP_EOL . $options_note, $docs );
+			$docs = preg_replace('/(### OPTIONS)/', '$1' . PHP_EOL . PHP_EOL . $options_note, $docs);
 
 			$binding['docs'] = $docs;
 		}
 
-		$path = dirname( __DIR__ ) . '/commands/' . $binding['path'];
-		if ( ! is_dir( dirname( $path ) ) ) {
-			mkdir( dirname( $path ) );
+		$path = dirname(__DIR__) . '/commands/' . $binding['path'];
+		if (!is_dir(dirname($path))) {
+			mkdir(dirname($path));
 		}
-		file_put_contents( "$path.md", self::render( 'subcmd-list.mustache', $binding ) );
-		if ( $verbose ) {
-			WP_CLI::log( 'Generated commands/' . $binding['path'] . '/' );
+		file_put_contents("$path.md", self::render('subcmd-list.mustache', $binding));
+		if ($verbose) {
+			WP_CLI::log('Generated commands/' . $binding['path'] . '/');
 		}
 
 		// Generate alias page if command has an alias.
-		if ( ! empty( $cmd['alias'] ) ) {
-			$alias_parent                               = $parent;
-			$alias_parent[ count( $alias_parent ) - 1 ] = $cmd['alias'];
-			$alias_binding                              = $binding;
-			$alias_binding['synopsis']                  = implode( ' ', $alias_parent );
-			$alias_binding['path']                      = implode( '/', $alias_parent );
-			$alias_binding['description']              .= sprintf( "\n\nThis is an alias for `wp %s`.", $binding['synopsis'] );
-			$alias_path                                 = dirname( __DIR__ ) . '/commands/' . $alias_binding['path'];
-			$alias_dir                                  = dirname( $alias_path );
+		if (!empty($cmd['alias'])) {
+			$alias_parent = $parent;
+			$alias_parent[count($alias_parent) - 1] = $cmd['alias'];
+			$alias_binding = $binding;
+			$alias_binding['synopsis'] = implode(' ', $alias_parent);
+			$alias_binding['path'] = implode('/', $alias_parent);
+			$alias_binding['description'] .= sprintf("\n\nThis is an alias for `wp %s`.", $binding['synopsis']);
+			$alias_path = dirname(__DIR__) . '/commands/' . $alias_binding['path'];
+			$alias_dir = dirname($alias_path);
 
 			// Don't mention alias for the alias.
-			unset( $alias_binding['alias'] );
+			unset($alias_binding['alias']);
 
-			if ( ! is_dir( $alias_dir ) ) {
-				mkdir( $alias_dir, 0755, true );
+			if (!is_dir($alias_dir)) {
+				mkdir($alias_dir, 0755, true);
 			}
-			file_put_contents( "$alias_path.md", self::render( 'subcmd-list.mustache', $alias_binding ) );
-			if ( $verbose ) {
-				WP_CLI::log( 'Generated commands/' . $alias_binding['path'] . '/ (alias)' );
+			file_put_contents("$alias_path.md", self::render('subcmd-list.mustache', $alias_binding));
+			if ($verbose) {
+				WP_CLI::log('Generated commands/' . $alias_binding['path'] . '/ (alias)');
 			}
 		}
 
-		if ( ! isset( $cmd['subcommands'] ) ) {
+		if (!isset($cmd['subcommands'])) {
 			return;
 		}
 
-		foreach ( $cmd['subcommands'] as $subcmd ) {
-			self::gen_cmd_pages( $subcmd, $parent, $verbose );
+		foreach ($cmd['subcommands'] as $subcmd) {
+			self::gen_cmd_pages($subcmd, $parent, $verbose);
 		}
 	}
 
@@ -748,22 +767,23 @@ EOT;
 	 * @param \ReflectionMethod|\ReflectionFunction $reflection
 	 * @return array{phpdoc: array<string, mixed>, type: string, signature: string, short_name: string, full_name: string, class: string, api_slug?: string}
 	 */
-	private static function get_simple_representation( $reflection ) {
-		$signature  = $reflection->getName();
+	private static function get_simple_representation($reflection)
+	{
+		$signature = $reflection->getName();
 		$parameters = [];
-		foreach ( $reflection->getParameters() as $parameter ) {
+		foreach ($reflection->getParameters() as $parameter) {
 			$parameter_signature = '$' . $parameter->getName();
-			if ( $parameter->isOptional() && $parameter->isDefaultValueAvailable() ) {
+			if ($parameter->isOptional() && $parameter->isDefaultValueAvailable()) {
 				$default_value = $parameter->getDefaultValue();
-				if ( false === $default_value ) {
+				if (false === $default_value) {
 					$parameter_signature .= ' = false';
-				} elseif ( [] === $default_value ) {
+				} elseif ([] === $default_value) {
 					$parameter_signature .= ' = []';
-				} elseif ( '' === $default_value ) {
+				} elseif ('' === $default_value) {
 					$parameter_signature .= " = ''";
-				} elseif ( null === $default_value ) {
+				} elseif (null === $default_value) {
 					$parameter_signature .= ' = null';
-				} elseif ( true === $default_value ) {
+				} elseif (true === $default_value) {
 					$parameter_signature .= ' = true';
 				} else {
 					$parameter_signature .= ' = ' . $default_value;
@@ -771,18 +791,18 @@ EOT;
 			}
 			$parameters[] = $parameter_signature;
 		}
-		if ( ! empty( $parameters ) ) {
-			$signature = $signature . '( ' . implode( ', ', $parameters ) . ' )';
+		if (!empty($parameters)) {
+			$signature = $signature . '( ' . implode(', ', $parameters) . ' )';
 		} else {
 			$signature = $signature . '()';
 		}
-		$phpdoc = self::parse_docblock( $reflection->getDocComment() );
-		$type   = strtolower( str_replace( 'Reflection', '', get_class( $reflection ) ) );
-		$class  = '';
-		switch ( $type ) {
+		$phpdoc = self::parse_docblock($reflection->getDocComment());
+		$type = strtolower(str_replace('Reflection', '', get_class($reflection)));
+		$class = '';
+		switch ($type) {
 			case 'method':
 				$separator = $reflection->isStatic() ? '::' : '->';
-				$class     = $reflection->class;
+				$class = $reflection->class;
 				$full_name = $class . $separator . $reflection->getName();
 				$signature = $class . $separator . $signature;
 				break;
@@ -792,17 +812,17 @@ EOT;
 				break;
 		}
 
-		if ( isset( $phpdoc['behat_step'] ) ) {
+		if (isset($phpdoc['behat_step'])) {
 			$full_name = $phpdoc['behat_step'];
 		}
 
 		return [
-			'phpdoc'     => $phpdoc,
-			'type'       => $type,
-			'signature'  => $signature,
+			'phpdoc' => $phpdoc,
+			'type' => $type,
+			'signature' => $signature,
 			'short_name' => $reflection->getShortName(),
-			'full_name'  => $full_name,
-			'class'      => $class,
+			'full_name' => $full_name,
+			'class' => $class,
 		];
 	}
 
@@ -812,41 +832,42 @@ EOT;
 	 * @param string $docblock
 	 * @return array{description: string, short_description?: string, long_description?:string, behat_step?: string, parameters: array<string, mixed>}
 	 */
-	private static function parse_docblock( $docblock ) {
-		$ret        = [
+	private static function parse_docblock($docblock)
+	{
+		$ret = [
 			'description' => '',
-			'parameters'  => [],
+			'parameters' => [],
 		];
 		$extra_line = '';
-		$in_param   = false;
-		foreach ( preg_split( "/(\r?\n)/", $docblock ) as $line ) {
-			if ( preg_match( '/^(?=\s+?\*[^\/])(.+)/', $line, $matches ) ) {
-				$info = trim( $matches[1] );
-				$info = preg_replace( '/^(\*\s+?)/', '', $info );
-				if ( $in_param && ! empty( $info ) && '@' !== $info[0] ) {
-					list( $param_name, $key )                     = $in_param;
-					$ret['parameters'][ $param_name ][ $key ][2] .= PHP_EOL . $info;
-				} elseif ( ! empty( $info ) && '@' !== $info[0] ) {
+		$in_param = false;
+		foreach (preg_split("/(\r?\n)/", $docblock) as $line) {
+			if (preg_match('/^(?=\s+?\*[^\/])(.+)/', $line, $matches)) {
+				$info = trim($matches[1]);
+				$info = preg_replace('/^(\*\s+?)/', '', $info);
+				if ($in_param && !empty($info) && '@' !== $info[0]) {
+					list($param_name, $key) = $in_param;
+					$ret['parameters'][$param_name][$key][2] .= PHP_EOL . $info;
+				} elseif (!empty($info) && '@' !== $info[0]) {
 					$ret['description'] .= PHP_EOL . "{$extra_line}{$info}";
 				} else {
-					preg_match( '/@(\w+)/', $info, $matches );
+					preg_match('/@(\w+)/', $info, $matches);
 					$param_name = $matches[1];
-					$value      = str_replace( "@$param_name ", '', $info );
+					$value = str_replace("@$param_name ", '', $info);
 
-					if ( in_array( $param_name, [ 'Given', 'Then', 'When' ], true ) ) {
+					if (in_array($param_name, ['Given', 'Then', 'When'], true)) {
 						$ret['behat_step'] = "$param_name $value";
 					}
 
-					if ( ! isset( $ret['parameters'][ $param_name ] ) ) {
-						$ret['parameters'][ $param_name ] = [];
+					if (!isset($ret['parameters'][$param_name])) {
+						$ret['parameters'][$param_name] = [];
 					}
-					$ret['parameters'][ $param_name ][] = preg_split( '/[\s]+/', $value, 3 );
-					end( $ret['parameters'][ $param_name ] );
-					$key = key( $ret['parameters'][ $param_name ] );
-					reset( $ret['parameters'][ $param_name ] );
+					$ret['parameters'][$param_name][] = preg_split('/[\s]+/', $value, 3);
+					end($ret['parameters'][$param_name]);
+					$key = key($ret['parameters'][$param_name]);
+					reset($ret['parameters'][$param_name]);
 					// Always set $in_param for tags that can have multiline descriptions
-					if ( ! empty( $ret['parameters'][ $param_name ][ $key ][2] ) ) {
-						$in_param = [ $param_name, $key ];
+					if (!empty($ret['parameters'][$param_name][$key][2])) {
+						$in_param = [$param_name, $key];
 					} else {
 						$in_param = false;
 					}
@@ -856,15 +877,15 @@ EOT;
 				$extra_line .= PHP_EOL;
 			}
 		}
-		$ret['description'] = str_replace( '\/', '/', trim( $ret['description'], PHP_EOL ) );
-		$bits               = explode( PHP_EOL, $ret['description'] );
-		$short_desc         = [ array_shift( $bits ) ];
-		while ( isset( $bits[0] ) && ! empty( $bits[0] ) ) {
-			$short_desc[] = array_shift( $bits );
+		$ret['description'] = str_replace('\/', '/', trim($ret['description'], PHP_EOL));
+		$bits = explode(PHP_EOL, $ret['description']);
+		$short_desc = [array_shift($bits)];
+		while (isset($bits[0]) && !empty($bits[0])) {
+			$short_desc[] = array_shift($bits);
 		}
-		$ret['short_description'] = trim( implode( ' ', $short_desc ) );
-		$long_description         = trim( implode( PHP_EOL, $bits ), PHP_EOL );
-		$ret['long_description']  = $long_description;
+		$ret['short_description'] = trim(implode(' ', $short_desc));
+		$long_description = trim(implode(PHP_EOL, $bits), PHP_EOL);
+		$ret['long_description'] = $long_description;
 		return $ret;
 	}
 
@@ -872,10 +893,11 @@ EOT;
 	 * @param string $path
 	 * @param array<string, mixed> $binding
 	 */
-	private static function render( string $path, $binding ): string {
-		$m        = new Mustache_Engine();
-		$template = file_get_contents( self::get_handbook_path() . "/bin/templates/$path" );
-		return $m->render( $template, $binding );
+	private static function render(string $path, $binding): string
+	{
+		$m = new Mustache_Engine();
+		$template = file_get_contents(self::get_handbook_path() . "/bin/templates/$path");
+		return $m->render($template, $binding);
 	}
 
 	/**
@@ -885,16 +907,17 @@ EOT;
 	 *
 	 * @return void
 	 */
-	private static function empty_dir( $dir ) {
-		$cmd = Utils\esc_cmd( 'rm -rf %s', $dir );
-		$pr  = WP_CLI::launch( $cmd, false /*exit_on_error*/, true /*return_detailed*/ ); // Won't fail if directory doesn't exist.
-		if ( $pr->return_code ) {
-			WP_CLI::error( sprintf( 'Failed to `%s`: (%d) %s', $cmd, $pr->return_code, $pr->stderr ) );
+	private static function empty_dir($dir)
+	{
+		$cmd = Utils\esc_cmd('rm -rf %s', $dir);
+		$pr = WP_CLI::launch($cmd, false /*exit_on_error*/ , true /*return_detailed*/); // Won't fail if directory doesn't exist.
+		if ($pr->return_code) {
+			WP_CLI::error(sprintf('Failed to `%s`: (%d) %s', $cmd, $pr->return_code, $pr->stderr));
 		}
-		if ( ! mkdir( $dir ) ) {
+		if (!mkdir($dir)) {
 			$error = error_get_last();
-			WP_CLI::error( sprintf( "Failed to create '%s' directory: %s", $dir, $error['message'] ) );
+			WP_CLI::error(sprintf("Failed to create '%s' directory: %s", $dir, $error['message']));
 		}
-		WP_CLI::log( sprintf( "Removed existing contents of '%s'", $dir ) );
+		WP_CLI::log(sprintf("Removed existing contents of '%s'", $dir));
 	}
 }
