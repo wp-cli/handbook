@@ -20,7 +20,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : Time until expiration, in seconds.
 
 [\--network]
-: Set the value of a network|site transient. On single site, this is is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
+: Set the value of a network|site transient. On single site, this is a specially-named cache key. On multisite, this is a global cache (instead of local to the site).
 
 ### EXAMPLES
 

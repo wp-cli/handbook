@@ -1,6 +1,6 @@
 # Then /^STDOUT should be YAML containing:$/
 
-Expect STDOUT to be YAML containig certain content.
+Expect STDOUT to be YAML containing certain content.
 
 
 ***

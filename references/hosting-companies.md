@@ -41,7 +41,7 @@ In alphabetical order:
 * [HostPapa](https://www.hostpapa.com)
 * [HostPresto](https://hostpresto.com)
 * [HostRiver](https://hostriver.ro/gazduire-wordpress)
-* [ICDSoft](https:///www.icdsoft.com)
+* [ICDSoft](https://www.icdsoft.com)
 * [Infomaniak](https://www.infomaniak.com/en/create-a-website/wordpress-hosting)
 * [IONOS](https://www.ionos.com/)
 * [JDM.pl](https://jdm.pl)

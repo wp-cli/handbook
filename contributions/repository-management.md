@@ -40,9 +40,13 @@ Labels can be part of a label group, a concept that is applicable to all package
 
 #### Command
 
-The labels that define what exact command a given issue/pull request applies to are prefixed with `command:`
+The labels that define what specific command a given issue/pull request is related to are prefixed with `command:`.
 
-_Example: `command:cli-update`_
+Some examples:
+
+* `command:core` - Relates to one or more of the subcommands under the `wp core` parent command.
+* `command:cli-check-update` - Relates to the `wp cli check-update` command.
+* `command:post-meta-update` - Relates to the `wp post-meta update` command.
 
 #### Scope
 
@@ -59,23 +63,13 @@ Used scopes:
 
 #### State
 
-The labels that defined what state a given issue/pull request is in are prefixed with `state:`.
+The labels that define what state a given issue/pull request is in are prefixed with `state:`.
 
 Used states:
 
 * `state:unconfirmed` - The bug/problem in the issue could not be replicated yet or might be related to the reporter's environment.
 * `state:unsupported` - The issue is outside of the scope of a bug report and cannot be supported on GitHub. The reporter should be pointed towards one of the [support channels](https://make.wordpress.org/cli/handbook/support/).
 
-#### Command
-
-The labels that define what specific command a given issue/pull request is related to are prefixed with `command:`.
-
-Some examples:
-
-* `command:core` - Relates to one or more of the subcommands under the `wp core` parent command.
-* `command:cli-check-update` - Relates to the `wp cli check-update` command.
-* `command:post-meta-update` - Relates to the `wp post-meta update` command.
- 
 ### Required Labels
 
 Some labels have a special meaning and/or might be used for automated workflows down the road. These are required across all official packages.
@@ -98,7 +92,7 @@ Good first issues are small in scope and don't require extensive technical exper
 
 ## Commits
 
-No direct commits are to be done against the default branch (`main`/`master`) branch of the packages. All code changes need to go through a pull request workflow. 
+No direct commits are to be done against the default (`main`/`master`) branch of the packages. All code changes need to go through a pull request workflow. 
 
 ## Pull Requests
 
