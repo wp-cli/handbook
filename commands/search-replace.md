@@ -98,7 +98,7 @@ options:
     # Search and replace but skip one column
     $ wp search-replace 'http://example.test' 'http://example.com' --skip-columns=guid
 
-    # Run search/replace operation but don't save in database
+    # Run search/replace operation but dont save in database
     $ wp search-replace 'foo' 'bar' wp_posts wp_postmeta wp_terms --dry-run
 
     # Run case-insensitive regex search/replace operation (slow)

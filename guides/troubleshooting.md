@@ -101,7 +101,8 @@ Please provide us with:
 * a summary of the issue in narrative form,
 * a detailed and specific list of steps to reproduce the issue,
 * details of the environment you're working on,
-* a description, how the bug affects your usage (i.e. expected results compared with actual results), including severity level,
+* a description, how the bug affects your usage (i.e. expected results compared with actual results),
+* severity level,
 * possible workarounds and
 * relevant diagnostics, such as crash reports, stack traces or debug output.
 
