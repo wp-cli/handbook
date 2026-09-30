@@ -617,7 +617,7 @@ EOT;
 
 			// Remove word wrapping from docs
 			// Match words, '().,;', and --arg before/after the newline.
-			$bits         = explode( "\n", $docs );
+			$bits          = explode( "\n", $docs );
 			$in_yaml_doc   = false;
 			$in_code_block = false;
 			$total_bits    = count( $bits );
