@@ -36,7 +36,7 @@ Scenario: My example scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-empty-cache/">Given an empty cache</a></strong> - Clears the WP-CLI cache directory.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-file-cache-file/">Given /^an? ([^\s]+) (file|cache file):$/</a></strong> - Creates a file with the given contents.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-file-cache-file/">Given /^an? (&quot;[^&quot;]+&quot;|[^\s]+) (file|cache file):$/</a></strong> - Creates a file with the given contents.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-replaced-with-in-the-file/">Given /^&quot;([^&quot;]+)&quot; replaced with &quot;([^&quot;]+)&quot; in the ([^\s]+) file$/</a></strong> - Search and replace a string in a file using regex.</li>
@@ -51,10 +51,10 @@ Scenario: My example scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-wp-config-php/">Given wp-config.php</a></strong> - Create a wp-config.php file using `wp config create`.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation/">Given a WP install(ation)</a></strong> - Installs WordPress.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation/">Given /^a WP( \d[^\s]+)? install(?:ation)?$/</a></strong> - Installs WordPress.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-in-subdir/">Given a WP install(ation) in :subdir</a></strong> - Installs WordPress in a given directory.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-in/">Given /^a WP( [^\s]+)? install(?:ation)? in ['&quot;]?([^'&quot;]+)['&quot;]?$/</a></strong> - Installs WordPress in a given directory.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-with-composer/">Given a WP install(ation) with Composer</a></strong> - Installs WordPress with Composer.</li>
