@@ -20,7 +20,7 @@ Practically-speaking:
 
 ## Stellar judgement
 
-A great product is a reflection of thoughtful, deliberate, and considered decision-making. WP-CLI committers exhibit stellar judgement with making decisions on new features, fixing bugs, merging others pull requests, and generally working on the project.
+A great product is a reflection of thoughtful, deliberate, and considered decision-making. WP-CLI committers exhibit stellar judgement when making decisions on new features, fixing bugs, merging others' pull requests, and generally working on the project.
 
 The basis of this decision-making ensures:
 

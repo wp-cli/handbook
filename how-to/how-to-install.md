@@ -1,6 +1,6 @@
 # How to install WordPress
 
-Downloading and installing WordPress using WP-CLI is straight forward. It takes four steps.
+Downloading and installing WordPress using WP-CLI is straightforward. It takes four steps.
 First, you will need to download WordPress using the `wp core download` command.
 
 ### Step 1 - Download WordPress
@@ -17,6 +17,8 @@ The syntax of the command to download WordPress is the following: `wp core downl
 
 The command above creates a `wpdemo.test/` folder inside your current working directory and downloads the latest WordPress version. You can replace the `--path=wpdemo.test` with your
 desired folder name and the `--locale=it_IT` with your desired locale. You can omit the `--locale` option and, that will download by default WordPress in American English using the locale en_US.
+
+Next, navigate into the newly created folder (`cd wpdemo.test`) before running the subsequent commands.
 
 ### Step 2 - Generate a config file
 
