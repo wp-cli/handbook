@@ -34,7 +34,7 @@ Scenario: My example scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-empty-cache/">Given an empty cache</a></strong> - Clears the WP-CLI cache directory.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-file-cache-file/">Given /^an? ([^\s]+) (file|cache file):$/</a></strong> - Creates a file with the given contents.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-file-cache-file/">Given /^an? (&quot;[^&quot;]+&quot;|[^\s]+) (file|cache file):$/</a></strong> - Creates a file with the given contents.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-that-http-requests-to-will-respond-with/">Given /^that HTTP requests to (.*?) will respond with:$/</a></strong> - Mock HTTP requests to a given URL.</li>
@@ -49,10 +49,10 @@ Scenario: My example scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-database/">Given a database</a></strong> - Creates an empty database.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation/">Given a WP install(ation)</a></strong> - Installs WordPress.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation/">Given /^a WP( \d[^\s]+)? install(?:ation)?$/</a></strong> - Installs WordPress.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-in-subdir/">Given a WP install(ation) in :subdir</a></strong> - Installs WordPress in a given directory.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-in/">Given /^a WP( [^\s]+)? install(?:ation)? in ['&quot;]?([^'&quot;]+)['&quot;]?$/</a></strong> - Installs WordPress in a given directory.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-with-composer/">Given a WP install(ation) with Composer</a></strong> - Installs WordPress with Composer.</li>

@@ -1,4 +1,4 @@
-# Given a WP install(ation) in :subdir
+# Given /^a WP( [^\s]+)? install(?:ation)? in ['&quot;]?([^'&quot;]+)['&quot;]?$/
 
 Installs WordPress in a given directory.
 
@@ -14,6 +14,10 @@ Scenario: My example scenario
 
 Scenario: My other scenario
   Given a WP install in 'bar'
+  ...
+
+Scenario: My version-specific scenario
+  Given a WP 6.4.2 installation in 'subdir'
   ...
 ```
 
@@ -38,7 +42,7 @@ Scenario: My other scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-empty-cache/">Given an empty cache</a></strong> - Clears the WP-CLI cache directory.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-file-cache-file/">Given /^an? ([^\s]+) (file|cache file):$/</a></strong> - Creates a file with the given contents.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-an-file-cache-file/">Given /^an? (&quot;[^&quot;]+&quot;|[^\s]+) (file|cache file):$/</a></strong> - Creates a file with the given contents.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-replaced-with-in-the-file/">Given /^&quot;([^&quot;]+)&quot; replaced with &quot;([^&quot;]+)&quot; in the ([^\s]+) file$/</a></strong> - Search and replace a string in a file using regex.</li>
@@ -56,7 +60,7 @@ Scenario: My other scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-database/">Given a database</a></strong> - Creates an empty database.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation/">Given a WP install(ation)</a></strong> - Installs WordPress.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation/">Given /^a WP( \d[^\s]+)? install(?:ation)?$/</a></strong> - Installs WordPress.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/given-a-wp-installation-with-composer/">Given a WP install(ation) with Composer</a></strong> - Installs WordPress with Composer.</li>

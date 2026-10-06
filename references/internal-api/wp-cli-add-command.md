@@ -10,7 +10,7 @@ Register a command to WP-CLI.
 
 <div>
 <strong>$name</strong> (string) Name for the command (e.g. "post list" or "site empty").<br />
-<strong>$callable</strong> (callable|object|string) Command implementation as a class, function or closure.<br />
+<strong>$callable</strong> (callable|object|string|string[]) Command implementation as a class, function or closure.<br />
 <strong>$args</strong> (array) {<br />   Optional. An associative array with additional registration parameters.<br />   @type callable $before_invoke Callback to execute before invoking the command.<br />   @type callable $after_invoke  Callback to execute after invoking the command.<br />   @type string   $shortdesc     Short description (80 char or less) for the command.<br />   @type string   $longdesc      Description of arbitrary length for examples, etc.<br />   @type string   $synopsis      The synopsis for the command (string or array).<br />   @type string   $when          Execute callback on a named WP-CLI hook (e.g. before_wp_load).<br />   @type bool     $is_deferred   Whether the command addition had already been deferred.<br />}<br />
 <strong>@return</strong> (bool) on success, false if deferred, hard error if registration failed.<br />
 </div>
@@ -50,8 +50,6 @@ $foo = function( $args, $assoc_args ) {
 WP_CLI::add_command( 'foo', $foo );
 ```
 
-
-For guidance on where to place your custom commands (e.g. globally via `~/.wp-cli/config.yml`, in a plugin or theme, or as a standalone package), see the [Commands Cookbook](https://make.wordpress.org/cli/handbook/guides/commands-cookbook/).
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 

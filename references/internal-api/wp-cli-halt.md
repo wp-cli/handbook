@@ -20,6 +20,10 @@ Halt script execution with a specific return code.
 
 Permits script execution to be overloaded by `WP_CLI::runcommand()`
 
+When `--debug` is enabled, this method will also output a backtrace
+showing where the halt was triggered from, making it easier to identify
+the cause of early termination.
+
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
 

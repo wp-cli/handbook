@@ -10,7 +10,7 @@ Display debug message prefixed with &quot;Debug: &quot; when `--debug` is used.
 
 <div>
 <strong>$message</strong> (string|WP_Error|Exception|Throwable) Message to write to STDERR.<br />
-<strong>$group</strong> (string|bool) Organize debug message to a specific group.<br />
+<strong>$group</strong> (string|bool) Organize debug message to a specific group.<br />Use `false` to not group the message.<br />
 <strong>@return</strong> (void) <br />
 </div>
 
@@ -37,7 +37,6 @@ private static function set_wp_root( $path ) {
 # [...]
 # Debug: ABSPATH defined: /srv/www/wordpress-develop.dev/src/ (0.225s)
 ```
-Use `false` to not group the message.
 
 
 *Internal API documentation is generated from the WP-CLI codebase on every release. To suggest improvements, please submit a pull request.*
