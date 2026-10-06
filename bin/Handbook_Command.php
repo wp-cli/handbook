@@ -619,19 +619,19 @@ EOT;
 			// Match words, '().,;', and --arg before/after the newline.
 			$bits         = explode( "\n", $docs );
 			$in_yaml_doc  = false;
-			$in_code_block = false;
+			$in_code_bloc = false;
 			$total_bits   = count( $bits );
 			for ( $i = 0; $i < $total_bits; $i++ ) {
 				if ( ! isset( $bits[ $i ] ) || ! isset( $bits[ $i + 1 ] ) ) {
 					continue;
 				}
 				if ( '---' === $bits[ $i ] || '\---' === $bits[ $i ] ) {
-					$in_code_block = ! $in_code_block;
+					$in_yaml_doc = ! $in_yaml_doc;
 				}
 				if ( '```' === $bits[ $i ] ) {
 					$in_code_bloc = ! $in_code_bloc;
 				}
-				if ( $in_code_block || $in_code_bloc ) {
+				if ( $in_yaml_doc || $in_code_bloc ) {
 					continue;
 				}
 
