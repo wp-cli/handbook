@@ -11,4 +11,5 @@
 * **[Identify a Plugin or Theme Conflict](https://make.wordpress.org/cli/handbook/guides/identify-plugin-theme-conflict/)** - Debugging advise
 * **[Installing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/installing-packages/)** - Learn how to install packages and use version constraints
 * **[Sharing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/sharing-wp-cli-packages/)** - Some words about your environment
+* **[HTTP Proxy Configuration](https://make.wordpress.org/cli/handbook/guides/http-proxy/)** - Configure an HTTP proxy for WP-CLI and WordPress core requests.
 * **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to troubleshoot

@@ -20,6 +20,7 @@ Can’t find what you’re looking for? [Open an issue](https://github.com/wp-cl
 * **[Common issues and their fixes](https://make.wordpress.org/cli/handbook/guides/common-issues/)** - In case of fire, break glass.
 * **[External resources](https://make.wordpress.org/cli/handbook/guides/external-resources/)** - Blog posts, slides and videos from users.
 * **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Get help troubleshooting common WP-CLI issues.
+* **[HTTP Proxy Configuration](https://make.wordpress.org/cli/handbook/guides/http-proxy/)** - Configure an HTTP proxy for WP-CLI and WordPress core requests.
 
 ### For developers
 
