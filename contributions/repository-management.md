@@ -46,7 +46,7 @@ Some examples:
 
 * `command:core` - Relates to one or more of the subcommands under the `wp core` parent command.
 * `command:cli-check-update` - Relates to the `wp cli check-update` command.
-* `command:post-meta-update` - Relates to the `wp post-meta update` command.
+* `command:post-meta-update` - Relates to the `wp post meta update` command.
 
 #### Scope
 
