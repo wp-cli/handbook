@@ -6,10 +6,11 @@ Display informational message without prefix, and ignore `--quiet`.
 
 ## Usage
 
-    WP_CLI::line( $message = '' )
+    WP_CLI::line( $message = '', $newline = true )
 
 <div>
 <strong>$message</strong> (string) Message to display to the end user.<br />
+<strong>$newline</strong> (bool) Optional. Whether to append a newline to the end of the message. Default true.<br />
 <strong>@return</strong> (void) <br />
 </div>
 

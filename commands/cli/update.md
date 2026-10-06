@@ -6,11 +6,15 @@ This command runs on the `before_wp_load` hook, just before the WP load process 
 
 Default behavior is to check the releases API for the newest stable version, and prompt if one is available.
 
+By default the update stays within the current major version: a new major release is not offered unless `--major` is passed. This prevents unintentionally accepting breaking changes. When no update within the current major is available, a newer major is announced along with the `--major` flag needed to install it.
+
 Use `--stable` to install or reinstall the latest stable version.
 
-Use `--nightly` to install the latest built version of the master branch. While not recommended for production, nightly contains the latest and greatest, and should be stable enough for development and staging environments.
+Use `--nightly` to install the latest built version of the main branch. While not recommended for production, nightly contains the latest and greatest, and should be stable enough for development and staging environments.
 
 Only works for the Phar installation mechanism.
+
+Unauthenticated requests to the GitHub API are rate limited to 60 per hour per IP address. If you are experiencing rate limit issues, you can generate a GitHub personal access token and set the GITHUB_TOKEN environment variable before running this command. Authenticated requests have a higher rate limit of 5,000 per hour. The token only needs public repository read access (no specific scopes required for public data).
 
 ### OPTIONS
 
@@ -23,13 +27,13 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : Only perform minor updates.
 
 [\--major]
-: Only perform major updates.
+: Only perform major updates, and allow crossing a major-version boundary.
 
 [\--stable]
-: Update to the latest stable release. Skips update check.
+: Update to the latest stable release. Skips update availability check.
 
 [\--nightly]
-: Update to the latest built version of the master branch. Potentially unstable.
+: Update to the latest built version of the main branch. Potentially unstable.
 
 [\--yes]
 : Do not prompt for confirmation.
@@ -46,6 +50,23 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     New version works. Proceeding to replace.
     Success: Updated WP-CLI to 0.24.1.
 
+    # Update CLI using a GitHub token to increase rate limit.
+    $ GITHUB_TOKEN=ghp_... wp cli update
+    You are currently using WP-CLI version 0.24.0. Would you like to update to 0.24.1? [y/n] y
+    Downloading from https://github.com/wp-cli/wp-cli/releases/download/v0.24.1/wp-cli-0.24.1.phar...
+    New version works. Proceeding to replace.
+    Success: Updated WP-CLI to 0.24.1.
+
+    # A new major version is available but withheld by default.
+    $ wp cli update
+    A new major version (3.0.0) is available. Run `wp cli update --major` to update across major versions.
+    Success: WP-CLI is at the latest version.
+
+    # Update across a major version explicitly.
+    $ wp cli update --major
+    You have version 2.12.0. Would you like to update to 3.0.0? [y/n] y
+    Success: Updated WP-CLI to 3.0.0.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -55,6 +76,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -67,3 +89,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

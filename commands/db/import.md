@@ -23,7 +23,10 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : Extra arguments to pass to mysql. [Refer to mysql binary docs](https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html).
 
 [\--skip-optimization]
-: When using an SQL file, do not include speed optimization such as disabling auto-commit and key checks.
+: Do not disable unique checks and foreign key checks during import.
+
+[\--skip-sql-mode-compat]
+: Do not adapt the session SQL mode for WordPress compatibility. By default, `wp db import` strips the SQL modes that WordPress Core disables (such as `STRICT_TRANS_TABLES` and `NO_ZERO_DATE`) so that dumps containing legacy values like `0000-00-00` import cleanly. Pass this flag to import under the server's own SQL modes instead.
 
 [\--defaults]
 : Loads the environment's MySQL option files. Default behavior is to skip loading them to avoid failures due to misconfiguration.
@@ -43,6 +46,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -55,3 +59,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |
