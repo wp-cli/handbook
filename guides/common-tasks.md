@@ -192,7 +192,18 @@ wp comment approve 5
 wp comment delete $(wp comment list --status=spam --format=ids)
 ```
 
-> **Note:** The `$(...)` syntax works in bash (macOS, Linux, Git Bash, or WSL on Windows). It does not work in Windows Command Prompt. Windows users should use Git Bash, WSL, or PowerShell to run this command.
+The command above works in bash (macOS, Linux, Git Bash, or WSL on Windows). It does not work in Windows Command Prompt.
+
+In PowerShell, split the space-separated IDs into separate arguments before deleting the comments:
+
+```powershell
+$commentIds = (wp comment list --status=spam --format=ids) -split '\s+' | Where-Object { $_ }
+if ($commentIds) {
+    wp comment delete $commentIds
+}
+```
+
+PowerShell passes the output of `$(wp comment list --status=spam --format=ids)` as a single argument when it is one line, even if that line contains multiple IDs. The `if` condition also avoids running `wp comment delete` when no spam comments are found.
 
 ## Options and Settings
 
