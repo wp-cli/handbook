@@ -33,11 +33,14 @@ jobs:
           sudo mv wp-cli-nightly.phar /usr/local/bin/wp
           sudo chmod +x /usr/local/bin/wp
 
+      - name: Download latest stable WP-CLI for comparison
+        run: curl -sSfL -o "$RUNNER_TEMP/wp-cli-stable.phar" https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
       - name: Install non-bundled packages
         run: bash bin/install_packages.sh
 
       - name: Generate handbook
-        run: wp handbook gen-all
+        run: wp handbook gen-all --stable-phar="$RUNNER_TEMP/wp-cli-stable.phar"
         env:
           WP_CLI_PACKAGES_DIR: bin/packages
           WP_CLI_CONFIG_PATH: /dev/null

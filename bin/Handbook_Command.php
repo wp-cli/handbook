@@ -15,6 +15,29 @@ use WP_CLI\Utils;
  */
 class Handbook_Command {
 	/**
+	 * Sentence used to flag commands missing from the latest stable release.
+	 *
+	 * Also used to detect such commands when generating the commands manifest.
+	 */
+	const UNRELEASED_COMMAND_NOTE = 'This command is not part of a stable WP-CLI release yet.';
+
+	/**
+	 * Version of the latest stable WP-CLI release, if a stable Phar was given.
+	 *
+	 * @var string|null
+	 */
+	private static $stable_version = null;
+
+	/**
+	 * Commands available in the latest stable release, mapped to their options.
+	 *
+	 * `generic` is true if the command accepts arbitrary options, e.g. `[--<field>=<value>]`.
+	 *
+	 * @var array<string, array{options: string[], generic: bool}>|null
+	 */
+	private static $stable_commands = null;
+
+	/**
 	 * @return string
 	 */
 	protected static function get_handbook_path() {
@@ -29,10 +52,13 @@ class Handbook_Command {
 	 * [--verbose]
 	 * : If set will list command pages as they are generated.
 	 *
+	 * [--stable-phar=<path>]
+	 * : Path to the latest stable WP-CLI Phar. If set, commands and options missing from it are flagged as unreleased.
+	 *
 	 * @subcommand gen-all
 	 *
 	 * @param string[] $args                       Positional arguments. Unused.
-	 * @param array{verbose?: bool}    $assoc_args Associative arguments.
+	 * @param array{verbose?: bool, stable-phar?: string} $assoc_args Associative arguments.
 	 * @return void
 	 */
 	public function gen_all( $args, $assoc_args ) {
@@ -236,10 +262,13 @@ EOT;
 	 * [--verbose]
 	 * : If set will list command pages as they are generated.
 	 *
+	 * [--stable-phar=<path>]
+	 * : Path to the latest stable WP-CLI Phar. If set, commands and options missing from it are flagged as unreleased.
+	 *
 	 * @subcommand gen-commands
 	 *
 	 * @param string[] $args Positional arguments. Unused.
-	 * @param array{verbose?: bool} $assoc_args Associative arguments.
+	 * @param array{verbose?: bool, stable-phar?: string} $assoc_args Associative arguments.
 	 * @return void
 	 */
 	public function gen_commands( $args, $assoc_args ) {
@@ -256,6 +285,11 @@ EOT;
 		}
 		if ( ! $have_nonbundled_installed ) {
 			WP_CLI::error( sprintf( "Install non-bundled packages by running '%s' first.", 'bin/install_packages.sh' ) );
+		}
+
+		$stable_phar = Utils\get_flag_value( $assoc_args, 'stable-phar' );
+		if ( $stable_phar ) {
+			self::load_stable_reference( $stable_phar );
 		}
 
 		self::empty_dir( self::get_handbook_path() . '/commands/' );
@@ -279,6 +313,166 @@ EOT;
 		}
 
 		WP_CLI::success( 'Generated all command pages.' );
+	}
+
+	/**
+	 * Loads the commands and options available in the latest stable release.
+	 *
+	 * @param string $phar Path to the stable WP-CLI Phar.
+	 * @return void
+	 */
+	private static function load_stable_reference( $phar ) {
+		if ( ! is_file( $phar ) ) {
+			WP_CLI::error( "Stable Phar not found: {$phar}" );
+		}
+
+		$version = self::run_phar( $phar, 'cli version' );
+		if ( ! preg_match( '/^WP-CLI (\d+\.\d+\.\d+)$/', $version, $matches ) ) {
+			WP_CLI::error( "Not a stable WP-CLI release: {$version}" );
+		}
+		self::$stable_version = $matches[1];
+
+		$dump = json_decode( self::run_phar( $phar, 'cli cmd-dump' ), true );
+		if ( ! is_array( $dump ) || ! isset( $dump['subcommands'] ) || ! is_array( $dump['subcommands'] ) ) {
+			WP_CLI::error( 'Could not dump commands of stable Phar.' );
+		}
+
+		self::$stable_commands = [];
+		foreach ( $dump['subcommands'] as $cmd ) {
+			self::flatten_cmd_dump( $cmd, [], self::$stable_commands );
+		}
+
+		WP_CLI::log( sprintf( 'Comparing against WP-CLI %s (%d commands).', self::$stable_version, count( self::$stable_commands ) ) );
+	}
+
+	/**
+	 * Runs a WP-CLI command using the given Phar, inheriting the current environment.
+	 *
+	 * The command runs outside of the handbook directory, so that the handbook's `wp-cli.yml` isn't loaded.
+	 *
+	 * @param string $phar    Path to the WP-CLI Phar.
+	 * @param string $command WP-CLI command to run, without the leading `wp`.
+	 * @return string Trimmed STDOUT.
+	 */
+	private static function run_phar( $phar, $command ) {
+		$env = getenv();
+		if ( ! empty( $env['WP_CLI_PACKAGES_DIR'] ) && realpath( $env['WP_CLI_PACKAGES_DIR'] ) ) {
+			$env['WP_CLI_PACKAGES_DIR'] = (string) realpath( $env['WP_CLI_PACKAGES_DIR'] );
+		}
+
+		$stderr_file = (string) tempnam( sys_get_temp_dir(), 'wp-cli-handbook' );
+		$process     = proc_open(
+			// Keep PHP notices out of STDOUT, which might be JSON.
+			Utils\esc_cmd( '%s -d display_errors=stderr %s', PHP_BINARY, (string) realpath( $phar ) ) . ' ' . $command,
+			[
+				1 => [ 'pipe', 'w' ],
+				2 => [ 'file', $stderr_file, 'w' ],
+			],
+			$pipes,
+			sys_get_temp_dir(),
+			$env
+		);
+		if ( ! is_resource( $process ) ) {
+			WP_CLI::error( "Could not run '{$command}' using {$phar}." );
+		}
+		$stdout = (string) stream_get_contents( $pipes[1] );
+		fclose( $pipes[1] );
+		$return_code = proc_close( $process );
+		$stderr      = (string) file_get_contents( $stderr_file );
+		unlink( $stderr_file );
+
+		if ( 0 !== $return_code ) {
+			WP_CLI::error( "Running '{$command}' using {$phar} failed: {$stderr}" );
+		}
+
+		return trim( $stdout );
+	}
+
+	/**
+	 * Flattens a `cli cmd-dump` command tree into a list of command paths and their options.
+	 *
+	 * Aliases are not included, as older versions of `cli cmd-dump` don't list them.
+	 * Alias pages reuse the note of the command they point to instead.
+	 *
+	 * @param array<string, mixed>                                     $cmd    Command as returned by `cli cmd-dump`.
+	 * @param string[]                                                 $parent Names of the parent commands.
+	 * @param array<string, array{options: string[], generic: bool}> $out    Command paths mapped to their options.
+	 * @return void
+	 */
+	private static function flatten_cmd_dump( $cmd, $parent, &$out ) { // phpcs:ignore Universal.NamingConventions.NoReservedKeywordParameterNames.parentFound
+		$synopsis = isset( $cmd['synopsis'] ) ? (string) $cmd['synopsis'] : '';
+		$options  = [
+			'options' => self::get_option_names( $synopsis ),
+			'generic' => in_array( 'generic', array_column( WP_CLI\SynopsisParser::parse( $synopsis ), 'type' ), true ),
+		];
+
+		$out[ implode( ' ', array_merge( $parent, [ (string) $cmd['name'] ] ) ) ] = $options;
+
+		if ( isset( $cmd['subcommands'] ) && is_array( $cmd['subcommands'] ) ) {
+			foreach ( $cmd['subcommands'] as $subcmd ) {
+				self::flatten_cmd_dump( $subcmd, array_merge( $parent, [ (string) $cmd['name'] ] ), $out );
+			}
+		}
+	}
+
+	/**
+	 * Extracts the option names (e.g. `--format`) from a command synopsis.
+	 *
+	 * Option aliases (e.g. `--dbpass|db_password`) are included as separate names.
+	 *
+	 * @param string $synopsis Command synopsis.
+	 * @return string[]
+	 */
+	private static function get_option_names( $synopsis ) {
+		$options = [];
+		foreach ( WP_CLI\SynopsisParser::parse( $synopsis ) as $param ) {
+			if ( in_array( $param['type'], [ 'assoc', 'flag' ], true ) && isset( $param['name'] ) ) {
+				$options[] = '--' . $param['name'];
+				foreach ( isset( $param['aliases'] ) ? (array) $param['aliases'] : [] as $alias ) {
+					$options[] = '--' . $alias;
+				}
+			}
+		}
+		return $options;
+	}
+
+	/**
+	 * Builds a note about parts of a command that are not in the latest stable release yet.
+	 *
+	 * @param string $full_name Full command name, e.g. `block type list`.
+	 * @param string $synopsis  Command synopsis.
+	 * @return string Markdown note, or an empty string if everything is released or no stable Phar was given.
+	 */
+	private static function get_release_note( $full_name, $synopsis ) {
+		if ( null === self::$stable_commands ) {
+			return '';
+		}
+
+		$nightly = 'To use %s now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.';
+
+		if ( ! isset( self::$stable_commands[ $full_name ] ) ) {
+			return sprintf(
+				'> **Note:** %s %s',
+				self::UNRELEASED_COMMAND_NOTE,
+				sprintf( $nightly, 'it' )
+			);
+		}
+
+		// Commands accepting arbitrary options might have supported a newly documented option already.
+		if ( self::$stable_commands[ $full_name ]['generic'] ) {
+			return '';
+		}
+
+		$unreleased = array_diff( self::get_option_names( $synopsis ), self::$stable_commands[ $full_name ]['options'] );
+		if ( empty( $unreleased ) ) {
+			return '';
+		}
+
+		return sprintf(
+			'> **Note:** The following options are not part of a stable WP-CLI release yet: %s. %s',
+			'`' . implode( '`, `', $unreleased ) . '`',
+			sprintf( $nightly, 'them' )
+		);
 	}
 
 	/**
@@ -396,6 +590,9 @@ EOT;
 				];
 				if ( ! empty( $commands_data[ $title ] ) ) {
 					$manifest[ $cmd_path ] = array_merge( $manifest[ $cmd_path ], $commands_data[ $title ] );
+				}
+				if ( false !== strpos( $contents, self::UNRELEASED_COMMAND_NOTE ) ) {
+					$manifest[ $cmd_path ]['unreleased'] = true;
 				}
 			}
 		}
@@ -593,6 +790,7 @@ EOT;
 			}
 		}
 		$binding['has-subcommands'] = isset( $cmd['subcommands'] ) ? [ true ] : false;
+		$binding['release-note']    = self::get_release_note( $binding['synopsis'], $cmd['synopsis'] ?? '' );
 
 		$hook_name        = $cmd['hook'];
 		$hook_description = $hook_name ? Utils\get_hook_description( $hook_name ) : null;
