@@ -418,6 +418,8 @@ EOT;
 	/**
 	 * Extracts the option names (e.g. `--format`) from a command synopsis.
 	 *
+	 * Option aliases (e.g. `--dbpass|db_password`) are included as separate names.
+	 *
 	 * @param string $synopsis Command synopsis.
 	 * @return string[]
 	 */
@@ -426,6 +428,9 @@ EOT;
 		foreach ( WP_CLI\SynopsisParser::parse( $synopsis ) as $param ) {
 			if ( in_array( $param['type'], [ 'assoc', 'flag' ], true ) && isset( $param['name'] ) ) {
 				$options[] = '--' . $param['name'];
+				foreach ( isset( $param['aliases'] ) ? (array) $param['aliases'] : [] as $alias ) {
+					$options[] = '--' . $alias;
+				}
 			}
 		}
 		return $options;
