@@ -379,6 +379,9 @@ EOT;
 	 */
 	private static function load_stable_reference( $phar ) {
 		list( self::$stable_version, self::$stable_commands ) = self::dump_phar_commands( $phar );
+		if ( ! preg_match( '/^\d+\.\d+\.\d+$/', self::$stable_version ) ) {
+			WP_CLI::error( 'Not a stable WP-CLI release: ' . self::$stable_version );
+		}
 
 		WP_CLI::log( sprintf( 'Comparing against WP-CLI %s (%d commands).', self::$stable_version, count( self::$stable_commands ) ) );
 	}
