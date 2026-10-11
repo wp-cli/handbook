@@ -19,7 +19,7 @@ class Handbook_Command {
 	 *
 	 * Also used to detect such commands when generating the commands manifest.
 	 */
-	const UNRELEASED_COMMAND_NOTE = 'This command is not yet available in the latest stable release of WP-CLI';
+	const UNRELEASED_COMMAND_NOTE = 'This command is not part of a stable WP-CLI release yet.';
 
 	/**
 	 * Commands that are not bundled with WP-CLI, but documented in the handbook.
@@ -518,9 +518,8 @@ EOT;
 
 		if ( ! isset( self::$stable_commands[ $full_name ] ) ) {
 			return sprintf(
-				'> **Note:** %s (%s). %s',
+				'> **Note:** %s %s',
 				self::UNRELEASED_COMMAND_NOTE,
-				self::$stable_version,
 				sprintf( $nightly, 'it' )
 			);
 		}
@@ -536,8 +535,7 @@ EOT;
 		}
 
 		return sprintf(
-			'> **Note:** The following options are not yet available in the latest stable release of WP-CLI (%s): %s. %s',
-			self::$stable_version,
+			'> **Note:** The following options are not part of a stable WP-CLI release yet: %s. %s',
 			'`' . implode( '`, `', $unreleased ) . '`',
 			sprintf( $nightly, 'them' )
 		);
