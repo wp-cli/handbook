@@ -26,7 +26,7 @@ curl -o /tmp/wp-cli-stable.phar https://raw.githubusercontent.com/wp-cli/builds/
 WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all --stable-phar=/tmp/wp-cli-stable.phar
 ```
 
-This also records the stable release in `bin/command-history.json`, which keeps track of the release in which each command and option first appeared. Command pages show this as "Available since WP-CLI X.Y.Z" and "Options added later". Nothing is shown for commands and options that were already part of the oldest recorded release (`baseline`).
+This also records the stable release in `bin/command-history.json`, which keeps track of the first bundled WP-CLI release in which each command and option appeared. Command pages show this as "Available since WP-CLI X.Y.Z" and "Options added later". This is the bundle release, not the version of the package that provides the command: if a package is updated on its own, a command can be available earlier. Nothing is shown for commands and options that were already part of the oldest recorded release (`baseline`).
 
 To backfill the history from older releases, pass their Phars to `wp handbook update-command-history`. Releases can be given in any order, and the oldest release is kept for every command and option:
 
