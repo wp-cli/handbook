@@ -2,6 +2,8 @@
 
 Removes all tables with `$table_prefix` from the database.
 
+Options added later: `--defaults` (2.6.0).
+
 Runs `DROP_TABLE` for each table that has a `$table_prefix` as specified in wp-config.php.
 
 ### OPTIONS

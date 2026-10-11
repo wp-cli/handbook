@@ -2,6 +2,8 @@
 
 Searches/replaces strings in the database.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--old`, `--new`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Searches through all rows in a selection of tables and replaces appearances of the first string with the second string.
 
 By default, the command uses tables registered to the `$wpdb` object. On multisite, this will just be the tables for the current site unless `--network` is specified.

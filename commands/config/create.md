@@ -2,6 +2,10 @@
 
 Generates a wp-config.php file.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--db_password`, `--ssl`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--config-file` (2.6.0), `--insecure` (2.5.0).
+
 Creates a new wp-config.php with database constants, and verifies that the database constants are correct.
 
 ### OPTIONS

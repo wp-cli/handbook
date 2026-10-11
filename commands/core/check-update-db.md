@@ -2,6 +2,8 @@
 
 Checks for the need for WordPress database updates.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Compares the current database version with the version required by WordPress core to determine if database updates are needed.
 
 ### OPTIONS

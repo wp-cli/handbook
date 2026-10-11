@@ -37,13 +37,40 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 : A string containing content about the user.
 
 [\--rich_editing=&lt;rich_editing&gt;]
-: A string for whether to enable the rich editor or not. False if not empty.
+: Whether to enable the rich editor for the user. Accepts 'true' or 'false', or their numeric forms 1 and 0.
+
+[\--syntax_highlighting=&lt;syntax_highlighting&gt;]
+: Whether to enable the rich code editor for the user. Accepts 'true' or 'false', or their numeric forms 1 and 0.
+
+[\--comment_shortcuts=&lt;comment_shortcuts&gt;]
+: Whether to enable comment moderation keyboard shortcuts for the user. Accepts 'true' or 'false' as a string literal, not boolean.
+
+[\--admin_color=&lt;admin_color&gt;]
+: Admin color scheme for the user.
+
+[\--use_ssl=&lt;use_ssl&gt;]
+: Whether the user should always access the admin over https.
 
 [\--user_registered=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
 : The date the user registered.
 
+[\--user_activation_key=&lt;user_activation_key&gt;]
+: Password reset key.
+
+[\--spam=&lt;spam&gt;]
+: Multisite only. Whether the user is marked as spam.
+
+[\--show_admin_bar_front=&lt;show_admin_bar_front&gt;]
+: Whether to display the admin bar for the user on the site's front end. Accepts 'true' or 'false' as a string literal, not boolean.
+
 [\--role=&lt;role&gt;]
 : A string used to set the user's role.
+
+[\--locale=&lt;locale&gt;]
+: The user's locale.
+
+[\--meta_input=&lt;meta_input&gt;]
+: Array in JSON format of user meta values keyed by their user meta key.
 
 \--&lt;field&gt;=&lt;value&gt;
 : One or more fields to update. For accepted fields, see wp_update_user().

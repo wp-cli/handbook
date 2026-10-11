@@ -14,7 +14,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
     # Remove user from spam.
     $ wp user unspam 123
     User 123 removed from spam.
-    Success: Unspamed 1 of 1 users.
+    Success: Unspammed 1 of 1 users.
 
 ### GLOBAL PARAMETERS
 

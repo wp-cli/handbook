@@ -2,6 +2,8 @@
 
 Opens an interactive PHP console for running and testing PHP code.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--watch`, `--hook`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 `wp shell` allows you to evaluate PHP statements and expressions interactively, from within a WordPress environment. Type a bit of code, hit enter, and see the code execute right before you. Because WordPress is loaded, you have access to all the functions, classes and globals that you can use within a WordPress plugin, for example.
 
 The `restart` command reloads the shell by spawning a new PHP process, allowing modified code to be fully reloaded. Note that this requires the `pcntl_exec()` function. If not available, the shell restarts in-process, which resets variables but doesn't reload PHP files.

@@ -2,6 +2,10 @@
 
 Exports WordPress content to a WXR file.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--skip_authors`, `--skip_terms`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--include_once` (2.8.0), `--allow_orphan_terms` (2.9.0).
+
 Generates one or more WXR files containing authors, terms, posts, comments, and attachments. WXR files do not include site configuration (options) or the attachment files themselves.
 
 ### OPTIONS

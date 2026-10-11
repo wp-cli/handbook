@@ -6,6 +6,51 @@ Creates a new comment.
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
 
+[\--comment_agent=&lt;comment_agent&gt;]
+: The HTTP user agent of the comment author.
+
+[\--comment_approved=&lt;comment_approved&gt;]
+: Whether the comment has been approved. Default 1.
+
+[\--comment_author=&lt;comment_author&gt;]
+: The name of the author of the comment.
+
+[\--comment_author_email=&lt;comment_author_email&gt;]
+: The email address of the comment author.
+
+[\--comment_author_IP=&lt;comment_author_IP&gt;]
+: The IP address of the comment author.
+
+[\--comment_author_url=&lt;comment_author_url&gt;]
+: The URL address of the comment author.
+
+[\--comment_content=&lt;comment_content&gt;]
+: The content of the comment.
+
+[\--comment_date=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
+: The date the comment was submitted.
+
+[\--comment_date_gmt=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
+: The date the comment was submitted in the GMT timezone.
+
+[\--comment_karma=&lt;comment_karma&gt;]
+: The karma of the comment. Default 0.
+
+[\--comment_parent=&lt;comment_parent&gt;]
+: ID of this comment's parent, if any. Default 0.
+
+[\--comment_post_ID=&lt;comment_post_ID&gt;]
+: ID of the post that relates to the comment, if any.
+
+[\--comment_type=&lt;comment_type&gt;]
+: Comment type. Default 'comment'.
+
+[\--comment_meta=&lt;comment_meta&gt;]
+: Array in JSON format of comment meta values keyed by their comment meta key.
+
+[\--user_id=&lt;user_id&gt;]
+: ID of the user who submitted the comment. Default 0.
+
 [\--&lt;field&gt;=&lt;value&gt;]
 : Associative args for the new comment. See wp_insert_comment().
 

@@ -2,6 +2,8 @@
 
 Installs a given language.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--format`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Downloads the language pack from WordPress.org. Find your language code at: https://translate.wordpress.org/
 
 ### OPTIONS

@@ -2,6 +2,10 @@
 
 Regenerates thumbnails for one or more attachments.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--update-attachment-refs`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--delete-unknown` (2.11.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

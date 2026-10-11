@@ -2,6 +2,8 @@
 
 Imports content from a given WXR file.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--rewrite_urls`, `--importer`, `--source-dir`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Provides a command line interface to the WordPress Importer plugin, for performing data migrations.
 
 Use `define( 'IMPORT_DEBUG', true );` for more verbosity during importing.

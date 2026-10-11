@@ -4,6 +4,10 @@ Loads and executes a PHP file.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--hook`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--use-include` (2.8.0).
+
 Note: because code is executed within a method, global variables need to be explicitly globalized.
 
 ### OPTIONS

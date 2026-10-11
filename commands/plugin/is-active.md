@@ -2,6 +2,8 @@
 
 Checks if a given plugin is active.
 
+Options added later: `--network` (2.5.0).
+
 Returns exit code 0 when active, 1 when not active.
 
 If the plugin does not exist but is still in WordPress's active plugins storage (such as the active plugins option or the sitewide plugins option for network-activated plugins), a warning will be emitted.

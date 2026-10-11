@@ -2,6 +2,8 @@
 
 Removes a user's capability.
 
+Options added later: `--force` (2.12.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

@@ -2,6 +2,8 @@
 
 Verifies whether a user exists.
 
+Available since WP-CLI 2.11.0.
+
 Displays a success message if the user does exist.
 
 ### OPTIONS

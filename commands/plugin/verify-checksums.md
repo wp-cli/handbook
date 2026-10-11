@@ -2,6 +2,10 @@
 
 Verifies plugin files against WordPress.org's checksums.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--exclude-mu-plugins`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--version` (2.8.0), `--insecure` (2.5.0), `--exclude` (2.9.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

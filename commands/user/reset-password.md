@@ -2,6 +2,8 @@
 
 Resets the password for one or more users.
 
+Options added later: `--show-password` (2.8.0), `--porcelain` (2.8.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

@@ -2,6 +2,8 @@
 
 Resets sidebar.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--inactive`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Removes all widgets from the sidebar and places them in Inactive Widgets.
 
 ### OPTIONS

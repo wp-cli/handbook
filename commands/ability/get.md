@@ -2,6 +2,8 @@
 
 Gets details about a registered ability.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -28,6 +30,8 @@ options:
 
 ### AVAILABLE FIELDS
 
+These fields will be displayed by default:
+
 * name
 * label
 * category
@@ -37,7 +41,16 @@ options:
 * readonly
 * destructive
 * idempotent
+* public
 * show_in_rest
+
+These fields are optionally available:
+
+* meta
+
+The `public` field reports the high-level client exposure flag as declared by the ability. As of WordPress 7.1 it seeds the default for channel-specific flags such as `show_in_rest`, which take precedence when set explicitly. On earlier versions the flag is stored but has no effect, so `public` and `show_in_rest` may disagree.
+
+The `meta` field renders the raw metadata as JSON. It is the only way to inspect channel-specific settings registered by plugins, such as `mcp`.
 
 ### EXAMPLES
 
@@ -55,8 +68,13 @@ options:
     | readonly      | 1                    |
     | destructive   | 0                    |
     | idempotent    | 1                    |
+    | public        | 1                    |
     | show_in_rest  | 1                    |
     +---------------+----------------------+
+
+    # Inspect channel-specific settings that have no field of their own.
+    $ wp ability get my-plugin/my-ability --field=meta
+    {"annotations":{"readonly":true,"destructive":false,"idempotent":null},"mcp":{"public":false},"show_in_rest":true,"public":true}
 
     # Get ability as JSON.
     $ wp ability get core/get-site-info --format=json

@@ -2,6 +2,8 @@
 
 Updates an existing application password.
 
+Available since WP-CLI 2.6.0.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -12,8 +14,8 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 &lt;uuid&gt;
 : The universally unique ID of the application password.
 
-[\--&lt;field&gt;=&lt;value&gt;]
-: Update the &lt;field&gt; with a new &lt;value&gt;. Currently supported fields: name.
+[\--name=&lt;name&gt;]
+: The new name of the application password.
 
 ### EXAMPLES
 
