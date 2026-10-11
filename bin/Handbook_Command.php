@@ -348,19 +348,29 @@ EOT;
 	/**
 	 * Runs a WP-CLI command using the given Phar, inheriting the current environment.
 	 *
+	 * The command runs outside of the handbook directory, so that the handbook's `wp-cli.yml` isn't loaded.
+	 *
 	 * @param string $phar    Path to the WP-CLI Phar.
 	 * @param string $command WP-CLI command to run, without the leading `wp`.
 	 * @return string Trimmed STDOUT.
 	 */
 	private static function run_phar( $phar, $command ) {
+		$env = getenv();
+		if ( ! empty( $env['WP_CLI_PACKAGES_DIR'] ) && realpath( $env['WP_CLI_PACKAGES_DIR'] ) ) {
+			$env['WP_CLI_PACKAGES_DIR'] = (string) realpath( $env['WP_CLI_PACKAGES_DIR'] );
+		}
+
 		$stderr_file = (string) tempnam( sys_get_temp_dir(), 'wp-cli-handbook' );
 		$process     = proc_open(
-			Utils\esc_cmd( '%s %s', PHP_BINARY, $phar ) . ' ' . $command,
+			// Keep PHP notices out of STDOUT, which might be JSON.
+			Utils\esc_cmd( '%s -d display_errors=stderr %s', PHP_BINARY, (string) realpath( $phar ) ) . ' ' . $command,
 			[
 				1 => [ 'pipe', 'w' ],
 				2 => [ 'file', $stderr_file, 'w' ],
 			],
-			$pipes
+			$pipes,
+			sys_get_temp_dir(),
+			$env
 		);
 		if ( ! is_resource( $process ) ) {
 			WP_CLI::error( "Could not run '{$command}' using {$phar}." );
