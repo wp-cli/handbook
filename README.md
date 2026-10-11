@@ -19,6 +19,13 @@ bin/install_packages.sh
 WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
 ```
 
+Since the command pages are generated from the nightly build, they can document commands and options that are not part of a stable release yet. To flag those on the generated pages, pass the latest stable Phar using `--stable-phar`:
+
+```
+curl -o /tmp/wp-cli-stable.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all --stable-phar=/tmp/wp-cli-stable.phar
+```
+
 ## Automated Handbook Generation
 
 The handbook can be regenerated automatically using the "Regenerate Handbook" GitHub Actions workflow. This workflow can be triggered in two ways:
@@ -28,8 +35,9 @@ The handbook can be regenerated automatically using the "Regenerate Handbook" Gi
 
 The workflow will:
 - Install WP-CLI nightly build
+- Download the latest stable WP-CLI release
 - Install non-bundled packages
-- Run `wp handbook gen-all`
+- Run `wp handbook gen-all --stable-phar=...`, flagging commands and options that are not in the latest stable release yet
 - Commit and push any changes to the repository
 
 ## Documentation Import
