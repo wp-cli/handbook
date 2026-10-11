@@ -4,6 +4,8 @@ Removes all tables from the database.
 
 This command runs on the `after_wp_config_load` hook, after wp-config.php has been loaded into scope.
 
+Options added later: `--defaults` (2.6.0).
+
 Runs `DROP_DATABASE` and `CREATE_DATABASE` SQL statements using `DB_HOST`, `DB_NAME`, `DB_USER` and `DB_PASSWORD` database credentials specified in wp-config.php.
 
 ### OPTIONS

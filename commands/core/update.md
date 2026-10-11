@@ -4,6 +4,10 @@ Updates WordPress to a newer version.
 
 **Alias:** `upgrade`
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--format`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--insecure` (2.5.0).
+
 Defaults to updating WordPress to the latest version.
 
 If you see "Error: Another update is currently in progress.", you may need to run `wp option delete core_updater.lock` after verifying another update isn't actually running.

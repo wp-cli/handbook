@@ -2,6 +2,8 @@
 
 Finds a string in the database.
 
+Options added later: `--fields` (2.11.0), `--format` (2.11.0).
+
 Searches through all of the text columns in a selection of database tables for a given string, Outputs colorized references to the string.
 
 Defaults to searching through all tables registered to $wpdb. On multisite, this default is limited to the tables for the current site.

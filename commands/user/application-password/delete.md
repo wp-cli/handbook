@@ -2,6 +2,8 @@
 
 Delete an existing application password.
 
+Available since WP-CLI 2.6.0.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

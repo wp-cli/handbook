@@ -2,6 +2,8 @@
 
 Cleans up duplicate post meta values on a post.
 
+Available since WP-CLI 2.7.0.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

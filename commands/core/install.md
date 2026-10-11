@@ -2,6 +2,10 @@
 
 Runs the standard WordPress installation process.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--admin_pass`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--locale` (2.7.0).
+
 Creates the WordPress tables in the database using the URL, title, and default admin user details provided. Performs the famous 5 minute install in seconds or less.
 
 Note: if you've installed WordPress in a subdirectory, then you'll need to `wp option update siteurl` after `wp core install`. For instance, if WordPress is installed in the `/wp` directory and your domain is example.com, then you'll need to run `wp option update siteurl http://example.com/wp` for your WordPress installation to function properly.

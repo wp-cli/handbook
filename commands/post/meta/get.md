@@ -2,6 +2,8 @@
 
 Get meta field value.
 
+Options added later: `--single` (2.12.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

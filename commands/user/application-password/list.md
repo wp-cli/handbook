@@ -2,6 +2,8 @@
 
 Lists all application passwords associated with a user.
 
+Available since WP-CLI 2.6.0.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -11,6 +13,27 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 
 [\--&lt;field&gt;=&lt;value&gt;]
 : Filter the list by a specific field.
+
+[\--uuid=&lt;uuid&gt;]
+: Filter by the universally unique ID of the application password.
+
+[\--app_id=&lt;app_id&gt;|app-id]
+: Filter by the application ID. `--app-id` is accepted as an alias.
+
+[\--name=&lt;name&gt;]
+: Filter by the name of the application password.
+
+[\--password=&lt;password&gt;]
+: Filter by the hashed password.
+
+[\--created=&lt;created&gt;]
+: Filter by the Unix timestamp the application password was created at.
+
+[\--last_used=&lt;last_used&gt;|last-used]
+: Filter by the Unix timestamp the application password was last used at. `--last-used` is accepted as an alias.
+
+[\--last_ip=&lt;last_ip&gt;|last-ip]
+: Filter by the IP address the application password was last used from. `--last-ip` is accepted as an alias.
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each application password.

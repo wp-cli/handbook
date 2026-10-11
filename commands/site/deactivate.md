@@ -2,6 +2,8 @@
 
 Deactivates one or more sites.
 
+Options added later: `--slug` (2.9.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

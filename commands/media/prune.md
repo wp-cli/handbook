@@ -2,6 +2,8 @@
 
 Removes all generated image files for one or more attachments.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Generated image files for registered sizes can be recreated with `wp media regenerate`. Thumbnails for image sizes that are no longer registered are kept by default because they cannot be regenerated; use `--remove-abandoned` to remove them as well.
 
 ### OPTIONS

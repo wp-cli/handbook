@@ -4,6 +4,8 @@ Updates WP-CLI to the latest release.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+Options added later: `--insecure` (2.5.0).
+
 Default behavior is to check the releases API for the newest stable version, and prompt if one is available.
 
 By default the update stays within the current major version: a new major release is not offered unless `--major` is passed. This prevents unintentionally accepting breaking changes. When no update within the current major is available, a newer major is announced along with the `--major` flag needed to install it.

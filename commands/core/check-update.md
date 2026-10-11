@@ -2,6 +2,8 @@
 
 Checks for WordPress updates via Version Check API.
 
+Options added later: `--force-check` (2.10.0).
+
 Lists the most recent versions when there are updates available, or success message when up to date.
 
 ### OPTIONS

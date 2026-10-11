@@ -4,6 +4,8 @@ Transforms an existing single-site installation into a multisite installation.
 
 **Alias:** `install-network`
 
+Options added later: `--skip-config` (2.8.0).
+
 Creates the multisite database tables, and adds the multisite constants to wp-config.php.
 
 For those using WordPress with Apache, remember to update the `.htaccess` file with the appropriate multisite rewrite rules.

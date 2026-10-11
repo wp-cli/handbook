@@ -2,6 +2,8 @@
 
 Inserts a block into a post at a specified position.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Adds a new block to the post content. By default, the block is appended to the end of the post.
 
 ### OPTIONS

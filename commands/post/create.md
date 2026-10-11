@@ -86,6 +86,12 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--meta_input=&lt;meta_input&gt;]
 : Array in JSON format of post meta values keyed by their post meta key. Default empty.
 
+[\--page_template=&lt;page_template&gt;]
+: Page template to use.
+
+[\--import_id=&lt;import_id&gt;]
+: The post ID to be used when inserting a new post. If specified, must not match any existing post ID.
+
 [&lt;file&gt;]
 : Read post content from &lt;file&gt;. If this value is present, the
     `--post_content` argument will be ignored.

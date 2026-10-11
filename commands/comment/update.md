@@ -9,6 +9,51 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 &lt;id&gt;...
 : One or more IDs of comments to update.
 
+[\--comment_agent=&lt;comment_agent&gt;]
+: The HTTP user agent of the comment author.
+
+[\--comment_approved=&lt;comment_approved&gt;]
+: Whether the comment has been approved.
+
+[\--comment_author=&lt;comment_author&gt;]
+: The name of the author of the comment.
+
+[\--comment_author_email=&lt;comment_author_email&gt;]
+: The email address of the comment author.
+
+[\--comment_author_IP=&lt;comment_author_IP&gt;]
+: The IP address of the comment author.
+
+[\--comment_author_url=&lt;comment_author_url&gt;]
+: The URL address of the comment author.
+
+[\--comment_content=&lt;comment_content&gt;]
+: The content of the comment.
+
+[\--comment_date=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
+: The date the comment was submitted.
+
+[\--comment_date_gmt=&lt;yyyy-mm-dd-hh-ii-ss&gt;]
+: The date the comment was submitted in the GMT timezone. Note that wp_update_comment() always recalculates this from 'comment_date'.
+
+[\--comment_karma=&lt;comment_karma&gt;]
+: The karma of the comment.
+
+[\--comment_parent=&lt;comment_parent&gt;]
+: ID of this comment's parent, if any.
+
+[\--comment_post_ID=&lt;comment_post_ID&gt;]
+: ID of the post that relates to the comment, if any.
+
+[\--comment_type=&lt;comment_type&gt;]
+: Comment type.
+
+[\--comment_meta=&lt;comment_meta&gt;]
+: Array in JSON format of comment meta values keyed by their comment meta key.
+
+[\--user_id=&lt;user_id&gt;]
+: ID of the user who submitted the comment.
+
 \--&lt;field&gt;=&lt;value&gt;
 : One or more fields to update. See wp_update_comment().
 

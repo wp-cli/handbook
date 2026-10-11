@@ -2,6 +2,8 @@
 
 Updates a block's attributes or content by index.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Modifies a specific block without changing its type. For blocks where attributes are reflected in HTML (like heading levels), the HTML is automatically updated to match the new attributes.
 
 ### OPTIONS

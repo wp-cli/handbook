@@ -4,6 +4,8 @@ Create a POT file for a WordPress project.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+Options added later: `--subtract-and-merge` (2.6.0), `--location` (2.6.0), `--skip-php` (2.5.0), `--skip-blade` (2.7.0), `--skip-block-json` (2.5.0), `--skip-theme-json` (2.6.0).
+
 Scans PHP, Blade-PHP and JavaScript files for translatable strings, as well as theme stylesheets and plugin files if the source directory is detected as either a plugin or theme.
 
 ### OPTIONS

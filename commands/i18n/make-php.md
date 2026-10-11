@@ -4,6 +4,10 @@ Create PHP files from PO files.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--pretty-print`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Available since WP-CLI 2.10.0.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

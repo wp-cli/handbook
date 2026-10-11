@@ -2,6 +2,8 @@
 
 Lists all registered abilities.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -12,8 +14,11 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--namespace=&lt;prefix&gt;]
 : Filter abilities by namespace prefix (e.g., 'core' for 'core/*' abilities).
 
-[\--show-in-rest=&lt;bool&gt;]
-: Filter abilities by REST API exposure.
+[\--public]
+: Only list abilities flagged for client exposure. Pass --no-public to invert.
+
+[\--show-in-rest]
+: Only list abilities exposed to the REST API. Pass --no-show-in-rest to invert.
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each ability.
@@ -48,7 +53,10 @@ These fields are optionally available:
 * readonly
 * destructive
 * idempotent
+* public
 * show_in_rest
+
+The `public` field reports the high-level client exposure flag as declared by the ability. As of WordPress 7.1 it seeds the default for channel-specific flags such as `show_in_rest`, which take precedence when set explicitly. On earlier versions the flag is stored but has no effect, so `public` and `show_in_rest` may disagree.
 
 ### EXAMPLES
 
@@ -68,7 +76,13 @@ These fields are optionally available:
     $ wp ability list --namespace=core
 
     # List abilities exposed to REST API.
-    $ wp ability list --show-in-rest=true
+    $ wp ability list --show-in-rest
+
+    # List abilities meant to be available to clients.
+    $ wp ability list --public
+
+    # Find abilities that opt out of REST despite being public.
+    $ wp ability list --public --no-show-in-rest
 
     # List abilities as JSON.
     $ wp ability list --format=json

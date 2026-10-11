@@ -2,6 +2,8 @@
 
 Manages theme auto-updates.
 
+Available since WP-CLI 2.5.0.
+
 ### EXAMPLES
 
     # Enable the auto-updates for a theme

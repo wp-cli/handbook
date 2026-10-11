@@ -4,6 +4,8 @@ Launches PHP's built-in web server for a specific WordPress installation.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--adapt-scheme`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Uses `php -S` to launch a web server serving the WordPress webroot.
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 

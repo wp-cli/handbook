@@ -4,6 +4,8 @@ Checks if a given package is installed.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Returns exit code 0 when installed, 1 when uninstalled.
 
 ### OPTIONS

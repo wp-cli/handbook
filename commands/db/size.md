@@ -2,6 +2,8 @@
 
 Displays the database name and size.
 
+Options added later: `--decimals` (2.6.0), `--order` (2.7.0), `--orderby` (2.7.0).
+
 Display the database name and size for `DB_NAME` specified in wp-config.php. The size defaults to a human-readable number.
 
 Available size formats include:

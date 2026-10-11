@@ -60,7 +60,6 @@ These fields are optionally available:
 * caps
 * cap_key
 * allcaps
-* filter
 * url
 
 ### EXAMPLES

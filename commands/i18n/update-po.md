@@ -4,6 +4,10 @@ Update PO files from a POT file.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--purge`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Available since WP-CLI 2.7.0.
+
 This behaves similarly to the [msgmerge](https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html) command.
 
 ### OPTIONS

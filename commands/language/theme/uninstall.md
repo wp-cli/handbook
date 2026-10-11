@@ -2,6 +2,8 @@
 
 Uninstalls a given language for a theme.
 
+Options added later: `--all` (2.9.0), `--format` (2.9.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

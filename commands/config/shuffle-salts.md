@@ -4,6 +4,8 @@ Refreshes the salts defined in the wp-config.php file.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+Options added later: `--force` (2.5.0), `--config-file` (2.6.0), `--insecure` (2.5.0).
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.

@@ -2,6 +2,8 @@
 
 Checks if the current user can execute an ability.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Validates permissions without actually executing the ability. Exits with return code 0 if permitted, 1 if not.
 
 ### OPTIONS

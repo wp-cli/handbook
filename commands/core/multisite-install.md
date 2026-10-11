@@ -2,6 +2,8 @@
 
 Installs WordPress multisite from scratch.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--locale`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Creates the WordPress tables in the database using the URL, title, and default admin user details provided. Then, creates the multisite tables in the database and adds multisite constants to the wp-config.php.
 
 For those using WordPress with Apache, remember to update the `.htaccess` file with the appropriate multisite rewrite rules.
