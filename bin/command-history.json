@@ -1,0 +1,3308 @@
+{
+    "baseline": "2.4.0",
+    "commands": {
+        "cache": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache decr": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache flush": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache flush-group": {
+            "since": "2.8.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache incr": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache patch": {
+            "since": "2.12.0",
+            "generic": false,
+            "options": {
+                "--format": "2.12.0",
+                "--group": "2.12.0"
+            }
+        },
+        "cache pluck": {
+            "since": "2.12.0",
+            "generic": false,
+            "options": {
+                "--format": "2.12.0",
+                "--group": "2.12.0"
+            }
+        },
+        "cache replace": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache set": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache supports": {
+            "since": "2.8.0",
+            "generic": false,
+            "options": {}
+        },
+        "cache type": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cap": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cap add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--grant": "2.4.0"
+            }
+        },
+        "cap list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--show-grant": "2.4.0"
+            }
+        },
+        "cap remove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli alias": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli alias add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config": "2.4.0",
+                "--grouping": "2.4.0",
+                "--set-http": "2.4.0",
+                "--set-path": "2.4.0",
+                "--set-ssh": "2.4.0",
+                "--set-url": "2.4.0",
+                "--set-user": "2.4.0"
+            }
+        },
+        "cli alias delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config": "2.4.0"
+            }
+        },
+        "cli alias get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli alias is-group": {
+            "since": "2.8.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli alias list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "cli alias update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config": "2.4.0",
+                "--grouping": "2.4.0",
+                "--set-http": "2.4.0",
+                "--set-path": "2.4.0",
+                "--set-ssh": "2.4.0",
+                "--set-url": "2.4.0",
+                "--set-user": "2.4.0"
+            }
+        },
+        "cli cache": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli cache clear": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli cache prune": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli check-update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--major": "2.4.0",
+                "--minor": "2.4.0",
+                "--patch": "2.4.0"
+            }
+        },
+        "cli cmd-dump": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli completions": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--line": "2.4.0",
+                "--point": "2.4.0"
+            }
+        },
+        "cli has-command": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cli info": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "cli param-dump": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--with-values": "2.4.0"
+            }
+        },
+        "cli update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--insecure": "2.5.0",
+                "--major": "2.4.0",
+                "--minor": "2.4.0",
+                "--nightly": "2.4.0",
+                "--patch": "2.4.0",
+                "--stable": "2.4.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "cli version": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment approve": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment count": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment create": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--porcelain": "2.4.0"
+            }
+        },
+        "comment delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--force": "2.4.0"
+            }
+        },
+        "comment exists": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment generate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--count": "2.4.0",
+                "--format": "2.4.0",
+                "--post_id": "2.4.0"
+            }
+        },
+        "comment get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "comment list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "comment meta": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment meta add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "comment meta delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "comment meta get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--single": "2.12.0"
+            }
+        },
+        "comment meta list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--keys": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "comment meta patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "comment meta pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "comment meta update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "comment recount": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment spam": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment status": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment trash": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment unapprove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment unspam": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment untrash": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "comment update": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {}
+        },
+        "config": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "config create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0",
+                "--dbcharset": "2.4.0",
+                "--dbcollate": "2.4.0",
+                "--dbhost": "2.4.0",
+                "--dbname": "2.4.0",
+                "--dbpass": "2.4.0",
+                "--dbprefix": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--extra-php": "2.4.0",
+                "--force": "2.4.0",
+                "--insecure": "2.5.0",
+                "--locale": "2.4.0",
+                "--skip-check": "2.4.0",
+                "--skip-salts": "2.4.0"
+            }
+        },
+        "config delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0",
+                "--type": "2.4.0"
+            }
+        },
+        "config edit": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0"
+            }
+        },
+        "config get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0",
+                "--format": "2.4.0",
+                "--type": "2.4.0"
+            }
+        },
+        "config has": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0",
+                "--type": "2.4.0"
+            }
+        },
+        "config is-true": {
+            "since": "2.9.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.9.0",
+                "--type": "2.9.0"
+            }
+        },
+        "config list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--strict": "2.4.0"
+            }
+        },
+        "config path": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "config set": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--add": "2.4.0",
+                "--anchor": "2.4.0",
+                "--config-file": "2.6.0",
+                "--placement": "2.4.0",
+                "--raw": "2.4.0",
+                "--separator": "2.4.0",
+                "--type": "2.4.0"
+            }
+        },
+        "config shuffle-salts": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config-file": "2.6.0",
+                "--force": "2.5.0",
+                "--insecure": "2.5.0"
+            }
+        },
+        "core": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "core check-update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--force-check": "2.10.0",
+                "--format": "2.4.0",
+                "--major": "2.4.0",
+                "--minor": "2.4.0"
+            }
+        },
+        "core download": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--extract": "2.7.0",
+                "--force": "2.4.0",
+                "--insecure": "2.5.0",
+                "--locale": "2.4.0",
+                "--path": "2.4.0",
+                "--skip-content": "2.4.0",
+                "--version": "2.4.0"
+            }
+        },
+        "core install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--admin_email": "2.4.0",
+                "--admin_password": "2.4.0",
+                "--admin_user": "2.4.0",
+                "--locale": "2.7.0",
+                "--skip-email": "2.4.0",
+                "--title": "2.4.0",
+                "--url": "2.4.0"
+            }
+        },
+        "core is-installed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--network": "2.4.0"
+            }
+        },
+        "core multisite-convert": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--base": "2.4.0",
+                "--skip-config": "2.8.0",
+                "--subdomains": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "core multisite-install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--admin_email": "2.4.0",
+                "--admin_password": "2.4.0",
+                "--admin_user": "2.4.0",
+                "--base": "2.4.0",
+                "--skip-config": "2.4.0",
+                "--skip-email": "2.4.0",
+                "--subdomains": "2.4.0",
+                "--title": "2.4.0",
+                "--url": "2.4.0"
+            }
+        },
+        "core update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--force": "2.4.0",
+                "--insecure": "2.5.0",
+                "--locale": "2.4.0",
+                "--minor": "2.4.0",
+                "--version": "2.4.0"
+            }
+        },
+        "core update-db": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dry-run": "2.4.0",
+                "--network": "2.4.0"
+            }
+        },
+        "core verify-checksums": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--exclude": "2.12.0",
+                "--include-root": "2.8.0",
+                "--insecure": "2.5.0",
+                "--locale": "2.4.0",
+                "--version": "2.4.0"
+            }
+        },
+        "core version": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--extra": "2.4.0"
+            }
+        },
+        "cron": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cron event": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cron event delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.11.0",
+                "--due-now": "2.11.0",
+                "--exclude": "2.11.0"
+            }
+        },
+        "cron event list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "cron event run": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--due-now": "2.4.0",
+                "--exclude": "2.8.0"
+            }
+        },
+        "cron event schedule": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {}
+        },
+        "cron event unschedule": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {}
+        },
+        "cron schedule": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "cron schedule list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "cron test": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "db": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "db check": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.5.0"
+            }
+        },
+        "db clean": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.6.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "db cli": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--database": "2.4.0",
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--default-character-set": "2.4.0",
+                "--defaults": "2.5.0"
+            }
+        },
+        "db columns": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "db create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.6.0"
+            }
+        },
+        "db drop": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.6.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "db export": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--add-drop-table": "2.12.0",
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.5.0",
+                "--exclude_tables": "2.4.0",
+                "--include-tablespaces": "2.5.0",
+                "--porcelain": "2.4.0",
+                "--tables": "2.4.0"
+            }
+        },
+        "db import": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.5.0",
+                "--skip-optimization": "2.4.0"
+            }
+        },
+        "db optimize": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.5.0"
+            }
+        },
+        "db prefix": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "db query": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.5.0"
+            }
+        },
+        "db repair": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.5.0"
+            }
+        },
+        "db reset": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dbpass": "2.4.0",
+                "--dbuser": "2.4.0",
+                "--defaults": "2.6.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "db search": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--after_context": "2.4.0",
+                "--all-tables": "2.4.0",
+                "--all-tables-with-prefix": "2.4.0",
+                "--before_context": "2.4.0",
+                "--fields": "2.11.0",
+                "--format": "2.11.0",
+                "--id_color": "2.4.0",
+                "--match_color": "2.4.0",
+                "--matches_only": "2.4.0",
+                "--network": "2.4.0",
+                "--one_line": "2.4.0",
+                "--regex": "2.4.0",
+                "--regex-delimiter": "2.4.0",
+                "--regex-flags": "2.4.0",
+                "--stats": "2.4.0",
+                "--table_column_color": "2.4.0",
+                "--table_column_once": "2.4.0"
+            }
+        },
+        "db size": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all-tables": "2.4.0",
+                "--all-tables-with-prefix": "2.4.0",
+                "--decimals": "2.6.0",
+                "--format": "2.4.0",
+                "--human-readable": "2.4.0",
+                "--network": "2.4.0",
+                "--order": "2.7.0",
+                "--orderby": "2.7.0",
+                "--scope": "2.4.0",
+                "--size_format": "2.4.0",
+                "--tables": "2.4.0"
+            }
+        },
+        "db tables": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all-tables": "2.4.0",
+                "--all-tables-with-prefix": "2.4.0",
+                "--format": "2.4.0",
+                "--network": "2.4.0",
+                "--scope": "2.4.0"
+            }
+        },
+        "embed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "embed cache": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "embed cache clear": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "embed cache find": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--discover": "2.4.0",
+                "--height": "2.4.0",
+                "--width": "2.4.0"
+            }
+        },
+        "embed cache trigger": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "embed fetch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--discover": "2.4.0",
+                "--do-shortcode": "2.4.0",
+                "--height": "2.4.0",
+                "--limit-response-size": "2.4.0",
+                "--post-id": "2.4.0",
+                "--raw": "2.4.0",
+                "--raw-format": "2.4.0",
+                "--skip-cache": "2.4.0",
+                "--skip-sanitization": "2.4.0",
+                "--width": "2.4.0"
+            }
+        },
+        "embed handler": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "embed handler list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "embed provider": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "embed provider list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--force-regex": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "embed provider match": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--discover": "2.4.0",
+                "--limit-response-size": "2.4.0",
+                "--link-type": "2.4.0"
+            }
+        },
+        "eval": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--skip-wordpress": "2.4.0"
+            }
+        },
+        "eval-file": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--skip-wordpress": "2.4.0",
+                "--use-include": "2.8.0"
+            }
+        },
+        "export": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--allow_orphan_terms": "2.9.0",
+                "--author": "2.4.0",
+                "--category": "2.4.0",
+                "--dir": "2.4.0",
+                "--end_date": "2.4.0",
+                "--filename_format": "2.4.0",
+                "--include_once": "2.8.0",
+                "--max_file_size": "2.4.0",
+                "--max_num_posts": "2.4.0",
+                "--post__in": "2.4.0",
+                "--post_status": "2.4.0",
+                "--post_type": "2.4.0",
+                "--post_type__not_in": "2.4.0",
+                "--skip_comments": "2.4.0",
+                "--start_date": "2.4.0",
+                "--start_id": "2.4.0",
+                "--stdout": "2.4.0",
+                "--with_attachments": "2.4.0"
+            }
+        },
+        "help": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "i18n": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "i18n make-json": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--domain": "2.12.0",
+                "--extensions": "2.12.0",
+                "--pretty-print": "2.4.0",
+                "--purge": "2.4.0",
+                "--update-mo-files": "2.6.0",
+                "--use-map": "2.6.0"
+            }
+        },
+        "i18n make-mo": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {}
+        },
+        "i18n make-php": {
+            "since": "2.10.0",
+            "generic": false,
+            "options": {}
+        },
+        "i18n make-pot": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--domain": "2.4.0",
+                "--exclude": "2.4.0",
+                "--file-comment": "2.4.0",
+                "--headers": "2.4.0",
+                "--ignore-domain": "2.4.0",
+                "--include": "2.4.0",
+                "--location": "2.6.0",
+                "--merge": "2.4.0",
+                "--package-name": "2.4.0",
+                "--skip-audit": "2.4.0",
+                "--skip-blade": "2.7.0",
+                "--skip-block-json": "2.5.0",
+                "--skip-js": "2.4.0",
+                "--skip-php": "2.5.0",
+                "--skip-theme-json": "2.6.0",
+                "--slug": "2.4.0",
+                "--subtract": "2.4.0",
+                "--subtract-and-merge": "2.6.0"
+            }
+        },
+        "i18n update-po": {
+            "since": "2.7.0",
+            "generic": false,
+            "options": {}
+        },
+        "import": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--authors": "2.4.0",
+                "--skip": "2.4.0"
+            }
+        },
+        "language": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language core": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language core activate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language core install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0"
+            }
+        },
+        "language core is-installed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language core list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "language core uninstall": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language core update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dry-run": "2.4.0"
+            }
+        },
+        "language plugin": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language plugin install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "language plugin is-installed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language plugin list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--all": "2.4.0",
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "language plugin uninstall": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.9.0",
+                "--format": "2.9.0"
+            }
+        },
+        "language plugin update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--dry-run": "2.4.0"
+            }
+        },
+        "language theme": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language theme install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "language theme is-installed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "language theme list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--all": "2.4.0",
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "language theme uninstall": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.9.0",
+                "--format": "2.9.0"
+            }
+        },
+        "language theme update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--dry-run": "2.4.0"
+            }
+        },
+        "maintenance-mode": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "maintenance-mode activate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--force": "2.4.0"
+            }
+        },
+        "maintenance-mode deactivate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "maintenance-mode is-active": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "maintenance-mode status": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "media": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "media fix-orientation": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dry-run": "2.4.0"
+            }
+        },
+        "media image-size": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "media import": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--alt": "2.4.0",
+                "--caption": "2.4.0",
+                "--desc": "2.4.0",
+                "--featured_image": "2.4.0",
+                "--file_name": "2.10.0",
+                "--porcelain": "2.4.0",
+                "--post_id": "2.4.0",
+                "--post_name": "2.8.0",
+                "--preserve-filetime": "2.4.0",
+                "--skip-copy": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "media regenerate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--delete-unknown": "2.11.0",
+                "--image_size": "2.4.0",
+                "--only-missing": "2.4.0",
+                "--skip-delete": "2.4.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "menu": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "menu create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--porcelain": "2.4.0"
+            }
+        },
+        "menu delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "menu item": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "menu item add-custom": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--attr-title": "2.4.0",
+                "--classes": "2.4.0",
+                "--description": "2.4.0",
+                "--parent-id": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--position": "2.4.0",
+                "--target": "2.4.0"
+            }
+        },
+        "menu item add-post": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--attr-title": "2.4.0",
+                "--classes": "2.4.0",
+                "--description": "2.4.0",
+                "--link": "2.4.0",
+                "--parent-id": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--position": "2.4.0",
+                "--target": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "menu item add-term": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--attr-title": "2.4.0",
+                "--classes": "2.4.0",
+                "--description": "2.4.0",
+                "--link": "2.4.0",
+                "--parent-id": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--position": "2.4.0",
+                "--target": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "menu item delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "menu item list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "menu item update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--attr-title": "2.4.0",
+                "--classes": "2.4.0",
+                "--description": "2.4.0",
+                "--link": "2.4.0",
+                "--parent-id": "2.4.0",
+                "--position": "2.4.0",
+                "--target": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "menu list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "menu location": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "menu location assign": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "menu location list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "menu location remove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "network": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "network meta": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "network meta add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "network meta delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "network meta get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--single": "2.12.0"
+            }
+        },
+        "network meta list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--keys": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "network meta patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "network meta pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "network meta update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "option": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "option add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--autoload": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "option delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "option get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "option get-autoload": {
+            "since": "2.8.0",
+            "generic": false,
+            "options": {}
+        },
+        "option list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--autoload": "2.4.0",
+                "--exclude": "2.4.0",
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--search": "2.4.0",
+                "--transients": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "option patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "option pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "option set-autoload": {
+            "since": "2.8.0",
+            "generic": false,
+            "options": {}
+        },
+        "option update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--autoload": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "package": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "package browse": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "package install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--insecure": "2.5.0"
+            }
+        },
+        "package list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "package path": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "package uninstall": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--insecure": "2.6.0"
+            }
+        },
+        "package update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "plugin": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "plugin activate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--exclude": "2.7.0",
+                "--network": "2.4.0"
+            }
+        },
+        "plugin auto-updates": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {}
+        },
+        "plugin auto-updates disable": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {
+                "--all": "2.5.0",
+                "--enabled-only": "2.5.0"
+            }
+        },
+        "plugin auto-updates enable": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {
+                "--all": "2.5.0",
+                "--disabled-only": "2.5.0"
+            }
+        },
+        "plugin auto-updates status": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {
+                "--all": "2.5.0",
+                "--disabled-only": "2.5.0",
+                "--enabled-only": "2.5.0",
+                "--field": "2.5.0",
+                "--format": "2.8.0"
+            }
+        },
+        "plugin deactivate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--exclude": "2.7.0",
+                "--network": "2.4.0",
+                "--uninstall": "2.4.0"
+            }
+        },
+        "plugin delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--exclude": "2.7.0"
+            }
+        },
+        "plugin get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "plugin install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0",
+                "--activate-network": "2.4.0",
+                "--force": "2.4.0",
+                "--ignore-requirements": "2.12.0",
+                "--insecure": "2.5.0",
+                "--version": "2.4.0"
+            }
+        },
+        "plugin is-active": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--network": "2.5.0"
+            }
+        },
+        "plugin is-installed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "plugin list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--recently-active": "2.11.0",
+                "--skip-update-check": "2.6.0",
+                "--status": "2.5.0"
+            }
+        },
+        "plugin path": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dir": "2.4.0"
+            }
+        },
+        "plugin search": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--page": "2.4.0",
+                "--per-page": "2.4.0"
+            }
+        },
+        "plugin status": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "plugin toggle": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--network": "2.4.0"
+            }
+        },
+        "plugin uninstall": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--deactivate": "2.4.0",
+                "--exclude": "2.7.0",
+                "--skip-delete": "2.4.0"
+            }
+        },
+        "plugin update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--dry-run": "2.4.0",
+                "--exclude": "2.4.0",
+                "--format": "2.4.0",
+                "--insecure": "2.5.0",
+                "--minor": "2.4.0",
+                "--patch": "2.4.0",
+                "--version": "2.4.0"
+            }
+        },
+        "plugin verify-checksums": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--exclude": "2.9.0",
+                "--format": "2.4.0",
+                "--insecure": "2.5.0",
+                "--strict": "2.4.0",
+                "--version": "2.8.0"
+            }
+        },
+        "post": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "post create": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--comment_status": "2.4.0",
+                "--edit": "2.4.0",
+                "--from-post": "2.4.0",
+                "--guid": "2.4.0",
+                "--menu_order": "2.4.0",
+                "--meta_input": "2.4.0",
+                "--ping_status": "2.4.0",
+                "--pinged": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--post_author": "2.4.0",
+                "--post_category": "2.4.0",
+                "--post_content": "2.4.0",
+                "--post_content_filtered": "2.4.0",
+                "--post_date": "2.4.0",
+                "--post_date_gmt": "2.4.0",
+                "--post_excerpt": "2.4.0",
+                "--post_mime_type": "2.4.0",
+                "--post_modified": "2.4.0",
+                "--post_modified_gmt": "2.4.0",
+                "--post_name": "2.4.0",
+                "--post_parent": "2.4.0",
+                "--post_password": "2.4.0",
+                "--post_status": "2.4.0",
+                "--post_title": "2.4.0",
+                "--post_type": "2.4.0",
+                "--tags_input": "2.4.0",
+                "--tax_input": "2.4.0",
+                "--to_ping": "2.4.0"
+            }
+        },
+        "post delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--defer-term-counting": "2.4.0",
+                "--force": "2.4.0"
+            }
+        },
+        "post edit": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "post exists": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "post generate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--count": "2.4.0",
+                "--format": "2.4.0",
+                "--max_depth": "2.4.0",
+                "--post_author": "2.4.0",
+                "--post_content": "2.4.0",
+                "--post_date": "2.4.0",
+                "--post_date_gmt": "2.4.0",
+                "--post_status": "2.4.0",
+                "--post_title": "2.4.0",
+                "--post_type": "2.4.0"
+            }
+        },
+        "post get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "post list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "post meta": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "post meta add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "post meta clean-duplicates": {
+            "since": "2.7.0",
+            "generic": false,
+            "options": {}
+        },
+        "post meta delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "post meta get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--single": "2.12.0"
+            }
+        },
+        "post meta list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--keys": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "post meta patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "post meta pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "post meta update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "post term": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "post term add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0"
+            }
+        },
+        "post term list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "post term remove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--by": "2.4.0"
+            }
+        },
+        "post term set": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0"
+            }
+        },
+        "post update": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--comment_status": "2.4.0",
+                "--defer-term-counting": "2.4.0",
+                "--guid": "2.4.0",
+                "--menu_order": "2.4.0",
+                "--meta_input": "2.4.0",
+                "--ping_status": "2.4.0",
+                "--pinged": "2.4.0",
+                "--post_author": "2.4.0",
+                "--post_category": "2.4.0",
+                "--post_content": "2.4.0",
+                "--post_content_filtered": "2.4.0",
+                "--post_date": "2.4.0",
+                "--post_date_gmt": "2.4.0",
+                "--post_excerpt": "2.4.0",
+                "--post_mime_type": "2.4.0",
+                "--post_modified": "2.4.0",
+                "--post_modified_gmt": "2.4.0",
+                "--post_name": "2.4.0",
+                "--post_parent": "2.4.0",
+                "--post_password": "2.4.0",
+                "--post_status": "2.4.0",
+                "--post_title": "2.4.0",
+                "--post_type": "2.4.0",
+                "--tags_input": "2.4.0",
+                "--tax_input": "2.4.0",
+                "--to_ping": "2.4.0"
+            }
+        },
+        "post url-to-id": {
+            "since": "2.10.0",
+            "generic": false,
+            "options": {}
+        },
+        "post-type": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "post-type get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "post-type list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "rewrite": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "rewrite flush": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--hard": "2.4.0"
+            }
+        },
+        "rewrite list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--match": "2.4.0",
+                "--source": "2.4.0"
+            }
+        },
+        "rewrite structure": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--category-base": "2.4.0",
+                "--hard": "2.4.0",
+                "--tag-base": "2.4.0"
+            }
+        },
+        "role": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "role create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--clone": "2.4.0"
+            }
+        },
+        "role delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "role exists": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "role list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "role reset": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "scaffold": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "scaffold block": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--category": "2.4.0",
+                "--dashicon": "2.4.0",
+                "--force": "2.4.0",
+                "--plugin": "2.4.0",
+                "--theme": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "scaffold child-theme": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0",
+                "--author": "2.4.0",
+                "--author_uri": "2.4.0",
+                "--enable-network": "2.4.0",
+                "--force": "2.4.0",
+                "--parent_theme": "2.4.0",
+                "--theme_name": "2.4.0",
+                "--theme_uri": "2.4.0"
+            }
+        },
+        "scaffold plugin": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0",
+                "--activate-network": "2.4.0",
+                "--ci": "2.4.0",
+                "--dir": "2.4.0",
+                "--force": "2.4.0",
+                "--plugin_author": "2.4.0",
+                "--plugin_author_uri": "2.4.0",
+                "--plugin_description": "2.4.0",
+                "--plugin_name": "2.4.0",
+                "--plugin_uri": "2.4.0",
+                "--skip-tests": "2.4.0"
+            }
+        },
+        "scaffold plugin-tests": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--ci": "2.4.0",
+                "--dir": "2.4.0",
+                "--force": "2.4.0"
+            }
+        },
+        "scaffold post-type": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dashicon": "2.4.0",
+                "--force": "2.4.0",
+                "--label": "2.4.0",
+                "--plugin": "2.4.0",
+                "--raw": "2.4.0",
+                "--textdomain": "2.4.0",
+                "--theme": "2.4.0"
+            }
+        },
+        "scaffold taxonomy": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--force": "2.4.0",
+                "--label": "2.4.0",
+                "--plugin": "2.4.0",
+                "--post_types": "2.4.0",
+                "--raw": "2.4.0",
+                "--textdomain": "2.4.0",
+                "--theme": "2.4.0"
+            }
+        },
+        "scaffold theme-tests": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--ci": "2.4.0",
+                "--dir": "2.4.0",
+                "--force": "2.4.0"
+            }
+        },
+        "scaffold underscores": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0",
+                "--author": "2.4.0",
+                "--author_uri": "2.4.0",
+                "--enable-network": "2.4.0",
+                "--force": "2.4.0",
+                "--sassify": "2.4.0",
+                "--theme_name": "2.4.0",
+                "--woocommerce": "2.4.0"
+            }
+        },
+        "search-replace": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--after_context": "2.4.0",
+                "--all-tables": "2.4.0",
+                "--all-tables-with-prefix": "2.4.0",
+                "--before_context": "2.4.0",
+                "--dry-run": "2.4.0",
+                "--export": "2.4.0",
+                "--export_insert_size": "2.4.0",
+                "--format": "2.4.0",
+                "--include-columns": "2.4.0",
+                "--log": "2.4.0",
+                "--network": "2.4.0",
+                "--precise": "2.4.0",
+                "--recurse-objects": "2.4.0",
+                "--regex": "2.4.0",
+                "--regex-delimiter": "2.4.0",
+                "--regex-flags": "2.4.0",
+                "--regex-limit": "2.4.0",
+                "--report": "2.4.0",
+                "--report-changed-only": "2.4.0",
+                "--skip-columns": "2.4.0",
+                "--skip-tables": "2.4.0",
+                "--verbose": "2.4.0"
+            }
+        },
+        "server": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--config": "2.4.0",
+                "--docroot": "2.4.0",
+                "--host": "2.4.0",
+                "--port": "2.4.0"
+            }
+        },
+        "shell": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--basic": "2.4.0"
+            }
+        },
+        "sidebar": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "sidebar list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "site": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "site activate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site archive": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--email": "2.4.0",
+                "--network_id": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--private": "2.4.0",
+                "--slug": "2.4.0",
+                "--title": "2.4.0"
+            }
+        },
+        "site deactivate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--keep-tables": "2.4.0",
+                "--slug": "2.4.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "site empty": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--uploads": "2.4.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "site generate": {
+            "since": "2.11.0",
+            "generic": false,
+            "options": {
+                "--count": "2.11.0",
+                "--email": "2.11.0",
+                "--format": "2.11.0",
+                "--network_id": "2.11.0",
+                "--private": "2.11.0",
+                "--slug": "2.11.0"
+            }
+        },
+        "site list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--network": "2.4.0",
+                "--site__in": "2.4.0",
+                "--site_user": "2.10.0"
+            }
+        },
+        "site mature": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site meta": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "site meta add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site meta delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "site meta get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--single": "2.12.0"
+            }
+        },
+        "site meta list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--keys": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "site meta patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site meta pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site meta update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site option": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "site option add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site option delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "site option get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site option list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--search": "2.4.0",
+                "--site_id": "2.4.0"
+            }
+        },
+        "site option patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site option pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site option update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "site private": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site public": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site spam": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site switch-language": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "site unarchive": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site unmature": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "site unspam": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--slug": "2.9.0"
+            }
+        },
+        "super-admin": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "super-admin add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "super-admin list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "super-admin remove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "taxonomy": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "taxonomy get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "taxonomy list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "term": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "term create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--description": "2.4.0",
+                "--parent": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--slug": "2.4.0"
+            }
+        },
+        "term delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0"
+            }
+        },
+        "term generate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--count": "2.4.0",
+                "--format": "2.4.0",
+                "--max_depth": "2.4.0"
+            }
+        },
+        "term get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0",
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "term list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "term meta": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "term meta add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "term meta delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "term meta get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--single": "2.12.0"
+            }
+        },
+        "term meta list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--keys": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "term meta patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "term meta pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "term meta update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "term migrate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0",
+                "--from": "2.4.0",
+                "--to": "2.4.0"
+            }
+        },
+        "term recount": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "term update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0",
+                "--description": "2.4.0",
+                "--name": "2.4.0",
+                "--parent": "2.4.0",
+                "--slug": "2.4.0"
+            }
+        },
+        "theme": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme activate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme auto-updates": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme auto-updates disable": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {
+                "--all": "2.5.0",
+                "--enabled-only": "2.5.0"
+            }
+        },
+        "theme auto-updates enable": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {
+                "--all": "2.5.0",
+                "--disabled-only": "2.5.0"
+            }
+        },
+        "theme auto-updates status": {
+            "since": "2.5.0",
+            "generic": false,
+            "options": {
+                "--all": "2.5.0",
+                "--disabled-only": "2.5.0",
+                "--enabled-only": "2.5.0",
+                "--field": "2.5.0",
+                "--format": "2.8.0"
+            }
+        },
+        "theme delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--force": "2.4.0"
+            }
+        },
+        "theme disable": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--network": "2.4.0"
+            }
+        },
+        "theme enable": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0",
+                "--network": "2.4.0"
+            }
+        },
+        "theme get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "theme install": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--activate": "2.4.0",
+                "--force": "2.4.0",
+                "--ignore-requirements": "2.12.0",
+                "--insecure": "2.5.0",
+                "--version": "2.4.0"
+            }
+        },
+        "theme is-active": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme is-installed": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--skip-update-check": "2.6.0",
+                "--status": "2.5.0"
+            }
+        },
+        "theme mod": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme mod get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--field": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "theme mod list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "theme mod remove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "theme mod set": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme path": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--dir": "2.4.0"
+            }
+        },
+        "theme search": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--page": "2.4.0",
+                "--per-page": "2.4.0"
+            }
+        },
+        "theme status": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "theme update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--dry-run": "2.4.0",
+                "--exclude": "2.4.0",
+                "--format": "2.4.0",
+                "--insecure": "2.5.0",
+                "--minor": "2.10.0",
+                "--patch": "2.10.0",
+                "--version": "2.4.0"
+            }
+        },
+        "transient": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "transient delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--expired": "2.4.0",
+                "--network": "2.4.0"
+            }
+        },
+        "transient get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0",
+                "--network": "2.4.0"
+            }
+        },
+        "transient list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--exclude": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--human-readable": "2.4.0",
+                "--network": "2.4.0",
+                "--search": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "transient patch": {
+            "since": "2.12.0",
+            "generic": false,
+            "options": {
+                "--expiration": "2.12.0",
+                "--format": "2.12.0",
+                "--network": "2.12.0"
+            }
+        },
+        "transient pluck": {
+            "since": "2.12.0",
+            "generic": false,
+            "options": {
+                "--format": "2.12.0",
+                "--network": "2.12.0"
+            }
+        },
+        "transient set": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--network": "2.4.0"
+            }
+        },
+        "transient type": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user add-cap": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user add-role": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user application-password": {
+            "since": "2.6.0",
+            "generic": false,
+            "options": {}
+        },
+        "user application-password create": {
+            "since": "2.6.0",
+            "generic": false,
+            "options": {
+                "--app-id": "2.6.0",
+                "--porcelain": "2.6.0"
+            }
+        },
+        "user application-password delete": {
+            "since": "2.6.0",
+            "generic": false,
+            "options": {
+                "--all": "2.6.0"
+            }
+        },
+        "user application-password exists": {
+            "since": "2.6.0",
+            "generic": false,
+            "options": {}
+        },
+        "user application-password get": {
+            "since": "2.6.0",
+            "generic": false,
+            "options": {
+                "--field": "2.6.0",
+                "--fields": "2.6.0",
+                "--format": "2.6.0"
+            }
+        },
+        "user application-password list": {
+            "since": "2.6.0",
+            "generic": true,
+            "options": {
+                "--field": "2.6.0",
+                "--fields": "2.6.0",
+                "--format": "2.6.0",
+                "--order": "2.6.0",
+                "--orderby": "2.6.0"
+            }
+        },
+        "user application-password record-usage": {
+            "since": "2.6.0",
+            "generic": false,
+            "options": {}
+        },
+        "user application-password update": {
+            "since": "2.6.0",
+            "generic": true,
+            "options": {}
+        },
+        "user check-password": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--escape-chars": "2.5.0"
+            }
+        },
+        "user create": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--description": "2.4.0",
+                "--display_name": "2.4.0",
+                "--first_name": "2.4.0",
+                "--last_name": "2.4.0",
+                "--nickname": "2.4.0",
+                "--porcelain": "2.4.0",
+                "--rich_editing": "2.4.0",
+                "--role": "2.4.0",
+                "--send-email": "2.4.0",
+                "--user_nicename": "2.4.0",
+                "--user_pass": "2.4.0",
+                "--user_registered": "2.4.0",
+                "--user_url": "2.4.0"
+            }
+        },
+        "user delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--network": "2.4.0",
+                "--reassign": "2.4.0",
+                "--yes": "2.4.0"
+            }
+        },
+        "user exists": {
+            "since": "2.11.0",
+            "generic": false,
+            "options": {}
+        },
+        "user generate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--count": "2.4.0",
+                "--format": "2.4.0",
+                "--role": "2.4.0"
+            }
+        },
+        "user get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "user import-csv": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--send-email": "2.4.0",
+                "--skip-update": "2.4.0"
+            }
+        },
+        "user list": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--network": "2.4.0",
+                "--role": "2.4.0"
+            }
+        },
+        "user list-caps": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--exclude-role-names": "2.10.0",
+                "--format": "2.4.0",
+                "--origin": "2.10.0"
+            }
+        },
+        "user meta": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user meta add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "user meta delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user meta get": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "user meta list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0",
+                "--keys": "2.4.0",
+                "--order": "2.4.0",
+                "--orderby": "2.4.0",
+                "--unserialize": "2.4.0"
+            }
+        },
+        "user meta patch": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "user meta pluck": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "user meta update": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--format": "2.4.0"
+            }
+        },
+        "user remove-cap": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--force": "2.12.0"
+            }
+        },
+        "user remove-role": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user reset-password": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--porcelain": "2.8.0",
+                "--show-password": "2.8.0",
+                "--skip-email": "2.4.0"
+            }
+        },
+        "user session": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user session destroy": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "user session list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "user set-role": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user signup": {
+            "since": "2.11.0",
+            "generic": false,
+            "options": {}
+        },
+        "user signup activate": {
+            "since": "2.11.0",
+            "generic": false,
+            "options": {}
+        },
+        "user signup delete": {
+            "since": "2.11.0",
+            "generic": false,
+            "options": {
+                "--all": "2.11.0"
+            }
+        },
+        "user signup get": {
+            "since": "2.11.0",
+            "generic": false,
+            "options": {
+                "--field": "2.11.0",
+                "--fields": "2.11.0",
+                "--format": "2.11.0"
+            }
+        },
+        "user signup list": {
+            "since": "2.11.0",
+            "generic": true,
+            "options": {
+                "--field": "2.11.0",
+                "--fields": "2.11.0",
+                "--format": "2.11.0",
+                "--per_page": "2.11.0"
+            }
+        },
+        "user spam": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user term": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user term add": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0"
+            }
+        },
+        "user term list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--field": "2.4.0",
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "user term remove": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0",
+                "--by": "2.4.0"
+            }
+        },
+        "user term set": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--by": "2.4.0"
+            }
+        },
+        "user unspam": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "user update": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {
+                "--description": "2.4.0",
+                "--display_name": "2.4.0",
+                "--first_name": "2.4.0",
+                "--last_name": "2.4.0",
+                "--nickname": "2.4.0",
+                "--rich_editing": "2.4.0",
+                "--role": "2.4.0",
+                "--skip-email": "2.4.0",
+                "--user_email": "2.4.0",
+                "--user_nicename": "2.4.0",
+                "--user_pass": "2.4.0",
+                "--user_registered": "2.4.0",
+                "--user_url": "2.4.0"
+            }
+        },
+        "widget": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "widget add": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {}
+        },
+        "widget deactivate": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "widget delete": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {}
+        },
+        "widget list": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--fields": "2.4.0",
+                "--format": "2.4.0"
+            }
+        },
+        "widget move": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--position": "2.4.0",
+                "--sidebar-id": "2.4.0"
+            }
+        },
+        "widget reset": {
+            "since": "2.4.0",
+            "generic": false,
+            "options": {
+                "--all": "2.4.0"
+            }
+        },
+        "widget update": {
+            "since": "2.4.0",
+            "generic": true,
+            "options": {}
+        }
+    }
+}

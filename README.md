@@ -26,6 +26,16 @@ curl -o /tmp/wp-cli-stable.phar https://raw.githubusercontent.com/wp-cli/builds/
 WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all --stable-phar=/tmp/wp-cli-stable.phar
 ```
 
+This also records the stable release in `bin/command-history.json`, which keeps track of the release in which each command and option first appeared. Command pages show this as "Available since WP-CLI X.Y.Z" and "Options added later". Nothing is shown for commands and options that were already part of the oldest recorded release (`baseline`).
+
+To backfill the history from older releases, pass their Phars to `wp handbook update-command-history`. Releases can be given in any order, and the oldest release is kept for every command and option:
+
+```
+WP_CLI_CONFIG_PATH=/dev/null wp handbook update-command-history wp-cli-2.4.0.phar wp-cli-2.5.0.phar
+```
+
+The initial history was backfilled from all releases since 2.4.0, the oldest release that runs on PHP 8.
+
 ## Automated Handbook Generation
 
 The handbook can be regenerated automatically using the "Regenerate Handbook" GitHub Actions workflow. This workflow can be triggered in two ways:
