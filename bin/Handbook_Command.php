@@ -327,8 +327,8 @@ EOT;
 		}
 
 		$version = self::run_phar( $phar, 'cli version' );
-		if ( ! preg_match( '/(\d+\.\d+\.\d+)/', $version, $matches ) ) {
-			WP_CLI::error( "Could not determine version of stable Phar: {$version}" );
+		if ( ! preg_match( '/^WP-CLI (\d+\.\d+\.\d+)$/', $version, $matches ) ) {
+			WP_CLI::error( "Not a stable WP-CLI release: {$version}" );
 		}
 		self::$stable_version = $matches[1];
 
