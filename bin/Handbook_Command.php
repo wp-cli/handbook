@@ -604,7 +604,7 @@ EOT;
 			}
 
 			$entry = isset( $history['commands'][ $full_name ] ) ? $history['commands'][ $full_name ] : [
-				'since'   => null,
+				'since'   => $version,
 				'generic' => false,
 				'options' => [],
 			];
