@@ -92,6 +92,7 @@ In alphabetical order:
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
+* [Webiost](https://webiost.com)
 * [WebQuickster](https://www.webquickster.com/)
 * [WNPower Hosting](https://www.wnpower.com/)
 * [WordPress.com](https://wordpress.com/)
