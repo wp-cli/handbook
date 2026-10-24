@@ -9,8 +9,9 @@ Run a given command within the current process using the same global parameters.
     WP_CLI::run_command( $args, $assoc_args = [] )
 
 <div>
-<strong>$args</strong> (array) Positional arguments including command name.<br />
-<strong>$assoc_args</strong> (array) <br />
+<strong>string&gt;</strong> (array&lt;int,) $args Positional arguments including command name.<br />
+<strong>mixed&gt;</strong> (array&lt;string,) $assoc_args<br />
+<strong>@return</strong> (void) <br />
 </div>
 
 

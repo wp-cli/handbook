@@ -47,7 +47,7 @@ If you want to run WP-CLI remotely using SSH, it is required that the command `w
 * `WP_CLI_REQUIRE` - Load one or more custom PHP files (comma-separated) after the bootstrap process. This has the same effect as `--require` on the command line or a `require` mapping in a wp-cli.yml config file.
 * `WP_CLI_USER_AGENT` - Sets the `$_SERVER['HTTP_USER_AGENT']` value that some plugins and tools rely on.
 
-To set an environment variable on demand, you can place the environment variable definition before the WP-CLI command you mean to run (e.g. `EDITOR=vim wp post edit 1`); to overwrite environment variables, use `export VARIABLE=value` in your `~/.bashrc` or `~.zhsrc`.
+To set an environment variable on demand, you can place the environment variable definition before the WP-CLI command you mean to run (e.g. `EDITOR=vim wp post edit 1`); to overwrite environment variables, use `export VARIABLE=value` in your `~/.bashrc` or `~/.zshrc`.
 
 #### WP-CLI Configuration Files
 
@@ -71,7 +71,7 @@ If you want to use `$_SERVER['HTTP_HOST']` in your `wp-config.php`, you’ll nee
 
 ```
 if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST'] ) ) {
-    $_SERVER['HTTP_HOST'] = `example.com';
+    $_SERVER['HTTP_HOST'] = 'example.com';
 }
 ```
 
@@ -101,7 +101,8 @@ Please provide us with:
 * a summary of the issue in narrative form,
 * a detailed and specific list of steps to reproduce the issue,
 * details of the environment you're working on,
-* a description, how the bug affects your usage (i.e. expected results compared with actual results), including * severity level,
+* a description, how the bug affects your usage (i.e. expected results compared with actual results),
+* severity level,
 * possible workarounds and
 * relevant diagnostics, such as crash reports, stack traces or debug output.
 

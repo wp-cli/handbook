@@ -216,15 +216,15 @@
         "parent": "behat-steps"
     },
     "given-a-wp-installation": {
-        "title": "Given a WP install(ation)",
+        "title": "Given \/^a WP( \\d[^\\s]+)? install(?:ation)?$\/",
         "slug": "given-a-wp-installation",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/behat-steps\/given-a-wp-installation.md",
         "parent": "behat-steps"
     },
-    "given-a-wp-installation-in-subdir": {
-        "title": "Given a WP install(ation) in :subdir",
-        "slug": "given-a-wp-installation-in-subdir",
-        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/behat-steps\/given-a-wp-installation-in-subdir.md",
+    "given-a-wp-installation-in": {
+        "title": "Given \/^a WP( [^\\s]+)? install(?:ation)? in ['&quot;]?([^'&quot;]+)['&quot;]?$\/",
+        "slug": "given-a-wp-installation-in",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/behat-steps\/given-a-wp-installation-in.md",
         "parent": "behat-steps"
     },
     "given-a-wp-installation-with-composer": {
@@ -264,7 +264,7 @@
         "parent": "behat-steps"
     },
     "given-an-file-cache-file": {
-        "title": "Given \/^an? ([^\\s]+) (file|cache file):$\/",
+        "title": "Given \/^an? (&quot;[^&quot;]+&quot;|[^\\s]+) (file|cache file):$\/",
         "slug": "given-an-file-cache-file",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/behat-steps\/given-an-file-cache-file.md",
         "parent": "behat-steps"
@@ -821,6 +821,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/internal-api\/wp-cli-utils-http-request.md",
         "parent": "internal-api"
     },
+    "wp-cli-utils-is-stream": {
+        "title": "WP_CLI\\Utils\\is_stream()",
+        "slug": "wp-cli-utils-is-stream",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/internal-api\/wp-cli-utils-is-stream.md",
+        "parent": "internal-api"
+    },
     "wp-cli-utils-ispiped": {
         "title": "WP_CLI\\Utils\\isPiped()",
         "slug": "wp-cli-utils-ispiped",
@@ -837,6 +843,18 @@
         "title": "WP_CLI\\Utils\\make_progress_bar()",
         "slug": "wp-cli-utils-make-progress-bar",
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/internal-api\/wp-cli-utils-make-progress-bar.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-make-temp-dir": {
+        "title": "WP_CLI\\Utils\\make_temp_dir()",
+        "slug": "wp-cli-utils-make-temp-dir",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/internal-api\/wp-cli-utils-make-temp-dir.md",
+        "parent": "internal-api"
+    },
+    "wp-cli-utils-make-temp-file": {
+        "title": "WP_CLI\\Utils\\make_temp_file()",
+        "slug": "wp-cli-utils-make-temp-file",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/references\/internal-api\/wp-cli-utils-make-temp-file.md",
         "parent": "internal-api"
     },
     "wp-cli-utils-normalize-path": {

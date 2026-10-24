@@ -31,4 +31,9 @@ See reference for [taxonomies and their terms](https://wordpress.org/documentati
     Success: Updated category term count
     Success: Updated post_tag term count
 
+    # Prune terms with 0 or 1 published posts
+    $ wp term prune post_tag
+    Deleted post_tag 15.
+    Success: Pruned 1 of 5 terms.
+
 

@@ -4,6 +4,8 @@ Launches PHP's built-in web server for a specific WordPress installation.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--adapt-scheme`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 Uses `php -S` to launch a web server serving the WordPress webroot.
 &lt;http://php.net/manual/en/features.commandline.webserver.php&gt;
 
@@ -31,6 +33,12 @@ default: 8080
 [\--config=&lt;file&gt;]
 : Configure the server with a specific .ini file.
 
+[\--adapt-scheme]
+: Replace HTTPS URLs matching the original site URL with HTTP in server responses. Useful when the site is configured with HTTPS but the development server runs on HTTP.
+
+[&lt;passthrough&gt;...]
+: Optional arguments to pass to the PHP binary. Any arguments after `--` will be passed through to the `php` command.
+
 ### EXAMPLES
 
     # Make the instance available on any address (with port 8080)
@@ -54,6 +62,20 @@ default: 8080
     Document root is /
     Press Ctrl-C to quit.
 
+    # Pass extra parameters to the PHP binary
+    $ wp server --docroot=public -- -dzend_extension=xdebug.so
+    PHP 7.4.0 Development Server started at Wed Nov 10 18:00:00 2025
+    Listening on http://localhost:8080
+    Document root is /var/www/public
+    Press Ctrl-C to quit.
+
+    # Adapt HTTPS links when the site is configured with HTTPS
+    $ wp server --adapt-scheme
+    PHP 8.0.0 Development Server started at Wed Nov 10 18:00:00 2025
+    Listening on http://localhost:8080
+    Document root is /var/www/html
+    Press Ctrl-C to quit.
+
 ### GLOBAL PARAMETERS
 
 These [global parameters](https://make.wordpress.org/cli/handbook/config/) have the same behavior across all commands and affect how WP-CLI interacts with WordPress.
@@ -63,6 +85,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -75,3 +98,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

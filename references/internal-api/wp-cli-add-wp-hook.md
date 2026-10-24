@@ -10,7 +10,7 @@ Add a callback to a WordPress action or filter.
 
 <div>
 <strong>$tag</strong> (string) Named WordPress action or filter.<br />
-<strong>$function_to_add</strong> (mixed) Callable to execute when the action or filter is evaluated.<br />
+<strong>$function_to_add</strong> (callable) Callable to execute when the action or filter is evaluated.<br />
 <strong>$priority</strong> (integer) Priority to add the callback as.<br />
 <strong>$accepted_args</strong> (integer) Number of arguments to pass to callback.<br />
 <strong>@return</strong> (true) <br />

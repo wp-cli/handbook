@@ -2,6 +2,8 @@
 
 Lists, inspects, and executes abilities registered via the WordPress Abilities API.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 The Abilities API, introduced in WordPress 6.9, provides a standardized way to register and discover distinct units of functionality within a WordPress site.
 
 ### EXAMPLES
@@ -17,7 +19,7 @@ The Abilities API, introduced in WordPress 6.9, provides a standardized way to r
     +---------------------------+----------------------+----------+------------------------------------------+
 
     # Get details of a specific ability.
-    $ wp ability get core/get-site-info --fields=name,label,category,readonly,show_in_rest
+    $ wp ability get core/get-site-info --fields=name,label,category,readonly,public,show_in_rest
     +---------------+----------------------+
     | Field         | Value                |
     +---------------+----------------------+
@@ -25,6 +27,7 @@ The Abilities API, introduced in WordPress 6.9, provides a standardized way to r
     | label         | Get Site Information |
     | category      | site                 |
     | readonly      | 1                    |
+    | public        | 1                    |
     | show_in_rest  | 1                    |
     +---------------+----------------------+
 

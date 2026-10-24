@@ -53,7 +53,7 @@ Scenario: My other scenario
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/then-stdout-should-be-csv-containing/">Then /^STDOUT should be CSV containing:$/</a></strong> - Expect STDOUT to be CSV containing certain values.</li>
 
 
-<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/then-stdout-should-be-yaml-containing/">Then /^STDOUT should be YAML containing:$/</a></strong> - Expect STDOUT to be YAML containig certain content.</li>
+<li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/then-stdout-should-be-yaml-containing/">Then /^STDOUT should be YAML containing:$/</a></strong> - Expect STDOUT to be YAML containing certain content.</li>
 
 
 <li><strong><a href="https://make.wordpress.org/cli/handbook/behat-steps/then-stdout-stderr-should-not-be-empty/">Then /^(STDOUT|STDERR) should not be empty$/</a></strong> - Expect STDOUT or STDERR not to be empty.</li>

@@ -1,6 +1,6 @@
 # Sharing WP-CLI Packages
 
-By default, WP-CLI places [installed packages](https://developer.wordpress.org/cli/commands/package/) in `~/.wp-cli/packages/`, a hidden subdirectory for the user’s home directory.
+By default, WP-CLI places [installed packages](https://developer.wordpress.org/cli/commands/package/) in `~/.wp-cli/packages/`, a hidden subdirectory of the user’s home directory.
 
 Because the home directory is different for each user, this naturally means each system user will have a separate directory of installed packages. If you have multiple active shell users on a server, and want to share installed WP-CLI packages between them, there are a couple of supported ways to do this.
 

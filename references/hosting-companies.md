@@ -41,7 +41,7 @@ In alphabetical order:
 * [HostPapa](https://www.hostpapa.com)
 * [HostPresto](https://hostpresto.com)
 * [HostRiver](https://hostriver.ro/gazduire-wordpress)
-* [ICDSoft](https:///www.icdsoft.com)
+* [ICDSoft](https://www.icdsoft.com)
 * [Infomaniak](https://www.infomaniak.com/en/create-a-website/wordpress-hosting)
 * [IONOS](https://www.ionos.com/)
 * [JDM.pl](https://jdm.pl)
@@ -92,6 +92,7 @@ In alphabetical order:
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
+* [Webiost](https://webiost.com)
 * [WebQuickster](https://www.webquickster.com/)
 * [WNPower Hosting](https://www.wnpower.com/)
 * [WordPress.com](https://wordpress.com/)
@@ -101,6 +102,7 @@ In alphabetical order:
 * [YouStable](https://www.youstable.com/)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/)
+* [ZEROLAG](https://zerolag.ro/)
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 

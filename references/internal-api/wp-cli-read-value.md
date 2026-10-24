@@ -9,8 +9,9 @@ Read a value, from various formats.
     WP_CLI::read_value( $raw_value, $assoc_args = [] )
 
 <div>
-<strong>$raw_value</strong> (mixed) <br />
-<strong>$assoc_args</strong> (array) <br />
+<strong>$raw_value</strong> (string) <br />
+<strong>mixed&gt;</strong> (array&lt;string,) $assoc_args<br />
+<strong>@return</strong> (mixed) <br />
 </div>
 
 

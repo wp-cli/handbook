@@ -10,7 +10,7 @@ Display error message prefixed with &quot;Error: &quot; and exit script.
 
 <div>
 <strong>$message</strong> (string|WP_Error|Exception|Throwable) Message to write to STDERR.<br />
-<strong>$exit</strong> (boolean|integer) True defaults to exit(1).<br />
+<strong>$exit</strong> (boolean|int) True defaults to exit(1).<br />
 <strong>@return</strong> (null) <br />
 </div>
 
@@ -24,6 +24,10 @@ with return code 1.
 
 Use `WP_CLI::warning()` instead when script execution should be permitted
 to continue.
+
+When `--debug` is enabled, this method will also output a backtrace
+showing where the error was triggered from, making it easier to identify
+problematic code.
 
 ```
 # `wp cache flush` considers flush failure to be a fatal error.

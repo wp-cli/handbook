@@ -7,10 +7,10 @@ tasks.
 
 - [How-to install WordPress](https://make.wordpress.org/cli/handbook/how-to-install/)
 
-- [How to put the website in maintenance mode](https://make.wordpress.org/cli/handbook/how-to-maintenance-mode)
+- [How to put the website in maintenance mode](https://make.wordpress.org/cli/handbook/how-to-maintenance-mode/)
 
-- [How-to start the webserver](https://make.wordpress.org/cli/handbook/)
+- [How-to start the webserver](https://make.wordpress.org/cli/handbook/how-to-start-webserver/)
 
-- [How to create a custom plugin](https://make.wordpress.org/cli/handbook/how-to-create-custom-plugins)
+- [How to create a custom plugin](https://make.wordpress.org/cli/handbook/how-to-create-custom-plugins/)
 
-- [Figure out why WordPress is slow](https://make.wordpress.org/cli/handbook/figure-out-why-wordpress-is-slow)
+- [Figure out why WordPress is slow](https://make.wordpress.org/cli/handbook/figure-out-why-wordpress-is-slow/)

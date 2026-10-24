@@ -4,7 +4,7 @@ Welcome to [WP-CLI Hack Day](https://make.wordpress.org/cli/2024/04/02/save-the-
 
 **We'd love to help you submit at least one pull request today**. Given this goal, you'll likely want to **start with something small and attainable**. After you've submitted your first pull request for the day, you're welcome to work on something more ambitious.
 
-When do you submit a pull request during Hack Day, please add <code>Related https://github.com/wp-cli/wp-cli/issues/5935</code> so we can easily keep track of them. We'll include them in a recap post at the end of the day.
+When you submit a pull request during Hack Day, please add <code>Related https://github.com/wp-cli/wp-cli/issues/5935</code> so we can easily keep track of them. We'll include them in a recap post at the end of the day.
 
 We put together this guide to make contributing as straightforward as possible. Please also join the [#cli channel in WordPress.org Slack](https://wordpress.slack.com/messages/C02RP4T41) ([sign up instructions](https://make.wordpress.org/chat/)) to chat with other contributors, for questions, etc.
 

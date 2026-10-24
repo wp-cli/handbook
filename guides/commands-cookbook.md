@@ -16,7 +16,7 @@ Packages are to WP-CLI as plugins are to WordPress. There are distinct differenc
 
 Bundled commands:
 
-* Usually cover functionality offered by a standard install WordPress. There are exceptions to this rule though, notably `wp search-replace` ([doc](https://developer.wordpress.org/cli/commands/search-replace/)).
+* Usually cover functionality offered by a standard WordPress installation. There are exceptions to this rule though, notably `wp search-replace` ([doc](https://developer.wordpress.org/cli/commands/search-replace/)).
 * Do not depend on other components such as plugins, themes etc.
 * Are maintained by the WP-CLI team.
 
@@ -62,7 +62,7 @@ WP_CLI::add_command( 'foo', 'foo_command' );
 // 2. Command is a closure
 $foo_command = function( $args ) {
     WP_CLI::success( $args[0] );
-}
+};
 WP_CLI::add_command( 'foo', $foo_command );
 
 // 3. Command is a method on a class
@@ -284,7 +284,7 @@ The `---` block after a parameter description allows you to set extra metadata f
 The longdesc is also displayed when calling the `help` command, for example, `wp help example hello`. Its syntax is [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and here are a few more notes on how it's handled by WP-CLI:
 
 * The longdesc is generally treated as a free-form text. The `OPTIONS` and `EXAMPLES` section names are not enforced, just common and recommended.
-* Sections names (`## NAME`) are colorized and printed with zero indentation.
+* Section names (`## NAME`) are colorized and printed with zero indentation.
 * Everything else is indented by 2 characters, option descriptions are further indented by additional 2 characters.
 * Word-wrapping is a bit tricky. If you want to utilize as much space on each line as possible and don't get word-wrapping artifacts like one or two words on the next line, follow these rules:
  * Hard-wrap option descriptions at **75 chars** after the colon and a space.
@@ -437,7 +437,7 @@ function hello( $args, $assoc_args ) {
 }
 ```
 
-`$args` variable will store all the positional arguments:
+The `$args` variable will store all the positional arguments:
 
 ```
 $ wp example hello Joe Doe
@@ -448,7 +448,7 @@ WP_CLI::line( $args[0] ); // Joe
 WP_CLI::line( $args[1] ); // Doe
 ```
 
-`$assoc_args` variable will store all the arguments defined like `--key=value` or `--flag` or `--no-flag`
+The `$assoc_args` variable will store all the arguments defined like `--key=value` or `--flag` or `--no-flag`:
 
 ```
 $ wp example hello --name='Joe Doe' --verbose --no-option
@@ -626,7 +626,7 @@ Both approaches are valid. Use the `WP_CLI` constant check when you need to cond
 	
 ### Distribute as a stand-alone command
 
-Standalone WP-CLI commands can be installed from any git repository, ZIP file or folder. The only technical requirement is to include a valid composer.json file with an autoload declaration. We recommended including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
+Standalone WP-CLI commands can be installed from any git repository, ZIP file or folder. The only technical requirement is to include a valid composer.json file with an autoload declaration. We recommend including `"type": "wp-cli-package"` to distinguish your project explicitly as a WP-CLI package.
 
 Here's a full composer.json example from the server command:
 
@@ -656,7 +656,7 @@ Here's a full composer.json example from the server command:
 
 Note the `autoload` declaration, which loads `command.php`.
 
-Once you've added a valid composer.json file to your project repository, WP-CLI users can pull it in via the package manager from the location you opted to store it in. Here's a few examples of storage locations and the corresponding syntax of installing it via the package manager:
+Once you've added a valid composer.json file to your project repository, WP-CLI users can pull it in via the package manager from the location you opted to store it in. Here are a few examples of storage locations and the corresponding syntax of installing it via the package manager:
 
 #### Git repository
 

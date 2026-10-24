@@ -2,6 +2,8 @@
 
 Gets details about a registered ability.
 
+> **Note:** This command is not part of a stable WP-CLI release yet. To use it now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -28,6 +30,8 @@ options:
 
 ### AVAILABLE FIELDS
 
+These fields will be displayed by default:
+
 * name
 * label
 * category
@@ -37,7 +41,16 @@ options:
 * readonly
 * destructive
 * idempotent
+* public
 * show_in_rest
+
+These fields are optionally available:
+
+* meta
+
+The `public` field reports the high-level client exposure flag as declared by the ability. As of WordPress 7.1 it seeds the default for channel-specific flags such as `show_in_rest`, which take precedence when set explicitly. On earlier versions the flag is stored but has no effect, so `public` and `show_in_rest` may disagree.
+
+The `meta` field renders the raw metadata as JSON. It is the only way to inspect channel-specific settings registered by plugins, such as `mcp`.
 
 ### EXAMPLES
 
@@ -55,8 +68,13 @@ options:
     | readonly      | 1                    |
     | destructive   | 0                    |
     | idempotent    | 1                    |
+    | public        | 1                    |
     | show_in_rest  | 1                    |
     +---------------+----------------------+
+
+    # Inspect channel-specific settings that have no field of their own.
+    $ wp ability get my-plugin/my-ability --field=meta
+    {"annotations":{"readonly":true,"destructive":false,"idempotent":null},"mcp":{"public":false},"show_in_rest":true,"public":true}
 
     # Get ability as JSON.
     $ wp ability get core/get-site-info --format=json
@@ -74,6 +92,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -86,3 +105,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

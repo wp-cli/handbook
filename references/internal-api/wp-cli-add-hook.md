@@ -10,7 +10,7 @@ Schedule a callback to be executed at a certain point.
 
 <div>
 <strong>$when</strong> (string) Identifier for the hook.<br />
-<strong>$callback</strong> (mixed) Callback to execute when hook is called.<br />
+<strong>$callback</strong> (callable) Callback to execute when hook is called.<br />
 <strong>@return</strong> (void) <br />
 </div>
 
@@ -24,17 +24,20 @@ are typically called before WordPress is loaded.
 
 WP-CLI hooks include:
 
-* `before_add_command:<command>` - Before the command is added.
+* `before_add_command:<command>` (1) - Before the command is added.
 * `after_add_command:<command>` - After the command was added.
 * `before_invoke:<command>` (1) - Just before a command is invoked.
 * `after_invoke:<command>` (1) - Just after a command is invoked.
 * `find_command_to_run_pre` - Just before WP-CLI finds the command to run.
+* `unregistered_command_hint` (2) - Filters the hint shown for a command
+  that is not registered.
 * `before_registering_contexts` (1) - Before the contexts are registered.
 * `before_wp_load` - Just before the WP load process begins.
 * `before_wp_config_load` - After wp-config.php has been located.
 * `after_wp_config_load` - After wp-config.php has been loaded into scope.
 * `after_wp_load` - Just after the WP load process has completed.
 * `before_run_command` (3) - Just before the command is executed.
+* `before_ssh` - Before executing a command through any supported remote mode.
 
 The parentheses behind the hook name denote the number of arguments
 being passed into the hook. For such hooks, the callback should return
