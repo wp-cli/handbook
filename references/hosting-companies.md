@@ -69,6 +69,7 @@ In alphabetical order:
 * [One.com](https://www.one.com/)
 * [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
+* [Pethost](https://pethost.dev/)
 * [Rad Web Hosting](https://radwebhosting.com)
 * [Rocket.net](https://rocket.net)
 * [RoseHosting](https://www.rosehosting.com)
