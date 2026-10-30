@@ -28,6 +28,7 @@ In alphabetical order:
 * [Domaintechnik.AT](https://www.domaintechnik.at/hosting-oesterreich.html)
 * [Dreamhost](https://www.dreamhost.com/)
 * [Fasthosts](https://www.fasthosts.co.uk/)
+* [Getwebup](https://www.getwebup.in/cloud-hosting)
 * [GoDaddy](https://www.godaddy.com/help/use-wp-cli-to-manage-your-site-12066)
 * [GreenGeeks](https://www.greengeeks.com/tutorials/wp-cli/)
 * [Grid Hosting](https://gridhosting.co.uk/)
