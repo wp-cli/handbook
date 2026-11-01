@@ -693,7 +693,7 @@ EOT;
 			$closure_reflection = new \ReflectionFunction( $closure );
 			// PHP stores use clause arguments of closures as static variables internally - see https://bugs.php.net/bug.php?id=71250
 			$static = $closure_reflection->getStaticVariables();
-			if ( is_array( $static ) && isset( $static['callable'] ) ) {
+			if ( isset( $static['callable'] ) ) {
 				// See `CommandFactory::create_subcommand()`.
 				if ( is_array( $static['callable'] ) && isset( $static['callable'][0] ) ) {
 					$reflection_class = new \ReflectionClass( $static['callable'][0] );
