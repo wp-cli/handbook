@@ -2,6 +2,8 @@
 
 Lists all application passwords associated with a user.
 
+Available since WP-CLI 2.6.0.
+
 ### OPTIONS
 
 See the [argument syntax](https://make.wordpress.org/cli/handbook/references/argument-syntax/) reference for a detailed explanation of the syntax conventions used.
@@ -11,6 +13,27 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 
 [\--&lt;field&gt;=&lt;value&gt;]
 : Filter the list by a specific field.
+
+[\--uuid=&lt;uuid&gt;]
+: Filter by the universally unique ID of the application password.
+
+[\--app_id=&lt;app_id&gt;|app-id]
+: Filter by the application ID. `--app-id` is accepted as an alias.
+
+[\--name=&lt;name&gt;]
+: Filter by the name of the application password.
+
+[\--password=&lt;password&gt;]
+: Filter by the hashed password.
+
+[\--created=&lt;created&gt;]
+: Filter by the Unix timestamp the application password was created at.
+
+[\--last_used=&lt;last_used&gt;|last-used]
+: Filter by the Unix timestamp the application password was last used at. `--last-used` is accepted as an alias.
+
+[\--last_ip=&lt;last_ip&gt;|last-ip]
+: Filter by the IP address the application password was last used from. `--last-ip` is accepted as an alias.
 
 [\--field=&lt;field&gt;]
 : Prints the value of a single field for each application password.
@@ -73,6 +96,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -85,3 +109,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

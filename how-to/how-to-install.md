@@ -1,6 +1,6 @@
 # How to install WordPress
 
-Downloading and installing WordPress using WP-CLI is straight forward. It takes four steps.
+Downloading and installing WordPress using WP-CLI is straightforward. It takes four steps.
 First, you will need to download WordPress using the `wp core download` command.
 
 ### Step 1 - Download WordPress
@@ -18,11 +18,13 @@ The syntax of the command to download WordPress is the following: `wp core downl
 The command above creates a `wpdemo.test/` folder inside your current working directory and downloads the latest WordPress version. You can replace the `--path=wpdemo.test` with your
 desired folder name and the `--locale=it_IT` with your desired locale. You can omit the `--locale` option and, that will download by default WordPress in American English using the locale en_US.
 
+Next, navigate into the newly created folder (`cd wpdemo.test`) before running the subsequent commands.
+
 ### Step 2 - Generate a config file
 
 In this step, we will generate a config file and set up the database
 credentials for our installation.
-The basic syntax of the command is the following: `wp config create --dbname=<dbname> --dbuser=<dbuser> [--dbpass=<dbpass>]`
+The basic syntax of the command is the following: `wp config create --dbname=<dbname> --dbuser=<dbuser> [--dbhost=<dbhost>] [--dbpass=<dbpass>]`
 
 ```
     $ wp config create --dbname=your_db_name_here --dbuser=your_db_user_here --prompt=dbpass
@@ -30,7 +32,9 @@ The basic syntax of the command is the following: `wp config create --dbname=<db
     Success: Generated 'wp-config.php' file.
 ```
 
-The command above generates the `wp-config.php` file and adds to it the database credentials that you passed. Make sure to replace `your_db_name_here` with the name you want to assign to the database, replace `your_db_user_here` with your database user and type the database password when prompted with the following: `1/10 [--dbpass=<dbpass>]:`
+The command above generates the `wp-config.php` file and adds to it the database credentials that you passed. Make sure to replace `your_db_name_here` with the name you want to assign to the database, replace `your_db_user_here` with your database user and type the database password when prompted with the following: `1/10 [--dbpass=<dbpass>]:`. 
+
+The `--dbhost` parameter is optional and defaults to `localhost`. On Unix-like systems, including macOS, MySQL treats `localhost` as a Unix socket connection rather than TCP. If you encounter a connection error, rerun the command with an explicit TCP host, for example: `--dbhost=127.0.0.1:3306`.
 
 ### Step 3 - Create the database
 

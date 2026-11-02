@@ -2,6 +2,8 @@
 
 Manages signups on a multisite installation.
 
+Available since WP-CLI 2.11.0.
+
 ### EXAMPLES
 
     # List signups.

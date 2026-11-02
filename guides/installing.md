@@ -340,7 +340,3 @@ Once you have added that and saved the file, reload the file with:
 After you've done that, run `wp --info` to make sure the change has been applied correctly.
 
 For Composer and Git-based WP-CLI installation, you can alternatively set the `WP_CLI_PHP` environment variable, if you don't want to modify `PATH` for some reason.
-
-### Installing on MediaTemple
-
-See [http://razorfrog.com/installing-wp-cli-on-mediatemple-grid-server/](http://razorfrog.com/installing-wp-cli-on-mediatemple-grid-server/)

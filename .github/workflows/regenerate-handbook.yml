@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up PHP environment
-        uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # v2
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # v2
         with:
           php-version: 'latest'
         env:
@@ -33,11 +33,14 @@ jobs:
           sudo mv wp-cli-nightly.phar /usr/local/bin/wp
           sudo chmod +x /usr/local/bin/wp
 
+      - name: Download latest stable WP-CLI for comparison
+        run: curl -sSfL -o "$RUNNER_TEMP/wp-cli-stable.phar" https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
       - name: Install non-bundled packages
         run: bash bin/install_packages.sh
 
       - name: Generate handbook
-        run: wp handbook gen-all
+        run: wp handbook gen-all --stable-phar="$RUNNER_TEMP/wp-cli-stable.phar"
         env:
           WP_CLI_PACKAGES_DIR: bin/packages
           WP_CLI_CONFIG_PATH: /dev/null

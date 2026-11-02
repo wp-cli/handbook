@@ -1,6 +1,6 @@
 # How to start the webserver
 
-You can use the command `wp server` to launches PHP's built-in web server for a specific WordPress installation. By default, the webserver will start using the localhost and default port 8080 but, you can change them using the `--host` and `--port` options.
+You can use the command `wp server` to launch PHP's built-in web server for a specific WordPress installation. By default, the webserver will start using the localhost and default port 8080 but, you can change them using the `--host` and `--port` options.
 
 ### Step 1 - Start the web server using the default settings
 
@@ -24,5 +24,5 @@ If you want to specify a different port number or host, you can pass them to the
     $ wp server --port=9090 --host=192.168.0.4
 ```
 
-The command above will start the webserver and listen for requests on http://192.168.0.4:9090
-you can open the browser and visit the page to access your WordPress installation.
+The command above will start the webserver and listen for requests on http://192.168.0.4:9090.
+You can open the browser and visit the page to access your WordPress installation.

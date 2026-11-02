@@ -19,6 +19,23 @@ bin/install_packages.sh
 WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
 ```
 
+Since the command pages are generated from the nightly build, they can document commands and options that are not part of a stable release yet. To flag those on the generated pages, pass the latest stable Phar using `--stable-phar`:
+
+```
+curl -o /tmp/wp-cli-stable.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all --stable-phar=/tmp/wp-cli-stable.phar
+```
+
+This also records the stable release in `bin/command-history.json`, which keeps track of the first bundled WP-CLI release in which each command and option appeared. Command pages show this as "Available since WP-CLI X.Y.Z" and "Options added later". This is the bundle release, not the version of the package that provides the command: if a package is updated on its own, a command can be available earlier. Nothing is shown for commands and options that were already part of the oldest recorded release (`baseline`).
+
+To backfill the history from older releases, pass their Phars to `wp handbook update-command-history`. Releases can be given in any order, and the oldest release is kept for every command and option:
+
+```
+WP_CLI_CONFIG_PATH=/dev/null wp handbook update-command-history wp-cli-2.4.0.phar wp-cli-2.5.0.phar
+```
+
+The initial history was backfilled from all releases since 2.4.0, the oldest release that runs on PHP 8.
+
 ## Automated Handbook Generation
 
 The handbook can be regenerated automatically using the "Regenerate Handbook" GitHub Actions workflow. This workflow can be triggered in two ways:
@@ -28,8 +45,9 @@ The handbook can be regenerated automatically using the "Regenerate Handbook" Gi
 
 The workflow will:
 - Install WP-CLI nightly build
+- Download the latest stable WP-CLI release
 - Install non-bundled packages
-- Run `wp handbook gen-all`
+- Run `wp handbook gen-all --stable-phar=...`, flagging commands and options that are not in the latest stable release yet
 - Commit and push any changes to the repository
 
 ## Documentation Import

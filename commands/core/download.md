@@ -4,6 +4,10 @@ Downloads core WordPress files.
 
 This command runs on the `before_wp_load` hook, just before the WP load process begins.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--skip-locale-check`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--insecure` (2.5.0), `--extract` (2.7.0).
+
 Downloads and extracts WordPress core files to the specified path. Uses current directory when no path is specified. Downloaded build is verified to have the correct md5 and then cached to the local filesystem. Subsequent uses of command will use the local cache if it still exists.
 
 ### OPTIONS
@@ -34,6 +38,9 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 [\--extract]
 : Whether to extract the downloaded file. Defaults to true.
 
+[\--skip-locale-check]
+: If specified, allows downloading an older version of WordPress when the requested locale is not available for the latest release.
+
 ### EXAMPLES
 
     $ wp core download --locale=nl_NL
@@ -50,6 +57,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -62,3 +70,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

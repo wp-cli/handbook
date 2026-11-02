@@ -2,6 +2,10 @@
 
 Runs the standard WordPress installation process.
 
+> **Note:** The following options are not part of a stable WP-CLI release yet: `--admin_pass`. To use them now, [switch to the nightly build](https://make.wordpress.org/cli/handbook/guides/installing/#updating-wp-cli) with `wp cli update --nightly`. If you installed the command as a separate package, updating that package may be enough.
+
+Options added later: `--locale` (2.7.0).
+
 Creates the WordPress tables in the database using the URL, title, and default admin user details provided. Performs the famous 5 minute install in seconds or less.
 
 Note: if you've installed WordPress in a subdirectory, then you'll need to `wp option update siteurl` after `wp core install`. For instance, if WordPress is installed in the `/wp` directory and your domain is example.com, then you'll need to run `wp option update siteurl http://example.com/wp` for your WordPress installation to function properly.
@@ -21,7 +25,7 @@ See the [argument syntax](https://make.wordpress.org/cli/handbook/references/arg
 \--admin_user=&lt;username&gt;
 : The name of the admin user.
 
-[\--admin_password=&lt;password&gt;]
+[\--admin_password|admin_pass=&lt;password&gt;]
 : The password for the admin user. Defaults to randomly generated string.
 
 \--admin_email=&lt;email&gt;
@@ -51,6 +55,7 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--path=<path>` | Path to the WordPress files. |
 | `--url=<url>` | Pretend request came from given URL. In multisite, this argument is how the target site is specified. |
 | `--ssh=[<scheme>:][<user>@]<host\|container>[:<port>][<path>]` | Perform operation against a remote server over SSH (or a container using scheme of "docker", "docker-compose", "docker-compose-run", "vagrant"). |
+| `--ssh-args=<args>` | Pass additional arguments to SSH (or other tools specified by --ssh scheme). |
 | `--http=<http>` | Perform operation against a remote WordPress installation over HTTP. |
 | `--user=<id\|login\|email>` | Set the WordPress user. |
 | `--skip-plugins[=<plugins>]` | Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded. |
@@ -63,3 +68,5 @@ These [global parameters](https://make.wordpress.org/cli/handbook/config/) have 
 | `--debug[=<group>]` | Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help. |
 | `--prompt[=<assoc>]` | Prompt the user to enter values for all command arguments, or a subset specified as comma-separated values. |
 | `--quiet` | Suppress informational messages. |
+| `--alias=<name>` | Name of the alias to use. Aliases can reference local WordPress installations or remote SSH connections. Aliases are defined in the wp-cli.yml file. |
+| `--assume-https` | Set $_SERVER['HTTPS'] to make WordPress treat the site as HTTPS. Use when WordPress is behind an HTTPS proxy or load balancer. |

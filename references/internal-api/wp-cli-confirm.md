@@ -10,7 +10,8 @@ Ask for confirmation before running a destructive operation.
 
 <div>
 <strong>$question</strong> (string) Question to display before the prompt.<br />
-<strong>$assoc_args</strong> (array) Skips prompt if 'yes' is provided.<br />
+<strong>mixed&gt;</strong> (array&lt;string,) $assoc_args Skips prompt if 'yes' is provided.<br />
+<strong>@return</strong> (void) <br />
 </div>
 
 

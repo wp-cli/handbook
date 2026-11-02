@@ -10,11 +10,11 @@ Run a WP-CLI command in a new process reusing the current runtime arguments.
 
 <div>
 <strong>$command</strong> (string) WP-CLI command to call.<br />
-<strong>$args</strong> (array) Positional arguments to include when calling the command.<br />
-<strong>$assoc_args</strong> (array) Associative arguments to include when calling the command.<br />
+<strong>string&gt;</strong> (array&lt;int,) $args Positional arguments to include when calling the command.<br />
+<strong>mixed&gt;</strong> (array&lt;string,) $assoc_args Associative arguments to include when calling the command.<br />
 <strong>$exit_on_error</strong> (bool) Whether to exit if the command returns an elevated return code.<br />
 <strong>$return_detailed</strong> (bool) Whether to return an exit status (default) or detailed execution results.<br />
-<strong>$runtime_args</strong> (array) Override one or more global args (path,url,user,allow-root)<br />
+<strong>mixed&gt;</strong> (array&lt;string,) $runtime_args Override one or more global args (path,url,user,allow-root)<br />
 <strong>@return</strong> (int|ProcessRun) command exit status, or a ProcessRun instance<br />
 </div>
 

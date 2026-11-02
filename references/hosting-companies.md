@@ -28,6 +28,7 @@ In alphabetical order:
 * [Domaintechnik.AT](https://www.domaintechnik.at/hosting-oesterreich.html)
 * [Dreamhost](https://www.dreamhost.com/)
 * [Fasthosts](https://www.fasthosts.co.uk/)
+* [Getwebup](https://www.getwebup.in/cloud-hosting)
 * [GoDaddy](https://www.godaddy.com/help/use-wp-cli-to-manage-your-site-12066)
 * [GreenGeeks](https://www.greengeeks.com/tutorials/wp-cli/)
 * [Grid Hosting](https://gridhosting.co.uk/)
@@ -41,7 +42,7 @@ In alphabetical order:
 * [HostPapa](https://www.hostpapa.com)
 * [HostPresto](https://hostpresto.com)
 * [HostRiver](https://hostriver.ro/gazduire-wordpress)
-* [ICDSoft](https:///www.icdsoft.com)
+* [ICDSoft](https://www.icdsoft.com)
 * [Infomaniak](https://www.infomaniak.com/en/create-a-website/wordpress-hosting)
 * [IONOS](https://www.ionos.com/)
 * [JDM.pl](https://jdm.pl)
@@ -69,6 +70,7 @@ In alphabetical order:
 * [One.com](https://www.one.com/)
 * [Pagely](https://pagely.com/)
 * [Pantheon](https://pantheon.io)
+* [Pethost](https://pethost.dev/)
 * [Rad Web Hosting](https://radwebhosting.com)
 * [Rocket.net](https://rocket.net)
 * [RoseHosting](https://www.rosehosting.com)
@@ -92,6 +94,7 @@ In alphabetical order:
 * [Veerotech](https://www.veerotech.net/)
 * [Voteq - Website Solutions](https://voteq.co.uk/)
 * [Wannafind](https://www.wannafind.dk)
+* [Webiost](https://webiost.com)
 * [WebQuickster](https://www.webquickster.com/)
 * [WNPower Hosting](https://www.wnpower.com/)
 * [WordPress.com](https://wordpress.com/)
@@ -101,6 +104,7 @@ In alphabetical order:
 * [YouStable](https://www.youstable.com/)
 * [Zenbox](https://zenbox.pl)
 * [Zenith Media Canada](https://zenithmedia.ca/wordpress-website-hosting/)
+* [ZEROLAG](https://zerolag.ro/)
 
 The following is a list of hosting companies that use WP-CLI, whereby their customers can write and request the running of standard and custom WP-CLI commands:
 

@@ -2,7 +2,8 @@
 
 Manages user roles, including creating new roles and resetting to defaults.
 
-See references for [Roles and Capabilities](https://wordpress.org/documentation/article/roles-and-capabilities) and [WP User class](https://developer.wordpress.org/reference/classes/wp_user).
+See references for [Roles and Capabilities](https://wordpress.org/documentation/article/roles-and-capabilities) and
+[WP User class](https://developer.wordpress.org/reference/classes/wp_user).
 
 ### EXAMPLES
 

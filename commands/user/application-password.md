@@ -2,6 +2,8 @@
 
 Creates, updates, deletes, lists and retrieves application passwords.
 
+Available since WP-CLI 2.6.0.
+
 ### EXAMPLES
 
     # List user application passwords and only show app name and password hash

@@ -21,7 +21,7 @@ Stability between releases is an important contract WP-CLI makes with its users.
 
 ### Getting Started
 
-Every WP-CLI repository with commands has a `features/` directory containing one or more YAML-formatted `*.feature` files.
+Every WP-CLI repository with commands has a `features/` directory containing one or more Gherkin-formatted `*.feature` files.
 
 ## Writing Your First Test
 
