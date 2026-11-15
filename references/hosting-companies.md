@@ -19,6 +19,7 @@ In alphabetical order:
 * [CloudHostWorld](https://www.cloudhostworld.com)
 * [Cloudways](https://www.cloudways.com/en/)
 * [Convesio](https://convesio.com)
+* [CrockyHost](https://crocky.host/)
 * [Curanet](https://curanet.dk)
 * [D9 Hosting](https://d9.hosting)
 * [DanDomain](https://dandomain.dk)
