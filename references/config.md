@@ -362,7 +362,11 @@ If you are still using WP-CLI v2.6.0 but you want to use the default of `--conte
 
 WP-CLI's behavior can be changed at runtime through the use of environment variables:
 
+* `WP_CLI_ALLOW_ROOT` - Set to `1` to let WP-CLI run as the root user without adding `--allow-root` to every command.
+* `WP_CLI_AUTO_CHECK_UPDATE_DAYS` - Number of days between automatic checks for updates. Default is `1`.
 * `WP_CLI_CACHE_DIR` - Directory to store the WP-CLI file cache. Default is `~/.wp-cli/cache/`.
+* `WP_CLI_CACHE_EXPIRY` - Time in seconds after which files in the WP-CLI file cache expire and are removed. Default is `15552000` (180 days).
+* `WP_CLI_CACHE_MAX_SIZE` - Maximum size of the WP-CLI file cache in bytes. WP-CLI periodically trims the cache to this size, removing the least recently accessed files first. Default is `314572800` (300 MB).
 * `WP_CLI_CONFIG_PATH` - Path to the global `config.yml` file. Default is `~/.wp-cli/config.yml`.
 * `WP_CLI_CUSTOM_SHELL` - Allows the user to override the default `/bin/bash` shell used.
 * `WP_CLI_DISABLE_AUTO_CHECK_UPDATE` - Disable WP-CLI automatic checks for updates.
