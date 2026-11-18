@@ -80,6 +80,7 @@ In alphabetical order:
 * [SeekaHost](https://www.seekahost.com)
 * [Seravo.com](https://seravo.com)
 * [Servebolt.com](https://servebolt.com)
+* [Simafri](https://www.simafri.com/en/web-hosting/)
 * [Simplenet.ro](https://simplenet.ro)
 * [Simply.com](https://www.simply.com)
 * [Site5](https://www.site5.com/)
