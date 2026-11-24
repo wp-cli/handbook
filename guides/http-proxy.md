@@ -132,7 +132,7 @@ Composer-backed `wp package` commands, including `browse`, `list`, `install`, an
 
 If you cannot install community packages or only need to configure proxy support for WordPress core HTTP requests, you can define the core proxy constants in a custom PHP file loaded via `wp-cli.yml`.
 
-1. Create a `proxy.php` file (e.g. in your project or home directory):
+1. Create a `proxy.php` file next to the configuration file that will load it (for example in your project root next to `wp-cli.yml`, or in `~/.wp-cli/` next to `config.yml`):
 
 ```php
 <?php
@@ -171,7 +171,7 @@ if ( ! defined( 'WP_PROXY_BYPASS_HOSTS' ) ) {
 }
 ```
 
-2. Require this file in your `wp-cli.yml` or `~/.wp-cli/config.yml`:
+2. Require this file in your `wp-cli.yml` or `~/.wp-cli/config.yml`. Relative paths in `require` are resolved from the directory of the configuration file, and WP-CLI stops with an error if the file does not exist:
 
 ```yaml
 require:

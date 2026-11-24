@@ -360,7 +360,7 @@ If you are still using WP-CLI v2.6.0 but you want to use the default of `--conte
 
 ## HTTP proxy configuration
 
-WP-CLI does not automatically read or trust proxy environment variables such as `HTTP_PROXY` or `HTTPS_PROXY`. To route outbound HTTP/HTTPS requests through a proxy, see the [HTTP Proxy Configuration](https://make.wordpress.org/cli/handbook/guides/http-proxy/) guide.
+WP-CLI has no HTTP proxy setting of its own. When requests are sent through PHP's cURL extension, cURL itself honors some standard proxy environment variables (such as `https_proxy` and `no_proxy`). To route outbound HTTP/HTTPS requests through a proxy, see the [HTTP Proxy Configuration](https://make.wordpress.org/cli/handbook/guides/http-proxy/) guide.
 
 ## Environment variables
 
