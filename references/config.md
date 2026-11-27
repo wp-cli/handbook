@@ -363,6 +363,7 @@ If you are still using WP-CLI v2.6.0 but you want to use the default of `--conte
 WP-CLI's behavior can be changed at runtime through the use of environment variables:
 
 * `WP_CLI_ALLOW_ROOT` - Set to `1` to let WP-CLI run as the root user without adding `--allow-root` to every command.
+* `WP_CLI_AUTOCORRECT` - What WP-CLI does when a mistyped command has a close match. By default, it asks `Did you mean '<command>'? [y/n]` when both input and output are a terminal, and otherwise stops with an error that includes the suggestion. Set to `confirm` or `prompt` to always ask, `auto`, `1`, `true`, `yes` or `on` to run the suggested command without asking, or `none`, `0`, `false`, `no` or `off` to always stop with the error. Available since WP-CLI 3.0.0.
 * `WP_CLI_AUTO_CHECK_UPDATE_DAYS` - Number of days between automatic checks for updates. Default is `1`.
 * `WP_CLI_CACHE_DIR` - Directory to store the WP-CLI file cache. Default is `~/.wp-cli/cache/`.
 * `WP_CLI_CACHE_EXPIRY` - Time in seconds after which files in the WP-CLI file cache expire and are removed. Default is `15552000` (180 days).
