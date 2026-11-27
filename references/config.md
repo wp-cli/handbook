@@ -271,6 +271,15 @@ WP-CLI can automatically discover and read options from a few configuration file
 1. `wp-cli.yml` file inside the current working directory (or upwards).
 1. `~/.wp-cli/config.yml` file (path can be changed by setting the `WP_CLI_CONFIG_PATH` environment variable).
 
+WP-CLI reads only one project config file: starting in the current working directory and moving upwards, it uses the first `wp-cli.local.yml` or `wp-cli.yml` it finds. In a folder that has both, `wp-cli.local.yml` is used and `wp-cli.yml` is ignored. To use both, inherit `wp-cli.yml` from `wp-cli.local.yml`:
+
+```
+_:
+  inherit: wp-cli.yml
+```
+
+The global config file is still read as well.
+
 Besides the global parameters described above, configuration files can also contain defaults for any subcommand, as well as aliases to one or more WordPress installs.
 
 Here's an annotated example `wp-cli.yml` file:
